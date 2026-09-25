@@ -36,6 +36,9 @@ export interface ParsedSuffix {
  * a suffix no quality spells.
  */
 export const parseSuffix = (suffix: string): ParsedSuffix | null => {
+  // A spelling may itself contain '/' (6/9), so try the whole suffix first.
+  const whole = bySpelling.get(suffix);
+  if (whole) return { quality: whole };
   const slash = suffix.indexOf('/');
   const name = slash < 0 ? suffix : suffix.slice(0, slash) || 'major';
   const bass = slash < 0 ? undefined : suffix.slice(slash + 1);

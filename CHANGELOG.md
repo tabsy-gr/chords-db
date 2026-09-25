@@ -5,7 +5,23 @@ of the original [tombatossals/chords-db](https://github.com/tombatossals/chords-
 For a full comparison with the original, see
 [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-DB.md).
 
-## Unreleased
+## 0.8.0
+
+### Changed (breaking)
+* Suffixes that started with `b` are renamed so they can follow a root in a
+  chord symbol: `b5` → `(b5)`, `b13b9` → `7b9b13`, `b13#9` → `7#9b13`. The
+  old names still resolve through `parseSuffix()`.
+* Guitar `sus` is merged into `sus4`.
+
+### Added
+* `parseChordSymbol()` and `findChord()`: read chord symbols with their
+  usual symbols and synonyms (`CΔ7`, `F♯ø`, `Amin`, `C6/9`) and find chords
+  whatever the enharmonic spelling (`A#m7` → `Bbm7`,
+  tombatossals/chords-db#24). `qualityInputs()` and `chordSymbolSource()`
+  for matching chord symbols in text. Symbols live in `data/notation.json`,
+  synonyms in `data/qualities.json`.
+
+## 0.7.2
 
 ### Added
 * Cavaquinho (D G B D), from tombatossals/chords-db#43 by Hugo Rezende:

@@ -67,6 +67,28 @@ Also published: `@tabsy-gr/chords-db/ukulele`, `/ukulele-d`, `/cavaquinho`,
 `/piano`, `/instruments` (an
 index with chord and voicing counts), and the JSON Schemas under `/schema/*`.
 
+## Chord symbols
+
+`parseChordSymbol()` reads a chord symbol the way people write it, and
+`findChord()` looks it up in an instrument's data whatever the enharmonic
+spelling:
+
+```js
+import { parseChordSymbol, findChord } from '@tabsy-gr/chords-db';
+
+parseChordSymbol('F♯ø');   // { root: 'F#', suffix: 'm7b5', bass: null, quality: … }
+parseChordSymbol('Am/G');  // { root: 'A', suffix: 'm/G', bass: 'G', … }
+findChord(guitar, 'A#m7'); // the Bbm7 chord (guitar lists B♭, not A♯)
+findChord(guitar, 'D/Gb'); // the D/F# chord
+```
+
+Quality synonyms (`min`, `-`, `mM7`, `6/9`, `sus`, …) are spellings in
+`data/qualities.json`; symbols (`ø`, `Δ`, `°`, `+`, `♯`, `♭`) are in
+`data/notation.json`. Symbols are only read after a chord's root, so the
+Greek capital Delta (Δ) in lyrics is never taken for a chord.
+`chordSymbolSource()` gives a regular expression for finding chord symbols in
+text. No canonical suffix starts with `b`, because `Cb5` reads as C-flat.
+
 ## Data format
 
 The source data lives in `data/`, one directory per instrument:
@@ -190,7 +212,8 @@ npm run authors      # regenerate AUTHORS from git history
    [Validation](#validation).
 3. ~~Fixes for the incorrect voicings reported against the original database.~~
    Done; see [UPSTREAM-DIFF.md](./UPSTREAM-DIFF.md).
-4. Chord-symbol aliases and a reference parser (`C°7`, `Cø`, `CΔ7`, …).
+4. ~~Chord-symbol aliases and a reference parser (`C°7`, `Cø`, `CΔ7`, …).~~
+   Done; see [Chord symbols](#chord-symbols).
 5. Greek bouzouki: tetrachordo (C F A D) and trichordo (D A D).
 
 ## Credits

@@ -11,8 +11,9 @@ export const DATA_DIR = path.join(ROOT, 'data');
 
 /** Directory name for a key: '#' is spelled 'sharp' ('C#' → 'Csharp'). */
 export const keyDir = (key: string) => key.replace('#', 'sharp');
-/** File name (without .json) for a suffix: '#' → 'sharp', '/' → '_'. */
-export const suffixSlug = (suffix: string) => suffix.replace(/#/g, 'sharp').replace(/\//g, '_');
+/** File name (without .json) for a suffix: '#' → 'sharp', '/' → '_', parentheses dropped. */
+export const suffixSlug = (suffix: string) =>
+  suffix.replace(/#/g, 'sharp').replace(/\//g, '_').replace(/[()]/g, '');
 
 /** data/qualities.json, raw, for formatting and schema checks. */
 export const QUALITIES_FILE = path.join(DATA_DIR, 'qualities.json');
@@ -20,6 +21,12 @@ export const loadQualitiesFile = () => ({
   file: path.relative(ROOT, QUALITIES_FILE),
   text: fs.readFileSync(QUALITIES_FILE, 'utf8'),
 });
+
+/** data/notation.json, raw, for formatting and schema checks. */
+export const loadNotationFile = () => {
+  const file = path.join(DATA_DIR, 'notation.json');
+  return { file: path.relative(ROOT, file), text: fs.readFileSync(file, 'utf8') };
+};
 
 /** data/changes.json, raw, for formatting and schema checks. */
 export const loadChangesFile = () => {
