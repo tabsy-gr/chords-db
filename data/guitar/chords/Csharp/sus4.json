@@ -20,7 +20,8 @@
     {
       "id": "guitar/Csharp/sus4/3",
       "frets": [9, -1, 6, 6, 7, 9],
-      "fingers": [2, 3, 0, 0, 1, 4],
+      "fingers": [3, 0, 1, 1, 2, 4],
+      "barres": [6],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

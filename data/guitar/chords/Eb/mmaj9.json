@@ -15,6 +15,7 @@
       "fingers": [1, 4, 3, 2, 1, 1],
       "barres": [6],
       "capo": true,
+      "rootless": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

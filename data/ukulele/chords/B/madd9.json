@@ -5,21 +5,22 @@
   "voicings": [
     {
       "id": "ukulele/B/madd9/1",
-      "frets": [2, 0, 0, 2],
-      "fingers": [2, 0, 0, 3],
+      "frets": [4, 2, 2, 4],
+      "fingers": [3, 1, 1, 4],
+      "barres": [2],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
       "id": "ukulele/B/madd9/2",
-      "frets": [5, 4, 5, 2],
+      "frets": [7, 6, 7, 4],
       "fingers": [3, 2, 4, 1],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
       "id": "ukulele/B/madd9/3",
-      "frets": [4, 4, 5, 3],
+      "frets": [6, 6, 7, 5],
       "fingers": [2, 2, 3, 1],
-      "barres": [4],
+      "barres": [6],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

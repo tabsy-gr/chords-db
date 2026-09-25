@@ -30,6 +30,14 @@
       "fingers": [2, 1, 4, 4, 0, 0],
       "barres": [12],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/D/mmaj11/3",
+      "frets": [5, 5, 5, 7, 7, 5],
+      "fingers": [1, 1, 1, 2, 3, 1],
+      "barres": [5],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]
 }

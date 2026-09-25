@@ -18,6 +18,12 @@
       "barres": [9],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/11/1",
+      "frets": [-1, 4, 3, 0, 0, 4],
+      "fingers": [0, 2, 1, 0, 0, 3],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]
 }

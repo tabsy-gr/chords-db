@@ -13,12 +13,14 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 
 | Change | guitar | ukulele |
 | --- | ---: | ---: |
-| added | 21 | 0 |
-| removed | 0 | 45 |
-| relabelled | 118 | 37 |
-| fingers | 1 | 0 |
-| barres | 112 | 2 |
-| rootless | 0 | 987 |
+| added | 24 | 0 |
+| removed | 13 | 45 |
+| relabelled | 123 | 37 |
+| frets | 13 | 4 |
+| fingers | 31 | 4 |
+| barres | 121 | 4 |
+| capo | 2 | 0 |
+| rootless | 13 | 988 |
 
 Counts are voicings; one voicing can have several kinds of change.
 
@@ -70,7 +72,7 @@ Counts are voicings; one voicing can have several kinds of change.
 [#9](https://github.com/tabsy-gr/chords-db/issues/9)
 
 <details>
-<summary>114 voicings</summary>
+<summary>113 voicings</summary>
 
 | Voicing | Change | Before | After |
 | --- | --- | --- | --- |
@@ -124,7 +126,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Bb/m_E/3` | barres | `3` | `3 6` |
 | `guitar/Bb/m_G/1` | barres | `3` | `3 6` |
 | `guitar/Bb/m_G/2` | barres | `3` | `3 6` |
-| `guitar/Bb/m7/1` | barres | `—` | `5` |
+| `guitar/Bb/m7/1` | barres | `—` | `6` |
 | `guitar/Bb/sus4/3` | barres | `6` | `6 8` |
 | `guitar/C/_B/4` | barres | `5` | `5 8` |
 | `guitar/C/_Bb/4` | barres | `5` | `5 8` |
@@ -155,7 +157,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/D/m7/1` | barres | `—` | `10` |
 | `guitar/D/mmaj7b5/4` | barres | `10` | `10 11` |
 | `guitar/E/_Eb/4` | barres | `9` | `9 12` |
-| `guitar/E/aug/3` | barres | `—` | `9` |
 | `guitar/E/m_Csharp/4` | barres | `9` | `9 12` |
 | `guitar/E/m_Eb/2` | barres | `9` | `9 12` |
 | `guitar/E/m7/2` | barres | `—` | `12` |
@@ -168,7 +169,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Eb/m_F/3` | barres | `8` | `8 11` |
 | `guitar/Eb/m_Fsharp/2` | barres | `8` | `8 11` |
 | `guitar/Eb/m7/1` | barres | `—` | `11` |
-| `guitar/Eb/maj7b5/2` | barres | `6` | `6 7` |
+| `guitar/Eb/maj7b5/2` | barres | `6` | `7` |
 | `guitar/F/_Eb/4` | barres | `10` | `10 13` |
 | `guitar/F/m_Ab/3` | barres | `10` | `10 13` |
 | `guitar/F/m_D/4` | barres | `10` | `10 13` |
@@ -1435,5 +1436,399 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele/Gb/13b5b9/2` | removed | `Gb13b5b9 3214` | `—` |
 | `ukulele/Gb/13b5b9/3` | removed | `Gb13b5b9 4231` | `—` |
 | `ukulele/Gb/13b5b9/4` | removed | `Gb13b5b9 2121` | `—` |
+
+</details>
+
+### 9. Marked rootless: a guitar voicing of a ninth chord that leaves out the root on purpose (e.g. Fmaj9 xx2213, which sounds as Am7), as jazz voicings often do.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Ab/7b9/2` | rootless | `false` | `true` |
+| `guitar/Ab/aug9/3` | rootless | `false` | `true` |
+| `guitar/B/maj9/2` | rootless | `false` | `true` |
+| `guitar/Bb/m9/1` | rootless | `false` | `true` |
+| `guitar/Csharp/7b9/4` | rootless | `false` | `true` |
+| `guitar/E/maj9/4` | rootless | `false` | `true` |
+| `guitar/Eb/m9/2` | rootless | `false` | `true` |
+| `guitar/Eb/maj9/4` | rootless | `false` | `true` |
+| `guitar/Eb/mmaj9/2` | rootless | `false` | `true` |
+| `guitar/F/maj9/2` | rootless | `false` | `true` |
+| `guitar/F/maj9/4` | rootless | `false` | `true` |
+| `guitar/Fsharp/m9/4` | rootless | `false` | `true` |
+| `guitar/G/maj9/3` | rootless | `false` | `true` |
+
+### 10. Removed the finger on the muted low E string (fingers were shifted by one string).
+
+[#8](https://github.com/tabsy-gr/chords-db/issues/8)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Ab/7b9/2` | fingers | `1 0 1 2 1 3` | `0 0 1 2 1 3` |
+
+### 11. The D string was fretted at 7, under the barre at 8; it is 9, the standard C9 barre shape.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/C/9/4` | frets | `8a878a` | `8a898a` |
+
+### 12. The B string was at 4 (E♭, not in Dmaj9); at 5 it is the 9th.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/D/maj9/2` | frets | `x5464x` | `x5465x` |
+
+### 13. The whole shape was one fret too high (it spelled a different chord); moved down a fret.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Csharp/7b5/4` | frets | `xxcdde` | `xxbccd` |
+
+### 14. This was a copy of Am7 position 3 (5x555x); transposed up a fret to B♭m7.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Bb/m7/1` | barres | `—` | `6` |
+| `guitar/Bb/m7/1` | frets | `5x555x` | `6x666x` |
+
+### 15. Muted the open high E string, which is not in Baug.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/B/aug/4` | frets | `xedcc0` | `xedccx` |
+
+### 16. Muted the open low E string, which is not in D7♯9.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/D/7sharp9/2` | frets | `000a78` | `x00a78` |
+
+### 17. Muted the open low E string, which is not in E♭11.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Eb/11/3` | frets | `066686` | `x66686` |
+
+### 18. Muted the open high E string, which is not in Dm(maj7).
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/D/mmaj7/2` | frets | `x53220` | `x5322x` |
+
+### 19. Muted the high E string (B♭, the natural 5th, which a ♭5 chord replaces).
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Eb/7b5/3` | frets | `x67686` | `x6768x` |
+
+### 20. Muted the high E string (B♭, the natural 5th, which a ♭5 chord replaces) and dropped the barre at 6 that no finger played.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Eb/maj7b5/2` | barres | `6` | `7` |
+| `guitar/Eb/maj7b5/2` | frets | `x67786` | `x6778x` |
+
+### 21. This was a copy of Fmadd9 position 1 (xx3113); transposed down a fret to Emadd9.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/E/madd9/1` | barres | `1` | `—` |
+| `guitar/E/madd9/1` | capo | `true` | `false` |
+| `guitar/E/madd9/1` | fingers | `0 0 3 1 1 4` | `0 0 1 0 0 2` |
+| `guitar/E/madd9/1` | frets | `xx3113` | `xx2002` |
+
+### 22. This was a copy of Fmadd9 position 2 (x8658x); transposed down a fret to Emadd9.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/E/madd9/2` | frets | `x8658x` | `x7547x` |
+
+### 23. This was a copy of Amadd9 position 1 (2002); transposed up two frets to Bmadd9.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `ukulele/B/madd9/1` | barres | `—` | `2` |
+| `ukulele/B/madd9/1` | fingers | `2 0 0 3` | `3 1 1 4` |
+| `ukulele/B/madd9/1` | frets | `2002` | `4224` |
+
+### 24. This was a copy of Amadd9 position 2 (5452); transposed up two frets to Bmadd9.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `ukulele/B/madd9/2` | frets | `5452` | `7674` |
+
+### 25. This was a copy of Amadd9 position 3 (4453); transposed up two frets to Bmadd9.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `ukulele/B/madd9/3` | barres | `4` | `6` |
+| `ukulele/B/madd9/3` | frets | `4453` | `6675` |
+
+### 26. This was a copy of E11 position 1 (1220); transposed up a fret to F11 (rootless, like the other ukulele 11ths).
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `ukulele/F/11/1` | fingers | `1 2 3 0` | `2 3 4 1` |
+| `ukulele/F/11/1` | frets | `1220` | `2331` |
+| `ukulele/F/11/1` | rootless | `false` | `true` |
+
+### 27. Relabelled from C9 to Cadd9: it has no ♭7. Also uncrossed its fingers (2 on fret 3, 1 on fret 2).
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/C/9/1` | fingers | `0 2 3 0 4 0` | `0 2 1 0 3 0` |
+| `guitar/C/9/1` | relabelled | `C9` | `Cadd9` |
+
+### 28. Relabelled from Dm(maj11) to Dadd11: it has a major 3rd and no 7th.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/D/mmaj11/3` | relabelled | `Dmmaj11` | `Dadd11` |
+
+### 29. Relabelled from Gm11 to Gmaj11: it has a major 3rd and a major 7th.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/G/m11/3` | relabelled | `Gm11` | `Gmaj11` |
+
+### 30. Relabelled from C♯11 to C♯7♯11: it has a ♯11 (G), not an 11th.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Csharp/11/1` | relabelled | `C#11` | `C#7#11` |
+
+### 31. Muted the high E string (C♯, the natural 5th) and relabelled from alt to b5 like the rest of the alt family (#6); dropped the unplayed barre.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Fsharp/alt/4` | barres | `9` | `—` |
+| `guitar/Fsharp/alt/4` | capo | `true` | `false` |
+| `guitar/Fsharp/alt/4` | frets | `x9abb9` | `x9abbx` |
+| `guitar/Fsharp/alt/4` | relabelled | `F#alt` | `F#b5` |
+
+### 32. Removed: A copy of Fmadd9 position 3 that does not transpose to E (it relies on the open G string).
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/E/madd9/3` | removed | `Emadd9 x31013` | `—` |
+
+### 33. Removed: A copy of Fmadd9 position 4 that does not transpose to E (it relies on the open G string).
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/E/madd9/4` | removed | `Emadd9 x13021` | `—` |
+
+### 34. Removed: A copy of C♯7sus4 position 1, filed under C♯aug.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Csharp/aug/1` | removed | `C#aug x44422` | `—` |
+
+### 35. Removed: A copy of C♯7sus4 position 2, filed under C♯aug.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Csharp/aug/2` | removed | `C#aug 113141` | `—` |
+
+### 36. Removed: A copy of a C♯9♯11 voicing (now C♯7♯11), filed under C♯11.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Csharp/11/2` | removed | `C#11 x12131` | `—` |
+
+### 37. Removed: A copy of C♯9♯11 position 3, filed under C♯11.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Csharp/11/3` | removed | `C#11 212112` | `—` |
+
+### 38. Removed: A copy of a C♯9♯11 voicing (now C♯7♯11), filed under C♯11.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Csharp/11/4` | removed | `C#11 121211` | `—` |
+
+### 39. Removed: A copy of Em/C position 2 (x32003), filed under C♯9♯11.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Csharp/9sharp11/1` | removed | `C#9#11 x32003` | `—` |
+
+### 40. Removed: Identical to G major position 1.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/G/major/2` | removed | `Gmajor 320003` | `—` |
+
+### 41. Removed: Sounds A, C, B and D, which is no form of Adim, and no nearby correction makes one.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/dim/2` | removed | `Adim 31x21x` | `—` |
+
+### 42. Removed: Sounds E, A, A♭, D, G and C, which is no form of A♭maj7♭5; no nearby correction makes one.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Ab/maj7b5/3` | removed | `Abmaj7b5 001233` | `—` |
+
+### 43. Removed: Sounds F, A, C and G♯, which is no form of Gadd9; no nearby correction makes one.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/G/add9/2` | removed | `Gadd9 xx3214` | `—` |
+
+### 44. Removed: Sounds E♭, G♭, C, F, A♭ and C♯, which is no form of E♭m6/9; no nearby correction makes one.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Eb/m69/3` | removed | `Ebm69 312211` | `—` |
+
+### 45. Added C♯11 voicings, transposed up a fret from C11 positions 1, 2 and 4, after removing the copied ones (all shapes also match D11 transposed down).
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Csharp/11/5` | added | `—` | `C#11 x43422` |
+| `guitar/Csharp/11/6` | added | `—` | `C#11 x44464` |
+| `guitar/Csharp/11/7` | added | `—` | `C#11 999a99` |
+
+### 46. Removed the fingers marked on muted strings under the barre; muted strings take no finger.
+
+[#8](https://github.com/tabsy-gr/chords-db/issues/8)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/_Csharp/4` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
+| `guitar/Ab/_C/4` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
+| `guitar/Csharp/_F/2` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
+| `guitar/D/_Fsharp/2` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
+| `guitar/E/_Ab/2` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
+| `guitar/Eb/_G/2` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
+| `guitar/Fsharp/_Bb/2` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
+
+### 47. Every string is open or muted, so no fingers; the fingers belonged to a different shape.
+
+[#8](https://github.com/tabsy-gr/chords-db/issues/8)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/E/m7/1` | fingers | `2 0 3 3 3 0` | `0 0 0 0 0 0` |
+
+### 48. Removed a declared barre that no finger plays (each note on that fret has its own finger).
+
+[#8](https://github.com/tabsy-gr/chords-db/issues/8)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/dim7/4` | barres | `7` | `—` |
+| `guitar/B/m11/4` | barres | `9 10` | `9` |
+
+### 49. Refingered: the fingering was impossible (a fretted string with no finger, a finger on two frets, crossed fingers, or a barre over lower notes). The frets are unchanged; the fingers are the plainest playable assignment (lowest fret first, a barre where one finger covers a whole fret).
+
+[#8](https://github.com/tabsy-gr/chords-db/issues/8)
+
+<details>
+<summary>21 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/maj7sharp5/4` | fingers | `0 4 3 2 1 1` | `1 4 3 2 1 1` |
+| `guitar/Ab/m11/4` | fingers | `0 3 1 3 4 1` | `0 2 1 3 4 1` |
+| `guitar/B/aug7/2` | fingers | `0 0 2 1 1 3` | `0 1 4 1 3 2` |
+| `guitar/B/maj7sharp5/3` | fingers | `2 1 3 0 3 0` | `2 1 3 0 4 0` |
+| `guitar/B/mmaj9/4` | fingers | `0 3 1 4 3 0` | `0 2 1 4 3 0` |
+| `guitar/Bb/6/3` | fingers | `1 3 0 2 4 0` | `1 3 0 2 4 1` |
+| `guitar/C/69/1` | fingers | `0 3 1 1 3 4` | `0 2 1 1 3 4` |
+| `guitar/Csharp/maj13/1` | barres | `—` | `1` |
+| `guitar/Csharp/maj13/1` | fingers | `0 4 2 3 0 1` | `0 3 1 2 1 1` |
+| `guitar/Csharp/mmaj11/1` | fingers | `0 3 1 4 3 1` | `0 2 1 4 3 1` |
+| `guitar/Csharp/sus2/2` | fingers | `0 1 0 0 2 3` | `3 1 1 2 4 0` |
+| `guitar/Csharp/sus4/3` | barres | `—` | `6` |
+| `guitar/Csharp/sus4/3` | fingers | `2 3 0 0 1 4` | `3 0 1 1 2 4` |
+| `guitar/D/11/4` | barres | `8` | `7` |
+| `guitar/D/11/4` | fingers | `1 1 1 2 1 1` | `0 4 1 1 2 3` |
+| `guitar/E/aug/3` | fingers | `4 3 2 1 1 0` | `0 1 4 2 3 0` |
+| `guitar/E/sus2/4` | fingers | `1 3 4 0 1 4` | `1 2 3 0 1 4` |
+| `guitar/Eb/9b5/3` | fingers | `1 2 0 3 0 4` | `2 1 3 1 1 4` |
+| `guitar/Eb/mmaj11/2` | fingers | `0 3 1 4 3 1` | `0 2 1 4 3 1` |
+| `guitar/F/9b5/4` | barres | `13` | `—` |
+| `guitar/F/9b5/4` | fingers | `2 1 2 0 0 3` | `2 1 3 0 0 4` |
+| `guitar/G/dim/3` | barres | `—` | `8` |
+| `guitar/G/dim/3` | fingers | `0 1 2 4 3 0` | `0 3 1 0 1 2` |
+| `guitar/G/maj13/1` | barres | `2 3` | `2` |
+| `guitar/G/maj13/1` | fingers | `3 1 1 1 3 1` | `2 1 1 1 3 1` |
+| `ukulele/Ab/maj11/2` | fingers | `2 1 3 4` | `2 4 3 1` |
+| `ukulele/Eb/alt/1` | fingers | `3 4 1 2` | `4 3 1 2` |
 
 </details>

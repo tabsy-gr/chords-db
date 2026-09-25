@@ -28,6 +28,7 @@
       "id": "guitar/Eb/maj9/4",
       "frets": [-1, -1, 12, 12, 11, 13],
       "fingers": [0, 0, 2, 3, 1, 4],
+      "rootless": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

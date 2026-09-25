@@ -30,7 +30,7 @@
     {
       "id": "guitar/Ab/_C/4",
       "frets": [8, -1, -1, 8, 9, 8],
-      "fingers": [1, 1, 1, 1, 2, 1],
+      "fingers": [1, 0, 0, 1, 2, 1],
       "barres": [8],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

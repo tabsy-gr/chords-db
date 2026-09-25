@@ -29,7 +29,6 @@
       "id": "guitar/A/dim7/4",
       "frets": [-1, 0, 7, 8, 7, 8],
       "fingers": [0, 0, 1, 3, 2, 4],
-      "barres": [7],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

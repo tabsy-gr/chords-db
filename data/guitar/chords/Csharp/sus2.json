@@ -14,7 +14,7 @@
     {
       "id": "guitar/Csharp/sus2/2",
       "frets": [9, 6, 6, 8, 9, -1],
-      "fingers": [0, 1, 0, 0, 2, 3],
+      "fingers": [3, 1, 1, 2, 4, 0],
       "barres": [6],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

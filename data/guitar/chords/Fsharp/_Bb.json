@@ -14,7 +14,7 @@
     {
       "id": "guitar/Fsharp/_Bb/2",
       "frets": [6, -1, -1, 6, 7, 6],
-      "fingers": [1, 1, 1, 1, 2, 1],
+      "fingers": [1, 0, 0, 1, 2, 1],
       "barres": [6],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

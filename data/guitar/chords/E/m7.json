@@ -6,7 +6,7 @@
     {
       "id": "guitar/E/m7/1",
       "frets": [0, -1, 0, 0, 0, -1],
-      "fingers": [2, 0, 3, 3, 3, 0],
+      "fingers": [0, 0, 0, 0, 0, 0],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

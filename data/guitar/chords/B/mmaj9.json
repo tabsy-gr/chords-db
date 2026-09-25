@@ -26,7 +26,7 @@
     {
       "id": "guitar/B/mmaj9/4",
       "frets": [-1, 14, 12, 15, 14, -1],
-      "fingers": [0, 3, 1, 4, 3, 0],
+      "fingers": [0, 2, 1, 4, 3, 0],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

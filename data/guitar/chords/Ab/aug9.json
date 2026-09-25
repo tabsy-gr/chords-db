@@ -22,6 +22,7 @@
       "id": "guitar/Ab/aug9/3",
       "frets": [-1, -1, 4, 5, 5, 6],
       "fingers": [0, 0, 1, 2, 3, 4],
+      "rootless": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
