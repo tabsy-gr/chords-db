@@ -11,10 +11,11 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 
 ## Summary
 
-| Change | guitar |
-| --- | ---: |
-| added | 21 |
-| fingers | 1 |
+| Change | guitar | ukulele |
+| --- | ---: | ---: |
+| added | 21 | 0 |
+| fingers | 1 | 0 |
+| barres | 112 | 2 |
 
 Counts are voicings; one voicing can have several kinds of change.
 
@@ -58,5 +59,131 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/F/_Dsharp/1` | added | `—` | `F/D# xx1211` |
 | `guitar/F/_Dsharp/2` | added | `—` | `F/D# x67565` |
 | `guitar/F/_Dsharp/3` | added | `—` | `F/D# x63565` |
+
+</details>
+
+### 3. Declared the barres the fingerings already implied: one finger covers two or more strings on the same fret, but that fret was missing from barres.
+
+[#9](https://github.com/tabsy-gr/chords-db/issues/9)
+
+<details>
+<summary>114 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/_Ab/2` | barres | `2` | `2 5` |
+| `guitar/A/_Csharp/2` | barres | `2` | `2 5` |
+| `guitar/A/_E/3` | barres | `2` | `2 5` |
+| `guitar/A/_Fsharp/4` | barres | `2` | `2 5` |
+| `guitar/A/_G/3` | barres | `2` | `2 5` |
+| `guitar/A/m_Ab/1` | barres | `2` | `2 5` |
+| `guitar/A/m_B/2` | barres | `2` | `2 5` |
+| `guitar/A/m_C/2` | barres | `2` | `2 5` |
+| `guitar/A/m_E/3` | barres | `2` | `2 5` |
+| `guitar/A/m_Fsharp/3` | barres | `2` | `2 5` |
+| `guitar/A/m_Fsharp/4` | barres | `2` | `2 5` |
+| `guitar/A/m7/3` | barres | `—` | `5` |
+| `guitar/Ab/_C/2` | barres | `1` | `1 4` |
+| `guitar/Ab/_E/2` | barres | `1` | `1 4` |
+| `guitar/Ab/_F/2` | barres | `1` | `1 4` |
+| `guitar/Ab/_Fsharp/2` | barres | `1` | `1 4` |
+| `guitar/Ab/_G/2` | barres | `1` | `1 4` |
+| `guitar/Ab/m_B/1` | barres | `1` | `1 4` |
+| `guitar/Ab/m_Bb/1` | barres | `1` | `1 4` |
+| `guitar/Ab/m_E/1` | barres | `1` | `1 4` |
+| `guitar/Ab/m_F/1` | barres | `1` | `1 4` |
+| `guitar/Ab/m_F/2` | barres | `1` | `1 4` |
+| `guitar/Ab/m_G/1` | barres | `1` | `1 4` |
+| `guitar/Ab/m7/1` | barres | `—` | `4` |
+| `guitar/Ab/m9/3` | barres | `8` | `7 8` |
+| `guitar/Ab/maj7/2` | barres | `6` | `6 8` |
+| `guitar/Ab/maj9/3` | barres | `4` | `4 5` |
+| `guitar/B/_Ab/2` | barres | `4` | `4 7` |
+| `guitar/B/_Bb/2` | barres | `4` | `4 7` |
+| `guitar/B/_E/4` | barres | `4` | `4 7` |
+| `guitar/B/_Eb/3` | barres | `4` | `4 7` |
+| `guitar/B/7b5/2` | barres | `—` | `2` |
+| `guitar/B/m_Ab/2` | barres | `4` | `4 7` |
+| `guitar/B/m_Ab/3` | barres | `4` | `4 7` |
+| `guitar/B/m_Bb/2` | barres | `4` | `4 7` |
+| `guitar/B/m_Csharp/3` | barres | `4` | `4 7` |
+| `guitar/B/m_D/4` | barres | `4` | `4 7` |
+| `guitar/B/m_E/4` | barres | `4` | `4 7` |
+| `guitar/B/m7/1` | barres | `—` | `7` |
+| `guitar/B/maj11/3` | barres | `7` | `7 8` |
+| `guitar/Bb/_Ab/2` | barres | `3` | `3 6` |
+| `guitar/Bb/_D/4` | barres | `3` | `3 6` |
+| `guitar/Bb/_E/4` | barres | `3` | `3 6` |
+| `guitar/Bb/_G/2` | barres | `3` | `3 6` |
+| `guitar/Bb/m_A/3` | barres | `3` | `3 6` |
+| `guitar/Bb/m_C/1` | barres | `3` | `3 6` |
+| `guitar/Bb/m_Csharp/1` | barres | `3` | `3 6` |
+| `guitar/Bb/m_E/3` | barres | `3` | `3 6` |
+| `guitar/Bb/m_G/1` | barres | `3` | `3 6` |
+| `guitar/Bb/m_G/2` | barres | `3` | `3 6` |
+| `guitar/Bb/m7/1` | barres | `—` | `5` |
+| `guitar/Bb/sus4/3` | barres | `6` | `6 8` |
+| `guitar/C/_B/4` | barres | `5` | `5 8` |
+| `guitar/C/_Bb/4` | barres | `5` | `5 8` |
+| `guitar/C/9/3` | barres | `7` | `7 8` |
+| `guitar/C/m_A/4` | barres | `5` | `5 8` |
+| `guitar/C/m_B/2` | barres | `5` | `5 8` |
+| `guitar/C/m_D/2` | barres | `5` | `5 8` |
+| `guitar/C/m_E/3` | barres | `5` | `5 8` |
+| `guitar/C/m_Eb/2` | barres | `5` | `5 8` |
+| `guitar/C/m7/1` | barres | `—` | `8` |
+| `guitar/Csharp/_B/3` | barres | `6` | `6 9` |
+| `guitar/Csharp/_Bb/4` | barres | `6` | `6 9` |
+| `guitar/Csharp/_C/3` | barres | `6` | `6 9` |
+| `guitar/Csharp/m_Bb/2` | barres | `6` | `6 9` |
+| `guitar/Csharp/m_Bb/3` | barres | `6` | `6 9` |
+| `guitar/Csharp/m_C/2` | barres | `6` | `6 9` |
+| `guitar/Csharp/m_E/3` | barres | `6` | `6 9` |
+| `guitar/Csharp/m_Eb/2` | barres | `6` | `6 9` |
+| `guitar/Csharp/m7/1` | barres | `—` | `9` |
+| `guitar/Csharp/mmaj7b5/3` | barres | `9` | `9 10` |
+| `guitar/D/_B/4` | barres | `7` | `7 10` |
+| `guitar/D/_C/4` | barres | `7` | `7 10` |
+| `guitar/D/_Csharp/4` | barres | `7` | `7 10` |
+| `guitar/D/m_B/2` | barres | `7` | `7 10` |
+| `guitar/D/m_B/3` | barres | `7` | `7 10` |
+| `guitar/D/m_Csharp/2` | barres | `7` | `7 10` |
+| `guitar/D/m_F/2` | barres | `7` | `7 10` |
+| `guitar/D/m7/1` | barres | `—` | `10` |
+| `guitar/D/mmaj7b5/4` | barres | `10` | `10 11` |
+| `guitar/E/_Eb/4` | barres | `9` | `9 12` |
+| `guitar/E/aug/3` | barres | `—` | `9` |
+| `guitar/E/m_Csharp/4` | barres | `9` | `9 12` |
+| `guitar/E/m_Eb/2` | barres | `9` | `9 12` |
+| `guitar/E/m7/2` | barres | `—` | `12` |
+| `guitar/Eb/_C/4` | barres | `8` | `8 11` |
+| `guitar/Eb/_Csharp/3` | barres | `8` | `8 11` |
+| `guitar/Eb/m_C/1` | barres | `8` | `8 11` |
+| `guitar/Eb/m_C/2` | barres | `8` | `8 11` |
+| `guitar/Eb/m_D/3` | barres | `8` | `8 11` |
+| `guitar/Eb/m_E/4` | barres | `8` | `8 11` |
+| `guitar/Eb/m_F/3` | barres | `8` | `8 11` |
+| `guitar/Eb/m_Fsharp/2` | barres | `8` | `8 11` |
+| `guitar/Eb/m7/1` | barres | `—` | `11` |
+| `guitar/Eb/maj7b5/2` | barres | `6` | `6 7` |
+| `guitar/F/_Eb/4` | barres | `10` | `10 13` |
+| `guitar/F/m_Ab/3` | barres | `10` | `10 13` |
+| `guitar/F/m_D/4` | barres | `10` | `10 13` |
+| `guitar/F/m_G/4` | barres | `10` | `10 13` |
+| `guitar/F/m7/1` | barres | `—` | `1` |
+| `guitar/F/m7/2` | barres | `—` | `13` |
+| `guitar/F/maj7/3` | barres | `3` | `3 5` |
+| `guitar/Fsharp/_F/4` | barres | `11` | `11 14` |
+| `guitar/Fsharp/m_Eb/2` | barres | `11` | `11 14` |
+| `guitar/Fsharp/m_Eb/3` | barres | `11` | `11 14` |
+| `guitar/Fsharp/m_F/2` | barres | `11` | `11 14` |
+| `guitar/Fsharp/m69/2` | barres | `4` | `2 4` |
+| `guitar/Fsharp/m7/1` | barres | `—` | `2` |
+| `guitar/Fsharp/m7/2` | barres | `—` | `14` |
+| `guitar/Fsharp/maj7/2` | barres | `4` | `4 6` |
+| `guitar/G/aug9/2` | barres | `—` | `2` |
+| `guitar/G/m7/1` | barres | `—` | `3` |
+| `ukulele/Eb/7sus4/1` | barres | `3 3` | `3 4` |
+| `ukulele/G/7sus4/3` | barres | `7 7` | `7 8` |
 
 </details>

@@ -13,7 +13,7 @@
       "id": "guitar/D/m_B/2",
       "frets": [7, 8, 7, 7, 10, 10],
       "fingers": [1, 2, 1, 1, 4, 4],
-      "barres": [7],
+      "barres": [7, 10],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
@@ -21,7 +21,7 @@
       "id": "guitar/D/m_B/3",
       "frets": [7, 8, 7, 10, 10, 10],
       "fingers": [1, 2, 1, 4, 4, 4],
-      "barres": [7],
+      "barres": [7, 10],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

@@ -19,7 +19,7 @@
       "id": "guitar/Eb/m_D/3",
       "frets": [10, 9, 8, 8, 11, 11],
       "fingers": [3, 2, 1, 1, 4, 4],
-      "barres": [8],
+      "barres": [8, 11],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

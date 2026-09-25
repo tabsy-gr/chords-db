@@ -5,9 +5,9 @@ are defined in `src/validate.ts` and the chord formulas in
 `data/qualities.json`.
 
 - Voicings checked: 5946
-- Voicings with errors: 1393
-- Voicings with warnings only: 29
-- Chord-level findings: 430
+- Voicings with errors: 1279
+- Voicings with warnings only: 31
+- Chord-level findings: 459
 
 ## Summary
 
@@ -15,7 +15,7 @@ are defined in `src/validate.ts` and the chord formulas in
 | --- | --- | ---: | ---: | ---: | ---: |
 | [`chord/suffix-not-listed`](#chordsuffix-not-listed) | warning | 0 | 36 | 0 | 36 |
 | [`chord/duplicate-voicing`](#chordduplicate-voicing) | error | 1 | 0 | 0 | 1 |
-| [`chord/not-easiest-first`](#chordnot-easiest-first) | warning | 305 | 0 | 89 | 394 |
+| [`chord/not-easiest-first`](#chordnot-easiest-first) | warning | 334 | 0 | 89 | 423 |
 | [`notes/foreign`](#notesforeign) | error | 28 | 0 | 4 | 32 |
 | [`notes/missing-root`](#notesmissing-root) | error | 21 | 0 | 1033 | 1054 |
 | [`notes/missing-tone`](#notesmissing-tone) | error | 155 | 0 | 86 | 241 |
@@ -23,7 +23,7 @@ are defined in `src/validate.ts` and the chord formulas in
 | [`fingers/on-unfretted`](#fingerson-unfretted) | error | 14 | 0 | 0 | 14 |
 | [`fingers/two-frets`](#fingerstwo-frets) | error | 2 | 0 | 0 | 2 |
 | [`fingers/order`](#fingersorder) | error | 11 | 0 | 6 | 17 |
-| [`barres/undeclared`](#barresundeclared) | error | 122 | 0 | 2 | 124 |
+| [`barres/undeclared`](#barresundeclared) | error | 7 | 0 | 0 | 7 |
 | [`barres/unplayed`](#barresunplayed) | error | 10 | 0 | 0 | 10 |
 | [`barres/blocked`](#barresblocked) | error | 5 | 0 | 0 | 5 |
 | [`barres/muted-inside`](#barresmuted-inside) | warning | 53 | 0 | 0 | 53 |
@@ -83,7 +83,7 @@ Two voicings of the chord are identical. (error)
 
 The voicings are not ordered easiest first (by playability score). (warning)
 
-### guitar (305)
+### guitar (334)
 
 - **A5** (`data/guitar/chords/A/5.json`): easiest first would be 2, 1, 3
 - **A7** (`data/guitar/chords/A/7.json`): easiest first would be 1, 2, 4, 3
@@ -94,11 +94,15 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **A/C#** (`data/guitar/chords/A/_Csharp.json`): easiest first would be 1, 2, 4, 3
 - **A/E** (`data/guitar/chords/A/_E.json`): easiest first would be 1, 4, 2, 3
 - **A/Eb** (`data/guitar/chords/A/_Eb.json`): easiest first would be 1, 3, 2, 4
+- **A/G#** (`data/guitar/chords/A/_Gsharp.json`): easiest first would be 2, 1, 3
 - **Aadd9** (`data/guitar/chords/A/add9.json`): easiest first would be 1, 2, 4, 3
 - **Am69** (`data/guitar/chords/A/m69.json`): easiest first would be 1, 3, 2, 4
-- **Am/Ab** (`data/guitar/chords/A/m_Ab.json`): easiest first would be 1, 2, 4, 3
+- **Am7** (`data/guitar/chords/A/m7.json`): easiest first would be 1, 2, 4, 5, 3, 6
+- **Am/Ab** (`data/guitar/chords/A/m_Ab.json`): easiest first would be 2, 4, 1, 3
 - **Am/Bb** (`data/guitar/chords/A/m_Bb.json`): easiest first would be 1, 3, 2, 4
+- **Am/C** (`data/guitar/chords/A/m_C.json`): easiest first would be 1, 3, 2, 4
 - **Am/C#** (`data/guitar/chords/A/m_Csharp.json`): easiest first would be 1, 2, 4, 3
+- **Am/E** (`data/guitar/chords/A/m_E.json`): easiest first would be 1, 2, 4, 3
 - **Am/Eb** (`data/guitar/chords/A/m_Eb.json`): easiest first would be 1, 2, 4, 3
 - **Am/G** (`data/guitar/chords/A/m_G.json`): easiest first would be 1, 3, 2, 4
 - **Amadd9** (`data/guitar/chords/A/madd9.json`): easiest first would be 1, 3, 2, 4
@@ -117,18 +121,23 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **Ab/C** (`data/guitar/chords/Ab/_C.json`): easiest first would be 1, 2, 4, 3
 - **Ab/C#** (`data/guitar/chords/Ab/_Csharp.json`): easiest first would be 4, 1, 2, 3
 - **Ab/E** (`data/guitar/chords/Ab/_E.json`): easiest first would be 3, 1, 2, 4
+- **Ab/F** (`data/guitar/chords/Ab/_F.json`): easiest first would be 1, 3, 2, 4
 - **Abadd11** (`data/guitar/chords/Ab/add11.json`): easiest first would be 2, 3, 1
 - **Abadd9** (`data/guitar/chords/Ab/add9.json`): easiest first would be 1, 2, 4, 3
 - **Abalt** (`data/guitar/chords/Ab/alt.json`): easiest first would be 1, 2, 4, 3
 - **Abaug9** (`data/guitar/chords/Ab/aug9.json`): easiest first would be 1, 3, 2, 4
 - **Abm69** (`data/guitar/chords/Ab/m69.json`): easiest first would be 1, 3, 2, 4
+- **Abm9** (`data/guitar/chords/Ab/m9.json`): easiest first would be 1, 2, 4, 3
 - **Abm9/F#** (`data/guitar/chords/Ab/m9_Fsharp.json`): easiest first would be 1, 2, 4, 3
+- **Abm/B** (`data/guitar/chords/Ab/m_B.json`): easiest first would be 2, 1, 3, 4
 - **Abm/Bb** (`data/guitar/chords/Ab/m_Bb.json`): easiest first would be 1, 2, 4, 3
 - **Abm/C** (`data/guitar/chords/Ab/m_C.json`): easiest first would be 4, 1, 2, 3
 - **Abm/C#** (`data/guitar/chords/Ab/m_Csharp.json`): easiest first would be 4, 1, 2, 3
+- **Abm/E** (`data/guitar/chords/Ab/m_E.json`): easiest first would be 2, 3, 1, 4
 - **Abm/F** (`data/guitar/chords/Ab/m_F.json`): easiest first would be 4, 3, 1, 2
 - **Abm/F#** (`data/guitar/chords/Ab/m_Fsharp.json`): easiest first would be 2, 1, 4, 3
-- **Abm/G** (`data/guitar/chords/Ab/m_G.json`): easiest first would be 4, 1, 2, 3
+- **Abm/G** (`data/guitar/chords/Ab/m_G.json`): easiest first would be 4, 2, 1, 3
+- **Abmaj7** (`data/guitar/chords/Ab/maj7.json`): easiest first would be 1, 3, 2, 4
 - **Abmaj7b5** (`data/guitar/chords/Ab/maj7b5.json`): easiest first would be 2, 1, 3, 4
 - **Abmaj7sus2** (`data/guitar/chords/Ab/maj7sus2.json`): easiest first would be 1, 2, 4, 3
 - **Abmmaj7b5** (`data/guitar/chords/Ab/mmaj7b5.json`): easiest first would be 1, 2, 4, 3
@@ -138,6 +147,7 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **B7#9** (`data/guitar/chords/B/7sharp9.json`): easiest first would be 1, 2, 4, 3
 - **B9** (`data/guitar/chords/B/9.json`): easiest first would be 1, 2, 4, 3
 - **B9#11** (`data/guitar/chords/B/9sharp11.json`): easiest first would be 2, 1, 3, 4
+- **B/Ab** (`data/guitar/chords/B/_Ab.json`): easiest first would be 1, 3, 2, 4
 - **B/C** (`data/guitar/chords/B/_C.json`): easiest first would be 1, 4, 2, 3
 - **B/C#** (`data/guitar/chords/B/_Csharp.json`): easiest first would be 4, 1, 2, 3
 - **B/F** (`data/guitar/chords/B/_F.json`): easiest first would be 1, 3, 4, 2
@@ -147,12 +157,15 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **Badd9** (`data/guitar/chords/B/add9.json`): easiest first would be 1, 3, 2, 4
 - **Bdim7** (`data/guitar/chords/B/dim7.json`): easiest first would be 2, 1, 3, 4
 - **Bm69** (`data/guitar/chords/B/m69.json`): easiest first would be 1, 2, 4, 3
-- **Bm7** (`data/guitar/chords/B/m7.json`): easiest first would be 2, 3, 1, 4, 5
+- **Bm7** (`data/guitar/chords/B/m7.json`): easiest first would be 2, 3, 4, 1, 5
 - **Bm9/A** (`data/guitar/chords/B/m9_A.json`): easiest first would be 1, 4, 2, 3
 - **Bm/A** (`data/guitar/chords/B/m_A.json`): easiest first would be 2, 3, 1, 4
+- **Bm/Ab** (`data/guitar/chords/B/m_Ab.json`): easiest first would be 1, 4, 2, 3
+- **Bm/Bb** (`data/guitar/chords/B/m_Bb.json`): easiest first would be 1, 3, 2, 4
 - **Bm/C** (`data/guitar/chords/B/m_C.json`): easiest first would be 1, 2, 4, 3
 - **Bm/F** (`data/guitar/chords/B/m_F.json`): easiest first would be 1, 2, 4, 3
 - **Bm/F#** (`data/guitar/chords/B/m_Fsharp.json`): easiest first would be 2, 1, 3, 4
+- **Bmaj11** (`data/guitar/chords/B/maj11.json`): easiest first would be 1, 2, 4, 3
 - **Bmaj7b5** (`data/guitar/chords/B/maj7b5.json`): easiest first would be 1, 3, 2, 4
 - **Bmaj7sus2** (`data/guitar/chords/B/maj7sus2.json`): easiest first would be 1, 4, 2, 3
 - **Bmaj9** (`data/guitar/chords/B/maj9.json`): easiest first would be 1, 2, 4, 3
@@ -165,17 +178,20 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **Bb/Eb** (`data/guitar/chords/Bb/_Eb.json`): easiest first would be 1, 4, 2, 3
 - **Bb/F** (`data/guitar/chords/Bb/_F.json`): easiest first would be 2, 1, 3, 4
 - **Bb/F#** (`data/guitar/chords/Bb/_Fsharp.json`): easiest first would be 1, 4, 2, 3
+- **Bb/G** (`data/guitar/chords/Bb/_G.json`): easiest first would be 1, 3, 2, 4
 - **Bbadd11** (`data/guitar/chords/Bb/add11.json`): easiest first would be 2, 3, 4, 1
 - **Bbdim7** (`data/guitar/chords/Bb/dim7.json`): easiest first would be 1, 2, 4, 3
 - **Bbm7** (`data/guitar/chords/Bb/m7.json`): easiest first would be 3, 2, 1, 4, 5
 - **Bbm9/Ab** (`data/guitar/chords/Bb/m9_Ab.json`): easiest first would be 1, 4, 2, 3
+- **Bbm/A** (`data/guitar/chords/Bb/m_A.json`): easiest first would be 1, 2, 4, 3
 - **Bbm/Ab** (`data/guitar/chords/Bb/m_Ab.json`): easiest first would be 3, 4, 1, 2
 - **Bbm/B** (`data/guitar/chords/Bb/m_B.json`): easiest first would be 4, 2, 1, 3
 - **Bbm/C** (`data/guitar/chords/Bb/m_C.json`): easiest first would be 1, 2, 4, 3
-- **Bbm/E** (`data/guitar/chords/Bb/m_E.json`): easiest first would be 2, 1, 3, 4
+- **Bbm/C#** (`data/guitar/chords/Bb/m_Csharp.json`): easiest first would be 2, 1, 3, 4
+- **Bbm/E** (`data/guitar/chords/Bb/m_E.json`): easiest first would be 2, 1, 4, 3
 - **Bbm/Eb** (`data/guitar/chords/Bb/m_Eb.json`): easiest first would be 1, 2, 4, 3
 - **Bbm/F** (`data/guitar/chords/Bb/m_F.json`): easiest first would be 2, 1, 3, 4
-- **Bbm/G** (`data/guitar/chords/Bb/m_G.json`): easiest first would be 1, 2, 4, 3
+- **Bbm/G** (`data/guitar/chords/Bb/m_G.json`): easiest first would be 4, 3, 1, 2
 - **Bbmaj7b5** (`data/guitar/chords/Bb/maj7b5.json`): easiest first would be 1, 3, 2, 4
 - **Bbmaj7sus2** (`data/guitar/chords/Bb/maj7sus2.json`): easiest first would be 1, 4, 2, 3
 - **Bbminor** (`data/guitar/chords/Bb/minor.json`): easiest first would be 1, 3, 2, 4
@@ -186,7 +202,7 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **C7/G** (`data/guitar/chords/C/7_G.json`): easiest first would be 2, 1, 3
 - **C7b9** (`data/guitar/chords/C/7b9.json`): easiest first would be 1, 2, 4, 3
 - **C7#9** (`data/guitar/chords/C/7sharp9.json`): easiest first would be 1, 2, 4, 3
-- **C9** (`data/guitar/chords/C/9.json`): easiest first would be 1, 2, 5, 3, 4
+- **C9** (`data/guitar/chords/C/9.json`): easiest first would be 1, 2, 5, 4, 3
 - **C9b5** (`data/guitar/chords/C/9b5.json`): easiest first would be 2, 1, 3, 4
 - **C/E** (`data/guitar/chords/C/_E.json`): easiest first would be 1, 3, 2, 4
 - **C/Eb** (`data/guitar/chords/C/_Eb.json`): easiest first would be 1, 3, 2, 4
@@ -199,11 +215,14 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **Cm11** (`data/guitar/chords/C/m11.json`): easiest first would be 2, 1, 3, 4
 - **Cm6** (`data/guitar/chords/C/m6.json`): easiest first would be 2, 1, 3, 4
 - **Cm69** (`data/guitar/chords/C/m69.json`): easiest first would be 2, 1, 3, 4
-- **Cm7** (`data/guitar/chords/C/m7.json`): easiest first would be 2, 4, 3, 1, 5
+- **Cm7** (`data/guitar/chords/C/m7.json`): easiest first would be 2, 4, 3, 5, 1
 - **Cm9** (`data/guitar/chords/C/m9.json`): easiest first would be 2, 1, 3, 4
 - **Cm9/Bb** (`data/guitar/chords/C/m9_Bb.json`): easiest first would be 1, 4, 2, 3
+- **Cm/B** (`data/guitar/chords/C/m_B.json`): easiest first would be 1, 3, 2, 4
 - **Cm/Bb** (`data/guitar/chords/C/m_Bb.json`): easiest first would be 2, 4, 3, 1
 - **Cm/C#** (`data/guitar/chords/C/m_Csharp.json`): easiest first would be 4, 2, 1, 3
+- **Cm/E** (`data/guitar/chords/C/m_E.json`): easiest first would be 1, 2, 4, 3
+- **Cm/Eb** (`data/guitar/chords/C/m_Eb.json`): easiest first would be 1, 3, 2, 4
 - **Cm/F** (`data/guitar/chords/C/m_F.json`): easiest first would be 1, 2, 4, 3
 - **Cm/F#** (`data/guitar/chords/C/m_Fsharp.json`): easiest first would be 4, 1, 2, 3
 - **Cm/G** (`data/guitar/chords/C/m_G.json`): easiest first would be 2, 1, 3, 4
@@ -221,15 +240,19 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **C#/F#** (`data/guitar/chords/Csharp/_Fsharp.json`): easiest first would be 1, 2, 4, 3
 - **C#/G** (`data/guitar/chords/Csharp/_G.json`): easiest first would be 1, 3, 4, 2
 - **C#add9** (`data/guitar/chords/Csharp/add9.json`): easiest first would be 2, 1, 3, 4
-- **C#m7** (`data/guitar/chords/Csharp/m7.json`): easiest first would be 3, 2, 1, 4, 5
+- **C#m7** (`data/guitar/chords/Csharp/m7.json`): easiest first would be 3, 2, 4, 1, 5
 - **C#m9/B** (`data/guitar/chords/Csharp/m9_B.json`): easiest first would be 1, 4, 2, 3
 - **C#m/Ab** (`data/guitar/chords/Csharp/m_Ab.json`): easiest first would be 2, 1, 3, 4
 - **C#m/B** (`data/guitar/chords/Csharp/m_B.json`): easiest first would be 1, 3, 4, 2
+- **C#m/Bb** (`data/guitar/chords/Csharp/m_Bb.json`): easiest first would be 1, 4, 2, 3
+- **C#m/C** (`data/guitar/chords/Csharp/m_C.json`): easiest first would be 1, 3, 2, 4
+- **C#m/E** (`data/guitar/chords/Csharp/m_E.json`): easiest first would be 1, 2, 4, 3
 - **C#m/F** (`data/guitar/chords/Csharp/m_F.json`): easiest first would be 1, 4, 2, 3
 - **C#m/G** (`data/guitar/chords/Csharp/m_G.json`): easiest first would be 1, 2, 4, 3
 - **C#maj7b5** (`data/guitar/chords/Csharp/maj7b5.json`): easiest first would be 2, 1, 3, 4
 - **C#maj7sus2** (`data/guitar/chords/Csharp/maj7sus2.json`): easiest first would be 4, 1, 2, 3
 - **C#maj9** (`data/guitar/chords/Csharp/maj9.json`): easiest first would be 1, 2, 4, 3
+- **C#mmaj7b5** (`data/guitar/chords/Csharp/mmaj7b5.json`): easiest first would be 1, 2, 4, 3
 - **C#mmaj9** (`data/guitar/chords/Csharp/mmaj9.json`): easiest first would be 2, 1, 3, 4
 - **C#sus4** (`data/guitar/chords/Csharp/sus4.json`): easiest first would be 1, 3, 2, 4
 - **D5** (`data/guitar/chords/D/5.json`): easiest first would be 2, 1, 3
@@ -241,12 +264,15 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **D/F#** (`data/guitar/chords/D/_Fsharp.json`): easiest first would be 4, 2, 3, 1
 - **Daug9** (`data/guitar/chords/D/aug9.json`): easiest first would be 2, 1, 4, 3
 - **Dm6** (`data/guitar/chords/D/m6.json`): easiest first would be 1, 3, 2, 4
-- **Dm7** (`data/guitar/chords/D/m7.json`): easiest first would be 2, 4, 3, 1, 5
+- **Dm7** (`data/guitar/chords/D/m7.json`): easiest first would be 2, 4, 3, 5, 1
 - **Dm7b5** (`data/guitar/chords/D/m7b5.json`): easiest first would be 1, 3, 2, 4
 - **Dm9** (`data/guitar/chords/D/m9.json`): easiest first would be 1, 3, 2, 4
 - **Dm9/F** (`data/guitar/chords/D/m9_F.json`): easiest first would be 1, 3, 2
+- **Dm/B** (`data/guitar/chords/D/m_B.json`): easiest first would be 1, 4, 2, 3
 - **Dm/C** (`data/guitar/chords/D/m_C.json`): easiest first would be 1, 3, 4, 2
+- **Dm/C#** (`data/guitar/chords/D/m_Csharp.json`): easiest first would be 1, 3, 2, 4
 - **Dm/Eb** (`data/guitar/chords/D/m_Eb.json`): easiest first would be 1, 4, 3, 2
+- **Dm/F** (`data/guitar/chords/D/m_F.json`): easiest first would be 1, 3, 2, 4
 - **Dmaj11** (`data/guitar/chords/D/maj11.json`): easiest first would be 1, 3, 2, 4
 - **Dmaj13** (`data/guitar/chords/D/maj13.json`): easiest first would be 2, 1, 3, 4
 - **Dminor** (`data/guitar/chords/D/minor.json`): easiest first would be 1, 3, 2, 4
@@ -266,7 +292,7 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **Em9/D** (`data/guitar/chords/E/m9_D.json`): easiest first would be 1, 2, 4, 3
 - **Em9/G** (`data/guitar/chords/E/m9_G.json`): easiest first would be 2, 1, 3
 - **Em/D** (`data/guitar/chords/E/m_D.json`): easiest first would be 1, 2, 4, 3
-- **Em/Eb** (`data/guitar/chords/E/m_Eb.json`): easiest first would be 1, 4, 2, 3
+- **Em/Eb** (`data/guitar/chords/E/m_Eb.json`): easiest first would be 1, 4, 3, 2
 - **Em/F** (`data/guitar/chords/E/m_F.json`): easiest first would be 3, 1, 2, 4
 - **Em/F#** (`data/guitar/chords/E/m_Fsharp.json`): easiest first would be 1, 2, 4, 3
 - **Em/G#** (`data/guitar/chords/E/m_Gsharp.json`): easiest first would be 1, 3, 2
@@ -288,13 +314,15 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **Ebadd9** (`data/guitar/chords/Eb/add9.json`): easiest first would be 2, 1, 3, 4
 - **Ebdim7** (`data/guitar/chords/Eb/dim7.json`): easiest first would be 1, 3, 2, 4
 - **Ebm69** (`data/guitar/chords/Eb/m69.json`): easiest first would be 1, 2, 4, 3
-- **Ebm7** (`data/guitar/chords/Eb/m7.json`): easiest first would be 2, 4, 3, 1, 5
+- **Ebm7** (`data/guitar/chords/Eb/m7.json`): easiest first would be 2, 4, 3, 5, 1
 - **Ebm9/C#** (`data/guitar/chords/Eb/m9_Csharp.json`): easiest first would be 1, 2, 4, 3
 - **Ebm/Ab** (`data/guitar/chords/Eb/m_Ab.json`): easiest first would be 1, 2, 4, 3
 - **Ebm/Bb** (`data/guitar/chords/Eb/m_Bb.json`): easiest first would be 1, 3, 2, 4
-- **Ebm/C** (`data/guitar/chords/Eb/m_C.json`): easiest first would be 4, 1, 2, 3
+- **Ebm/C** (`data/guitar/chords/Eb/m_C.json`): easiest first would be 4, 3, 1, 2
 - **Ebm/C#** (`data/guitar/chords/Eb/m_Csharp.json`): easiest first would be 2, 4, 3, 1
+- **Ebm/D** (`data/guitar/chords/Eb/m_D.json`): easiest first would be 1, 2, 4, 3
 - **Ebm/F** (`data/guitar/chords/Eb/m_F.json`): easiest first would be 2, 1, 3, 4
+- **Ebm/F#** (`data/guitar/chords/Eb/m_Fsharp.json`): easiest first would be 1, 3, 2, 4
 - **Ebm/G** (`data/guitar/chords/Eb/m_G.json`): easiest first would be 1, 4, 2, 3
 - **Ebmaj7#5** (`data/guitar/chords/Eb/maj7sharp5.json`): easiest first would be 2, 1, 3, 4
 - **Ebmaj7sus2** (`data/guitar/chords/Eb/maj7sus2.json`): easiest first would be 1, 4, 2, 3
@@ -315,9 +343,10 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **F/F#** (`data/guitar/chords/F/_Fsharp.json`): easiest first would be 4, 1, 2, 3
 - **Fadd9** (`data/guitar/chords/F/add9.json`): easiest first would be 1, 2, 4, 3
 - **Fm69** (`data/guitar/chords/F/m69.json`): easiest first would be 2, 1, 3, 4
-- **Fm7** (`data/guitar/chords/F/m7.json`): easiest first would be 1, 3, 4, 6, 5, 2
+- **Fm7** (`data/guitar/chords/F/m7.json`): easiest first would be 3, 1, 4, 6, 5, 2
 - **Fm9** (`data/guitar/chords/F/m9.json`): easiest first would be 2, 1, 3, 4
 - **Fm9/Eb** (`data/guitar/chords/F/m9_Eb.json`): easiest first would be 1, 2, 4, 3
+- **Fm/Ab** (`data/guitar/chords/F/m_Ab.json`): easiest first would be 1, 2, 4, 3
 - **Fm/B** (`data/guitar/chords/F/m_B.json`): easiest first would be 1, 4, 2, 3
 - **Fm/Bb** (`data/guitar/chords/F/m_Bb.json`): easiest first would be 1, 4, 2, 3
 - **Fm/E** (`data/guitar/chords/F/m_E.json`): easiest first would be 1, 3, 2, 4
@@ -347,7 +376,7 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **F#add11** (`data/guitar/chords/Fsharp/add11.json`): easiest first would be 2, 3, 1, 4
 - **F#add9** (`data/guitar/chords/Fsharp/add9.json`): easiest first would be 2, 1, 4, 3
 - **F#m6** (`data/guitar/chords/Fsharp/m6.json`): easiest first would be 1, 2, 4, 3
-- **F#m7** (`data/guitar/chords/Fsharp/m7.json`): easiest first would be 1, 3, 4, 6, 5, 2
+- **F#m7** (`data/guitar/chords/Fsharp/m7.json`): easiest first would be 3, 1, 4, 6, 5, 2
 - **F#m/A** (`data/guitar/chords/Fsharp/m_A.json`): easiest first would be 1, 2, 4, 3
 - **F#m/Ab** (`data/guitar/chords/Fsharp/m_Ab.json`): easiest first would be 1, 2, 4, 3
 - **F#m/B** (`data/guitar/chords/Fsharp/m_B.json`): easiest first would be 1, 4, 2, 3
@@ -355,7 +384,7 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **F#m/C** (`data/guitar/chords/Fsharp/m_C.json`): easiest first would be 1, 4, 2, 3
 - **F#m/E** (`data/guitar/chords/Fsharp/m_E.json`): easiest first would be 1, 4, 2, 3
 - **F#m/Eb** (`data/guitar/chords/Fsharp/m_Eb.json`): easiest first would be 1, 4, 2, 3
-- **F#m/F** (`data/guitar/chords/Fsharp/m_F.json`): easiest first would be 1, 4, 2, 3
+- **F#m/F** (`data/guitar/chords/Fsharp/m_F.json`): easiest first would be 1, 4, 3, 2
 - **F#maj7b5** (`data/guitar/chords/Fsharp/maj7b5.json`): easiest first would be 1, 2, 4, 3
 - **F#maj7sus2** (`data/guitar/chords/Fsharp/maj7sus2.json`): easiest first would be 1, 2, 4, 3
 - **F#maj9** (`data/guitar/chords/Fsharp/maj9.json`): easiest first would be 3, 1, 2, 4
@@ -1920,135 +1949,15 @@ A higher-numbered finger sits on a lower fret than a lower-numbered one. (error)
 
 A finger covers several strings on one fret, but that fret is not in "barres". (error)
 
-### guitar (122)
+### guitar (7)
 
-- `guitar/A/_Ab/2`: finger 4 covers 2 courses at fret 5
-- `guitar/A/_Csharp/2`: finger 4 covers 2 courses at fret 5
-- `guitar/A/_E/3`: finger 4 covers 2 courses at fret 5
-- `guitar/A/_Fsharp/4`: finger 4 covers 2 courses at fret 5
-- `guitar/A/_G/3`: finger 4 covers 2 courses at fret 5
-- `guitar/A/_Gsharp/1`: finger 4 covers 2 courses at fret 5
-- `guitar/A/m7/3`: finger 3 covers 3 courses at fret 5
-- `guitar/A/m_Ab/1`: finger 4 covers 2 courses at fret 5
-- `guitar/A/m_B/2`: finger 4 covers 3 courses at fret 5
-- `guitar/A/m_C/2`: finger 4 covers 2 courses at fret 5
-- `guitar/A/m_E/3`: finger 4 covers 2 courses at fret 5
-- `guitar/A/m_Fsharp/3`: finger 4 covers 2 courses at fret 5
-- `guitar/A/m_Fsharp/4`: finger 4 covers 3 courses at fret 5
-- `guitar/A/m_Gsharp/2`: finger 4 covers 2 courses at fret 5
-- `guitar/Ab/_C/2`: finger 4 covers 2 courses at fret 4
-- `guitar/Ab/_E/2`: finger 4 covers 2 courses at fret 4
-- `guitar/Ab/_F/2`: finger 4 covers 2 courses at fret 4
-- `guitar/Ab/_Fsharp/2`: finger 4 covers 2 courses at fret 4
-- `guitar/Ab/_G/2`: finger 4 covers 2 courses at fret 4
 - `guitar/Ab/m11/4`: finger 3 covers 2 courses at fret 11
-- `guitar/Ab/m7/1`: finger 3 covers 3 courses at fret 4
-- `guitar/Ab/m9/3`: finger 1 covers 2 courses at fret 7
-- `guitar/Ab/m_B/1`: finger 4 covers 2 courses at fret 4
-- `guitar/Ab/m_Bb/1`: finger 4 covers 3 courses at fret 4
-- `guitar/Ab/m_E/1`: finger 4 covers 2 courses at fret 4
-- `guitar/Ab/m_F/1`: finger 4 covers 2 courses at fret 4
-- `guitar/Ab/m_F/2`: finger 4 covers 3 courses at fret 4
-- `guitar/Ab/m_G/1`: finger 4 covers 2 courses at fret 4
-- `guitar/Ab/maj7/2`: finger 3 covers 3 courses at fret 8
-- `guitar/Ab/maj9/3`: finger 2 covers 2 courses at fret 5
-- `guitar/B/7b5/2`: finger 1 covers 2 courses at fret 2
-- `guitar/B/_Ab/2`: finger 4 covers 2 courses at fret 7
-- `guitar/B/_Bb/2`: finger 4 covers 2 courses at fret 7
-- `guitar/B/_E/4`: finger 4 covers 2 courses at fret 7
-- `guitar/B/_Eb/3`: finger 4 covers 2 courses at fret 7
-- `guitar/B/m7/1`: finger 3 covers 3 courses at fret 7
-- `guitar/B/m_Ab/2`: finger 4 covers 2 courses at fret 7
-- `guitar/B/m_Ab/3`: finger 4 covers 3 courses at fret 7
-- `guitar/B/m_Bb/2`: finger 4 covers 2 courses at fret 7
-- `guitar/B/m_Csharp/3`: finger 4 covers 3 courses at fret 7
-- `guitar/B/m_D/4`: finger 4 covers 2 courses at fret 7
-- `guitar/B/m_E/4`: finger 4 covers 2 courses at fret 7
-- `guitar/B/maj11/3`: finger 2 covers 2 courses at fret 8
 - `guitar/B/maj7sharp5/3`: finger 3 covers 2 courses at fret 8
 - `guitar/B/mmaj9/4`: finger 3 covers 2 courses at fret 14
-- `guitar/Bb/_Ab/2`: finger 4 covers 2 courses at fret 6
-- `guitar/Bb/_D/4`: finger 4 covers 2 courses at fret 6
-- `guitar/Bb/_E/4`: finger 4 covers 2 courses at fret 6
-- `guitar/Bb/_G/2`: finger 4 covers 2 courses at fret 6
-- `guitar/Bb/m7/1`: finger 3 covers 3 courses at fret 5
-- `guitar/Bb/m_A/3`: finger 4 covers 2 courses at fret 6
-- `guitar/Bb/m_C/1`: finger 4 covers 3 courses at fret 6
-- `guitar/Bb/m_Csharp/1`: finger 4 covers 2 courses at fret 6
-- `guitar/Bb/m_E/3`: finger 4 covers 2 courses at fret 6
-- `guitar/Bb/m_G/1`: finger 4 covers 2 courses at fret 6
-- `guitar/Bb/m_G/2`: finger 4 covers 3 courses at fret 6
-- `guitar/Bb/sus4/3`: finger 3 covers 3 courses at fret 8
 - `guitar/C/69/1`: finger 3 covers 2 courses at fret 3
-- `guitar/C/9/3`: finger 4 covers 2 courses at fret 8
-- `guitar/C/_B/4`: finger 4 covers 2 courses at fret 8
-- `guitar/C/_Bb/4`: finger 4 covers 2 courses at fret 8
-- `guitar/C/m7/1`: finger 3 covers 3 courses at fret 8
-- `guitar/C/m_A/4`: finger 4 covers 2 courses at fret 8
-- `guitar/C/m_B/2`: finger 4 covers 2 courses at fret 8
-- `guitar/C/m_D/2`: finger 4 covers 3 courses at fret 8
-- `guitar/C/m_E/3`: finger 4 covers 2 courses at fret 8
-- `guitar/C/m_Eb/2`: finger 4 covers 2 courses at fret 8
-- `guitar/Csharp/_B/3`: finger 4 covers 2 courses at fret 9
-- `guitar/Csharp/_Bb/4`: finger 4 covers 2 courses at fret 9
-- `guitar/Csharp/_C/3`: finger 4 covers 2 courses at fret 9
-- `guitar/Csharp/m7/1`: finger 3 covers 3 courses at fret 9
-- `guitar/Csharp/m_Bb/2`: finger 4 covers 2 courses at fret 9
-- `guitar/Csharp/m_Bb/3`: finger 4 covers 3 courses at fret 9
-- `guitar/Csharp/m_C/2`: finger 4 covers 2 courses at fret 9
-- `guitar/Csharp/m_E/3`: finger 4 covers 2 courses at fret 9
-- `guitar/Csharp/m_Eb/2`: finger 4 covers 3 courses at fret 9
 - `guitar/Csharp/mmaj11/1`: finger 3 covers 2 courses at fret 4
-- `guitar/Csharp/mmaj7b5/3`: finger 2 covers 2 courses at fret 10
-- `guitar/D/_B/4`: finger 4 covers 2 courses at fret 10
-- `guitar/D/_C/4`: finger 4 covers 2 courses at fret 10
-- `guitar/D/_Csharp/4`: finger 4 covers 2 courses at fret 10
-- `guitar/D/m7/1`: finger 3 covers 3 courses at fret 10
-- `guitar/D/m_B/2`: finger 4 covers 2 courses at fret 10
-- `guitar/D/m_B/3`: finger 4 covers 3 courses at fret 10
-- `guitar/D/m_Csharp/2`: finger 4 covers 2 courses at fret 10
-- `guitar/D/m_F/2`: finger 4 covers 2 courses at fret 10
-- `guitar/D/mmaj7b5/4`: finger 2 covers 2 courses at fret 11
-- `guitar/E/_Dsharp/3`: finger 4 covers 2 courses at fret 12
-- `guitar/E/_Eb/4`: finger 4 covers 2 courses at fret 12
-- `guitar/E/aug/3`: finger 1 covers 2 courses at fret 9
-- `guitar/E/m7/2`: finger 3 covers 3 courses at fret 12
-- `guitar/E/m_Csharp/4`: finger 4 covers 2 courses at fret 12
-- `guitar/E/m_Eb/2`: finger 4 covers 2 courses at fret 12
 - `guitar/E/sus2/4`: finger 4 covers 2 courses at fret 14
-- `guitar/Eb/_C/4`: finger 4 covers 2 courses at fret 11
-- `guitar/Eb/_Csharp/3`: finger 4 covers 2 courses at fret 11
-- `guitar/Eb/m7/1`: finger 3 covers 3 courses at fret 11
-- `guitar/Eb/m_C/1`: finger 4 covers 2 courses at fret 11
-- `guitar/Eb/m_C/2`: finger 4 covers 3 courses at fret 11
-- `guitar/Eb/m_D/3`: finger 4 covers 2 courses at fret 11
-- `guitar/Eb/m_E/4`: finger 4 covers 2 courses at fret 11
-- `guitar/Eb/m_F/3`: finger 4 covers 3 courses at fret 11
-- `guitar/Eb/m_Fsharp/2`: finger 4 covers 2 courses at fret 11
-- `guitar/Eb/maj7b5/2`: finger 2 covers 2 courses at fret 7
 - `guitar/Eb/mmaj11/2`: finger 3 covers 2 courses at fret 6
-- `guitar/F/_Eb/4`: finger 4 covers 2 courses at fret 13
-- `guitar/F/m7/1`: finger 3 covers 3 courses at fret 1
-- `guitar/F/m7/2`: finger 3 covers 3 courses at fret 13
-- `guitar/F/m_Ab/3`: finger 4 covers 2 courses at fret 13
-- `guitar/F/m_D/4`: finger 4 covers 2 courses at fret 13
-- `guitar/F/m_G/4`: finger 4 covers 3 courses at fret 13
-- `guitar/F/maj7/3`: finger 3 covers 3 courses at fret 5
-- `guitar/Fsharp/_F/4`: finger 4 covers 2 courses at fret 14
-- `guitar/Fsharp/m69/2`: finger 1 covers 2 courses at fret 2
-- `guitar/Fsharp/m7/1`: finger 3 covers 3 courses at fret 2
-- `guitar/Fsharp/m7/2`: finger 3 covers 3 courses at fret 14
-- `guitar/Fsharp/m_Eb/2`: finger 4 covers 2 courses at fret 14
-- `guitar/Fsharp/m_Eb/3`: finger 4 covers 3 courses at fret 14
-- `guitar/Fsharp/m_F/2`: finger 4 covers 2 courses at fret 14
-- `guitar/Fsharp/maj7/2`: finger 3 covers 3 courses at fret 6
-- `guitar/G/aug9/2`: finger 1 covers 2 courses at fret 2
-- `guitar/G/m7/1`: finger 3 covers 3 courses at fret 3
-
-### ukulele (2)
-
-- `ukulele/Eb/7sus4/1`: finger 2 covers 2 courses at fret 4
-- `ukulele/G/7sus4/3`: finger 2 covers 2 courses at fret 8
 
 ## barres/unplayed
 

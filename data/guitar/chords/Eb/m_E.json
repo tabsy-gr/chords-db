@@ -29,7 +29,7 @@
       "id": "guitar/Eb/m_E/4",
       "frets": [0, 9, 8, 8, 11, 11],
       "fingers": [0, 2, 1, 1, 4, 4],
-      "barres": [8],
+      "barres": [8, 11],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

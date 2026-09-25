@@ -15,7 +15,7 @@
       "id": "guitar/Fsharp/m_F/2",
       "frets": [13, 12, 11, 11, 14, 14],
       "fingers": [3, 2, 1, 1, 4, 4],
-      "barres": [11],
+      "barres": [11, 14],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

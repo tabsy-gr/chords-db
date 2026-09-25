@@ -7,7 +7,7 @@
       "id": "guitar/A/_Gsharp/1",
       "frets": [4, 4, 2, 2, 5, 5],
       "fingers": [2, 3, 1, 1, 4, 4],
-      "barres": [2],
+      "barres": [2, 5],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

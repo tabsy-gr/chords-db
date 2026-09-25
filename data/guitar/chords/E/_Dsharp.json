@@ -20,7 +20,7 @@
       "id": "guitar/E/_Dsharp/3",
       "frets": [11, 11, 9, 9, 12, 12],
       "fingers": [2, 3, 1, 1, 4, 4],
-      "barres": [9],
+      "barres": [9, 12],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

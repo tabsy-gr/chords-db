@@ -30,7 +30,7 @@
       "id": "guitar/D/_Csharp/4",
       "frets": [9, 9, 7, 7, 10, 10],
       "fingers": [2, 3, 1, 1, 4, 4],
-      "barres": [7],
+      "barres": [7, 10],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }

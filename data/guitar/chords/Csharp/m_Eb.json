@@ -13,7 +13,7 @@
       "id": "guitar/Csharp/m_Eb/2",
       "frets": [-1, 6, 6, 9, 9, 9],
       "fingers": [0, 1, 1, 4, 4, 4],
-      "barres": [6],
+      "barres": [6, 9],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

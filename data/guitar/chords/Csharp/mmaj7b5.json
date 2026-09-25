@@ -19,7 +19,7 @@
       "id": "guitar/Csharp/mmaj7b5/3",
       "frets": [9, 10, 10, 9, -1, 9],
       "fingers": [1, 2, 2, 1, 0, 1],
-      "barres": [9],
+      "barres": [9, 10],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

@@ -21,6 +21,7 @@
       "id": "guitar/E/aug/3",
       "frets": [-1, 7, 10, 9, 9, -1],
       "fingers": [4, 3, 2, 1, 1, 0],
+      "barres": [9],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

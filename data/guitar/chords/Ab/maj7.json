@@ -15,7 +15,7 @@
       "id": "guitar/Ab/maj7/2",
       "frets": [-1, 6, 6, 8, 8, 8],
       "fingers": [0, 1, 1, 3, 3, 3],
-      "barres": [6],
+      "barres": [6, 8],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

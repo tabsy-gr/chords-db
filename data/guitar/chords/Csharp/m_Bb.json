@@ -13,7 +13,7 @@
       "id": "guitar/Csharp/m_Bb/2",
       "frets": [6, 7, 6, 6, 9, 9],
       "fingers": [1, 2, 1, 1, 4, 4],
-      "barres": [6],
+      "barres": [6, 9],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
@@ -21,7 +21,7 @@
       "id": "guitar/Csharp/m_Bb/3",
       "frets": [6, 7, 6, 9, 9, 9],
       "fingers": [1, 2, 1, 4, 4, 4],
-      "barres": [6],
+      "barres": [6, 9],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

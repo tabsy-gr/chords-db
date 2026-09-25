@@ -7,6 +7,7 @@
       "id": "guitar/B/m7/1",
       "frets": [7, -1, 7, 7, 7, -1],
       "fingers": [2, 0, 3, 3, 3, 0],
+      "barres": [7],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

@@ -13,6 +13,7 @@
       "id": "guitar/E/m7/2",
       "frets": [12, -1, 12, 12, 12, -1],
       "fingers": [2, 0, 3, 3, 3, 0],
+      "barres": [12],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

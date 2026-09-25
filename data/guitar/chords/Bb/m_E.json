@@ -20,7 +20,7 @@
       "id": "guitar/Bb/m_E/3",
       "frets": [0, 4, 3, 3, 6, 6],
       "fingers": [0, 2, 1, 1, 4, 4],
-      "barres": [3],
+      "barres": [3, 6],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
