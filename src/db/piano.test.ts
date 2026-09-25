@@ -1,7 +1,10 @@
-/* global describe, test, expect */
-import piano from './piano';
+import { describe, expect, it, test } from 'vitest';
+import pianoDb from './piano/index.js';
+import type { PianoInstrument } from '../types';
 import instruments from '../../lib/instruments.json';
 import { notes2midi } from '../tools';
+
+const piano = pianoDb as PianoInstrument;
 
 const pianoData = instruments.piano;
 
@@ -16,7 +19,7 @@ describe('Piano Chords', () => {
 
   describe('Test Cmaj7 midi notes', () => {
     test('Should match [ 60, 64, 67, 71 ]', () => {
-      const Cmaj7 = piano.chords.C.find((chord) => chord.suffix === 'maj7');
+      const Cmaj7 = piano.chords.C.find((chord) => chord.suffix === 'maj7')!;
       const midiNotes = notes2midi(Cmaj7.positions[0].frets);
       const Cmaj7Notes = [60, 64, 67, 71];
       expect(midiNotes).toEqual(Cmaj7Notes);

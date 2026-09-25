@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
+
+      - name: Generated data is up to date
+        run: |
+          git diff --exit-code -- lib/ || {
+            echo "::error::lib/ is out of date. Run 'npm run build:data' and commit the result."
+            exit 1
+          }
+
+      - name: Test
+        run: npm run test:run

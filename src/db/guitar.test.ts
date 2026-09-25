@@ -1,7 +1,10 @@
-/* global it, describe, expect */
+import { describe, expect, it, test } from 'vitest';
 
-import guitar from './guitar';
+import guitarDb from './guitar/index.js';
+import type { FrettedInstrument } from '../types';
 import { strChord2array, chord2midi, processString } from '../tools';
+
+const guitar = guitarDb as FrettedInstrument;
 
 describe('Guitar Chords', () => {
   describe('Strings', () => {
@@ -17,7 +20,7 @@ describe('Guitar Chords', () => {
 
   describe(`Test Cmajor midi notes`, () => {
     it(`Should match [ 48, 52, 55, 60, 64 ]`, () => {
-      const Cmajor = guitar.chords.C.find((chord) => chord.suffix === 'major');
+      const Cmajor = guitar.chords.C.find((chord) => chord.suffix === 'major')!;
       const midiNotes = chord2midi(
         processString(Cmajor.positions[0].frets),
         guitar.tunings['standard']
@@ -70,14 +73,14 @@ describe('Guitar Chords', () => {
                 } position frets array should have at most 4 fingers of distance`, () =>
                   expect(
                     Math.max(...effectiveFrets) - Math.min(...effectiveFrets)
-                  ).toBeLessThanOrEqual(guitar.main.fretsOnChord));
+                  ).toBeLessThanOrEqual(guitar.main.fretsOnChord!));
               });
 
               if (position.fingers) {
                 describe(`Fingers`, () => {
                   const fingers = Array.isArray(position.fingers)
                     ? position.fingers
-                    : strChord2array(position.fingers);
+                    : strChord2array(position.fingers as string);
                   const effectiveFingers = fingers.filter((f) => f !== -1);
                   it(`The ${
                     index + 1
@@ -98,7 +101,7 @@ describe('Guitar Chords', () => {
                 describe(`Barres`, () => {
                   const barres = Array.isArray(position.barres)
                     ? position.barres
-                    : [position.barres];
+                    : [position.barres as number];
                   barres.map((barre) => {
                     it(`The position ${
                       index + 1
