@@ -2137,6 +2137,22 @@
       "issue": 15,
       "upstream": "tombatossals/chords-db#38",
       "reportedBy": "jonmach"
+    },
+    {
+      "ids": ["cavaquinho/*"],
+      "kinds": ["added"],
+      "change": "Added the cavaquinho (D G B D), from the upstream PR's dataset: 12 keys and 15 qualities.",
+      "issue": 15,
+      "upstream": "tombatossals/chords-db#43",
+      "reportedBy": "rezendehugo"
+    },
+    {
+      "ids": ["ukulele-d/*"],
+      "kinds": ["added"],
+      "change": "Added the ukulele in D tuning (A4 D4 F#4 B4), generated from the ukulele in standard tuning: every shape plays the chord a whole tone higher. The approach is from the upstream PR; applying it to the validated ukulele data keeps both instruments correct and in step.",
+      "issue": 15,
+      "upstream": "tombatossals/chords-db#32",
+      "reportedBy": "MostFrabjous"
     }
   ]
 }
