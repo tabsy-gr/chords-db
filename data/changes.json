@@ -2129,6 +2129,14 @@
       "kinds": ["removed"],
       "change": "Removed an inversion (its lowest note is not the root) that the database already has: Identical to Dm9/F position 1, where this inversion belongs.",
       "issue": 11
+    },
+    {
+      "ids": ["guitar/C/_G/5"],
+      "kinds": ["added"],
+      "change": "Added the three-string C triad xxx010 (G C E), proposed upstream under C minor; its notes are C major with G in the bass, so it is filed under C/G.",
+      "issue": 15,
+      "upstream": "tombatossals/chords-db#38",
+      "reportedBy": "jonmach"
     }
   ]
 }

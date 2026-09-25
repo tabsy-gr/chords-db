@@ -13,7 +13,7 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 
 | Change | guitar | piano | ukulele |
 | --- | ---: | ---: | ---: |
-| added | 25 | 144 | 0 |
+| added | 26 | 144 | 0 |
 | removed | 16 | 0 | 45 |
 | relabelled | 123 | 84 | 37 |
 | frets | 360 | 0 | 4 |
@@ -3551,8 +3551,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/C/_F/4` | order | `position 4` | `position 3` |
 | `guitar/C/_Fsharp/1` | order | `position 1` | `position 2` |
 | `guitar/C/_Fsharp/2` | order | `position 2` | `position 1` |
-| `guitar/C/_G/2` | order | `position 2` | `position 3` |
-| `guitar/C/_G/3` | order | `position 3` | `position 2` |
+| `guitar/C/_G/2` | order | `position 2` | `position 4` |
+| `guitar/C/_G/3` | order | `position 3` | `position 3` |
 | `guitar/C/5/1` | order | `position 1` | `position 2` |
 | `guitar/C/5/2` | order | `position 2` | `position 1` |
 | `guitar/C/69/1` | order | `position 1` | `position 2` |
@@ -4714,3 +4714,11 @@ Counts are voicings; one voicing can have several kinds of change.
 | Voicing | Change | Before | After |
 | --- | --- | --- | --- |
 | `guitar/D/m9/1` | removed | `Dm9 100210` | `—` |
+
+### 64. Added the three-string C triad xxx010 (G C E), proposed upstream under C minor; its notes are C major with G in the bass, so it is filed under C/G.
+
+[#15](https://github.com/tabsy-gr/chords-db/issues/15) · upstream [#38](https://github.com/tombatossals/chords-db/issues/38) · reported by [jonmach](https://github.com/jonmach)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/C/_G/5` | added | `—` | `C/G xxx010` |
