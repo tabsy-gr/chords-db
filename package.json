@@ -45,12 +45,14 @@
     "test": "vitest",
     "test:run": "vitest run",
     "authors": "tsx scripts/generate-authors.ts",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "validate": "tsx scripts/validate-data.ts"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
+    "tonal": "^6.4.3",
     "tsup": "^8.5.0",
     "tsx": "^4.20.0",
     "typescript": "^5.9.3",

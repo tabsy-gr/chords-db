@@ -29,6 +29,16 @@ For a full comparison with the original, see
 * Guitar F major position 2 had `x` instead of `0` in its fingers.
 
 ### Added
+* A voicing validator (`validateVoicing`, `validateChord`). It checks each
+  voicing's notes against the chord's formula, the fingering against
+  playability rules, and that voicings are ordered easiest first.
+* `rootless: true` on a voicing marks a deliberately rootless voicing (common
+  for extended chords on ukulele); the validator then requires the root to
+  be absent.
+* `data/qualities.json`: a formula for every chord quality, with a cited
+  source, the tones a voicing may omit, and the suffix spellings each
+  instrument uses. Cross-checked against tonal.
+* `reports/validation.md`: every current finding. CI checks it is up to date.
 * A round-trip test proving every upstream position is preserved, against a
   pinned copy of upstream's v0.6.0 build.
 * CI that typechecks, builds, tests, and checks that `lib/` is up to date.

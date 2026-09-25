@@ -106,14 +106,50 @@ A fretted voicing has:
   (thumb), or `0` (none).
 - `barres` (optional): the frets barred by one finger.
 - `capo` (optional): draw the barre as a capo.
+- `rootless` (optional): the voicing deliberately leaves out the root, as
+  extended chords on four-string instruments often do.
 - `sources`: where the voicing comes from.
 - `verified` (optional): who confirmed it, and when.
 
 A keyboard (piano) voicing has `notes` (note names, lowest first) and
 `degrees` (each note's chord degree, e.g. `"b7"`) instead of `frets` and
-`fingers`.
+`fingers`, and can also be `rootless`.
 
 Run `npm run format:data` after editing data files; CI checks the formatting.
+
+## Validation
+
+Every voicing is checked against two sets of rules, defined in
+`src/validate.ts`:
+
+- **Notes.** Every note is a tone of the chord, every required tone sounds,
+  the root sounds unless the voicing is marked `rootless` (and doesn't if it
+  is), and a slash chord's lowest note is its bass. What each chord contains, and
+  which tones a voicing may leave out, is in `data/qualities.json`, with a
+  source cited for every formula. The formulas are also cross-checked against
+  the [tonal](https://github.com/tonaljs/tonal) library, and every
+  disagreement is documented in `test/qualities.test.ts`.
+- **Fingering** (fretted instruments). Every fretted string has a finger; no
+  finger is on two frets; fingers don't cross; barres are declared, played by
+  one finger, and don't sit over open or lower-fretted strings; and the hand
+  stays within the instrument's fret span.
+
+Voicings should also be ordered easiest first, by a playability score.
+
+The same checks are published, so you can validate voicings of your own:
+
+```js
+import { validateVoicing } from '@tabsy-gr/chords-db';
+
+validateVoicing(guitar.instrument, { key: 'C', suffix: 'major' }, voicing);
+// { ok: false, issues: [{ rule: 'notes/foreign', severity: 'error',
+//   message: 'F not in Cmajor (1 3 5)', voicingId: '…' }] }
+```
+
+[`reports/validation.md`](./reports/validation.md) lists every current
+finding. The data inherited from the original database is still being
+corrected, so for now CI only checks that the report is up to date. Once the
+data is clean, any error will fail CI.
 
 ## Development
 
@@ -122,6 +158,7 @@ npm install
 npm run build:data   # regenerate lib/ from data/
 npm run format:data  # format data/ files
 npm run test:run     # run the test suite
+npm run validate     # regenerate reports/validation.md
 npm run typecheck
 npm run build        # regenerate lib/ and build the package
 npm run authors      # regenerate AUTHORS from git history
@@ -132,8 +169,9 @@ npm run authors      # regenerate AUTHORS from git history
 1. ~~A new data format: JSON files checked against a JSON Schema, plain number
    arrays instead of hex strings, and a stable ID and source for every voicing.~~
    Done.
-2. A validator that checks every voicing's notes against the chord's intervals
-   and that its fingering can actually be played.
+2. ~~A validator that checks every voicing's notes against the chord's
+   intervals and that its fingering can actually be played.~~ Done; see
+   [Validation](#validation).
 3. Fixes for the incorrect voicings reported against the original database.
 4. Chord-symbol aliases and a reference parser (`C°7`, `Cø`, `CΔ7`, …).
 5. Greek bouzouki: tetrachordo (C F A D) and trichordo (D A D).

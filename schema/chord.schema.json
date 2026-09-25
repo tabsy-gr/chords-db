@@ -76,6 +76,10 @@
           "items": { "type": "integer", "minimum": 1, "maximum": 24 }
         },
         "capo": { "description": "Draw the barre as a capo.", "const": true },
+        "rootless": {
+          "description": "The voicing deliberately leaves out the root, as extended chords on four-string instruments often do. The validator then requires the root to be absent instead of present.",
+          "const": true
+        },
         "sources": { "$ref": "#/$defs/sources" },
         "verified": { "$ref": "#/$defs/verified" }
       }
@@ -96,6 +100,10 @@
           "description": "The chord degree of each note (\"1\", \"b3\", \"#9\", ...).",
           "type": "array",
           "items": { "type": "string", "pattern": "^(b|#)?[0-9]{1,2}$" }
+        },
+        "rootless": {
+          "description": "The voicing deliberately leaves out the root, as extended chords on four-string instruments often do. The validator then requires the root to be absent instead of present.",
+          "const": true
         },
         "sources": { "$ref": "#/$defs/sources" },
         "verified": { "$ref": "#/$defs/verified" }

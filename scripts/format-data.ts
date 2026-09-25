@@ -5,18 +5,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { formatJson } from './format-json';
-import { loadInstruments, ROOT } from './data-source';
+import { loadInstruments, loadQualitiesFile, ROOT } from './data-source';
 
 const check = process.argv.includes('--check');
 const unformatted: string[] = [];
 
-for (const source of loadInstruments()) {
-  for (const { file, text } of [source, ...source.chords]) {
-    const formatted = formatJson(JSON.parse(text));
-    if (formatted === text) continue;
-    unformatted.push(file);
-    if (!check) fs.writeFileSync(path.join(ROOT, file), formatted);
-  }
+const files = [loadQualitiesFile(), ...loadInstruments().flatMap((s) => [s, ...s.chords])];
+
+for (const { file, text } of files) {
+  const formatted = formatJson(JSON.parse(text));
+  if (formatted === text) continue;
+  unformatted.push(file);
+  if (!check) fs.writeFileSync(path.join(ROOT, file), formatted);
 }
 
 if (check && unformatted.length) {

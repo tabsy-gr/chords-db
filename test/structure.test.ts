@@ -1,7 +1,7 @@
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { formatJson } from '../scripts/format-json';
-import { keyDir, loadInstruments, suffixSlug } from '../scripts/data-source';
+import { keyDir, loadInstruments, loadQualitiesFile, suffixSlug } from '../scripts/data-source';
 import type { FrettedVoicing, KeyboardVoicing } from '../src/types';
 
 const instruments = loadInstruments();
@@ -59,8 +59,7 @@ describe('all data', () => {
   });
 
   it('is formatted canonically (npm run format:data)', () => {
-    const unformatted = instruments
-      .flatMap((source) => [source, ...source.chords])
+    const unformatted = [loadQualitiesFile(), ...instruments.flatMap((source) => [source, ...source.chords])]
       .filter(({ text }) => formatJson(JSON.parse(text)) !== text)
       .map(({ file }) => file);
     expect(unformatted).toEqual([]);

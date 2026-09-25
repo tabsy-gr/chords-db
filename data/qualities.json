@@ -1,0 +1,671 @@
+{
+  "$schema": "../schema/qualities.schema.json",
+  "qualities": [
+    {
+      "id": "major",
+      "name": "major",
+      "intervals": ["1", "3", "5"],
+      "spellings": ["major"],
+      "source": {
+        "title": "Major chord",
+        "url": "https://en.wikipedia.org/wiki/Major_chord",
+        "quote": "In integer notation, a major triad is {0,4,7}.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "minor",
+      "name": "minor",
+      "intervals": ["1", "b3", "5"],
+      "spellings": ["minor", "m"],
+      "source": {
+        "title": "Minor chord",
+        "url": "https://en.wikipedia.org/wiki/Minor_chord",
+        "quote": "The minor triad built on C is spelled C–E♭–G.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "dim",
+      "name": "diminished",
+      "intervals": ["1", "b3", "b5"],
+      "spellings": ["dim"],
+      "source": {
+        "title": "Diminished triad",
+        "url": "https://en.wikipedia.org/wiki/Diminished_triad",
+        "quote": "three semitones between the root and third, and six semitones between the root and fifth",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "aug",
+      "name": "augmented",
+      "intervals": ["1", "3", "#5"],
+      "spellings": ["aug"],
+      "source": {
+        "title": "Augmented triad",
+        "url": "https://en.wikipedia.org/wiki/Augmented_triad",
+        "quote": "can be represented by the integer notation {0, 4, 8}.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "sus2",
+      "name": "suspended second",
+      "intervals": ["1", "2", "5"],
+      "spellings": ["sus2"],
+      "source": {
+        "title": "Suspended chord",
+        "url": "https://en.wikipedia.org/wiki/Suspended_chord",
+        "quote": "the third is replaced by a dissonant tone like a perfect fourth or a major second.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "sus4",
+      "name": "suspended fourth",
+      "intervals": ["1", "4", "5"],
+      "spellings": ["sus4", "sus"],
+      "source": {
+        "title": "Chord names and symbols (popular music)",
+        "url": "https://en.wikipedia.org/wiki/Chord_names_and_symbols_(popular_music)",
+        "quote": "When 'sus' is alone, the suspended fourth chord is implied.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "sus2sus4",
+      "name": "suspended second and fourth",
+      "intervals": ["1", "2", "4", "5"],
+      "spellings": ["sus2sus4"],
+      "source": {
+        "title": "Suspended chord",
+        "url": "https://en.wikipedia.org/wiki/Suspended_chord",
+        "derivation": "compositional",
+        "explanation": "Both suspensions sounded together: a major second and a perfect fourth over the root and perfect fifth."
+      }
+    },
+    {
+      "id": "5",
+      "name": "power chord",
+      "intervals": ["1", "5"],
+      "spellings": ["5"],
+      "source": {
+        "title": "Power chord",
+        "url": "https://en.wikipedia.org/wiki/Power_chord",
+        "quote": "the root note and the fifth",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "6",
+      "name": "major sixth",
+      "intervals": ["1", "3", "5", "6"],
+      "spellings": ["6"],
+      "source": {
+        "title": "Sixth chord",
+        "url": "https://en.wikipedia.org/wiki/Sixth_chord",
+        "quote": "the sixth scale degree is added to the major triad. On a C major chord, the added sixth is an A",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "m6",
+      "name": "minor sixth",
+      "intervals": ["1", "b3", "5", "6"],
+      "spellings": ["m6"],
+      "source": {
+        "title": "Sixth chord",
+        "url": "https://en.wikipedia.org/wiki/Sixth_chord",
+        "quote": "a minor triad with a tone added a major sixth above the root ... in C, it contains the notes C, E♭, G, and A.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "69",
+      "name": "six-nine",
+      "intervals": ["1", "3", "5", "6", "9"],
+      "omittable": ["5"],
+      "spellings": ["69"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "quote": "The 6/9 chord is a pentad with a major triad joined by a sixth and ninth above the root, but no seventh ... C6/9 is C–E–G–A–D.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "m69",
+      "name": "minor six-nine",
+      "intervals": ["1", "b3", "5", "6", "9"],
+      "omittable": ["5"],
+      "spellings": ["m69"],
+      "source": {
+        "title": "Sixth chord",
+        "url": "https://en.wikipedia.org/wiki/Sixth_chord",
+        "derivation": "compositional",
+        "explanation": "A minor sixth chord (C E♭ G A) joined by a major ninth (D), by analogy with the cited 6/9 chord; no seventh."
+      }
+    },
+    {
+      "id": "7",
+      "name": "dominant seventh",
+      "intervals": ["1", "3", "5", "b7"],
+      "omittable": ["5"],
+      "spellings": ["7"],
+      "source": {
+        "title": "Dominant seventh chord",
+        "url": "https://en.wikipedia.org/wiki/Dominant_seventh_chord",
+        "quote": "can be represented by the integer notation {0, 4, 7, 10}",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "maj7",
+      "name": "major seventh",
+      "intervals": ["1", "3", "5", "7"],
+      "omittable": ["5"],
+      "spellings": ["maj7"],
+      "source": {
+        "title": "Major seventh chord",
+        "url": "https://en.wikipedia.org/wiki/Major_seventh_chord",
+        "quote": "integer notation {0, 4, 7, 11}",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "m7",
+      "name": "minor seventh",
+      "intervals": ["1", "b3", "5", "b7"],
+      "omittable": ["5"],
+      "spellings": ["m7"],
+      "source": {
+        "title": "Minor seventh chord",
+        "url": "https://en.wikipedia.org/wiki/Minor_seventh_chord",
+        "quote": "a root note, a minor third, a perfect fifth, and a minor seventh (1, ♭3, 5, ♭7)",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "m7b5",
+      "name": "half-diminished seventh",
+      "intervals": ["1", "b3", "b5", "b7"],
+      "spellings": ["m7b5"],
+      "source": {
+        "title": "Half-diminished seventh chord",
+        "url": "https://en.wikipedia.org/wiki/Half-diminished_seventh_chord",
+        "quote": "a root note, together with a minor third, a diminished fifth, and a minor seventh (1, ♭3, ♭5, ♭7)",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "dim7",
+      "name": "diminished seventh",
+      "intervals": ["1", "b3", "b5", "bb7"],
+      "spellings": ["dim7"],
+      "source": {
+        "title": "Diminished seventh chord",
+        "url": "https://en.wikipedia.org/wiki/Diminished_seventh_chord",
+        "quote": "a minor third, a diminished fifth, and a diminished seventh above the root: (1, ♭3, ♭5, 𝄫7)",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "mmaj7",
+      "name": "minor-major seventh",
+      "intervals": ["1", "b3", "5", "7"],
+      "omittable": ["5"],
+      "spellings": ["mmaj7"],
+      "source": {
+        "title": "Minor major seventh chord",
+        "url": "https://en.wikipedia.org/wiki/Minor_major_seventh_chord",
+        "quote": "a root, minor third, perfect fifth, and major seventh (1, ♭3, 5, and 7)",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "mmaj7b5",
+      "name": "minor-major seventh flat five",
+      "intervals": ["1", "b3", "b5", "7"],
+      "spellings": ["mmaj7b5"],
+      "source": {
+        "title": "Minor major seventh chord",
+        "url": "https://en.wikipedia.org/wiki/Minor_major_seventh_chord",
+        "derivation": "compositional",
+        "explanation": "A minor-major seventh chord with its fifth lowered to a diminished fifth."
+      }
+    },
+    {
+      "id": "7b5",
+      "name": "dominant seventh flat five",
+      "intervals": ["1", "3", "b5", "b7"],
+      "spellings": ["7b5"],
+      "source": {
+        "title": "Dominant seventh chord",
+        "url": "https://en.wikipedia.org/wiki/Dominant_seventh_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant seventh chord with its perfect fifth lowered to a diminished fifth."
+      }
+    },
+    {
+      "id": "7#5",
+      "name": "augmented seventh",
+      "intervals": ["1", "3", "#5", "b7"],
+      "spellings": ["aug7"],
+      "source": {
+        "title": "Dominant seventh chord",
+        "url": "https://en.wikipedia.org/wiki/Dominant_seventh_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant seventh chord with its perfect fifth raised to an augmented fifth."
+      }
+    },
+    {
+      "id": "maj7b5",
+      "name": "major seventh flat five",
+      "intervals": ["1", "3", "b5", "7"],
+      "spellings": ["maj7b5"],
+      "source": {
+        "title": "Major seventh chord",
+        "url": "https://en.wikipedia.org/wiki/Major_seventh_chord",
+        "derivation": "compositional",
+        "explanation": "A major seventh chord with a diminished fifth."
+      }
+    },
+    {
+      "id": "maj7#5",
+      "name": "major seventh sharp five",
+      "intervals": ["1", "3", "#5", "7"],
+      "spellings": ["maj7#5", "maj7sharp5"],
+      "source": {
+        "title": "Major seventh chord",
+        "url": "https://en.wikipedia.org/wiki/Major_seventh_chord",
+        "derivation": "compositional",
+        "explanation": "A major seventh chord with an augmented fifth."
+      }
+    },
+    {
+      "id": "7sus4",
+      "name": "dominant seventh suspended fourth",
+      "intervals": ["1", "4", "5", "b7"],
+      "omittable": ["5"],
+      "spellings": ["7sus4"],
+      "source": {
+        "title": "Suspended chord",
+        "url": "https://en.wikipedia.org/wiki/Suspended_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant seventh chord with its third replaced by a perfect fourth."
+      }
+    },
+    {
+      "id": "maj7sus2",
+      "name": "major seventh suspended second",
+      "intervals": ["1", "2", "5", "7"],
+      "omittable": ["5"],
+      "spellings": ["maj7sus2"],
+      "source": {
+        "title": "Suspended chord",
+        "url": "https://en.wikipedia.org/wiki/Suspended_chord",
+        "derivation": "compositional",
+        "explanation": "A major seventh chord with its third replaced by a major second."
+      }
+    },
+    {
+      "id": "9",
+      "name": "dominant ninth",
+      "intervals": ["1", "3", "5", "b7", "9"],
+      "omittable": ["5"],
+      "spellings": ["9"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "quote": "a dominant seventh chord plus a major ninth above the root ... C9 ... C–E–G–B♭–D.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "maj9",
+      "name": "major ninth",
+      "intervals": ["1", "3", "5", "7", "9"],
+      "omittable": ["5"],
+      "spellings": ["maj9"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "quote": "a C major ninth chord (Cmaj9) consists of the notes C–E–G–B–D.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "m9",
+      "name": "minor ninth",
+      "intervals": ["1", "b3", "5", "b7", "9"],
+      "omittable": ["5"],
+      "spellings": ["m9"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "quote": "a C minor ninth chord (Cm9) consists of the notes C–E♭–G–B♭–D.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "mmaj9",
+      "name": "minor-major ninth",
+      "intervals": ["1", "b3", "5", "7", "9"],
+      "omittable": ["5"],
+      "spellings": ["mmaj9"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "derivation": "compositional",
+        "explanation": "A minor-major seventh chord plus a major ninth."
+      }
+    },
+    {
+      "id": "m9b5",
+      "name": "half-diminished ninth",
+      "intervals": ["1", "b3", "b5", "b7", "9"],
+      "spellings": ["m9b5"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "derivation": "compositional",
+        "explanation": "A half-diminished seventh chord plus a major ninth."
+      }
+    },
+    {
+      "id": "9b5",
+      "name": "dominant ninth flat five",
+      "intervals": ["1", "3", "b5", "b7", "9"],
+      "spellings": ["9b5"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant ninth chord with a diminished fifth."
+      }
+    },
+    {
+      "id": "9#5",
+      "name": "augmented ninth",
+      "intervals": ["1", "3", "#5", "b7", "9"],
+      "spellings": ["aug9"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant ninth chord with an augmented fifth."
+      }
+    },
+    {
+      "id": "7b9",
+      "name": "dominant seventh flat nine",
+      "intervals": ["1", "3", "5", "b7", "b9"],
+      "omittable": ["5"],
+      "spellings": ["7b9"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "quote": "a C dominant minor ninth chord (C7♭9) consists of the notes C–E–G–B♭–D♭.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "7#9",
+      "name": "dominant seventh sharp nine",
+      "intervals": ["1", "3", "5", "b7", "#9"],
+      "omittable": ["5"],
+      "spellings": ["7#9", "7sharp9"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "quote": "a C dominant seventh sharp ninth chord (C7♯9) consists of the notes C–E–G–B♭–D♯.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "7#5b9",
+      "name": "dominant seventh sharp five flat nine",
+      "intervals": ["1", "3", "#5", "b7", "b9"],
+      "spellings": ["7b9#5", "7sharp5b9"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant seventh chord with an augmented fifth and a minor ninth."
+      }
+    },
+    {
+      "id": "7b5b9",
+      "name": "dominant seventh flat five flat nine",
+      "intervals": ["1", "3", "b5", "b7", "b9"],
+      "spellings": ["7b5b9"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant seventh chord with a diminished fifth and a minor ninth."
+      }
+    },
+    {
+      "id": "7b5#9",
+      "name": "dominant seventh flat five sharp nine",
+      "intervals": ["1", "3", "b5", "b7", "#9"],
+      "spellings": ["7b5sharp9"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant seventh chord with a diminished fifth and an augmented ninth."
+      }
+    },
+    {
+      "id": "7#5#9",
+      "name": "dominant seventh sharp five sharp nine",
+      "intervals": ["1", "3", "#5", "b7", "#9"],
+      "spellings": ["7sharp5sharp9"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant seventh chord with an augmented fifth and an augmented ninth."
+      }
+    },
+    {
+      "id": "7alt",
+      "name": "altered dominant",
+      "intervals": ["1", "3", "b7", "b5", "#5", "b9", "#9"],
+      "omittable": ["b5", "#5", "b9", "#9"],
+      "atLeastOneOf": ["b5", "#5", "b9", "#9"],
+      "spellings": ["alt"],
+      "source": {
+        "title": "Altered chord",
+        "url": "https://en.wikipedia.org/wiki/Altered_chord",
+        "quote": "the chord has the root, major third, minor seventh, and one or more altered tones ... the four alterations that are commonly used are the ♭5, ♯5, ♭9 and ♯9 ... does not have the natural fifth, ninth, eleventh, or thirteenth",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "add9",
+      "name": "added ninth",
+      "intervals": ["1", "3", "5", "9"],
+      "omittable": ["5"],
+      "spellings": ["add9"],
+      "source": {
+        "title": "Added tone chord",
+        "url": "https://en.wikipedia.org/wiki/Added_tone_chord",
+        "quote": "Cadd9 consists of C, E, G and D ... the ninth without including the seventh",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "madd9",
+      "name": "minor added ninth",
+      "intervals": ["1", "b3", "5", "9"],
+      "omittable": ["5"],
+      "spellings": ["madd9"],
+      "source": {
+        "title": "Ninth chord",
+        "url": "https://en.wikipedia.org/wiki/Ninth_chord",
+        "quote": "Cmadd9 consists of C, E flat, G, and D.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "add11",
+      "name": "added eleventh",
+      "intervals": ["1", "3", "5", "11"],
+      "omittable": ["5"],
+      "spellings": ["add11"],
+      "source": {
+        "title": "Added tone chord",
+        "url": "https://en.wikipedia.org/wiki/Added_tone_chord",
+        "quote": "an added fourth chord ... a perfect fourth above the root",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "11",
+      "name": "dominant eleventh",
+      "intervals": ["1", "3", "5", "b7", "9", "11"],
+      "omittable": ["3", "5", "9"],
+      "spellings": ["11"],
+      "source": {
+        "title": "Eleventh chord",
+        "url": "https://en.wikipedia.org/wiki/Eleventh_chord",
+        "quote": "C11 ... C–E–G–B♭–D–F",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "maj11",
+      "name": "major eleventh",
+      "intervals": ["1", "3", "5", "7", "9", "11"],
+      "omittable": ["3", "5", "9"],
+      "spellings": ["maj11"],
+      "source": {
+        "title": "Eleventh chord",
+        "url": "https://en.wikipedia.org/wiki/Eleventh_chord",
+        "quote": "Cmaj11 ... C–E–G–B–D–F",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "m11",
+      "name": "minor eleventh",
+      "intervals": ["1", "b3", "5", "b7", "9", "11"],
+      "omittable": ["5", "9"],
+      "spellings": ["m11"],
+      "source": {
+        "title": "Eleventh chord",
+        "url": "https://en.wikipedia.org/wiki/Eleventh_chord",
+        "quote": "Cm11 ... C–E♭–G–B♭–D–F",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "mmaj11",
+      "name": "minor-major eleventh",
+      "intervals": ["1", "b3", "5", "7", "9", "11"],
+      "omittable": ["5", "9"],
+      "spellings": ["mmaj11"],
+      "source": {
+        "title": "Eleventh chord",
+        "url": "https://en.wikipedia.org/wiki/Eleventh_chord",
+        "derivation": "compositional",
+        "explanation": "A minor-major seventh chord extended by the major ninth and perfect eleventh, by analogy with the cited m11 and maj11."
+      }
+    },
+    {
+      "id": "9#11",
+      "name": "dominant ninth sharp eleven",
+      "intervals": ["1", "3", "5", "b7", "9", "#11"],
+      "omittable": ["5"],
+      "spellings": ["9#11", "9sharp11"],
+      "source": {
+        "title": "Eleventh chord",
+        "url": "https://en.wikipedia.org/wiki/Eleventh_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant ninth chord plus an augmented eleventh."
+      }
+    },
+    {
+      "id": "13",
+      "name": "dominant thirteenth",
+      "intervals": ["1", "3", "5", "b7", "9", "11", "13"],
+      "omittable": ["5", "9", "11"],
+      "spellings": ["13"],
+      "source": {
+        "title": "Chord names and symbols (popular music)",
+        "url": "https://en.wikipedia.org/wiki/Chord_names_and_symbols_(popular_music)",
+        "quote": "C13 implies that 3, 5, 7, 9, and 11 are also there.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "maj13",
+      "name": "major thirteenth",
+      "intervals": ["1", "3", "5", "7", "9", "11", "13"],
+      "omittable": ["5", "9", "11"],
+      "spellings": ["maj13"],
+      "source": {
+        "title": "Chord names and symbols (popular music)",
+        "url": "https://en.wikipedia.org/wiki/Chord_names_and_symbols_(popular_music)",
+        "quote": "The convention is that using an odd number (7, 9, 11, or 13) implies that all the other lower odd numbers are also included.",
+        "derivation": "cited"
+      }
+    },
+    {
+      "id": "13b9",
+      "name": "dominant thirteenth flat nine",
+      "intervals": ["1", "3", "5", "b7", "b9", "11", "13"],
+      "omittable": ["5", "11"],
+      "spellings": ["13b9"],
+      "source": {
+        "title": "Thirteenth chord",
+        "url": "https://en.wikipedia.org/wiki/Thirteenth_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant thirteenth chord with a minor ninth."
+      }
+    },
+    {
+      "id": "13b5b9",
+      "name": "dominant thirteenth flat five flat nine",
+      "intervals": ["1", "3", "b5", "b7", "b9", "11", "13"],
+      "omittable": ["11"],
+      "spellings": ["13b5b9"],
+      "source": {
+        "title": "Thirteenth chord",
+        "url": "https://en.wikipedia.org/wiki/Thirteenth_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant thirteenth chord with a diminished fifth and a minor ninth."
+      }
+    },
+    {
+      "id": "7b9b13",
+      "name": "dominant seventh flat nine flat thirteen",
+      "intervals": ["1", "3", "5", "b7", "b9", "b13"],
+      "omittable": ["5"],
+      "spellings": ["b13b9"],
+      "source": {
+        "title": "Thirteenth chord",
+        "url": "https://en.wikipedia.org/wiki/Thirteenth_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant seventh chord with a minor ninth and a minor thirteenth."
+      }
+    },
+    {
+      "id": "7#9b13",
+      "name": "dominant seventh sharp nine flat thirteen",
+      "intervals": ["1", "3", "5", "b7", "#9", "b13"],
+      "omittable": ["5"],
+      "spellings": ["b13#9"],
+      "source": {
+        "title": "Thirteenth chord",
+        "url": "https://en.wikipedia.org/wiki/Thirteenth_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant seventh chord with an augmented ninth and a minor thirteenth."
+      }
+    }
+  ]
+}
