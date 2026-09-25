@@ -99,3 +99,29 @@ export type InstrumentIndex = Record<
   string,
   { name: string; kind: Instrument['kind']; chordCount: number; voicingCount: number }
 >;
+
+/** A chord degree, as used in data/qualities.json. */
+export type Interval =
+  | '1' | 'b2' | '2' | 'b3' | '3' | '4' | '#4' | 'b5' | '5' | '#5' | 'b6'
+  | '6' | 'bb7' | 'b7' | '7' | 'b9' | '9' | '#9' | '11' | '#11' | 'b13' | '13';
+
+/** A chord quality from data/qualities.json. */
+export interface Quality {
+  id: string;
+  name: string;
+  /** Every tone of the chord, root first. */
+  intervals: Interval[];
+  /** Tones a voicing may leave out; every other tone is required. */
+  omittable?: Interval[];
+  /** A voicing must contain at least one of these. */
+  atLeastOneOf?: Interval[];
+  /** Suffixes instruments use for this quality. */
+  spellings: string[];
+  source: {
+    title: string;
+    url: string;
+    derivation: 'cited' | 'compositional';
+    quote?: string;
+    explanation?: string;
+  };
+}

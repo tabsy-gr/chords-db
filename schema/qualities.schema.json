@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/tabsy-gr/chords-db/schema/qualities.schema.json",
+  "title": "Chord qualities",
+  "description": "What each chord quality contains, which of its tones a voicing may leave out, and how instruments spell its suffix.",
+  "type": "object",
+  "required": ["qualities"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "qualities": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/quality" }
+    }
+  },
+  "$defs": {
+    "interval": {
+      "description": "A chord degree: 1, b2, 2, b3, 3, 4, #4, b5, 5, #5, b6, 6, bb7, b7, 7, b9, 9, #9, 11, #11, b13, 13.",
+      "enum": ["1", "b2", "2", "b3", "3", "4", "#4", "b5", "5", "#5", "b6", "6", "bb7", "b7", "7", "b9", "9", "#9", "11", "#11", "b13", "13"]
+    },
+    "quality": {
+      "type": "object",
+      "required": ["id", "name", "intervals", "spellings", "source"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "intervals": {
+          "description": "Every tone of the chord, root first.",
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/interval" }
+        },
+        "omittable": {
+          "description": "Tones a voicing may leave out. Every other tone is required.",
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/interval" }
+        },
+        "atLeastOneOf": {
+          "description": "A voicing must contain at least one of these tones.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/interval" }
+        },
+        "spellings": {
+          "description": "The suffixes instruments use for this quality, e.g. 'minor' and 'm'.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "source": {
+          "type": "object",
+          "required": ["title", "url", "derivation"],
+          "additionalProperties": false,
+          "properties": {
+            "title": { "type": "string" },
+            "url": { "type": "string", "format": "uri" },
+            "derivation": {
+              "description": "cited: the formula is stated by the source (quote required). compositional: it is built from cited formulas (explanation required).",
+              "enum": ["cited", "compositional"]
+            },
+            "quote": { "type": "string" },
+            "explanation": { "type": "string" }
+          },
+          "allOf": [
+            {
+              "if": { "properties": { "derivation": { "const": "cited" } } },
+              "then": { "required": ["quote"], "not": { "required": ["explanation"] } }
+            },
+            {
+              "if": { "properties": { "derivation": { "const": "compositional" } } },
+              "then": { "required": ["explanation"], "not": { "required": ["quote"] } }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

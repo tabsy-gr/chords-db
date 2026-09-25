@@ -14,6 +14,13 @@ export const keyDir = (key: string) => key.replace('#', 'sharp');
 /** File name (without .json) for a suffix: '#' → 'sharp', '/' → '_'. */
 export const suffixSlug = (suffix: string) => suffix.replace(/#/g, 'sharp').replace(/\//g, '_');
 
+/** data/qualities.json, raw, for formatting and schema checks. */
+export const QUALITIES_FILE = path.join(DATA_DIR, 'qualities.json');
+export const loadQualitiesFile = () => ({
+  file: path.relative(ROOT, QUALITIES_FILE),
+  text: fs.readFileSync(QUALITIES_FILE, 'utf8'),
+});
+
 export interface ChordFile {
   /** Path relative to the repository root. */
   file: string;
