@@ -4,17 +4,17 @@
   "suffix": "m/Ab",
   "voicings": [
     {
+      "id": "guitar/Csharp/m_Ab/2",
+      "frets": [-1, -1, 6, 6, 5, 4],
+      "fingers": [0, 0, 3, 4, 2, 1],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
       "id": "guitar/Csharp/m_Ab/1",
       "frets": [4, 4, 6, 6, 5, 4],
       "fingers": [1, 1, 3, 4, 2, 1],
       "barres": [4],
       "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
-      "id": "guitar/Csharp/m_Ab/2",
-      "frets": [-1, -1, 6, 6, 5, 4],
-      "fingers": [0, 0, 3, 4, 2, 1],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

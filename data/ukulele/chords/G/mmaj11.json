@@ -4,6 +4,13 @@
   "suffix": "mmaj11",
   "voicings": [
     {
+      "id": "ukulele/G/mmaj11/2",
+      "frets": [3, 0, 2, 0],
+      "fingers": [3, 0, 2, 0],
+      "rootless": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
       "id": "ukulele/G/mmaj11/1",
       "frets": [2, 0, 2, 1],
       "fingers": [2, 0, 3, 1],
@@ -11,9 +18,9 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "ukulele/G/mmaj11/2",
-      "frets": [3, 0, 2, 0],
-      "fingers": [3, 0, 2, 0],
+      "id": "ukulele/G/mmaj11/4",
+      "frets": [5, 6, 6, 0],
+      "fingers": [1, 2, 3, 0],
       "rootless": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
@@ -23,13 +30,6 @@
       "fingers": [1, 4, 3, 1],
       "barres": [3],
       "capo": true,
-      "rootless": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
-      "id": "ukulele/G/mmaj11/4",
-      "frets": [5, 6, 6, 0],
-      "fingers": [1, 2, 3, 0],
       "rootless": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }

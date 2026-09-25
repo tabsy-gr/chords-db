@@ -4,16 +4,16 @@
   "suffix": "m69",
   "voicings": [
     {
-      "id": "ukulele/G/m69/1",
-      "frets": [2, 2, 0, 1],
-      "fingers": [2, 3, 0, 1],
+      "id": "ukulele/G/m69/2",
+      "frets": [3, 2, 0, 0],
+      "fingers": [3, 2, 0, 0],
       "rootless": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "ukulele/G/m69/2",
-      "frets": [3, 2, 0, 0],
-      "fingers": [3, 2, 0, 0],
+      "id": "ukulele/G/m69/1",
+      "frets": [2, 2, 0, 1],
+      "fingers": [2, 3, 0, 1],
       "rootless": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

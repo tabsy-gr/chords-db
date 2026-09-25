@@ -11,16 +11,16 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "ukulele/A/mmaj9/2",
-      "frets": [5, 4, 4, 2],
-      "fingers": [4, 2, 3, 1],
+      "id": "ukulele/A/mmaj9/3",
+      "frets": [4, 4, 4, 3],
+      "fingers": [2, 3, 4, 1],
       "rootless": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "ukulele/A/mmaj9/3",
-      "frets": [4, 4, 4, 3],
-      "fingers": [2, 3, 4, 1],
+      "id": "ukulele/A/mmaj9/2",
+      "frets": [5, 4, 4, 2],
+      "fingers": [4, 2, 3, 1],
       "rootless": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

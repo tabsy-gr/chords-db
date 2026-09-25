@@ -18,18 +18,18 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
+      "id": "guitar/F/m_Ab/4",
+      "frets": [-1, 11, 10, 13, 13, 13],
+      "fingers": [0, 2, 1, 4, 4, 4],
+      "barres": [13],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
       "id": "guitar/F/m_Ab/3",
       "frets": [-1, 11, 10, 10, 13, 13],
       "fingers": [0, 2, 1, 1, 4, 4],
       "barres": [10, 13],
       "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
-      "id": "guitar/F/m_Ab/4",
-      "frets": [-1, 11, 10, 13, 13, 13],
-      "fingers": [0, 2, 1, 4, 4, 4],
-      "barres": [13],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

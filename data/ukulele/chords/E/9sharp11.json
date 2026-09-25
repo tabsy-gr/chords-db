@@ -4,18 +4,18 @@
   "suffix": "9#11",
   "voicings": [
     {
+      "id": "ukulele/E/9sharp11/2",
+      "frets": [3, 6, 4, 5],
+      "fingers": [1, 4, 2, 3],
+      "rootless": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
       "id": "ukulele/E/9sharp11/1",
       "frets": [1, 2, 2, 1],
       "fingers": [1, 2, 2, 1],
       "barres": [1, 2],
       "capo": true,
-      "rootless": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
-      "id": "ukulele/E/9sharp11/2",
-      "frets": [3, 6, 4, 5],
-      "fingers": [1, 4, 2, 3],
       "rootless": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

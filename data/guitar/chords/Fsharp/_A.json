@@ -17,16 +17,16 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
+      "id": "guitar/Fsharp/_A/4",
+      "frets": [-1, 0, 8, 6, 7, 9],
+      "fingers": [0, 0, 3, 1, 2, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
       "id": "guitar/Fsharp/_A/3",
       "frets": [-1, 0, 8, 6, 7, 6],
       "fingers": [0, 0, 3, 1, 2, 1],
       "barres": [6],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
-      "id": "guitar/Fsharp/_A/4",
-      "frets": [-1, 0, 8, 6, 7, 9],
-      "fingers": [0, 0, 3, 1, 2, 4],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

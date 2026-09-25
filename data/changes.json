@@ -1886,6 +1886,14 @@
       "ids": ["piano/*"],
       "change": "Regenerated every piano voicing from the cited formulas in data/qualities.json (root position, notes spelled by letter, with octaves), replacing data from a source with no known license. This fixes inconsistent spellings (E♭m was D# F# A#), gives each note an octave (C13's 9th now sits above its 7th), corrects degree labels (Cdim7's ♭♭7 was labelled 6), uses the same suffix spelling as the other instruments (minor, 7#9), and adds the qualities piano lacked, including m13.",
       "issue": 12
+    },
+    {
+      "ids": ["*"],
+      "kinds": ["order"],
+      "change": "Reordered every chord's voicings easiest first, by the playability score in src/playability.ts, so the first voicing is the one a player reaches for (e.g. C major starts with x32010). Voicing ids are unchanged.",
+      "issue": 10,
+      "upstream": "tombatossals/chords-db#2",
+      "reportedBy": "T-vK"
     }
   ]
 }

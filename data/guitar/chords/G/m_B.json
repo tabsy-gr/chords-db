@@ -17,17 +17,17 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "guitar/G/m_B/3",
-      "frets": [-1, -1, 9, 12, 11, 10],
-      "fingers": [0, 0, 1, 4, 3, 2],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
       "id": "guitar/G/m_B/4",
       "frets": [7, 10, 8, 7, -1, -1],
       "fingers": [1, 4, 2, 1, 0, 0],
       "barres": [7],
       "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/G/m_B/3",
+      "frets": [-1, -1, 9, 12, 11, 10],
+      "fingers": [0, 0, 1, 4, 3, 2],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

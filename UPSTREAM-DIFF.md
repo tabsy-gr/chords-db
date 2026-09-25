@@ -23,6 +23,7 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 | rootless | 13 | 0 | 988 |
 | notes | 0 | 528 | 0 |
 | degrees | 0 | 36 | 0 |
+| order | 793 | 0 | 179 |
 
 Counts are voicings; one voicing can have several kinds of change.
 
@@ -1501,6 +1502,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | --- | --- | --- | --- |
 | `guitar/Bb/m7/1` | barres | `—` | `6` |
 | `guitar/Bb/m7/1` | frets | `5x555x` | `6x666x` |
+| `guitar/Bb/m7/1` | order | `position 1` | `position 4` |
 
 ### 15. Muted the open high E string, which is not in Baug.
 
@@ -1842,6 +1844,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/A/69/3` | capo | `true` | `false` |
 | `guitar/A/69/3` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
 | `guitar/A/69/3` | frets | `x77677` | `xx7677` |
+| `guitar/A/69/3` | order | `position 3` | `position 2` |
 | `guitar/A/m6/4` | fingers | `0 1 1 3 1 2` | `0 0 1 3 1 2` |
 | `guitar/A/m6/4` | frets | `x77978` | `xx7978` |
 | `guitar/A/m7/6` | barres | `7` | `—` |
@@ -1862,6 +1865,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/A/sus4/4` | capo | `true` | `false` |
 | `guitar/A/sus4/4` | fingers | `0 1 1 2 3 4` | `0 0 1 2 3 4` |
 | `guitar/A/sus4/4` | frets | `x779aa` | `xx79aa` |
+| `guitar/A/sus4/4` | order | `position 4` | `position 3` |
 | `guitar/Ab/6/3` | fingers | `0 1 1 3 1 4` | `0 0 1 3 1 4` |
 | `guitar/Ab/6/3` | frets | `x66868` | `xx6868` |
 | `guitar/Ab/7/1` | fingers | `0 0 1 1 1 2` | `0 0 0 1 1 2` |
@@ -1905,6 +1909,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Ab/major/3` | capo | `true` | `false` |
 | `guitar/Ab/major/3` | fingers | `0 1 1 2 4 3` | `0 0 1 2 4 3` |
 | `guitar/Ab/major/3` | frets | `x66898` | `xx6898` |
+| `guitar/Ab/major/3` | order | `position 3` | `position 2` |
 | `guitar/Ab/major/4` | fingers | `1 4 3 1 2 1` | `0 4 3 1 2 1` |
 | `guitar/Ab/major/4` | frets | `8ba898` | `xba898` |
 | `guitar/Ab/minor/4` | fingers | `1 1 3 4 2 1` | `0 1 3 4 2 1` |
@@ -1923,15 +1928,18 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Ab/sus4/3` | capo | `true` | `false` |
 | `guitar/Ab/sus4/3` | fingers | `0 1 1 2 3 4` | `0 0 1 2 3 4` |
 | `guitar/Ab/sus4/3` | frets | `x66899` | `xx6899` |
+| `guitar/Ab/sus4/3` | order | `position 3` | `position 2` |
 | `guitar/Ab/sus4/4` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
 | `guitar/Ab/sus4/4` | frets | `bbddeb` | `xbddeb` |
 | `guitar/B/11/2` | fingers | `1 1 1 1 3 1` | `0 1 1 1 3 1` |
 | `guitar/B/11/2` | frets | `222242` | `x22242` |
 | `guitar/B/13/2` | fingers | `1 1 1 1 3 4` | `0 1 1 1 3 4` |
 | `guitar/B/13/2` | frets | `222244` | `x22244` |
+| `guitar/B/13/2` | order | `position 2` | `position 1` |
 | `guitar/B/69/3` | barres | `9` | `—` |
 | `guitar/B/69/3` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
 | `guitar/B/69/3` | frets | `x99899` | `xx9899` |
+| `guitar/B/69/3` | order | `position 3` | `position 2` |
 | `guitar/B/7/2` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
 | `guitar/B/7/2` | frets | `224242` | `x24242` |
 | `guitar/B/7/3` | fingers | `0 0 1 1 1 2` | `0 0 0 1 1 2` |
@@ -1947,8 +1955,10 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/B/m6/1` | frets | `220102` | `x20102` |
 | `guitar/B/m7/2` | fingers | `1 1 3 1 2 1` | `0 1 3 1 2 1` |
 | `guitar/B/m7/2` | frets | `224232` | `x24232` |
+| `guitar/B/m7/2` | order | `position 2` | `position 1` |
 | `guitar/B/m7/3` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
 | `guitar/B/m7/3` | frets | `xx4435` | `xxx435` |
+| `guitar/B/m7/3` | order | `position 3` | `position 2` |
 | `guitar/B/m7/5` | barres | `9` | `—` |
 | `guitar/B/m7/5` | capo | `true` | `false` |
 | `guitar/B/m7/5` | fingers | `0 1 1 4 2 3` | `0 0 1 4 2 3` |
@@ -1973,6 +1983,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/B/major/4` | capo | `true` | `false` |
 | `guitar/B/major/4` | fingers | `0 1 1 2 4 3` | `0 0 1 2 4 3` |
 | `guitar/B/major/4` | frets | `x99bcb` | `xx9bcb` |
+| `guitar/B/major/4` | order | `position 4` | `position 3` |
 | `guitar/B/minor/1` | fingers | `1 1 3 4 2 1` | `0 1 3 4 2 1` |
 | `guitar/B/minor/1` | frets | `224432` | `x24432` |
 | `guitar/B/mmaj11/2` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
@@ -1995,6 +2006,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Bb/69/3` | barres | `8` | `—` |
 | `guitar/Bb/69/3` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
 | `guitar/Bb/69/3` | frets | `x88788` | `xx8788` |
+| `guitar/Bb/69/3` | order | `position 3` | `position 2` |
 | `guitar/Bb/7/3` | barres | `8` | `—` |
 | `guitar/Bb/7/3` | capo | `true` | `false` |
 | `guitar/Bb/7/3` | fingers | `0 1 1 3 2 4` | `0 0 1 3 2 4` |
@@ -2004,6 +2016,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Bb/7sus4/2` | frets | `xx3344` | `xxx344` |
 | `guitar/Bb/m7/3` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
 | `guitar/Bb/m7/3` | frets | `xx3324` | `xxx324` |
+| `guitar/Bb/m7/3` | order | `position 3` | `position 1` |
 | `guitar/Bb/m7/5` | barres | `8` | `—` |
 | `guitar/Bb/m7/5` | capo | `true` | `false` |
 | `guitar/Bb/m7/5` | fingers | `0 1 1 4 2 3` | `0 0 1 4 2 3` |
@@ -2022,6 +2035,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Bb/major/4` | capo | `true` | `false` |
 | `guitar/Bb/major/4` | fingers | `0 1 1 2 4 3` | `0 0 1 2 4 3` |
 | `guitar/Bb/major/4` | frets | `x88aba` | `xx8aba` |
+| `guitar/Bb/major/4` | order | `position 4` | `position 3` |
 | `guitar/Bb/mmaj11/3` | fingers | `0 1 1 1 3 2` | `0 0 1 1 3 2` |
 | `guitar/Bb/mmaj11/3` | frets | `x888a9` | `xx88a9` |
 | `guitar/Bb/mmaj7/3` | barres | `8` | `—` |
@@ -2034,11 +2048,13 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Bb/sus4/4` | capo | `true` | `false` |
 | `guitar/Bb/sus4/4` | fingers | `0 1 1 2 3 4` | `0 0 1 2 3 4` |
 | `guitar/Bb/sus4/4` | frets | `x88abb` | `xx8abb` |
+| `guitar/Bb/sus4/4` | order | `position 4` | `position 3` |
 | `guitar/C/13/2` | fingers | `1 1 1 1 3 4` | `0 1 1 1 3 4` |
 | `guitar/C/13/2` | frets | `333355` | `x33355` |
 | `guitar/C/69/4` | barres | `10` | `—` |
 | `guitar/C/69/4` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
 | `guitar/C/69/4` | frets | `xaa9aa` | `xxa9aa` |
+| `guitar/C/69/4` | order | `position 4` | `position 3` |
 | `guitar/C/7/3` | fingers | `0 0 1 1 1 2` | `0 0 0 1 1 2` |
 | `guitar/C/7/3` | frets | `xx5556` | `xxx556` |
 | `guitar/C/7sus4/2` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
@@ -2056,6 +2072,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/C/m7/3` | frets | `335343` | `x35343` |
 | `guitar/C/m7/4` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
 | `guitar/C/m7/4` | frets | `xx5546` | `xxx546` |
+| `guitar/C/m7/4` | order | `position 4` | `position 2` |
 | `guitar/C/maj7/1` | fingers | `2 3 1 0 0 0` | `0 3 1 0 0 0` |
 | `guitar/C/maj7/1` | frets | `332000` | `x32000` |
 | `guitar/C/maj7/2` | fingers | `1 1 3 2 4 1` | `0 1 3 2 4 1` |
@@ -2086,6 +2103,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Csharp/m69/4` | frets | `xbb9bb` | `xxb9bb` |
 | `guitar/Csharp/m7/3` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
 | `guitar/Csharp/m7/3` | frets | `xx6657` | `xxx657` |
+| `guitar/Csharp/m7/3` | order | `position 3` | `position 1` |
 | `guitar/Csharp/maj11/2` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
 | `guitar/Csharp/maj11/2` | frets | `444564` | `x44564` |
 | `guitar/Csharp/maj7/2` | fingers | `1 1 3 2 4 1` | `0 1 3 2 4 1` |
@@ -2116,6 +2134,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/D/69/4` | barres | `12` | `—` |
 | `guitar/D/69/4` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
 | `guitar/D/69/4` | frets | `xccbcc` | `xxcbcc` |
+| `guitar/D/69/4` | order | `position 4` | `position 3` |
 | `guitar/D/7/3` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
 | `guitar/D/7/3` | frets | `557575` | `x57575` |
 | `guitar/D/7sharp9/2` | frets | `000a78` | `xx0a78` |
@@ -2128,8 +2147,10 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/D/m69/4` | frets | `xccacc` | `xxcacc` |
 | `guitar/D/m7/4` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
 | `guitar/D/m7/4` | frets | `xx7768` | `xxx768` |
+| `guitar/D/m7/4` | order | `position 4` | `position 2` |
 | `guitar/D/maj11/2` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
 | `guitar/D/maj11/2` | frets | `555675` | `x55675` |
+| `guitar/D/maj11/2` | order | `position 2` | `position 3` |
 | `guitar/D/maj7/3` | fingers | `1 1 3 2 4 1` | `0 1 3 2 4 1` |
 | `guitar/D/maj7/3` | frets | `557675` | `x57675` |
 | `guitar/D/maj7/4` | fingers | `0 0 1 1 1 4` | `0 0 0 1 1 4` |
@@ -2138,6 +2159,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/D/maj7sharp5/2` | frets | `254322` | `x54322` |
 | `guitar/D/minor/2` | fingers | `1 1 3 4 2 1` | `0 1 3 4 2 1` |
 | `guitar/D/minor/2` | frets | `557765` | `x57765` |
+| `guitar/D/minor/2` | order | `position 2` | `position 3` |
 | `guitar/D/mmaj11/3` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
 | `guitar/D/mmaj11/3` | frets | `555775` | `x55775` |
 | `guitar/D/mmaj11/3` | relabelled | `Dmmaj11` | `Dadd11` |
@@ -2165,6 +2187,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/E/m7/6` | frets | `779787` | `x79787` |
 | `guitar/E/m7/7` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
 | `guitar/E/m7/7` | frets | `xx998a` | `xxx98a` |
+| `guitar/E/m7/7` | order | `position 7` | `position 5` |
 | `guitar/E/maj11/3` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
 | `guitar/E/maj11/3` | frets | `777897` | `x77897` |
 | `guitar/E/maj7/4` | fingers | `1 1 3 2 4 1` | `0 1 3 2 4 1` |
@@ -2191,6 +2214,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Eb/m7/3` | frets | `668676` | `x68676` |
 | `guitar/Eb/m7/4` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
 | `guitar/Eb/m7/4` | frets | `xx8879` | `xxx879` |
+| `guitar/Eb/m7/4` | order | `position 4` | `position 2` |
 | `guitar/Eb/maj11/3` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
 | `guitar/Eb/maj11/3` | frets | `666786` | `x66786` |
 | `guitar/Eb/maj7/1` | barres | `1 3` | `3` |
@@ -2202,6 +2226,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Eb/maj7/4` | frets | `xx888a` | `xxx88a` |
 | `guitar/Eb/maj7sharp5/1` | fingers | `1 4 3 2 1 1` | `0 4 3 2 1 1` |
 | `guitar/Eb/maj7sharp5/1` | frets | `365433` | `x65433` |
+| `guitar/Eb/maj7sharp5/1` | order | `position 1` | `position 2` |
 | `guitar/Eb/minor/3` | fingers | `1 1 3 4 2 1` | `0 1 3 4 2 1` |
 | `guitar/Eb/minor/3` | frets | `668876` | `x68876` |
 | `guitar/Eb/mmaj11/1` | fingers | `0 1 1 1 3 2` | `0 0 1 1 3 2` |
@@ -2243,8 +2268,10 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/F/m7/5` | frets | `88a898` | `x8a898` |
 | `guitar/F/m7/6` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
 | `guitar/F/m7/6` | frets | `xxaa9b` | `xxxa9b` |
+| `guitar/F/m7/6` | order | `position 6` | `position 4` |
 | `guitar/F/m9/2` | fingers | `0 1 2 0 3 4` | `0 0 2 0 3 4` |
 | `guitar/F/m9/2` | frets | `x33044` | `xx3044` |
+| `guitar/F/m9/2` | order | `position 2` | `position 1` |
 | `guitar/F/maj11/3` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
 | `guitar/F/maj11/3` | frets | `8889a8` | `x889a8` |
 | `guitar/F/maj7/3` | barres | `3` | `5` |
@@ -2286,6 +2313,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Fsharp/m7/5` | frets | `99b9a9` | `x9b9a9` |
 | `guitar/Fsharp/m7/6` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
 | `guitar/Fsharp/m7/6` | frets | `xxbbac` | `xxxbac` |
+| `guitar/Fsharp/m7/6` | order | `position 6` | `position 4` |
 | `guitar/Fsharp/maj11/4` | fingers | `1 1 1 2 4 1` | `0 1 1 2 4 1` |
 | `guitar/Fsharp/maj11/4` | frets | `999ab9` | `x99ab9` |
 | `guitar/Fsharp/maj7/2` | barres | `4` | `6` |
@@ -2344,6 +2372,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/G/7/4` | frets | `aacaca` | `xacaca` |
 | `guitar/G/7sharp9/3` | fingers | `0 2 3 1 4 4` | `0 0 3 1 4 4` |
 | `guitar/G/7sharp9/3` | frets | `x55466` | `xx5466` |
+| `guitar/G/7sharp9/3` | order | `position 3` | `position 2` |
 | `guitar/G/7sus4/4` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
 | `guitar/G/7sus4/4` | frets | `aacada` | `xacada` |
 | `guitar/G/9/4` | fingers | `2 2 1 3 3 4` | `0 2 1 3 3 4` |
@@ -3197,5 +3226,989 @@ Counts are voicings; one voicing can have several kinds of change.
 | `piano/G/sus2/1` | notes | `G A D` | `G4 A4 D5` |
 | `piano/G/sus2sus4/1` | added | `—` | `Gsus2sus4 G4 A4 C5 D5` |
 | `piano/G/sus4/1` | notes | `G C D` | `G4 C5 D5` |
+
+</details>
+
+### 53. Reordered every chord's voicings easiest first, by the playability score in src/playability.ts, so the first voicing is the one a player reaches for (e.g. C major starts with x32010). Voicing ids are unchanged.
+
+[#10](https://github.com/tabsy-gr/chords-db/issues/10) · upstream [#2](https://github.com/tombatossals/chords-db/issues/2) · reported by [T-vK](https://github.com/T-vK)
+
+<details>
+<summary>972 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/_Bb/2` | order | `position 2` | `position 3` |
+| `guitar/A/_Bb/3` | order | `position 3` | `position 4` |
+| `guitar/A/_Bb/4` | order | `position 4` | `position 2` |
+| `guitar/A/_C/2` | order | `position 2` | `position 3` |
+| `guitar/A/_C/3` | order | `position 3` | `position 4` |
+| `guitar/A/_C/4` | order | `position 4` | `position 2` |
+| `guitar/A/_Csharp/3` | order | `position 3` | `position 4` |
+| `guitar/A/_Csharp/4` | order | `position 4` | `position 3` |
+| `guitar/A/_E/2` | order | `position 2` | `position 3` |
+| `guitar/A/_E/3` | order | `position 3` | `position 4` |
+| `guitar/A/_E/4` | order | `position 4` | `position 2` |
+| `guitar/A/_Eb/2` | order | `position 2` | `position 3` |
+| `guitar/A/_Eb/3` | order | `position 3` | `position 2` |
+| `guitar/A/5/1` | order | `position 1` | `position 2` |
+| `guitar/A/5/2` | order | `position 2` | `position 1` |
+| `guitar/A/69/2` | order | `position 2` | `position 3` |
+| `guitar/A/69/3` | order | `position 3` | `position 2` |
+| `guitar/A/7/3` | order | `position 3` | `position 4` |
+| `guitar/A/7/4` | order | `position 4` | `position 3` |
+| `guitar/A/7sharp9/1` | order | `position 1` | `position 3` |
+| `guitar/A/7sharp9/2` | order | `position 2` | `position 1` |
+| `guitar/A/7sharp9/3` | order | `position 3` | `position 2` |
+| `guitar/A/7sus4/2` | order | `position 2` | `position 3` |
+| `guitar/A/7sus4/3` | order | `position 3` | `position 2` |
+| `guitar/A/add9/3` | order | `position 3` | `position 4` |
+| `guitar/A/add9/4` | order | `position 4` | `position 3` |
+| `guitar/A/dim7/3` | order | `position 3` | `position 4` |
+| `guitar/A/dim7/4` | order | `position 4` | `position 3` |
+| `guitar/A/m_Ab/1` | order | `position 1` | `position 3` |
+| `guitar/A/m_Ab/2` | order | `position 2` | `position 1` |
+| `guitar/A/m_Ab/3` | order | `position 3` | `position 4` |
+| `guitar/A/m_Ab/4` | order | `position 4` | `position 2` |
+| `guitar/A/m_Bb/2` | order | `position 2` | `position 3` |
+| `guitar/A/m_Bb/3` | order | `position 3` | `position 2` |
+| `guitar/A/m_C/2` | order | `position 2` | `position 3` |
+| `guitar/A/m_C/3` | order | `position 3` | `position 2` |
+| `guitar/A/m_Csharp/3` | order | `position 3` | `position 4` |
+| `guitar/A/m_Csharp/4` | order | `position 4` | `position 3` |
+| `guitar/A/m_E/3` | order | `position 3` | `position 4` |
+| `guitar/A/m_E/4` | order | `position 4` | `position 3` |
+| `guitar/A/m_Eb/3` | order | `position 3` | `position 4` |
+| `guitar/A/m_Eb/4` | order | `position 4` | `position 3` |
+| `guitar/A/m_G/2` | order | `position 2` | `position 3` |
+| `guitar/A/m_G/3` | order | `position 3` | `position 2` |
+| `guitar/A/m69/2` | order | `position 2` | `position 3` |
+| `guitar/A/m69/3` | order | `position 3` | `position 2` |
+| `guitar/A/m7/3` | order | `position 3` | `position 5` |
+| `guitar/A/m7/4` | order | `position 4` | `position 3` |
+| `guitar/A/m7/5` | order | `position 5` | `position 4` |
+| `guitar/A/madd9/2` | order | `position 2` | `position 3` |
+| `guitar/A/madd9/3` | order | `position 3` | `position 2` |
+| `guitar/A/maj9/2` | order | `position 2` | `position 3` |
+| `guitar/A/maj9/3` | order | `position 3` | `position 2` |
+| `guitar/A/major/3` | order | `position 3` | `position 4` |
+| `guitar/A/major/4` | order | `position 4` | `position 3` |
+| `guitar/A/minor/3` | order | `position 3` | `position 4` |
+| `guitar/A/minor/4` | order | `position 4` | `position 3` |
+| `guitar/A/sus2/3` | order | `position 3` | `position 4` |
+| `guitar/A/sus2/4` | order | `position 4` | `position 3` |
+| `guitar/A/sus2sus4/2` | order | `position 2` | `position 3` |
+| `guitar/A/sus2sus4/3` | order | `position 3` | `position 2` |
+| `guitar/A/sus4/1` | order | `position 1` | `position 2` |
+| `guitar/A/sus4/2` | order | `position 2` | `position 1` |
+| `guitar/A/sus4/3` | order | `position 3` | `position 4` |
+| `guitar/A/sus4/4` | order | `position 4` | `position 3` |
+| `guitar/Ab/_A/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/_A/4` | order | `position 4` | `position 3` |
+| `guitar/Ab/_B/1` | order | `position 1` | `position 2` |
+| `guitar/Ab/_B/2` | order | `position 2` | `position 4` |
+| `guitar/Ab/_B/3` | order | `position 3` | `position 1` |
+| `guitar/Ab/_B/4` | order | `position 4` | `position 3` |
+| `guitar/Ab/_Bb/1` | order | `position 1` | `position 2` |
+| `guitar/Ab/_Bb/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/_Bb/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/_Bb/4` | order | `position 4` | `position 1` |
+| `guitar/Ab/_C/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/_C/4` | order | `position 4` | `position 3` |
+| `guitar/Ab/_Csharp/1` | order | `position 1` | `position 2` |
+| `guitar/Ab/_Csharp/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/_Csharp/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/_Csharp/4` | order | `position 4` | `position 1` |
+| `guitar/Ab/_E/1` | order | `position 1` | `position 2` |
+| `guitar/Ab/_E/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/_E/3` | order | `position 3` | `position 1` |
+| `guitar/Ab/_F/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/_F/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/5/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/5/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/7sharp9/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/7sharp9/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/9/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/9/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/add11/1` | order | `position 1` | `position 3` |
+| `guitar/Ab/add11/2` | order | `position 2` | `position 1` |
+| `guitar/Ab/add11/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/add9/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/add9/4` | order | `position 4` | `position 3` |
+| `guitar/Ab/aug9/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/aug9/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/m_B/1` | order | `position 1` | `position 2` |
+| `guitar/Ab/m_B/2` | order | `position 2` | `position 1` |
+| `guitar/Ab/m_Bb/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/m_Bb/4` | order | `position 4` | `position 3` |
+| `guitar/Ab/m_C/1` | order | `position 1` | `position 2` |
+| `guitar/Ab/m_C/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/m_C/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/m_C/4` | order | `position 4` | `position 1` |
+| `guitar/Ab/m_Csharp/1` | order | `position 1` | `position 2` |
+| `guitar/Ab/m_Csharp/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/m_Csharp/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/m_Csharp/4` | order | `position 4` | `position 1` |
+| `guitar/Ab/m_E/1` | order | `position 1` | `position 3` |
+| `guitar/Ab/m_E/2` | order | `position 2` | `position 1` |
+| `guitar/Ab/m_E/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/m_F/1` | order | `position 1` | `position 3` |
+| `guitar/Ab/m_F/2` | order | `position 2` | `position 4` |
+| `guitar/Ab/m_F/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/m_F/4` | order | `position 4` | `position 1` |
+| `guitar/Ab/m_Fsharp/1` | order | `position 1` | `position 2` |
+| `guitar/Ab/m_Fsharp/2` | order | `position 2` | `position 1` |
+| `guitar/Ab/m_Fsharp/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/m_Fsharp/4` | order | `position 4` | `position 3` |
+| `guitar/Ab/m_G/1` | order | `position 1` | `position 3` |
+| `guitar/Ab/m_G/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/m_G/4` | order | `position 4` | `position 1` |
+| `guitar/Ab/m69/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/m69/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/m9/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/m9/4` | order | `position 4` | `position 3` |
+| `guitar/Ab/maj7b5/1` | order | `position 1` | `position 2` |
+| `guitar/Ab/maj7b5/2` | order | `position 2` | `position 1` |
+| `guitar/Ab/maj7sus2/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/maj7sus2/4` | order | `position 4` | `position 3` |
+| `guitar/Ab/major/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/major/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/mmaj7b5/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/mmaj7b5/4` | order | `position 4` | `position 3` |
+| `guitar/Ab/sus/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/sus/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/sus4/2` | order | `position 2` | `position 3` |
+| `guitar/Ab/sus4/3` | order | `position 3` | `position 2` |
+| `guitar/B/_Ab/2` | order | `position 2` | `position 3` |
+| `guitar/B/_Ab/3` | order | `position 3` | `position 2` |
+| `guitar/B/_C/2` | order | `position 2` | `position 3` |
+| `guitar/B/_C/3` | order | `position 3` | `position 4` |
+| `guitar/B/_C/4` | order | `position 4` | `position 2` |
+| `guitar/B/_Csharp/1` | order | `position 1` | `position 2` |
+| `guitar/B/_Csharp/2` | order | `position 2` | `position 3` |
+| `guitar/B/_Csharp/3` | order | `position 3` | `position 4` |
+| `guitar/B/_Csharp/4` | order | `position 4` | `position 1` |
+| `guitar/B/_F/2` | order | `position 2` | `position 4` |
+| `guitar/B/_F/3` | order | `position 3` | `position 2` |
+| `guitar/B/_F/4` | order | `position 4` | `position 3` |
+| `guitar/B/_Fsharp/1` | order | `position 1` | `position 2` |
+| `guitar/B/_Fsharp/2` | order | `position 2` | `position 1` |
+| `guitar/B/_G/2` | order | `position 2` | `position 3` |
+| `guitar/B/_G/3` | order | `position 3` | `position 4` |
+| `guitar/B/_G/4` | order | `position 4` | `position 2` |
+| `guitar/B/13/1` | order | `position 1` | `position 2` |
+| `guitar/B/13/2` | order | `position 2` | `position 1` |
+| `guitar/B/5/1` | order | `position 1` | `position 2` |
+| `guitar/B/5/2` | order | `position 2` | `position 1` |
+| `guitar/B/69/2` | order | `position 2` | `position 3` |
+| `guitar/B/69/3` | order | `position 3` | `position 2` |
+| `guitar/B/7sharp9/3` | order | `position 3` | `position 4` |
+| `guitar/B/7sharp9/4` | order | `position 4` | `position 3` |
+| `guitar/B/9/3` | order | `position 3` | `position 4` |
+| `guitar/B/9/4` | order | `position 4` | `position 3` |
+| `guitar/B/add11/2` | order | `position 2` | `position 4` |
+| `guitar/B/add11/3` | order | `position 3` | `position 2` |
+| `guitar/B/add11/4` | order | `position 4` | `position 3` |
+| `guitar/B/add9/2` | order | `position 2` | `position 3` |
+| `guitar/B/add9/3` | order | `position 3` | `position 2` |
+| `guitar/B/dim7/1` | order | `position 1` | `position 2` |
+| `guitar/B/dim7/2` | order | `position 2` | `position 1` |
+| `guitar/B/m_A/1` | order | `position 1` | `position 3` |
+| `guitar/B/m_A/2` | order | `position 2` | `position 1` |
+| `guitar/B/m_A/3` | order | `position 3` | `position 2` |
+| `guitar/B/m_Ab/2` | order | `position 2` | `position 3` |
+| `guitar/B/m_Ab/3` | order | `position 3` | `position 4` |
+| `guitar/B/m_Ab/4` | order | `position 4` | `position 2` |
+| `guitar/B/m_Bb/2` | order | `position 2` | `position 3` |
+| `guitar/B/m_Bb/3` | order | `position 3` | `position 2` |
+| `guitar/B/m_C/3` | order | `position 3` | `position 4` |
+| `guitar/B/m_C/4` | order | `position 4` | `position 3` |
+| `guitar/B/m_F/3` | order | `position 3` | `position 4` |
+| `guitar/B/m_F/4` | order | `position 4` | `position 3` |
+| `guitar/B/m_Fsharp/1` | order | `position 1` | `position 2` |
+| `guitar/B/m_Fsharp/2` | order | `position 2` | `position 1` |
+| `guitar/B/m69/3` | order | `position 3` | `position 4` |
+| `guitar/B/m69/4` | order | `position 4` | `position 3` |
+| `guitar/B/m7/1` | order | `position 1` | `position 4` |
+| `guitar/B/m7/2` | order | `position 2` | `position 1` |
+| `guitar/B/m7/3` | order | `position 3` | `position 2` |
+| `guitar/B/m7/4` | order | `position 4` | `position 3` |
+| `guitar/B/maj11/3` | order | `position 3` | `position 4` |
+| `guitar/B/maj11/4` | order | `position 4` | `position 3` |
+| `guitar/B/maj7b5/2` | order | `position 2` | `position 3` |
+| `guitar/B/maj7b5/3` | order | `position 3` | `position 2` |
+| `guitar/B/maj7sus2/2` | order | `position 2` | `position 3` |
+| `guitar/B/maj7sus2/3` | order | `position 3` | `position 4` |
+| `guitar/B/maj7sus2/4` | order | `position 4` | `position 2` |
+| `guitar/B/maj9/3` | order | `position 3` | `position 4` |
+| `guitar/B/maj9/4` | order | `position 4` | `position 3` |
+| `guitar/B/major/3` | order | `position 3` | `position 4` |
+| `guitar/B/major/4` | order | `position 4` | `position 3` |
+| `guitar/B/sus2sus4/2` | order | `position 2` | `position 3` |
+| `guitar/B/sus2sus4/3` | order | `position 3` | `position 2` |
+| `guitar/Bb/_B/2` | order | `position 2` | `position 3` |
+| `guitar/Bb/_B/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/_B/4` | order | `position 4` | `position 2` |
+| `guitar/Bb/_Csharp/2` | order | `position 2` | `position 3` |
+| `guitar/Bb/_Csharp/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/_Csharp/4` | order | `position 4` | `position 2` |
+| `guitar/Bb/_E/1` | order | `position 1` | `position 2` |
+| `guitar/Bb/_E/2` | order | `position 2` | `position 1` |
+| `guitar/Bb/_Eb/2` | order | `position 2` | `position 3` |
+| `guitar/Bb/_Eb/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/_Eb/4` | order | `position 4` | `position 2` |
+| `guitar/Bb/_F/1` | order | `position 1` | `position 2` |
+| `guitar/Bb/_F/2` | order | `position 2` | `position 1` |
+| `guitar/Bb/_Fsharp/2` | order | `position 2` | `position 3` |
+| `guitar/Bb/_Fsharp/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/_Fsharp/4` | order | `position 4` | `position 2` |
+| `guitar/Bb/_G/2` | order | `position 2` | `position 3` |
+| `guitar/Bb/_G/3` | order | `position 3` | `position 2` |
+| `guitar/Bb/5/1` | order | `position 1` | `position 2` |
+| `guitar/Bb/5/2` | order | `position 2` | `position 1` |
+| `guitar/Bb/69/2` | order | `position 2` | `position 3` |
+| `guitar/Bb/69/3` | order | `position 3` | `position 2` |
+| `guitar/Bb/7sharp9/2` | order | `position 2` | `position 3` |
+| `guitar/Bb/7sharp9/3` | order | `position 3` | `position 2` |
+| `guitar/Bb/add11/1` | order | `position 1` | `position 4` |
+| `guitar/Bb/add11/2` | order | `position 2` | `position 1` |
+| `guitar/Bb/add11/3` | order | `position 3` | `position 2` |
+| `guitar/Bb/add11/4` | order | `position 4` | `position 3` |
+| `guitar/Bb/dim7/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/dim7/4` | order | `position 4` | `position 3` |
+| `guitar/Bb/m_A/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/m_A/4` | order | `position 4` | `position 3` |
+| `guitar/Bb/m_Ab/1` | order | `position 1` | `position 3` |
+| `guitar/Bb/m_Ab/2` | order | `position 2` | `position 4` |
+| `guitar/Bb/m_Ab/3` | order | `position 3` | `position 1` |
+| `guitar/Bb/m_Ab/4` | order | `position 4` | `position 2` |
+| `guitar/Bb/m_B/1` | order | `position 1` | `position 3` |
+| `guitar/Bb/m_B/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/m_B/4` | order | `position 4` | `position 1` |
+| `guitar/Bb/m_C/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/m_C/4` | order | `position 4` | `position 3` |
+| `guitar/Bb/m_Csharp/1` | order | `position 1` | `position 2` |
+| `guitar/Bb/m_Csharp/2` | order | `position 2` | `position 1` |
+| `guitar/Bb/m_E/1` | order | `position 1` | `position 2` |
+| `guitar/Bb/m_E/2` | order | `position 2` | `position 1` |
+| `guitar/Bb/m_E/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/m_E/4` | order | `position 4` | `position 3` |
+| `guitar/Bb/m_Eb/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/m_Eb/4` | order | `position 4` | `position 3` |
+| `guitar/Bb/m_F/1` | order | `position 1` | `position 2` |
+| `guitar/Bb/m_F/2` | order | `position 2` | `position 1` |
+| `guitar/Bb/m_G/1` | order | `position 1` | `position 3` |
+| `guitar/Bb/m_G/2` | order | `position 2` | `position 4` |
+| `guitar/Bb/m_G/3` | order | `position 3` | `position 2` |
+| `guitar/Bb/m_G/4` | order | `position 4` | `position 1` |
+| `guitar/Bb/m7/1` | order | `position 1` | `position 4` |
+| `guitar/Bb/m7/3` | order | `position 3` | `position 1` |
+| `guitar/Bb/m7/4` | order | `position 4` | `position 3` |
+| `guitar/Bb/maj7b5/2` | order | `position 2` | `position 3` |
+| `guitar/Bb/maj7b5/3` | order | `position 3` | `position 2` |
+| `guitar/Bb/maj7sus2/2` | order | `position 2` | `position 3` |
+| `guitar/Bb/maj7sus2/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/maj7sus2/4` | order | `position 4` | `position 2` |
+| `guitar/Bb/major/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/major/4` | order | `position 4` | `position 3` |
+| `guitar/Bb/minor/2` | order | `position 2` | `position 3` |
+| `guitar/Bb/minor/3` | order | `position 3` | `position 2` |
+| `guitar/Bb/mmaj9/1` | order | `position 1` | `position 2` |
+| `guitar/Bb/mmaj9/2` | order | `position 2` | `position 1` |
+| `guitar/Bb/sus2sus4/2` | order | `position 2` | `position 3` |
+| `guitar/Bb/sus2sus4/3` | order | `position 3` | `position 2` |
+| `guitar/Bb/sus4/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/sus4/4` | order | `position 4` | `position 3` |
+| `guitar/C/_E/2` | order | `position 2` | `position 3` |
+| `guitar/C/_E/3` | order | `position 3` | `position 2` |
+| `guitar/C/_Eb/2` | order | `position 2` | `position 3` |
+| `guitar/C/_Eb/3` | order | `position 3` | `position 2` |
+| `guitar/C/_F/3` | order | `position 3` | `position 4` |
+| `guitar/C/_F/4` | order | `position 4` | `position 3` |
+| `guitar/C/_Fsharp/1` | order | `position 1` | `position 2` |
+| `guitar/C/_Fsharp/2` | order | `position 2` | `position 1` |
+| `guitar/C/_G/2` | order | `position 2` | `position 3` |
+| `guitar/C/_G/3` | order | `position 3` | `position 2` |
+| `guitar/C/5/1` | order | `position 1` | `position 2` |
+| `guitar/C/5/2` | order | `position 2` | `position 1` |
+| `guitar/C/69/1` | order | `position 1` | `position 2` |
+| `guitar/C/69/2` | order | `position 2` | `position 1` |
+| `guitar/C/69/3` | order | `position 3` | `position 4` |
+| `guitar/C/69/4` | order | `position 4` | `position 3` |
+| `guitar/C/7_G/1` | order | `position 1` | `position 2` |
+| `guitar/C/7_G/2` | order | `position 2` | `position 1` |
+| `guitar/C/7b9/3` | order | `position 3` | `position 4` |
+| `guitar/C/7b9/4` | order | `position 4` | `position 3` |
+| `guitar/C/7sharp9/3` | order | `position 3` | `position 4` |
+| `guitar/C/7sharp9/4` | order | `position 4` | `position 3` |
+| `guitar/C/9/3` | order | `position 3` | `position 4` |
+| `guitar/C/9/5` | order | `position 5` | `position 2` |
+| `guitar/C/9b5/1` | order | `position 1` | `position 2` |
+| `guitar/C/9b5/2` | order | `position 2` | `position 1` |
+| `guitar/C/add9/1` | order | `position 1` | `position 3` |
+| `guitar/C/add9/2` | order | `position 2` | `position 1` |
+| `guitar/C/aug9/1` | order | `position 1` | `position 2` |
+| `guitar/C/aug9/2` | order | `position 2` | `position 1` |
+| `guitar/C/m_B/2` | order | `position 2` | `position 3` |
+| `guitar/C/m_B/3` | order | `position 3` | `position 2` |
+| `guitar/C/m_Bb/1` | order | `position 1` | `position 4` |
+| `guitar/C/m_Bb/2` | order | `position 2` | `position 1` |
+| `guitar/C/m_Bb/4` | order | `position 4` | `position 2` |
+| `guitar/C/m_Csharp/1` | order | `position 1` | `position 3` |
+| `guitar/C/m_Csharp/3` | order | `position 3` | `position 4` |
+| `guitar/C/m_Csharp/4` | order | `position 4` | `position 1` |
+| `guitar/C/m_E/3` | order | `position 3` | `position 4` |
+| `guitar/C/m_E/4` | order | `position 4` | `position 3` |
+| `guitar/C/m_Eb/2` | order | `position 2` | `position 3` |
+| `guitar/C/m_Eb/3` | order | `position 3` | `position 2` |
+| `guitar/C/m_F/3` | order | `position 3` | `position 4` |
+| `guitar/C/m_F/4` | order | `position 4` | `position 3` |
+| `guitar/C/m_Fsharp/1` | order | `position 1` | `position 2` |
+| `guitar/C/m_Fsharp/2` | order | `position 2` | `position 3` |
+| `guitar/C/m_Fsharp/3` | order | `position 3` | `position 4` |
+| `guitar/C/m_Fsharp/4` | order | `position 4` | `position 1` |
+| `guitar/C/m_G/1` | order | `position 1` | `position 2` |
+| `guitar/C/m_G/2` | order | `position 2` | `position 1` |
+| `guitar/C/m11/1` | order | `position 1` | `position 2` |
+| `guitar/C/m11/2` | order | `position 2` | `position 1` |
+| `guitar/C/m6/1` | order | `position 1` | `position 2` |
+| `guitar/C/m6/2` | order | `position 2` | `position 1` |
+| `guitar/C/m69/1` | order | `position 1` | `position 2` |
+| `guitar/C/m69/2` | order | `position 2` | `position 1` |
+| `guitar/C/m7/1` | order | `position 1` | `position 5` |
+| `guitar/C/m7/2` | order | `position 2` | `position 1` |
+| `guitar/C/m7/4` | order | `position 4` | `position 2` |
+| `guitar/C/m7/5` | order | `position 5` | `position 4` |
+| `guitar/C/m9/1` | order | `position 1` | `position 2` |
+| `guitar/C/m9/2` | order | `position 2` | `position 1` |
+| `guitar/C/maj7sus2/1` | order | `position 1` | `position 3` |
+| `guitar/C/maj7sus2/2` | order | `position 2` | `position 1` |
+| `guitar/C/maj7sus2/3` | order | `position 3` | `position 2` |
+| `guitar/C/mmaj9/1` | order | `position 1` | `position 2` |
+| `guitar/C/mmaj9/2` | order | `position 2` | `position 1` |
+| `guitar/C/sus/1` | order | `position 1` | `position 2` |
+| `guitar/C/sus/2` | order | `position 2` | `position 1` |
+| `guitar/Csharp/_A/1` | order | `position 1` | `position 2` |
+| `guitar/Csharp/_A/2` | order | `position 2` | `position 1` |
+| `guitar/Csharp/_Ab/1` | order | `position 1` | `position 2` |
+| `guitar/Csharp/_Ab/2` | order | `position 2` | `position 1` |
+| `guitar/Csharp/_Eb/2` | order | `position 2` | `position 3` |
+| `guitar/Csharp/_Eb/3` | order | `position 3` | `position 4` |
+| `guitar/Csharp/_Eb/4` | order | `position 4` | `position 2` |
+| `guitar/Csharp/_F/1` | order | `position 1` | `position 4` |
+| `guitar/Csharp/_F/4` | order | `position 4` | `position 1` |
+| `guitar/Csharp/_Fsharp/3` | order | `position 3` | `position 4` |
+| `guitar/Csharp/_Fsharp/4` | order | `position 4` | `position 3` |
+| `guitar/Csharp/_G/2` | order | `position 2` | `position 4` |
+| `guitar/Csharp/_G/3` | order | `position 3` | `position 2` |
+| `guitar/Csharp/_G/4` | order | `position 4` | `position 3` |
+| `guitar/Csharp/5/1` | order | `position 1` | `position 2` |
+| `guitar/Csharp/5/2` | order | `position 2` | `position 1` |
+| `guitar/Csharp/69/3` | order | `position 3` | `position 4` |
+| `guitar/Csharp/69/4` | order | `position 4` | `position 3` |
+| `guitar/Csharp/9/3` | order | `position 3` | `position 4` |
+| `guitar/Csharp/9/4` | order | `position 4` | `position 3` |
+| `guitar/Csharp/9b5/2` | order | `position 2` | `position 3` |
+| `guitar/Csharp/9b5/3` | order | `position 3` | `position 2` |
+| `guitar/Csharp/add9/1` | order | `position 1` | `position 2` |
+| `guitar/Csharp/add9/2` | order | `position 2` | `position 1` |
+| `guitar/Csharp/m_Ab/1` | order | `position 1` | `position 2` |
+| `guitar/Csharp/m_Ab/2` | order | `position 2` | `position 1` |
+| `guitar/Csharp/m_B/2` | order | `position 2` | `position 4` |
+| `guitar/Csharp/m_B/3` | order | `position 3` | `position 2` |
+| `guitar/Csharp/m_B/4` | order | `position 4` | `position 3` |
+| `guitar/Csharp/m_Bb/2` | order | `position 2` | `position 3` |
+| `guitar/Csharp/m_Bb/3` | order | `position 3` | `position 4` |
+| `guitar/Csharp/m_Bb/4` | order | `position 4` | `position 2` |
+| `guitar/Csharp/m_C/2` | order | `position 2` | `position 3` |
+| `guitar/Csharp/m_C/3` | order | `position 3` | `position 2` |
+| `guitar/Csharp/m_E/3` | order | `position 3` | `position 4` |
+| `guitar/Csharp/m_E/4` | order | `position 4` | `position 3` |
+| `guitar/Csharp/m_F/2` | order | `position 2` | `position 3` |
+| `guitar/Csharp/m_F/3` | order | `position 3` | `position 4` |
+| `guitar/Csharp/m_F/4` | order | `position 4` | `position 2` |
+| `guitar/Csharp/m_G/3` | order | `position 3` | `position 4` |
+| `guitar/Csharp/m_G/4` | order | `position 4` | `position 3` |
+| `guitar/Csharp/m7/1` | order | `position 1` | `position 4` |
+| `guitar/Csharp/m7/3` | order | `position 3` | `position 1` |
+| `guitar/Csharp/m7/4` | order | `position 4` | `position 3` |
+| `guitar/Csharp/maj7b5/1` | order | `position 1` | `position 2` |
+| `guitar/Csharp/maj7b5/2` | order | `position 2` | `position 1` |
+| `guitar/Csharp/maj7sus2/1` | order | `position 1` | `position 2` |
+| `guitar/Csharp/maj7sus2/2` | order | `position 2` | `position 3` |
+| `guitar/Csharp/maj7sus2/3` | order | `position 3` | `position 4` |
+| `guitar/Csharp/maj7sus2/4` | order | `position 4` | `position 1` |
+| `guitar/Csharp/maj9/3` | order | `position 3` | `position 4` |
+| `guitar/Csharp/maj9/4` | order | `position 4` | `position 3` |
+| `guitar/Csharp/mmaj7b5/3` | order | `position 3` | `position 4` |
+| `guitar/Csharp/mmaj7b5/4` | order | `position 4` | `position 3` |
+| `guitar/Csharp/mmaj9/1` | order | `position 1` | `position 2` |
+| `guitar/Csharp/mmaj9/2` | order | `position 2` | `position 1` |
+| `guitar/D/_A/1` | order | `position 1` | `position 2` |
+| `guitar/D/_A/2` | order | `position 2` | `position 3` |
+| `guitar/D/_A/3` | order | `position 3` | `position 1` |
+| `guitar/D/_E/3` | order | `position 3` | `position 4` |
+| `guitar/D/_E/4` | order | `position 4` | `position 3` |
+| `guitar/D/_Eb/2` | order | `position 2` | `position 3` |
+| `guitar/D/_Eb/3` | order | `position 3` | `position 2` |
+| `guitar/D/_F/2` | order | `position 2` | `position 3` |
+| `guitar/D/_F/3` | order | `position 3` | `position 4` |
+| `guitar/D/_F/4` | order | `position 4` | `position 2` |
+| `guitar/D/_Fsharp/1` | order | `position 1` | `position 4` |
+| `guitar/D/_Fsharp/4` | order | `position 4` | `position 1` |
+| `guitar/D/5/1` | order | `position 1` | `position 2` |
+| `guitar/D/5/2` | order | `position 2` | `position 1` |
+| `guitar/D/69/3` | order | `position 3` | `position 4` |
+| `guitar/D/69/4` | order | `position 4` | `position 3` |
+| `guitar/D/9b5/1` | order | `position 1` | `position 2` |
+| `guitar/D/9b5/2` | order | `position 2` | `position 1` |
+| `guitar/D/aug9/1` | order | `position 1` | `position 2` |
+| `guitar/D/aug9/2` | order | `position 2` | `position 1` |
+| `guitar/D/aug9/3` | order | `position 3` | `position 4` |
+| `guitar/D/aug9/4` | order | `position 4` | `position 3` |
+| `guitar/D/m_B/2` | order | `position 2` | `position 3` |
+| `guitar/D/m_B/3` | order | `position 3` | `position 4` |
+| `guitar/D/m_B/4` | order | `position 4` | `position 2` |
+| `guitar/D/m_C/2` | order | `position 2` | `position 4` |
+| `guitar/D/m_C/3` | order | `position 3` | `position 2` |
+| `guitar/D/m_C/4` | order | `position 4` | `position 3` |
+| `guitar/D/m_Csharp/2` | order | `position 2` | `position 3` |
+| `guitar/D/m_Csharp/3` | order | `position 3` | `position 2` |
+| `guitar/D/m_Eb/2` | order | `position 2` | `position 4` |
+| `guitar/D/m_Eb/4` | order | `position 4` | `position 2` |
+| `guitar/D/m_F/2` | order | `position 2` | `position 3` |
+| `guitar/D/m_F/3` | order | `position 3` | `position 2` |
+| `guitar/D/m6/2` | order | `position 2` | `position 3` |
+| `guitar/D/m6/3` | order | `position 3` | `position 2` |
+| `guitar/D/m7/1` | order | `position 1` | `position 5` |
+| `guitar/D/m7/2` | order | `position 2` | `position 1` |
+| `guitar/D/m7/4` | order | `position 4` | `position 2` |
+| `guitar/D/m7/5` | order | `position 5` | `position 4` |
+| `guitar/D/m7b5/2` | order | `position 2` | `position 3` |
+| `guitar/D/m7b5/3` | order | `position 3` | `position 2` |
+| `guitar/D/m9_F/2` | order | `position 2` | `position 3` |
+| `guitar/D/m9_F/3` | order | `position 3` | `position 2` |
+| `guitar/D/m9/2` | order | `position 2` | `position 3` |
+| `guitar/D/m9/3` | order | `position 3` | `position 2` |
+| `guitar/D/maj11/2` | order | `position 2` | `position 3` |
+| `guitar/D/maj11/3` | order | `position 3` | `position 2` |
+| `guitar/D/maj13/1` | order | `position 1` | `position 2` |
+| `guitar/D/maj13/2` | order | `position 2` | `position 1` |
+| `guitar/D/minor/2` | order | `position 2` | `position 3` |
+| `guitar/D/minor/3` | order | `position 3` | `position 2` |
+| `guitar/D/mmaj7b5/2` | order | `position 2` | `position 3` |
+| `guitar/D/mmaj7b5/3` | order | `position 3` | `position 2` |
+| `guitar/D/sus2sus4/1` | order | `position 1` | `position 2` |
+| `guitar/D/sus2sus4/2` | order | `position 2` | `position 1` |
+| `guitar/E/_Ab/1` | order | `position 1` | `position 4` |
+| `guitar/E/_Ab/4` | order | `position 4` | `position 1` |
+| `guitar/E/_B/3` | order | `position 3` | `position 4` |
+| `guitar/E/_B/4` | order | `position 4` | `position 3` |
+| `guitar/E/_Bb/2` | order | `position 2` | `position 3` |
+| `guitar/E/_Bb/3` | order | `position 3` | `position 2` |
+| `guitar/E/_F/1` | order | `position 1` | `position 2` |
+| `guitar/E/_F/2` | order | `position 2` | `position 1` |
+| `guitar/E/_F/3` | order | `position 3` | `position 4` |
+| `guitar/E/_F/4` | order | `position 4` | `position 3` |
+| `guitar/E/_Fsharp/1` | order | `position 1` | `position 2` |
+| `guitar/E/_Fsharp/2` | order | `position 2` | `position 1` |
+| `guitar/E/_G/2` | order | `position 2` | `position 3` |
+| `guitar/E/_G/3` | order | `position 3` | `position 4` |
+| `guitar/E/_G/4` | order | `position 4` | `position 2` |
+| `guitar/E/5/1` | order | `position 1` | `position 3` |
+| `guitar/E/5/3` | order | `position 3` | `position 4` |
+| `guitar/E/5/4` | order | `position 4` | `position 1` |
+| `guitar/E/9b5/3` | order | `position 3` | `position 4` |
+| `guitar/E/9b5/4` | order | `position 4` | `position 3` |
+| `guitar/E/add9/2` | order | `position 2` | `position 3` |
+| `guitar/E/add9/3` | order | `position 3` | `position 2` |
+| `guitar/E/m_D/3` | order | `position 3` | `position 4` |
+| `guitar/E/m_D/4` | order | `position 4` | `position 3` |
+| `guitar/E/m_Eb/2` | order | `position 2` | `position 4` |
+| `guitar/E/m_Eb/4` | order | `position 4` | `position 2` |
+| `guitar/E/m_F/1` | order | `position 1` | `position 2` |
+| `guitar/E/m_F/2` | order | `position 2` | `position 3` |
+| `guitar/E/m_F/3` | order | `position 3` | `position 1` |
+| `guitar/E/m_Fsharp/3` | order | `position 3` | `position 4` |
+| `guitar/E/m_Fsharp/4` | order | `position 4` | `position 3` |
+| `guitar/E/m7/1` | order | `position 1` | `position 2` |
+| `guitar/E/m7/2` | order | `position 2` | `position 7` |
+| `guitar/E/m7/4` | order | `position 4` | `position 1` |
+| `guitar/E/m7/5` | order | `position 5` | `position 4` |
+| `guitar/E/m7/7` | order | `position 7` | `position 5` |
+| `guitar/E/m9_G/1` | order | `position 1` | `position 2` |
+| `guitar/E/m9_G/2` | order | `position 2` | `position 1` |
+| `guitar/E/maj7b5/1` | order | `position 1` | `position 2` |
+| `guitar/E/maj7b5/2` | order | `position 2` | `position 1` |
+| `guitar/E/minor/3` | order | `position 3` | `position 4` |
+| `guitar/E/minor/4` | order | `position 4` | `position 3` |
+| `guitar/E/mmaj7b5/3` | order | `position 3` | `position 4` |
+| `guitar/E/mmaj7b5/4` | order | `position 4` | `position 3` |
+| `guitar/E/sus2/2` | order | `position 2` | `position 3` |
+| `guitar/E/sus2/3` | order | `position 3` | `position 2` |
+| `guitar/E/sus2sus4/3` | order | `position 3` | `position 4` |
+| `guitar/E/sus2sus4/4` | order | `position 4` | `position 3` |
+| `guitar/Eb/_A/2` | order | `position 2` | `position 3` |
+| `guitar/Eb/_A/3` | order | `position 3` | `position 2` |
+| `guitar/Eb/_Ab/3` | order | `position 3` | `position 4` |
+| `guitar/Eb/_Ab/4` | order | `position 4` | `position 3` |
+| `guitar/Eb/_B/1` | order | `position 1` | `position 2` |
+| `guitar/Eb/_B/2` | order | `position 2` | `position 3` |
+| `guitar/Eb/_B/3` | order | `position 3` | `position 4` |
+| `guitar/Eb/_B/4` | order | `position 4` | `position 1` |
+| `guitar/Eb/_Bb/2` | order | `position 2` | `position 3` |
+| `guitar/Eb/_Bb/3` | order | `position 3` | `position 2` |
+| `guitar/Eb/_E/1` | order | `position 1` | `position 2` |
+| `guitar/Eb/_E/2` | order | `position 2` | `position 1` |
+| `guitar/Eb/_F/1` | order | `position 1` | `position 2` |
+| `guitar/Eb/_F/2` | order | `position 2` | `position 1` |
+| `guitar/Eb/_F/3` | order | `position 3` | `position 4` |
+| `guitar/Eb/_F/4` | order | `position 4` | `position 3` |
+| `guitar/Eb/_Fsharp/1` | order | `position 1` | `position 2` |
+| `guitar/Eb/_Fsharp/2` | order | `position 2` | `position 4` |
+| `guitar/Eb/_Fsharp/4` | order | `position 4` | `position 1` |
+| `guitar/Eb/_G/1` | order | `position 1` | `position 4` |
+| `guitar/Eb/_G/2` | order | `position 2` | `position 1` |
+| `guitar/Eb/_G/4` | order | `position 4` | `position 2` |
+| `guitar/Eb/5/1` | order | `position 1` | `position 2` |
+| `guitar/Eb/5/2` | order | `position 2` | `position 1` |
+| `guitar/Eb/9b5/1` | order | `position 1` | `position 2` |
+| `guitar/Eb/9b5/2` | order | `position 2` | `position 1` |
+| `guitar/Eb/add9/1` | order | `position 1` | `position 2` |
+| `guitar/Eb/add9/2` | order | `position 2` | `position 1` |
+| `guitar/Eb/dim7/2` | order | `position 2` | `position 3` |
+| `guitar/Eb/dim7/3` | order | `position 3` | `position 2` |
+| `guitar/Eb/m_Ab/3` | order | `position 3` | `position 4` |
+| `guitar/Eb/m_Ab/4` | order | `position 4` | `position 3` |
+| `guitar/Eb/m_Bb/2` | order | `position 2` | `position 3` |
+| `guitar/Eb/m_Bb/3` | order | `position 3` | `position 2` |
+| `guitar/Eb/m_C/1` | order | `position 1` | `position 3` |
+| `guitar/Eb/m_C/2` | order | `position 2` | `position 4` |
+| `guitar/Eb/m_C/3` | order | `position 3` | `position 2` |
+| `guitar/Eb/m_C/4` | order | `position 4` | `position 1` |
+| `guitar/Eb/m_Csharp/1` | order | `position 1` | `position 4` |
+| `guitar/Eb/m_Csharp/2` | order | `position 2` | `position 1` |
+| `guitar/Eb/m_Csharp/4` | order | `position 4` | `position 2` |
+| `guitar/Eb/m_D/3` | order | `position 3` | `position 4` |
+| `guitar/Eb/m_D/4` | order | `position 4` | `position 3` |
+| `guitar/Eb/m_F/1` | order | `position 1` | `position 2` |
+| `guitar/Eb/m_F/2` | order | `position 2` | `position 1` |
+| `guitar/Eb/m_Fsharp/2` | order | `position 2` | `position 3` |
+| `guitar/Eb/m_Fsharp/3` | order | `position 3` | `position 2` |
+| `guitar/Eb/m_G/2` | order | `position 2` | `position 3` |
+| `guitar/Eb/m_G/3` | order | `position 3` | `position 4` |
+| `guitar/Eb/m_G/4` | order | `position 4` | `position 2` |
+| `guitar/Eb/m7/1` | order | `position 1` | `position 5` |
+| `guitar/Eb/m7/2` | order | `position 2` | `position 1` |
+| `guitar/Eb/m7/4` | order | `position 4` | `position 2` |
+| `guitar/Eb/m7/5` | order | `position 5` | `position 4` |
+| `guitar/Eb/maj7sharp5/1` | order | `position 1` | `position 2` |
+| `guitar/Eb/maj7sharp5/2` | order | `position 2` | `position 1` |
+| `guitar/Eb/maj7sus2/2` | order | `position 2` | `position 3` |
+| `guitar/Eb/maj7sus2/3` | order | `position 3` | `position 4` |
+| `guitar/Eb/maj7sus2/4` | order | `position 4` | `position 2` |
+| `guitar/Eb/mmaj7b5/2` | order | `position 2` | `position 3` |
+| `guitar/Eb/mmaj7b5/3` | order | `position 3` | `position 2` |
+| `guitar/Eb/sus2sus4/1` | order | `position 1` | `position 2` |
+| `guitar/Eb/sus2sus4/2` | order | `position 2` | `position 1` |
+| `guitar/F/_A/3` | order | `position 3` | `position 4` |
+| `guitar/F/_A/4` | order | `position 4` | `position 3` |
+| `guitar/F/_Ab/1` | order | `position 1` | `position 2` |
+| `guitar/F/_Ab/2` | order | `position 2` | `position 3` |
+| `guitar/F/_Ab/3` | order | `position 3` | `position 4` |
+| `guitar/F/_Ab/4` | order | `position 4` | `position 1` |
+| `guitar/F/_B/1` | order | `position 1` | `position 2` |
+| `guitar/F/_B/2` | order | `position 2` | `position 3` |
+| `guitar/F/_B/3` | order | `position 3` | `position 1` |
+| `guitar/F/_Bb/2` | order | `position 2` | `position 3` |
+| `guitar/F/_Bb/3` | order | `position 3` | `position 4` |
+| `guitar/F/_Bb/4` | order | `position 4` | `position 2` |
+| `guitar/F/_C/3` | order | `position 3` | `position 4` |
+| `guitar/F/_C/4` | order | `position 4` | `position 3` |
+| `guitar/F/_Csharp/1` | order | `position 1` | `position 2` |
+| `guitar/F/_Csharp/2` | order | `position 2` | `position 3` |
+| `guitar/F/_Csharp/3` | order | `position 3` | `position 4` |
+| `guitar/F/_Csharp/4` | order | `position 4` | `position 1` |
+| `guitar/F/_Fsharp/1` | order | `position 1` | `position 2` |
+| `guitar/F/_Fsharp/2` | order | `position 2` | `position 3` |
+| `guitar/F/_Fsharp/3` | order | `position 3` | `position 4` |
+| `guitar/F/_Fsharp/4` | order | `position 4` | `position 1` |
+| `guitar/F/5/2` | order | `position 2` | `position 3` |
+| `guitar/F/5/3` | order | `position 3` | `position 2` |
+| `guitar/F/7b9/1` | order | `position 1` | `position 2` |
+| `guitar/F/7b9/2` | order | `position 2` | `position 1` |
+| `guitar/F/7sharp9/1` | order | `position 1` | `position 2` |
+| `guitar/F/7sharp9/2` | order | `position 2` | `position 1` |
+| `guitar/F/9/1` | order | `position 1` | `position 2` |
+| `guitar/F/9/2` | order | `position 2` | `position 1` |
+| `guitar/F/9b5/2` | order | `position 2` | `position 3` |
+| `guitar/F/9b5/3` | order | `position 3` | `position 2` |
+| `guitar/F/add9/3` | order | `position 3` | `position 4` |
+| `guitar/F/add9/4` | order | `position 4` | `position 3` |
+| `guitar/F/m_Ab/3` | order | `position 3` | `position 4` |
+| `guitar/F/m_Ab/4` | order | `position 4` | `position 3` |
+| `guitar/F/m_B/2` | order | `position 2` | `position 3` |
+| `guitar/F/m_B/3` | order | `position 3` | `position 4` |
+| `guitar/F/m_B/4` | order | `position 4` | `position 2` |
+| `guitar/F/m_Bb/2` | order | `position 2` | `position 3` |
+| `guitar/F/m_Bb/3` | order | `position 3` | `position 4` |
+| `guitar/F/m_Bb/4` | order | `position 4` | `position 2` |
+| `guitar/F/m_E/2` | order | `position 2` | `position 3` |
+| `guitar/F/m_E/3` | order | `position 3` | `position 2` |
+| `guitar/F/m_Eb/2` | order | `position 2` | `position 3` |
+| `guitar/F/m_Eb/3` | order | `position 3` | `position 4` |
+| `guitar/F/m_Eb/4` | order | `position 4` | `position 2` |
+| `guitar/F/m_Fsharp/1` | order | `position 1` | `position 2` |
+| `guitar/F/m_Fsharp/2` | order | `position 2` | `position 1` |
+| `guitar/F/m_Fsharp/3` | order | `position 3` | `position 4` |
+| `guitar/F/m_Fsharp/4` | order | `position 4` | `position 3` |
+| `guitar/F/m_G/2` | order | `position 2` | `position 3` |
+| `guitar/F/m_G/3` | order | `position 3` | `position 2` |
+| `guitar/F/m69/1` | order | `position 1` | `position 2` |
+| `guitar/F/m69/2` | order | `position 2` | `position 1` |
+| `guitar/F/m7/1` | order | `position 1` | `position 2` |
+| `guitar/F/m7/2` | order | `position 2` | `position 6` |
+| `guitar/F/m7/3` | order | `position 3` | `position 1` |
+| `guitar/F/m7/4` | order | `position 4` | `position 3` |
+| `guitar/F/m7/6` | order | `position 6` | `position 4` |
+| `guitar/F/m9/1` | order | `position 1` | `position 2` |
+| `guitar/F/m9/2` | order | `position 2` | `position 1` |
+| `guitar/F/maj7sus2/3` | order | `position 3` | `position 4` |
+| `guitar/F/maj7sus2/4` | order | `position 4` | `position 3` |
+| `guitar/F/major/1` | order | `position 1` | `position 3` |
+| `guitar/F/major/2` | order | `position 2` | `position 1` |
+| `guitar/F/major/3` | order | `position 3` | `position 2` |
+| `guitar/F/mmaj7b5/3` | order | `position 3` | `position 4` |
+| `guitar/F/mmaj7b5/4` | order | `position 4` | `position 3` |
+| `guitar/F/mmaj9/1` | order | `position 1` | `position 2` |
+| `guitar/F/mmaj9/2` | order | `position 2` | `position 1` |
+| `guitar/F/sus/2` | order | `position 2` | `position 3` |
+| `guitar/F/sus/3` | order | `position 3` | `position 2` |
+| `guitar/F/sus2sus4/2` | order | `position 2` | `position 3` |
+| `guitar/F/sus2sus4/3` | order | `position 3` | `position 2` |
+| `guitar/F/sus4/1` | order | `position 1` | `position 2` |
+| `guitar/F/sus4/2` | order | `position 2` | `position 1` |
+| `guitar/Fsharp/_A/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/_A/4` | order | `position 4` | `position 3` |
+| `guitar/Fsharp/_Ab/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/_Ab/4` | order | `position 4` | `position 3` |
+| `guitar/Fsharp/_B/2` | order | `position 2` | `position 3` |
+| `guitar/Fsharp/_B/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/_B/4` | order | `position 4` | `position 2` |
+| `guitar/Fsharp/_Bb/1` | order | `position 1` | `position 4` |
+| `guitar/Fsharp/_Bb/4` | order | `position 4` | `position 1` |
+| `guitar/Fsharp/_C/1` | order | `position 1` | `position 2` |
+| `guitar/Fsharp/_C/2` | order | `position 2` | `position 3` |
+| `guitar/Fsharp/_C/3` | order | `position 3` | `position 1` |
+| `guitar/Fsharp/_Csharp/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/_Csharp/4` | order | `position 4` | `position 3` |
+| `guitar/Fsharp/_E/1` | order | `position 1` | `position 2` |
+| `guitar/Fsharp/_E/2` | order | `position 2` | `position 1` |
+| `guitar/Fsharp/_G/1` | order | `position 1` | `position 2` |
+| `guitar/Fsharp/_G/2` | order | `position 2` | `position 3` |
+| `guitar/Fsharp/_G/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/_G/4` | order | `position 4` | `position 1` |
+| `guitar/Fsharp/5/2` | order | `position 2` | `position 3` |
+| `guitar/Fsharp/5/3` | order | `position 3` | `position 2` |
+| `guitar/Fsharp/69/1` | order | `position 1` | `position 2` |
+| `guitar/Fsharp/69/2` | order | `position 2` | `position 1` |
+| `guitar/Fsharp/7sharp9/1` | order | `position 1` | `position 2` |
+| `guitar/Fsharp/7sharp9/2` | order | `position 2` | `position 3` |
+| `guitar/Fsharp/7sharp9/3` | order | `position 3` | `position 1` |
+| `guitar/Fsharp/9/1` | order | `position 1` | `position 2` |
+| `guitar/Fsharp/9/2` | order | `position 2` | `position 1` |
+| `guitar/Fsharp/9b5/1` | order | `position 1` | `position 2` |
+| `guitar/Fsharp/9b5/2` | order | `position 2` | `position 1` |
+| `guitar/Fsharp/add11/1` | order | `position 1` | `position 3` |
+| `guitar/Fsharp/add11/2` | order | `position 2` | `position 1` |
+| `guitar/Fsharp/add11/3` | order | `position 3` | `position 2` |
+| `guitar/Fsharp/add9/1` | order | `position 1` | `position 2` |
+| `guitar/Fsharp/add9/2` | order | `position 2` | `position 1` |
+| `guitar/Fsharp/add9/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/add9/4` | order | `position 4` | `position 3` |
+| `guitar/Fsharp/m_A/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/m_A/4` | order | `position 4` | `position 3` |
+| `guitar/Fsharp/m_Ab/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/m_Ab/4` | order | `position 4` | `position 3` |
+| `guitar/Fsharp/m_B/2` | order | `position 2` | `position 3` |
+| `guitar/Fsharp/m_B/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/m_B/4` | order | `position 4` | `position 2` |
+| `guitar/Fsharp/m_Bb/2` | order | `position 2` | `position 3` |
+| `guitar/Fsharp/m_Bb/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/m_Bb/4` | order | `position 4` | `position 2` |
+| `guitar/Fsharp/m_C/2` | order | `position 2` | `position 3` |
+| `guitar/Fsharp/m_C/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/m_C/4` | order | `position 4` | `position 2` |
+| `guitar/Fsharp/m_E/2` | order | `position 2` | `position 3` |
+| `guitar/Fsharp/m_E/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/m_E/4` | order | `position 4` | `position 2` |
+| `guitar/Fsharp/m_Eb/2` | order | `position 2` | `position 3` |
+| `guitar/Fsharp/m_Eb/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/m_Eb/4` | order | `position 4` | `position 2` |
+| `guitar/Fsharp/m_F/2` | order | `position 2` | `position 4` |
+| `guitar/Fsharp/m_F/4` | order | `position 4` | `position 2` |
+| `guitar/Fsharp/m6/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/m6/4` | order | `position 4` | `position 3` |
+| `guitar/Fsharp/m7/1` | order | `position 1` | `position 2` |
+| `guitar/Fsharp/m7/2` | order | `position 2` | `position 6` |
+| `guitar/Fsharp/m7/3` | order | `position 3` | `position 1` |
+| `guitar/Fsharp/m7/4` | order | `position 4` | `position 3` |
+| `guitar/Fsharp/m7/6` | order | `position 6` | `position 4` |
+| `guitar/Fsharp/maj7b5/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/maj7b5/4` | order | `position 4` | `position 3` |
+| `guitar/Fsharp/maj7sus2/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/maj7sus2/4` | order | `position 4` | `position 3` |
+| `guitar/Fsharp/maj9/1` | order | `position 1` | `position 2` |
+| `guitar/Fsharp/maj9/2` | order | `position 2` | `position 3` |
+| `guitar/Fsharp/maj9/3` | order | `position 3` | `position 1` |
+| `guitar/Fsharp/mmaj7b5/3` | order | `position 3` | `position 4` |
+| `guitar/Fsharp/mmaj7b5/4` | order | `position 4` | `position 3` |
+| `guitar/Fsharp/mmaj9/1` | order | `position 1` | `position 2` |
+| `guitar/Fsharp/mmaj9/2` | order | `position 2` | `position 1` |
+| `guitar/Fsharp/sus/2` | order | `position 2` | `position 3` |
+| `guitar/Fsharp/sus/3` | order | `position 3` | `position 2` |
+| `guitar/Fsharp/sus2sus4/2` | order | `position 2` | `position 3` |
+| `guitar/Fsharp/sus2sus4/3` | order | `position 3` | `position 2` |
+| `guitar/G/_B/2` | order | `position 2` | `position 4` |
+| `guitar/G/_B/3` | order | `position 3` | `position 2` |
+| `guitar/G/_B/4` | order | `position 4` | `position 3` |
+| `guitar/G/_Bb/1` | order | `position 1` | `position 2` |
+| `guitar/G/_Bb/2` | order | `position 2` | `position 3` |
+| `guitar/G/_Bb/3` | order | `position 3` | `position 4` |
+| `guitar/G/_Bb/4` | order | `position 4` | `position 1` |
+| `guitar/G/_E/2` | order | `position 2` | `position 4` |
+| `guitar/G/_E/3` | order | `position 3` | `position 2` |
+| `guitar/G/_E/4` | order | `position 4` | `position 3` |
+| `guitar/G/_Eb/2` | order | `position 2` | `position 3` |
+| `guitar/G/_Eb/3` | order | `position 3` | `position 4` |
+| `guitar/G/_Eb/4` | order | `position 4` | `position 2` |
+| `guitar/G/_Fsharp/2` | order | `position 2` | `position 3` |
+| `guitar/G/_Fsharp/3` | order | `position 3` | `position 2` |
+| `guitar/G/5/2` | order | `position 2` | `position 3` |
+| `guitar/G/5/3` | order | `position 3` | `position 2` |
+| `guitar/G/7b9/1` | order | `position 1` | `position 2` |
+| `guitar/G/7b9/2` | order | `position 2` | `position 1` |
+| `guitar/G/7sharp9/2` | order | `position 2` | `position 3` |
+| `guitar/G/7sharp9/3` | order | `position 3` | `position 2` |
+| `guitar/G/9b5/3` | order | `position 3` | `position 4` |
+| `guitar/G/9b5/4` | order | `position 4` | `position 3` |
+| `guitar/G/add11/1` | order | `position 1` | `position 2` |
+| `guitar/G/add11/2` | order | `position 2` | `position 4` |
+| `guitar/G/add11/3` | order | `position 3` | `position 1` |
+| `guitar/G/add11/4` | order | `position 4` | `position 3` |
+| `guitar/G/add9/3` | order | `position 3` | `position 3` |
+| `guitar/G/add9/4` | order | `position 4` | `position 2` |
+| `guitar/G/dim7/3` | order | `position 3` | `position 4` |
+| `guitar/G/dim7/4` | order | `position 4` | `position 3` |
+| `guitar/G/m_Ab/1` | order | `position 1` | `position 3` |
+| `guitar/G/m_Ab/3` | order | `position 3` | `position 4` |
+| `guitar/G/m_Ab/4` | order | `position 4` | `position 1` |
+| `guitar/G/m_B/3` | order | `position 3` | `position 4` |
+| `guitar/G/m_B/4` | order | `position 4` | `position 3` |
+| `guitar/G/m_Bb/3` | order | `position 3` | `position 4` |
+| `guitar/G/m_Bb/4` | order | `position 4` | `position 3` |
+| `guitar/G/m_C/2` | order | `position 2` | `position 3` |
+| `guitar/G/m_C/3` | order | `position 3` | `position 4` |
+| `guitar/G/m_C/4` | order | `position 4` | `position 2` |
+| `guitar/G/m_F/1` | order | `position 1` | `position 2` |
+| `guitar/G/m_F/2` | order | `position 2` | `position 4` |
+| `guitar/G/m_F/4` | order | `position 4` | `position 1` |
+| `guitar/G/m_Fsharp/1` | order | `position 1` | `position 3` |
+| `guitar/G/m_Fsharp/3` | order | `position 3` | `position 4` |
+| `guitar/G/m_Fsharp/4` | order | `position 4` | `position 1` |
+| `guitar/G/maj7b5/1` | order | `position 1` | `position 2` |
+| `guitar/G/maj7b5/2` | order | `position 2` | `position 1` |
+| `guitar/G/maj7sus2/2` | order | `position 2` | `position 3` |
+| `guitar/G/maj7sus2/3` | order | `position 3` | `position 2` |
+| `guitar/G/maj9/2` | order | `position 2` | `position 3` |
+| `guitar/G/maj9/3` | order | `position 3` | `position 2` |
+| `guitar/G/major/3` | order | `position 3` | `position 3` |
+| `guitar/G/major/4` | order | `position 4` | `position 2` |
+| `guitar/G/mmaj7b5/3` | order | `position 3` | `position 4` |
+| `guitar/G/mmaj7b5/4` | order | `position 4` | `position 3` |
+| `guitar/G/sus/3` | order | `position 3` | `position 4` |
+| `guitar/G/sus/4` | order | `position 4` | `position 3` |
+| `guitar/G/sus2sus4/1` | order | `position 1` | `position 2` |
+| `guitar/G/sus2sus4/2` | order | `position 2` | `position 3` |
+| `guitar/G/sus2sus4/3` | order | `position 3` | `position 1` |
+| `ukulele/A/9b5/2` | order | `position 2` | `position 3` |
+| `ukulele/A/9b5/3` | order | `position 3` | `position 2` |
+| `ukulele/A/9sharp11/2` | order | `position 2` | `position 3` |
+| `ukulele/A/9sharp11/3` | order | `position 3` | `position 2` |
+| `ukulele/A/aug/2` | order | `position 2` | `position 3` |
+| `ukulele/A/aug/3` | order | `position 3` | `position 2` |
+| `ukulele/A/m9b5/1` | order | `position 1` | `position 2` |
+| `ukulele/A/m9b5/2` | order | `position 2` | `position 1` |
+| `ukulele/A/mmaj9/2` | order | `position 2` | `position 3` |
+| `ukulele/A/mmaj9/3` | order | `position 3` | `position 2` |
+| `ukulele/A/sus4/3` | order | `position 3` | `position 4` |
+| `ukulele/A/sus4/4` | order | `position 4` | `position 3` |
+| `ukulele/Ab/9b5/2` | order | `position 2` | `position 3` |
+| `ukulele/Ab/9b5/3` | order | `position 3` | `position 2` |
+| `ukulele/Ab/9sharp11/2` | order | `position 2` | `position 3` |
+| `ukulele/Ab/9sharp11/3` | order | `position 3` | `position 2` |
+| `ukulele/Ab/b13sharp9/1` | order | `position 1` | `position 2` |
+| `ukulele/Ab/b13sharp9/2` | order | `position 2` | `position 1` |
+| `ukulele/Ab/m9/2` | order | `position 2` | `position 3` |
+| `ukulele/Ab/m9/3` | order | `position 3` | `position 2` |
+| `ukulele/Ab/m9b5/1` | order | `position 1` | `position 2` |
+| `ukulele/Ab/m9b5/2` | order | `position 2` | `position 1` |
+| `ukulele/Ab/major/2` | order | `position 2` | `position 3` |
+| `ukulele/Ab/major/3` | order | `position 3` | `position 2` |
+| `ukulele/Ab/sus4/2` | order | `position 2` | `position 3` |
+| `ukulele/Ab/sus4/3` | order | `position 3` | `position 2` |
+| `ukulele/B/9b5/3` | order | `position 3` | `position 4` |
+| `ukulele/B/9b5/4` | order | `position 4` | `position 3` |
+| `ukulele/B/9sharp11/3` | order | `position 3` | `position 4` |
+| `ukulele/B/9sharp11/4` | order | `position 4` | `position 3` |
+| `ukulele/B/aug/3` | order | `position 3` | `position 4` |
+| `ukulele/B/aug/4` | order | `position 4` | `position 3` |
+| `ukulele/B/aug7/1` | order | `position 1` | `position 2` |
+| `ukulele/B/aug7/2` | order | `position 2` | `position 1` |
+| `ukulele/B/b13sharp9/2` | order | `position 2` | `position 3` |
+| `ukulele/B/b13sharp9/3` | order | `position 3` | `position 2` |
+| `ukulele/B/m9/3` | order | `position 3` | `position 4` |
+| `ukulele/B/m9/4` | order | `position 4` | `position 3` |
+| `ukulele/B/maj7b5/1` | order | `position 1` | `position 2` |
+| `ukulele/B/maj7b5/2` | order | `position 2` | `position 1` |
+| `ukulele/B/mmaj7/1` | order | `position 1` | `position 2` |
+| `ukulele/B/mmaj7/2` | order | `position 2` | `position 1` |
+| `ukulele/B/sus4/3` | order | `position 3` | `position 4` |
+| `ukulele/B/sus4/4` | order | `position 4` | `position 3` |
+| `ukulele/Bb/9b5/3` | order | `position 3` | `position 4` |
+| `ukulele/Bb/9b5/4` | order | `position 4` | `position 3` |
+| `ukulele/Bb/9sharp11/3` | order | `position 3` | `position 4` |
+| `ukulele/Bb/9sharp11/4` | order | `position 4` | `position 3` |
+| `ukulele/Bb/aug/2` | order | `position 2` | `position 3` |
+| `ukulele/Bb/aug/3` | order | `position 3` | `position 2` |
+| `ukulele/Bb/aug7/1` | order | `position 1` | `position 2` |
+| `ukulele/Bb/aug7/2` | order | `position 2` | `position 1` |
+| `ukulele/Bb/b13sharp9/2` | order | `position 2` | `position 3` |
+| `ukulele/Bb/b13sharp9/3` | order | `position 3` | `position 2` |
+| `ukulele/Bb/m9/2` | order | `position 2` | `position 4` |
+| `ukulele/Bb/m9/3` | order | `position 3` | `position 2` |
+| `ukulele/Bb/m9/4` | order | `position 4` | `position 3` |
+| `ukulele/Bb/m9b5/2` | order | `position 2` | `position 3` |
+| `ukulele/Bb/m9b5/3` | order | `position 3` | `position 2` |
+| `ukulele/Bb/mmaj7b5/1` | order | `position 1` | `position 2` |
+| `ukulele/Bb/mmaj7b5/2` | order | `position 2` | `position 1` |
+| `ukulele/Bb/mmaj9/2` | order | `position 2` | `position 3` |
+| `ukulele/Bb/mmaj9/3` | order | `position 3` | `position 2` |
+| `ukulele/Bb/sus4/3` | order | `position 3` | `position 4` |
+| `ukulele/Bb/sus4/4` | order | `position 4` | `position 3` |
+| `ukulele/C/13/1` | order | `position 1` | `position 2` |
+| `ukulele/C/13/2` | order | `position 2` | `position 1` |
+| `ukulele/C/13b9/1` | order | `position 1` | `position 2` |
+| `ukulele/C/13b9/2` | order | `position 2` | `position 1` |
+| `ukulele/C/9b5/3` | order | `position 3` | `position 4` |
+| `ukulele/C/9b5/4` | order | `position 4` | `position 3` |
+| `ukulele/C/9sharp11/3` | order | `position 3` | `position 4` |
+| `ukulele/C/9sharp11/4` | order | `position 4` | `position 3` |
+| `ukulele/C/b13sharp9/3` | order | `position 3` | `position 4` |
+| `ukulele/C/b13sharp9/4` | order | `position 4` | `position 3` |
+| `ukulele/C/m9/3` | order | `position 3` | `position 4` |
+| `ukulele/C/m9/4` | order | `position 4` | `position 3` |
+| `ukulele/C/maj7b5/1` | order | `position 1` | `position 2` |
+| `ukulele/C/maj7b5/2` | order | `position 2` | `position 1` |
+| `ukulele/C/maj7sharp5/2` | order | `position 2` | `position 3` |
+| `ukulele/C/maj7sharp5/3` | order | `position 3` | `position 2` |
+| `ukulele/C/mmaj7/1` | order | `position 1` | `position 2` |
+| `ukulele/C/mmaj7/2` | order | `position 2` | `position 1` |
+| `ukulele/D/13b9/1` | order | `position 1` | `position 2` |
+| `ukulele/D/13b9/2` | order | `position 2` | `position 1` |
+| `ukulele/D/aug/2` | order | `position 2` | `position 3` |
+| `ukulele/D/aug/3` | order | `position 3` | `position 2` |
+| `ukulele/D/aug7/2` | order | `position 2` | `position 3` |
+| `ukulele/D/aug7/3` | order | `position 3` | `position 2` |
+| `ukulele/D/b13sharp9/3` | order | `position 3` | `position 4` |
+| `ukulele/D/b13sharp9/4` | order | `position 4` | `position 3` |
+| `ukulele/D/maj7b5/2` | order | `position 2` | `position 3` |
+| `ukulele/D/maj7b5/3` | order | `position 3` | `position 2` |
+| `ukulele/Db/13b9/1` | order | `position 1` | `position 2` |
+| `ukulele/Db/13b9/2` | order | `position 2` | `position 1` |
+| `ukulele/Db/aug/2` | order | `position 2` | `position 3` |
+| `ukulele/Db/aug/3` | order | `position 3` | `position 2` |
+| `ukulele/Db/aug7/2` | order | `position 2` | `position 3` |
+| `ukulele/Db/aug7/3` | order | `position 3` | `position 2` |
+| `ukulele/Db/aug9/1` | order | `position 1` | `position 2` |
+| `ukulele/Db/aug9/2` | order | `position 2` | `position 1` |
+| `ukulele/Db/b13sharp9/3` | order | `position 3` | `position 4` |
+| `ukulele/Db/b13sharp9/4` | order | `position 4` | `position 3` |
+| `ukulele/Db/maj7/2` | order | `position 2` | `position 3` |
+| `ukulele/Db/maj7/3` | order | `position 3` | `position 2` |
+| `ukulele/Db/maj7sharp5/2` | order | `position 2` | `position 3` |
+| `ukulele/Db/maj7sharp5/3` | order | `position 3` | `position 2` |
+| `ukulele/Db/mmaj7/2` | order | `position 2` | `position 3` |
+| `ukulele/Db/mmaj7/3` | order | `position 3` | `position 2` |
+| `ukulele/E/13b9/2` | order | `position 2` | `position 3` |
+| `ukulele/E/13b9/3` | order | `position 3` | `position 2` |
+| `ukulele/E/9b5/1` | order | `position 1` | `position 2` |
+| `ukulele/E/9b5/2` | order | `position 2` | `position 1` |
+| `ukulele/E/9sharp11/1` | order | `position 1` | `position 2` |
+| `ukulele/E/9sharp11/2` | order | `position 2` | `position 1` |
+| `ukulele/E/aug7/3` | order | `position 3` | `position 4` |
+| `ukulele/E/aug7/4` | order | `position 4` | `position 3` |
+| `ukulele/E/maj7b5/3` | order | `position 3` | `position 4` |
+| `ukulele/E/maj7b5/4` | order | `position 4` | `position 3` |
+| `ukulele/E/sus4/1` | order | `position 1` | `position 2` |
+| `ukulele/E/sus4/2` | order | `position 2` | `position 1` |
+| `ukulele/Eb/aug/3` | order | `position 3` | `position 4` |
+| `ukulele/Eb/aug/4` | order | `position 4` | `position 3` |
+| `ukulele/Eb/aug7/2` | order | `position 2` | `position 3` |
+| `ukulele/Eb/aug7/3` | order | `position 3` | `position 2` |
+| `ukulele/Eb/maj7b5/2` | order | `position 2` | `position 3` |
+| `ukulele/Eb/maj7b5/3` | order | `position 3` | `position 2` |
+| `ukulele/Eb/sus4/1` | order | `position 1` | `position 2` |
+| `ukulele/Eb/sus4/2` | order | `position 2` | `position 1` |
+| `ukulele/F/9b5/1` | order | `position 1` | `position 2` |
+| `ukulele/F/9b5/2` | order | `position 2` | `position 1` |
+| `ukulele/F/9sharp11/1` | order | `position 1` | `position 2` |
+| `ukulele/F/9sharp11/2` | order | `position 2` | `position 1` |
+| `ukulele/F/aug/2` | order | `position 2` | `position 3` |
+| `ukulele/F/aug/3` | order | `position 3` | `position 2` |
+| `ukulele/F/aug7/3` | order | `position 3` | `position 4` |
+| `ukulele/F/aug7/4` | order | `position 4` | `position 3` |
+| `ukulele/F/maj7b5/3` | order | `position 3` | `position 4` |
+| `ukulele/F/maj7b5/4` | order | `position 4` | `position 3` |
+| `ukulele/F/sus4/1` | order | `position 1` | `position 2` |
+| `ukulele/F/sus4/2` | order | `position 2` | `position 1` |
+| `ukulele/F/sus4/3` | order | `position 3` | `position 4` |
+| `ukulele/F/sus4/4` | order | `position 4` | `position 3` |
+| `ukulele/G/9b5/2` | order | `position 2` | `position 3` |
+| `ukulele/G/9b5/3` | order | `position 3` | `position 2` |
+| `ukulele/G/9sharp11/2` | order | `position 2` | `position 3` |
+| `ukulele/G/9sharp11/3` | order | `position 3` | `position 2` |
+| `ukulele/G/aug/3` | order | `position 3` | `position 4` |
+| `ukulele/G/aug/4` | order | `position 4` | `position 3` |
+| `ukulele/G/b13sharp9/1` | order | `position 1` | `position 2` |
+| `ukulele/G/b13sharp9/2` | order | `position 2` | `position 1` |
+| `ukulele/G/m11/1` | order | `position 1` | `position 2` |
+| `ukulele/G/m11/2` | order | `position 2` | `position 1` |
+| `ukulele/G/m11/3` | order | `position 3` | `position 4` |
+| `ukulele/G/m11/4` | order | `position 4` | `position 3` |
+| `ukulele/G/m69/1` | order | `position 1` | `position 2` |
+| `ukulele/G/m69/2` | order | `position 2` | `position 1` |
+| `ukulele/G/m9/2` | order | `position 2` | `position 3` |
+| `ukulele/G/m9/3` | order | `position 3` | `position 2` |
+| `ukulele/G/major/2` | order | `position 2` | `position 3` |
+| `ukulele/G/major/3` | order | `position 3` | `position 2` |
+| `ukulele/G/mmaj11/1` | order | `position 1` | `position 2` |
+| `ukulele/G/mmaj11/2` | order | `position 2` | `position 1` |
+| `ukulele/G/mmaj11/3` | order | `position 3` | `position 4` |
+| `ukulele/G/mmaj11/4` | order | `position 4` | `position 3` |
+| `ukulele/G/sus4/2` | order | `position 2` | `position 3` |
+| `ukulele/G/sus4/3` | order | `position 3` | `position 2` |
+| `ukulele/Gb/7sharp9/1` | order | `position 1` | `position 2` |
+| `ukulele/Gb/7sharp9/2` | order | `position 2` | `position 1` |
+| `ukulele/Gb/aug/2` | order | `position 2` | `position 3` |
+| `ukulele/Gb/aug/3` | order | `position 3` | `position 2` |
+| `ukulele/Gb/aug7/3` | order | `position 3` | `position 4` |
+| `ukulele/Gb/aug7/4` | order | `position 4` | `position 3` |
+| `ukulele/Gb/maj7b5/3` | order | `position 3` | `position 4` |
+| `ukulele/Gb/maj7b5/4` | order | `position 4` | `position 3` |
+| `ukulele/Gb/major/1` | order | `position 1` | `position 2` |
+| `ukulele/Gb/major/2` | order | `position 2` | `position 1` |
+| `ukulele/Gb/sus4/2` | order | `position 2` | `position 3` |
+| `ukulele/Gb/sus4/3` | order | `position 3` | `position 2` |
 
 </details>

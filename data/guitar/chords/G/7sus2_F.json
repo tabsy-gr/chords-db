@@ -20,17 +20,17 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "guitar/G/m9_F/3",
-      "frets": [13, 10, 12, 12, 10, 10],
-      "fingers": [4, 1, 2, 3, 1, 1],
+      "id": "guitar/G/m9_F/4",
+      "frets": [13, 10, 12, 10, 10, -1],
+      "fingers": [4, 1, 3, 1, 1, 0],
       "barres": [10],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "guitar/G/m9_F/4",
-      "frets": [13, 10, 12, 10, 10, -1],
-      "fingers": [4, 1, 3, 1, 1, 0],
+      "id": "guitar/G/m9_F/3",
+      "frets": [13, 10, 12, 12, 10, 10],
+      "fingers": [4, 1, 2, 3, 1, 1],
       "barres": [10],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

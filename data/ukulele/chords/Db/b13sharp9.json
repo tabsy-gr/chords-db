@@ -18,18 +18,18 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
+      "id": "ukulele/Db/b13sharp9/4",
+      "frets": [9, 9, 7, 8],
+      "fingers": [3, 4, 1, 2],
+      "rootless": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
       "id": "ukulele/Db/b13sharp9/3",
       "frets": [10, 9, 7, 7],
       "fingers": [4, 3, 1, 1],
       "barres": [7],
       "capo": true,
-      "rootless": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
-      "id": "ukulele/Db/b13sharp9/4",
-      "frets": [9, 9, 7, 8],
-      "fingers": [3, 4, 1, 2],
       "rootless": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }

@@ -4,16 +4,16 @@
   "suffix": "13b9",
   "voicings": [
     {
-      "id": "ukulele/C/13b9/1",
-      "frets": [2, 1, 0, 1],
-      "fingers": [3, 1, 0, 2],
+      "id": "ukulele/C/13b9/2",
+      "frets": [3, 1, 0, 0],
+      "fingers": [3, 1, 0, 0],
       "rootless": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "ukulele/C/13b9/2",
-      "frets": [3, 1, 0, 0],
-      "fingers": [3, 1, 0, 0],
+      "id": "ukulele/C/13b9/1",
+      "frets": [2, 1, 0, 1],
+      "fingers": [3, 1, 0, 2],
       "rootless": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
