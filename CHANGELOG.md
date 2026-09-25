@@ -29,6 +29,9 @@ For a full comparison with the original, see
 * Guitar F major position 2 had `x` instead of `0` in its fingers.
 
 ### Added
+* `UPSTREAM-DIFF.md`: every voicing that differs from the original database,
+  and why, generated from `data/changes.json`. The tests fail on any
+  unexplained difference.
 * A voicing validator (`validateVoicing`, `validateChord`). It checks each
   voicing's notes against the chord's formula, the fingering against
   playability rules, and that voicings are ordered easiest first.
@@ -39,8 +42,6 @@ For a full comparison with the original, see
   source, the tones a voicing may omit, and the suffix spellings each
   instrument uses. Cross-checked against tonal.
 * `reports/validation.md`: every current finding. CI checks it is up to date.
-* A round-trip test proving every upstream position is preserved, against a
-  pinned copy of upstream's v0.6.0 build.
 * CI that typechecks, builds, tests, and checks that `lib/` is up to date.
 * `AUTHORS`, generated from git history, crediting every contributor to the
   original project.

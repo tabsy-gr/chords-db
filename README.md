@@ -11,9 +11,13 @@ by David Rubert and contributors, which is no longer maintained. It is
 maintained by [Tabsy](https://tabsy.gr), which uses it for its chord diagrams.
 
 **Adopting this fork from the original?** Every difference from the original
-database is documented in
-[MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-DB.md): what changed in
-the package, the data format and the API, and how to move over.
+database is documented:
+
+- [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-DB.md): what changed in
+  the package, the data format and the API, and how to move over.
+- [UPSTREAM-DIFF.md](./UPSTREAM-DIFF.md): every voicing that was added,
+  corrected, relabelled or removed, and why. Generated, and checked by the
+  tests.
 
 ## Instruments
 
@@ -117,6 +121,10 @@ A keyboard (piano) voicing has `notes` (note names, lowest first) and
 
 Run `npm run format:data` after editing data files; CI checks the formatting.
 
+When a change makes a voicing differ from the original database, add an entry
+to `data/changes.json` saying which voicings and why, then run
+`npm run upstream-diff`. The tests fail on any unexplained difference.
+
 ## Validation
 
 Every voicing is checked against two sets of rules, defined in
@@ -159,6 +167,7 @@ npm run build:data   # regenerate lib/ from data/
 npm run format:data  # format data/ files
 npm run test:run     # run the test suite
 npm run validate     # regenerate reports/validation.md
+npm run upstream-diff  # regenerate UPSTREAM-DIFF.md from data/changes.json
 npm run typecheck
 npm run build        # regenerate lib/ and build the package
 npm run authors      # regenerate AUTHORS from git history

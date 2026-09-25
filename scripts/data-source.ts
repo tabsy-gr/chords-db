@@ -21,6 +21,12 @@ export const loadQualitiesFile = () => ({
   text: fs.readFileSync(QUALITIES_FILE, 'utf8'),
 });
 
+/** data/changes.json, raw, for formatting and schema checks. */
+export const loadChangesFile = () => {
+  const file = path.join(DATA_DIR, 'changes.json');
+  return { file: path.relative(ROOT, file), text: fs.readFileSync(file, 'utf8') };
+};
+
 export interface ChordFile {
   /** Path relative to the repository root. */
   file: string;

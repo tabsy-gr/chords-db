@@ -22,14 +22,11 @@ grows with each release.
 
 ## Chord data: what changed in the voicings
 
-Every upstream position is kept. `test/upstream-roundtrip.test.ts` checks
-each one against upstream's own build (pinned in
-`test/fixtures/upstream-v0.6.0`) and fails on any difference not listed here.
-
-- **Guitar F major, position 2** had `x` in its fingers (`xx3211`). It is `0`
-  (no finger) here.
-
-Corrections to wrong voicings will be listed here as they are made.
+Every voicing that differs from upstream, and why, is listed in
+[UPSTREAM-DIFF.md](./UPSTREAM-DIFF.md). It is generated from `data/changes.json`
+by comparing every voicing with upstream's own build (pinned in
+`test/fixtures/upstream-v0.6.0`); the tests fail on any difference it does
+not explain.
 
 ## Data format
 
