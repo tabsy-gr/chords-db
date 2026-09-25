@@ -5,7 +5,8 @@ import chordSchema from '../schema/chord.schema.json';
 import instrumentSchema from '../schema/instrument.schema.json';
 import qualitiesSchema from '../schema/qualities.schema.json';
 import changesSchema from '../schema/changes.schema.json';
-import { loadChangesFile, loadInstruments, loadQualitiesFile } from '../scripts/data-source';
+import notationSchema from '../schema/notation.schema.json';
+import { loadChangesFile, loadInstruments, loadNotationFile, loadQualitiesFile } from '../scripts/data-source';
 
 const ajv = new Ajv2020({ allErrors: true });
 addFormats(ajv);
@@ -27,6 +28,12 @@ it('changes.json matches the changes schema', () => {
   const { file, text } = loadChangesFile();
   const ok = validateChanges(JSON.parse(text));
   expect(ok, `${file}: ${describeErrors(validateChanges.errors)}`).toBe(true);
+});
+
+it('notation.json matches the notation schema', () => {
+  const validateNotation = ajv.compile(notationSchema);
+  const { file, text } = loadNotationFile();
+  expect(validateNotation(JSON.parse(text)), `${file}: ${describeErrors(validateNotation.errors)}`).toBe(true);
 });
 
 describe.each(loadInstruments())('$instrument.id', ({ file, text, chords }) => {

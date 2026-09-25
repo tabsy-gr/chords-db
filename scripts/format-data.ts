@@ -5,12 +5,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { formatJson } from './format-json';
-import { loadChangesFile, loadInstruments, loadQualitiesFile, ROOT } from './data-source';
+import { loadChangesFile, loadInstruments, loadNotationFile, loadQualitiesFile, ROOT } from './data-source';
 
 const check = process.argv.includes('--check');
 const unformatted: string[] = [];
 
-const files = [loadQualitiesFile(), loadChangesFile(), ...loadInstruments().flatMap((s) => [s, ...s.chords])];
+const files = [loadQualitiesFile(), loadChangesFile(), loadNotationFile(), ...loadInstruments().flatMap((s) => [s, ...s.chords])];
 
 for (const { file, text } of files) {
   const formatted = formatJson(JSON.parse(text));

@@ -124,6 +124,19 @@ strings (`'x32010'`, `a` = 10). This fork keeps one JSON file per chord under
 `schema/chord.schema.json`. File names spell `#` as `sharp` and `/` as `_`;
 upstream used `#` in file names, which breaks ES module loading.
 
+### Renamed suffixes
+
+A suffix that starts with `b` can't follow a root in a chord symbol (`Cb13b9`
+reads as C-flat), so these have new names. The old names still resolve
+through `parseSuffix()`:
+
+| Upstream | This fork |
+| --- | --- |
+| `b13b9` (ukulele) | `7b9b13` |
+| `b13#9` (ukulele) | `7#9b13` |
+| `alt` (guitar, ukulele) | `(b5)`: these voicings are major flat-five triads, not altered dominants (see UPSTREAM-DIFF.md) |
+| `sus` (guitar) | merged into `sus4` ("sus" alone means sus4) |
+
 ## Helpers
 
 Upstream's `src/tools.js` was never published. This fork publishes:
@@ -138,6 +151,8 @@ Upstream's `src/tools.js` was never published. This fork publishes:
 | `strChord2array`, `processString`, `generate`, `numberOfBarres`, `unique` | removed; they processed the old hex-string format |
 | — | `validateVoicing(instrument, chord, voicing)` and `validateChord(instrument, chord)`: check notes, fingering and order (see the README) |
 | — | `qualities`, `parseSuffix(suffix)`: what each chord suffix contains, from `data/qualities.json` |
+| — | `parseChordSymbol(symbol)`, `findChord(data, symbol)`: read chord symbols (`CΔ7`, `F♯ø`, `A#m7`) and look them up whatever the enharmonic spelling |
+| — | `qualityInputs()`, `chordSymbolSource()`: for matching chord symbols in text |
 | — | `playabilityScore(voicing, courses)`, `compareByPlayability(courses)`: sort voicings easiest first |
 
 ## Tooling (contributors only)

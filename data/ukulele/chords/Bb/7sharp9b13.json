@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Bb",
+  "suffix": "7#9b13",
+  "voicings": [
+    {
+      "id": "ukulele/Bb/b13sharp9/1",
+      "frets": [1, 2, 2, 4],
+      "fingers": [1, 2, 3, 4],
+      "rootless": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/Bb/b13sharp9/3",
+      "frets": [6, 6, 4, 5],
+      "fingers": [3, 4, 1, 2],
+      "rootless": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/Bb/b13sharp9/2",
+      "frets": [7, 6, 4, 4],
+      "fingers": [4, 3, 1, 1],
+      "barres": [4],
+      "capo": true,
+      "rootless": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/Bb/b13sharp9/4",
+      "frets": [7, 8, 9, 9],
+      "fingers": [1, 2, 3, 4],
+      "rootless": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

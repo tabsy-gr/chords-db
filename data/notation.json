@@ -1,0 +1,21 @@
+{
+  "$schema": "../schema/notation.schema.json",
+  "accidentals": [{ "from": "♯", "to": "#" }, { "from": "♭", "to": "b" }],
+  "qualitySymbols": [
+    { "from": "ø7", "to": "m7b5" },
+    { "from": "Ø7", "to": "m7b5" },
+    { "from": "ø", "to": "m7b5" },
+    { "from": "Ø", "to": "m7b5" },
+    { "from": "Δ7", "to": "maj7" },
+    { "from": "∆7", "to": "maj7" },
+    { "from": "Δ", "to": "maj7" },
+    { "from": "∆", "to": "maj7" },
+    { "from": "°7", "to": "dim7" },
+    { "from": "º7", "to": "dim7" },
+    { "from": "∘7", "to": "dim7" },
+    { "from": "°", "to": "dim" },
+    { "from": "º", "to": "dim" },
+    { "from": "∘", "to": "dim" },
+    { "from": "+", "to": "aug" }
+  ]
+}

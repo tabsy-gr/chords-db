@@ -1,7 +1,7 @@
 {
   "$schema": "../../../../schema/chord.schema.json",
   "key": "G",
-  "suffix": "b5",
+  "suffix": "(b5)",
   "voicings": [
     {
       "id": "piano/G/b5/1",

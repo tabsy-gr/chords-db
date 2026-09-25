@@ -1,7 +1,7 @@
 {
   "$schema": "../../../../schema/chord.schema.json",
   "key": "Bb",
-  "suffix": "b5",
+  "suffix": "(b5)",
   "voicings": [
     {
       "id": "ukulele/Bb/alt/1",

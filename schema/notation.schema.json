@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/tabsy-gr/chords-db/schema/notation.schema.json",
+  "title": "Chord-symbol notation",
+  "description": "Symbols that chord symbols use in place of ASCII spellings. Quality synonyms written in ASCII (min, -, mM7, 6/9) are spellings in qualities.json instead.",
+  "type": "object",
+  "required": ["accidentals", "qualitySymbols"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "accidentals": {
+      "description": "Unicode accidentals and their ASCII form, applied to roots and bass notes.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/replacement" }
+    },
+    "qualitySymbols": {
+      "description": "Symbols in a chord's quality and their ASCII spelling, applied in order (so ø7 is replaced before ø). Applied only to the text after a chord's root, never to free text: Δ is also the Greek capital Delta.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/replacement" }
+    }
+  },
+  "$defs": {
+    "replacement": {
+      "type": "object",
+      "required": ["from", "to"],
+      "additionalProperties": false,
+      "properties": {
+        "from": { "type": "string", "minLength": 1 },
+        "to": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

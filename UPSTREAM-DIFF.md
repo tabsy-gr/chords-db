@@ -15,8 +15,8 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 | Change | cavaquinho | guitar | piano | ukulele | ukulele-d |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | added | 0 | 26 | 144 | 0 | 2069 |
-| removed | 446 | 16 | 0 | 45 | 0 |
-| relabelled | 12 | 123 | 84 | 37 | 0 |
+| removed | 446 | 37 | 0 | 45 | 0 |
+| relabelled | 12 | 150 | 84 | 133 | 0 |
 | frets | 0 | 360 | 0 | 4 | 0 |
 | fingers | 33 | 406 | 0 | 4 | 0 |
 | barres | 0 | 227 | 0 | 4 | 0 |
@@ -24,7 +24,7 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 | rootless | 113 | 13 | 0 | 988 | 0 |
 | notes | 0 | 0 | 528 | 0 | 0 |
 | degrees | 0 | 0 | 36 | 0 | 0 |
-| order | 855 | 823 | 0 | 179 | 0 |
+| order | 855 | 813 | 0 | 165 | 0 |
 
 Counts are voicings; one voicing can have several kinds of change.
 
@@ -1194,7 +1194,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 </details>
 
-### 5. Relabelled from alt to b5 (major flat five: 1, 3, ♭5). These voicings have no ♭7, so they are not altered dominants.
+### 5. Relabelled from alt to (b5) (major flat five: 1, 3, ♭5). These voicings have no ♭7, so they are not altered dominants.
 
 [#6](https://github.com/tabsy-gr/chords-db/issues/6)
 
@@ -1203,90 +1203,90 @@ Counts are voicings; one voicing can have several kinds of change.
 
 | Voicing | Change | Before | After |
 | --- | --- | --- | --- |
-| `guitar/A/alt/1` | relabelled | `Aalt` | `Ab5` |
-| `guitar/A/alt/2` | relabelled | `Aalt` | `Ab5` |
-| `guitar/A/alt/3` | relabelled | `Aalt` | `Ab5` |
-| `guitar/A/alt/4` | relabelled | `Aalt` | `Ab5` |
-| `guitar/Ab/alt/1` | relabelled | `Abalt` | `Abb5` |
-| `guitar/Ab/alt/2` | relabelled | `Abalt` | `Abb5` |
-| `guitar/Ab/alt/3` | relabelled | `Abalt` | `Abb5` |
-| `guitar/Ab/alt/4` | relabelled | `Abalt` | `Abb5` |
-| `guitar/B/alt/1` | relabelled | `Balt` | `Bb5` |
-| `guitar/B/alt/2` | relabelled | `Balt` | `Bb5` |
-| `guitar/B/alt/3` | relabelled | `Balt` | `Bb5` |
-| `guitar/B/alt/4` | relabelled | `Balt` | `Bb5` |
-| `guitar/Bb/alt/1` | relabelled | `Bbalt` | `Bbb5` |
-| `guitar/Bb/alt/2` | relabelled | `Bbalt` | `Bbb5` |
-| `guitar/Bb/alt/3` | relabelled | `Bbalt` | `Bbb5` |
-| `guitar/Bb/alt/4` | relabelled | `Bbalt` | `Bbb5` |
-| `guitar/C/alt/1` | relabelled | `Calt` | `Cb5` |
-| `guitar/C/alt/2` | relabelled | `Calt` | `Cb5` |
-| `guitar/C/alt/3` | relabelled | `Calt` | `Cb5` |
-| `guitar/C/alt/4` | relabelled | `Calt` | `Cb5` |
-| `guitar/Csharp/alt/1` | relabelled | `C#alt` | `C#b5` |
-| `guitar/Csharp/alt/2` | relabelled | `C#alt` | `C#b5` |
-| `guitar/Csharp/alt/3` | relabelled | `C#alt` | `C#b5` |
-| `guitar/Csharp/alt/4` | relabelled | `C#alt` | `C#b5` |
-| `guitar/D/alt/1` | relabelled | `Dalt` | `Db5` |
-| `guitar/D/alt/2` | relabelled | `Dalt` | `Db5` |
-| `guitar/D/alt/3` | relabelled | `Dalt` | `Db5` |
-| `guitar/D/alt/4` | relabelled | `Dalt` | `Db5` |
-| `guitar/E/alt/1` | relabelled | `Ealt` | `Eb5` |
-| `guitar/E/alt/2` | relabelled | `Ealt` | `Eb5` |
-| `guitar/E/alt/3` | relabelled | `Ealt` | `Eb5` |
-| `guitar/E/alt/4` | relabelled | `Ealt` | `Eb5` |
-| `guitar/Eb/alt/1` | relabelled | `Ebalt` | `Ebb5` |
-| `guitar/Eb/alt/2` | relabelled | `Ebalt` | `Ebb5` |
-| `guitar/Eb/alt/3` | relabelled | `Ebalt` | `Ebb5` |
-| `guitar/Eb/alt/4` | relabelled | `Ebalt` | `Ebb5` |
-| `guitar/F/alt/1` | relabelled | `Falt` | `Fb5` |
-| `guitar/F/alt/2` | relabelled | `Falt` | `Fb5` |
-| `guitar/F/alt/3` | relabelled | `Falt` | `Fb5` |
-| `guitar/F/alt/4` | relabelled | `Falt` | `Fb5` |
-| `guitar/Fsharp/alt/1` | relabelled | `F#alt` | `F#b5` |
-| `guitar/Fsharp/alt/2` | relabelled | `F#alt` | `F#b5` |
-| `guitar/Fsharp/alt/3` | relabelled | `F#alt` | `F#b5` |
-| `guitar/G/alt/1` | relabelled | `Galt` | `Gb5` |
-| `guitar/G/alt/2` | relabelled | `Galt` | `Gb5` |
-| `guitar/G/alt/3` | relabelled | `Galt` | `Gb5` |
-| `guitar/G/alt/4` | relabelled | `Galt` | `Gb5` |
-| `ukulele/A/alt/1` | relabelled | `Aalt` | `Ab5` |
-| `ukulele/A/alt/2` | relabelled | `Aalt` | `Ab5` |
-| `ukulele/A/alt/3` | relabelled | `Aalt` | `Ab5` |
-| `ukulele/Ab/alt/1` | relabelled | `Abalt` | `Abb5` |
-| `ukulele/Ab/alt/2` | relabelled | `Abalt` | `Abb5` |
-| `ukulele/B/alt/1` | relabelled | `Balt` | `Bb5` |
-| `ukulele/B/alt/2` | relabelled | `Balt` | `Bb5` |
-| `ukulele/B/alt/3` | relabelled | `Balt` | `Bb5` |
-| `ukulele/Bb/alt/1` | relabelled | `Bbalt` | `Bbb5` |
-| `ukulele/Bb/alt/2` | relabelled | `Bbalt` | `Bbb5` |
-| `ukulele/Bb/alt/3` | relabelled | `Bbalt` | `Bbb5` |
-| `ukulele/Bb/alt/4` | relabelled | `Bbalt` | `Bbb5` |
-| `ukulele/C/alt/1` | relabelled | `Calt` | `Cb5` |
-| `ukulele/C/alt/2` | relabelled | `Calt` | `Cb5` |
-| `ukulele/C/alt/3` | relabelled | `Calt` | `Cb5` |
-| `ukulele/D/alt/1` | relabelled | `Dalt` | `Db5` |
-| `ukulele/D/alt/2` | relabelled | `Dalt` | `Db5` |
-| `ukulele/D/alt/3` | relabelled | `Dalt` | `Db5` |
-| `ukulele/Db/alt/1` | relabelled | `Dbalt` | `Dbb5` |
-| `ukulele/Db/alt/2` | relabelled | `Dbalt` | `Dbb5` |
-| `ukulele/Db/alt/3` | relabelled | `Dbalt` | `Dbb5` |
-| `ukulele/Db/alt/4` | relabelled | `Dbalt` | `Dbb5` |
-| `ukulele/E/alt/1` | relabelled | `Ealt` | `Eb5` |
-| `ukulele/E/alt/2` | relabelled | `Ealt` | `Eb5` |
-| `ukulele/E/alt/3` | relabelled | `Ealt` | `Eb5` |
-| `ukulele/Eb/alt/1` | relabelled | `Ebalt` | `Ebb5` |
-| `ukulele/Eb/alt/2` | relabelled | `Ebalt` | `Ebb5` |
-| `ukulele/Eb/alt/3` | relabelled | `Ebalt` | `Ebb5` |
-| `ukulele/F/alt/1` | relabelled | `Falt` | `Fb5` |
-| `ukulele/F/alt/2` | relabelled | `Falt` | `Fb5` |
-| `ukulele/F/alt/3` | relabelled | `Falt` | `Fb5` |
-| `ukulele/G/alt/1` | relabelled | `Galt` | `Gb5` |
-| `ukulele/G/alt/2` | relabelled | `Galt` | `Gb5` |
-| `ukulele/G/alt/3` | relabelled | `Galt` | `Gb5` |
-| `ukulele/Gb/alt/1` | relabelled | `Gbalt` | `Gbb5` |
-| `ukulele/Gb/alt/2` | relabelled | `Gbalt` | `Gbb5` |
-| `ukulele/Gb/alt/3` | relabelled | `Gbalt` | `Gbb5` |
+| `guitar/A/alt/1` | relabelled | `Aalt` | `A(b5)` |
+| `guitar/A/alt/2` | relabelled | `Aalt` | `A(b5)` |
+| `guitar/A/alt/3` | relabelled | `Aalt` | `A(b5)` |
+| `guitar/A/alt/4` | relabelled | `Aalt` | `A(b5)` |
+| `guitar/Ab/alt/1` | relabelled | `Abalt` | `Ab(b5)` |
+| `guitar/Ab/alt/2` | relabelled | `Abalt` | `Ab(b5)` |
+| `guitar/Ab/alt/3` | relabelled | `Abalt` | `Ab(b5)` |
+| `guitar/Ab/alt/4` | relabelled | `Abalt` | `Ab(b5)` |
+| `guitar/B/alt/1` | relabelled | `Balt` | `B(b5)` |
+| `guitar/B/alt/2` | relabelled | `Balt` | `B(b5)` |
+| `guitar/B/alt/3` | relabelled | `Balt` | `B(b5)` |
+| `guitar/B/alt/4` | relabelled | `Balt` | `B(b5)` |
+| `guitar/Bb/alt/1` | relabelled | `Bbalt` | `Bb(b5)` |
+| `guitar/Bb/alt/2` | relabelled | `Bbalt` | `Bb(b5)` |
+| `guitar/Bb/alt/3` | relabelled | `Bbalt` | `Bb(b5)` |
+| `guitar/Bb/alt/4` | relabelled | `Bbalt` | `Bb(b5)` |
+| `guitar/C/alt/1` | relabelled | `Calt` | `C(b5)` |
+| `guitar/C/alt/2` | relabelled | `Calt` | `C(b5)` |
+| `guitar/C/alt/3` | relabelled | `Calt` | `C(b5)` |
+| `guitar/C/alt/4` | relabelled | `Calt` | `C(b5)` |
+| `guitar/Csharp/alt/1` | relabelled | `C#alt` | `C#(b5)` |
+| `guitar/Csharp/alt/2` | relabelled | `C#alt` | `C#(b5)` |
+| `guitar/Csharp/alt/3` | relabelled | `C#alt` | `C#(b5)` |
+| `guitar/Csharp/alt/4` | relabelled | `C#alt` | `C#(b5)` |
+| `guitar/D/alt/1` | relabelled | `Dalt` | `D(b5)` |
+| `guitar/D/alt/2` | relabelled | `Dalt` | `D(b5)` |
+| `guitar/D/alt/3` | relabelled | `Dalt` | `D(b5)` |
+| `guitar/D/alt/4` | relabelled | `Dalt` | `D(b5)` |
+| `guitar/E/alt/1` | relabelled | `Ealt` | `E(b5)` |
+| `guitar/E/alt/2` | relabelled | `Ealt` | `E(b5)` |
+| `guitar/E/alt/3` | relabelled | `Ealt` | `E(b5)` |
+| `guitar/E/alt/4` | relabelled | `Ealt` | `E(b5)` |
+| `guitar/Eb/alt/1` | relabelled | `Ebalt` | `Eb(b5)` |
+| `guitar/Eb/alt/2` | relabelled | `Ebalt` | `Eb(b5)` |
+| `guitar/Eb/alt/3` | relabelled | `Ebalt` | `Eb(b5)` |
+| `guitar/Eb/alt/4` | relabelled | `Ebalt` | `Eb(b5)` |
+| `guitar/F/alt/1` | relabelled | `Falt` | `F(b5)` |
+| `guitar/F/alt/2` | relabelled | `Falt` | `F(b5)` |
+| `guitar/F/alt/3` | relabelled | `Falt` | `F(b5)` |
+| `guitar/F/alt/4` | relabelled | `Falt` | `F(b5)` |
+| `guitar/Fsharp/alt/1` | relabelled | `F#alt` | `F#(b5)` |
+| `guitar/Fsharp/alt/2` | relabelled | `F#alt` | `F#(b5)` |
+| `guitar/Fsharp/alt/3` | relabelled | `F#alt` | `F#(b5)` |
+| `guitar/G/alt/1` | relabelled | `Galt` | `G(b5)` |
+| `guitar/G/alt/2` | relabelled | `Galt` | `G(b5)` |
+| `guitar/G/alt/3` | relabelled | `Galt` | `G(b5)` |
+| `guitar/G/alt/4` | relabelled | `Galt` | `G(b5)` |
+| `ukulele/A/alt/1` | relabelled | `Aalt` | `A(b5)` |
+| `ukulele/A/alt/2` | relabelled | `Aalt` | `A(b5)` |
+| `ukulele/A/alt/3` | relabelled | `Aalt` | `A(b5)` |
+| `ukulele/Ab/alt/1` | relabelled | `Abalt` | `Ab(b5)` |
+| `ukulele/Ab/alt/2` | relabelled | `Abalt` | `Ab(b5)` |
+| `ukulele/B/alt/1` | relabelled | `Balt` | `B(b5)` |
+| `ukulele/B/alt/2` | relabelled | `Balt` | `B(b5)` |
+| `ukulele/B/alt/3` | relabelled | `Balt` | `B(b5)` |
+| `ukulele/Bb/alt/1` | relabelled | `Bbalt` | `Bb(b5)` |
+| `ukulele/Bb/alt/2` | relabelled | `Bbalt` | `Bb(b5)` |
+| `ukulele/Bb/alt/3` | relabelled | `Bbalt` | `Bb(b5)` |
+| `ukulele/Bb/alt/4` | relabelled | `Bbalt` | `Bb(b5)` |
+| `ukulele/C/alt/1` | relabelled | `Calt` | `C(b5)` |
+| `ukulele/C/alt/2` | relabelled | `Calt` | `C(b5)` |
+| `ukulele/C/alt/3` | relabelled | `Calt` | `C(b5)` |
+| `ukulele/D/alt/1` | relabelled | `Dalt` | `D(b5)` |
+| `ukulele/D/alt/2` | relabelled | `Dalt` | `D(b5)` |
+| `ukulele/D/alt/3` | relabelled | `Dalt` | `D(b5)` |
+| `ukulele/Db/alt/1` | relabelled | `Dbalt` | `Db(b5)` |
+| `ukulele/Db/alt/2` | relabelled | `Dbalt` | `Db(b5)` |
+| `ukulele/Db/alt/3` | relabelled | `Dbalt` | `Db(b5)` |
+| `ukulele/Db/alt/4` | relabelled | `Dbalt` | `Db(b5)` |
+| `ukulele/E/alt/1` | relabelled | `Ealt` | `E(b5)` |
+| `ukulele/E/alt/2` | relabelled | `Ealt` | `E(b5)` |
+| `ukulele/E/alt/3` | relabelled | `Ealt` | `E(b5)` |
+| `ukulele/Eb/alt/1` | relabelled | `Ebalt` | `Eb(b5)` |
+| `ukulele/Eb/alt/2` | relabelled | `Ebalt` | `Eb(b5)` |
+| `ukulele/Eb/alt/3` | relabelled | `Ebalt` | `Eb(b5)` |
+| `ukulele/F/alt/1` | relabelled | `Falt` | `F(b5)` |
+| `ukulele/F/alt/2` | relabelled | `Falt` | `F(b5)` |
+| `ukulele/F/alt/3` | relabelled | `Falt` | `F(b5)` |
+| `ukulele/G/alt/1` | relabelled | `Galt` | `G(b5)` |
+| `ukulele/G/alt/2` | relabelled | `Galt` | `G(b5)` |
+| `ukulele/G/alt/3` | relabelled | `Galt` | `G(b5)` |
+| `ukulele/Gb/alt/1` | relabelled | `Gbalt` | `Gb(b5)` |
+| `ukulele/Gb/alt/2` | relabelled | `Gbalt` | `Gb(b5)` |
+| `ukulele/Gb/alt/3` | relabelled | `Gbalt` | `Gb(b5)` |
 
 </details>
 
@@ -1651,7 +1651,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Fsharp/alt/4` | barres | `9` | `—` |
 | `guitar/Fsharp/alt/4` | capo | `true` | `false` |
 | `guitar/Fsharp/alt/4` | frets | `x9abb9` | `x9abbx` |
-| `guitar/Fsharp/alt/4` | relabelled | `F#alt` | `F#b5` |
+| `guitar/Fsharp/alt/4` | relabelled | `F#alt` | `F#(b5)` |
 
 ### 32. Removed: A copy of Fmadd9 position 3 that does not transpose to E (it relies on the open G string).
 
@@ -1874,7 +1874,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/A/sus4/4` | capo | `true` | `false` |
 | `guitar/A/sus4/4` | fingers | `0 1 1 2 3 4` | `0 0 1 2 3 4` |
 | `guitar/A/sus4/4` | frets | `x779aa` | `xx79aa` |
-| `guitar/A/sus4/4` | order | `position 4` | `position 3` |
+| `guitar/A/sus4/4` | order | `position 4` | `position 6` |
 | `guitar/Ab/6/3` | fingers | `0 1 1 3 1 4` | `0 0 1 3 1 4` |
 | `guitar/Ab/6/3` | frets | `x66868` | `xx6868` |
 | `guitar/Ab/7/1` | fingers | `0 0 1 1 1 2` | `0 0 0 1 1 2` |
@@ -1937,7 +1937,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Ab/sus4/3` | capo | `true` | `false` |
 | `guitar/Ab/sus4/3` | fingers | `0 1 1 2 3 4` | `0 0 1 2 3 4` |
 | `guitar/Ab/sus4/3` | frets | `x66899` | `xx6899` |
-| `guitar/Ab/sus4/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/sus4/3` | order | `position 3` | `position 4` |
 | `guitar/Ab/sus4/4` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
 | `guitar/Ab/sus4/4` | frets | `bbddeb` | `xbddeb` |
 | `guitar/B/11/2` | fingers | `1 1 1 1 3 1` | `0 1 1 1 3 1` |
@@ -2057,7 +2057,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Bb/sus4/4` | capo | `true` | `false` |
 | `guitar/Bb/sus4/4` | fingers | `0 1 1 2 3 4` | `0 0 1 2 3 4` |
 | `guitar/Bb/sus4/4` | frets | `x88abb` | `xx8abb` |
-| `guitar/Bb/sus4/4` | order | `position 4` | `position 3` |
+| `guitar/Bb/sus4/4` | order | `position 4` | `position 5` |
 | `guitar/C/13/2` | fingers | `1 1 1 1 3 4` | `0 1 1 1 3 4` |
 | `guitar/C/13/2` | frets | `333355` | `x33355` |
 | `guitar/C/69/4` | barres | `10` | `—` |
@@ -2475,9 +2475,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `piano/A/aug/1` | notes | `A C# F` | `A4 C#5 E#5` |
 | `piano/A/aug7/1` | notes | `A C# F G` | `A4 C#5 E#5 G5` |
 | `piano/A/aug9/1` | notes | `A C# F G B` | `A4 C#5 E#5 G5 B5` |
-| `piano/A/b13b9/1` | added | `—` | `Ab13b9 A4 C#5 E5 G5 Bb5 F6` |
-| `piano/A/b13sharp9/1` | added | `—` | `Ab13#9 A4 C#5 E5 G5 B#5 F6` |
-| `piano/A/b5/1` | added | `—` | `Ab5 A4 C#5 Eb5` |
+| `piano/A/b13b9/1` | added | `—` | `A7b9b13 A4 C#5 E5 G5 Bb5 F6` |
+| `piano/A/b13sharp9/1` | added | `—` | `A7#9b13 A4 C#5 E5 G5 B#5 F6` |
+| `piano/A/b5/1` | added | `—` | `A(b5) A4 C#5 Eb5` |
 | `piano/A/dim/1` | notes | `A C D#` | `A4 C5 Eb5` |
 | `piano/A/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
 | `piano/A/dim7/1` | notes | `A C D# F#` | `A4 C5 Eb5 Gb5` |
@@ -2541,9 +2541,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `piano/Ab/aug/1` | notes | `G# C E` | `Ab4 C5 E5` |
 | `piano/Ab/aug7/1` | notes | `G# C E F#` | `Ab4 C5 E5 Gb5` |
 | `piano/Ab/aug9/1` | notes | `G# C E F# A#` | `Ab4 C5 E5 Gb5 Bb5` |
-| `piano/Ab/b13b9/1` | added | `—` | `Abb13b9 Ab4 C5 Eb5 Gb5 A5 Fb6` |
-| `piano/Ab/b13sharp9/1` | added | `—` | `Abb13#9 Ab4 C5 Eb5 Gb5 B5 Fb6` |
-| `piano/Ab/b5/1` | added | `—` | `Abb5 Ab4 C5 D5` |
+| `piano/Ab/b13b9/1` | added | `—` | `Ab7b9b13 Ab4 C5 Eb5 Gb5 A5 Fb6` |
+| `piano/Ab/b13sharp9/1` | added | `—` | `Ab7#9b13 Ab4 C5 Eb5 Gb5 B5 Fb6` |
+| `piano/Ab/b5/1` | added | `—` | `Ab(b5) Ab4 C5 D5` |
 | `piano/Ab/dim/1` | notes | `G# B D` | `Ab4 Cb5 D5` |
 | `piano/Ab/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
 | `piano/Ab/dim7/1` | notes | `G# B D F` | `Ab4 Cb5 D5 F5` |
@@ -2607,9 +2607,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `piano/B/aug/1` | notes | `B D# G` | `B4 D#5 G5` |
 | `piano/B/aug7/1` | notes | `B D# G A` | `B4 D#5 G5 A5` |
 | `piano/B/aug9/1` | notes | `B D# G A C#` | `B4 D#5 G5 A5 C#6` |
-| `piano/B/b13b9/1` | added | `—` | `Bb13b9 B4 D#5 F#5 A5 C6 G6` |
-| `piano/B/b13sharp9/1` | added | `—` | `Bb13#9 B4 D#5 F#5 A5 D6 G6` |
-| `piano/B/b5/1` | added | `—` | `Bb5 B4 D#5 F5` |
+| `piano/B/b13b9/1` | added | `—` | `B7b9b13 B4 D#5 F#5 A5 C6 G6` |
+| `piano/B/b13sharp9/1` | added | `—` | `B7#9b13 B4 D#5 F#5 A5 D6 G6` |
+| `piano/B/b5/1` | added | `—` | `B(b5) B4 D#5 F5` |
 | `piano/B/dim/1` | notes | `B D F` | `B4 D5 F5` |
 | `piano/B/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
 | `piano/B/dim7/1` | notes | `B D F G#` | `B4 D5 F5 Ab5` |
@@ -2673,9 +2673,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `piano/Bb/aug/1` | notes | `A# D F#` | `Bb4 D5 F#5` |
 | `piano/Bb/aug7/1` | notes | `A# D F# G#` | `Bb4 D5 F#5 Ab5` |
 | `piano/Bb/aug9/1` | notes | `A# D F# G# C` | `Bb4 D5 F#5 Ab5 C6` |
-| `piano/Bb/b13b9/1` | added | `—` | `Bbb13b9 Bb4 D5 F5 Ab5 Cb6 Gb6` |
-| `piano/Bb/b13sharp9/1` | added | `—` | `Bbb13#9 Bb4 D5 F5 Ab5 C#6 Gb6` |
-| `piano/Bb/b5/1` | added | `—` | `Bbb5 Bb4 D5 Fb5` |
+| `piano/Bb/b13b9/1` | added | `—` | `Bb7b9b13 Bb4 D5 F5 Ab5 Cb6 Gb6` |
+| `piano/Bb/b13sharp9/1` | added | `—` | `Bb7#9b13 Bb4 D5 F5 Ab5 C#6 Gb6` |
+| `piano/Bb/b5/1` | added | `—` | `Bb(b5) Bb4 D5 Fb5` |
 | `piano/Bb/dim/1` | notes | `A# C# E` | `Bb4 Db5 Fb5` |
 | `piano/Bb/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
 | `piano/Bb/dim7/1` | notes | `A# C# E G` | `Bb4 Db5 Fb5 G5` |
@@ -2739,9 +2739,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `piano/C/aug/1` | notes | `C E Ab` | `C4 E4 G#4` |
 | `piano/C/aug7/1` | notes | `C E Ab Bb` | `C4 E4 G#4 Bb4` |
 | `piano/C/aug9/1` | notes | `C E Ab Bb D` | `C4 E4 G#4 Bb4 D5` |
-| `piano/C/b13b9/1` | added | `—` | `Cb13b9 C4 E4 G4 Bb4 Db5 Ab5` |
-| `piano/C/b13sharp9/1` | added | `—` | `Cb13#9 C4 E4 G4 Bb4 D#5 Ab5` |
-| `piano/C/b5/1` | added | `—` | `Cb5 C4 E4 Gb4` |
+| `piano/C/b13b9/1` | added | `—` | `C7b9b13 C4 E4 G4 Bb4 Db5 Ab5` |
+| `piano/C/b13sharp9/1` | added | `—` | `C7#9b13 C4 E4 G4 Bb4 D#5 Ab5` |
+| `piano/C/b5/1` | added | `—` | `C(b5) C4 E4 Gb4` |
 | `piano/C/dim/1` | notes | `C Eb Gb` | `C4 Eb4 Gb4` |
 | `piano/C/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
 | `piano/C/dim7/1` | notes | `C Eb Gb A` | `C4 Eb4 Gb4 A4` |
@@ -2805,9 +2805,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `piano/Csharp/aug/1` | notes | `C# F A` | `C#4 E#4 A4` |
 | `piano/Csharp/aug7/1` | notes | `C# F A B` | `C#4 E#4 A4 B4` |
 | `piano/Csharp/aug9/1` | notes | `C# F A B D#` | `C#4 E#4 A4 B4 D#5` |
-| `piano/Csharp/b13b9/1` | added | `—` | `C#b13b9 C#4 E#4 G#4 B4 D5 A5` |
-| `piano/Csharp/b13sharp9/1` | added | `—` | `C#b13#9 C#4 E#4 G#4 B4 E5 A5` |
-| `piano/Csharp/b5/1` | added | `—` | `C#b5 C#4 E#4 G4` |
+| `piano/Csharp/b13b9/1` | added | `—` | `C#7b9b13 C#4 E#4 G#4 B4 D5 A5` |
+| `piano/Csharp/b13sharp9/1` | added | `—` | `C#7#9b13 C#4 E#4 G#4 B4 E5 A5` |
+| `piano/Csharp/b5/1` | added | `—` | `C#(b5) C#4 E#4 G4` |
 | `piano/Csharp/dim/1` | notes | `C# E G` | `C#4 E4 G4` |
 | `piano/Csharp/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
 | `piano/Csharp/dim7/1` | notes | `C# E G A#` | `C#4 E4 G4 Bb4` |
@@ -2871,9 +2871,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `piano/D/aug/1` | notes | `D F# A#` | `D4 F#4 A#4` |
 | `piano/D/aug7/1` | notes | `D F# A# C` | `D4 F#4 A#4 C5` |
 | `piano/D/aug9/1` | notes | `D F# A# C E` | `D4 F#4 A#4 C5 E5` |
-| `piano/D/b13b9/1` | added | `—` | `Db13b9 D4 F#4 A4 C5 Eb5 Bb5` |
-| `piano/D/b13sharp9/1` | added | `—` | `Db13#9 D4 F#4 A4 C5 E#5 Bb5` |
-| `piano/D/b5/1` | added | `—` | `Db5 D4 F#4 Ab4` |
+| `piano/D/b13b9/1` | added | `—` | `D7b9b13 D4 F#4 A4 C5 Eb5 Bb5` |
+| `piano/D/b13sharp9/1` | added | `—` | `D7#9b13 D4 F#4 A4 C5 E#5 Bb5` |
+| `piano/D/b5/1` | added | `—` | `D(b5) D4 F#4 Ab4` |
 | `piano/D/dim/1` | notes | `D F G#` | `D4 F4 Ab4` |
 | `piano/D/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
 | `piano/D/dim7/1` | notes | `D F G# B` | `D4 F4 Ab4 Cb5` |
@@ -2937,9 +2937,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `piano/E/aug/1` | notes | `E G# C` | `E4 G#4 B#4` |
 | `piano/E/aug7/1` | notes | `E G# C D` | `E4 G#4 B#4 D5` |
 | `piano/E/aug9/1` | notes | `E G# C D F#` | `E4 G#4 B#4 D5 F#5` |
-| `piano/E/b13b9/1` | added | `—` | `Eb13b9 E4 G#4 B4 D5 F5 C6` |
-| `piano/E/b13sharp9/1` | added | `—` | `Eb13#9 E4 G#4 B4 D5 G5 C6` |
-| `piano/E/b5/1` | added | `—` | `Eb5 E4 G#4 Bb4` |
+| `piano/E/b13b9/1` | added | `—` | `E7b9b13 E4 G#4 B4 D5 F5 C6` |
+| `piano/E/b13sharp9/1` | added | `—` | `E7#9b13 E4 G#4 B4 D5 G5 C6` |
+| `piano/E/b5/1` | added | `—` | `E(b5) E4 G#4 Bb4` |
 | `piano/E/dim/1` | notes | `E G A#` | `E4 G4 Bb4` |
 | `piano/E/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
 | `piano/E/dim7/1` | notes | `E G A# C#` | `E4 G4 Bb4 Db5` |
@@ -3003,9 +3003,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `piano/Eb/aug/1` | notes | `D# G B` | `Eb4 G4 B4` |
 | `piano/Eb/aug7/1` | notes | `D# G B C#` | `Eb4 G4 B4 Db5` |
 | `piano/Eb/aug9/1` | notes | `D# G B C# F` | `Eb4 G4 B4 Db5 F5` |
-| `piano/Eb/b13b9/1` | added | `—` | `Ebb13b9 Eb4 G4 Bb4 Db5 Fb5 Cb6` |
-| `piano/Eb/b13sharp9/1` | added | `—` | `Ebb13#9 Eb4 G4 Bb4 Db5 F#5 Cb6` |
-| `piano/Eb/b5/1` | added | `—` | `Ebb5 Eb4 G4 A4` |
+| `piano/Eb/b13b9/1` | added | `—` | `Eb7b9b13 Eb4 G4 Bb4 Db5 Fb5 Cb6` |
+| `piano/Eb/b13sharp9/1` | added | `—` | `Eb7#9b13 Eb4 G4 Bb4 Db5 F#5 Cb6` |
+| `piano/Eb/b5/1` | added | `—` | `Eb(b5) Eb4 G4 A4` |
 | `piano/Eb/dim/1` | notes | `D# F# A` | `Eb4 Gb4 A4` |
 | `piano/Eb/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
 | `piano/Eb/dim7/1` | notes | `D# F# A C` | `Eb4 Gb4 A4 C5` |
@@ -3069,9 +3069,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `piano/F/aug/1` | notes | `F A Db` | `F4 A4 C#5` |
 | `piano/F/aug7/1` | notes | `F A Db Eb` | `F4 A4 C#5 Eb5` |
 | `piano/F/aug9/1` | notes | `F A Db Eb G` | `F4 A4 C#5 Eb5 G5` |
-| `piano/F/b13b9/1` | added | `—` | `Fb13b9 F4 A4 C5 Eb5 Gb5 Db6` |
-| `piano/F/b13sharp9/1` | added | `—` | `Fb13#9 F4 A4 C5 Eb5 G#5 Db6` |
-| `piano/F/b5/1` | added | `—` | `Fb5 F4 A4 Cb5` |
+| `piano/F/b13b9/1` | added | `—` | `F7b9b13 F4 A4 C5 Eb5 Gb5 Db6` |
+| `piano/F/b13sharp9/1` | added | `—` | `F7#9b13 F4 A4 C5 Eb5 G#5 Db6` |
+| `piano/F/b5/1` | added | `—` | `F(b5) F4 A4 Cb5` |
 | `piano/F/dim/1` | notes | `F Ab B` | `F4 Ab4 Cb5` |
 | `piano/F/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
 | `piano/F/dim7/1` | notes | `F Ab B D` | `F4 Ab4 Cb5 D5` |
@@ -3135,9 +3135,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `piano/Fsharp/aug/1` | notes | `F# A# D` | `F#4 A#4 D5` |
 | `piano/Fsharp/aug7/1` | notes | `F# A# D E` | `F#4 A#4 D5 E5` |
 | `piano/Fsharp/aug9/1` | notes | `F# A# D E G#` | `F#4 A#4 D5 E5 G#5` |
-| `piano/Fsharp/b13b9/1` | added | `—` | `F#b13b9 F#4 A#4 C#5 E5 G5 D6` |
-| `piano/Fsharp/b13sharp9/1` | added | `—` | `F#b13#9 F#4 A#4 C#5 E5 A5 D6` |
-| `piano/Fsharp/b5/1` | added | `—` | `F#b5 F#4 A#4 C5` |
+| `piano/Fsharp/b13b9/1` | added | `—` | `F#7b9b13 F#4 A#4 C#5 E5 G5 D6` |
+| `piano/Fsharp/b13sharp9/1` | added | `—` | `F#7#9b13 F#4 A#4 C#5 E5 A5 D6` |
+| `piano/Fsharp/b5/1` | added | `—` | `F#(b5) F#4 A#4 C5` |
 | `piano/Fsharp/dim/1` | notes | `F# A C` | `F#4 A4 C5` |
 | `piano/Fsharp/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
 | `piano/Fsharp/dim7/1` | notes | `F# A C D#` | `F#4 A4 C5 Eb5` |
@@ -3201,9 +3201,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `piano/G/aug/1` | notes | `G B D#` | `G4 B4 D#5` |
 | `piano/G/aug7/1` | notes | `G B D# F` | `G4 B4 D#5 F5` |
 | `piano/G/aug9/1` | notes | `G B D# F A` | `G4 B4 D#5 F5 A5` |
-| `piano/G/b13b9/1` | added | `—` | `Gb13b9 G4 B4 D5 F5 Ab5 Eb6` |
-| `piano/G/b13sharp9/1` | added | `—` | `Gb13#9 G4 B4 D5 F5 A#5 Eb6` |
-| `piano/G/b5/1` | added | `—` | `Gb5 G4 B4 Db5` |
+| `piano/G/b13b9/1` | added | `—` | `G7b9b13 G4 B4 D5 F5 Ab5 Eb6` |
+| `piano/G/b13sharp9/1` | added | `—` | `G7#9b13 G4 B4 D5 F5 A#5 Eb6` |
+| `piano/G/b5/1` | added | `—` | `G(b5) G4 B4 Db5` |
 | `piano/G/dim/1` | notes | `G A# C#` | `G4 Bb4 Db5` |
 | `piano/G/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
 | `piano/G/dim7/1` | notes | `G A# C# E` | `G4 Bb4 Db5 Fb5` |
@@ -3244,7 +3244,7 @@ Counts are voicings; one voicing can have several kinds of change.
 [#10](https://github.com/tabsy-gr/chords-db/issues/10) · upstream [#2](https://github.com/tombatossals/chords-db/issues/2) · reported by [T-vK](https://github.com/T-vK)
 
 <details>
-<summary>1857 voicings</summary>
+<summary>1833 voicings</summary>
 
 | Voicing | Change | Before | After |
 | --- | --- | --- | --- |
@@ -4166,10 +4166,10 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/A/sus2/4` | order | `position 4` | `position 3` |
 | `guitar/A/sus2sus4/2` | order | `position 2` | `position 3` |
 | `guitar/A/sus2sus4/3` | order | `position 3` | `position 2` |
-| `guitar/A/sus4/1` | order | `position 1` | `position 2` |
+| `guitar/A/sus4/1` | order | `position 1` | `position 3` |
 | `guitar/A/sus4/2` | order | `position 2` | `position 1` |
-| `guitar/A/sus4/3` | order | `position 3` | `position 4` |
-| `guitar/A/sus4/4` | order | `position 4` | `position 3` |
+| `guitar/A/sus4/3` | order | `position 3` | `position 7` |
+| `guitar/A/sus4/4` | order | `position 4` | `position 6` |
 | `guitar/Ab/_A/3` | order | `position 3` | `position 4` |
 | `guitar/Ab/_A/4` | order | `position 4` | `position 3` |
 | `guitar/Ab/_B/1` | order | `position 1` | `position 2` |
@@ -4244,10 +4244,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Ab/mmaj7b5/2` | order | `position 2` | `position 1` |
 | `guitar/Ab/mmaj7b5/3` | order | `position 3` | `position 4` |
 | `guitar/Ab/mmaj7b5/4` | order | `position 4` | `position 3` |
-| `guitar/Ab/sus/2` | order | `position 2` | `position 3` |
-| `guitar/Ab/sus/3` | order | `position 3` | `position 2` |
-| `guitar/Ab/sus4/2` | order | `position 2` | `position 3` |
-| `guitar/Ab/sus4/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/sus4/2` | order | `position 2` | `position 5` |
+| `guitar/Ab/sus4/3` | order | `position 3` | `position 4` |
 | `guitar/B/_Ab/2` | order | `position 2` | `position 3` |
 | `guitar/B/_Ab/3` | order | `position 3` | `position 2` |
 | `guitar/B/_C/2` | order | `position 2` | `position 3` |
@@ -4397,8 +4395,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Bb/mmaj9/2` | order | `position 2` | `position 1` |
 | `guitar/Bb/sus2sus4/2` | order | `position 2` | `position 3` |
 | `guitar/Bb/sus2sus4/3` | order | `position 3` | `position 2` |
-| `guitar/Bb/sus4/3` | order | `position 3` | `position 4` |
-| `guitar/Bb/sus4/4` | order | `position 4` | `position 3` |
+| `guitar/Bb/sus4/3` | order | `position 3` | `position 6` |
+| `guitar/Bb/sus4/4` | order | `position 4` | `position 5` |
 | `guitar/C/_E/2` | order | `position 2` | `position 3` |
 | `guitar/C/_E/3` | order | `position 3` | `position 2` |
 | `guitar/C/_Eb/2` | order | `position 2` | `position 3` |
@@ -4468,8 +4466,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/C/mmaj7b5/4` | order | `position 4` | `position 3` |
 | `guitar/C/mmaj9/1` | order | `position 1` | `position 2` |
 | `guitar/C/mmaj9/2` | order | `position 2` | `position 1` |
-| `guitar/C/sus/1` | order | `position 1` | `position 2` |
-| `guitar/C/sus/2` | order | `position 2` | `position 1` |
 | `guitar/Csharp/_A/1` | order | `position 1` | `position 2` |
 | `guitar/Csharp/_A/2` | order | `position 2` | `position 1` |
 | `guitar/Csharp/_Ab/1` | order | `position 1` | `position 2` |
@@ -4771,12 +4767,10 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/F/mmaj7b5/4` | order | `position 4` | `position 3` |
 | `guitar/F/mmaj9/1` | order | `position 1` | `position 2` |
 | `guitar/F/mmaj9/2` | order | `position 2` | `position 1` |
-| `guitar/F/sus/2` | order | `position 2` | `position 3` |
-| `guitar/F/sus/3` | order | `position 3` | `position 2` |
 | `guitar/F/sus2sus4/2` | order | `position 2` | `position 3` |
 | `guitar/F/sus2sus4/3` | order | `position 3` | `position 2` |
-| `guitar/F/sus4/1` | order | `position 1` | `position 2` |
-| `guitar/F/sus4/2` | order | `position 2` | `position 1` |
+| `guitar/F/sus4/1` | order | `position 1` | `position 4` |
+| `guitar/F/sus4/2` | order | `position 2` | `position 3` |
 | `guitar/Fsharp/_A/3` | order | `position 3` | `position 4` |
 | `guitar/Fsharp/_A/4` | order | `position 4` | `position 3` |
 | `guitar/Fsharp/_Ab/3` | order | `position 3` | `position 4` |
@@ -4860,8 +4854,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Fsharp/mmaj7b5/4` | order | `position 4` | `position 3` |
 | `guitar/Fsharp/mmaj9/1` | order | `position 1` | `position 2` |
 | `guitar/Fsharp/mmaj9/2` | order | `position 2` | `position 1` |
-| `guitar/Fsharp/sus/2` | order | `position 2` | `position 3` |
-| `guitar/Fsharp/sus/3` | order | `position 3` | `position 2` |
 | `guitar/Fsharp/sus2sus4/2` | order | `position 2` | `position 3` |
 | `guitar/Fsharp/sus2sus4/3` | order | `position 3` | `position 2` |
 | `guitar/G/_B/2` | order | `position 2` | `position 4` |
@@ -4921,8 +4913,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/G/mmaj7b5/2` | order | `position 2` | `position 1` |
 | `guitar/G/mmaj7b5/3` | order | `position 3` | `position 4` |
 | `guitar/G/mmaj7b5/4` | order | `position 4` | `position 3` |
-| `guitar/G/sus/3` | order | `position 3` | `position 4` |
-| `guitar/G/sus/4` | order | `position 4` | `position 3` |
 | `guitar/G/sus2sus4/1` | order | `position 1` | `position 2` |
 | `guitar/G/sus2sus4/2` | order | `position 2` | `position 3` |
 | `guitar/G/sus2sus4/3` | order | `position 3` | `position 1` |
@@ -4942,8 +4932,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele/Ab/9b5/3` | order | `position 3` | `position 2` |
 | `ukulele/Ab/9sharp11/2` | order | `position 2` | `position 3` |
 | `ukulele/Ab/9sharp11/3` | order | `position 3` | `position 2` |
-| `ukulele/Ab/b13sharp9/1` | order | `position 1` | `position 2` |
-| `ukulele/Ab/b13sharp9/2` | order | `position 2` | `position 1` |
 | `ukulele/Ab/m9/2` | order | `position 2` | `position 3` |
 | `ukulele/Ab/m9/3` | order | `position 3` | `position 2` |
 | `ukulele/Ab/m9b5/1` | order | `position 1` | `position 2` |
@@ -4960,8 +4948,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele/B/aug/4` | order | `position 4` | `position 3` |
 | `ukulele/B/aug7/1` | order | `position 1` | `position 2` |
 | `ukulele/B/aug7/2` | order | `position 2` | `position 1` |
-| `ukulele/B/b13sharp9/2` | order | `position 2` | `position 3` |
-| `ukulele/B/b13sharp9/3` | order | `position 3` | `position 2` |
 | `ukulele/B/m9/3` | order | `position 3` | `position 4` |
 | `ukulele/B/m9/4` | order | `position 4` | `position 3` |
 | `ukulele/B/maj7b5/1` | order | `position 1` | `position 2` |
@@ -4978,8 +4964,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele/Bb/aug/3` | order | `position 3` | `position 2` |
 | `ukulele/Bb/aug7/1` | order | `position 1` | `position 2` |
 | `ukulele/Bb/aug7/2` | order | `position 2` | `position 1` |
-| `ukulele/Bb/b13sharp9/2` | order | `position 2` | `position 3` |
-| `ukulele/Bb/b13sharp9/3` | order | `position 3` | `position 2` |
 | `ukulele/Bb/m9/2` | order | `position 2` | `position 4` |
 | `ukulele/Bb/m9/3` | order | `position 3` | `position 2` |
 | `ukulele/Bb/m9/4` | order | `position 4` | `position 3` |
@@ -4999,8 +4983,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele/C/9b5/4` | order | `position 4` | `position 3` |
 | `ukulele/C/9sharp11/3` | order | `position 3` | `position 4` |
 | `ukulele/C/9sharp11/4` | order | `position 4` | `position 3` |
-| `ukulele/C/b13sharp9/3` | order | `position 3` | `position 4` |
-| `ukulele/C/b13sharp9/4` | order | `position 4` | `position 3` |
 | `ukulele/C/m9/3` | order | `position 3` | `position 4` |
 | `ukulele/C/m9/4` | order | `position 4` | `position 3` |
 | `ukulele/C/maj7b5/1` | order | `position 1` | `position 2` |
@@ -5015,8 +4997,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele/D/aug/3` | order | `position 3` | `position 2` |
 | `ukulele/D/aug7/2` | order | `position 2` | `position 3` |
 | `ukulele/D/aug7/3` | order | `position 3` | `position 2` |
-| `ukulele/D/b13sharp9/3` | order | `position 3` | `position 4` |
-| `ukulele/D/b13sharp9/4` | order | `position 4` | `position 3` |
 | `ukulele/D/maj7b5/2` | order | `position 2` | `position 3` |
 | `ukulele/D/maj7b5/3` | order | `position 3` | `position 2` |
 | `ukulele/Db/13b9/1` | order | `position 1` | `position 2` |
@@ -5027,8 +5007,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele/Db/aug7/3` | order | `position 3` | `position 2` |
 | `ukulele/Db/aug9/1` | order | `position 1` | `position 2` |
 | `ukulele/Db/aug9/2` | order | `position 2` | `position 1` |
-| `ukulele/Db/b13sharp9/3` | order | `position 3` | `position 4` |
-| `ukulele/Db/b13sharp9/4` | order | `position 4` | `position 3` |
 | `ukulele/Db/maj7/2` | order | `position 2` | `position 3` |
 | `ukulele/Db/maj7/3` | order | `position 3` | `position 2` |
 | `ukulele/Db/maj7sharp5/2` | order | `position 2` | `position 3` |
@@ -5075,8 +5053,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele/G/9sharp11/3` | order | `position 3` | `position 2` |
 | `ukulele/G/aug/3` | order | `position 3` | `position 4` |
 | `ukulele/G/aug/4` | order | `position 4` | `position 3` |
-| `ukulele/G/b13sharp9/1` | order | `position 1` | `position 2` |
-| `ukulele/G/b13sharp9/2` | order | `position 2` | `position 1` |
 | `ukulele/G/m11/1` | order | `position 1` | `position 2` |
 | `ukulele/G/m11/2` | order | `position 2` | `position 1` |
 | `ukulele/G/m11/3` | order | `position 3` | `position 4` |
@@ -5647,9 +5623,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/A/add9/2` | added | `—` | `Aadd9 4755` |
 | `ukulele-d/A/add9/3` | added | `—` | `Aadd9 797a` |
 | `ukulele-d/A/add9/4` | added | `—` | `Aadd9 cbac` |
-| `ukulele-d/A/alt/1` | added | `—` | `Ab5 4132` |
-| `ukulele-d/A/alt/2` | added | `—` | `Ab5 4774` |
-| `ukulele-d/A/alt/3` | added | `—` | `Ab5 cb9a` |
+| `ukulele-d/A/alt/1` | added | `—` | `A(b5) 4132` |
+| `ukulele-d/A/alt/2` | added | `—` | `A(b5) 4774` |
+| `ukulele-d/A/alt/3` | added | `—` | `A(b5) cb9a` |
 | `ukulele-d/A/aug/1` | added | `—` | `Aaug 0332` |
 | `ukulele-d/A/aug/2` | added | `—` | `Aaug 4332` |
 | `ukulele-d/A/aug/3` | added | `—` | `Aaug 4336` |
@@ -5662,14 +5638,14 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/A/aug9/2` | added | `—` | `Aaug9 4556` |
 | `ukulele-d/A/aug9/3` | added | `—` | `Aaug9 8978` |
 | `ukulele-d/A/aug9/4` | added | `—` | `Aaug9 abbc` |
-| `ukulele-d/A/b13b9/1` | added | `—` | `Ab13b9 1312` |
-| `ukulele-d/A/b13b9/2` | added | `—` | `Ab13b9 4546` |
-| `ukulele-d/A/b13b9/3` | added | `—` | `Ab13b9 8878` |
-| `ukulele-d/A/b13b9/4` | added | `—` | `Ab13b9 abbb` |
-| `ukulele-d/A/b13sharp9/1` | added | `—` | `Ab13#9 4311` |
-| `ukulele-d/A/b13sharp9/2` | added | `—` | `Ab13#9 3312` |
-| `ukulele-d/A/b13sharp9/3` | added | `—` | `Ab13#9 4566` |
-| `ukulele-d/A/b13sharp9/4` | added | `—` | `Ab13#9 8a78` |
+| `ukulele-d/A/b13b9/1` | added | `—` | `A7b9b13 1312` |
+| `ukulele-d/A/b13b9/2` | added | `—` | `A7b9b13 4546` |
+| `ukulele-d/A/b13b9/3` | added | `—` | `A7b9b13 8878` |
+| `ukulele-d/A/b13b9/4` | added | `—` | `A7b9b13 abbb` |
+| `ukulele-d/A/b13sharp9/1` | added | `—` | `A7#9b13 4311` |
+| `ukulele-d/A/b13sharp9/2` | added | `—` | `A7#9b13 3312` |
+| `ukulele-d/A/b13sharp9/3` | added | `—` | `A7#9b13 4566` |
+| `ukulele-d/A/b13sharp9/4` | added | `—` | `A7#9b13 8a78` |
 | `ukulele-d/A/dim/1` | added | `—` | `Adim 0131` |
 | `ukulele-d/A/dim/2` | added | `—` | `Adim 3131` |
 | `ukulele-d/A/dim/3` | added | `—` | `Adim 6764` |
@@ -5821,9 +5797,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/Ab/add9/2` | added | `—` | `Abadd9 3644` |
 | `ukulele-d/Ab/add9/3` | added | `—` | `Abadd9 6869` |
 | `ukulele-d/Ab/add9/4` | added | `—` | `Abadd9 ba9b` |
-| `ukulele-d/Ab/alt/1` | added | `—` | `Abb5 3021` |
-| `ukulele-d/Ab/alt/2` | added | `—` | `Abb5 3663` |
-| `ukulele-d/Ab/alt/3` | added | `—` | `Abb5 ba89` |
+| `ukulele-d/Ab/alt/1` | added | `—` | `Ab(b5) 3021` |
+| `ukulele-d/Ab/alt/2` | added | `—` | `Ab(b5) 3663` |
+| `ukulele-d/Ab/alt/3` | added | `—` | `Ab(b5) ba89` |
 | `ukulele-d/Ab/aug/1` | added | `—` | `Abaug 3221` |
 | `ukulele-d/Ab/aug/2` | added | `—` | `Abaug 3225` |
 | `ukulele-d/Ab/aug/3` | added | `—` | `Abaug 3665` |
@@ -5836,14 +5812,14 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/Ab/aug9/2` | added | `—` | `Abaug9 3445` |
 | `ukulele-d/Ab/aug9/3` | added | `—` | `Abaug9 7867` |
 | `ukulele-d/Ab/aug9/4` | added | `—` | `Abaug9 9aab` |
-| `ukulele-d/Ab/b13b9/1` | added | `—` | `Abb13b9 0201` |
-| `ukulele-d/Ab/b13b9/2` | added | `—` | `Abb13b9 3435` |
-| `ukulele-d/Ab/b13b9/3` | added | `—` | `Abb13b9 7767` |
-| `ukulele-d/Ab/b13b9/4` | added | `—` | `Abb13b9 9aaa` |
-| `ukulele-d/Ab/b13sharp9/1` | added | `—` | `Abb13#9 3200` |
-| `ukulele-d/Ab/b13sharp9/2` | added | `—` | `Abb13#9 2201` |
-| `ukulele-d/Ab/b13sharp9/3` | added | `—` | `Abb13#9 3455` |
-| `ukulele-d/Ab/b13sharp9/4` | added | `—` | `Abb13#9 7967` |
+| `ukulele-d/Ab/b13b9/1` | added | `—` | `Ab7b9b13 0201` |
+| `ukulele-d/Ab/b13b9/2` | added | `—` | `Ab7b9b13 3435` |
+| `ukulele-d/Ab/b13b9/3` | added | `—` | `Ab7b9b13 7767` |
+| `ukulele-d/Ab/b13b9/4` | added | `—` | `Ab7b9b13 9aaa` |
+| `ukulele-d/Ab/b13sharp9/1` | added | `—` | `Ab7#9b13 3200` |
+| `ukulele-d/Ab/b13sharp9/2` | added | `—` | `Ab7#9b13 2201` |
+| `ukulele-d/Ab/b13sharp9/3` | added | `—` | `Ab7#9b13 3455` |
+| `ukulele-d/Ab/b13sharp9/4` | added | `—` | `Ab7#9b13 7967` |
 | `ukulele-d/Ab/dim/1` | added | `—` | `Abdim 2020` |
 | `ukulele-d/Ab/dim/2` | added | `—` | `Abdim 5653` |
 | `ukulele-d/Ab/dim/3` | added | `—` | `Abdim b989` |
@@ -5994,9 +5970,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/B/add9/2` | added | `—` | `Badd9 4454` |
 | `ukulele-d/B/add9/3` | added | `—` | `Badd9 6977` |
 | `ukulele-d/B/add9/4` | added | `—` | `Badd9 9b9c` |
-| `ukulele-d/B/alt/1` | added | `—` | `Bb5 2354` |
-| `ukulele-d/B/alt/2` | added | `—` | `Bb5 6354` |
-| `ukulele-d/B/alt/3` | added | `—` | `Bb5 6996` |
+| `ukulele-d/B/alt/1` | added | `—` | `B(b5) 2354` |
+| `ukulele-d/B/alt/2` | added | `—` | `B(b5) 6354` |
+| `ukulele-d/B/alt/3` | added | `—` | `B(b5) 6996` |
 | `ukulele-d/B/aug/1` | added | `—` | `Baug 2110` |
 | `ukulele-d/B/aug/2` | added | `—` | `Baug 2114` |
 | `ukulele-d/B/aug/3` | added | `—` | `Baug 2554` |
@@ -6009,14 +5985,14 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/B/aug9/2` | added | `—` | `Baug9 4534` |
 | `ukulele-d/B/aug9/3` | added | `—` | `Baug9 6778` |
 | `ukulele-d/B/aug9/4` | added | `—` | `Baug9 ab9a` |
-| `ukulele-d/B/b13b9/1` | added | `—` | `Bb13b9 0111` |
-| `ukulele-d/B/b13b9/2` | added | `—` | `Bb13b9 3534` |
-| `ukulele-d/B/b13b9/3` | added | `—` | `Bb13b9 6768` |
-| `ukulele-d/B/b13b9/4` | added | `—` | `Bb13b9 aa9a` |
-| `ukulele-d/B/b13sharp9/1` | added | `—` | `Bb13#9 0113` |
-| `ukulele-d/B/b13sharp9/2` | added | `—` | `Bb13#9 5534` |
-| `ukulele-d/B/b13sharp9/3` | added | `—` | `Bb13#9 6533` |
-| `ukulele-d/B/b13sharp9/4` | added | `—` | `Bb13#9 6788` |
+| `ukulele-d/B/b13b9/1` | added | `—` | `B7b9b13 0111` |
+| `ukulele-d/B/b13b9/2` | added | `—` | `B7b9b13 3534` |
+| `ukulele-d/B/b13b9/3` | added | `—` | `B7b9b13 6768` |
+| `ukulele-d/B/b13b9/4` | added | `—` | `B7b9b13 aa9a` |
+| `ukulele-d/B/b13sharp9/1` | added | `—` | `B7#9b13 0113` |
+| `ukulele-d/B/b13sharp9/2` | added | `—` | `B7#9b13 5534` |
+| `ukulele-d/B/b13sharp9/3` | added | `—` | `B7#9b13 6533` |
+| `ukulele-d/B/b13sharp9/4` | added | `—` | `B7#9b13 6788` |
 | `ukulele-d/B/dim/1` | added | `—` | `Bdim 2353` |
 | `ukulele-d/B/dim/2` | added | `—` | `Bdim 5353` |
 | `ukulele-d/B/dim/3` | added | `—` | `Bdim 8986` |
@@ -6167,8 +6143,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/Bb/add9/2` | added | `—` | `Bbadd9 5866` |
 | `ukulele-d/Bb/add9/3` | added | `—` | `Bbadd9 8a8b` |
 | `ukulele-d/Bb/add9/4` | added | `—` | `Bbadd9 dcbd` |
-| `ukulele-d/Bb/alt/1` | added | `—` | `Bbb5 5243` |
-| `ukulele-d/Bb/alt/2` | added | `—` | `Bbb5 5885` |
+| `ukulele-d/Bb/alt/1` | added | `—` | `Bb(b5) 5243` |
+| `ukulele-d/Bb/alt/2` | added | `—` | `Bb(b5) 5885` |
 | `ukulele-d/Bb/aug/1` | added | `—` | `Bbaug 1003` |
 | `ukulele-d/Bb/aug/2` | added | `—` | `Bbaug 1443` |
 | `ukulele-d/Bb/aug/3` | added | `—` | `Bbaug 5443` |
@@ -6181,14 +6157,14 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/Bb/aug9/2` | added | `—` | `Bbaug9 5667` |
 | `ukulele-d/Bb/aug9/3` | added | `—` | `Bbaug9 9a89` |
 | `ukulele-d/Bb/aug9/4` | added | `—` | `Bbaug9 bccd` |
-| `ukulele-d/Bb/b13b9/1` | added | `—` | `Bbb13b9 2423` |
-| `ukulele-d/Bb/b13b9/2` | added | `—` | `Bbb13b9 5657` |
-| `ukulele-d/Bb/b13b9/3` | added | `—` | `Bbb13b9 9989` |
-| `ukulele-d/Bb/b13b9/4` | added | `—` | `Bbb13b9 bccc` |
-| `ukulele-d/Bb/b13sharp9/1` | added | `—` | `Bbb13#9 5422` |
-| `ukulele-d/Bb/b13sharp9/2` | added | `—` | `Bbb13#9 4423` |
-| `ukulele-d/Bb/b13sharp9/3` | added | `—` | `Bbb13#9 5677` |
-| `ukulele-d/Bb/b13sharp9/4` | added | `—` | `Bbb13#9 9b89` |
+| `ukulele-d/Bb/b13b9/1` | added | `—` | `Bb7b9b13 2423` |
+| `ukulele-d/Bb/b13b9/2` | added | `—` | `Bb7b9b13 5657` |
+| `ukulele-d/Bb/b13b9/3` | added | `—` | `Bb7b9b13 9989` |
+| `ukulele-d/Bb/b13b9/4` | added | `—` | `Bb7b9b13 bccc` |
+| `ukulele-d/Bb/b13sharp9/1` | added | `—` | `Bb7#9b13 5422` |
+| `ukulele-d/Bb/b13sharp9/2` | added | `—` | `Bb7#9b13 4423` |
+| `ukulele-d/Bb/b13sharp9/3` | added | `—` | `Bb7#9b13 5677` |
+| `ukulele-d/Bb/b13sharp9/4` | added | `—` | `Bb7#9b13 9b89` |
 | `ukulele-d/Bb/dim/1` | added | `—` | `Bbdim 1242` |
 | `ukulele-d/Bb/dim/2` | added | `—` | `Bbdim 4242` |
 | `ukulele-d/Bb/dim/3` | added | `—` | `Bbdim 7875` |
@@ -6339,10 +6315,10 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/C/add9/2` | added | `—` | `Cadd9 5565` |
 | `ukulele-d/C/add9/3` | added | `—` | `Cadd9 7a88` |
 | `ukulele-d/C/add9/4` | added | `—` | `Cadd9 acad` |
-| `ukulele-d/C/alt/1` | added | `—` | `Cb5 3201` |
-| `ukulele-d/C/alt/2` | added | `—` | `Cb5 3465` |
-| `ukulele-d/C/alt/3` | added | `—` | `Cb5 7465` |
-| `ukulele-d/C/alt/4` | added | `—` | `Cb5 7aa7` |
+| `ukulele-d/C/alt/1` | added | `—` | `C(b5) 3201` |
+| `ukulele-d/C/alt/2` | added | `—` | `C(b5) 3465` |
+| `ukulele-d/C/alt/3` | added | `—` | `C(b5) 7465` |
+| `ukulele-d/C/alt/4` | added | `—` | `C(b5) 7aa7` |
 | `ukulele-d/C/aug/1` | added | `—` | `Caug 3221` |
 | `ukulele-d/C/aug/2` | added | `—` | `Caug 3225` |
 | `ukulele-d/C/aug/3` | added | `—` | `Caug 3665` |
@@ -6355,14 +6331,14 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/C/aug9/2` | added | `—` | `Caug9 5645` |
 | `ukulele-d/C/aug9/3` | added | `—` | `Caug9 7889` |
 | `ukulele-d/C/aug9/4` | added | `—` | `Caug9 bcab` |
-| `ukulele-d/C/b13b9/1` | added | `—` | `Cb13b9 1222` |
-| `ukulele-d/C/b13b9/2` | added | `—` | `Cb13b9 4645` |
-| `ukulele-d/C/b13b9/3` | added | `—` | `Cb13b9 7879` |
-| `ukulele-d/C/b13b9/4` | added | `—` | `Cb13b9 bbab` |
-| `ukulele-d/C/b13sharp9/1` | added | `—` | `Cb13#9 1224` |
-| `ukulele-d/C/b13sharp9/2` | added | `—` | `Cb13#9 7644` |
-| `ukulele-d/C/b13sharp9/3` | added | `—` | `Cb13#9 6645` |
-| `ukulele-d/C/b13sharp9/4` | added | `—` | `Cb13#9 7899` |
+| `ukulele-d/C/b13b9/1` | added | `—` | `C7b9b13 1222` |
+| `ukulele-d/C/b13b9/2` | added | `—` | `C7b9b13 4645` |
+| `ukulele-d/C/b13b9/3` | added | `—` | `C7b9b13 7879` |
+| `ukulele-d/C/b13b9/4` | added | `—` | `C7b9b13 bbab` |
+| `ukulele-d/C/b13sharp9/1` | added | `—` | `C7#9b13 1224` |
+| `ukulele-d/C/b13sharp9/2` | added | `—` | `C7#9b13 7644` |
+| `ukulele-d/C/b13sharp9/3` | added | `—` | `C7#9b13 6645` |
+| `ukulele-d/C/b13sharp9/4` | added | `—` | `C7#9b13 7899` |
 | `ukulele-d/C/dim/1` | added | `—` | `Cdim 3101` |
 | `ukulele-d/C/dim/2` | added | `—` | `Cdim 3464` |
 | `ukulele-d/C/dim/3` | added | `—` | `Cdim 6464` |
@@ -6511,9 +6487,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/D/add9/2` | added | `—` | `Dadd9 5435` |
 | `ukulele-d/D/add9/3` | added | `—` | `Dadd9 7787` |
 | `ukulele-d/D/add9/4` | added | `—` | `Dadd9 9caa` |
-| `ukulele-d/D/alt/1` | added | `—` | `Db5 5423` |
-| `ukulele-d/D/alt/2` | added | `—` | `Db5 5687` |
-| `ukulele-d/D/alt/3` | added | `—` | `Db5 9687` |
+| `ukulele-d/D/alt/1` | added | `—` | `D(b5) 5423` |
+| `ukulele-d/D/alt/2` | added | `—` | `D(b5) 5687` |
+| `ukulele-d/D/alt/3` | added | `—` | `D(b5) 9687` |
 | `ukulele-d/D/aug/1` | added | `—` | `Daug 1003` |
 | `ukulele-d/D/aug/2` | added | `—` | `Daug 1443` |
 | `ukulele-d/D/aug/3` | added | `—` | `Daug 5443` |
@@ -6526,14 +6502,14 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/D/aug9/2` | added | `—` | `Daug9 3445` |
 | `ukulele-d/D/aug9/3` | added | `—` | `Daug9 7867` |
 | `ukulele-d/D/aug9/4` | added | `—` | `Daug9 9aab` |
-| `ukulele-d/D/b13b9/1` | added | `—` | `Db13b9 1101` |
-| `ukulele-d/D/b13b9/2` | added | `—` | `Db13b9 3444` |
-| `ukulele-d/D/b13b9/3` | added | `—` | `Db13b9 6867` |
-| `ukulele-d/D/b13b9/4` | added | `—` | `Db13b9 9a9b` |
-| `ukulele-d/D/b13sharp9/1` | added | `—` | `Db13#9 1301` |
-| `ukulele-d/D/b13sharp9/2` | added | `—` | `Db13#9 3446` |
-| `ukulele-d/D/b13sharp9/3` | added | `—` | `Db13#9 9866` |
-| `ukulele-d/D/b13sharp9/4` | added | `—` | `Db13#9 8867` |
+| `ukulele-d/D/b13b9/1` | added | `—` | `D7b9b13 1101` |
+| `ukulele-d/D/b13b9/2` | added | `—` | `D7b9b13 3444` |
+| `ukulele-d/D/b13b9/3` | added | `—` | `D7b9b13 6867` |
+| `ukulele-d/D/b13b9/4` | added | `—` | `D7b9b13 9a9b` |
+| `ukulele-d/D/b13sharp9/1` | added | `—` | `D7#9b13 1301` |
+| `ukulele-d/D/b13sharp9/2` | added | `—` | `D7#9b13 3446` |
+| `ukulele-d/D/b13sharp9/3` | added | `—` | `D7#9b13 9866` |
+| `ukulele-d/D/b13sharp9/4` | added | `—` | `D7#9b13 8867` |
 | `ukulele-d/D/dim/1` | added | `—` | `Ddim 5323` |
 | `ukulele-d/D/dim/2` | added | `—` | `Ddim 5686` |
 | `ukulele-d/D/dim/3` | added | `—` | `Ddim 8686` |
@@ -6684,9 +6660,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/Db/add9/2` | added | `—` | `Dbadd9 6676` |
 | `ukulele-d/Db/add9/3` | added | `—` | `Dbadd9 8b99` |
 | `ukulele-d/Db/add9/4` | added | `—` | `Dbadd9 bdbe` |
-| `ukulele-d/Db/alt/1` | added | `—` | `Dbb5 4312` |
-| `ukulele-d/Db/alt/2` | added | `—` | `Dbb5 4576` |
-| `ukulele-d/Db/alt/3` | added | `—` | `Dbb5 8576` |
+| `ukulele-d/Db/alt/1` | added | `—` | `Db(b5) 4312` |
+| `ukulele-d/Db/alt/2` | added | `—` | `Db(b5) 4576` |
+| `ukulele-d/Db/alt/3` | added | `—` | `Db(b5) 8576` |
 | `ukulele-d/Db/aug/1` | added | `—` | `Dbaug 0332` |
 | `ukulele-d/Db/aug/2` | added | `—` | `Dbaug 4332` |
 | `ukulele-d/Db/aug/3` | added | `—` | `Dbaug 4336` |
@@ -6699,14 +6675,14 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/Db/aug9/2` | added | `—` | `Dbaug9 6756` |
 | `ukulele-d/Db/aug9/3` | added | `—` | `Dbaug9 899a` |
 | `ukulele-d/Db/aug9/4` | added | `—` | `Dbaug9 cdbc` |
-| `ukulele-d/Db/b13b9/1` | added | `—` | `Dbb13b9 2333` |
-| `ukulele-d/Db/b13b9/2` | added | `—` | `Dbb13b9 5756` |
-| `ukulele-d/Db/b13b9/3` | added | `—` | `Dbb13b9 898a` |
-| `ukulele-d/Db/b13b9/4` | added | `—` | `Dbb13b9 ccbc` |
-| `ukulele-d/Db/b13sharp9/1` | added | `—` | `Dbb13#9 2335` |
-| `ukulele-d/Db/b13sharp9/2` | added | `—` | `Dbb13#9 8755` |
-| `ukulele-d/Db/b13sharp9/3` | added | `—` | `Dbb13#9 7756` |
-| `ukulele-d/Db/b13sharp9/4` | added | `—` | `Dbb13#9 89aa` |
+| `ukulele-d/Db/b13b9/1` | added | `—` | `Db7b9b13 2333` |
+| `ukulele-d/Db/b13b9/2` | added | `—` | `Db7b9b13 5756` |
+| `ukulele-d/Db/b13b9/3` | added | `—` | `Db7b9b13 898a` |
+| `ukulele-d/Db/b13b9/4` | added | `—` | `Db7b9b13 ccbc` |
+| `ukulele-d/Db/b13sharp9/1` | added | `—` | `Db7#9b13 2335` |
+| `ukulele-d/Db/b13sharp9/2` | added | `—` | `Db7#9b13 8755` |
+| `ukulele-d/Db/b13sharp9/3` | added | `—` | `Db7#9b13 7756` |
+| `ukulele-d/Db/b13sharp9/4` | added | `—` | `Db7#9b13 89aa` |
 | `ukulele-d/Db/dim/1` | added | `—` | `Dbdim 4212` |
 | `ukulele-d/Db/dim/2` | added | `—` | `Dbdim 4575` |
 | `ukulele-d/Db/dim/3` | added | `—` | `Dbdim 7575` |
@@ -6857,9 +6833,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/E/add9/2` | added | `—` | `Eadd9 7657` |
 | `ukulele-d/E/add9/3` | added | `—` | `Eadd9 99a9` |
 | `ukulele-d/E/add9/4` | added | `—` | `Eadd9 becc` |
-| `ukulele-d/E/alt/1` | added | `—` | `Eb5 7645` |
-| `ukulele-d/E/alt/2` | added | `—` | `Eb5 78a9` |
-| `ukulele-d/E/alt/3` | added | `—` | `Eb5 b8a9` |
+| `ukulele-d/E/alt/1` | added | `—` | `E(b5) 7645` |
+| `ukulele-d/E/alt/2` | added | `—` | `E(b5) 78a9` |
+| `ukulele-d/E/alt/3` | added | `—` | `E(b5) b8a9` |
 | `ukulele-d/E/aug/1` | added | `—` | `Eaug 3221` |
 | `ukulele-d/E/aug/2` | added | `—` | `Eaug 3225` |
 | `ukulele-d/E/aug/3` | added | `—` | `Eaug 3665` |
@@ -6871,14 +6847,14 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/E/aug9/1` | added | `—` | `Eaug9 3423` |
 | `ukulele-d/E/aug9/2` | added | `—` | `Eaug9 5667` |
 | `ukulele-d/E/aug9/3` | added | `—` | `Eaug9 9a89` |
-| `ukulele-d/E/b13b9/1` | added | `—` | `Eb13b9 3323` |
-| `ukulele-d/E/b13b9/2` | added | `—` | `Eb13b9 5666` |
-| `ukulele-d/E/b13b9/3` | added | `—` | `Eb13b9 8a89` |
-| `ukulele-d/E/b13b9/4` | added | `—` | `Eb13b9 bcbd` |
-| `ukulele-d/E/b13sharp9/1` | added | `—` | `Eb13#9 3523` |
-| `ukulele-d/E/b13sharp9/2` | added | `—` | `Eb13#9 5668` |
-| `ukulele-d/E/b13sharp9/3` | added | `—` | `Eb13#9 ba88` |
-| `ukulele-d/E/b13sharp9/4` | added | `—` | `Eb13#9 aa89` |
+| `ukulele-d/E/b13b9/1` | added | `—` | `E7b9b13 3323` |
+| `ukulele-d/E/b13b9/2` | added | `—` | `E7b9b13 5666` |
+| `ukulele-d/E/b13b9/3` | added | `—` | `E7b9b13 8a89` |
+| `ukulele-d/E/b13b9/4` | added | `—` | `E7b9b13 bcbd` |
+| `ukulele-d/E/b13sharp9/1` | added | `—` | `E7#9b13 3523` |
+| `ukulele-d/E/b13sharp9/2` | added | `—` | `E7#9b13 5668` |
+| `ukulele-d/E/b13sharp9/3` | added | `—` | `E7#9b13 ba88` |
+| `ukulele-d/E/b13sharp9/4` | added | `—` | `E7#9b13 aa89` |
 | `ukulele-d/E/dim/1` | added | `—` | `Edim 7545` |
 | `ukulele-d/E/dim/2` | added | `—` | `Edim 78a8` |
 | `ukulele-d/E/dim/3` | added | `—` | `Edim a8a8` |
@@ -7028,10 +7004,10 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/Eb/add9/2` | added | `—` | `Ebadd9 6546` |
 | `ukulele-d/Eb/add9/3` | added | `—` | `Ebadd9 8898` |
 | `ukulele-d/Eb/add9/4` | added | `—` | `Ebadd9 adbb` |
-| `ukulele-d/Eb/alt/1` | added | `—` | `Ebb5 0114` |
-| `ukulele-d/Eb/alt/2` | added | `—` | `Ebb5 6534` |
-| `ukulele-d/Eb/alt/3` | added | `—` | `Ebb5 6798` |
-| `ukulele-d/Eb/alt/4` | added | `—` | `Ebb5 a798` |
+| `ukulele-d/Eb/alt/1` | added | `—` | `Eb(b5) 0114` |
+| `ukulele-d/Eb/alt/2` | added | `—` | `Eb(b5) 6534` |
+| `ukulele-d/Eb/alt/3` | added | `—` | `Eb(b5) 6798` |
+| `ukulele-d/Eb/alt/4` | added | `—` | `Eb(b5) a798` |
 | `ukulele-d/Eb/aug/1` | added | `—` | `Ebaug 2110` |
 | `ukulele-d/Eb/aug/2` | added | `—` | `Ebaug 2114` |
 | `ukulele-d/Eb/aug/3` | added | `—` | `Ebaug 2554` |
@@ -7044,14 +7020,14 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/Eb/aug9/2` | added | `—` | `Ebaug9 4310` |
 | `ukulele-d/Eb/aug9/3` | added | `—` | `Ebaug9 4556` |
 | `ukulele-d/Eb/aug9/4` | added | `—` | `Ebaug9 8978` |
-| `ukulele-d/Eb/b13b9/1` | added | `—` | `Ebb13b9 2212` |
-| `ukulele-d/Eb/b13b9/2` | added | `—` | `Ebb13b9 4555` |
-| `ukulele-d/Eb/b13b9/3` | added | `—` | `Ebb13b9 7978` |
-| `ukulele-d/Eb/b13b9/4` | added | `—` | `Ebb13b9 abac` |
-| `ukulele-d/Eb/b13sharp9/1` | added | `—` | `Ebb13#9 2412` |
-| `ukulele-d/Eb/b13sharp9/2` | added | `—` | `Ebb13#9 4557` |
-| `ukulele-d/Eb/b13sharp9/3` | added | `—` | `Ebb13#9 a977` |
-| `ukulele-d/Eb/b13sharp9/4` | added | `—` | `Ebb13#9 9978` |
+| `ukulele-d/Eb/b13b9/1` | added | `—` | `Eb7b9b13 2212` |
+| `ukulele-d/Eb/b13b9/2` | added | `—` | `Eb7b9b13 4555` |
+| `ukulele-d/Eb/b13b9/3` | added | `—` | `Eb7b9b13 7978` |
+| `ukulele-d/Eb/b13b9/4` | added | `—` | `Eb7b9b13 abac` |
+| `ukulele-d/Eb/b13sharp9/1` | added | `—` | `Eb7#9b13 2412` |
+| `ukulele-d/Eb/b13sharp9/2` | added | `—` | `Eb7#9b13 4557` |
+| `ukulele-d/Eb/b13sharp9/3` | added | `—` | `Eb7#9b13 a977` |
+| `ukulele-d/Eb/b13sharp9/4` | added | `—` | `Eb7#9b13 9978` |
 | `ukulele-d/Eb/dim/1` | added | `—` | `Ebdim 6434` |
 | `ukulele-d/Eb/dim/2` | added | `—` | `Ebdim 6797` |
 | `ukulele-d/Eb/dim/3` | added | `—` | `Ebdim 9797` |
@@ -7200,9 +7176,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/F/add9/2` | added | `—` | `Fadd9 3536` |
 | `ukulele-d/F/add9/3` | added | `—` | `Fadd9 8768` |
 | `ukulele-d/F/add9/4` | added | `—` | `Fadd9 aaba` |
-| `ukulele-d/F/alt/1` | added | `—` | `Fb5 8756` |
-| `ukulele-d/F/alt/2` | added | `—` | `Fb5 89ba` |
-| `ukulele-d/F/alt/3` | added | `—` | `Fb5 c9ba` |
+| `ukulele-d/F/alt/1` | added | `—` | `F(b5) 8756` |
+| `ukulele-d/F/alt/2` | added | `—` | `F(b5) 89ba` |
+| `ukulele-d/F/alt/3` | added | `—` | `F(b5) c9ba` |
 | `ukulele-d/F/aug/1` | added | `—` | `Faug 0332` |
 | `ukulele-d/F/aug/2` | added | `—` | `Faug 4332` |
 | `ukulele-d/F/aug/3` | added | `—` | `Faug 4336` |
@@ -7215,14 +7191,14 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/F/aug9/2` | added | `—` | `Faug9 4534` |
 | `ukulele-d/F/aug9/3` | added | `—` | `Faug9 6778` |
 | `ukulele-d/F/aug9/4` | added | `—` | `Faug9 ab9a` |
-| `ukulele-d/F/b13b9/1` | added | `—` | `Fb13b9 0102` |
-| `ukulele-d/F/b13b9/2` | added | `—` | `Fb13b9 4434` |
-| `ukulele-d/F/b13b9/3` | added | `—` | `Fb13b9 6777` |
-| `ukulele-d/F/b13b9/4` | added | `—` | `Fb13b9 9b9a` |
-| `ukulele-d/F/b13sharp9/1` | added | `—` | `Fb13#9 0122` |
-| `ukulele-d/F/b13sharp9/2` | added | `—` | `Fb13#9 4634` |
-| `ukulele-d/F/b13sharp9/3` | added | `—` | `Fb13#9 6779` |
-| `ukulele-d/F/b13sharp9/4` | added | `—` | `Fb13#9 cb99` |
+| `ukulele-d/F/b13b9/1` | added | `—` | `F7b9b13 0102` |
+| `ukulele-d/F/b13b9/2` | added | `—` | `F7b9b13 4434` |
+| `ukulele-d/F/b13b9/3` | added | `—` | `F7b9b13 6777` |
+| `ukulele-d/F/b13b9/4` | added | `—` | `F7b9b13 9b9a` |
+| `ukulele-d/F/b13sharp9/1` | added | `—` | `F7#9b13 0122` |
+| `ukulele-d/F/b13sharp9/2` | added | `—` | `F7#9b13 4634` |
+| `ukulele-d/F/b13sharp9/3` | added | `—` | `F7#9b13 6779` |
+| `ukulele-d/F/b13sharp9/4` | added | `—` | `F7#9b13 cb99` |
 | `ukulele-d/F/dim/1` | added | `—` | `Fdim 2320` |
 | `ukulele-d/F/dim/2` | added | `—` | `Fdim 8656` |
 | `ukulele-d/F/dim/3` | added | `—` | `Fdim 89b9` |
@@ -7371,9 +7347,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/G/add9/2` | added | `—` | `Gadd9 2533` |
 | `ukulele-d/G/add9/3` | added | `—` | `Gadd9 5758` |
 | `ukulele-d/G/add9/4` | added | `—` | `Gadd9 a98a` |
-| `ukulele-d/G/alt/1` | added | `—` | `Gb5 2552` |
-| `ukulele-d/G/alt/2` | added | `—` | `Gb5 a978` |
-| `ukulele-d/G/alt/3` | added | `—` | `Gb5 abdc` |
+| `ukulele-d/G/alt/1` | added | `—` | `G(b5) 2552` |
+| `ukulele-d/G/alt/2` | added | `—` | `G(b5) a978` |
+| `ukulele-d/G/alt/3` | added | `—` | `G(b5) abdc` |
 | `ukulele-d/G/aug/1` | added | `—` | `Gaug 2110` |
 | `ukulele-d/G/aug/2` | added | `—` | `Gaug 2114` |
 | `ukulele-d/G/aug/3` | added | `—` | `Gaug 2554` |
@@ -7386,14 +7362,14 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/G/aug9/2` | added | `—` | `Gaug9 6756` |
 | `ukulele-d/G/aug9/3` | added | `—` | `Gaug9 899a` |
 | `ukulele-d/G/aug9/4` | added | `—` | `Gaug9 cdbc` |
-| `ukulele-d/G/b13b9/1` | added | `—` | `Gb13b9 2324` |
-| `ukulele-d/G/b13b9/2` | added | `—` | `Gb13b9 6656` |
-| `ukulele-d/G/b13b9/3` | added | `—` | `Gb13b9 8999` |
-| `ukulele-d/G/b13b9/4` | added | `—` | `Gb13b9 bdbc` |
-| `ukulele-d/G/b13sharp9/1` | added | `—` | `Gb13#9 2344` |
-| `ukulele-d/G/b13sharp9/2` | added | `—` | `Gb13#9 6856` |
-| `ukulele-d/G/b13sharp9/3` | added | `—` | `Gb13#9 899b` |
-| `ukulele-d/G/b13sharp9/4` | added | `—` | `Gb13#9 edbb` |
+| `ukulele-d/G/b13b9/1` | added | `—` | `G7b9b13 2324` |
+| `ukulele-d/G/b13b9/2` | added | `—` | `G7b9b13 6656` |
+| `ukulele-d/G/b13b9/3` | added | `—` | `G7b9b13 8999` |
+| `ukulele-d/G/b13b9/4` | added | `—` | `G7b9b13 bdbc` |
+| `ukulele-d/G/b13sharp9/1` | added | `—` | `G7#9b13 2344` |
+| `ukulele-d/G/b13sharp9/2` | added | `—` | `G7#9b13 6856` |
+| `ukulele-d/G/b13sharp9/3` | added | `—` | `G7#9b13 899b` |
+| `ukulele-d/G/b13sharp9/4` | added | `—` | `G7#9b13 edbb` |
 | `ukulele-d/G/dim/1` | added | `—` | `Gdim 4542` |
 | `ukulele-d/G/dim/2` | added | `—` | `Gdim a878` |
 | `ukulele-d/G/dim/3` | added | `—` | `Gdim abdb` |
@@ -7543,9 +7519,9 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/Gb/add9/2` | added | `—` | `Gbadd9 4647` |
 | `ukulele-d/Gb/add9/3` | added | `—` | `Gbadd9 9879` |
 | `ukulele-d/Gb/add9/4` | added | `—` | `Gbadd9 bbcb` |
-| `ukulele-d/Gb/alt/1` | added | `—` | `Gbb5 9867` |
-| `ukulele-d/Gb/alt/2` | added | `—` | `Gbb5 9acb` |
-| `ukulele-d/Gb/alt/3` | added | `—` | `Gbb5 dacb` |
+| `ukulele-d/Gb/alt/1` | added | `—` | `Gb(b5) 9867` |
+| `ukulele-d/Gb/alt/2` | added | `—` | `Gb(b5) 9acb` |
+| `ukulele-d/Gb/alt/3` | added | `—` | `Gb(b5) dacb` |
 | `ukulele-d/Gb/aug/1` | added | `—` | `Gbaug 1003` |
 | `ukulele-d/Gb/aug/2` | added | `—` | `Gbaug 1443` |
 | `ukulele-d/Gb/aug/3` | added | `—` | `Gbaug 5443` |
@@ -7558,14 +7534,14 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele-d/Gb/aug9/2` | added | `—` | `Gbaug9 5645` |
 | `ukulele-d/Gb/aug9/3` | added | `—` | `Gbaug9 7889` |
 | `ukulele-d/Gb/aug9/4` | added | `—` | `Gbaug9 bcab` |
-| `ukulele-d/Gb/b13b9/1` | added | `—` | `Gbb13b9 1213` |
-| `ukulele-d/Gb/b13b9/2` | added | `—` | `Gbb13b9 5545` |
-| `ukulele-d/Gb/b13b9/3` | added | `—` | `Gbb13b9 7888` |
-| `ukulele-d/Gb/b13b9/4` | added | `—` | `Gbb13b9 acab` |
-| `ukulele-d/Gb/b13sharp9/1` | added | `—` | `Gbb13#9 1233` |
-| `ukulele-d/Gb/b13sharp9/2` | added | `—` | `Gbb13#9 5745` |
-| `ukulele-d/Gb/b13sharp9/3` | added | `—` | `Gbb13#9 788a` |
-| `ukulele-d/Gb/b13sharp9/4` | added | `—` | `Gbb13#9 dcaa` |
+| `ukulele-d/Gb/b13b9/1` | added | `—` | `Gb7b9b13 1213` |
+| `ukulele-d/Gb/b13b9/2` | added | `—` | `Gb7b9b13 5545` |
+| `ukulele-d/Gb/b13b9/3` | added | `—` | `Gb7b9b13 7888` |
+| `ukulele-d/Gb/b13b9/4` | added | `—` | `Gb7b9b13 acab` |
+| `ukulele-d/Gb/b13sharp9/1` | added | `—` | `Gb7#9b13 1233` |
+| `ukulele-d/Gb/b13sharp9/2` | added | `—` | `Gb7#9b13 5745` |
+| `ukulele-d/Gb/b13sharp9/3` | added | `—` | `Gb7#9b13 788a` |
+| `ukulele-d/Gb/b13sharp9/4` | added | `—` | `Gb7#9b13 dcaa` |
 | `ukulele-d/Gb/dim/1` | added | `—` | `Gbdim 3431` |
 | `ukulele-d/Gb/dim/2` | added | `—` | `Gbdim 9767` |
 | `ukulele-d/Gb/dim/3` | added | `—` | `Gbdim 9aca` |
@@ -8328,5 +8304,185 @@ Counts are voicings; one voicing can have several kinds of change.
 | `cavaquinho/Gb/minor/7` | removed | `Gbminor 3516` | `—` |
 | `cavaquinho/Gb/sus4/4` | removed | `Gbsus4 1346` | `—` |
 | `cavaquinho/Gb/sus4/5` | removed | `Gbsus4 1646` | `—` |
+
+</details>
+
+### 72. Renamed b13b9 and b13#9 to 7b9b13 and 7#9b13. A suffix starting with b cannot follow a root in a chord symbol ("Cb13b9" reads as C-flat), and these are the usual names for these altered dominants. The old names still resolve through parseSuffix().
+
+[#14](https://github.com/tabsy-gr/chords-db/issues/14)
+
+<details>
+<summary>96 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `ukulele/A/b13b9/1` | relabelled | `Ab13b9` | `A7b9b13` |
+| `ukulele/A/b13b9/2` | relabelled | `Ab13b9` | `A7b9b13` |
+| `ukulele/A/b13b9/3` | relabelled | `Ab13b9` | `A7b9b13` |
+| `ukulele/A/b13b9/4` | relabelled | `Ab13b9` | `A7b9b13` |
+| `ukulele/A/b13sharp9/1` | relabelled | `Ab13#9` | `A7#9b13` |
+| `ukulele/A/b13sharp9/2` | relabelled | `Ab13#9` | `A7#9b13` |
+| `ukulele/A/b13sharp9/3` | relabelled | `Ab13#9` | `A7#9b13` |
+| `ukulele/A/b13sharp9/4` | relabelled | `Ab13#9` | `A7#9b13` |
+| `ukulele/Ab/b13b9/1` | relabelled | `Abb13b9` | `Ab7b9b13` |
+| `ukulele/Ab/b13b9/2` | relabelled | `Abb13b9` | `Ab7b9b13` |
+| `ukulele/Ab/b13b9/3` | relabelled | `Abb13b9` | `Ab7b9b13` |
+| `ukulele/Ab/b13b9/4` | relabelled | `Abb13b9` | `Ab7b9b13` |
+| `ukulele/Ab/b13sharp9/1` | relabelled | `Abb13#9` | `Ab7#9b13` |
+| `ukulele/Ab/b13sharp9/2` | relabelled | `Abb13#9` | `Ab7#9b13` |
+| `ukulele/Ab/b13sharp9/3` | relabelled | `Abb13#9` | `Ab7#9b13` |
+| `ukulele/Ab/b13sharp9/4` | relabelled | `Abb13#9` | `Ab7#9b13` |
+| `ukulele/B/b13b9/1` | relabelled | `Bb13b9` | `B7b9b13` |
+| `ukulele/B/b13b9/2` | relabelled | `Bb13b9` | `B7b9b13` |
+| `ukulele/B/b13b9/3` | relabelled | `Bb13b9` | `B7b9b13` |
+| `ukulele/B/b13b9/4` | relabelled | `Bb13b9` | `B7b9b13` |
+| `ukulele/B/b13sharp9/1` | relabelled | `Bb13#9` | `B7#9b13` |
+| `ukulele/B/b13sharp9/2` | relabelled | `Bb13#9` | `B7#9b13` |
+| `ukulele/B/b13sharp9/3` | relabelled | `Bb13#9` | `B7#9b13` |
+| `ukulele/B/b13sharp9/4` | relabelled | `Bb13#9` | `B7#9b13` |
+| `ukulele/Bb/b13b9/1` | relabelled | `Bbb13b9` | `Bb7b9b13` |
+| `ukulele/Bb/b13b9/2` | relabelled | `Bbb13b9` | `Bb7b9b13` |
+| `ukulele/Bb/b13b9/3` | relabelled | `Bbb13b9` | `Bb7b9b13` |
+| `ukulele/Bb/b13b9/4` | relabelled | `Bbb13b9` | `Bb7b9b13` |
+| `ukulele/Bb/b13sharp9/1` | relabelled | `Bbb13#9` | `Bb7#9b13` |
+| `ukulele/Bb/b13sharp9/2` | relabelled | `Bbb13#9` | `Bb7#9b13` |
+| `ukulele/Bb/b13sharp9/3` | relabelled | `Bbb13#9` | `Bb7#9b13` |
+| `ukulele/Bb/b13sharp9/4` | relabelled | `Bbb13#9` | `Bb7#9b13` |
+| `ukulele/C/b13b9/1` | relabelled | `Cb13b9` | `C7b9b13` |
+| `ukulele/C/b13b9/2` | relabelled | `Cb13b9` | `C7b9b13` |
+| `ukulele/C/b13b9/3` | relabelled | `Cb13b9` | `C7b9b13` |
+| `ukulele/C/b13b9/4` | relabelled | `Cb13b9` | `C7b9b13` |
+| `ukulele/C/b13sharp9/1` | relabelled | `Cb13#9` | `C7#9b13` |
+| `ukulele/C/b13sharp9/2` | relabelled | `Cb13#9` | `C7#9b13` |
+| `ukulele/C/b13sharp9/3` | relabelled | `Cb13#9` | `C7#9b13` |
+| `ukulele/C/b13sharp9/4` | relabelled | `Cb13#9` | `C7#9b13` |
+| `ukulele/D/b13b9/1` | relabelled | `Db13b9` | `D7b9b13` |
+| `ukulele/D/b13b9/2` | relabelled | `Db13b9` | `D7b9b13` |
+| `ukulele/D/b13b9/3` | relabelled | `Db13b9` | `D7b9b13` |
+| `ukulele/D/b13b9/4` | relabelled | `Db13b9` | `D7b9b13` |
+| `ukulele/D/b13sharp9/1` | relabelled | `Db13#9` | `D7#9b13` |
+| `ukulele/D/b13sharp9/2` | relabelled | `Db13#9` | `D7#9b13` |
+| `ukulele/D/b13sharp9/3` | relabelled | `Db13#9` | `D7#9b13` |
+| `ukulele/D/b13sharp9/4` | relabelled | `Db13#9` | `D7#9b13` |
+| `ukulele/Db/b13b9/1` | relabelled | `Dbb13b9` | `Db7b9b13` |
+| `ukulele/Db/b13b9/2` | relabelled | `Dbb13b9` | `Db7b9b13` |
+| `ukulele/Db/b13b9/3` | relabelled | `Dbb13b9` | `Db7b9b13` |
+| `ukulele/Db/b13b9/4` | relabelled | `Dbb13b9` | `Db7b9b13` |
+| `ukulele/Db/b13sharp9/1` | relabelled | `Dbb13#9` | `Db7#9b13` |
+| `ukulele/Db/b13sharp9/2` | relabelled | `Dbb13#9` | `Db7#9b13` |
+| `ukulele/Db/b13sharp9/3` | relabelled | `Dbb13#9` | `Db7#9b13` |
+| `ukulele/Db/b13sharp9/4` | relabelled | `Dbb13#9` | `Db7#9b13` |
+| `ukulele/E/b13b9/1` | relabelled | `Eb13b9` | `E7b9b13` |
+| `ukulele/E/b13b9/2` | relabelled | `Eb13b9` | `E7b9b13` |
+| `ukulele/E/b13b9/3` | relabelled | `Eb13b9` | `E7b9b13` |
+| `ukulele/E/b13b9/4` | relabelled | `Eb13b9` | `E7b9b13` |
+| `ukulele/E/b13sharp9/1` | relabelled | `Eb13#9` | `E7#9b13` |
+| `ukulele/E/b13sharp9/2` | relabelled | `Eb13#9` | `E7#9b13` |
+| `ukulele/E/b13sharp9/3` | relabelled | `Eb13#9` | `E7#9b13` |
+| `ukulele/E/b13sharp9/4` | relabelled | `Eb13#9` | `E7#9b13` |
+| `ukulele/Eb/b13b9/1` | relabelled | `Ebb13b9` | `Eb7b9b13` |
+| `ukulele/Eb/b13b9/2` | relabelled | `Ebb13b9` | `Eb7b9b13` |
+| `ukulele/Eb/b13b9/3` | relabelled | `Ebb13b9` | `Eb7b9b13` |
+| `ukulele/Eb/b13b9/4` | relabelled | `Ebb13b9` | `Eb7b9b13` |
+| `ukulele/Eb/b13sharp9/1` | relabelled | `Ebb13#9` | `Eb7#9b13` |
+| `ukulele/Eb/b13sharp9/2` | relabelled | `Ebb13#9` | `Eb7#9b13` |
+| `ukulele/Eb/b13sharp9/3` | relabelled | `Ebb13#9` | `Eb7#9b13` |
+| `ukulele/Eb/b13sharp9/4` | relabelled | `Ebb13#9` | `Eb7#9b13` |
+| `ukulele/F/b13b9/1` | relabelled | `Fb13b9` | `F7b9b13` |
+| `ukulele/F/b13b9/2` | relabelled | `Fb13b9` | `F7b9b13` |
+| `ukulele/F/b13b9/3` | relabelled | `Fb13b9` | `F7b9b13` |
+| `ukulele/F/b13b9/4` | relabelled | `Fb13b9` | `F7b9b13` |
+| `ukulele/F/b13sharp9/1` | relabelled | `Fb13#9` | `F7#9b13` |
+| `ukulele/F/b13sharp9/2` | relabelled | `Fb13#9` | `F7#9b13` |
+| `ukulele/F/b13sharp9/3` | relabelled | `Fb13#9` | `F7#9b13` |
+| `ukulele/F/b13sharp9/4` | relabelled | `Fb13#9` | `F7#9b13` |
+| `ukulele/G/b13b9/1` | relabelled | `Gb13b9` | `G7b9b13` |
+| `ukulele/G/b13b9/2` | relabelled | `Gb13b9` | `G7b9b13` |
+| `ukulele/G/b13b9/3` | relabelled | `Gb13b9` | `G7b9b13` |
+| `ukulele/G/b13b9/4` | relabelled | `Gb13b9` | `G7b9b13` |
+| `ukulele/G/b13sharp9/1` | relabelled | `Gb13#9` | `G7#9b13` |
+| `ukulele/G/b13sharp9/2` | relabelled | `Gb13#9` | `G7#9b13` |
+| `ukulele/G/b13sharp9/3` | relabelled | `Gb13#9` | `G7#9b13` |
+| `ukulele/G/b13sharp9/4` | relabelled | `Gb13#9` | `G7#9b13` |
+| `ukulele/Gb/b13b9/1` | relabelled | `Gbb13b9` | `Gb7b9b13` |
+| `ukulele/Gb/b13b9/2` | relabelled | `Gbb13b9` | `Gb7b9b13` |
+| `ukulele/Gb/b13b9/3` | relabelled | `Gbb13b9` | `Gb7b9b13` |
+| `ukulele/Gb/b13b9/4` | relabelled | `Gbb13b9` | `Gb7b9b13` |
+| `ukulele/Gb/b13sharp9/1` | relabelled | `Gbb13#9` | `Gb7#9b13` |
+| `ukulele/Gb/b13sharp9/2` | relabelled | `Gbb13#9` | `Gb7#9b13` |
+| `ukulele/Gb/b13sharp9/3` | relabelled | `Gbb13#9` | `Gb7#9b13` |
+| `ukulele/Gb/b13sharp9/4` | relabelled | `Gbb13#9` | `Gb7#9b13` |
+
+</details>
+
+### 73. Merged guitar sus into sus4: "sus" alone means a suspended fourth, so these are sus4 voicings. "sus" still resolves as a spelling of sus4.
+
+[#14](https://github.com/tabsy-gr/chords-db/issues/14)
+
+<details>
+<summary>27 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/sus/1` | relabelled | `Asus` | `Asus4` |
+| `guitar/A/sus/3` | relabelled | `Asus` | `Asus4` |
+| `guitar/A/sus/4` | relabelled | `Asus` | `Asus4` |
+| `guitar/Ab/sus/1` | relabelled | `Absus` | `Absus4` |
+| `guitar/Ab/sus/3` | relabelled | `Absus` | `Absus4` |
+| `guitar/B/sus/1` | relabelled | `Bsus` | `Bsus4` |
+| `guitar/B/sus/2` | relabelled | `Bsus` | `Bsus4` |
+| `guitar/B/sus/4` | relabelled | `Bsus` | `Bsus4` |
+| `guitar/Bb/sus/1` | relabelled | `Bbsus` | `Bbsus4` |
+| `guitar/Bb/sus/3` | relabelled | `Bbsus` | `Bbsus4` |
+| `guitar/C/sus/2` | relabelled | `Csus` | `Csus4` |
+| `guitar/C/sus/3` | relabelled | `Csus` | `Csus4` |
+| `guitar/Csharp/sus/1` | relabelled | `C#sus` | `C#sus4` |
+| `guitar/Csharp/sus/3` | relabelled | `C#sus` | `C#sus4` |
+| `guitar/D/sus/2` | relabelled | `Dsus` | `Dsus4` |
+| `guitar/D/sus/3` | relabelled | `Dsus` | `Dsus4` |
+| `guitar/E/sus/1` | relabelled | `Esus` | `Esus4` |
+| `guitar/E/sus/2` | relabelled | `Esus` | `Esus4` |
+| `guitar/E/sus/4` | relabelled | `Esus` | `Esus4` |
+| `guitar/Eb/sus/2` | relabelled | `Ebsus` | `Ebsus4` |
+| `guitar/Eb/sus/4` | relabelled | `Ebsus` | `Ebsus4` |
+| `guitar/F/sus/1` | relabelled | `Fsus` | `Fsus4` |
+| `guitar/F/sus/3` | relabelled | `Fsus` | `Fsus4` |
+| `guitar/Fsharp/sus/1` | relabelled | `F#sus` | `F#sus4` |
+| `guitar/Fsharp/sus/3` | relabelled | `F#sus` | `F#sus4` |
+| `guitar/G/sus/2` | relabelled | `Gsus` | `Gsus4` |
+| `guitar/G/sus/4` | relabelled | `Gsus` | `Gsus4` |
+
+</details>
+
+### 74. Removed while merging guitar sus into sus4: the same shape was already a sus4 voicing.
+
+[#14](https://github.com/tabsy-gr/chords-db/issues/14)
+
+<details>
+<summary>21 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/sus/2` | removed | `Asus x02230` | `—` |
+| `guitar/Ab/sus/2` | removed | `Absus 133311` | `—` |
+| `guitar/Ab/sus/4` | removed | `Absus xx1344` | `—` |
+| `guitar/B/sus/3` | removed | `Bsus x13341` | `—` |
+| `guitar/Bb/sus/2` | removed | `Bbsus x13341` | `—` |
+| `guitar/Bb/sus/4` | removed | `Bbsus 133311` | `—` |
+| `guitar/C/sus/1` | removed | `Csus x33011` | `—` |
+| `guitar/C/sus/4` | removed | `Csus x13341` | `—` |
+| `guitar/Csharp/sus/2` | removed | `C#sus x13341` | `—` |
+| `guitar/Csharp/sus/4` | removed | `C#sus 133311` | `—` |
+| `guitar/D/sus/1` | removed | `Dsus xx0233` | `—` |
+| `guitar/D/sus/4` | removed | `Dsus x13341` | `—` |
+| `guitar/E/sus/3` | removed | `Esus 022200` | `—` |
+| `guitar/Eb/sus/1` | removed | `Ebsus xx1344` | `—` |
+| `guitar/Eb/sus/3` | removed | `Ebsus x13341` | `—` |
+| `guitar/F/sus/2` | removed | `Fsus 133311` | `—` |
+| `guitar/F/sus/4` | removed | `Fsus xx1344` | `—` |
+| `guitar/Fsharp/sus/2` | removed | `F#sus 244422` | `—` |
+| `guitar/Fsharp/sus/4` | removed | `F#sus xx1344` | `—` |
+| `guitar/G/sus/1` | removed | `Gsus 330013` | `—` |
+| `guitar/G/sus/3` | removed | `Gsus 133311` | `—` |
 
 </details>
