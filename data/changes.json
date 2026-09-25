@@ -6,6 +6,22 @@
       "kinds": ["fingers"],
       "change": "The fingers string had 'x' for the muted strings ('xx3211'); an 'x' is not a finger, so they are 0 (no finger).",
       "pr": 2
+    },
+    {
+      "ids": [
+        "guitar/A/_Gsharp/*",
+        "guitar/A/m_Gsharp/*",
+        "guitar/E/_Dsharp/*",
+        "guitar/E/_Gsharp/*",
+        "guitar/E/m_Dsharp/*",
+        "guitar/E/m_Gsharp/*",
+        "guitar/F/_Dsharp/*"
+      ],
+      "kinds": ["added"],
+      "change": "Restored seven guitar slash chords (A/G#, Am/G#, E/D#, E/G#, Em/D#, Em/G#, F/D#) whose files existed upstream but were never imported, so upstream's build never contained them.",
+      "issue": 4,
+      "upstream": "tombatossals/chords-db#44",
+      "reportedBy": "felipegiotto"
     }
   ]
 }

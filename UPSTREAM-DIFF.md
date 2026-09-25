@@ -13,6 +13,7 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 
 | Change | guitar |
 | --- | ---: |
+| added | 21 |
 | fingers | 1 |
 
 Counts are voicings; one voicing can have several kinds of change.
@@ -26,3 +27,36 @@ Counts are voicings; one voicing can have several kinds of change.
 | Voicing | Change | Before | After |
 | --- | --- | --- | --- |
 | `guitar/F/major/2` | fingers | `-1 -1 3 2 1 1` | `0 0 3 2 1 1` |
+
+### 2. Restored seven guitar slash chords (A/G#, Am/G#, E/D#, E/G#, Em/D#, Em/G#, F/D#) whose files existed upstream but were never imported, so upstream's build never contained them.
+
+[#4](https://github.com/tabsy-gr/chords-db/issues/4) · upstream [#44](https://github.com/tombatossals/chords-db/issues/44) · reported by [felipegiotto](https://github.com/felipegiotto)
+
+<details>
+<summary>21 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/_Gsharp/1` | added | `—` | `A/G# 442255` |
+| `guitar/A/_Gsharp/2` | added | `—` | `A/G# 442225` |
+| `guitar/A/_Gsharp/3` | added | `—` | `A/G# xx6655` |
+| `guitar/A/m_Gsharp/1` | added | `—` | `Am/G# 432555` |
+| `guitar/A/m_Gsharp/2` | added | `—` | `Am/G# 432255` |
+| `guitar/E/_Dsharp/1` | added | `—` | `E/D# xx1100` |
+| `guitar/E/_Dsharp/2` | added | `—` | `E/D# x66454` |
+| `guitar/E/_Dsharp/3` | added | `—` | `E/D# bb99cc` |
+| `guitar/E/_Gsharp/1` | added | `—` | `E/G# xxx100` |
+| `guitar/E/_Gsharp/2` | added | `—` | `E/G# 422100` |
+| `guitar/E/_Gsharp/3` | added | `—` | `E/G# 476454` |
+| `guitar/E/_Gsharp/4` | added | `—` | `E/G# 42245x` |
+| `guitar/E/m_Dsharp/1` | added | `—` | `Em/D# xx1000` |
+| `guitar/E/m_Dsharp/2` | added | `—` | `Em/D# x6545x` |
+| `guitar/E/m_Dsharp/3` | added | `—` | `Em/D# x6998x` |
+| `guitar/E/m_Gsharp/1` | added | `—` | `Em/G# 422000` |
+| `guitar/E/m_Gsharp/2` | added | `—` | `Em/G# 47545x` |
+| `guitar/E/m_Gsharp/3` | added | `—` | `Em/G# xx6453` |
+| `guitar/F/_Dsharp/1` | added | `—` | `F/D# xx1211` |
+| `guitar/F/_Dsharp/2` | added | `—` | `F/D# x67565` |
+| `guitar/F/_Dsharp/3` | added | `—` | `F/D# x63565` |
+
+</details>
