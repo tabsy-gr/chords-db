@@ -7,7 +7,8 @@
       "id": "guitar/Fsharp/mmaj7b5/2",
       "frets": [-1, -1, 4, 5, 6, 5],
       "fingers": [0, 0, 1, 2, 4, 3],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/Fsharp/mmaj7b5/1",
@@ -15,20 +16,23 @@
       "fingers": [1, 3, 3, 1, 0, 2],
       "barres": [2, 3],
       "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/Fsharp/mmaj7b5/4",
       "frets": [-1, 9, 10, 10, 10, -1],
       "fingers": [0, 1, 2, 3, 4, 0],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/Fsharp/mmaj7b5/3",
       "frets": [-1, 9, 10, 10, 10, 8],
       "fingers": [0, 2, 3, 3, 3, 1],
       "barres": [10],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

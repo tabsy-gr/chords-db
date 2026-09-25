@@ -9,13 +9,15 @@
       "fingers": [1, 2, 1, 1],
       "barres": [2],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "cavaquinho/Db/m7/2",
       "frets": [6, 6, 5, 9],
       "fingers": [2, 3, 1, 4],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

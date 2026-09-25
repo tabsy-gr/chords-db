@@ -7,13 +7,15 @@
       "id": "bouzouki-cfad/Fsharp/maj9/1",
       "frets": [6, 5, 8, 6],
       "fingers": [3, 1, 4, 2],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-cfad/Fsharp/maj9/2",
       "frets": [8, 0, 9, 8],
       "fingers": [2, 0, 3, 1],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

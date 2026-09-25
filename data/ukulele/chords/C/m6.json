@@ -7,7 +7,8 @@
       "id": "ukulele/C/m6/1",
       "frets": [2, 3, 3, 3],
       "fingers": [1, 2, 3, 4],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "ukulele/C/m6/2",
@@ -15,7 +16,8 @@
       "fingers": [1, 3, 1, 2],
       "barres": [5],
       "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "ukulele/C/m6/3",
@@ -23,13 +25,15 @@
       "fingers": [1, 2, 1, 3],
       "barres": [8],
       "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "ukulele/C/m6/4",
       "frets": [12, 12, 11, 12],
       "fingers": [2, 3, 1, 4],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

@@ -8,7 +8,8 @@
       "frets": [-1, 8, 7, 5, 6, 6],
       "fingers": [0, 4, 3, 1, 2, 2],
       "barres": [6],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/F/add11/2",
@@ -16,7 +17,8 @@
       "fingers": [4, 3, 1, 1, 2, 0],
       "barres": [10],
       "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

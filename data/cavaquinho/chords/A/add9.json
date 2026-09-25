@@ -10,19 +10,22 @@
       "barres": [2],
       "capo": true,
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "rootless": true
+      "rootless": true,
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "cavaquinho/A/add9/1",
       "frets": [7, 6, 5, 9],
       "fingers": [3, 2, 1, 4],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "cavaquinho/A/add9/9",
       "frets": [9, 6, 5, 7],
       "fingers": [4, 2, 1, 3],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "cavaquinho/A/add9/3",
@@ -30,7 +33,8 @@
       "fingers": [3, 1, 2, 1],
       "barres": [9],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "cavaquinho/A/add9/8",
@@ -38,13 +42,15 @@
       "fingers": [1, 1, 2, 3],
       "barres": [9],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "cavaquinho/A/add9/5",
       "frets": [11, 14, 12, 14],
       "fingers": [1, 3, 2, 4],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

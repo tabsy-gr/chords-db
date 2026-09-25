@@ -7,21 +7,24 @@
       "id": "bouzouki-dad/Csharp/5/1",
       "frets": [-1, 4, 6],
       "fingers": [0, 1, 2],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-dad/Csharp/5/2",
       "frets": [11, 11, 11],
       "fingers": [1, 1, 1],
       "barres": [11],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-dad/Csharp/5/3",
       "frets": [11, 11, -1],
       "fingers": [1, 1, 0],
       "barres": [11],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

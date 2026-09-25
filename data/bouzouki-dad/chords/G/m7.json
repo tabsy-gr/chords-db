@@ -8,14 +8,16 @@
       "frets": [5, 8, 8],
       "fingers": [1, 2, 2],
       "barres": [8],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-dad/G/m7/2",
       "frets": [8, 8, 5],
       "fingers": [2, 2, 1],
       "barres": [8],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

@@ -7,13 +7,15 @@
       "id": "guitar/Ab/maj7sharp5/1",
       "frets": [4, 3, 2, 0, 1, 0],
       "fingers": [4, 3, 2, 0, 1, 0],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/Ab/maj7sharp5/2",
       "frets": [4, 3, 5, 0, 5, 0],
       "fingers": [2, 1, 3, 0, 4, 0],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/Ab/maj7sharp5/3",
@@ -21,13 +23,15 @@
       "fingers": [0, 4, 3, 2, 1, 1],
       "barres": [8],
       "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/Ab/maj7sharp5/4",
       "frets": [-1, 11, 14, 12, 13, -1],
       "fingers": [0, 1, 4, 2, 3, 0],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

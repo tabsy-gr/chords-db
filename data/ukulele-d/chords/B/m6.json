@@ -9,6 +9,7 @@
       "fingers": [1, 3, 1, 2],
       "barres": [2],
       "capo": true,
+      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/A/m6/1" }]
     },
     {
@@ -17,18 +18,21 @@
       "fingers": [1, 2, 1, 3],
       "barres": [5],
       "capo": true,
+      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/A/m6/2" }]
     },
     {
       "id": "ukulele-d/B/m6/3",
       "frets": [9, 9, 8, 9],
       "fingers": [2, 3, 1, 4],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/A/m6/3" }]
     },
     {
       "id": "ukulele-d/B/m6/4",
       "frets": [11, 12, 12, 12],
       "fingers": [1, 2, 3, 4],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/A/m6/4" }]
     }
   ]

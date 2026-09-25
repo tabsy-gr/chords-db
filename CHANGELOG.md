@@ -5,6 +5,16 @@ of the original [tombatossals/chords-db](https://github.com/tombatossals/chords-
 For a full comparison with the original, see
 [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-DB.md).
 
+## Unreleased
+
+### Changed
+* Every voicing (bouzouki tetrachordo and trichordo, guitar, ukulele,
+  ukulele-d, cavaquinho, piano; 10,946 in all) is signed off as verified by
+  `geoioannid`. Each one passes the validator and a separate check of its
+  notes against the chord formulas. `VERIFIERS.md` now covers all instruments.
+* `generate:ukulele-d` carries over the ukulele's verified stamps, and
+  `generate:piano` keeps a stamp as long as the notes don't change.
+
 ## 0.9.0
 
 ### Added

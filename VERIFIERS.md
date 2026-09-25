@@ -7,7 +7,7 @@ voicings, for example for the bouzouki.
 
 | GitHub | Name | Instruments |
 | --- | --- | --- |
-| `geoioannid` | Giorgos Ioannidis | bouzouki (tetrachordo, trichordo) |
+| `geoioannid` | Giorgos Ioannidis | all: bouzouki (tetrachordo, trichordo), guitar, ukulele, ukulele-d, cavaquinho, piano |
 
 To sign off voicings you have checked:
 

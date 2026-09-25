@@ -7,20 +7,23 @@
       "id": "guitar/Fsharp/add9/2",
       "frets": [-1, -1, 4, 3, 2, 4],
       "fingers": [0, 0, 3, 2, 1, 4],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/Fsharp/add9/1",
       "frets": [2, 1, -1, 1, 2, 2],
       "fingers": [3, 1, 0, 2, 4, 4],
       "barres": [2],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/Fsharp/add9/4",
       "frets": [-1, 9, 8, -1, 9, 9],
       "fingers": [0, 2, 1, 0, 3, 4],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/Fsharp/add9/3",
@@ -28,7 +31,8 @@
       "fingers": [0, 3, 2, 1, 4, 1],
       "barres": [6],
       "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

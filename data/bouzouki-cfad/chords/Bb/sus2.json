@@ -7,40 +7,46 @@
       "id": "bouzouki-cfad/Bb/sus2/1",
       "frets": [0, 0, 1, -1],
       "fingers": [0, 0, 1, 0],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-cfad/Bb/sus2/2",
       "frets": [0, 0, 1, 3],
       "fingers": [0, 0, 1, 2],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-cfad/Bb/sus2/3",
       "frets": [0, 5, 8, -1],
       "fingers": [0, 1, 2, 0],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-cfad/Bb/sus2/4",
       "frets": [0, 5, 3, 3],
       "fingers": [0, 2, 1, 1],
       "barres": [3],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-cfad/Bb/sus2/5",
       "frets": [5, 5, 3, -1],
       "fingers": [2, 2, 1, 0],
       "barres": [5],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-cfad/Bb/sus2/6",
       "frets": [0, 5, 8, 8],
       "fingers": [0, 1, 2, 2],
       "barres": [8],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

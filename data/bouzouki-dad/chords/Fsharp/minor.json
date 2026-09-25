@@ -8,14 +8,16 @@
       "frets": [16, 16, 19],
       "fingers": [1, 1, 2],
       "barres": [16],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-dad/Fsharp/minor/2",
       "frets": [19, 16, 16],
       "fingers": [2, 1, 1],
       "barres": [16],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

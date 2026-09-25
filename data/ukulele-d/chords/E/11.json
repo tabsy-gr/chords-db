@@ -8,6 +8,7 @@
       "frets": [0, 4, 2, 3],
       "fingers": [0, 3, 1, 2],
       "rootless": true,
+      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/D/11/1" }]
     },
     {
@@ -15,6 +16,7 @@
       "frets": [9, 7, 8, 9],
       "fingers": [3, 1, 2, 4],
       "rootless": true,
+      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/D/11/2" }]
     }
   ]

@@ -7,13 +7,15 @@
       "id": "bouzouki-dad/C/dim/1",
       "frets": [13, 15, 16],
       "fingers": [1, 2, 3],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-dad/C/dim/2",
       "frets": [16, 15, 13],
       "fingers": [3, 2, 1],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

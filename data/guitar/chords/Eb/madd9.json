@@ -7,20 +7,23 @@
       "id": "guitar/Eb/madd9/2",
       "frets": [-1, 6, 4, 3, 6, -1],
       "fingers": [0, 3, 2, 1, 4, 0],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/Eb/madd9/3",
       "frets": [-1, 6, 4, -1, 6, 6],
       "fingers": [0, 2, 1, 0, 3, 4],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/Eb/madd9/1",
       "frets": [-1, 6, 4, 3, 6, 6],
       "fingers": [0, 3, 2, 1, 4, 4],
       "barres": [6],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/Eb/madd9/4",
@@ -28,7 +31,8 @@
       "fingers": [0, 0, 3, 1, 1, 4],
       "barres": [11],
       "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

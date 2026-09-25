@@ -7,25 +7,29 @@
       "id": "guitar/E/m_D/1",
       "frets": [-1, -1, 0, 0, 0, 0],
       "fingers": [0, 0, 0, 0, 0, 0],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/E/m_D/2",
       "frets": [-1, -1, 0, 4, 5, 3],
       "fingers": [0, 0, 0, 2, 3, 1],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/E/m_D/4",
       "frets": [-1, 5, 5, 4, 5, -1],
       "fingers": [0, 2, 3, 1, 4, 0],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "guitar/E/m_D/3",
       "frets": [-1, -1, 0, 9, 8, 7],
       "fingers": [0, 0, 0, 3, 2, 1],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

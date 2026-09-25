@@ -7,20 +7,23 @@
       "id": "bouzouki-cfad/F/m9/1",
       "frets": [8, 0, 6, 5],
       "fingers": [3, 0, 2, 1],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-cfad/F/m9/2",
       "frets": [7, 0, 6, 6],
       "fingers": [2, 0, 1, 1],
       "barres": [6],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-cfad/F/m9/3",
       "frets": [17, 15, 18, 17],
       "fingers": [3, 1, 4, 2],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }
