@@ -16,7 +16,7 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 | added | 25 | 144 | 0 |
 | removed | 13 | 0 | 45 |
 | relabelled | 123 | 84 | 37 |
-| frets | 241 | 0 | 4 |
+| frets | 242 | 0 | 4 |
 | fingers | 257 | 0 | 4 |
 | barres | 177 | 0 | 4 |
 | capo | 33 | 0 | 0 |
@@ -1831,7 +1831,15 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele/Ab/maj11/2` | fingers | `2 1 3 4` | `2 4 3 1` |
 | `ukulele/Eb/alt/1` | fingers | `3 4 1 2` | `4 3 1 2` |
 
-### 50. Muted the lowest string: it sounded a chord tone other than the root, and the next string up plays the root, so the chord now has its root in the bass (e.g. Bm 224432 -> x24432). Inversions that cannot be fixed this way are kept, with a notes/inverted-bass warning. Where the root-position version already exists as its own voicing, the inversion is kept as an alternative.
+### 50. Only the A string had been moved up from the A6 shape (xcbbax), giving xdbbax; the whole shape moved up a fret is xdccbx, B♭6.
+
+[#5](https://github.com/tabsy-gr/chords-db/issues/5)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Bb/6/4` | frets | `xdbbax` | `xdccbx` |
+
+### 51. Muted the lowest string: it sounded a chord tone other than the root, and the next string up plays the root, so the chord now has its root in the bass (e.g. Bm 224432 -> x24432). Inversions that cannot be fixed this way are kept, with a notes/inverted-bass warning. Where the root-position version already exists as its own voicing, the inversion is kept as an alternative.
 
 [#11](https://github.com/tabsy-gr/chords-db/issues/11) · upstream [#17](https://github.com/tombatossals/chords-db/issues/17) · reported by [zero-is-one](https://github.com/zero-is-one)
 
@@ -2417,7 +2425,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 </details>
 
-### 51. Added D7/F# (200212), as proposed upstream.
+### 52. Added D7/F# (200212), as proposed upstream.
 
 [#13](https://github.com/tabsy-gr/chords-db/issues/13) · upstream [#39](https://github.com/tombatossals/chords-db/issues/39) · reported by [andrew-manger](https://github.com/andrew-manger)
 
@@ -2425,7 +2433,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | --- | --- | --- | --- |
 | `guitar/D/7_Fsharp/1` | added | `—` | `D7/F# 200212` |
 
-### 52. Regenerated every piano voicing from the cited formulas in data/qualities.json (root position, notes spelled by letter, with octaves), replacing data from a source with no known license. This fixes inconsistent spellings (E♭m was D# F# A#), gives each note an octave (C13's 9th now sits above its 7th), corrects degree labels (Cdim7's ♭♭7 was labelled 6), uses the same suffix spelling as the other instruments (minor, 7#9), and adds the qualities piano lacked, including m13.
+### 53. Regenerated every piano voicing from the cited formulas in data/qualities.json (root position, notes spelled by letter, with octaves), replacing data from a source with no known license. This fixes inconsistent spellings (E♭m was D# F# A#), gives each note an octave (C13's 9th now sits above its 7th), corrects degree labels (Cdim7's ♭♭7 was labelled 6), uses the same suffix spelling as the other instruments (minor, 7#9), and adds the qualities piano lacked, including m13.
 
 [#12](https://github.com/tabsy-gr/chords-db/issues/12)
 
@@ -3229,7 +3237,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 </details>
 
-### 53. Reordered every chord's voicings easiest first, by the playability score in src/playability.ts, so the first voicing is the one a player reaches for (e.g. C major starts with x32010). Voicing ids are unchanged.
+### 54. Reordered every chord's voicings easiest first, by the playability score in src/playability.ts, so the first voicing is the one a player reaches for (e.g. C major starts with x32010). Voicing ids are unchanged.
 
 [#10](https://github.com/tabsy-gr/chords-db/issues/10) · upstream [#2](https://github.com/tombatossals/chords-db/issues/2) · reported by [T-vK](https://github.com/T-vK)
 

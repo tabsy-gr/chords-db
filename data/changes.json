@@ -1638,6 +1638,12 @@
       "issue": 8
     },
     {
+      "ids": ["guitar/Bb/6/4"],
+      "kinds": ["frets"],
+      "change": "Only the A string had been moved up from the A6 shape (xcbbax), giving xdbbax; the whole shape moved up a fret is xdccbx, B♭6.",
+      "issue": 5
+    },
+    {
       "ids": [
         "guitar/A/69/3",
         "guitar/A/m6/4",

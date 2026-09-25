@@ -113,6 +113,7 @@
       "id": "6",
       "name": "major sixth",
       "intervals": ["1", "3", "5", "6"],
+      "omittable": ["5"],
       "spellings": ["6"],
       "source": {
         "title": "Sixth chord",

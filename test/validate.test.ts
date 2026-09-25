@@ -55,11 +55,13 @@ describe('notes', () => {
     ]);
   });
 
-  it('lets add chords omit the 5th, but not 6 chords', () => {
+  it('lets add and 6 chords omit the 5th, but not m6 chords', () => {
     // Cadd9 as x32x3x: C E D, no G.
     expect(rules(guitar, 'C', 'add9', v([-1, 3, 2, -1, 3, -1], [0, 2, 1, 0, 3, 0]))).toEqual([]);
-    // C6 without G (x3221x: C E A C) is missing its 5th.
-    expect(rules(guitar, 'C', '6', v([-1, 3, 2, 2, 1, -1], [0, 4, 2, 3, 1, 0]))).toEqual(['notes/missing-tone']);
+    // C6 as x32210: C E A C E, no G.
+    expect(rules(guitar, 'C', '6', v([-1, 3, 2, 2, 1, 0], [0, 4, 2, 3, 1, 0]))).toEqual([]);
+    // Cm6 without G (x3121x: C Eb A C) reads as A°/C, so the 5th is required.
+    expect(rules(guitar, 'C', 'm6', v([-1, 3, 1, 2, 1, -1], [0, 3, 1, 2, 1, 0], { barres: [1] }))).toEqual(['notes/missing-tone']);
   });
 
   it('flags a missing required tone but not a missing omittable one', () => {

@@ -5,49 +5,16 @@ are defined in `src/validate.ts` and the chord formulas in
 `data/qualities.json`.
 
 - Voicings checked: 6036
-- Voicings with errors: 16
-- Voicings with warnings only: 171
+- Voicings with errors: 0
+- Voicings with warnings only: 175
 - Chord-level findings: 0
 
 ## Summary
 
 | Rule | Severity | guitar | piano | ukulele | Total |
 | --- | --- | ---: | ---: | ---: | ---: |
-| [`notes/foreign`](#notesforeign) | error | 1 | 0 | 0 | 1 |
-| [`notes/missing-tone`](#notesmissing-tone) | error | 16 | 0 | 0 | 16 |
 | [`notes/inverted-bass`](#notesinverted-bass) | warning | 127 | 0 | 0 | 127 |
 | [`barres/muted-inside`](#barresmuted-inside) | warning | 55 | 0 | 0 | 55 |
-
-## notes/foreign
-
-A note that is not in the chord (or the slash chord's bass). (error)
-
-### guitar (1)
-
-- `guitar/Bb/6/4`: C#, F#, A not in Bb6 (1 3 5 6)
-
-## notes/missing-tone
-
-A required chord tone does not sound (see the quality's "omittable" tones). (error)
-
-### guitar (16)
-
-- `guitar/A/6/4`: missing 5 (E)
-- `guitar/Ab/6/4`: missing 5 (Eb)
-- `guitar/B/6/1`: missing 5 (F#)
-- `guitar/B/6/3`: missing 5 (F#)
-- `guitar/Bb/6/4`: missing 3 (D), 5 (F), 6 (G)
-- `guitar/C/6/1`: missing 5 (G)
-- `guitar/C/6/4`: missing 5 (G)
-- `guitar/Csharp/6/1`: missing 5 (Ab)
-- `guitar/Csharp/6/3`: missing 5 (Ab)
-- `guitar/Csharp/6/4`: missing 5 (Ab)
-- `guitar/D/6/2`: missing 5 (A)
-- `guitar/E/6/3`: missing 5 (B)
-- `guitar/Eb/6/2`: missing 5 (Bb)
-- `guitar/F/6/1`: missing 5 (C)
-- `guitar/F/6/3`: missing 5 (C)
-- `guitar/Fsharp/6/2`: missing 5 (C#)
 
 ## notes/inverted-bass
 
