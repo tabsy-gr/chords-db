@@ -25,7 +25,7 @@ database is documented:
 | ---------- | ---------------------- | ---------------------- |
 | Guitar     | Standard (E A D G B E) | tombatossals/chords-db |
 | Ukulele    | Standard (G C E A)     | tombatossals/chords-db |
-| Piano      | n/a                    | tombatossals/chords-db |
+| Piano      | n/a                    | Generated from `data/qualities.json` |
 
 ## Install
 

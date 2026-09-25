@@ -96,8 +96,24 @@ such as react-chords, can keep working.
 | `fingers`: `['1', '3', '5', 'b7', …]`. Despite the name, these are chord degrees, not fingers. | `degrees` |
 | `midi`: flat notes (`Bb`, `Eb`, …) were **silently dropped**. Upstream's note lookup only knew sharp names, so 84 of the 528 piano voicings had missing notes, e.g. C13 without its B♭. | every note is included |
 
-Piano notes still have no octave, so `midi` places every note in octave 4,
-as upstream did.
+The piano data is no longer upstream's: every voicing is generated from the
+formulas in `data/qualities.json` by `scripts/generate-piano.ts`. As a result:
+
+- notes have **octaves** (`C4 E4 G4 Bb4 D5 F5 A5`), stacked upward from the
+  root, so `midi` is the real voicing;
+- notes are **spelled by letter** for their key (E♭m is `Eb Gb Bb`, not
+  upstream's `D# F# A#`; C♯ major is `C# E# G#`). A double accidental is
+  written as its simpler enharmonic (Cdim7's ♭♭7 is `A`);
+- `degrees` use the interval names from `data/qualities.json` (Cdim7's
+  7th is `bb7`, not upstream's `6`);
+- suffixes use the same spelling as the other instruments: `minor` (not
+  `m`), `7#9` (not `7sharp9`), `maj7#5`, `9#11`, `7b9#5`, `7b5#9`, `7#5#9`.
+  The old spellings still parse through `parseSuffix()`;
+- every quality is covered, including those upstream piano lacked (such as
+  `sus2sus4`, `add11`, `13b9`, `m13`), except `7alt`, which has no fixed set
+  of tones.
+
+Voicing ids are kept (`piano/C/m/1` is still the C minor voicing).
 
 ### Source files
 

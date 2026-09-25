@@ -5,9 +5,9 @@
   "voicings": [
     {
       "id": "piano/Fsharp/maj9/1",
-      "notes": ["F#", "A#", "C#", "F", "G#"],
+      "notes": ["F#4", "A#4", "C#5", "E#5", "G#5"],
       "degrees": ["1", "3", "5", "7", "9"],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "curated", "ref": "data/qualities.json" }]
     }
   ]
 }

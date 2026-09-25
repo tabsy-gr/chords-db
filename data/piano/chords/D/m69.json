@@ -5,9 +5,9 @@
   "voicings": [
     {
       "id": "piano/D/m69/1",
-      "notes": ["D", "F", "A", "B", "E"],
+      "notes": ["D4", "F4", "A4", "B4", "E5"],
       "degrees": ["1", "b3", "5", "6", "9"],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "curated", "ref": "data/qualities.json" }]
     }
   ]
 }

@@ -11,16 +11,18 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 
 ## Summary
 
-| Change | guitar | ukulele |
-| --- | ---: | ---: |
-| added | 25 | 0 |
-| removed | 13 | 45 |
-| relabelled | 123 | 37 |
-| frets | 241 | 4 |
-| fingers | 257 | 4 |
-| barres | 177 | 4 |
-| capo | 33 | 0 |
-| rootless | 13 | 988 |
+| Change | guitar | piano | ukulele |
+| --- | ---: | ---: | ---: |
+| added | 25 | 144 | 0 |
+| removed | 13 | 0 | 45 |
+| relabelled | 123 | 84 | 37 |
+| frets | 241 | 0 | 4 |
+| fingers | 257 | 0 | 4 |
+| barres | 177 | 0 | 4 |
+| capo | 33 | 0 | 0 |
+| rootless | 13 | 0 | 988 |
+| notes | 0 | 528 | 0 |
+| degrees | 0 | 36 | 0 |
 
 Counts are voicings; one voicing can have several kinds of change.
 
@@ -2393,3 +2395,807 @@ Counts are voicings; one voicing can have several kinds of change.
 | Voicing | Change | Before | After |
 | --- | --- | --- | --- |
 | `guitar/D/7_Fsharp/1` | added | `—` | `D7/F# 200212` |
+
+### 52. Regenerated every piano voicing from the cited formulas in data/qualities.json (root position, notes spelled by letter, with octaves), replacing data from a source with no known license. This fixes inconsistent spellings (E♭m was D# F# A#), gives each note an octave (C13's 9th now sits above its 7th), corrects degree labels (Cdim7's ♭♭7 was labelled 6), uses the same suffix spelling as the other instruments (minor, 7#9), and adds the qualities piano lacked, including m13.
+
+[#12](https://github.com/tabsy-gr/chords-db/issues/12)
+
+<details>
+<summary>672 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `piano/A/11/1` | notes | `A C# E G B D` | `A4 C#5 E5 G5 B5 D6` |
+| `piano/A/13/1` | notes | `A C# E G B D F#` | `A4 C#5 E5 G5 B5 D6 F#6` |
+| `piano/A/13b5b9/1` | added | `—` | `A13b5b9 A4 C#5 Eb5 G5 Bb5 D6 F#6` |
+| `piano/A/13b9/1` | added | `—` | `A13b9 A4 C#5 E5 G5 Bb5 D6 F#6` |
+| `piano/A/5/1` | notes | `A E` | `A4 E5` |
+| `piano/A/6/1` | notes | `A C# E F#` | `A4 C#5 E5 F#5` |
+| `piano/A/69/1` | notes | `A C# E F# B` | `A4 C#5 E5 F#5 B5` |
+| `piano/A/7/1` | notes | `A C# E G` | `A4 C#5 E5 G5` |
+| `piano/A/7b5/1` | notes | `A C# D# G` | `A4 C#5 Eb5 G5` |
+| `piano/A/7b5b9/1` | notes | `A C# D# G A#` | `A4 C#5 Eb5 G5 Bb5` |
+| `piano/A/7b5sharp9/1` | notes | `A C# D# G C` | `A4 C#5 Eb5 G5 B#5` |
+| `piano/A/7b5sharp9/1` | relabelled | `A7b5sharp9` | `A7b5#9` |
+| `piano/A/7b9/1` | notes | `A C# E G A#` | `A4 C#5 E5 G5 Bb5` |
+| `piano/A/7sharp11/1` | added | `—` | `A7#11 A4 C#5 E5 G5 D#6` |
+| `piano/A/7sharp5b9/1` | notes | `A C# F G A#` | `A4 C#5 E#5 G5 Bb5` |
+| `piano/A/7sharp5b9/1` | relabelled | `A7sharp5b9` | `A7b9#5` |
+| `piano/A/7sharp5sharp9/1` | notes | `A C# F G C` | `A4 C#5 E#5 G5 B#5` |
+| `piano/A/7sharp5sharp9/1` | relabelled | `A7sharp5sharp9` | `A7#5#9` |
+| `piano/A/7sharp9/1` | notes | `A C# E G C` | `A4 C#5 E5 G5 B#5` |
+| `piano/A/7sharp9/1` | relabelled | `A7sharp9` | `A7#9` |
+| `piano/A/7sus2/1` | added | `—` | `A7sus2 A4 B4 E5 G5` |
+| `piano/A/7sus4/1` | notes | `A D E G` | `A4 D5 E5 G5` |
+| `piano/A/9/1` | notes | `A C# E G B` | `A4 C#5 E5 G5 B5` |
+| `piano/A/9b5/1` | notes | `A C# D# G B` | `A4 C#5 Eb5 G5 B5` |
+| `piano/A/9sharp11/1` | notes | `A C# E G B D#` | `A4 C#5 E5 G5 B5 D#6` |
+| `piano/A/9sharp11/1` | relabelled | `A9sharp11` | `A9#11` |
+| `piano/A/add11/1` | added | `—` | `Aadd11 A4 C#5 E5 D6` |
+| `piano/A/add9/1` | notes | `A C# E B` | `A4 C#5 E5 B5` |
+| `piano/A/aug/1` | notes | `A C# F` | `A4 C#5 E#5` |
+| `piano/A/aug7/1` | notes | `A C# F G` | `A4 C#5 E#5 G5` |
+| `piano/A/aug9/1` | notes | `A C# F G B` | `A4 C#5 E#5 G5 B5` |
+| `piano/A/b13b9/1` | added | `—` | `Ab13b9 A4 C#5 E5 G5 Bb5 F6` |
+| `piano/A/b13sharp9/1` | added | `—` | `Ab13#9 A4 C#5 E5 G5 B#5 F6` |
+| `piano/A/b5/1` | added | `—` | `Ab5 A4 C#5 Eb5` |
+| `piano/A/dim/1` | notes | `A C D#` | `A4 C5 Eb5` |
+| `piano/A/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
+| `piano/A/dim7/1` | notes | `A C D# F#` | `A4 C5 Eb5 Gb5` |
+| `piano/A/m/1` | notes | `A C E` | `A4 C5 E5` |
+| `piano/A/m/1` | relabelled | `Am` | `Aminor` |
+| `piano/A/m11/1` | notes | `A C E G B D` | `A4 C5 E5 G5 B5 D6` |
+| `piano/A/m13/1` | added | `—` | `Am13 A4 C5 E5 G5 B5 D6 F#6` |
+| `piano/A/m6/1` | notes | `A C E F#` | `A4 C5 E5 F#5` |
+| `piano/A/m69/1` | notes | `A C E F# B` | `A4 C5 E5 F#5 B5` |
+| `piano/A/m7/1` | notes | `A C E G` | `A4 C5 E5 G5` |
+| `piano/A/m7b5/1` | notes | `A C D# G` | `A4 C5 Eb5 G5` |
+| `piano/A/m9/1` | notes | `A C E G B` | `A4 C5 E5 G5 B5` |
+| `piano/A/m9b5/1` | added | `—` | `Am9b5 A4 C5 Eb5 G5 B5` |
+| `piano/A/madd9/1` | notes | `A C E B` | `A4 C5 E5 B5` |
+| `piano/A/maj11/1` | degrees | `1 5 7 9 11` | `1 3 5 7 9 11` |
+| `piano/A/maj11/1` | notes | `A E G# B D` | `A4 C#5 E5 G#5 B5 D6` |
+| `piano/A/maj13/1` | degrees | `1 3 5 7 9 13` | `1 3 5 7 9 11 13` |
+| `piano/A/maj13/1` | notes | `A C# E G# B F#` | `A4 C#5 E5 G#5 B5 D6 F#6` |
+| `piano/A/maj7/1` | notes | `A C# E G#` | `A4 C#5 E5 G#5` |
+| `piano/A/maj7b5/1` | notes | `A C# D# G#` | `A4 C#5 Eb5 G#5` |
+| `piano/A/maj7sharp5/1` | notes | `A C# F G#` | `A4 C#5 E#5 G#5` |
+| `piano/A/maj7sharp5/1` | relabelled | `Amaj7sharp5` | `Amaj7#5` |
+| `piano/A/maj7sus2/1` | added | `—` | `Amaj7sus2 A4 B4 E5 G#5` |
+| `piano/A/maj9/1` | notes | `A C# E G# B` | `A4 C#5 E5 G#5 B5` |
+| `piano/A/major/1` | notes | `A C# E` | `A4 C#5 E5` |
+| `piano/A/mmaj11/1` | notes | `A C E G# B D` | `A4 C5 E5 G#5 B5 D6` |
+| `piano/A/mmaj7/1` | notes | `A C E G#` | `A4 C5 E5 G#5` |
+| `piano/A/mmaj7b5/1` | notes | `A C D# G#` | `A4 C5 Eb5 G#5` |
+| `piano/A/mmaj9/1` | notes | `A C E G# B` | `A4 C5 E5 G#5 B5` |
+| `piano/A/sus2/1` | notes | `A B E` | `A4 B4 E5` |
+| `piano/A/sus2sus4/1` | added | `—` | `Asus2sus4 A4 B4 D5 E5` |
+| `piano/A/sus4/1` | notes | `A D E` | `A4 D5 E5` |
+| `piano/Ab/11/1` | notes | `G# C D# F# A# C#` | `Ab4 C5 Eb5 Gb5 Bb5 Db6` |
+| `piano/Ab/13/1` | notes | `G# C D# F# A# C# F` | `Ab4 C5 Eb5 Gb5 Bb5 Db6 F6` |
+| `piano/Ab/13b5b9/1` | added | `—` | `Ab13b5b9 Ab4 C5 D5 Gb5 A5 Db6 F6` |
+| `piano/Ab/13b9/1` | added | `—` | `Ab13b9 Ab4 C5 Eb5 Gb5 A5 Db6 F6` |
+| `piano/Ab/5/1` | notes | `G# D#` | `Ab4 Eb5` |
+| `piano/Ab/6/1` | notes | `G# C D# F` | `Ab4 C5 Eb5 F5` |
+| `piano/Ab/69/1` | notes | `G# C D# F A#` | `Ab4 C5 Eb5 F5 Bb5` |
+| `piano/Ab/7/1` | notes | `G# C D# F#` | `Ab4 C5 Eb5 Gb5` |
+| `piano/Ab/7b5/1` | notes | `G# C D F#` | `Ab4 C5 D5 Gb5` |
+| `piano/Ab/7b5b9/1` | notes | `G# C D F# A` | `Ab4 C5 D5 Gb5 A5` |
+| `piano/Ab/7b5sharp9/1` | notes | `G# C D F# B` | `Ab4 C5 D5 Gb5 B5` |
+| `piano/Ab/7b5sharp9/1` | relabelled | `Ab7b5sharp9` | `Ab7b5#9` |
+| `piano/Ab/7b9/1` | notes | `G# C D# F# A` | `Ab4 C5 Eb5 Gb5 A5` |
+| `piano/Ab/7sharp11/1` | added | `—` | `Ab7#11 Ab4 C5 Eb5 Gb5 D6` |
+| `piano/Ab/7sharp5b9/1` | notes | `G# C E F# A` | `Ab4 C5 E5 Gb5 A5` |
+| `piano/Ab/7sharp5b9/1` | relabelled | `Ab7sharp5b9` | `Ab7b9#5` |
+| `piano/Ab/7sharp5sharp9/1` | notes | `G# C E F# B` | `Ab4 C5 E5 Gb5 B5` |
+| `piano/Ab/7sharp5sharp9/1` | relabelled | `Ab7sharp5sharp9` | `Ab7#5#9` |
+| `piano/Ab/7sharp9/1` | notes | `G# C D# F# B` | `Ab4 C5 Eb5 Gb5 B5` |
+| `piano/Ab/7sharp9/1` | relabelled | `Ab7sharp9` | `Ab7#9` |
+| `piano/Ab/7sus2/1` | added | `—` | `Ab7sus2 Ab4 Bb4 Eb5 Gb5` |
+| `piano/Ab/7sus4/1` | notes | `G# C# D# F#` | `Ab4 Db5 Eb5 Gb5` |
+| `piano/Ab/9/1` | notes | `G# C D# F# A#` | `Ab4 C5 Eb5 Gb5 Bb5` |
+| `piano/Ab/9b5/1` | notes | `G# C D F# A#` | `Ab4 C5 D5 Gb5 Bb5` |
+| `piano/Ab/9sharp11/1` | notes | `G# C D# F# A# D` | `Ab4 C5 Eb5 Gb5 Bb5 D6` |
+| `piano/Ab/9sharp11/1` | relabelled | `Ab9sharp11` | `Ab9#11` |
+| `piano/Ab/add11/1` | added | `—` | `Abadd11 Ab4 C5 Eb5 Db6` |
+| `piano/Ab/add9/1` | notes | `G# C D# A#` | `Ab4 C5 Eb5 Bb5` |
+| `piano/Ab/aug/1` | notes | `G# C E` | `Ab4 C5 E5` |
+| `piano/Ab/aug7/1` | notes | `G# C E F#` | `Ab4 C5 E5 Gb5` |
+| `piano/Ab/aug9/1` | notes | `G# C E F# A#` | `Ab4 C5 E5 Gb5 Bb5` |
+| `piano/Ab/b13b9/1` | added | `—` | `Abb13b9 Ab4 C5 Eb5 Gb5 A5 Fb6` |
+| `piano/Ab/b13sharp9/1` | added | `—` | `Abb13#9 Ab4 C5 Eb5 Gb5 B5 Fb6` |
+| `piano/Ab/b5/1` | added | `—` | `Abb5 Ab4 C5 D5` |
+| `piano/Ab/dim/1` | notes | `G# B D` | `Ab4 Cb5 D5` |
+| `piano/Ab/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
+| `piano/Ab/dim7/1` | notes | `G# B D F` | `Ab4 Cb5 D5 F5` |
+| `piano/Ab/m/1` | notes | `G# B D#` | `Ab4 Cb5 Eb5` |
+| `piano/Ab/m/1` | relabelled | `Abm` | `Abminor` |
+| `piano/Ab/m11/1` | notes | `G# B D# F# A# C#` | `Ab4 Cb5 Eb5 Gb5 Bb5 Db6` |
+| `piano/Ab/m13/1` | added | `—` | `Abm13 Ab4 Cb5 Eb5 Gb5 Bb5 Db6 F6` |
+| `piano/Ab/m6/1` | notes | `G# B D# F` | `Ab4 Cb5 Eb5 F5` |
+| `piano/Ab/m69/1` | notes | `G# B D# F A#` | `Ab4 Cb5 Eb5 F5 Bb5` |
+| `piano/Ab/m7/1` | notes | `G# B D# F#` | `Ab4 Cb5 Eb5 Gb5` |
+| `piano/Ab/m7b5/1` | notes | `G# B D F#` | `Ab4 Cb5 D5 Gb5` |
+| `piano/Ab/m9/1` | notes | `G# B D# F# A#` | `Ab4 Cb5 Eb5 Gb5 Bb5` |
+| `piano/Ab/m9b5/1` | added | `—` | `Abm9b5 Ab4 Cb5 D5 Gb5 Bb5` |
+| `piano/Ab/madd9/1` | notes | `G# B D# A#` | `Ab4 Cb5 Eb5 Bb5` |
+| `piano/Ab/maj11/1` | degrees | `1 5 7 9 11` | `1 3 5 7 9 11` |
+| `piano/Ab/maj11/1` | notes | `G# D# G A# C#` | `Ab4 C5 Eb5 G5 Bb5 Db6` |
+| `piano/Ab/maj13/1` | degrees | `1 3 5 7 9 13` | `1 3 5 7 9 11 13` |
+| `piano/Ab/maj13/1` | notes | `G# C D# G A# F` | `Ab4 C5 Eb5 G5 Bb5 Db6 F6` |
+| `piano/Ab/maj7/1` | notes | `G# C D# G` | `Ab4 C5 Eb5 G5` |
+| `piano/Ab/maj7b5/1` | notes | `G# C D G` | `Ab4 C5 D5 G5` |
+| `piano/Ab/maj7sharp5/1` | notes | `G# C E G` | `Ab4 C5 E5 G5` |
+| `piano/Ab/maj7sharp5/1` | relabelled | `Abmaj7sharp5` | `Abmaj7#5` |
+| `piano/Ab/maj7sus2/1` | added | `—` | `Abmaj7sus2 Ab4 Bb4 Eb5 G5` |
+| `piano/Ab/maj9/1` | notes | `G# C D# G A#` | `Ab4 C5 Eb5 G5 Bb5` |
+| `piano/Ab/major/1` | notes | `G# C D#` | `Ab4 C5 Eb5` |
+| `piano/Ab/mmaj11/1` | notes | `G# B D# G A# C#` | `Ab4 Cb5 Eb5 G5 Bb5 Db6` |
+| `piano/Ab/mmaj7/1` | notes | `G# B D# G` | `Ab4 Cb5 Eb5 G5` |
+| `piano/Ab/mmaj7b5/1` | notes | `G# B D G` | `Ab4 Cb5 D5 G5` |
+| `piano/Ab/mmaj9/1` | notes | `G# B D# G A#` | `Ab4 Cb5 Eb5 G5 Bb5` |
+| `piano/Ab/sus2/1` | notes | `G# A# D#` | `Ab4 Bb4 Eb5` |
+| `piano/Ab/sus2sus4/1` | added | `—` | `Absus2sus4 Ab4 Bb4 Db5 Eb5` |
+| `piano/Ab/sus4/1` | notes | `G# C# D#` | `Ab4 Db5 Eb5` |
+| `piano/B/11/1` | notes | `B D# F# A C# E` | `B4 D#5 F#5 A5 C#6 E6` |
+| `piano/B/13/1` | notes | `B D# F# A C# E G#` | `B4 D#5 F#5 A5 C#6 E6 G#6` |
+| `piano/B/13b5b9/1` | added | `—` | `B13b5b9 B4 D#5 F5 A5 C6 E6 G#6` |
+| `piano/B/13b9/1` | added | `—` | `B13b9 B4 D#5 F#5 A5 C6 E6 G#6` |
+| `piano/B/5/1` | notes | `B F#` | `B4 F#5` |
+| `piano/B/6/1` | notes | `B D# F# G#` | `B4 D#5 F#5 G#5` |
+| `piano/B/69/1` | notes | `B D# F# G# C#` | `B4 D#5 F#5 G#5 C#6` |
+| `piano/B/7/1` | notes | `B D# F# A` | `B4 D#5 F#5 A5` |
+| `piano/B/7b5/1` | notes | `B D# F A` | `B4 D#5 F5 A5` |
+| `piano/B/7b5b9/1` | notes | `B D# F A C` | `B4 D#5 F5 A5 C6` |
+| `piano/B/7b5sharp9/1` | notes | `B D# F A D` | `B4 D#5 F5 A5 D6` |
+| `piano/B/7b5sharp9/1` | relabelled | `B7b5sharp9` | `B7b5#9` |
+| `piano/B/7b9/1` | notes | `B D# F# A C` | `B4 D#5 F#5 A5 C6` |
+| `piano/B/7sharp11/1` | added | `—` | `B7#11 B4 D#5 F#5 A5 E#6` |
+| `piano/B/7sharp5b9/1` | notes | `B D# G A C` | `B4 D#5 G5 A5 C6` |
+| `piano/B/7sharp5b9/1` | relabelled | `B7sharp5b9` | `B7b9#5` |
+| `piano/B/7sharp5sharp9/1` | notes | `B D# G A D` | `B4 D#5 G5 A5 D6` |
+| `piano/B/7sharp5sharp9/1` | relabelled | `B7sharp5sharp9` | `B7#5#9` |
+| `piano/B/7sharp9/1` | notes | `B D# F# A D` | `B4 D#5 F#5 A5 D6` |
+| `piano/B/7sharp9/1` | relabelled | `B7sharp9` | `B7#9` |
+| `piano/B/7sus2/1` | added | `—` | `B7sus2 B4 C#5 F#5 A5` |
+| `piano/B/7sus4/1` | notes | `B E F# A` | `B4 E5 F#5 A5` |
+| `piano/B/9/1` | notes | `B D# F# A C#` | `B4 D#5 F#5 A5 C#6` |
+| `piano/B/9b5/1` | notes | `B D# F A C#` | `B4 D#5 F5 A5 C#6` |
+| `piano/B/9sharp11/1` | notes | `B D# F# A C# F` | `B4 D#5 F#5 A5 C#6 E#6` |
+| `piano/B/9sharp11/1` | relabelled | `B9sharp11` | `B9#11` |
+| `piano/B/add11/1` | added | `—` | `Badd11 B4 D#5 F#5 E6` |
+| `piano/B/add9/1` | notes | `B D# F# C#` | `B4 D#5 F#5 C#6` |
+| `piano/B/aug/1` | notes | `B D# G` | `B4 D#5 G5` |
+| `piano/B/aug7/1` | notes | `B D# G A` | `B4 D#5 G5 A5` |
+| `piano/B/aug9/1` | notes | `B D# G A C#` | `B4 D#5 G5 A5 C#6` |
+| `piano/B/b13b9/1` | added | `—` | `Bb13b9 B4 D#5 F#5 A5 C6 G6` |
+| `piano/B/b13sharp9/1` | added | `—` | `Bb13#9 B4 D#5 F#5 A5 D6 G6` |
+| `piano/B/b5/1` | added | `—` | `Bb5 B4 D#5 F5` |
+| `piano/B/dim/1` | notes | `B D F` | `B4 D5 F5` |
+| `piano/B/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
+| `piano/B/dim7/1` | notes | `B D F G#` | `B4 D5 F5 Ab5` |
+| `piano/B/m/1` | notes | `B D F#` | `B4 D5 F#5` |
+| `piano/B/m/1` | relabelled | `Bm` | `Bminor` |
+| `piano/B/m11/1` | notes | `B D F# A C# E` | `B4 D5 F#5 A5 C#6 E6` |
+| `piano/B/m13/1` | added | `—` | `Bm13 B4 D5 F#5 A5 C#6 E6 G#6` |
+| `piano/B/m6/1` | notes | `B D F# G#` | `B4 D5 F#5 G#5` |
+| `piano/B/m69/1` | notes | `B D F# G# C#` | `B4 D5 F#5 G#5 C#6` |
+| `piano/B/m7/1` | notes | `B D F# A` | `B4 D5 F#5 A5` |
+| `piano/B/m7b5/1` | notes | `B D F A` | `B4 D5 F5 A5` |
+| `piano/B/m9/1` | notes | `B D F# A C#` | `B4 D5 F#5 A5 C#6` |
+| `piano/B/m9b5/1` | added | `—` | `Bm9b5 B4 D5 F5 A5 C#6` |
+| `piano/B/madd9/1` | notes | `B D F# C#` | `B4 D5 F#5 C#6` |
+| `piano/B/maj11/1` | degrees | `1 5 7 9 11` | `1 3 5 7 9 11` |
+| `piano/B/maj11/1` | notes | `B F# A# C# E` | `B4 D#5 F#5 A#5 C#6 E6` |
+| `piano/B/maj13/1` | degrees | `1 3 5 7 9 13` | `1 3 5 7 9 11 13` |
+| `piano/B/maj13/1` | notes | `B D# F# A# C# G#` | `B4 D#5 F#5 A#5 C#6 E6 G#6` |
+| `piano/B/maj7/1` | notes | `B D# F# A#` | `B4 D#5 F#5 A#5` |
+| `piano/B/maj7b5/1` | notes | `B D# F A#` | `B4 D#5 F5 A#5` |
+| `piano/B/maj7sharp5/1` | notes | `B D# G A#` | `B4 D#5 G5 A#5` |
+| `piano/B/maj7sharp5/1` | relabelled | `Bmaj7sharp5` | `Bmaj7#5` |
+| `piano/B/maj7sus2/1` | added | `—` | `Bmaj7sus2 B4 C#5 F#5 A#5` |
+| `piano/B/maj9/1` | notes | `B D# F# A# C#` | `B4 D#5 F#5 A#5 C#6` |
+| `piano/B/major/1` | notes | `B D# F#` | `B4 D#5 F#5` |
+| `piano/B/mmaj11/1` | notes | `B D F# A# C# E` | `B4 D5 F#5 A#5 C#6 E6` |
+| `piano/B/mmaj7/1` | notes | `B D F# A#` | `B4 D5 F#5 A#5` |
+| `piano/B/mmaj7b5/1` | notes | `B D F A#` | `B4 D5 F5 A#5` |
+| `piano/B/mmaj9/1` | notes | `B D F# A# C#` | `B4 D5 F#5 A#5 C#6` |
+| `piano/B/sus2/1` | notes | `B C# F#` | `B4 C#5 F#5` |
+| `piano/B/sus2sus4/1` | added | `—` | `Bsus2sus4 B4 C#5 E5 F#5` |
+| `piano/B/sus4/1` | notes | `B E F#` | `B4 E5 F#5` |
+| `piano/Bb/11/1` | notes | `A# D F G# C D#` | `Bb4 D5 F5 Ab5 C6 Eb6` |
+| `piano/Bb/13/1` | notes | `A# D F G# C D# G` | `Bb4 D5 F5 Ab5 C6 Eb6 G6` |
+| `piano/Bb/13b5b9/1` | added | `—` | `Bb13b5b9 Bb4 D5 Fb5 Ab5 Cb6 Eb6 G6` |
+| `piano/Bb/13b9/1` | added | `—` | `Bb13b9 Bb4 D5 F5 Ab5 Cb6 Eb6 G6` |
+| `piano/Bb/5/1` | notes | `A# F` | `Bb4 F5` |
+| `piano/Bb/6/1` | notes | `A# D F G` | `Bb4 D5 F5 G5` |
+| `piano/Bb/69/1` | notes | `A# D F G C` | `Bb4 D5 F5 G5 C6` |
+| `piano/Bb/7/1` | notes | `A# D F G#` | `Bb4 D5 F5 Ab5` |
+| `piano/Bb/7b5/1` | notes | `A# D E G#` | `Bb4 D5 Fb5 Ab5` |
+| `piano/Bb/7b5b9/1` | notes | `A# D E G# B` | `Bb4 D5 Fb5 Ab5 Cb6` |
+| `piano/Bb/7b5sharp9/1` | notes | `A# D E G# C#` | `Bb4 D5 Fb5 Ab5 C#6` |
+| `piano/Bb/7b5sharp9/1` | relabelled | `Bb7b5sharp9` | `Bb7b5#9` |
+| `piano/Bb/7b9/1` | notes | `A# D F G# B` | `Bb4 D5 F5 Ab5 Cb6` |
+| `piano/Bb/7sharp11/1` | added | `—` | `Bb7#11 Bb4 D5 F5 Ab5 E6` |
+| `piano/Bb/7sharp5b9/1` | notes | `A# D F# G# B` | `Bb4 D5 F#5 Ab5 Cb6` |
+| `piano/Bb/7sharp5b9/1` | relabelled | `Bb7sharp5b9` | `Bb7b9#5` |
+| `piano/Bb/7sharp5sharp9/1` | notes | `A# D F# G# C#` | `Bb4 D5 F#5 Ab5 C#6` |
+| `piano/Bb/7sharp5sharp9/1` | relabelled | `Bb7sharp5sharp9` | `Bb7#5#9` |
+| `piano/Bb/7sharp9/1` | notes | `A# D F G# C#` | `Bb4 D5 F5 Ab5 C#6` |
+| `piano/Bb/7sharp9/1` | relabelled | `Bb7sharp9` | `Bb7#9` |
+| `piano/Bb/7sus2/1` | added | `—` | `Bb7sus2 Bb4 C5 F5 Ab5` |
+| `piano/Bb/7sus4/1` | notes | `A# D# F G#` | `Bb4 Eb5 F5 Ab5` |
+| `piano/Bb/9/1` | notes | `A# D F G# C` | `Bb4 D5 F5 Ab5 C6` |
+| `piano/Bb/9b5/1` | notes | `A# D E G# C` | `Bb4 D5 Fb5 Ab5 C6` |
+| `piano/Bb/9sharp11/1` | notes | `A# D F G# C E` | `Bb4 D5 F5 Ab5 C6 E6` |
+| `piano/Bb/9sharp11/1` | relabelled | `Bb9sharp11` | `Bb9#11` |
+| `piano/Bb/add11/1` | added | `—` | `Bbadd11 Bb4 D5 F5 Eb6` |
+| `piano/Bb/add9/1` | notes | `A# D F C` | `Bb4 D5 F5 C6` |
+| `piano/Bb/aug/1` | notes | `A# D F#` | `Bb4 D5 F#5` |
+| `piano/Bb/aug7/1` | notes | `A# D F# G#` | `Bb4 D5 F#5 Ab5` |
+| `piano/Bb/aug9/1` | notes | `A# D F# G# C` | `Bb4 D5 F#5 Ab5 C6` |
+| `piano/Bb/b13b9/1` | added | `—` | `Bbb13b9 Bb4 D5 F5 Ab5 Cb6 Gb6` |
+| `piano/Bb/b13sharp9/1` | added | `—` | `Bbb13#9 Bb4 D5 F5 Ab5 C#6 Gb6` |
+| `piano/Bb/b5/1` | added | `—` | `Bbb5 Bb4 D5 Fb5` |
+| `piano/Bb/dim/1` | notes | `A# C# E` | `Bb4 Db5 Fb5` |
+| `piano/Bb/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
+| `piano/Bb/dim7/1` | notes | `A# C# E G` | `Bb4 Db5 Fb5 G5` |
+| `piano/Bb/m/1` | notes | `A# C# F` | `Bb4 Db5 F5` |
+| `piano/Bb/m/1` | relabelled | `Bbm` | `Bbminor` |
+| `piano/Bb/m11/1` | notes | `A# C# F G# C D#` | `Bb4 Db5 F5 Ab5 C6 Eb6` |
+| `piano/Bb/m13/1` | added | `—` | `Bbm13 Bb4 Db5 F5 Ab5 C6 Eb6 G6` |
+| `piano/Bb/m6/1` | notes | `A# C# F G` | `Bb4 Db5 F5 G5` |
+| `piano/Bb/m69/1` | notes | `A# C# F G C` | `Bb4 Db5 F5 G5 C6` |
+| `piano/Bb/m7/1` | notes | `A# C# F G#` | `Bb4 Db5 F5 Ab5` |
+| `piano/Bb/m7b5/1` | notes | `A# C# E G#` | `Bb4 Db5 Fb5 Ab5` |
+| `piano/Bb/m9/1` | notes | `A# C# F G# C` | `Bb4 Db5 F5 Ab5 C6` |
+| `piano/Bb/m9b5/1` | added | `—` | `Bbm9b5 Bb4 Db5 Fb5 Ab5 C6` |
+| `piano/Bb/madd9/1` | notes | `A# C# F C` | `Bb4 Db5 F5 C6` |
+| `piano/Bb/maj11/1` | degrees | `1 5 7 9 11` | `1 3 5 7 9 11` |
+| `piano/Bb/maj11/1` | notes | `A# F A C D#` | `Bb4 D5 F5 A5 C6 Eb6` |
+| `piano/Bb/maj13/1` | degrees | `1 3 5 7 9 13` | `1 3 5 7 9 11 13` |
+| `piano/Bb/maj13/1` | notes | `A# D F A C G` | `Bb4 D5 F5 A5 C6 Eb6 G6` |
+| `piano/Bb/maj7/1` | notes | `A# D F A` | `Bb4 D5 F5 A5` |
+| `piano/Bb/maj7b5/1` | notes | `A# D E A` | `Bb4 D5 Fb5 A5` |
+| `piano/Bb/maj7sharp5/1` | notes | `A# D F# A` | `Bb4 D5 F#5 A5` |
+| `piano/Bb/maj7sharp5/1` | relabelled | `Bbmaj7sharp5` | `Bbmaj7#5` |
+| `piano/Bb/maj7sus2/1` | added | `—` | `Bbmaj7sus2 Bb4 C5 F5 A5` |
+| `piano/Bb/maj9/1` | notes | `A# D F A C` | `Bb4 D5 F5 A5 C6` |
+| `piano/Bb/major/1` | notes | `A# D F` | `Bb4 D5 F5` |
+| `piano/Bb/mmaj11/1` | notes | `A# C# F A C D#` | `Bb4 Db5 F5 A5 C6 Eb6` |
+| `piano/Bb/mmaj7/1` | notes | `A# C# F A` | `Bb4 Db5 F5 A5` |
+| `piano/Bb/mmaj7b5/1` | notes | `A# C# E A` | `Bb4 Db5 Fb5 A5` |
+| `piano/Bb/mmaj9/1` | notes | `A# C# F A C` | `Bb4 Db5 F5 A5 C6` |
+| `piano/Bb/sus2/1` | notes | `A# C F` | `Bb4 C5 F5` |
+| `piano/Bb/sus2sus4/1` | added | `—` | `Bbsus2sus4 Bb4 C5 Eb5 F5` |
+| `piano/Bb/sus4/1` | notes | `A# D# F` | `Bb4 Eb5 F5` |
+| `piano/C/11/1` | notes | `C E G Bb D F` | `C4 E4 G4 Bb4 D5 F5` |
+| `piano/C/13/1` | notes | `C E G Bb D F A` | `C4 E4 G4 Bb4 D5 F5 A5` |
+| `piano/C/13b5b9/1` | added | `—` | `C13b5b9 C4 E4 Gb4 Bb4 Db5 F5 A5` |
+| `piano/C/13b9/1` | added | `—` | `C13b9 C4 E4 G4 Bb4 Db5 F5 A5` |
+| `piano/C/5/1` | notes | `C G` | `C4 G4` |
+| `piano/C/6/1` | notes | `C E G A` | `C4 E4 G4 A4` |
+| `piano/C/69/1` | notes | `C E G A D` | `C4 E4 G4 A4 D5` |
+| `piano/C/7/1` | notes | `C E G Bb` | `C4 E4 G4 Bb4` |
+| `piano/C/7b5/1` | notes | `C E Gb Bb` | `C4 E4 Gb4 Bb4` |
+| `piano/C/7b5b9/1` | notes | `C E Gb Bb Db` | `C4 E4 Gb4 Bb4 Db5` |
+| `piano/C/7b5sharp9/1` | notes | `C E Gb Bb Eb` | `C4 E4 Gb4 Bb4 D#5` |
+| `piano/C/7b5sharp9/1` | relabelled | `C7b5sharp9` | `C7b5#9` |
+| `piano/C/7b9/1` | notes | `C E G Bb Db` | `C4 E4 G4 Bb4 Db5` |
+| `piano/C/7sharp11/1` | added | `—` | `C7#11 C4 E4 G4 Bb4 F#5` |
+| `piano/C/7sharp5b9/1` | notes | `C E Ab Bb Db` | `C4 E4 G#4 Bb4 Db5` |
+| `piano/C/7sharp5b9/1` | relabelled | `C7sharp5b9` | `C7b9#5` |
+| `piano/C/7sharp5sharp9/1` | notes | `C E Ab Bb Eb` | `C4 E4 G#4 Bb4 D#5` |
+| `piano/C/7sharp5sharp9/1` | relabelled | `C7sharp5sharp9` | `C7#5#9` |
+| `piano/C/7sharp9/1` | notes | `C E G Bb Eb` | `C4 E4 G4 Bb4 D#5` |
+| `piano/C/7sharp9/1` | relabelled | `C7sharp9` | `C7#9` |
+| `piano/C/7sus2/1` | added | `—` | `C7sus2 C4 D4 G4 Bb4` |
+| `piano/C/7sus4/1` | notes | `C F G Bb` | `C4 F4 G4 Bb4` |
+| `piano/C/9/1` | notes | `C E G Bb D` | `C4 E4 G4 Bb4 D5` |
+| `piano/C/9b5/1` | notes | `C E Gb Bb D` | `C4 E4 Gb4 Bb4 D5` |
+| `piano/C/9sharp11/1` | notes | `C E G Bb D Gb` | `C4 E4 G4 Bb4 D5 F#5` |
+| `piano/C/9sharp11/1` | relabelled | `C9sharp11` | `C9#11` |
+| `piano/C/add11/1` | added | `—` | `Cadd11 C4 E4 G4 F5` |
+| `piano/C/add9/1` | notes | `C E G D` | `C4 E4 G4 D5` |
+| `piano/C/aug/1` | notes | `C E Ab` | `C4 E4 G#4` |
+| `piano/C/aug7/1` | notes | `C E Ab Bb` | `C4 E4 G#4 Bb4` |
+| `piano/C/aug9/1` | notes | `C E Ab Bb D` | `C4 E4 G#4 Bb4 D5` |
+| `piano/C/b13b9/1` | added | `—` | `Cb13b9 C4 E4 G4 Bb4 Db5 Ab5` |
+| `piano/C/b13sharp9/1` | added | `—` | `Cb13#9 C4 E4 G4 Bb4 D#5 Ab5` |
+| `piano/C/b5/1` | added | `—` | `Cb5 C4 E4 Gb4` |
+| `piano/C/dim/1` | notes | `C Eb Gb` | `C4 Eb4 Gb4` |
+| `piano/C/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
+| `piano/C/dim7/1` | notes | `C Eb Gb A` | `C4 Eb4 Gb4 A4` |
+| `piano/C/m/1` | notes | `C Eb G` | `C4 Eb4 G4` |
+| `piano/C/m/1` | relabelled | `Cm` | `Cminor` |
+| `piano/C/m11/1` | notes | `C Eb G Bb D F` | `C4 Eb4 G4 Bb4 D5 F5` |
+| `piano/C/m13/1` | added | `—` | `Cm13 C4 Eb4 G4 Bb4 D5 F5 A5` |
+| `piano/C/m6/1` | notes | `C Eb G A` | `C4 Eb4 G4 A4` |
+| `piano/C/m69/1` | notes | `C Eb G A D` | `C4 Eb4 G4 A4 D5` |
+| `piano/C/m7/1` | notes | `C Eb G Bb` | `C4 Eb4 G4 Bb4` |
+| `piano/C/m7b5/1` | notes | `C Eb Gb Bb` | `C4 Eb4 Gb4 Bb4` |
+| `piano/C/m9/1` | notes | `C Eb G Bb D` | `C4 Eb4 G4 Bb4 D5` |
+| `piano/C/m9b5/1` | added | `—` | `Cm9b5 C4 Eb4 Gb4 Bb4 D5` |
+| `piano/C/madd9/1` | notes | `C Eb G D` | `C4 Eb4 G4 D5` |
+| `piano/C/maj11/1` | degrees | `1 5 7 9 11` | `1 3 5 7 9 11` |
+| `piano/C/maj11/1` | notes | `C G B D F` | `C4 E4 G4 B4 D5 F5` |
+| `piano/C/maj13/1` | degrees | `1 3 5 7 9 13` | `1 3 5 7 9 11 13` |
+| `piano/C/maj13/1` | notes | `C E G B D A` | `C4 E4 G4 B4 D5 F5 A5` |
+| `piano/C/maj7/1` | notes | `C E G B` | `C4 E4 G4 B4` |
+| `piano/C/maj7b5/1` | notes | `C E Gb B` | `C4 E4 Gb4 B4` |
+| `piano/C/maj7sharp5/1` | notes | `C E Ab B` | `C4 E4 G#4 B4` |
+| `piano/C/maj7sharp5/1` | relabelled | `Cmaj7sharp5` | `Cmaj7#5` |
+| `piano/C/maj7sus2/1` | added | `—` | `Cmaj7sus2 C4 D4 G4 B4` |
+| `piano/C/maj9/1` | notes | `C E G B D` | `C4 E4 G4 B4 D5` |
+| `piano/C/major/1` | notes | `C E G` | `C4 E4 G4` |
+| `piano/C/mmaj11/1` | notes | `C Eb G B D F` | `C4 Eb4 G4 B4 D5 F5` |
+| `piano/C/mmaj7/1` | notes | `C Eb G B` | `C4 Eb4 G4 B4` |
+| `piano/C/mmaj7b5/1` | notes | `C Eb Gb B` | `C4 Eb4 Gb4 B4` |
+| `piano/C/mmaj9/1` | notes | `C Eb G B D` | `C4 Eb4 G4 B4 D5` |
+| `piano/C/sus2/1` | notes | `C D G` | `C4 D4 G4` |
+| `piano/C/sus2sus4/1` | added | `—` | `Csus2sus4 C4 D4 F4 G4` |
+| `piano/C/sus4/1` | notes | `C F G` | `C4 F4 G4` |
+| `piano/Csharp/11/1` | notes | `C# F G# B D# F#` | `C#4 E#4 G#4 B4 D#5 F#5` |
+| `piano/Csharp/13/1` | notes | `C# F G# B D# F# A#` | `C#4 E#4 G#4 B4 D#5 F#5 A#5` |
+| `piano/Csharp/13b5b9/1` | added | `—` | `C#13b5b9 C#4 E#4 G4 B4 D5 F#5 A#5` |
+| `piano/Csharp/13b9/1` | added | `—` | `C#13b9 C#4 E#4 G#4 B4 D5 F#5 A#5` |
+| `piano/Csharp/5/1` | notes | `C# G#` | `C#4 G#4` |
+| `piano/Csharp/6/1` | notes | `C# F G# A#` | `C#4 E#4 G#4 A#4` |
+| `piano/Csharp/69/1` | notes | `C# F G# A# D#` | `C#4 E#4 G#4 A#4 D#5` |
+| `piano/Csharp/7/1` | notes | `C# F G# B` | `C#4 E#4 G#4 B4` |
+| `piano/Csharp/7b5/1` | notes | `C# F G B` | `C#4 E#4 G4 B4` |
+| `piano/Csharp/7b5b9/1` | notes | `C# F G B D` | `C#4 E#4 G4 B4 D5` |
+| `piano/Csharp/7b5sharp9/1` | notes | `C# F G B E` | `C#4 E#4 G4 B4 E5` |
+| `piano/Csharp/7b5sharp9/1` | relabelled | `C#7b5sharp9` | `C#7b5#9` |
+| `piano/Csharp/7b9/1` | notes | `C# F G# B D` | `C#4 E#4 G#4 B4 D5` |
+| `piano/Csharp/7sharp11/1` | added | `—` | `C#7#11 C#4 E#4 G#4 B4 G5` |
+| `piano/Csharp/7sharp5b9/1` | notes | `C# F A B D` | `C#4 E#4 A4 B4 D5` |
+| `piano/Csharp/7sharp5b9/1` | relabelled | `C#7sharp5b9` | `C#7b9#5` |
+| `piano/Csharp/7sharp5sharp9/1` | notes | `C# F A B E` | `C#4 E#4 A4 B4 E5` |
+| `piano/Csharp/7sharp5sharp9/1` | relabelled | `C#7sharp5sharp9` | `C#7#5#9` |
+| `piano/Csharp/7sharp9/1` | notes | `C# F G# B E` | `C#4 E#4 G#4 B4 E5` |
+| `piano/Csharp/7sharp9/1` | relabelled | `C#7sharp9` | `C#7#9` |
+| `piano/Csharp/7sus2/1` | added | `—` | `C#7sus2 C#4 D#4 G#4 B4` |
+| `piano/Csharp/7sus4/1` | notes | `C# F# G# B` | `C#4 F#4 G#4 B4` |
+| `piano/Csharp/9/1` | notes | `C# F G# B D#` | `C#4 E#4 G#4 B4 D#5` |
+| `piano/Csharp/9b5/1` | notes | `C# F G B D#` | `C#4 E#4 G4 B4 D#5` |
+| `piano/Csharp/9sharp11/1` | notes | `C# F G# B D# G` | `C#4 E#4 G#4 B4 D#5 G5` |
+| `piano/Csharp/9sharp11/1` | relabelled | `C#9sharp11` | `C#9#11` |
+| `piano/Csharp/add11/1` | added | `—` | `C#add11 C#4 E#4 G#4 F#5` |
+| `piano/Csharp/add9/1` | notes | `C# F G# D#` | `C#4 E#4 G#4 D#5` |
+| `piano/Csharp/aug/1` | notes | `C# F A` | `C#4 E#4 A4` |
+| `piano/Csharp/aug7/1` | notes | `C# F A B` | `C#4 E#4 A4 B4` |
+| `piano/Csharp/aug9/1` | notes | `C# F A B D#` | `C#4 E#4 A4 B4 D#5` |
+| `piano/Csharp/b13b9/1` | added | `—` | `C#b13b9 C#4 E#4 G#4 B4 D5 A5` |
+| `piano/Csharp/b13sharp9/1` | added | `—` | `C#b13#9 C#4 E#4 G#4 B4 E5 A5` |
+| `piano/Csharp/b5/1` | added | `—` | `C#b5 C#4 E#4 G4` |
+| `piano/Csharp/dim/1` | notes | `C# E G` | `C#4 E4 G4` |
+| `piano/Csharp/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
+| `piano/Csharp/dim7/1` | notes | `C# E G A#` | `C#4 E4 G4 Bb4` |
+| `piano/Csharp/m/1` | notes | `C# E G#` | `C#4 E4 G#4` |
+| `piano/Csharp/m/1` | relabelled | `C#m` | `C#minor` |
+| `piano/Csharp/m11/1` | notes | `C# E G# B D# F#` | `C#4 E4 G#4 B4 D#5 F#5` |
+| `piano/Csharp/m13/1` | added | `—` | `C#m13 C#4 E4 G#4 B4 D#5 F#5 A#5` |
+| `piano/Csharp/m6/1` | notes | `C# E G# A#` | `C#4 E4 G#4 A#4` |
+| `piano/Csharp/m69/1` | notes | `C# E G# A# D#` | `C#4 E4 G#4 A#4 D#5` |
+| `piano/Csharp/m7/1` | notes | `C# E G# B` | `C#4 E4 G#4 B4` |
+| `piano/Csharp/m7b5/1` | notes | `C# E G B` | `C#4 E4 G4 B4` |
+| `piano/Csharp/m9/1` | notes | `C# E G# B D#` | `C#4 E4 G#4 B4 D#5` |
+| `piano/Csharp/m9b5/1` | added | `—` | `C#m9b5 C#4 E4 G4 B4 D#5` |
+| `piano/Csharp/madd9/1` | notes | `C# E G# D#` | `C#4 E4 G#4 D#5` |
+| `piano/Csharp/maj11/1` | degrees | `1 5 7 9 11` | `1 3 5 7 9 11` |
+| `piano/Csharp/maj11/1` | notes | `C# G# C D# F#` | `C#4 E#4 G#4 B#4 D#5 F#5` |
+| `piano/Csharp/maj13/1` | degrees | `1 3 5 7 9 13` | `1 3 5 7 9 11 13` |
+| `piano/Csharp/maj13/1` | notes | `C# F G# C D# A#` | `C#4 E#4 G#4 B#4 D#5 F#5 A#5` |
+| `piano/Csharp/maj7/1` | notes | `C# F G# C` | `C#4 E#4 G#4 B#4` |
+| `piano/Csharp/maj7b5/1` | notes | `C# F G C` | `C#4 E#4 G4 B#4` |
+| `piano/Csharp/maj7sharp5/1` | notes | `C# F A C` | `C#4 E#4 A4 B#4` |
+| `piano/Csharp/maj7sharp5/1` | relabelled | `C#maj7sharp5` | `C#maj7#5` |
+| `piano/Csharp/maj7sus2/1` | added | `—` | `C#maj7sus2 C#4 D#4 G#4 B#4` |
+| `piano/Csharp/maj9/1` | notes | `C# F G# C D#` | `C#4 E#4 G#4 B#4 D#5` |
+| `piano/Csharp/major/1` | notes | `C# F G#` | `C#4 E#4 G#4` |
+| `piano/Csharp/mmaj11/1` | notes | `C# E G# C D# F#` | `C#4 E4 G#4 B#4 D#5 F#5` |
+| `piano/Csharp/mmaj7/1` | notes | `C# E G# C` | `C#4 E4 G#4 B#4` |
+| `piano/Csharp/mmaj7b5/1` | notes | `C# E G C` | `C#4 E4 G4 B#4` |
+| `piano/Csharp/mmaj9/1` | notes | `C# E G# C D#` | `C#4 E4 G#4 B#4 D#5` |
+| `piano/Csharp/sus2/1` | notes | `C# D# G#` | `C#4 D#4 G#4` |
+| `piano/Csharp/sus2sus4/1` | added | `—` | `C#sus2sus4 C#4 D#4 F#4 G#4` |
+| `piano/Csharp/sus4/1` | notes | `C# F# G#` | `C#4 F#4 G#4` |
+| `piano/D/11/1` | notes | `D F# A C E G` | `D4 F#4 A4 C5 E5 G5` |
+| `piano/D/13/1` | notes | `D F# A C E G B` | `D4 F#4 A4 C5 E5 G5 B5` |
+| `piano/D/13b5b9/1` | added | `—` | `D13b5b9 D4 F#4 Ab4 C5 Eb5 G5 B5` |
+| `piano/D/13b9/1` | added | `—` | `D13b9 D4 F#4 A4 C5 Eb5 G5 B5` |
+| `piano/D/5/1` | notes | `D A` | `D4 A4` |
+| `piano/D/6/1` | notes | `D F# A B` | `D4 F#4 A4 B4` |
+| `piano/D/69/1` | notes | `D F# A B E` | `D4 F#4 A4 B4 E5` |
+| `piano/D/7/1` | notes | `D F# A C` | `D4 F#4 A4 C5` |
+| `piano/D/7b5/1` | notes | `D F# G# C` | `D4 F#4 Ab4 C5` |
+| `piano/D/7b5b9/1` | notes | `D F# G# C D#` | `D4 F#4 Ab4 C5 Eb5` |
+| `piano/D/7b5sharp9/1` | notes | `D F# G# C F` | `D4 F#4 Ab4 C5 E#5` |
+| `piano/D/7b5sharp9/1` | relabelled | `D7b5sharp9` | `D7b5#9` |
+| `piano/D/7b9/1` | notes | `D F# A C D#` | `D4 F#4 A4 C5 Eb5` |
+| `piano/D/7sharp11/1` | added | `—` | `D7#11 D4 F#4 A4 C5 G#5` |
+| `piano/D/7sharp5b9/1` | notes | `D F# A# C D#` | `D4 F#4 A#4 C5 Eb5` |
+| `piano/D/7sharp5b9/1` | relabelled | `D7sharp5b9` | `D7b9#5` |
+| `piano/D/7sharp5sharp9/1` | notes | `D F# A# C F` | `D4 F#4 A#4 C5 E#5` |
+| `piano/D/7sharp5sharp9/1` | relabelled | `D7sharp5sharp9` | `D7#5#9` |
+| `piano/D/7sharp9/1` | notes | `D F# A C F` | `D4 F#4 A4 C5 E#5` |
+| `piano/D/7sharp9/1` | relabelled | `D7sharp9` | `D7#9` |
+| `piano/D/7sus2/1` | added | `—` | `D7sus2 D4 E4 A4 C5` |
+| `piano/D/7sus4/1` | notes | `D G A C` | `D4 G4 A4 C5` |
+| `piano/D/9/1` | notes | `D F# A C E` | `D4 F#4 A4 C5 E5` |
+| `piano/D/9b5/1` | notes | `D F# G# C E` | `D4 F#4 Ab4 C5 E5` |
+| `piano/D/9sharp11/1` | notes | `D F# A C E G#` | `D4 F#4 A4 C5 E5 G#5` |
+| `piano/D/9sharp11/1` | relabelled | `D9sharp11` | `D9#11` |
+| `piano/D/add11/1` | added | `—` | `Dadd11 D4 F#4 A4 G5` |
+| `piano/D/add9/1` | notes | `D F# A E` | `D4 F#4 A4 E5` |
+| `piano/D/aug/1` | notes | `D F# A#` | `D4 F#4 A#4` |
+| `piano/D/aug7/1` | notes | `D F# A# C` | `D4 F#4 A#4 C5` |
+| `piano/D/aug9/1` | notes | `D F# A# C E` | `D4 F#4 A#4 C5 E5` |
+| `piano/D/b13b9/1` | added | `—` | `Db13b9 D4 F#4 A4 C5 Eb5 Bb5` |
+| `piano/D/b13sharp9/1` | added | `—` | `Db13#9 D4 F#4 A4 C5 E#5 Bb5` |
+| `piano/D/b5/1` | added | `—` | `Db5 D4 F#4 Ab4` |
+| `piano/D/dim/1` | notes | `D F G#` | `D4 F4 Ab4` |
+| `piano/D/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
+| `piano/D/dim7/1` | notes | `D F G# B` | `D4 F4 Ab4 Cb5` |
+| `piano/D/m/1` | notes | `D F A` | `D4 F4 A4` |
+| `piano/D/m/1` | relabelled | `Dm` | `Dminor` |
+| `piano/D/m11/1` | notes | `D F A C E G` | `D4 F4 A4 C5 E5 G5` |
+| `piano/D/m13/1` | added | `—` | `Dm13 D4 F4 A4 C5 E5 G5 B5` |
+| `piano/D/m6/1` | notes | `D F A B` | `D4 F4 A4 B4` |
+| `piano/D/m69/1` | notes | `D F A B E` | `D4 F4 A4 B4 E5` |
+| `piano/D/m7/1` | notes | `D F A C` | `D4 F4 A4 C5` |
+| `piano/D/m7b5/1` | notes | `D F Ab C` | `D4 F4 Ab4 C5` |
+| `piano/D/m9/1` | notes | `D F A C E` | `D4 F4 A4 C5 E5` |
+| `piano/D/m9b5/1` | added | `—` | `Dm9b5 D4 F4 Ab4 C5 E5` |
+| `piano/D/madd9/1` | notes | `D F A E` | `D4 F4 A4 E5` |
+| `piano/D/maj11/1` | degrees | `1 5 7 9 11` | `1 3 5 7 9 11` |
+| `piano/D/maj11/1` | notes | `D A C# E G` | `D4 F#4 A4 C#5 E5 G5` |
+| `piano/D/maj13/1` | degrees | `1 3 5 7 9 13` | `1 3 5 7 9 11 13` |
+| `piano/D/maj13/1` | notes | `D F# A C# E B` | `D4 F#4 A4 C#5 E5 G5 B5` |
+| `piano/D/maj7/1` | notes | `D F# A C#` | `D4 F#4 A4 C#5` |
+| `piano/D/maj7b5/1` | notes | `D F# G# C#` | `D4 F#4 Ab4 C#5` |
+| `piano/D/maj7sharp5/1` | notes | `D F# A# C#` | `D4 F#4 A#4 C#5` |
+| `piano/D/maj7sharp5/1` | relabelled | `Dmaj7sharp5` | `Dmaj7#5` |
+| `piano/D/maj7sus2/1` | added | `—` | `Dmaj7sus2 D4 E4 A4 C#5` |
+| `piano/D/maj9/1` | notes | `D F# A C# E` | `D4 F#4 A4 C#5 E5` |
+| `piano/D/major/1` | notes | `D F# A` | `D4 F#4 A4` |
+| `piano/D/mmaj11/1` | notes | `D F A Db E G` | `D4 F4 A4 C#5 E5 G5` |
+| `piano/D/mmaj7/1` | notes | `D F A Db` | `D4 F4 A4 C#5` |
+| `piano/D/mmaj7b5/1` | notes | `D F Ab Db` | `D4 F4 Ab4 C#5` |
+| `piano/D/mmaj9/1` | notes | `D F A Db E` | `D4 F4 A4 C#5 E5` |
+| `piano/D/sus2/1` | notes | `D E A` | `D4 E4 A4` |
+| `piano/D/sus2sus4/1` | added | `—` | `Dsus2sus4 D4 E4 G4 A4` |
+| `piano/D/sus4/1` | notes | `D G A` | `D4 G4 A4` |
+| `piano/E/11/1` | notes | `E G# B D F# A` | `E4 G#4 B4 D5 F#5 A5` |
+| `piano/E/13/1` | notes | `E G# B D F# A C#` | `E4 G#4 B4 D5 F#5 A5 C#6` |
+| `piano/E/13b5b9/1` | added | `—` | `E13b5b9 E4 G#4 Bb4 D5 F5 A5 C#6` |
+| `piano/E/13b9/1` | added | `—` | `E13b9 E4 G#4 B4 D5 F5 A5 C#6` |
+| `piano/E/5/1` | notes | `E B` | `E4 B4` |
+| `piano/E/6/1` | notes | `E G# B C#` | `E4 G#4 B4 C#5` |
+| `piano/E/69/1` | notes | `E G# B C# F#` | `E4 G#4 B4 C#5 F#5` |
+| `piano/E/7/1` | notes | `E G# B D` | `E4 G#4 B4 D5` |
+| `piano/E/7b5/1` | notes | `E G# A# D` | `E4 G#4 Bb4 D5` |
+| `piano/E/7b5b9/1` | notes | `E G# A# D F` | `E4 G#4 Bb4 D5 F5` |
+| `piano/E/7b5sharp9/1` | notes | `E G# A# D G` | `E4 G#4 Bb4 D5 G5` |
+| `piano/E/7b5sharp9/1` | relabelled | `E7b5sharp9` | `E7b5#9` |
+| `piano/E/7b9/1` | notes | `E G# B D F` | `E4 G#4 B4 D5 F5` |
+| `piano/E/7sharp11/1` | added | `—` | `E7#11 E4 G#4 B4 D5 A#5` |
+| `piano/E/7sharp5b9/1` | notes | `E G# C D F` | `E4 G#4 B#4 D5 F5` |
+| `piano/E/7sharp5b9/1` | relabelled | `E7sharp5b9` | `E7b9#5` |
+| `piano/E/7sharp5sharp9/1` | notes | `E G# C D G` | `E4 G#4 B#4 D5 G5` |
+| `piano/E/7sharp5sharp9/1` | relabelled | `E7sharp5sharp9` | `E7#5#9` |
+| `piano/E/7sharp9/1` | notes | `E G# B D G` | `E4 G#4 B4 D5 G5` |
+| `piano/E/7sharp9/1` | relabelled | `E7sharp9` | `E7#9` |
+| `piano/E/7sus2/1` | added | `—` | `E7sus2 E4 F#4 B4 D5` |
+| `piano/E/7sus4/1` | notes | `E A B D` | `E4 A4 B4 D5` |
+| `piano/E/9/1` | notes | `E G# B D F#` | `E4 G#4 B4 D5 F#5` |
+| `piano/E/9b5/1` | notes | `E G# A# D F#` | `E4 G#4 Bb4 D5 F#5` |
+| `piano/E/9sharp11/1` | notes | `E G# B D F# A#` | `E4 G#4 B4 D5 F#5 A#5` |
+| `piano/E/9sharp11/1` | relabelled | `E9sharp11` | `E9#11` |
+| `piano/E/add11/1` | added | `—` | `Eadd11 E4 G#4 B4 A5` |
+| `piano/E/add9/1` | notes | `E G# B F#` | `E4 G#4 B4 F#5` |
+| `piano/E/aug/1` | notes | `E G# C` | `E4 G#4 B#4` |
+| `piano/E/aug7/1` | notes | `E G# C D` | `E4 G#4 B#4 D5` |
+| `piano/E/aug9/1` | notes | `E G# C D F#` | `E4 G#4 B#4 D5 F#5` |
+| `piano/E/b13b9/1` | added | `—` | `Eb13b9 E4 G#4 B4 D5 F5 C6` |
+| `piano/E/b13sharp9/1` | added | `—` | `Eb13#9 E4 G#4 B4 D5 G5 C6` |
+| `piano/E/b5/1` | added | `—` | `Eb5 E4 G#4 Bb4` |
+| `piano/E/dim/1` | notes | `E G A#` | `E4 G4 Bb4` |
+| `piano/E/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
+| `piano/E/dim7/1` | notes | `E G A# C#` | `E4 G4 Bb4 Db5` |
+| `piano/E/m/1` | notes | `E G B` | `E4 G4 B4` |
+| `piano/E/m/1` | relabelled | `Em` | `Eminor` |
+| `piano/E/m11/1` | notes | `E G B D F# A` | `E4 G4 B4 D5 F#5 A5` |
+| `piano/E/m13/1` | added | `—` | `Em13 E4 G4 B4 D5 F#5 A5 C#6` |
+| `piano/E/m6/1` | notes | `E G B C#` | `E4 G4 B4 C#5` |
+| `piano/E/m69/1` | notes | `E G B C# F#` | `E4 G4 B4 C#5 F#5` |
+| `piano/E/m7/1` | notes | `E G B D` | `E4 G4 B4 D5` |
+| `piano/E/m7b5/1` | notes | `E G A# D` | `E4 G4 Bb4 D5` |
+| `piano/E/m9/1` | notes | `E G B D F#` | `E4 G4 B4 D5 F#5` |
+| `piano/E/m9b5/1` | added | `—` | `Em9b5 E4 G4 Bb4 D5 F#5` |
+| `piano/E/madd9/1` | notes | `E G B F#` | `E4 G4 B4 F#5` |
+| `piano/E/maj11/1` | degrees | `1 5 7 9 11` | `1 3 5 7 9 11` |
+| `piano/E/maj11/1` | notes | `E B D# F# A` | `E4 G#4 B4 D#5 F#5 A5` |
+| `piano/E/maj13/1` | degrees | `1 3 5 7 9 13` | `1 3 5 7 9 11 13` |
+| `piano/E/maj13/1` | notes | `E G# B D# F# C#` | `E4 G#4 B4 D#5 F#5 A5 C#6` |
+| `piano/E/maj7/1` | notes | `E G# B D#` | `E4 G#4 B4 D#5` |
+| `piano/E/maj7b5/1` | notes | `E G# A# D#` | `E4 G#4 Bb4 D#5` |
+| `piano/E/maj7sharp5/1` | notes | `E G# C D#` | `E4 G#4 B#4 D#5` |
+| `piano/E/maj7sharp5/1` | relabelled | `Emaj7sharp5` | `Emaj7#5` |
+| `piano/E/maj7sus2/1` | added | `—` | `Emaj7sus2 E4 F#4 B4 D#5` |
+| `piano/E/maj9/1` | notes | `E G# B D# F#` | `E4 G#4 B4 D#5 F#5` |
+| `piano/E/major/1` | notes | `E G# B` | `E4 G#4 B4` |
+| `piano/E/mmaj11/1` | notes | `E G B D# F# A` | `E4 G4 B4 D#5 F#5 A5` |
+| `piano/E/mmaj7/1` | notes | `E G B D#` | `E4 G4 B4 D#5` |
+| `piano/E/mmaj7b5/1` | notes | `E G A# D#` | `E4 G4 Bb4 D#5` |
+| `piano/E/mmaj9/1` | notes | `E G B D# F#` | `E4 G4 B4 D#5 F#5` |
+| `piano/E/sus2/1` | notes | `E F# B` | `E4 F#4 B4` |
+| `piano/E/sus2sus4/1` | added | `—` | `Esus2sus4 E4 F#4 A4 B4` |
+| `piano/E/sus4/1` | notes | `E A B` | `E4 A4 B4` |
+| `piano/Eb/11/1` | notes | `D# G A# C# F G#` | `Eb4 G4 Bb4 Db5 F5 Ab5` |
+| `piano/Eb/13/1` | notes | `D# G A# C# F G# C` | `Eb4 G4 Bb4 Db5 F5 Ab5 C6` |
+| `piano/Eb/13b5b9/1` | added | `—` | `Eb13b5b9 Eb4 G4 A4 Db5 Fb5 Ab5 C6` |
+| `piano/Eb/13b9/1` | added | `—` | `Eb13b9 Eb4 G4 Bb4 Db5 Fb5 Ab5 C6` |
+| `piano/Eb/5/1` | notes | `D# A#` | `Eb4 Bb4` |
+| `piano/Eb/6/1` | notes | `D# G A# C` | `Eb4 G4 Bb4 C5` |
+| `piano/Eb/69/1` | notes | `D# G A# C F` | `Eb4 G4 Bb4 C5 F5` |
+| `piano/Eb/7/1` | notes | `D# G A# C#` | `Eb4 G4 Bb4 Db5` |
+| `piano/Eb/7b5/1` | notes | `D# G A C#` | `Eb4 G4 A4 Db5` |
+| `piano/Eb/7b5b9/1` | notes | `D# G A C# E` | `Eb4 G4 A4 Db5 Fb5` |
+| `piano/Eb/7b5sharp9/1` | notes | `D# G A C# F#` | `Eb4 G4 A4 Db5 F#5` |
+| `piano/Eb/7b5sharp9/1` | relabelled | `Eb7b5sharp9` | `Eb7b5#9` |
+| `piano/Eb/7b9/1` | notes | `D# G A# C# E` | `Eb4 G4 Bb4 Db5 Fb5` |
+| `piano/Eb/7sharp11/1` | added | `—` | `Eb7#11 Eb4 G4 Bb4 Db5 A5` |
+| `piano/Eb/7sharp5b9/1` | notes | `D# G B C# E` | `Eb4 G4 B4 Db5 Fb5` |
+| `piano/Eb/7sharp5b9/1` | relabelled | `Eb7sharp5b9` | `Eb7b9#5` |
+| `piano/Eb/7sharp5sharp9/1` | notes | `D# G B C# F#` | `Eb4 G4 B4 Db5 F#5` |
+| `piano/Eb/7sharp5sharp9/1` | relabelled | `Eb7sharp5sharp9` | `Eb7#5#9` |
+| `piano/Eb/7sharp9/1` | notes | `D# G A# C# F#` | `Eb4 G4 Bb4 Db5 F#5` |
+| `piano/Eb/7sharp9/1` | relabelled | `Eb7sharp9` | `Eb7#9` |
+| `piano/Eb/7sus2/1` | added | `—` | `Eb7sus2 Eb4 F4 Bb4 Db5` |
+| `piano/Eb/7sus4/1` | notes | `D# G# A# C#` | `Eb4 Ab4 Bb4 Db5` |
+| `piano/Eb/9/1` | notes | `D# G A# C# F` | `Eb4 G4 Bb4 Db5 F5` |
+| `piano/Eb/9b5/1` | notes | `D# G A C# F` | `Eb4 G4 A4 Db5 F5` |
+| `piano/Eb/9sharp11/1` | notes | `D# G A# C# F A` | `Eb4 G4 Bb4 Db5 F5 A5` |
+| `piano/Eb/9sharp11/1` | relabelled | `Eb9sharp11` | `Eb9#11` |
+| `piano/Eb/add11/1` | added | `—` | `Ebadd11 Eb4 G4 Bb4 Ab5` |
+| `piano/Eb/add9/1` | notes | `D# G A# F` | `Eb4 G4 Bb4 F5` |
+| `piano/Eb/aug/1` | notes | `D# G B` | `Eb4 G4 B4` |
+| `piano/Eb/aug7/1` | notes | `D# G B C#` | `Eb4 G4 B4 Db5` |
+| `piano/Eb/aug9/1` | notes | `D# G B C# F` | `Eb4 G4 B4 Db5 F5` |
+| `piano/Eb/b13b9/1` | added | `—` | `Ebb13b9 Eb4 G4 Bb4 Db5 Fb5 Cb6` |
+| `piano/Eb/b13sharp9/1` | added | `—` | `Ebb13#9 Eb4 G4 Bb4 Db5 F#5 Cb6` |
+| `piano/Eb/b5/1` | added | `—` | `Ebb5 Eb4 G4 A4` |
+| `piano/Eb/dim/1` | notes | `D# F# A` | `Eb4 Gb4 A4` |
+| `piano/Eb/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
+| `piano/Eb/dim7/1` | notes | `D# F# A C` | `Eb4 Gb4 A4 C5` |
+| `piano/Eb/m/1` | notes | `D# F# A#` | `Eb4 Gb4 Bb4` |
+| `piano/Eb/m/1` | relabelled | `Ebm` | `Ebminor` |
+| `piano/Eb/m11/1` | notes | `D# F# A# C# F G#` | `Eb4 Gb4 Bb4 Db5 F5 Ab5` |
+| `piano/Eb/m13/1` | added | `—` | `Ebm13 Eb4 Gb4 Bb4 Db5 F5 Ab5 C6` |
+| `piano/Eb/m6/1` | notes | `D# F# A# C` | `Eb4 Gb4 Bb4 C5` |
+| `piano/Eb/m69/1` | notes | `D# F# A# C F` | `Eb4 Gb4 Bb4 C5 F5` |
+| `piano/Eb/m7/1` | notes | `D# F# A# C#` | `Eb4 Gb4 Bb4 Db5` |
+| `piano/Eb/m7b5/1` | notes | `D# F# A C#` | `Eb4 Gb4 A4 Db5` |
+| `piano/Eb/m9/1` | notes | `D# F# A# C# F` | `Eb4 Gb4 Bb4 Db5 F5` |
+| `piano/Eb/m9b5/1` | added | `—` | `Ebm9b5 Eb4 Gb4 A4 Db5 F5` |
+| `piano/Eb/madd9/1` | notes | `D# F# A# F` | `Eb4 Gb4 Bb4 F5` |
+| `piano/Eb/maj11/1` | degrees | `1 5 7 9 11` | `1 3 5 7 9 11` |
+| `piano/Eb/maj11/1` | notes | `D# A# D F G#` | `Eb4 G4 Bb4 D5 F5 Ab5` |
+| `piano/Eb/maj13/1` | degrees | `1 3 5 7 9 13` | `1 3 5 7 9 11 13` |
+| `piano/Eb/maj13/1` | notes | `D# G A# D F C` | `Eb4 G4 Bb4 D5 F5 Ab5 C6` |
+| `piano/Eb/maj7/1` | notes | `D# G A# D` | `Eb4 G4 Bb4 D5` |
+| `piano/Eb/maj7b5/1` | notes | `D# G A D` | `Eb4 G4 A4 D5` |
+| `piano/Eb/maj7sharp5/1` | notes | `D# G B D` | `Eb4 G4 B4 D5` |
+| `piano/Eb/maj7sharp5/1` | relabelled | `Ebmaj7sharp5` | `Ebmaj7#5` |
+| `piano/Eb/maj7sus2/1` | added | `—` | `Ebmaj7sus2 Eb4 F4 Bb4 D5` |
+| `piano/Eb/maj9/1` | notes | `D# G A# D F` | `Eb4 G4 Bb4 D5 F5` |
+| `piano/Eb/major/1` | notes | `D# G A#` | `Eb4 G4 Bb4` |
+| `piano/Eb/mmaj11/1` | notes | `D# F# A# D F G#` | `Eb4 Gb4 Bb4 D5 F5 Ab5` |
+| `piano/Eb/mmaj7/1` | notes | `D# F# A# D` | `Eb4 Gb4 Bb4 D5` |
+| `piano/Eb/mmaj7b5/1` | notes | `D# F# A D` | `Eb4 Gb4 A4 D5` |
+| `piano/Eb/mmaj9/1` | notes | `D# F# A# D F` | `Eb4 Gb4 Bb4 D5 F5` |
+| `piano/Eb/sus2/1` | notes | `D# F A#` | `Eb4 F4 Bb4` |
+| `piano/Eb/sus2sus4/1` | added | `—` | `Ebsus2sus4 Eb4 F4 Ab4 Bb4` |
+| `piano/Eb/sus4/1` | notes | `D# G# A#` | `Eb4 Ab4 Bb4` |
+| `piano/F/11/1` | notes | `F A C Eb G Bb` | `F4 A4 C5 Eb5 G5 Bb5` |
+| `piano/F/13/1` | notes | `F A C Eb G Bb D` | `F4 A4 C5 Eb5 G5 Bb5 D6` |
+| `piano/F/13b5b9/1` | added | `—` | `F13b5b9 F4 A4 Cb5 Eb5 Gb5 Bb5 D6` |
+| `piano/F/13b9/1` | added | `—` | `F13b9 F4 A4 C5 Eb5 Gb5 Bb5 D6` |
+| `piano/F/5/1` | notes | `F C` | `F4 C5` |
+| `piano/F/6/1` | notes | `F A C D` | `F4 A4 C5 D5` |
+| `piano/F/69/1` | notes | `F A C D G` | `F4 A4 C5 D5 G5` |
+| `piano/F/7/1` | notes | `F A C Eb` | `F4 A4 C5 Eb5` |
+| `piano/F/7b5/1` | notes | `F A B Eb` | `F4 A4 Cb5 Eb5` |
+| `piano/F/7b5b9/1` | notes | `F A B Eb Gb` | `F4 A4 Cb5 Eb5 Gb5` |
+| `piano/F/7b5sharp9/1` | notes | `F A B Eb Ab` | `F4 A4 Cb5 Eb5 G#5` |
+| `piano/F/7b5sharp9/1` | relabelled | `F7b5sharp9` | `F7b5#9` |
+| `piano/F/7b9/1` | notes | `F A C Eb Gb` | `F4 A4 C5 Eb5 Gb5` |
+| `piano/F/7sharp11/1` | added | `—` | `F7#11 F4 A4 C5 Eb5 B5` |
+| `piano/F/7sharp5b9/1` | notes | `F A Db Eb Gb` | `F4 A4 C#5 Eb5 Gb5` |
+| `piano/F/7sharp5b9/1` | relabelled | `F7sharp5b9` | `F7b9#5` |
+| `piano/F/7sharp5sharp9/1` | notes | `F A Db Eb Ab` | `F4 A4 C#5 Eb5 G#5` |
+| `piano/F/7sharp5sharp9/1` | relabelled | `F7sharp5sharp9` | `F7#5#9` |
+| `piano/F/7sharp9/1` | notes | `F A C Eb Ab` | `F4 A4 C5 Eb5 G#5` |
+| `piano/F/7sharp9/1` | relabelled | `F7sharp9` | `F7#9` |
+| `piano/F/7sus2/1` | added | `—` | `F7sus2 F4 G4 C5 Eb5` |
+| `piano/F/7sus4/1` | notes | `F Bb C Eb` | `F4 Bb4 C5 Eb5` |
+| `piano/F/9/1` | notes | `F A C Eb G` | `F4 A4 C5 Eb5 G5` |
+| `piano/F/9b5/1` | notes | `F A B Eb G` | `F4 A4 Cb5 Eb5 G5` |
+| `piano/F/9sharp11/1` | notes | `F A C Eb G B` | `F4 A4 C5 Eb5 G5 B5` |
+| `piano/F/9sharp11/1` | relabelled | `F9sharp11` | `F9#11` |
+| `piano/F/add11/1` | added | `—` | `Fadd11 F4 A4 C5 Bb5` |
+| `piano/F/add9/1` | notes | `F A C G` | `F4 A4 C5 G5` |
+| `piano/F/aug/1` | notes | `F A Db` | `F4 A4 C#5` |
+| `piano/F/aug7/1` | notes | `F A Db Eb` | `F4 A4 C#5 Eb5` |
+| `piano/F/aug9/1` | notes | `F A Db Eb G` | `F4 A4 C#5 Eb5 G5` |
+| `piano/F/b13b9/1` | added | `—` | `Fb13b9 F4 A4 C5 Eb5 Gb5 Db6` |
+| `piano/F/b13sharp9/1` | added | `—` | `Fb13#9 F4 A4 C5 Eb5 G#5 Db6` |
+| `piano/F/b5/1` | added | `—` | `Fb5 F4 A4 Cb5` |
+| `piano/F/dim/1` | notes | `F Ab B` | `F4 Ab4 Cb5` |
+| `piano/F/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
+| `piano/F/dim7/1` | notes | `F Ab B D` | `F4 Ab4 Cb5 D5` |
+| `piano/F/m/1` | notes | `F Ab C` | `F4 Ab4 C5` |
+| `piano/F/m/1` | relabelled | `Fm` | `Fminor` |
+| `piano/F/m11/1` | notes | `F Ab C Eb G Bb` | `F4 Ab4 C5 Eb5 G5 Bb5` |
+| `piano/F/m13/1` | added | `—` | `Fm13 F4 Ab4 C5 Eb5 G5 Bb5 D6` |
+| `piano/F/m6/1` | notes | `F Ab C D` | `F4 Ab4 C5 D5` |
+| `piano/F/m69/1` | notes | `F Ab C D G` | `F4 Ab4 C5 D5 G5` |
+| `piano/F/m7/1` | notes | `F Ab C Eb` | `F4 Ab4 C5 Eb5` |
+| `piano/F/m7b5/1` | notes | `F Ab B Eb` | `F4 Ab4 Cb5 Eb5` |
+| `piano/F/m9/1` | notes | `F Ab C Eb G` | `F4 Ab4 C5 Eb5 G5` |
+| `piano/F/m9b5/1` | added | `—` | `Fm9b5 F4 Ab4 Cb5 Eb5 G5` |
+| `piano/F/madd9/1` | notes | `F Ab C G` | `F4 Ab4 C5 G5` |
+| `piano/F/maj11/1` | degrees | `1 5 7 9 11` | `1 3 5 7 9 11` |
+| `piano/F/maj11/1` | notes | `F C E G Bb` | `F4 A4 C5 E5 G5 Bb5` |
+| `piano/F/maj13/1` | degrees | `1 3 5 7 9 13` | `1 3 5 7 9 11 13` |
+| `piano/F/maj13/1` | notes | `F A C E G D` | `F4 A4 C5 E5 G5 Bb5 D6` |
+| `piano/F/maj7/1` | notes | `F A C E` | `F4 A4 C5 E5` |
+| `piano/F/maj7b5/1` | notes | `F A B E` | `F4 A4 Cb5 E5` |
+| `piano/F/maj7sharp5/1` | notes | `F A Db E` | `F4 A4 C#5 E5` |
+| `piano/F/maj7sharp5/1` | relabelled | `Fmaj7sharp5` | `Fmaj7#5` |
+| `piano/F/maj7sus2/1` | added | `—` | `Fmaj7sus2 F4 G4 C5 E5` |
+| `piano/F/maj9/1` | notes | `F A C E G` | `F4 A4 C5 E5 G5` |
+| `piano/F/major/1` | notes | `F A C` | `F4 A4 C5` |
+| `piano/F/mmaj11/1` | notes | `F Ab C E G Bb` | `F4 Ab4 C5 E5 G5 Bb5` |
+| `piano/F/mmaj7/1` | notes | `F Ab C E` | `F4 Ab4 C5 E5` |
+| `piano/F/mmaj7b5/1` | notes | `F Ab B E` | `F4 Ab4 Cb5 E5` |
+| `piano/F/mmaj9/1` | notes | `F Ab C E G` | `F4 Ab4 C5 E5 G5` |
+| `piano/F/sus2/1` | notes | `F G C` | `F4 G4 C5` |
+| `piano/F/sus2sus4/1` | added | `—` | `Fsus2sus4 F4 G4 Bb4 C5` |
+| `piano/F/sus4/1` | notes | `F Bb C` | `F4 Bb4 C5` |
+| `piano/Fsharp/11/1` | notes | `F# A# C# E G# B` | `F#4 A#4 C#5 E5 G#5 B5` |
+| `piano/Fsharp/13/1` | notes | `F# A# C# E G# B D#` | `F#4 A#4 C#5 E5 G#5 B5 D#6` |
+| `piano/Fsharp/13b5b9/1` | added | `—` | `F#13b5b9 F#4 A#4 C5 E5 G5 B5 D#6` |
+| `piano/Fsharp/13b9/1` | added | `—` | `F#13b9 F#4 A#4 C#5 E5 G5 B5 D#6` |
+| `piano/Fsharp/5/1` | notes | `F# C#` | `F#4 C#5` |
+| `piano/Fsharp/6/1` | notes | `F# A# C# D#` | `F#4 A#4 C#5 D#5` |
+| `piano/Fsharp/69/1` | notes | `F# A# C# D# G#` | `F#4 A#4 C#5 D#5 G#5` |
+| `piano/Fsharp/7/1` | notes | `F# A# C# E` | `F#4 A#4 C#5 E5` |
+| `piano/Fsharp/7b5/1` | notes | `F# A# C E` | `F#4 A#4 C5 E5` |
+| `piano/Fsharp/7b5b9/1` | notes | `F# A# C E G` | `F#4 A#4 C5 E5 G5` |
+| `piano/Fsharp/7b5sharp9/1` | notes | `F# A# C E A` | `F#4 A#4 C5 E5 A5` |
+| `piano/Fsharp/7b5sharp9/1` | relabelled | `F#7b5sharp9` | `F#7b5#9` |
+| `piano/Fsharp/7b9/1` | notes | `F# A# C# E G` | `F#4 A#4 C#5 E5 G5` |
+| `piano/Fsharp/7sharp11/1` | added | `—` | `F#7#11 F#4 A#4 C#5 E5 B#5` |
+| `piano/Fsharp/7sharp5b9/1` | notes | `F# A# D E G` | `F#4 A#4 D5 E5 G5` |
+| `piano/Fsharp/7sharp5b9/1` | relabelled | `F#7sharp5b9` | `F#7b9#5` |
+| `piano/Fsharp/7sharp5sharp9/1` | notes | `F# A# D E A` | `F#4 A#4 D5 E5 A5` |
+| `piano/Fsharp/7sharp5sharp9/1` | relabelled | `F#7sharp5sharp9` | `F#7#5#9` |
+| `piano/Fsharp/7sharp9/1` | notes | `F# A# C# E A` | `F#4 A#4 C#5 E5 A5` |
+| `piano/Fsharp/7sharp9/1` | relabelled | `F#7sharp9` | `F#7#9` |
+| `piano/Fsharp/7sus2/1` | added | `—` | `F#7sus2 F#4 G#4 C#5 E5` |
+| `piano/Fsharp/7sus4/1` | notes | `F# B C# E` | `F#4 B4 C#5 E5` |
+| `piano/Fsharp/9/1` | notes | `F# A# C# E G#` | `F#4 A#4 C#5 E5 G#5` |
+| `piano/Fsharp/9b5/1` | notes | `F# A# C E G#` | `F#4 A#4 C5 E5 G#5` |
+| `piano/Fsharp/9sharp11/1` | notes | `F# A# C# E G# C` | `F#4 A#4 C#5 E5 G#5 B#5` |
+| `piano/Fsharp/9sharp11/1` | relabelled | `F#9sharp11` | `F#9#11` |
+| `piano/Fsharp/add11/1` | added | `—` | `F#add11 F#4 A#4 C#5 B5` |
+| `piano/Fsharp/add9/1` | notes | `F# A# C# G#` | `F#4 A#4 C#5 G#5` |
+| `piano/Fsharp/aug/1` | notes | `F# A# D` | `F#4 A#4 D5` |
+| `piano/Fsharp/aug7/1` | notes | `F# A# D E` | `F#4 A#4 D5 E5` |
+| `piano/Fsharp/aug9/1` | notes | `F# A# D E G#` | `F#4 A#4 D5 E5 G#5` |
+| `piano/Fsharp/b13b9/1` | added | `—` | `F#b13b9 F#4 A#4 C#5 E5 G5 D6` |
+| `piano/Fsharp/b13sharp9/1` | added | `—` | `F#b13#9 F#4 A#4 C#5 E5 A5 D6` |
+| `piano/Fsharp/b5/1` | added | `—` | `F#b5 F#4 A#4 C5` |
+| `piano/Fsharp/dim/1` | notes | `F# A C` | `F#4 A4 C5` |
+| `piano/Fsharp/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
+| `piano/Fsharp/dim7/1` | notes | `F# A C D#` | `F#4 A4 C5 Eb5` |
+| `piano/Fsharp/m/1` | notes | `F# A C#` | `F#4 A4 C#5` |
+| `piano/Fsharp/m/1` | relabelled | `F#m` | `F#minor` |
+| `piano/Fsharp/m11/1` | notes | `F# A C# E G# B` | `F#4 A4 C#5 E5 G#5 B5` |
+| `piano/Fsharp/m13/1` | added | `—` | `F#m13 F#4 A4 C#5 E5 G#5 B5 D#6` |
+| `piano/Fsharp/m6/1` | notes | `F# A C# D#` | `F#4 A4 C#5 D#5` |
+| `piano/Fsharp/m69/1` | notes | `F# A C# D# G#` | `F#4 A4 C#5 D#5 G#5` |
+| `piano/Fsharp/m7/1` | notes | `F# A C# E` | `F#4 A4 C#5 E5` |
+| `piano/Fsharp/m7b5/1` | notes | `F# A C E` | `F#4 A4 C5 E5` |
+| `piano/Fsharp/m9/1` | notes | `F# A C# E G#` | `F#4 A4 C#5 E5 G#5` |
+| `piano/Fsharp/m9b5/1` | added | `—` | `F#m9b5 F#4 A4 C5 E5 G#5` |
+| `piano/Fsharp/madd9/1` | notes | `F# A C# G#` | `F#4 A4 C#5 G#5` |
+| `piano/Fsharp/maj11/1` | degrees | `1 5 7 9 11` | `1 3 5 7 9 11` |
+| `piano/Fsharp/maj11/1` | notes | `F# C# F G# B` | `F#4 A#4 C#5 E#5 G#5 B5` |
+| `piano/Fsharp/maj13/1` | degrees | `1 3 5 7 9 13` | `1 3 5 7 9 11 13` |
+| `piano/Fsharp/maj13/1` | notes | `F# A# C# F G# D#` | `F#4 A#4 C#5 E#5 G#5 B5 D#6` |
+| `piano/Fsharp/maj7/1` | notes | `F# A# C# F` | `F#4 A#4 C#5 E#5` |
+| `piano/Fsharp/maj7b5/1` | notes | `F# A# C F` | `F#4 A#4 C5 E#5` |
+| `piano/Fsharp/maj7sharp5/1` | notes | `F# A# D F` | `F#4 A#4 D5 E#5` |
+| `piano/Fsharp/maj7sharp5/1` | relabelled | `F#maj7sharp5` | `F#maj7#5` |
+| `piano/Fsharp/maj7sus2/1` | added | `—` | `F#maj7sus2 F#4 G#4 C#5 E#5` |
+| `piano/Fsharp/maj9/1` | notes | `F# A# C# F G#` | `F#4 A#4 C#5 E#5 G#5` |
+| `piano/Fsharp/major/1` | notes | `F# A# C#` | `F#4 A#4 C#5` |
+| `piano/Fsharp/mmaj11/1` | notes | `F# A C# F G# B` | `F#4 A4 C#5 E#5 G#5 B5` |
+| `piano/Fsharp/mmaj7/1` | notes | `F# A C# F` | `F#4 A4 C#5 E#5` |
+| `piano/Fsharp/mmaj7b5/1` | notes | `F# A C F` | `F#4 A4 C5 E#5` |
+| `piano/Fsharp/mmaj9/1` | notes | `F# A C# F G#` | `F#4 A4 C#5 E#5 G#5` |
+| `piano/Fsharp/sus2/1` | notes | `F# G# C#` | `F#4 G#4 C#5` |
+| `piano/Fsharp/sus2sus4/1` | added | `—` | `F#sus2sus4 F#4 G#4 B4 C#5` |
+| `piano/Fsharp/sus4/1` | notes | `F# B C#` | `F#4 B4 C#5` |
+| `piano/G/11/1` | notes | `G B D F A C` | `G4 B4 D5 F5 A5 C6` |
+| `piano/G/13/1` | notes | `G B D F A C E` | `G4 B4 D5 F5 A5 C6 E6` |
+| `piano/G/13b5b9/1` | added | `—` | `G13b5b9 G4 B4 Db5 F5 Ab5 C6 E6` |
+| `piano/G/13b9/1` | added | `—` | `G13b9 G4 B4 D5 F5 Ab5 C6 E6` |
+| `piano/G/5/1` | notes | `G D` | `G4 D5` |
+| `piano/G/6/1` | notes | `G B D E` | `G4 B4 D5 E5` |
+| `piano/G/69/1` | notes | `G B D E A` | `G4 B4 D5 E5 A5` |
+| `piano/G/7/1` | notes | `G B D F` | `G4 B4 D5 F5` |
+| `piano/G/7b5/1` | notes | `G B C# F` | `G4 B4 Db5 F5` |
+| `piano/G/7b5b9/1` | notes | `G B C# F G#` | `G4 B4 Db5 F5 Ab5` |
+| `piano/G/7b5sharp9/1` | notes | `G B C# F A#` | `G4 B4 Db5 F5 A#5` |
+| `piano/G/7b5sharp9/1` | relabelled | `G7b5sharp9` | `G7b5#9` |
+| `piano/G/7b9/1` | notes | `G B D F G#` | `G4 B4 D5 F5 Ab5` |
+| `piano/G/7sharp11/1` | added | `—` | `G7#11 G4 B4 D5 F5 C#6` |
+| `piano/G/7sharp5b9/1` | notes | `G B D# F G#` | `G4 B4 D#5 F5 Ab5` |
+| `piano/G/7sharp5b9/1` | relabelled | `G7sharp5b9` | `G7b9#5` |
+| `piano/G/7sharp5sharp9/1` | notes | `G B D# F A#` | `G4 B4 D#5 F5 A#5` |
+| `piano/G/7sharp5sharp9/1` | relabelled | `G7sharp5sharp9` | `G7#5#9` |
+| `piano/G/7sharp9/1` | notes | `G B D F A#` | `G4 B4 D5 F5 A#5` |
+| `piano/G/7sharp9/1` | relabelled | `G7sharp9` | `G7#9` |
+| `piano/G/7sus2/1` | added | `—` | `G7sus2 G4 A4 D5 F5` |
+| `piano/G/7sus4/1` | notes | `G C D F` | `G4 C5 D5 F5` |
+| `piano/G/9/1` | notes | `G B D F A` | `G4 B4 D5 F5 A5` |
+| `piano/G/9b5/1` | notes | `G B C# F A` | `G4 B4 Db5 F5 A5` |
+| `piano/G/9sharp11/1` | notes | `G B D F A C#` | `G4 B4 D5 F5 A5 C#6` |
+| `piano/G/9sharp11/1` | relabelled | `G9sharp11` | `G9#11` |
+| `piano/G/add11/1` | added | `—` | `Gadd11 G4 B4 D5 C6` |
+| `piano/G/add9/1` | notes | `G B D A` | `G4 B4 D5 A5` |
+| `piano/G/aug/1` | notes | `G B D#` | `G4 B4 D#5` |
+| `piano/G/aug7/1` | notes | `G B D# F` | `G4 B4 D#5 F5` |
+| `piano/G/aug9/1` | notes | `G B D# F A` | `G4 B4 D#5 F5 A5` |
+| `piano/G/b13b9/1` | added | `—` | `Gb13b9 G4 B4 D5 F5 Ab5 Eb6` |
+| `piano/G/b13sharp9/1` | added | `—` | `Gb13#9 G4 B4 D5 F5 A#5 Eb6` |
+| `piano/G/b5/1` | added | `—` | `Gb5 G4 B4 Db5` |
+| `piano/G/dim/1` | notes | `G A# C#` | `G4 Bb4 Db5` |
+| `piano/G/dim7/1` | degrees | `1 b3 b5 6` | `1 b3 b5 bb7` |
+| `piano/G/dim7/1` | notes | `G A# C# E` | `G4 Bb4 Db5 Fb5` |
+| `piano/G/m/1` | notes | `G Bb D` | `G4 Bb4 D5` |
+| `piano/G/m/1` | relabelled | `Gm` | `Gminor` |
+| `piano/G/m11/1` | notes | `G Bb D F A C` | `G4 Bb4 D5 F5 A5 C6` |
+| `piano/G/m13/1` | added | `—` | `Gm13 G4 Bb4 D5 F5 A5 C6 E6` |
+| `piano/G/m6/1` | notes | `G Bb D E` | `G4 Bb4 D5 E5` |
+| `piano/G/m69/1` | notes | `G Bb D E A` | `G4 Bb4 D5 E5 A5` |
+| `piano/G/m7/1` | notes | `G Bb D F` | `G4 Bb4 D5 F5` |
+| `piano/G/m7b5/1` | notes | `G Bb Db F` | `G4 Bb4 Db5 F5` |
+| `piano/G/m9/1` | notes | `G Bb D F A` | `G4 Bb4 D5 F5 A5` |
+| `piano/G/m9b5/1` | added | `—` | `Gm9b5 G4 Bb4 Db5 F5 A5` |
+| `piano/G/madd9/1` | notes | `G Bb D A` | `G4 Bb4 D5 A5` |
+| `piano/G/maj11/1` | degrees | `1 5 7 9 11` | `1 3 5 7 9 11` |
+| `piano/G/maj11/1` | notes | `G D F# A C` | `G4 B4 D5 F#5 A5 C6` |
+| `piano/G/maj13/1` | degrees | `1 3 5 7 9 13` | `1 3 5 7 9 11 13` |
+| `piano/G/maj13/1` | notes | `G B D F# A E` | `G4 B4 D5 F#5 A5 C6 E6` |
+| `piano/G/maj7/1` | notes | `G B D F#` | `G4 B4 D5 F#5` |
+| `piano/G/maj7b5/1` | notes | `G B C# F#` | `G4 B4 Db5 F#5` |
+| `piano/G/maj7sharp5/1` | notes | `G B D# F#` | `G4 B4 D#5 F#5` |
+| `piano/G/maj7sharp5/1` | relabelled | `Gmaj7sharp5` | `Gmaj7#5` |
+| `piano/G/maj7sus2/1` | added | `—` | `Gmaj7sus2 G4 A4 D5 F#5` |
+| `piano/G/maj9/1` | notes | `G B D F# A` | `G4 B4 D5 F#5 A5` |
+| `piano/G/major/1` | notes | `G B D` | `G4 B4 D5` |
+| `piano/G/mmaj11/1` | notes | `G Bb D Gb A C` | `G4 Bb4 D5 F#5 A5 C6` |
+| `piano/G/mmaj7/1` | notes | `G Bb D Gb` | `G4 Bb4 D5 F#5` |
+| `piano/G/mmaj7b5/1` | notes | `G Bb Db Gb` | `G4 Bb4 Db5 F#5` |
+| `piano/G/mmaj9/1` | notes | `G Bb D Gb A` | `G4 Bb4 D5 F#5 A5` |
+| `piano/G/sus2/1` | notes | `G A D` | `G4 A4 D5` |
+| `piano/G/sus2sus4/1` | added | `—` | `Gsus2sus4 G4 A4 C5 D5` |
+| `piano/G/sus4/1` | notes | `G C D` | `G4 C5 D5` |
+
+</details>

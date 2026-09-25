@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "B",
+  "suffix": "m9b5",
+  "voicings": [
+    {
+      "id": "piano/B/m9b5/1",
+      "notes": ["B4", "D5", "F5", "A5", "C#6"],
+      "degrees": ["1", "b3", "b5", "b7", "9"],
+      "sources": [{ "type": "curated", "ref": "data/qualities.json" }]
+    }
+  ]
+}

@@ -5,9 +5,9 @@
   "voicings": [
     {
       "id": "piano/Csharp/m7/1",
-      "notes": ["C#", "E", "G#", "B"],
+      "notes": ["C#4", "E4", "G#4", "B4"],
       "degrees": ["1", "b3", "5", "b7"],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+      "sources": [{ "type": "curated", "ref": "data/qualities.json" }]
     }
   ]
 }
