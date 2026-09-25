@@ -18,8 +18,8 @@
     },
     {
       "id": "guitar/E/maj11/3",
-      "frets": [7, 7, 7, 8, 9, 7],
-      "fingers": [1, 1, 1, 2, 3, 1],
+      "frets": [-1, 7, 7, 8, 9, 7],
+      "fingers": [0, 1, 1, 2, 3, 1],
       "barres": [7],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

@@ -16,10 +16,10 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 | added | 24 | 0 |
 | removed | 13 | 45 |
 | relabelled | 123 | 37 |
-| frets | 13 | 4 |
-| fingers | 31 | 4 |
-| barres | 121 | 4 |
-| capo | 2 | 0 |
+| frets | 241 | 4 |
+| fingers | 257 | 4 |
+| barres | 177 | 4 |
+| capo | 33 | 0 |
 | rootless | 13 | 988 |
 
 Counts are voicings; one voicing can have several kinds of change.
@@ -101,7 +101,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Ab/m_G/1` | barres | `1` | `1 4` |
 | `guitar/Ab/m7/1` | barres | `—` | `4` |
 | `guitar/Ab/m9/3` | barres | `8` | `7 8` |
-| `guitar/Ab/maj7/2` | barres | `6` | `6 8` |
+| `guitar/Ab/maj7/2` | barres | `6` | `8` |
 | `guitar/Ab/maj9/3` | barres | `4` | `4 5` |
 | `guitar/B/_Ab/2` | barres | `4` | `4 7` |
 | `guitar/B/_Bb/2` | barres | `4` | `4 7` |
@@ -176,7 +176,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/F/m_G/4` | barres | `10` | `10 13` |
 | `guitar/F/m7/1` | barres | `—` | `1` |
 | `guitar/F/m7/2` | barres | `—` | `13` |
-| `guitar/F/maj7/3` | barres | `3` | `3 5` |
+| `guitar/F/maj7/3` | barres | `3` | `5` |
 | `guitar/Fsharp/_F/4` | barres | `11` | `11 14` |
 | `guitar/Fsharp/m_Eb/2` | barres | `11` | `11 14` |
 | `guitar/Fsharp/m_Eb/3` | barres | `11` | `11 14` |
@@ -184,7 +184,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Fsharp/m69/2` | barres | `4` | `2 4` |
 | `guitar/Fsharp/m7/1` | barres | `—` | `2` |
 | `guitar/Fsharp/m7/2` | barres | `—` | `14` |
-| `guitar/Fsharp/maj7/2` | barres | `4` | `4 6` |
+| `guitar/Fsharp/maj7/2` | barres | `4` | `6` |
 | `guitar/G/aug9/2` | barres | `—` | `2` |
 | `guitar/G/m7/1` | barres | `—` | `3` |
 | `ukulele/Eb/7sus4/1` | barres | `3 3` | `3 4` |
@@ -1514,7 +1514,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 | Voicing | Change | Before | After |
 | --- | --- | --- | --- |
-| `guitar/D/7sharp9/2` | frets | `000a78` | `x00a78` |
+| `guitar/D/7sharp9/2` | frets | `000a78` | `xx0a78` |
 
 ### 17. Muted the open low E string, which is not in E♭11.
 
@@ -1798,12 +1798,8 @@ Counts are voicings; one voicing can have several kinds of change.
 
 [#8](https://github.com/tabsy-gr/chords-db/issues/8)
 
-<details>
-<summary>21 voicings</summary>
-
 | Voicing | Change | Before | After |
 | --- | --- | --- | --- |
-| `guitar/A/maj7sharp5/4` | fingers | `0 4 3 2 1 1` | `1 4 3 2 1 1` |
 | `guitar/Ab/m11/4` | fingers | `0 3 1 3 4 1` | `0 2 1 3 4 1` |
 | `guitar/B/aug7/2` | fingers | `0 0 2 1 1 3` | `0 1 4 1 3 2` |
 | `guitar/B/maj7sharp5/3` | fingers | `2 1 3 0 3 0` | `2 1 3 0 4 0` |
@@ -1830,5 +1826,562 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/G/maj13/1` | fingers | `3 1 1 1 3 1` | `2 1 1 1 3 1` |
 | `ukulele/Ab/maj11/2` | fingers | `2 1 3 4` | `2 4 3 1` |
 | `ukulele/Eb/alt/1` | fingers | `3 4 1 2` | `4 3 1 2` |
+
+### 50. Muted the lowest string: it sounded a chord tone other than the root, and the next string up plays the root, so the chord now has its root in the bass (e.g. Bm 224432 -> x24432). Inversions that cannot be fixed this way are kept, with a notes/inverted-bass warning. Where the root-position version already exists as its own voicing, the inversion is kept as an alternative.
+
+[#11](https://github.com/tabsy-gr/chords-db/issues/11) · upstream [#17](https://github.com/tombatossals/chords-db/issues/17) · reported by [zero-is-one](https://github.com/zero-is-one)
+
+<details>
+<summary>229 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/69/3` | barres | `7` | `—` |
+| `guitar/A/69/3` | capo | `true` | `false` |
+| `guitar/A/69/3` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
+| `guitar/A/69/3` | frets | `x77677` | `xx7677` |
+| `guitar/A/m6/4` | fingers | `0 1 1 3 1 2` | `0 0 1 3 1 2` |
+| `guitar/A/m6/4` | frets | `x77978` | `xx7978` |
+| `guitar/A/m7/6` | barres | `7` | `—` |
+| `guitar/A/m7/6` | capo | `true` | `false` |
+| `guitar/A/m7/6` | fingers | `0 1 1 4 2 3` | `0 0 1 4 2 3` |
+| `guitar/A/m7/6` | frets | `x77988` | `xx7988` |
+| `guitar/A/maj7sharp5/4` | frets | `9cba99` | `xcba99` |
+| `guitar/A/maj9/4` | barres | `12` | `—` |
+| `guitar/A/maj9/4` | fingers | `2 2 1 4 3 0` | `0 2 1 4 3 0` |
+| `guitar/A/maj9/4` | frets | `ccbdcx` | `xcbdcx` |
+| `guitar/A/mmaj7/3` | barres | `7` | `—` |
+| `guitar/A/mmaj7/3` | capo | `true` | `false` |
+| `guitar/A/mmaj7/3` | fingers | `0 1 1 3 4 2` | `0 0 1 3 4 2` |
+| `guitar/A/mmaj7/3` | frets | `x77998` | `xx7998` |
+| `guitar/A/mmaj7b5/4` | fingers | `1 2 3 3 3 0` | `0 2 3 3 3 0` |
+| `guitar/A/mmaj7b5/4` | frets | `bcdddx` | `xcdddx` |
+| `guitar/A/sus4/4` | barres | `7` | `—` |
+| `guitar/A/sus4/4` | capo | `true` | `false` |
+| `guitar/A/sus4/4` | fingers | `0 1 1 2 3 4` | `0 0 1 2 3 4` |
+| `guitar/A/sus4/4` | frets | `x779aa` | `xx79aa` |
+| `guitar/Ab/6/3` | fingers | `0 1 1 3 1 4` | `0 0 1 3 1 4` |
+| `guitar/Ab/6/3` | frets | `x66868` | `xx6868` |
+| `guitar/Ab/7/1` | fingers | `0 0 1 1 1 2` | `0 0 0 1 1 2` |
+| `guitar/Ab/7/1` | frets | `xx1112` | `xxx112` |
+| `guitar/Ab/7/3` | barres | `6` | `—` |
+| `guitar/Ab/7/3` | capo | `true` | `false` |
+| `guitar/Ab/7/3` | fingers | `0 1 1 3 2 4` | `0 0 1 3 2 4` |
+| `guitar/Ab/7/3` | frets | `x66878` | `xx6878` |
+| `guitar/Ab/7/4` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/Ab/7/4` | frets | `bbdbdb` | `xbdbdb` |
+| `guitar/Ab/7sus4/1` | barres | `1 2` | `2` |
+| `guitar/Ab/7sus4/1` | fingers | `0 0 1 1 2 2` | `0 0 0 1 2 2` |
+| `guitar/Ab/7sus4/1` | frets | `xx1122` | `xxx122` |
+| `guitar/Ab/7sus4/4` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/Ab/7sus4/4` | frets | `bbdbeb` | `xbdbeb` |
+| `guitar/Ab/9/4` | fingers | `2 2 1 3 3 4` | `0 2 1 3 3 4` |
+| `guitar/Ab/9/4` | frets | `bbabbb` | `xbabbb` |
+| `guitar/Ab/dim7/4` | fingers | `1 2 3 1 4 1` | `0 2 3 1 4 1` |
+| `guitar/Ab/dim7/4` | frets | `abcaca` | `xbcaca` |
+| `guitar/Ab/m6/3` | fingers | `0 1 1 3 1 2` | `0 0 1 3 1 2` |
+| `guitar/Ab/m6/3` | frets | `x66867` | `xx6867` |
+| `guitar/Ab/m7/3` | barres | `6` | `—` |
+| `guitar/Ab/m7/3` | capo | `true` | `false` |
+| `guitar/Ab/m7/3` | fingers | `0 1 1 4 2 3` | `0 0 1 4 2 3` |
+| `guitar/Ab/m7/3` | frets | `x66877` | `xx6877` |
+| `guitar/Ab/m7/5` | fingers | `1 1 3 1 2 1` | `0 1 3 1 2 1` |
+| `guitar/Ab/m7/5` | frets | `bbdbcb` | `xbdbcb` |
+| `guitar/Ab/maj11/4` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/Ab/maj11/4` | frets | `bbbcdb` | `xbbcdb` |
+| `guitar/Ab/maj7/2` | barres | `6` | `8` |
+| `guitar/Ab/maj7/2` | fingers | `0 1 1 3 3 3` | `0 0 1 3 3 3` |
+| `guitar/Ab/maj7/2` | frets | `x66888` | `xx6888` |
+| `guitar/Ab/maj7/4` | fingers | `1 1 3 2 4 1` | `0 1 3 2 4 1` |
+| `guitar/Ab/maj7/4` | frets | `bbdcdb` | `xbdcdb` |
+| `guitar/Ab/maj7sharp5/3` | fingers | `1 4 3 2 1 1` | `0 4 3 2 1 1` |
+| `guitar/Ab/maj7sharp5/3` | frets | `8ba988` | `xba988` |
+| `guitar/Ab/maj9/4` | barres | `11` | `—` |
+| `guitar/Ab/maj9/4` | fingers | `2 2 1 4 3 0` | `0 2 1 4 3 0` |
+| `guitar/Ab/maj9/4` | frets | `bbacbx` | `xbacbx` |
+| `guitar/Ab/major/3` | barres | `6` | `—` |
+| `guitar/Ab/major/3` | capo | `true` | `false` |
+| `guitar/Ab/major/3` | fingers | `0 1 1 2 4 3` | `0 0 1 2 4 3` |
+| `guitar/Ab/major/3` | frets | `x66898` | `xx6898` |
+| `guitar/Ab/major/4` | fingers | `1 4 3 1 2 1` | `0 4 3 1 2 1` |
+| `guitar/Ab/major/4` | frets | `8ba898` | `xba898` |
+| `guitar/Ab/minor/4` | fingers | `1 1 3 4 2 1` | `0 1 3 4 2 1` |
+| `guitar/Ab/minor/4` | frets | `bbddcb` | `xbddcb` |
+| `guitar/Ab/mmaj11/2` | fingers | `0 1 1 1 3 2` | `0 0 1 1 3 2` |
+| `guitar/Ab/mmaj11/2` | frets | `x66687` | `xx6687` |
+| `guitar/Ab/mmaj11/4` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/Ab/mmaj11/4` | frets | `bbbccb` | `xbbccb` |
+| `guitar/Ab/mmaj7/3` | barres | `6` | `—` |
+| `guitar/Ab/mmaj7/3` | capo | `true` | `false` |
+| `guitar/Ab/mmaj7/3` | fingers | `0 1 1 3 4 2` | `0 0 1 3 4 2` |
+| `guitar/Ab/mmaj7/3` | frets | `x66887` | `xx6887` |
+| `guitar/Ab/sus2/4` | fingers | `1 1 3 4 1 1` | `0 1 3 4 1 1` |
+| `guitar/Ab/sus2/4` | frets | `bbddbb` | `xbddbb` |
+| `guitar/Ab/sus4/3` | barres | `6` | `—` |
+| `guitar/Ab/sus4/3` | capo | `true` | `false` |
+| `guitar/Ab/sus4/3` | fingers | `0 1 1 2 3 4` | `0 0 1 2 3 4` |
+| `guitar/Ab/sus4/3` | frets | `x66899` | `xx6899` |
+| `guitar/Ab/sus4/4` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
+| `guitar/Ab/sus4/4` | frets | `bbddeb` | `xbddeb` |
+| `guitar/B/11/2` | fingers | `1 1 1 1 3 1` | `0 1 1 1 3 1` |
+| `guitar/B/11/2` | frets | `222242` | `x22242` |
+| `guitar/B/13/2` | fingers | `1 1 1 1 3 4` | `0 1 1 1 3 4` |
+| `guitar/B/13/2` | frets | `222244` | `x22244` |
+| `guitar/B/69/3` | barres | `9` | `—` |
+| `guitar/B/69/3` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
+| `guitar/B/69/3` | frets | `x99899` | `xx9899` |
+| `guitar/B/7/2` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/B/7/2` | frets | `224242` | `x24242` |
+| `guitar/B/7/3` | fingers | `0 0 1 1 1 2` | `0 0 0 1 1 2` |
+| `guitar/B/7/3` | frets | `xx4445` | `xxx445` |
+| `guitar/B/7sus4/2` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/B/7sus4/2` | frets | `224252` | `x24252` |
+| `guitar/B/7sus4/3` | barres | `4 5` | `5` |
+| `guitar/B/7sus4/3` | fingers | `0 0 1 1 2 2` | `0 0 0 1 2 2` |
+| `guitar/B/7sus4/3` | frets | `xx4455` | `xxx455` |
+| `guitar/B/aug/2` | fingers | `0 0 4 2 3 1` | `0 0 0 2 3 1` |
+| `guitar/B/aug/2` | frets | `xx5443` | `xxx443` |
+| `guitar/B/m6/1` | fingers | `2 3 0 1 0 4` | `0 3 0 1 0 4` |
+| `guitar/B/m6/1` | frets | `220102` | `x20102` |
+| `guitar/B/m7/2` | fingers | `1 1 3 1 2 1` | `0 1 3 1 2 1` |
+| `guitar/B/m7/2` | frets | `224232` | `x24232` |
+| `guitar/B/m7/3` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
+| `guitar/B/m7/3` | frets | `xx4435` | `xxx435` |
+| `guitar/B/m7/5` | barres | `9` | `—` |
+| `guitar/B/m7/5` | capo | `true` | `false` |
+| `guitar/B/m7/5` | fingers | `0 1 1 4 2 3` | `0 0 1 4 2 3` |
+| `guitar/B/m7/5` | frets | `x99baa` | `xx9baa` |
+| `guitar/B/maj11/2` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/B/maj11/2` | frets | `222342` | `x22342` |
+| `guitar/B/maj7/1` | fingers | `1 1 3 2 4 1` | `0 1 3 2 4 1` |
+| `guitar/B/maj7/1` | frets | `224342` | `x24342` |
+| `guitar/B/maj7/2` | fingers | `0 0 1 1 1 4` | `0 0 0 1 1 4` |
+| `guitar/B/maj7/2` | frets | `xx4446` | `xxx446` |
+| `guitar/B/maj7/4` | barres | `9 11` | `11` |
+| `guitar/B/maj7/4` | fingers | `0 1 1 3 3 3` | `0 0 1 3 3 3` |
+| `guitar/B/maj7/4` | frets | `x99bbb` | `xx9bbb` |
+| `guitar/B/maj7sharp5/4` | fingers | `1 4 3 2 1 1` | `0 4 3 2 1 1` |
+| `guitar/B/maj7sharp5/4` | frets | `bedcbb` | `xedcbb` |
+| `guitar/B/maj9/1` | barres | `2` | `—` |
+| `guitar/B/maj9/1` | fingers | `2 2 1 4 3 0` | `0 2 1 4 3 0` |
+| `guitar/B/maj9/1` | frets | `22132x` | `x2132x` |
+| `guitar/B/major/1` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
+| `guitar/B/major/1` | frets | `224442` | `x24442` |
+| `guitar/B/major/4` | barres | `9` | `—` |
+| `guitar/B/major/4` | capo | `true` | `false` |
+| `guitar/B/major/4` | fingers | `0 1 1 2 4 3` | `0 0 1 2 4 3` |
+| `guitar/B/major/4` | frets | `x99bcb` | `xx9bcb` |
+| `guitar/B/minor/1` | fingers | `1 1 3 4 2 1` | `0 1 3 4 2 1` |
+| `guitar/B/minor/1` | frets | `224432` | `x24432` |
+| `guitar/B/mmaj11/2` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/B/mmaj11/2` | frets | `222332` | `x22332` |
+| `guitar/B/mmaj11/4` | fingers | `0 1 1 1 3 2` | `0 0 1 1 3 2` |
+| `guitar/B/mmaj11/4` | frets | `x999ba` | `xx99ba` |
+| `guitar/B/mmaj7/2` | fingers | `1 1 4 2 3 1` | `0 1 4 2 3 1` |
+| `guitar/B/mmaj7/2` | frets | `224332` | `x24332` |
+| `guitar/B/mmaj7/4` | barres | `9` | `—` |
+| `guitar/B/mmaj7/4` | capo | `true` | `false` |
+| `guitar/B/mmaj7/4` | fingers | `0 1 1 3 4 2` | `0 0 1 3 4 2` |
+| `guitar/B/mmaj7/4` | frets | `x99bba` | `xx9bba` |
+| `guitar/B/sus2/1` | fingers | `1 1 3 4 1 1` | `0 1 3 4 1 1` |
+| `guitar/B/sus2/1` | frets | `224422` | `x24422` |
+| `guitar/B/sus4/1` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
+| `guitar/B/sus4/1` | frets | `224452` | `x24452` |
+| `guitar/B/sus4/4` | barres | `9 12` | `12` |
+| `guitar/B/sus4/4` | fingers | `0 1 1 3 4 4` | `0 0 1 3 4 4` |
+| `guitar/B/sus4/4` | frets | `x99bcc` | `xx9bcc` |
+| `guitar/Bb/69/3` | barres | `8` | `—` |
+| `guitar/Bb/69/3` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
+| `guitar/Bb/69/3` | frets | `x88788` | `xx8788` |
+| `guitar/Bb/7/3` | barres | `8` | `—` |
+| `guitar/Bb/7/3` | capo | `true` | `false` |
+| `guitar/Bb/7/3` | fingers | `0 1 1 3 2 4` | `0 0 1 3 2 4` |
+| `guitar/Bb/7/3` | frets | `x88a9a` | `xx8a9a` |
+| `guitar/Bb/7sus4/2` | barres | `3 4` | `4` |
+| `guitar/Bb/7sus4/2` | fingers | `0 0 1 1 2 2` | `0 0 0 1 2 2` |
+| `guitar/Bb/7sus4/2` | frets | `xx3344` | `xxx344` |
+| `guitar/Bb/m7/3` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
+| `guitar/Bb/m7/3` | frets | `xx3324` | `xxx324` |
+| `guitar/Bb/m7/5` | barres | `8` | `—` |
+| `guitar/Bb/m7/5` | capo | `true` | `false` |
+| `guitar/Bb/m7/5` | fingers | `0 1 1 4 2 3` | `0 0 1 4 2 3` |
+| `guitar/Bb/m7/5` | frets | `x88a99` | `xx8a99` |
+| `guitar/Bb/maj7/2` | fingers | `0 0 1 1 1 4` | `0 0 0 1 1 4` |
+| `guitar/Bb/maj7/2` | frets | `xx3335` | `xxx335` |
+| `guitar/Bb/maj7/4` | barres | `8 10` | `10` |
+| `guitar/Bb/maj7/4` | fingers | `0 1 1 3 3 3` | `0 0 1 3 3 3` |
+| `guitar/Bb/maj7/4` | frets | `x88aaa` | `xx8aaa` |
+| `guitar/Bb/maj7sharp5/4` | fingers | `1 4 3 2 1 1` | `0 4 3 2 1 1` |
+| `guitar/Bb/maj7sharp5/4` | frets | `adcbaa` | `xdcbaa` |
+| `guitar/Bb/maj9/1` | barres | `1` | `—` |
+| `guitar/Bb/maj9/1` | fingers | `1 1 0 3 2 0` | `0 1 0 3 2 0` |
+| `guitar/Bb/maj9/1` | frets | `11021x` | `x1021x` |
+| `guitar/Bb/major/4` | barres | `8` | `—` |
+| `guitar/Bb/major/4` | capo | `true` | `false` |
+| `guitar/Bb/major/4` | fingers | `0 1 1 2 4 3` | `0 0 1 2 4 3` |
+| `guitar/Bb/major/4` | frets | `x88aba` | `xx8aba` |
+| `guitar/Bb/mmaj11/3` | fingers | `0 1 1 1 3 2` | `0 0 1 1 3 2` |
+| `guitar/Bb/mmaj11/3` | frets | `x888a9` | `xx88a9` |
+| `guitar/Bb/mmaj7/3` | barres | `8` | `—` |
+| `guitar/Bb/mmaj7/3` | capo | `true` | `false` |
+| `guitar/Bb/mmaj7/3` | fingers | `0 1 1 3 4 2` | `0 0 1 3 4 2` |
+| `guitar/Bb/mmaj7/3` | frets | `x88aa9` | `xx8aa9` |
+| `guitar/Bb/sus2/1` | fingers | `1 1 3 4 1 1` | `0 1 3 4 1 1` |
+| `guitar/Bb/sus2/1` | frets | `113311` | `x13311` |
+| `guitar/Bb/sus4/4` | barres | `8` | `—` |
+| `guitar/Bb/sus4/4` | capo | `true` | `false` |
+| `guitar/Bb/sus4/4` | fingers | `0 1 1 2 3 4` | `0 0 1 2 3 4` |
+| `guitar/Bb/sus4/4` | frets | `x88abb` | `xx8abb` |
+| `guitar/C/13/2` | fingers | `1 1 1 1 3 4` | `0 1 1 1 3 4` |
+| `guitar/C/13/2` | frets | `333355` | `x33355` |
+| `guitar/C/69/4` | barres | `10` | `—` |
+| `guitar/C/69/4` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
+| `guitar/C/69/4` | frets | `xaa9aa` | `xxa9aa` |
+| `guitar/C/7/3` | fingers | `0 0 1 1 1 2` | `0 0 0 1 1 2` |
+| `guitar/C/7/3` | frets | `xx5556` | `xxx556` |
+| `guitar/C/7sus4/2` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/C/7sus4/2` | frets | `335363` | `x35363` |
+| `guitar/C/7sus4/3` | barres | `5` | `—` |
+| `guitar/C/7sus4/3` | capo | `true` | `false` |
+| `guitar/C/7sus4/3` | fingers | `0 0 1 1 2 3` | `0 0 0 1 2 3` |
+| `guitar/C/7sus4/3` | frets | `xx5566` | `xxx566` |
+| `guitar/C/9/2` | fingers | `2 2 1 3 3 4` | `0 2 1 3 3 4` |
+| `guitar/C/9/2` | frets | `332333` | `x32333` |
+| `guitar/C/m69/4` | barres | `10` | `—` |
+| `guitar/C/m69/4` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
+| `guitar/C/m69/4` | frets | `xaa8aa` | `xxa8aa` |
+| `guitar/C/m7/3` | fingers | `1 1 3 1 2 1` | `0 1 3 1 2 1` |
+| `guitar/C/m7/3` | frets | `335343` | `x35343` |
+| `guitar/C/m7/4` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
+| `guitar/C/m7/4` | frets | `xx5546` | `xxx546` |
+| `guitar/C/maj7/1` | fingers | `2 3 1 0 0 0` | `0 3 1 0 0 0` |
+| `guitar/C/maj7/1` | frets | `332000` | `x32000` |
+| `guitar/C/maj7/2` | fingers | `1 1 3 2 4 1` | `0 1 3 2 4 1` |
+| `guitar/C/maj7/2` | frets | `335453` | `x35453` |
+| `guitar/C/maj7/3` | fingers | `0 0 1 1 1 4` | `0 0 0 1 1 4` |
+| `guitar/C/maj7/3` | frets | `xx5557` | `xxx557` |
+| `guitar/C/maj9/2` | barres | `3` | `—` |
+| `guitar/C/maj9/2` | fingers | `2 2 1 4 3 0` | `0 2 1 4 3 0` |
+| `guitar/C/maj9/2` | frets | `33243x` | `x3243x` |
+| `guitar/C/minor/2` | fingers | `1 1 3 4 2 1` | `0 1 3 4 2 1` |
+| `guitar/C/minor/2` | frets | `335543` | `x35543` |
+| `guitar/C/mmaj11/2` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/C/mmaj11/2` | frets | `333443` | `x33443` |
+| `guitar/C/mmaj7/2` | fingers | `1 1 4 2 3 1` | `0 1 4 2 3 1` |
+| `guitar/C/mmaj7/2` | frets | `335443` | `x35443` |
+| `guitar/C/sus2/3` | fingers | `1 1 3 4 1 1` | `0 1 3 4 1 1` |
+| `guitar/C/sus2/3` | frets | `335533` | `x35533` |
+| `guitar/C/sus4/2` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
+| `guitar/C/sus4/2` | frets | `335563` | `x35563` |
+| `guitar/Csharp/13/2` | fingers | `1 1 1 1 3 4` | `0 1 1 1 3 4` |
+| `guitar/Csharp/13/2` | frets | `444466` | `x44466` |
+| `guitar/Csharp/7sus4/2` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/Csharp/7sus4/2` | frets | `446474` | `x46474` |
+| `guitar/Csharp/9/1` | fingers | `2 2 1 3 3 4` | `0 2 1 3 3 4` |
+| `guitar/Csharp/9/1` | frets | `443444` | `x43444` |
+| `guitar/Csharp/m69/4` | barres | `11` | `—` |
+| `guitar/Csharp/m69/4` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
+| `guitar/Csharp/m69/4` | frets | `xbb9bb` | `xxb9bb` |
+| `guitar/Csharp/m7/3` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
+| `guitar/Csharp/m7/3` | frets | `xx6657` | `xxx657` |
+| `guitar/Csharp/maj11/2` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/Csharp/maj11/2` | frets | `444564` | `x44564` |
+| `guitar/Csharp/maj7/2` | fingers | `1 1 3 2 4 1` | `0 1 3 2 4 1` |
+| `guitar/Csharp/maj7/2` | frets | `446564` | `x46564` |
+| `guitar/Csharp/maj7sharp5/1` | fingers | `1 4 3 2 1 1` | `0 4 3 2 1 1` |
+| `guitar/Csharp/maj7sharp5/1` | frets | `143211` | `x43211` |
+| `guitar/Csharp/major/2` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
+| `guitar/Csharp/major/2` | frets | `446664` | `x46664` |
+| `guitar/Csharp/minor/2` | fingers | `1 1 3 4 2 1` | `0 1 3 4 2 1` |
+| `guitar/Csharp/minor/2` | frets | `446654` | `x46654` |
+| `guitar/Csharp/mmaj11/2` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/Csharp/mmaj11/2` | frets | `444554` | `x44554` |
+| `guitar/Csharp/mmaj7/2` | fingers | `1 1 4 2 3 1` | `0 1 4 2 3 1` |
+| `guitar/Csharp/mmaj7/2` | frets | `446554` | `x46554` |
+| `guitar/Csharp/mmaj7/4` | barres | `11` | `—` |
+| `guitar/Csharp/mmaj7/4` | capo | `true` | `false` |
+| `guitar/Csharp/mmaj7/4` | fingers | `0 1 1 3 4 2` | `0 0 1 3 4 2` |
+| `guitar/Csharp/mmaj7/4` | frets | `xbbddc` | `xxbddc` |
+| `guitar/Csharp/mmaj9/3` | barres | `4` | `—` |
+| `guitar/Csharp/mmaj9/3` | fingers | `1 1 4 3 2 0` | `0 1 4 3 2 0` |
+| `guitar/Csharp/mmaj9/3` | frets | `446540` | `x46540` |
+| `guitar/Csharp/sus2/1` | fingers | `1 1 3 4 1 1` | `0 1 3 4 1 1` |
+| `guitar/Csharp/sus2/1` | frets | `446644` | `x46644` |
+| `guitar/Csharp/sus4/2` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
+| `guitar/Csharp/sus4/2` | frets | `446674` | `x46674` |
+| `guitar/D/13/2` | fingers | `1 1 1 1 3 4` | `0 1 1 1 3 4` |
+| `guitar/D/13/2` | frets | `555577` | `x55577` |
+| `guitar/D/69/4` | barres | `12` | `—` |
+| `guitar/D/69/4` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
+| `guitar/D/69/4` | frets | `xccbcc` | `xxcbcc` |
+| `guitar/D/7/3` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/D/7/3` | frets | `557575` | `x57575` |
+| `guitar/D/7sharp9/2` | frets | `000a78` | `xx0a78` |
+| `guitar/D/7sus4/3` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/D/7sus4/3` | frets | `557585` | `x57585` |
+| `guitar/D/9/1` | fingers | `2 2 1 3 3 4` | `0 2 1 3 3 4` |
+| `guitar/D/9/1` | frets | `554555` | `x54555` |
+| `guitar/D/m69/4` | barres | `12` | `—` |
+| `guitar/D/m69/4` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
+| `guitar/D/m69/4` | frets | `xccacc` | `xxcacc` |
+| `guitar/D/m7/4` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
+| `guitar/D/m7/4` | frets | `xx7768` | `xxx768` |
+| `guitar/D/maj11/2` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/D/maj11/2` | frets | `555675` | `x55675` |
+| `guitar/D/maj7/3` | fingers | `1 1 3 2 4 1` | `0 1 3 2 4 1` |
+| `guitar/D/maj7/3` | frets | `557675` | `x57675` |
+| `guitar/D/maj7/4` | fingers | `0 0 1 1 1 4` | `0 0 0 1 1 4` |
+| `guitar/D/maj7/4` | frets | `xx7779` | `xxx779` |
+| `guitar/D/maj7sharp5/2` | fingers | `1 4 3 2 1 1` | `0 4 3 2 1 1` |
+| `guitar/D/maj7sharp5/2` | frets | `254322` | `x54322` |
+| `guitar/D/minor/2` | fingers | `1 1 3 4 2 1` | `0 1 3 4 2 1` |
+| `guitar/D/minor/2` | frets | `557765` | `x57765` |
+| `guitar/D/mmaj11/3` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/D/mmaj11/3` | frets | `555775` | `x55775` |
+| `guitar/D/mmaj11/3` | relabelled | `Dmmaj11` | `Dadd11` |
+| `guitar/D/mmaj7/3` | fingers | `1 1 4 2 3 1` | `0 1 4 2 3 1` |
+| `guitar/D/mmaj7/3` | frets | `557665` | `x57665` |
+| `guitar/D/sus2/3` | fingers | `1 1 3 4 1 1` | `0 1 3 4 1 1` |
+| `guitar/D/sus2/3` | frets | `557755` | `x57755` |
+| `guitar/D/sus4/3` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
+| `guitar/D/sus4/3` | frets | `557785` | `x57785` |
+| `guitar/E/13/4` | fingers | `1 1 1 1 3 4` | `0 1 1 1 3 4` |
+| `guitar/E/13/4` | frets | `777799` | `x77799` |
+| `guitar/E/7/3` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/E/7/3` | frets | `779797` | `x79797` |
+| `guitar/E/7/4` | fingers | `0 0 1 1 1 2` | `0 0 0 1 1 2` |
+| `guitar/E/7/4` | frets | `xx999a` | `xxx99a` |
+| `guitar/E/7sus4/3` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/E/7sus4/3` | frets | `7797a7` | `x797a7` |
+| `guitar/E/7sus4/4` | barres | `9` | `—` |
+| `guitar/E/7sus4/4` | capo | `true` | `false` |
+| `guitar/E/7sus4/4` | fingers | `0 0 1 1 2 3` | `0 0 0 1 2 3` |
+| `guitar/E/7sus4/4` | frets | `xx99aa` | `xxx9aa` |
+| `guitar/E/9/3` | fingers | `2 2 1 3 3 4` | `0 2 1 3 3 4` |
+| `guitar/E/9/3` | frets | `776777` | `x76777` |
+| `guitar/E/m7/6` | fingers | `1 1 3 1 2 1` | `0 1 3 1 2 1` |
+| `guitar/E/m7/6` | frets | `779787` | `x79787` |
+| `guitar/E/m7/7` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
+| `guitar/E/m7/7` | frets | `xx998a` | `xxx98a` |
+| `guitar/E/maj11/3` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/E/maj11/3` | frets | `777897` | `x77897` |
+| `guitar/E/maj7/4` | fingers | `1 1 3 2 4 1` | `0 1 3 2 4 1` |
+| `guitar/E/maj7/4` | frets | `779897` | `x79897` |
+| `guitar/E/maj7sharp5/2` | fingers | `1 4 3 2 1 1` | `0 4 3 2 1 1` |
+| `guitar/E/maj7sharp5/2` | frets | `476544` | `x76544` |
+| `guitar/E/mmaj11/2` | fingers | `0 1 1 1 3 2` | `0 0 1 1 3 2` |
+| `guitar/E/mmaj11/2` | frets | `x22243` | `xx2243` |
+| `guitar/E/mmaj11/4` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/E/mmaj11/4` | frets | `777887` | `x77887` |
+| `guitar/E/mmaj7/4` | fingers | `1 1 4 2 3 1` | `0 1 4 2 3 1` |
+| `guitar/E/mmaj7/4` | frets | `779887` | `x79887` |
+| `guitar/E/sus4/3` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
+| `guitar/E/sus4/3` | frets | `7799a7` | `x799a7` |
+| `guitar/Eb/13/2` | fingers | `1 1 1 1 3 4` | `0 1 1 1 3 4` |
+| `guitar/Eb/13/2` | frets | `666688` | `x66688` |
+| `guitar/Eb/7/3` | fingers | `0 0 1 1 1 2` | `0 0 0 1 1 2` |
+| `guitar/Eb/7/3` | frets | `xx8889` | `xxx889` |
+| `guitar/Eb/7sus4/3` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/Eb/7sus4/3` | frets | `668696` | `x68696` |
+| `guitar/Eb/m6/1` | fingers | `0 1 1 3 1 2` | `0 0 1 3 1 2` |
+| `guitar/Eb/m6/1` | frets | `x11312` | `xx1312` |
+| `guitar/Eb/m7/3` | fingers | `1 1 3 1 2 1` | `0 1 3 1 2 1` |
+| `guitar/Eb/m7/3` | frets | `668676` | `x68676` |
+| `guitar/Eb/m7/4` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
+| `guitar/Eb/m7/4` | frets | `xx8879` | `xxx879` |
+| `guitar/Eb/maj11/3` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/Eb/maj11/3` | frets | `666786` | `x66786` |
+| `guitar/Eb/maj7/1` | barres | `1 3` | `3` |
+| `guitar/Eb/maj7/1` | fingers | `0 1 1 3 3 3` | `0 0 1 3 3 3` |
+| `guitar/Eb/maj7/1` | frets | `x11333` | `xx1333` |
+| `guitar/Eb/maj7/3` | fingers | `1 1 3 2 4 1` | `0 1 3 2 4 1` |
+| `guitar/Eb/maj7/3` | frets | `668786` | `x68786` |
+| `guitar/Eb/maj7/4` | fingers | `0 0 1 1 1 4` | `0 0 0 1 1 4` |
+| `guitar/Eb/maj7/4` | frets | `xx888a` | `xxx88a` |
+| `guitar/Eb/maj7sharp5/1` | fingers | `1 4 3 2 1 1` | `0 4 3 2 1 1` |
+| `guitar/Eb/maj7sharp5/1` | frets | `365433` | `x65433` |
+| `guitar/Eb/minor/3` | fingers | `1 1 3 4 2 1` | `0 1 3 4 2 1` |
+| `guitar/Eb/minor/3` | frets | `668876` | `x68876` |
+| `guitar/Eb/mmaj11/1` | fingers | `0 1 1 1 3 2` | `0 0 1 1 3 2` |
+| `guitar/Eb/mmaj11/1` | frets | `x11132` | `xx1132` |
+| `guitar/Eb/mmaj11/3` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/Eb/mmaj11/3` | frets | `666776` | `x66776` |
+| `guitar/Eb/sus2/2` | fingers | `1 1 3 4 1 1` | `0 1 3 4 1 1` |
+| `guitar/Eb/sus2/2` | frets | `668866` | `x68866` |
+| `guitar/Eb/sus4/2` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
+| `guitar/Eb/sus4/2` | frets | `668896` | `x68896` |
+| `guitar/F/13/4` | fingers | `1 1 1 1 3 4` | `0 1 1 1 3 4` |
+| `guitar/F/13/4` | frets | `8888aa` | `x888aa` |
+| `guitar/F/6/2` | fingers | `0 1 1 3 1 4` | `0 0 1 3 1 4` |
+| `guitar/F/6/2` | frets | `x33535` | `xx3535` |
+| `guitar/F/6/4` | barres | `8 10` | `10` |
+| `guitar/F/6/4` | fingers | `1 1 3 3 3 3` | `0 1 3 3 3 3` |
+| `guitar/F/6/4` | frets | `88aaaa` | `x8aaaa` |
+| `guitar/F/7/2` | barres | `3` | `—` |
+| `guitar/F/7/2` | capo | `true` | `false` |
+| `guitar/F/7/2` | fingers | `0 1 1 3 2 4` | `0 0 1 3 2 4` |
+| `guitar/F/7/2` | frets | `x33545` | `xx3545` |
+| `guitar/F/7/3` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/F/7/3` | frets | `88a8a8` | `x8a8a8` |
+| `guitar/F/7/4` | fingers | `0 0 1 1 1 2` | `0 0 0 1 1 2` |
+| `guitar/F/7/4` | frets | `xxaaab` | `xxxaab` |
+| `guitar/F/7sus4/2` | fingers | `1 2 3 4 1 1` | `0 2 3 4 1 1` |
+| `guitar/F/7sus4/2` | frets | `688866` | `x88866` |
+| `guitar/F/7sus4/3` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/F/7sus4/3` | frets | `88a8b8` | `x8a8b8` |
+| `guitar/F/7sus4/4` | barres | `10` | `—` |
+| `guitar/F/7sus4/4` | capo | `true` | `false` |
+| `guitar/F/7sus4/4` | fingers | `0 0 1 1 3 4` | `0 0 0 1 3 4` |
+| `guitar/F/7sus4/4` | frets | `xxaabb` | `xxxabb` |
+| `guitar/F/9/3` | fingers | `2 2 1 3 3 4` | `0 2 1 3 3 4` |
+| `guitar/F/9/3` | frets | `887888` | `x87888` |
+| `guitar/F/dim7/3` | fingers | `1 2 3 1 4 1` | `0 2 3 1 4 1` |
+| `guitar/F/dim7/3` | frets | `789797` | `x89797` |
+| `guitar/F/m7/5` | fingers | `1 1 3 1 2 1` | `0 1 3 1 2 1` |
+| `guitar/F/m7/5` | frets | `88a898` | `x8a898` |
+| `guitar/F/m7/6` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
+| `guitar/F/m7/6` | frets | `xxaa9b` | `xxxa9b` |
+| `guitar/F/m9/2` | fingers | `0 1 2 0 3 4` | `0 0 2 0 3 4` |
+| `guitar/F/m9/2` | frets | `x33044` | `xx3044` |
+| `guitar/F/maj11/3` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/F/maj11/3` | frets | `8889a8` | `x889a8` |
+| `guitar/F/maj7/3` | barres | `3` | `5` |
+| `guitar/F/maj7/3` | fingers | `0 1 1 3 3 3` | `0 0 1 3 3 3` |
+| `guitar/F/maj7/3` | frets | `x33555` | `xx3555` |
+| `guitar/F/maj7/4` | fingers | `1 1 3 2 4 1` | `0 1 3 2 4 1` |
+| `guitar/F/maj7/4` | frets | `88a9a8` | `x8a9a8` |
+| `guitar/F/maj7sharp5/2` | fingers | `1 4 3 2 1 1` | `0 4 3 2 1 1` |
+| `guitar/F/maj7sharp5/2` | frets | `587655` | `x87655` |
+| `guitar/F/mmaj11/2` | fingers | `0 1 1 1 3 2` | `0 0 1 1 3 2` |
+| `guitar/F/mmaj11/2` | frets | `x33354` | `xx3354` |
+| `guitar/F/mmaj11/4` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/F/mmaj11/4` | frets | `888998` | `x88998` |
+| `guitar/F/mmaj7/3` | fingers | `1 1 4 2 3 1` | `0 1 4 2 3 1` |
+| `guitar/F/mmaj7/3` | frets | `88a998` | `x8a998` |
+| `guitar/F/sus2/3` | fingers | `1 1 3 4 1 1` | `0 1 3 4 1 1` |
+| `guitar/F/sus2/3` | frets | `88aa88` | `x8aa88` |
+| `guitar/F/sus4/3` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
+| `guitar/F/sus4/3` | frets | `88aab8` | `x8aab8` |
+| `guitar/Fsharp/13/4` | fingers | `1 1 1 1 3 4` | `0 1 1 1 3 4` |
+| `guitar/Fsharp/13/4` | frets | `9999bb` | `x999bb` |
+| `guitar/Fsharp/6/3` | fingers | `0 1 1 3 1 4` | `0 0 1 3 1 4` |
+| `guitar/Fsharp/6/3` | frets | `x44646` | `xx4646` |
+| `guitar/Fsharp/7/2` | barres | `4` | `—` |
+| `guitar/Fsharp/7/2` | capo | `true` | `false` |
+| `guitar/Fsharp/7/2` | fingers | `0 1 1 3 2 4` | `0 0 1 3 2 4` |
+| `guitar/Fsharp/7/2` | frets | `x44656` | `xx4656` |
+| `guitar/Fsharp/7/4` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/Fsharp/7/4` | frets | `99b9b9` | `x9b9b9` |
+| `guitar/Fsharp/7sus4/4` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/Fsharp/7sus4/4` | frets | `99b9c9` | `x9b9c9` |
+| `guitar/Fsharp/9/3` | fingers | `2 2 1 3 3 4` | `0 2 1 3 3 4` |
+| `guitar/Fsharp/9/3` | frets | `998999` | `x98999` |
+| `guitar/Fsharp/dim7/4` | fingers | `1 2 3 1 4 1` | `0 2 3 1 4 1` |
+| `guitar/Fsharp/dim7/4` | frets | `89a8a8` | `x9a8a8` |
+| `guitar/Fsharp/m6/2` | fingers | `0 1 1 3 1 2` | `0 0 1 3 1 2` |
+| `guitar/Fsharp/m6/2` | frets | `x44645` | `xx4645` |
+| `guitar/Fsharp/m7/5` | fingers | `1 1 3 1 2 1` | `0 1 3 1 2 1` |
+| `guitar/Fsharp/m7/5` | frets | `99b9a9` | `x9b9a9` |
+| `guitar/Fsharp/m7/6` | fingers | `0 0 2 3 1 4` | `0 0 0 3 1 4` |
+| `guitar/Fsharp/m7/6` | frets | `xxbbac` | `xxxbac` |
+| `guitar/Fsharp/maj11/4` | fingers | `1 1 1 2 4 1` | `0 1 1 2 4 1` |
+| `guitar/Fsharp/maj11/4` | frets | `999ab9` | `x99ab9` |
+| `guitar/Fsharp/maj7/2` | barres | `4` | `6` |
+| `guitar/Fsharp/maj7/2` | fingers | `0 1 1 3 3 3` | `0 0 1 3 3 3` |
+| `guitar/Fsharp/maj7/2` | frets | `x44666` | `xx4666` |
+| `guitar/Fsharp/maj7/4` | fingers | `1 1 3 2 4 1` | `0 1 3 2 4 1` |
+| `guitar/Fsharp/maj7/4` | frets | `99bab9` | `x9bab9` |
+| `guitar/Fsharp/maj7sharp5/2` | fingers | `1 4 3 2 1 1` | `0 4 3 2 1 1` |
+| `guitar/Fsharp/maj7sharp5/2` | frets | `698766` | `x98766` |
+| `guitar/Fsharp/maj9/4` | barres | `9` | `—` |
+| `guitar/Fsharp/maj9/4` | fingers | `2 2 1 4 3 0` | `0 2 1 4 3 0` |
+| `guitar/Fsharp/maj9/4` | frets | `998a9x` | `x98a9x` |
+| `guitar/Fsharp/major/2` | barres | `4` | `—` |
+| `guitar/Fsharp/major/2` | capo | `true` | `false` |
+| `guitar/Fsharp/major/2` | fingers | `0 1 1 2 4 3` | `0 0 1 2 4 3` |
+| `guitar/Fsharp/major/2` | frets | `x44676` | `xx4676` |
+| `guitar/Fsharp/major/3` | fingers | `1 4 3 1 2 1` | `0 4 3 1 2 1` |
+| `guitar/Fsharp/major/3` | frets | `698676` | `x98676` |
+| `guitar/Fsharp/major/4` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
+| `guitar/Fsharp/major/4` | frets | `99bbb9` | `x9bbb9` |
+| `guitar/Fsharp/minor/2` | barres | `4` | `—` |
+| `guitar/Fsharp/minor/2` | capo | `true` | `false` |
+| `guitar/Fsharp/minor/2` | fingers | `0 1 1 3 4 2` | `0 0 1 3 4 2` |
+| `guitar/Fsharp/minor/2` | frets | `x44675` | `xx4675` |
+| `guitar/Fsharp/minor/4` | fingers | `1 1 3 4 2 1` | `0 1 3 4 2 1` |
+| `guitar/Fsharp/minor/4` | frets | `99bba9` | `x9bba9` |
+| `guitar/Fsharp/mmaj11/2` | fingers | `0 1 1 1 3 2` | `0 0 1 1 3 2` |
+| `guitar/Fsharp/mmaj11/2` | frets | `x44465` | `xx4465` |
+| `guitar/Fsharp/mmaj11/4` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/Fsharp/mmaj11/4` | frets | `999aa9` | `x99aa9` |
+| `guitar/Fsharp/mmaj7/2` | barres | `4` | `—` |
+| `guitar/Fsharp/mmaj7/2` | capo | `true` | `false` |
+| `guitar/Fsharp/mmaj7/2` | fingers | `0 1 1 3 4 2` | `0 0 1 3 4 2` |
+| `guitar/Fsharp/mmaj7/2` | frets | `x44665` | `xx4665` |
+| `guitar/Fsharp/mmaj7/4` | fingers | `1 1 4 2 3 1` | `0 1 4 2 3 1` |
+| `guitar/Fsharp/mmaj7/4` | frets | `99baa9` | `x9baa9` |
+| `guitar/Fsharp/sus2/3` | fingers | `1 1 3 4 1 1` | `0 1 3 4 1 1` |
+| `guitar/Fsharp/sus2/3` | frets | `99bb99` | `x9bb99` |
+| `guitar/Fsharp/sus4/2` | barres | `4` | `—` |
+| `guitar/Fsharp/sus4/2` | capo | `true` | `false` |
+| `guitar/Fsharp/sus4/2` | fingers | `0 1 1 2 3 4` | `0 0 1 2 3 4` |
+| `guitar/Fsharp/sus4/2` | frets | `x44677` | `xx4677` |
+| `guitar/Fsharp/sus4/3` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
+| `guitar/Fsharp/sus4/3` | frets | `99bbc9` | `x9bbc9` |
+| `guitar/G/6/3` | fingers | `0 1 1 3 1 4` | `0 0 1 3 1 4` |
+| `guitar/G/6/3` | frets | `x55757` | `xx5757` |
+| `guitar/G/69/3` | barres | `5` | `—` |
+| `guitar/G/69/3` | capo | `true` | `false` |
+| `guitar/G/69/3` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
+| `guitar/G/69/3` | frets | `x55455` | `xx5455` |
+| `guitar/G/7/3` | barres | `5` | `—` |
+| `guitar/G/7/3` | capo | `true` | `false` |
+| `guitar/G/7/3` | fingers | `0 1 1 3 2 4` | `0 0 1 3 2 4` |
+| `guitar/G/7/3` | frets | `x55767` | `xx5767` |
+| `guitar/G/7/4` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/G/7/4` | frets | `aacaca` | `xacaca` |
+| `guitar/G/7sharp9/3` | fingers | `0 2 3 1 4 4` | `0 0 3 1 4 4` |
+| `guitar/G/7sharp9/3` | frets | `x55466` | `xx5466` |
+| `guitar/G/7sus4/4` | fingers | `1 1 3 1 4 1` | `0 1 3 1 4 1` |
+| `guitar/G/7sus4/4` | frets | `aacada` | `xacada` |
+| `guitar/G/9/4` | fingers | `2 2 1 3 3 4` | `0 2 1 3 3 4` |
+| `guitar/G/9/4` | frets | `aa9aaa` | `xa9aaa` |
+| `guitar/G/m6/3` | fingers | `0 1 1 3 1 2` | `0 0 1 3 1 2` |
+| `guitar/G/m6/3` | frets | `x55756` | `xx5756` |
+| `guitar/G/m69/2` | barres | `5` | `—` |
+| `guitar/G/m69/2` | fingers | `0 2 2 1 3 4` | `0 0 2 1 3 4` |
+| `guitar/G/m69/2` | frets | `x55355` | `xx5355` |
+| `guitar/G/m7/3` | barres | `5` | `—` |
+| `guitar/G/m7/3` | capo | `true` | `false` |
+| `guitar/G/m7/3` | fingers | `0 1 1 4 2 3` | `0 0 1 4 2 3` |
+| `guitar/G/m7/3` | frets | `x55766` | `xx5766` |
+| `guitar/G/m7/5` | fingers | `1 1 3 1 2 1` | `0 1 3 1 2 1` |
+| `guitar/G/m7/5` | frets | `aacaba` | `xacaba` |
+| `guitar/G/maj11/4` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/G/maj11/4` | frets | `aaabca` | `xaabca` |
+| `guitar/G/maj7/3` | barres | `5 7` | `7` |
+| `guitar/G/maj7/3` | fingers | `0 1 1 3 3 3` | `0 0 1 3 3 3` |
+| `guitar/G/maj7/3` | frets | `x55777` | `xx5777` |
+| `guitar/G/maj7sharp5/3` | fingers | `1 4 3 2 1 1` | `0 4 3 2 1 1` |
+| `guitar/G/maj7sharp5/3` | frets | `7a9877` | `xa9877` |
+| `guitar/G/major/5` | fingers | `1 4 3 1 2 1` | `0 4 3 1 2 1` |
+| `guitar/G/major/5` | frets | `7a9787` | `xa9787` |
+| `guitar/G/minor/4` | fingers | `1 1 3 4 2 1` | `0 1 3 4 2 1` |
+| `guitar/G/minor/4` | frets | `aaccba` | `xaccba` |
+| `guitar/G/mmaj11/2` | fingers | `0 1 1 1 3 2` | `0 0 1 1 3 2` |
+| `guitar/G/mmaj11/2` | frets | `x55576` | `xx5576` |
+| `guitar/G/mmaj11/4` | fingers | `1 1 1 2 3 1` | `0 1 1 2 3 1` |
+| `guitar/G/mmaj11/4` | frets | `aaabba` | `xaabba` |
+| `guitar/G/mmaj7/3` | barres | `5` | `—` |
+| `guitar/G/mmaj7/3` | capo | `true` | `false` |
+| `guitar/G/mmaj7/3` | fingers | `0 1 1 3 4 2` | `0 0 1 3 4 2` |
+| `guitar/G/mmaj7/3` | frets | `x55776` | `xx5776` |
+| `guitar/G/sus2/4` | fingers | `1 1 3 4 1 1` | `0 1 3 4 1 1` |
+| `guitar/G/sus2/4` | frets | `aaccaa` | `xaccaa` |
+| `guitar/G/sus4/3` | barres | `5 8` | `8` |
+| `guitar/G/sus4/3` | fingers | `0 1 1 3 4 4` | `0 0 1 3 4 4` |
+| `guitar/G/sus4/3` | frets | `x55788` | `xx5788` |
+| `guitar/G/sus4/4` | fingers | `1 1 2 3 4 1` | `0 1 2 3 4 1` |
+| `guitar/G/sus4/4` | frets | `aaccda` | `xaccda` |
 
 </details>

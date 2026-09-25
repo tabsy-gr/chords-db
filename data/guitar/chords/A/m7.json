@@ -39,10 +39,8 @@
     },
     {
       "id": "guitar/A/m7/6",
-      "frets": [-1, 7, 7, 9, 8, 8],
-      "fingers": [0, 1, 1, 4, 2, 3],
-      "barres": [7],
-      "capo": true,
+      "frets": [-1, -1, 7, 9, 8, 8],
+      "fingers": [0, 0, 1, 4, 2, 3],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

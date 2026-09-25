@@ -18,8 +18,8 @@
     },
     {
       "id": "guitar/E/sus4/3",
-      "frets": [7, 7, 9, 9, 10, 7],
-      "fingers": [1, 1, 2, 3, 4, 1],
+      "frets": [-1, 7, 9, 9, 10, 7],
+      "fingers": [0, 1, 2, 3, 4, 1],
       "barres": [7],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

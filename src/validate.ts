@@ -70,6 +70,11 @@ export const RULES: Record<string, { severity: Severity; description: string }> 
     severity: 'error',
     description: "A slash chord's lowest note is not its bass note.",
   },
+  'notes/inverted-bass': {
+    severity: 'warning',
+    description:
+      "The lowest note of a chord that is not a slash chord is not its root (an inversion), which a player reading the chord name may not expect.",
+  },
   'degrees/mismatch': {
     severity: 'error',
     description: 'A keyboard voicing labels a note with the wrong chord degree.',
@@ -188,13 +193,15 @@ const checkNotes = (
   // Only meaningful when the courses ascend in pitch: on a re-entrant tuning
   // (ukulele G4 C4 E4 A4) the lowest note is an artifact of the tuning.
   if (
-    bassPc !== null &&
     instrument.kind === 'fretted' &&
     isAscending(instrument.tunings.standard.map((c) => frettedMidi([0], [c])[0]))
   ) {
     const lowest = Math.min(...midi) % 12;
-    if (lowest !== bassPc) {
+    if (bassPc !== null && lowest !== bassPc) {
       out.push(issue('notes/wrong-bass', `lowest note is ${pcName(lowest)}, not ${bass}`, id));
+    }
+    if (bassPc === null && !voicing.rootless && lowest !== root && sounding.has(root)) {
+      out.push(issue('notes/inverted-bass', `lowest note is ${pcName(lowest)}, not ${chord.key}`, id));
     }
   }
 

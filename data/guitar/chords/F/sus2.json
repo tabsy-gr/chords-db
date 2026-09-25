@@ -21,8 +21,8 @@
     },
     {
       "id": "guitar/F/sus2/3",
-      "frets": [8, 8, 10, 10, 8, 8],
-      "fingers": [1, 1, 3, 4, 1, 1],
+      "frets": [-1, 8, 10, 10, 8, 8],
+      "fingers": [0, 1, 3, 4, 1, 1],
       "barres": [8],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

@@ -19,8 +19,8 @@
     },
     {
       "id": "guitar/G/7sharp9/3",
-      "frets": [-1, 5, 5, 4, 6, 6],
-      "fingers": [0, 2, 3, 1, 4, 4],
+      "frets": [-1, -1, 5, 4, 6, 6],
+      "fingers": [0, 0, 3, 1, 4, 4],
       "barres": [6],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

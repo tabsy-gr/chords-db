@@ -25,8 +25,8 @@
     },
     {
       "id": "guitar/G/major/5",
-      "frets": [7, 10, 9, 7, 8, 7],
-      "fingers": [1, 4, 3, 1, 2, 1],
+      "frets": [-1, 10, 9, 7, 8, 7],
+      "fingers": [0, 4, 3, 1, 2, 1],
       "barres": [7],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

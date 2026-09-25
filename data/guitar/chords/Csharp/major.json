@@ -12,8 +12,8 @@
     },
     {
       "id": "guitar/Csharp/major/2",
-      "frets": [4, 4, 6, 6, 6, 4],
-      "fingers": [1, 1, 2, 3, 4, 1],
+      "frets": [-1, 4, 6, 6, 6, 4],
+      "fingers": [0, 1, 2, 3, 4, 1],
       "barres": [4],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

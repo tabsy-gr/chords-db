@@ -26,8 +26,8 @@
     },
     {
       "id": "guitar/D/m7/4",
-      "frets": [-1, -1, 7, 7, 6, 8],
-      "fingers": [0, 0, 2, 3, 1, 4],
+      "frets": [-1, -1, -1, 7, 6, 8],
+      "fingers": [0, 0, 0, 3, 1, 4],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

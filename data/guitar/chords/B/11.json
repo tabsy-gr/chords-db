@@ -11,8 +11,8 @@
     },
     {
       "id": "guitar/B/11/2",
-      "frets": [2, 2, 2, 2, 4, 2],
-      "fingers": [1, 1, 1, 1, 3, 1],
+      "frets": [-1, 2, 2, 2, 4, 2],
+      "fingers": [0, 1, 1, 1, 3, 1],
       "barres": [2],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

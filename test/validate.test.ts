@@ -80,6 +80,15 @@ describe('notes', () => {
     expect(rules(ukulele, 'C', '/E', v([0, 0, 0, 3], [0, 0, 0, 3]))).not.toContain('notes/wrong-bass');
   });
 
+  it('warns when a plain chord has a non-root bass, on guitar only', () => {
+    // Bm as 224432 has F# in the bass; x24432 has B.
+    const bm = (frets: number[]) => validateVoicing(guitar, { key: 'B', suffix: 'minor' }, v(frets, frets.map((f) => (f > 0 ? 1 : 0)) as FrettedVoicing['fingers'])).issues.filter((i) => i.rule.startsWith('notes/'));
+    expect(bm([2, 2, 4, 4, 3, 2]).map((i) => [i.rule, i.severity])).toEqual([['notes/inverted-bass', 'warning']]);
+    expect(bm([-1, 2, 4, 4, 3, 2])).toEqual([]);
+    // Re-entrant ukulele: C major 0003 has G lowest by pitch, no warning.
+    expect(rules(ukulele, 'C', 'major', v([0, 0, 0, 3], [0, 0, 0, 3]))).toEqual([]);
+  });
+
   it('flags a silent voicing', () => {
     expect(rules(guitar, 'C', 'major', v([-1, -1, -1, -1, -1, -1], [0, 0, 0, 0, 0, 0]))).toContain('notes/silent');
   });

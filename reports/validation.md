@@ -6,17 +6,18 @@ are defined in `src/validate.ts` and the chord formulas in
 
 - Voicings checked: 5891
 - Voicings with errors: 16
-- Voicings with warnings only: 44
-- Chord-level findings: 457
+- Voicings with warnings only: 171
+- Chord-level findings: 464
 
 ## Summary
 
 | Rule | Severity | guitar | piano | ukulele | Total |
 | --- | --- | ---: | ---: | ---: | ---: |
 | [`chord/suffix-not-listed`](#chordsuffix-not-listed) | warning | 0 | 36 | 0 | 36 |
-| [`chord/not-easiest-first`](#chordnot-easiest-first) | warning | 335 | 0 | 86 | 421 |
+| [`chord/not-easiest-first`](#chordnot-easiest-first) | warning | 342 | 0 | 86 | 428 |
 | [`notes/foreign`](#notesforeign) | error | 1 | 0 | 0 | 1 |
 | [`notes/missing-tone`](#notesmissing-tone) | error | 16 | 0 | 0 | 16 |
+| [`notes/inverted-bass`](#notesinverted-bass) | warning | 127 | 0 | 0 | 127 |
 | [`barres/muted-inside`](#barresmuted-inside) | warning | 55 | 0 | 0 | 55 |
 
 ## chord/suffix-not-listed
@@ -66,9 +67,10 @@ The suffix is missing from the instrument's suffix list. (warning)
 
 The voicings are not ordered easiest first (by playability score). (warning)
 
-### guitar (335)
+### guitar (342)
 
 - **A5** (`data/guitar/chords/A/5.json`): easiest first would be 2, 1, 3
+- **A69** (`data/guitar/chords/A/69.json`): easiest first would be 1, 3, 2, 4
 - **A7** (`data/guitar/chords/A/7.json`): easiest first would be 1, 2, 4, 3
 - **A7#9** (`data/guitar/chords/A/7sharp9.json`): easiest first would be 2, 3, 1, 4
 - **A7sus4** (`data/guitar/chords/A/7sus4.json`): easiest first would be 1, 3, 2, 4
@@ -95,7 +97,7 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **Aminor** (`data/guitar/chords/A/minor.json`): easiest first would be 1, 2, 4, 3
 - **Asus2** (`data/guitar/chords/A/sus2.json`): easiest first would be 1, 2, 4, 3
 - **Asus2sus4** (`data/guitar/chords/A/sus2sus4.json`): easiest first would be 1, 3, 2
-- **Asus4** (`data/guitar/chords/A/sus4.json`): easiest first would be 2, 1, 3, 4
+- **Asus4** (`data/guitar/chords/A/sus4.json`): easiest first would be 2, 1, 4, 3
 - **Ab5** (`data/guitar/chords/Ab/5.json`): easiest first would be 1, 3, 2
 - **Ab7#9** (`data/guitar/chords/Ab/7sharp9.json`): easiest first would be 1, 3, 2, 4
 - **Ab7sus2/F#** (`data/guitar/chords/Ab/7sus2_Fsharp.json`): easiest first would be 1, 2, 4, 3
@@ -121,13 +123,15 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **Abm/F** (`data/guitar/chords/Ab/m_F.json`): easiest first would be 4, 3, 1, 2
 - **Abm/F#** (`data/guitar/chords/Ab/m_Fsharp.json`): easiest first would be 2, 1, 4, 3
 - **Abm/G** (`data/guitar/chords/Ab/m_G.json`): easiest first would be 4, 2, 1, 3
-- **Abmaj7** (`data/guitar/chords/Ab/maj7.json`): easiest first would be 1, 3, 2, 4
 - **Abmaj7b5** (`data/guitar/chords/Ab/maj7b5.json`): easiest first would be 2, 1, 4
 - **Abmaj7sus2** (`data/guitar/chords/Ab/maj7sus2.json`): easiest first would be 1, 2, 4, 3
+- **Abmajor** (`data/guitar/chords/Ab/major.json`): easiest first would be 1, 3, 2, 4
 - **Abmmaj7b5** (`data/guitar/chords/Ab/mmaj7b5.json`): easiest first would be 1, 2, 4, 3
 - **Absus** (`data/guitar/chords/Ab/sus.json`): easiest first would be 1, 3, 2, 4
+- **Absus4** (`data/guitar/chords/Ab/sus4.json`): easiest first would be 1, 3, 2, 4
 - **B13** (`data/guitar/chords/B/13.json`): easiest first would be 2, 1, 3, 4
 - **B5** (`data/guitar/chords/B/5.json`): easiest first would be 2, 1, 3
+- **B69** (`data/guitar/chords/B/69.json`): easiest first would be 1, 3, 2, 4
 - **B7#9** (`data/guitar/chords/B/7sharp9.json`): easiest first would be 1, 2, 4, 3
 - **B7sus2/A** (`data/guitar/chords/B/7sus2_A.json`): easiest first would be 1, 4, 2, 3
 - **B9** (`data/guitar/chords/B/9.json`): easiest first would be 1, 2, 4, 3
@@ -152,8 +156,10 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **Bmaj7b5** (`data/guitar/chords/B/maj7b5.json`): easiest first would be 1, 3, 2, 4
 - **Bmaj7sus2** (`data/guitar/chords/B/maj7sus2.json`): easiest first would be 1, 4, 2, 3
 - **Bmaj9** (`data/guitar/chords/B/maj9.json`): easiest first would be 1, 2, 4, 3
+- **Bmajor** (`data/guitar/chords/B/major.json`): easiest first would be 1, 2, 4, 3
 - **Bsus2sus4** (`data/guitar/chords/B/sus2sus4.json`): easiest first would be 1, 3, 2
 - **Bb5** (`data/guitar/chords/Bb/5.json`): easiest first would be 2, 1, 3
+- **Bb69** (`data/guitar/chords/Bb/69.json`): easiest first would be 1, 3, 2, 4
 - **Bb7#9** (`data/guitar/chords/Bb/7sharp9.json`): easiest first would be 1, 3, 2, 4
 - **Bb7sus2/Ab** (`data/guitar/chords/Bb/7sus2_Ab.json`): easiest first would be 1, 4, 2, 3
 - **Bb/B** (`data/guitar/chords/Bb/_B.json`): easiest first would be 1, 4, 2, 3
@@ -177,11 +183,13 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **Bbm/G** (`data/guitar/chords/Bb/m_G.json`): easiest first would be 4, 3, 1, 2
 - **Bbmaj7b5** (`data/guitar/chords/Bb/maj7b5.json`): easiest first would be 1, 3, 2, 4
 - **Bbmaj7sus2** (`data/guitar/chords/Bb/maj7sus2.json`): easiest first would be 1, 4, 2, 3
+- **Bbmajor** (`data/guitar/chords/Bb/major.json`): easiest first would be 1, 2, 4, 3
 - **Bbminor** (`data/guitar/chords/Bb/minor.json`): easiest first would be 1, 3, 2, 4
 - **Bbmmaj9** (`data/guitar/chords/Bb/mmaj9.json`): easiest first would be 2, 1, 3, 4
 - **Bbsus2sus4** (`data/guitar/chords/Bb/sus2sus4.json`): easiest first would be 1, 3, 2
+- **Bbsus4** (`data/guitar/chords/Bb/sus4.json`): easiest first would be 1, 2, 4, 3
 - **C5** (`data/guitar/chords/C/5.json`): easiest first would be 2, 1, 3
-- **C69** (`data/guitar/chords/C/69.json`): easiest first would be 2, 1, 3, 4
+- **C69** (`data/guitar/chords/C/69.json`): easiest first would be 2, 1, 4, 3
 - **C7/G** (`data/guitar/chords/C/7_G.json`): easiest first would be 2, 1, 3
 - **C7b9** (`data/guitar/chords/C/7b9.json`): easiest first would be 1, 2, 4, 3
 - **C7#9** (`data/guitar/chords/C/7sharp9.json`): easiest first would be 1, 2, 4, 3
@@ -239,6 +247,7 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **C#mmaj7b5** (`data/guitar/chords/Csharp/mmaj7b5.json`): easiest first would be 1, 2, 4, 3
 - **C#mmaj9** (`data/guitar/chords/Csharp/mmaj9.json`): easiest first would be 2, 1, 3, 4
 - **D5** (`data/guitar/chords/D/5.json`): easiest first would be 2, 1, 3
+- **D69** (`data/guitar/chords/D/69.json`): easiest first would be 1, 2, 4, 3
 - **D9b5** (`data/guitar/chords/D/9b5.json`): easiest first would be 2, 1, 3, 4
 - **D/A** (`data/guitar/chords/D/_A.json`): easiest first would be 3, 1, 2, 4
 - **D/E** (`data/guitar/chords/D/_E.json`): easiest first would be 1, 2, 4, 3
@@ -371,7 +380,6 @@ The voicings are not ordered easiest first (by playability score). (warning)
 - **F#maj7b5** (`data/guitar/chords/Fsharp/maj7b5.json`): easiest first would be 1, 2, 4, 3
 - **F#maj7sus2** (`data/guitar/chords/Fsharp/maj7sus2.json`): easiest first would be 1, 2, 4, 3
 - **F#maj9** (`data/guitar/chords/Fsharp/maj9.json`): easiest first would be 3, 1, 2, 4
-- **F#minor** (`data/guitar/chords/Fsharp/minor.json`): easiest first would be 1, 3, 2, 4
 - **F#mmaj7b5** (`data/guitar/chords/Fsharp/mmaj7b5.json`): easiest first would be 1, 2, 4, 3
 - **F#mmaj9** (`data/guitar/chords/Fsharp/mmaj9.json`): easiest first would be 2, 1, 3, 4
 - **F#sus** (`data/guitar/chords/Fsharp/sus.json`): easiest first would be 1, 3, 2, 4
@@ -523,6 +531,140 @@ A required chord tone does not sound (see the quality's "omittable" tones). (err
 - `guitar/F/6/1`: missing 5 (C)
 - `guitar/F/6/3`: missing 5 (C)
 - `guitar/Fsharp/6/2`: missing 5 (C#)
+
+## notes/inverted-bass
+
+The lowest note of a chord that is not a slash chord is not its root (an inversion), which a player reading the chord name may not expect. (warning)
+
+### guitar (127)
+
+- `guitar/A/11/4`: lowest note is B, not A
+- `guitar/A/7b5/4`: lowest note is G, not A
+- `guitar/A/sus2/3`: lowest note is B, not A
+- `guitar/Ab/11/2`: lowest note is Bb, not Ab
+- `guitar/Ab/6/1`: lowest note is C, not Ab
+- `guitar/Ab/69/1`: lowest note is Bb, not Ab
+- `guitar/Ab/7b5/3`: lowest note is F#, not Ab
+- `guitar/Ab/7b9/1`: lowest note is A, not Ab
+- `guitar/Ab/aug9/1`: lowest note is F#, not Ab
+- `guitar/Ab/dim7/1`: lowest note is D, not Ab
+- `guitar/Ab/m69/3`: lowest note is B, not Ab
+- `guitar/Ab/m7b5/1`: lowest note is D, not Ab
+- `guitar/Ab/m9/3`: lowest note is B, not Ab
+- `guitar/Ab/maj9/1`: lowest note is Bb, not Ab
+- `guitar/Ab/minor/3`: lowest note is B, not Ab
+- `guitar/Ab/mmaj7/1`: lowest note is B, not Ab
+- `guitar/Ab/mmaj7b5/3`: lowest note is D, not Ab
+- `guitar/Ab/mmaj9/3`: lowest note is Bb, not Ab
+- `guitar/Ab/sus2/3`: lowest note is Bb, not Ab
+- `guitar/Ab/sus4/1`: lowest note is Eb, not Ab
+- `guitar/B/11/4`: lowest note is C#, not B
+- `guitar/B/aug9/2`: lowest note is A, not B
+- `guitar/B/aug9/4`: lowest note is Eb, not B
+- `guitar/B/dim7/2`: lowest note is F, not B
+- `guitar/B/m6/2`: lowest note is F#, not B
+- `guitar/B/m69/2`: lowest note is D, not B
+- `guitar/B/m69/4`: lowest note is D, not B
+- `guitar/B/m9/2`: lowest note is C#, not B
+- `guitar/B/m9/4`: lowest note is D, not B
+- `guitar/B/madd9/1`: lowest note is D, not B
+- `guitar/B/major/2`: lowest note is F#, not B
+- `guitar/B/minor/4`: lowest note is D, not B
+- `guitar/B/sus2/3`: lowest note is C#, not B
+- `guitar/B/sus4/2`: lowest note is F#, not B
+- `guitar/Bb/11/3`: lowest note is C, not Bb
+- `guitar/Bb/aug9/2`: lowest note is Ab, not Bb
+- `guitar/Bb/dim7/2`: lowest note is E, not Bb
+- `guitar/Bb/m6/2`: lowest note is C#, not Bb
+- `guitar/Bb/m69/3`: lowest note is C#, not Bb
+- `guitar/Bb/m7b5/2`: lowest note is E, not Bb
+- `guitar/Bb/madd9/1`: lowest note is C#, not Bb
+- `guitar/Bb/maj7sharp5/2`: lowest note is F#, not Bb
+- `guitar/Bb/mmaj9/4`: lowest note is C, not Bb
+- `guitar/Bb/sus2/3`: lowest note is C, not Bb
+- `guitar/Bb/sus4/2`: lowest note is F, not Bb
+- `guitar/C/7b5/1`: lowest note is E, not C
+- `guitar/C/9/1`: lowest note is E, not C
+- `guitar/C/aug9/3`: lowest note is Bb, not C
+- `guitar/C/dim7/1`: lowest note is Eb, not C
+- `guitar/C/m7b5/2`: lowest note is F#, not C
+- `guitar/C/m9/3`: lowest note is Eb, not C
+- `guitar/C/maj9/3`: lowest note is E, not C
+- `guitar/C/major/3`: lowest note is G, not C
+- `guitar/Csharp/7sharp9/3`: lowest note is F, not C#
+- `guitar/Csharp/dim7/1`: lowest note is E, not C#
+- `guitar/Csharp/m6/2`: lowest note is Ab, not C#
+- `guitar/Csharp/m7b5/2`: lowest note is G, not C#
+- `guitar/Csharp/m9/2`: lowest note is Eb, not C#
+- `guitar/Csharp/m9/3`: lowest note is E, not C#
+- `guitar/Csharp/sus2/4`: lowest note is Eb, not C#
+- `guitar/D/11/4`: lowest note is F#, not D
+- `guitar/D/6/4`: lowest note is B, not D
+- `guitar/D/7b5/2`: lowest note is F#, not D
+- `guitar/D/7sharp9/3`: lowest note is F, not D
+- `guitar/D/m9/1`: lowest note is F, not D
+- `guitar/D/minor/3`: lowest note is F, not D
+- `guitar/D/mmaj7b5/2`: lowest note is Ab, not D
+- `guitar/D/sus2/2`: lowest note is E, not D
+- `guitar/D/sus2/4`: lowest note is E, not D
+- `guitar/E/69/3`: lowest note is F#, not E
+- `guitar/E/7b5/3`: lowest note is Ab, not E
+- `guitar/E/9/2`: lowest note is Ab, not E
+- `guitar/E/m6/4`: lowest note is B, not E
+- `guitar/E/m69/2`: lowest note is G, not E
+- `guitar/E/m7b5/3`: lowest note is Bb, not E
+- `guitar/E/maj9/2`: lowest note is Ab, not E
+- `guitar/E/mmaj7b5/3`: lowest note is Bb, not E
+- `guitar/E/sus2/1`: lowest note is F#, not E
+- `guitar/E/sus4/4`: lowest note is B, not E
+- `guitar/Eb/11/1`: lowest note is F, not Eb
+- `guitar/Eb/69/2`: lowest note is C, not Eb
+- `guitar/Eb/7b5/2`: lowest note is G, not Eb
+- `guitar/Eb/7sharp9/3`: lowest note is F#, not Eb
+- `guitar/Eb/aug/1`: lowest note is G, not Eb
+- `guitar/Eb/aug9/1`: lowest note is G, not Eb
+- `guitar/Eb/dim7/3`: lowest note is A, not Eb
+- `guitar/Eb/m6/3`: lowest note is Bb, not Eb
+- `guitar/Eb/m69/1`: lowest note is F#, not Eb
+- `guitar/Eb/m7b5/3`: lowest note is A, not Eb
+- `guitar/Eb/m9/3`: lowest note is F#, not Eb
+- `guitar/Eb/madd9/1`: lowest note is F#, not Eb
+- `guitar/Eb/maj13/1`: lowest note is C, not Eb
+- `guitar/Eb/maj9/3`: lowest note is F, not Eb
+- `guitar/Eb/major/4`: lowest note is Bb, not Eb
+- `guitar/Eb/minor/2`: lowest note is F#, not Eb
+- `guitar/Eb/mmaj7b5/2`: lowest note is A, not Eb
+- `guitar/Eb/sus2/1`: lowest note is F, not Eb
+- `guitar/Eb/sus4/3`: lowest note is Bb, not Eb
+- `guitar/F/11/2`: lowest note is G, not F
+- `guitar/F/69/3`: lowest note is D, not F
+- `guitar/F/7b5/3`: lowest note is A, not F
+- `guitar/F/7sharp9/4`: lowest note is Ab, not F
+- `guitar/F/9/4`: lowest note is G, not F
+- `guitar/F/aug9/2`: lowest note is A, not F
+- `guitar/F/m6/4`: lowest note is C, not F
+- `guitar/F/m69/2`: lowest note is Ab, not F
+- `guitar/F/mmaj7b5/3`: lowest note is B, not F
+- `guitar/F/sus2/2`: lowest note is G, not F
+- `guitar/F/sus4/4`: lowest note is C, not F
+- `guitar/Fsharp/11/2`: lowest note is Ab, not F#
+- `guitar/Fsharp/69/3`: lowest note is Eb, not F#
+- `guitar/Fsharp/7b5/3`: lowest note is E, not F#
+- `guitar/Fsharp/9/4`: lowest note is Ab, not F#
+- `guitar/Fsharp/9b5/3`: lowest note is C, not F#
+- `guitar/Fsharp/m69/3`: lowest note is A, not F#
+- `guitar/Fsharp/m7b5/4`: lowest note is C, not F#
+- `guitar/Fsharp/maj13/2`: lowest note is Eb, not F#
+- `guitar/Fsharp/maj7sharp5/4`: lowest note is D, not F#
+- `guitar/Fsharp/minor/3`: lowest note is A, not F#
+- `guitar/Fsharp/mmaj7b5/3`: lowest note is C, not F#
+- `guitar/Fsharp/sus2/2`: lowest note is Ab, not F#
+- `guitar/Fsharp/sus4/4`: lowest note is C#, not F#
+- `guitar/G/11/2`: lowest note is A, not G
+- `guitar/G/m69/3`: lowest note is Bb, not G
+- `guitar/G/maj7sharp5/1`: lowest note is Eb, not G
+- `guitar/G/mmaj7b5/3`: lowest note is C#, not G
+- `guitar/G/sus2/2`: lowest note is A, not G
 
 ## barres/muted-inside
 

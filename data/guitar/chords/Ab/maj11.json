@@ -27,8 +27,8 @@
     },
     {
       "id": "guitar/Ab/maj11/4",
-      "frets": [11, 11, 11, 12, 13, 11],
-      "fingers": [1, 1, 1, 2, 3, 1],
+      "frets": [-1, 11, 11, 12, 13, 11],
+      "fingers": [0, 1, 1, 2, 3, 1],
       "barres": [11],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

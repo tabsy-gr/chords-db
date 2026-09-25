@@ -13,8 +13,8 @@
     },
     {
       "id": "guitar/Csharp/maj11/2",
-      "frets": [4, 4, 4, 5, 6, 4],
-      "fingers": [1, 1, 1, 2, 3, 1],
+      "frets": [-1, 4, 4, 5, 6, 4],
+      "fingers": [0, 1, 1, 2, 3, 1],
       "barres": [4],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
