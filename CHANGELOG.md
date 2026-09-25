@@ -5,6 +5,17 @@ of the original [tombatossals/chords-db](https://github.com/tombatossals/chords-
 For a full comparison with the original, see
 [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-DB.md).
 
+## Unreleased
+
+### Added
+* Cavaquinho (D G B D), from tombatossals/chords-db#43 by Hugo Rezende:
+  1,052 validated voicings in 168 chords. Every change to the contributed
+  data is listed in UPSTREAM-DIFF.md.
+* Ukulele in D tuning (A D F# B), generated from the ukulele, after
+  tombatossals/chords-db#32 by Henry.
+* The C/G triad xxx010, from tombatossals/chords-db#38 by jonmach.
+* Instrument setting `carriesBass`, and source type `derived`.
+
 ## 0.7.0
 
 The first release of the fork.
