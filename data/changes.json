@@ -2088,6 +2088,30 @@
       "issue": 11,
       "upstream": "tombatossals/chords-db#17",
       "reportedBy": "zero-is-one"
+    },
+    {
+      "ids": [
+        "guitar/Ab/m69/3",
+        "guitar/Ab/mmaj7b5/3",
+        "guitar/B/m9/2",
+        "guitar/Bb/m69/3",
+        "guitar/Bb/madd9/1",
+        "guitar/C/9/1",
+        "guitar/Csharp/m9/2",
+        "guitar/D/mmaj7b5/2",
+        "guitar/Eb/madd9/1",
+        "guitar/Eb/maj13/1",
+        "guitar/Eb/mmaj7b5/2",
+        "guitar/F/mmaj7b5/3",
+        "guitar/Fsharp/m69/3",
+        "guitar/Fsharp/maj13/2",
+        "guitar/Fsharp/mmaj7b5/3",
+        "guitar/G/mmaj7b5/3"
+      ],
+      "change": "Put the root in the bass with a three-string edit in the same neck position (e.g. A♭m(maj7)♭5 abcccx -> xbccca, the mirrored shape with the root on the A string).",
+      "issue": 11,
+      "upstream": "tombatossals/chords-db#17",
+      "reportedBy": "zero-is-one"
     }
   ]
 }

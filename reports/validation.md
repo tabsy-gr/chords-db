@@ -6,43 +6,27 @@ are defined in `src/validate.ts` and the chord formulas in
 
 - Voicings checked: 6036
 - Voicings with errors: 0
-- Voicings with warnings only: 25
+- Voicings with warnings only: 9
 - Chord-level findings: 0
 
 ## Summary
 
 | Rule | Severity | guitar | piano | ukulele | Total |
 | --- | --- | ---: | ---: | ---: | ---: |
-| [`notes/inverted-bass`](#notesinverted-bass) | warning | 25 | 0 | 0 | 25 |
+| [`notes/inverted-bass`](#notesinverted-bass) | warning | 9 | 0 | 0 | 9 |
 
 ## notes/inverted-bass
 
 The lowest note of a chord that is not a slash chord is not its root (an inversion), which a player reading the chord name may not expect. (warning)
 
-### guitar (25)
+### guitar (9)
 
-- `guitar/Ab/m69/3`: lowest note is B, not Ab
 - `guitar/Ab/m9/3`: lowest note is B, not Ab
-- `guitar/Ab/mmaj7b5/3`: lowest note is D, not Ab
 - `guitar/Ab/mmaj9/3`: lowest note is Bb, not Ab
 - `guitar/B/aug9/4`: lowest note is Eb, not B
-- `guitar/B/m9/2`: lowest note is C#, not B
 - `guitar/B/m9/4`: lowest note is D, not B
-- `guitar/Bb/m69/3`: lowest note is C#, not Bb
-- `guitar/Bb/madd9/1`: lowest note is C#, not Bb
 - `guitar/Bb/mmaj9/4`: lowest note is C, not Bb
-- `guitar/C/9/1`: lowest note is E, not C
-- `guitar/Csharp/m9/2`: lowest note is Eb, not C#
 - `guitar/D/m9/1`: lowest note is F, not D
-- `guitar/D/mmaj7b5/2`: lowest note is Ab, not D
 - `guitar/Eb/aug9/1`: lowest note is G, not Eb
 - `guitar/Eb/m69/1`: lowest note is F#, not Eb
-- `guitar/Eb/madd9/1`: lowest note is F#, not Eb
-- `guitar/Eb/maj13/1`: lowest note is C, not Eb
-- `guitar/Eb/mmaj7b5/2`: lowest note is A, not Eb
 - `guitar/F/aug9/2`: lowest note is A, not F
-- `guitar/F/mmaj7b5/3`: lowest note is B, not F
-- `guitar/Fsharp/m69/3`: lowest note is A, not F#
-- `guitar/Fsharp/maj13/2`: lowest note is Eb, not F#
-- `guitar/Fsharp/mmaj7b5/3`: lowest note is C, not F#
-- `guitar/G/mmaj7b5/3`: lowest note is C#, not G

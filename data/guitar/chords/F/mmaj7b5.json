@@ -24,8 +24,8 @@
     },
     {
       "id": "guitar/F/mmaj7b5/3",
-      "frets": [7, 8, 9, 9, 9, -1],
-      "fingers": [1, 2, 3, 3, 3, 0],
+      "frets": [-1, 8, 9, 9, 9, 7],
+      "fingers": [0, 2, 3, 3, 3, 1],
       "barres": [9],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
