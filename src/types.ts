@@ -72,6 +72,8 @@ export interface FrettedInstrument extends InstrumentBase {
   kind: 'fretted';
   /** Courses from lowest to highest; each lists the pitches of its strings. */
   tunings: Record<string, Pitch[][]>;
+  /** False if the instrument comps above a separate bass line (no root-in-bass rule). */
+  carriesBass?: boolean;
   maxFretSpan: number;
 }
 
