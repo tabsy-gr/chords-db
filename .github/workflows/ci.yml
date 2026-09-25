@@ -33,3 +33,11 @@ jobs:
 
       - name: Test
         run: npm run test:run
+
+      - name: Validation report is up to date
+        run: |
+          npm run validate
+          git diff --exit-code -- reports/ || {
+            echo "::error::reports/validation.md is out of date. Run 'npm run validate' and commit the result."
+            exit 1
+          }

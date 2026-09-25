@@ -122,6 +122,9 @@ Upstream's `src/tools.js` was never published. This fork publishes:
 | — | `noteToMidi(note, defaultOctave = 4)` |
 | — | `toChordDiagram(voicing, courses)` |
 | `strChord2array`, `processString`, `generate`, `numberOfBarres`, `unique` | removed; they processed the old hex-string format |
+| — | `validateVoicing(instrument, chord, voicing)` and `validateChord(instrument, chord)`: check notes, fingering and order (see the README) |
+| — | `qualities`, `parseSuffix(suffix)`: what each chord suffix contains, from `data/qualities.json` |
+| — | `playabilityScore(voicing, courses)`, `compareByPlayability(courses)`: sort voicings easiest first |
 
 ## Tooling (contributors only)
 
