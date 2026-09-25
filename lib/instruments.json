@@ -1,1 +1,1 @@
-{"guitar":{"name":"Guitar","kind":"fretted","chordCount":849,"voicingCount":3293},"piano":{"name":"Piano","kind":"keyboard","chordCount":672,"voicingCount":672},"ukulele":{"name":"Ukulele","kind":"fretted","chordCount":540,"voicingCount":2069}}
+{"cavaquinho":{"name":"Cavaquinho","kind":"fretted","chordCount":180,"voicingCount":1498},"guitar":{"name":"Guitar","kind":"fretted","chordCount":849,"voicingCount":3293},"piano":{"name":"Piano","kind":"keyboard","chordCount":672,"voicingCount":672},"ukulele":{"name":"Ukulele","kind":"fretted","chordCount":540,"voicingCount":2069}}

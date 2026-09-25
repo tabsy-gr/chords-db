@@ -77,9 +77,11 @@ export const computeDiffs = (): Diff[] => {
     diffs.push({ id, kind, before, after });
 
   for (const { instrument, chords } of loadInstruments()) {
-    const v1: V1Chords = JSON.parse(
-      fs.readFileSync(path.join(FIXTURES, `${instrument.id}.json`), 'utf8')
-    ).chords;
+    // An instrument upstream didn't have starts from nothing: all its voicings are added.
+    const fixture = path.join(FIXTURES, `${instrument.id}.json`);
+    const v1: V1Chords = fs.existsSync(fixture)
+      ? JSON.parse(fs.readFileSync(fixture, 'utf8')).chords
+      : {};
 
     const upstream = new Map<string, Located & { position: V1Position }>();
     for (const [dir, list] of Object.entries(v1)) {

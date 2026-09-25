@@ -43,7 +43,7 @@ describe('instrument metadata', () => {
     piano: pianoV1 as never,
   };
 
-  it.each(loadInstruments())('$instrument.id keeps upstream keys and tuning', ({ instrument }) => {
+  it.each(loadInstruments().filter(({ instrument }) => instrument.id in v1))('$instrument.id keeps upstream keys and tuning', ({ instrument }) => {
     const before = v1[instrument.id];
     expect(instrument.keys).toEqual(before.keys);
     if (instrument.kind === 'fretted') {
