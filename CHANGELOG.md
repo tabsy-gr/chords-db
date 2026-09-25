@@ -5,6 +5,13 @@ of the original [tombatossals/chords-db](https://github.com/tombatossals/chords-
 For a full comparison with the original, see
 [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-DB.md).
 
+## Unreleased
+
+### Changed
+* All bouzouki voicings, tetrachordo (1,367) and trichordo (445), are signed
+  off as verified by `geoioannid`. Each one passes the validator and a
+  separate check of its notes against the chord formulas.
+
 ## 0.9.0
 
 ### Added

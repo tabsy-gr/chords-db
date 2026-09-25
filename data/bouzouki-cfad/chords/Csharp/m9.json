@@ -7,7 +7,8 @@
       "id": "bouzouki-cfad/Csharp/m9/1",
       "frets": [13, 11, 14, 13],
       "fingers": [3, 1, 4, 2],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }

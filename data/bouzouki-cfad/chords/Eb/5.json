@@ -8,20 +8,23 @@
       "frets": [-1, 10, 13, 13],
       "fingers": [0, 1, 2, 2],
       "barres": [13],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-cfad/Eb/5/2",
       "frets": [10, 10, 13, 13],
       "fingers": [1, 1, 2, 2],
       "barres": [10, 13],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     },
     {
       "id": "bouzouki-cfad/Eb/5/3",
       "frets": [15, 17, 18, -1],
       "fingers": [1, 2, 3, 0],
-      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }],
+      "verified": { "by": "geoioannid", "date": "2026-09-25" }
     }
   ]
 }
