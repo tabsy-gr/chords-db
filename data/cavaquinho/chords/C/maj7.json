@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C",
+  "suffix": "maj7",
+  "voicings": [
+    {
+      "id": "cavaquinho/C/maj7/1",
+      "frets": [10, 9, 8, 9],
+      "fingers": [4, 2, 1, 3],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/C/maj7/2",
+      "frets": [10, 12, 12, 14],
+      "fingers": [1, 2, 3, 4],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/C/maj7/3",
+      "frets": [14, 12, 12, 10],
+      "fingers": [4, 2, 3, 1],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/C/maj7/4",
+      "frets": [2, 0, 0, 2],
+      "fingers": [1, 0, 0, 2],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/C/maj7/5",
+      "frets": [2, 4, 1, 5],
+      "fingers": [2, 1, 3, 4],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/C/maj7/6",
+      "frets": [5, 4, 1, 2],
+      "fingers": [4, 3, 1, 2],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/C/maj7/7",
+      "frets": [5, 4, 5, 5],
+      "fingers": [2, 1, 3, 4],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/C/maj7/8",
+      "frets": [5, 5, 5, 9],
+      "fingers": [1, 1, 1, 4],
+      "barres": [5],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/C/maj7/9",
+      "frets": [9, 5, 5, 5],
+      "fingers": [4, 1, 1, 1],
+      "barres": [5],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/C/maj7/10",
+      "frets": [9, 9, 8, 10],
+      "fingers": [2, 3, 1, 4],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/C/maj7/11",
+      "frets": [9, 9, 8, 9],
+      "fingers": [2, 3, 1, 4],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    }
+  ]
+}
