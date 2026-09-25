@@ -32,6 +32,9 @@ For a full comparison with the original, see
 * A voicing validator (`validateVoicing`, `validateChord`). It checks each
   voicing's notes against the chord's formula, the fingering against
   playability rules, and that voicings are ordered easiest first.
+* `rootless: true` on a voicing marks a deliberately rootless voicing (common
+  for extended chords on ukulele); the validator then requires the root to
+  be absent.
 * `data/qualities.json`: a formula for every chord quality, with a cited
   source, the tones a voicing may omit, and the suffix spellings each
   instrument uses. Cross-checked against tonal.

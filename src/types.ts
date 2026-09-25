@@ -32,6 +32,8 @@ export interface FrettedVoicing {
   /** Absolute frets barred by one finger. */
   barres?: number[];
   capo?: true;
+  /** Deliberately leaves out the root. */
+  rootless?: true;
   sources: Source[];
   verified?: Verified;
 }
@@ -43,6 +45,8 @@ export interface KeyboardVoicing {
   notes: string[];
   /** Chord degree of each note, e.g. '1', 'b3', '#9'. */
   degrees?: string[];
+  /** Deliberately leaves out the root. */
+  rootless?: true;
   sources: Source[];
   verified?: Verified;
 }

@@ -72,6 +72,7 @@ This fork publishes the instrument definition and the chords separately:
 | — | `id` on every voicing, e.g. `guitar/C/major/1`. Permanent: it never changes, even if the voicing is corrected. For upstream voicings, the number is the upstream position (1-based). |
 | — | `sources` on every voicing; upstream ones are `{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }` |
 | — | `verified` (optional): who confirmed the voicing, and when |
+| — | `rootless` (optional): the voicing deliberately leaves out the root |
 
 ### Fretted voicings
 

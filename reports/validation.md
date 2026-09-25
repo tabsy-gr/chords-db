@@ -5,7 +5,7 @@ are defined in `src/validate.ts` and the chord formulas in
 `data/qualities.json`.
 
 - Voicings checked: 5925
-- Voicings with errors: 1407
+- Voicings with errors: 1390
 - Voicings with warnings only: 29
 - Chord-level findings: 427
 
@@ -18,7 +18,7 @@ are defined in `src/validate.ts` and the chord formulas in
 | [`chord/not-easiest-first`](#chordnot-easiest-first) | warning | 302 | 0 | 89 | 391 |
 | [`notes/foreign`](#notesforeign) | error | 28 | 0 | 4 | 32 |
 | [`notes/missing-root`](#notesmissing-root) | error | 21 | 0 | 1033 | 1054 |
-| [`notes/missing-tone`](#notesmissing-tone) | error | 172 | 0 | 86 | 258 |
+| [`notes/missing-tone`](#notesmissing-tone) | error | 155 | 0 | 86 | 241 |
 | [`fingers/unfingered`](#fingersunfingered) | error | 12 | 0 | 0 | 12 |
 | [`fingers/on-unfretted`](#fingerson-unfretted) | error | 14 | 0 | 0 | 14 |
 | [`fingers/two-frets`](#fingerstwo-frets) | error | 2 | 0 | 0 | 2 |
@@ -524,7 +524,7 @@ A note that is not in the chord (or the slash chord's bass). (error)
 
 ## notes/missing-root
 
-The chord's root does not sound. (error)
+The chord's root does not sound, and the voicing is not marked rootless. (error)
 
 ### guitar (21)
 
@@ -1590,12 +1590,11 @@ The chord's root does not sound. (error)
 
 A required chord tone does not sound (see the quality's "omittable" tones). (error)
 
-### guitar (172)
+### guitar (155)
 
 - `guitar/A/6/4`: missing 5 (E)
 - `guitar/A/9sharp11/1`: missing 9 (B)
 - `guitar/A/9sharp11/3`: missing 9 (B)
-- `guitar/A/add11/1`: missing 5 (E)
 - `guitar/A/alt/1`: missing b7 (G)
 - `guitar/A/alt/2`: missing b7 (G)
 - `guitar/A/alt/3`: missing b7 (G)
@@ -1609,7 +1608,6 @@ A required chord tone does not sound (see the quality's "omittable" tones). (err
 - `guitar/Ab/9sharp11/1`: missing 9 (Bb)
 - `guitar/Ab/9sharp11/2`: missing 9 (Bb)
 - `guitar/Ab/9sharp11/4`: missing 9 (Bb)
-- `guitar/Ab/add11/3`: missing 5 (Eb)
 - `guitar/Ab/alt/1`: missing b7 (F#)
 - `guitar/Ab/alt/2`: missing b7 (F#)
 - `guitar/Ab/alt/3`: missing b7 (F#)
@@ -1623,8 +1621,6 @@ A required chord tone does not sound (see the quality's "omittable" tones). (err
 - `guitar/B/9sharp11/2`: missing 9 (C#)
 - `guitar/B/9sharp11/3`: missing 9 (C#)
 - `guitar/B/9sharp11/4`: missing 9 (C#)
-- `guitar/B/add11/1`: missing 5 (F#)
-- `guitar/B/add11/4`: missing 5 (F#)
 - `guitar/B/alt/1`: missing b7 (A)
 - `guitar/B/alt/2`: missing b7 (A)
 - `guitar/B/alt/3`: missing b7 (A)
@@ -1635,9 +1631,6 @@ A required chord tone does not sound (see the quality's "omittable" tones). (err
 - `guitar/B/m9_A/4`: missing b3 (D)
 - `guitar/Bb/6/4`: missing 3 (D), 5 (F), 6 (G)
 - `guitar/Bb/9sharp11/3`: missing 9 (C)
-- `guitar/Bb/add11/2`: missing 5 (F)
-- `guitar/Bb/add11/4`: missing 5 (F)
-- `guitar/Bb/add9/3`: missing 5 (F)
 - `guitar/Bb/alt/1`: missing b7 (Ab)
 - `guitar/Bb/alt/2`: missing b7 (Ab)
 - `guitar/Bb/alt/3`: missing b7 (Ab)
@@ -1653,7 +1646,6 @@ A required chord tone does not sound (see the quality's "omittable" tones). (err
 - `guitar/C/9/4`: missing 3 (E)
 - `guitar/C/9sharp11/2`: missing 9 (D)
 - `guitar/C/9sharp11/4`: missing 9 (D)
-- `guitar/C/add11/3`: missing 5 (G)
 - `guitar/C/alt/1`: missing b7 (Bb)
 - `guitar/C/alt/2`: missing b7 (Bb)
 - `guitar/C/alt/3`: missing b7 (Bb)
@@ -1673,7 +1665,6 @@ A required chord tone does not sound (see the quality's "omittable" tones). (err
 - `guitar/Csharp/9sharp11/1`: missing 3 (F), 9 (Eb)
 - `guitar/Csharp/9sharp11/2`: missing 9 (Eb)
 - `guitar/Csharp/9sharp11/4`: missing 9 (Eb)
-- `guitar/Csharp/add11/3`: missing 5 (Ab)
 - `guitar/Csharp/alt/1`: missing b7 (B)
 - `guitar/Csharp/alt/2`: missing b7 (B)
 - `guitar/Csharp/alt/3`: missing b7 (B)
@@ -1687,9 +1678,6 @@ A required chord tone does not sound (see the quality's "omittable" tones). (err
 - `guitar/D/6/2`: missing 5 (A)
 - `guitar/D/9sharp11/1`: missing 9 (E)
 - `guitar/D/9sharp11/3`: missing 9 (E)
-- `guitar/D/add11/2`: missing 5 (A)
-- `guitar/D/add11/4`: missing 5 (A)
-- `guitar/D/add9/3`: missing 5 (A)
 - `guitar/D/alt/1`: missing b7 (C)
 - `guitar/D/alt/2`: missing b7 (C)
 - `guitar/D/alt/3`: missing b7 (C)
@@ -1711,15 +1699,13 @@ A required chord tone does not sound (see the quality's "omittable" tones). (err
 - `guitar/E/m9_D/2`: missing b3 (G)
 - `guitar/E/m9_D/3`: missing b3 (G)
 - `guitar/E/m9_D/4`: missing b3 (G)
-- `guitar/E/madd9/1`: missing 5 (B), 9 (F#)
-- `guitar/E/madd9/2`: missing 5 (B), 9 (F#)
-- `guitar/E/madd9/3`: missing 5 (B), 9 (F#)
-- `guitar/E/madd9/4`: missing 5 (B), 9 (F#)
+- `guitar/E/madd9/1`: missing 9 (F#)
+- `guitar/E/madd9/2`: missing 9 (F#)
+- `guitar/E/madd9/3`: missing 9 (F#)
+- `guitar/E/madd9/4`: missing 9 (F#)
 - `guitar/Eb/6/2`: missing 5 (Bb)
 - `guitar/Eb/9sharp11/1`: missing 9 (F)
 - `guitar/Eb/9sharp11/3`: missing 9 (F)
-- `guitar/Eb/add11/1`: missing 5 (Bb)
-- `guitar/Eb/add11/4`: missing 5 (Bb)
 - `guitar/Eb/alt/1`: missing b7 (C#)
 - `guitar/Eb/alt/2`: missing b7 (C#)
 - `guitar/Eb/alt/3`: missing b7 (C#)
@@ -1732,7 +1718,6 @@ A required chord tone does not sound (see the quality's "omittable" tones). (err
 - `guitar/F/6/3`: missing 5 (C)
 - `guitar/F/9sharp11/2`: missing 9 (G)
 - `guitar/F/9sharp11/4`: missing 9 (G)
-- `guitar/F/add9/2`: missing 5 (C)
 - `guitar/F/alt/1`: missing b7 (Eb)
 - `guitar/F/alt/2`: missing b7 (Eb)
 - `guitar/F/alt/3`: missing b7 (Eb)
@@ -1744,7 +1729,6 @@ A required chord tone does not sound (see the quality's "omittable" tones). (err
 - `guitar/Fsharp/6/2`: missing 5 (C#)
 - `guitar/Fsharp/9sharp11/2`: missing 9 (Ab)
 - `guitar/Fsharp/9sharp11/4`: missing 9 (Ab)
-- `guitar/Fsharp/add11/2`: missing 5 (C#)
 - `guitar/Fsharp/alt/1`: missing b7 (E)
 - `guitar/Fsharp/alt/2`: missing b7 (E)
 - `guitar/Fsharp/alt/3`: missing b7 (E)
@@ -1753,7 +1737,7 @@ A required chord tone does not sound (see the quality's "omittable" tones). (err
 - `guitar/Fsharp/m9_E/4`: missing b3 (A)
 - `guitar/G/9sharp11/2`: missing 9 (A)
 - `guitar/G/9sharp11/4`: missing 9 (A)
-- `guitar/G/add9/2`: missing 3 (B), 5 (D)
+- `guitar/G/add9/2`: missing 3 (B)
 - `guitar/G/alt/1`: missing b7 (F)
 - `guitar/G/alt/2`: missing b7 (F)
 - `guitar/G/alt/3`: missing b7 (F)
@@ -1763,7 +1747,6 @@ A required chord tone does not sound (see the quality's "omittable" tones). (err
 - `guitar/G/m9_F/2`: missing b3 (Bb)
 - `guitar/G/m9_F/3`: missing b3 (Bb)
 - `guitar/G/m9_F/4`: missing b3 (Bb)
-- `guitar/G/madd9/3`: missing 5 (D)
 
 ### ukulele (86)
 
@@ -1787,9 +1770,9 @@ A required chord tone does not sound (see the quality's "omittable" tones). (err
 - `ukulele/B/alt/1`: missing b7 (A)
 - `ukulele/B/alt/2`: missing b7 (A)
 - `ukulele/B/alt/3`: missing b7 (A)
-- `ukulele/B/madd9/1`: missing b3 (D), 5 (F#), 9 (C#)
-- `ukulele/B/madd9/2`: missing b3 (D), 5 (F#), 9 (C#)
-- `ukulele/B/madd9/3`: missing b3 (D), 5 (F#), 9 (C#)
+- `ukulele/B/madd9/1`: missing b3 (D), 9 (C#)
+- `ukulele/B/madd9/2`: missing b3 (D), 9 (C#)
+- `ukulele/B/madd9/3`: missing b3 (D), 9 (C#)
 - `ukulele/Bb/13b5b9/1`: missing 3 (D)
 - `ukulele/Bb/13b5b9/2`: missing 3 (D)
 - `ukulele/Bb/13b5b9/3`: missing 3 (D)

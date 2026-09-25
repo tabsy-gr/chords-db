@@ -106,12 +106,14 @@ A fretted voicing has:
   (thumb), or `0` (none).
 - `barres` (optional): the frets barred by one finger.
 - `capo` (optional): draw the barre as a capo.
+- `rootless` (optional): the voicing deliberately leaves out the root, as
+  extended chords on four-string instruments often do.
 - `sources`: where the voicing comes from.
 - `verified` (optional): who confirmed it, and when.
 
 A keyboard (piano) voicing has `notes` (note names, lowest first) and
 `degrees` (each note's chord degree, e.g. `"b7"`) instead of `frets` and
-`fingers`.
+`fingers`, and can also be `rootless`.
 
 Run `npm run format:data` after editing data files; CI checks the formatting.
 
@@ -121,7 +123,8 @@ Every voicing is checked against two sets of rules, defined in
 `src/validate.ts`:
 
 - **Notes.** Every note is a tone of the chord, every required tone sounds,
-  and a slash chord's lowest note is its bass. What each chord contains, and
+  the root sounds unless the voicing is marked `rootless` (and doesn't if it
+  is), and a slash chord's lowest note is its bass. What each chord contains, and
   which tones a voicing may leave out, is in `data/qualities.json`, with a
   source cited for every formula. The formulas are also cross-checked against
   the [tonal](https://github.com/tonaljs/tonal) library, and every

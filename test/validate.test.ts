@@ -44,6 +44,24 @@ describe('notes', () => {
     expect(rules(guitar, 'C', 'major', v([-1, -1, 2, 0, -1, 0], [0, 0, 2, 0, 0, 0]))).toEqual(['notes/missing-root']);
   });
 
+  it('accepts a missing root only when the voicing is marked rootless, and then requires it', () => {
+    // Ukulele C9 as 0201 (G D E Bb): rootless.
+    const c9 = v([0, 2, 0, 1], [0, 2, 0, 1]);
+    expect(rules(ukulele, 'C', '9', c9)).toEqual(['notes/missing-root']);
+    expect(rules(ukulele, 'C', '9', { ...c9, rootless: true })).toEqual([]);
+    // 0003 (G C E C) contains C, so it can't be marked rootless.
+    expect(rules(ukulele, 'C', 'major', v([0, 0, 0, 3], [0, 0, 0, 3], { rootless: true }))).toEqual([
+      'notes/rootless-has-root',
+    ]);
+  });
+
+  it('lets add chords omit the 5th, but not 6 chords', () => {
+    // Cadd9 as x32x3x: C E D, no G.
+    expect(rules(guitar, 'C', 'add9', v([-1, 3, 2, -1, 3, -1], [0, 2, 1, 0, 3, 0]))).toEqual([]);
+    // C6 without G (x3221x: C E A C) is missing its 5th.
+    expect(rules(guitar, 'C', '6', v([-1, 3, 2, 2, 1, -1], [0, 4, 2, 3, 1, 0]))).toEqual(['notes/missing-tone']);
+  });
+
   it('flags a missing required tone but not a missing omittable one', () => {
     // C7 without the 5th (x3231x) is fine; C7 without the 3rd (x3x31x) is not.
     expect(rules(guitar, 'C', '7', v([-1, 3, 2, 3, 1, -1], [0, 3, 2, 4, 1, 0]))).toEqual([]);

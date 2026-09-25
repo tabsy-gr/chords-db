@@ -50,7 +50,14 @@ export const RULES: Record<string, { severity: Severity; description: string }> 
     severity: 'error',
     description: "A note that is not in the chord (or the slash chord's bass).",
   },
-  'notes/missing-root': { severity: 'error', description: "The chord's root does not sound." },
+  'notes/missing-root': {
+    severity: 'error',
+    description: "The chord's root does not sound, and the voicing is not marked rootless.",
+  },
+  'notes/rootless-has-root': {
+    severity: 'error',
+    description: 'The voicing is marked rootless, but the root sounds.',
+  },
   'notes/missing-tone': {
     severity: 'error',
     description: 'A required chord tone does not sound (see the quality\'s "omittable" tones).',
@@ -160,7 +167,11 @@ const checkNotes = (
     );
   }
 
-  if (!sounding.has(root)) out.push(issue('notes/missing-root', `no ${chord.key}`, id));
+  if (voicing.rootless) {
+    if (sounding.has(root)) out.push(issue('notes/rootless-has-root', `${chord.key} sounds`, id));
+  } else if (!sounding.has(root)) {
+    out.push(issue('notes/missing-root', `no ${chord.key}`, id));
+  }
 
   const omittable = new Set(quality.omittable ?? []);
   const missing = quality.intervals
