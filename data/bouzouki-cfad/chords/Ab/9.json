@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Ab",
+  "suffix": "9",
+  "voicings": [
+    {
+      "id": "bouzouki-cfad/Ab/9/1",
+      "frets": [8, 7, 9, 8],
+      "fingers": [3, 1, 4, 2],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Ab/9/2",
+      "frets": [10, 13, 11, 10],
+      "fingers": [1, 3, 2, 1],
+      "barres": [10],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Ab/9/3",
+      "frets": [0, 15, 13, 16],
+      "fingers": [0, 2, 1, 3],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Ab/9/4",
+      "frets": [18, 17, 15, 18],
+      "fingers": [4, 2, 1, 3],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C",
+  "suffix": "major",
+  "voicings": [
+    {
+      "id": "bouzouki-dad/C/major/1",
+      "frets": [14, 15, 17],
+      "fingers": [1, 2, 3],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/C/major/2",
+      "frets": [17, 15, 14],
+      "fingers": [3, 2, 1],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

@@ -5,6 +5,17 @@ of the original [tombatossals/chords-db](https://github.com/tombatossals/chords-
 For a full comparison with the original, see
 [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-DB.md).
 
+## 0.9.0
+
+### Added
+* Greek bouzouki, tetrachordo (C F A D, 252 chords, 1,367 voicings) and
+  trichordo (D A D, 147 chords, 445 voicings), with octave courses, built
+  from reference dataset A: shapes that pass the validator, fingered, up to
+  six per chord. Published as `@tabsy-gr/chords-db/bouzouki-cfad` and
+  `/bouzouki-dad`. They are unverified until signed off.
+* `VERIFIERS.md` and `npm run verify -- --by <login> <ids>` to sign off
+  voicings.
+
 ## 0.8.0
 
 ### Changed (breaking)

@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C#",
+  "suffix": "major",
+  "voicings": [
+    {
+      "id": "bouzouki-cfad/Csharp/major/1",
+      "frets": [-1, 3, 4, 3],
+      "fingers": [0, 1, 2, 1],
+      "barres": [3],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/major/2",
+      "frets": [5, 3, 4, -1],
+      "fingers": [3, 1, 2, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/major/3",
+      "frets": [-1, 0, 4, 6],
+      "fingers": [0, 0, 1, 2],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/major/4",
+      "frets": [5, 0, 4, 6],
+      "fingers": [2, 0, 1, 3],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/major/5",
+      "frets": [5, 3, 4, 3],
+      "fingers": [3, 1, 2, 1],
+      "barres": [3],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/major/6",
+      "frets": [5, 8, 8, 6],
+      "fingers": [1, 3, 3, 2],
+      "barres": [8],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

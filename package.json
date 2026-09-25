@@ -1,6 +1,6 @@
 {
   "name": "@tabsy-gr/chords-db",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "A validated database of string-instrument and piano chord voicings. Hard fork of tombatossals/chords-db.",
   "license": "MIT",
   "author": "Tabsy",
@@ -32,6 +32,8 @@
     "./ukulele-d": "./lib/ukulele-d.json",
     "./piano": "./lib/piano.json",
     "./cavaquinho": "./lib/cavaquinho.json",
+    "./bouzouki-cfad": "./lib/bouzouki-cfad.json",
+    "./bouzouki-dad": "./lib/bouzouki-dad.json",
     "./instruments": "./lib/instruments.json",
     "./schema/*": "./schema/*"
   },
@@ -51,7 +53,8 @@
     "validate": "tsx scripts/validate-data.ts",
     "upstream-diff": "tsx scripts/upstream-diff.ts",
     "generate:piano": "tsx scripts/generate-piano.ts",
-    "generate:ukulele-d": "tsx scripts/generate-ukulele-d.ts"
+    "generate:ukulele-d": "tsx scripts/generate-ukulele-d.ts",
+    "verify": "tsx scripts/verify.ts"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",

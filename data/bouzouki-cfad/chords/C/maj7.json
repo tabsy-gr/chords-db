@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C",
+  "suffix": "maj7",
+  "voicings": [
+    {
+      "id": "bouzouki-cfad/C/maj7/1",
+      "frets": [0, 2, 2, 2],
+      "fingers": [0, 1, 1, 1],
+      "barres": [2],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/C/maj7/2",
+      "frets": [0, 6, 7, 5],
+      "fingers": [0, 2, 3, 1],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/C/maj7/3",
+      "frets": [0, 6, 7, -1],
+      "fingers": [0, 1, 2, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/C/maj7/4",
+      "frets": [0, 6, 7, 9],
+      "fingers": [0, 1, 2, 3],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/C/maj7/5",
+      "frets": [0, 7, 7, 9],
+      "fingers": [0, 1, 1, 2],
+      "barres": [7],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/C/maj7/6",
+      "frets": [0, 11, 10, 9],
+      "fingers": [0, 3, 2, 1],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

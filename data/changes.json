@@ -2956,6 +2956,16 @@
       "kinds": ["removed"],
       "change": "Removed while merging guitar sus into sus4: the same shape was already a sus4 voicing.",
       "issue": 14
+    },
+    {
+      "ids": ["bouzouki-cfad/*"],
+      "kinds": ["added"],
+      "change": "Added the Greek bouzouki, tetrachordo (C F A D): the shapes of reference dataset A (used with permission) that pass the validator, fingered and ordered easiest first, up to six per chord. Unverified until a verifier in VERIFIERS.md signs them off."
+    },
+    {
+      "ids": ["bouzouki-dad/*"],
+      "kinds": ["added"],
+      "change": "Added the Greek bouzouki, trichordo (D A D): the shapes of reference dataset A (used with permission) that pass the validator, fingered and ordered easiest first, up to six per chord. Unverified until a verifier in VERIFIERS.md signs them off."
     }
   ]
 }

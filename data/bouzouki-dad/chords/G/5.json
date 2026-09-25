@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "G",
+  "suffix": "5",
+  "voicings": [
+    {
+      "id": "bouzouki-dad/G/5/1",
+      "frets": [5, 5, 0],
+      "fingers": [1, 1, 0],
+      "barres": [5],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/G/5/2",
+      "frets": [5, 5, 5],
+      "fingers": [1, 1, 1],
+      "barres": [5],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

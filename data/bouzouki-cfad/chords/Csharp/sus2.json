@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C#",
+  "suffix": "sus2",
+  "voicings": [
+    {
+      "id": "bouzouki-cfad/Csharp/sus2/1",
+      "frets": [3, 3, 4, -1],
+      "fingers": [1, 1, 2, 0],
+      "barres": [3],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/sus2/2",
+      "frets": [8, 8, 6, -1],
+      "fingers": [2, 2, 1, 0],
+      "barres": [8],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/sus2/3",
+      "frets": [-1, 8, 6, 6],
+      "fingers": [0, 2, 1, 1],
+      "barres": [6],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/sus2/4",
+      "frets": [13, 10, 11, -1],
+      "fingers": [3, 1, 2, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/sus2/5",
+      "frets": [8, 8, 6, 6],
+      "fingers": [2, 2, 1, 1],
+      "barres": [6, 8],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/sus2/6",
+      "frets": [8, 10, 11, 11],
+      "fingers": [1, 2, 3, 3],
+      "barres": [11],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

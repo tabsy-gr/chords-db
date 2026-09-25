@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Ab",
+  "suffix": "5",
+  "voicings": [
+    {
+      "id": "bouzouki-dad/Ab/5/1",
+      "frets": [6, 6, 6],
+      "fingers": [1, 1, 1],
+      "barres": [6],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/Ab/5/2",
+      "frets": [6, 6, -1],
+      "fingers": [1, 1, 0],
+      "barres": [6],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/Ab/5/3",
+      "frets": [-1, 11, 13],
+      "fingers": [0, 1, 2],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

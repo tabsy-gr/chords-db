@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "E",
+  "suffix": "m7",
+  "voicings": [
+    {
+      "id": "bouzouki-dad/E/m7/1",
+      "frets": [0, 7, 5],
+      "fingers": [0, 2, 1],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/E/m7/2",
+      "frets": [5, 7, 0],
+      "fingers": [1, 2, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/E/m7/3",
+      "frets": [14, 17, 17],
+      "fingers": [1, 2, 2],
+      "barres": [17],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/E/m7/4",
+      "frets": [17, 17, 14],
+      "fingers": [2, 2, 1],
+      "barres": [17],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

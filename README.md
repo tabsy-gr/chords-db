@@ -28,6 +28,8 @@ database is documented:
 | Piano      | n/a                    | Generated from `data/qualities.json` |
 | Ukulele (D tuning) | A D F# B      | Generated from the ukulele ([tombatossals/chords-db#32](https://github.com/tombatossals/chords-db/pull/32)) |
 | Cavaquinho | D G B D                | [tombatossals/chords-db#43](https://github.com/tombatossals/chords-db/pull/43), validated |
+| Bouzouki, tetrachordo | C F A D (octave courses) | Reference dataset A, validated; awaiting sign-off (see [VERIFIERS.md](./VERIFIERS.md)) |
+| Bouzouki, trichordo | D A D (octave course) | Reference dataset A, validated; awaiting sign-off |
 
 ## Install
 
@@ -64,6 +66,7 @@ toChordDiagram(voicing, guitar.instrument.tunings.standard);
 ```
 
 Also published: `@tabsy-gr/chords-db/ukulele`, `/ukulele-d`, `/cavaquinho`,
+`/bouzouki-cfad`, `/bouzouki-dad`,
 `/piano`, `/instruments` (an
 index with chord and voicing counts), and the JSON Schemas under `/schema/*`.
 
@@ -249,7 +252,9 @@ npm run authors      # regenerate AUTHORS from git history
    Done; see [UPSTREAM-DIFF.md](./UPSTREAM-DIFF.md).
 4. ~~Chord-symbol aliases and a reference parser (`C°7`, `Cø`, `CΔ7`, …).~~
    Done; see [Chord symbols](#chord-symbols).
-5. Greek bouzouki: tetrachordo (C F A D) and trichordo (D A D).
+5. ~~Greek bouzouki: tetrachordo (C F A D) and trichordo (D A D).~~ Added;
+   the voicings are being signed off by the verifiers in
+   [VERIFIERS.md](./VERIFIERS.md).
 
 ## Credits
 
@@ -262,6 +267,8 @@ npm run authors      # regenerate AUTHORS from git history
 - The piano data was contributed upstream by Claudemir Casa
   ([tombatossals/chords-db#34](https://github.com/tombatossals/chords-db/pull/34)),
   who names pianoapi.jsdisco.dev as its source.
+- The bouzouki shapes come from a reference used with its owner's
+  permission (reference dataset A); by agreement it is not named.
 - Fixes that come from bug reports on the original repository credit the
   reporter in the commit (`Reported-by:`) and link the original issue.
 

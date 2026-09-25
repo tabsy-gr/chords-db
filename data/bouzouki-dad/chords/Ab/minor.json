@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Ab",
+  "suffix": "minor",
+  "voicings": [
+    {
+      "id": "bouzouki-dad/Ab/minor/1",
+      "frets": [6, 6, 9],
+      "fingers": [1, 1, 2],
+      "barres": [6],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/Ab/minor/2",
+      "frets": [9, 6, 6],
+      "fingers": [2, 1, 1],
+      "barres": [6],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}
