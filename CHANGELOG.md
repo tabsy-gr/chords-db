@@ -5,7 +5,9 @@ of the original [tombatossals/chords-db](https://github.com/tombatossals/chords-
 For a full comparison with the original, see
 [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-DB.md).
 
-## Unreleased
+## 0.7.0
+
+The first release of the fork.
 
 ### Changed
 * **Schema v2.** The data moves from JavaScript modules with hex strings to
@@ -42,6 +44,8 @@ For a full comparison with the original, see
 * Guitar F major position 2 had `x` instead of `0` in its fingers.
 
 ### Added
+* Validation is a hard gate: any validation error fails CI.
+* Publishing to GitHub Packages on every change to `master`.
 * `UPSTREAM-DIFF.md`: every voicing that differs from the original database,
   and why, generated from `data/changes.json`. The tests fail on any
   unexplained difference.

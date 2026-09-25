@@ -33,8 +33,13 @@ database is documented:
 npm install @tabsy-gr/chords-db
 ```
 
-The package is published to GitHub Packages, which requires a GitHub token
-with `read:packages` even for public packages. It will also be published to
+The package is published to GitHub Packages on every change to `master`,
+which requires a GitHub token with `read:packages` even for public packages.
+Add to your `.npmrc`:
+
+```
+@tabsy-gr:registry=https://npm.pkg.github.com
+``` It will also be published to
 npmjs.com once it is stable.
 
 ## Usage
@@ -154,10 +159,9 @@ validateVoicing(guitar.instrument, { key: 'C', suffix: 'major' }, voicing);
 //   message: 'F not in Cmajor (1 3 5)', voicingId: '…' }] }
 ```
 
-[`reports/validation.md`](./reports/validation.md) lists every current
-finding. The data inherited from the original database is still being
-corrected, so for now CI only checks that the report is up to date. Once the
-data is clean, any error will fail CI.
+**Any validation error fails CI**, so every voicing in a release passes these
+checks. Warnings are allowed and are listed, with every other finding, in
+[`reports/validation.md`](./reports/validation.md), which CI keeps up to date.
 
 ## Development
 
@@ -181,7 +185,8 @@ npm run authors      # regenerate AUTHORS from git history
 2. ~~A validator that checks every voicing's notes against the chord's
    intervals and that its fingering can actually be played.~~ Done; see
    [Validation](#validation).
-3. Fixes for the incorrect voicings reported against the original database.
+3. ~~Fixes for the incorrect voicings reported against the original database.~~
+   Done; see [UPSTREAM-DIFF.md](./UPSTREAM-DIFF.md).
 4. Chord-symbol aliases and a reference parser (`C°7`, `Cø`, `CΔ7`, …).
 5. Greek bouzouki: tetrachordo (C F A D) and trichordo (D A D).
 
