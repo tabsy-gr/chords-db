@@ -1,0 +1,79 @@
+name: Publish
+
+# Publishes @tabsy-gr/chords-db to GitHub Packages on every push to master that
+# touches the package. If package.json holds a version that isn't published
+# yet (set by hand for a minor or major release), that version is published as
+# is; otherwise CI bumps the patch version, commits it back and tags it.
+#
+# No recursion: the version commit is pushed with GITHUB_TOKEN, which does not
+# trigger workflows, and carries [skip ci] as well.
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - "data/**"
+      - "lib/**"
+      - "schema/**"
+      - "src/**"
+      - "package.json"
+      - "package-lock.json"
+      - "tsup.config.ts"
+
+permissions:
+  contents: write # push the version commit + tag
+  packages: write # publish to GitHub Packages
+
+concurrency:
+  group: publish-chords-db
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          registry-url: https://npm.pkg.github.com
+          scope: "@tabsy-gr"
+
+      - run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
+
+      - name: Test (includes the validation gate)
+        run: npm run test:run
+
+      - name: Configure git author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Bump the patch version unless this version is unpublished
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION="$(node -p "require('./package.json').version")"
+          if npm view "@tabsy-gr/chords-db@${VERSION}" version >/dev/null 2>&1; then
+            npm version patch -m "chore(release): %s [skip ci]"
+          else
+            git tag "v${VERSION}"
+          fi
+
+      - name: Push version commit + tag
+        run: git push origin HEAD:refs/heads/master --follow-tags
+
+      - name: Publish to GitHub Packages
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
