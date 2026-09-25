@@ -1,6 +1,7 @@
-/* global it, describe, expect */
+import { describe, expect, it, test } from 'vitest';
 
-import ukulele from './ukulele';
+import ukuleleDb from './ukulele/index.js';
+import type { FrettedInstrument } from '../types';
 import {
   strChord2array,
   chord2midi,
@@ -9,6 +10,8 @@ import {
   unique,
   getNoteFromMidiNumber,
 } from '../tools';
+
+const ukulele = ukuleleDb as FrettedInstrument;
 
 describe('ukulele Chords', () => {
   describe('Strings', () => {
@@ -24,7 +27,7 @@ describe('ukulele Chords', () => {
 
   describe(`Test Cmajor midi notes`, () => {
     it(`Should match [ 67, 60, 64, 72 ]`, () => {
-      const Cmajor = ukulele.chords.C.find((chord) => chord.suffix === 'major');
+      const Cmajor = ukulele.chords.C.find((chord) => chord.suffix === 'major')!;
       const midiNotes = chord2midi(
         processString(Cmajor.positions[0].frets),
         ukulele.tunings['standard']
@@ -77,14 +80,14 @@ describe('ukulele Chords', () => {
                 } position frets array should have at most 4 fingers of distance`, () =>
                   expect(
                     Math.max(...effectiveFrets) - Math.min(...effectiveFrets)
-                  ).toBeLessThan(ukulele.main.fretsOnChord));
+                  ).toBeLessThan(ukulele.main.fretsOnChord!));
               });
 
               if (position.fingers) {
                 describe(`Fingers`, () => {
                   const fingers = Array.isArray(position.fingers)
                     ? position.fingers
-                    : strChord2array(position.fingers);
+                    : strChord2array(position.fingers as string);
                   it(`The ${
                     index + 1
                   } position fingers array should have 4 values`, () =>
@@ -103,7 +106,7 @@ describe('ukulele Chords', () => {
               describe(`Barres`, () => {
                 if (position.fingers && !position.barres) {
                   it(`The ${index + 1} position needs a barres property`, () =>
-                    expect(numberOfBarres(position.fingers)).toEqual(0));
+                    expect(numberOfBarres(position.fingers as string)).toEqual(0));
                 }
 
                 if (!position.barres) {
@@ -116,13 +119,13 @@ describe('ukulele Chords', () => {
                 if (position.barres) {
                   const barres = Array.isArray(position.barres)
                     ? position.barres
-                    : [position.barres];
+                    : [position.barres as number];
 
                   if (position.fingers) {
                     it(`The ${
                       index + 1
                     } position needs a barres property`, () =>
-                      expect(numberOfBarres(position.fingers)).toEqual(
+                      expect(numberOfBarres(position.fingers as string)).toEqual(
                         barres.length
                       ));
                   }

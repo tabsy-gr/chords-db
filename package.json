@@ -1,57 +1,71 @@
 {
-  "name": "@tombatossals/chords-db",
+  "name": "@tabsy-gr/chords-db",
   "version": "0.6.0",
-  "description": "Instrument Chords Database",
-  "main": "index.js",
+  "description": "A validated database of string-instrument and piano chord voicings. Hard fork of tombatossals/chords-db.",
+  "license": "MIT",
+  "author": "Tabsy",
+  "contributors": [
+    "David Rubert <david.rubert@gmail.com> (original author, tombatossals/chords-db)"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./lib/*.json": "./lib/*.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "jest src",
-    "stdout": "babel-node src/generate",
-    "build": "babel-node src/generate json",
-    "precommit": "lint-staged",
-    "prepublish": "npm run build",
-    "prettier": "prettier --single-quote --write \"src/**/*.{js,jsx}\""
+    "build": "npm run build:data && tsup",
+    "build:data": "tsx scripts/generate.ts json",
+    "stdout": "tsx scripts/generate.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "prepublishOnly": "npm run build",
+    "authors": "tsx scripts/generate-authors.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tombatossals/chords-db.git"
+    "url": "git+https://github.com/tabsy-gr/chords-db.git"
   },
-  "keywords": [
-    "music",
-    "node",
-    "javascript"
-  ],
-  "author": {
-    "name": "David Rubert",
-    "email": "david.rubert@gmail.com"
-  },
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tombatossals/chords-db/issues"
+    "url": "https://github.com/tabsy-gr/chords-db/issues"
   },
-  "homepage": "https://github.com/tombatossals/chords-db#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/node": "^7.6.3",
-    "@babel/preset-env": "^7.6.3",
-    "husky": "^4.2.5",
-    "jest": "^30.2.0",
-    "lint-staged": "^10.1.7",
-    "prettier": "^2.0.5"
-  },
-  "jest": {
-    "verbose": false,
-    "bail": true
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --single-quote --write",
-      "git add"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  }
+  "homepage": "https://github.com/tabsy-gr/chords-db#readme",
+  "keywords": [
+    "chords",
+    "guitar",
+    "ukulele",
+    "piano",
+    "bouzouki",
+    "music"
+  ]
 }
