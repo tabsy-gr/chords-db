@@ -24,9 +24,7 @@
     {
       "id": "guitar/F/alt/4",
       "frets": [13, 12, -1, 14, 12, 13],
-      "fingers": [2, 1, 0, 4, 1, 3],
-      "barres": [12],
-      "capo": true,
+      "fingers": ["T", 2, 0, 4, 1, 3],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

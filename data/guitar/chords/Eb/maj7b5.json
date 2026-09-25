@@ -28,8 +28,8 @@
     {
       "id": "guitar/Eb/maj7b5/4",
       "frets": [11, 12, 12, 12, -1, 11],
-      "fingers": [1, 2, 2, 2, 0, 1],
-      "barres": [11, 12],
+      "fingers": ["T", 2, 2, 2, 0, 1],
+      "barres": [12],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }

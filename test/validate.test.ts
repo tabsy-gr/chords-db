@@ -143,6 +143,11 @@ describe('fingering', () => {
     expect(check(v([1, -1, 3, 2, 1, 1], ['T', 0, 3, 2, 1, 1], { barres: [1] }))).toEqual([]);
   });
 
+  it('only lets the thumb fret the lowest strings', () => {
+    // Thumb on the A string while finger 3 frets the low E: impossible.
+    expect(rules(guitar, 'F', 'major', v([1, 3, 3, 2, 1, 1], [3, 'T', 4, 2, 1, 1], { barres: [1] }))).toContain('fingers/thumb-placement');
+  });
+
   it('flags a stretch wider than the instrument allows', () => {
     // Frets 1 to 5 cover 5 frets; guitar allows 4.
     expect(rules(guitar, 'F', 'major', v([1, 3, 3, 2, 1, 5], [1, 2, 3, 2, 1, 4], { barres: [1] }))).toContain('span/too-wide');

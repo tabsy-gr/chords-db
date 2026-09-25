@@ -6,27 +6,22 @@ are defined in `src/validate.ts` and the chord formulas in
 
 - Voicings checked: 6036
 - Voicings with errors: 0
-- Voicings with warnings only: 175
+- Voicings with warnings only: 107
 - Chord-level findings: 0
 
 ## Summary
 
 | Rule | Severity | guitar | piano | ukulele | Total |
 | --- | --- | ---: | ---: | ---: | ---: |
-| [`notes/inverted-bass`](#notesinverted-bass) | warning | 127 | 0 | 0 | 127 |
-| [`barres/muted-inside`](#barresmuted-inside) | warning | 55 | 0 | 0 | 55 |
+| [`notes/inverted-bass`](#notesinverted-bass) | warning | 107 | 0 | 0 | 107 |
 
 ## notes/inverted-bass
 
 The lowest note of a chord that is not a slash chord is not its root (an inversion), which a player reading the chord name may not expect. (warning)
 
-### guitar (127)
+### guitar (107)
 
-- `guitar/A/11/4`: lowest note is B, not A
 - `guitar/A/7b5/4`: lowest note is G, not A
-- `guitar/A/sus2/3`: lowest note is B, not A
-- `guitar/Ab/11/2`: lowest note is Bb, not Ab
-- `guitar/Ab/6/1`: lowest note is C, not Ab
 - `guitar/Ab/69/1`: lowest note is Bb, not Ab
 - `guitar/Ab/7b5/3`: lowest note is F#, not Ab
 - `guitar/Ab/7b9/1`: lowest note is A, not Ab
@@ -40,9 +35,7 @@ The lowest note of a chord that is not a slash chord is not its root (an inversi
 - `guitar/Ab/mmaj7/1`: lowest note is B, not Ab
 - `guitar/Ab/mmaj7b5/3`: lowest note is D, not Ab
 - `guitar/Ab/mmaj9/3`: lowest note is Bb, not Ab
-- `guitar/Ab/sus2/3`: lowest note is Bb, not Ab
 - `guitar/Ab/sus4/1`: lowest note is Eb, not Ab
-- `guitar/B/11/4`: lowest note is C#, not B
 - `guitar/B/aug9/2`: lowest note is A, not B
 - `guitar/B/aug9/4`: lowest note is Eb, not B
 - `guitar/B/dim7/2`: lowest note is F, not B
@@ -54,9 +47,7 @@ The lowest note of a chord that is not a slash chord is not its root (an inversi
 - `guitar/B/madd9/1`: lowest note is D, not B
 - `guitar/B/major/2`: lowest note is F#, not B
 - `guitar/B/minor/4`: lowest note is D, not B
-- `guitar/B/sus2/3`: lowest note is C#, not B
 - `guitar/B/sus4/2`: lowest note is F#, not B
-- `guitar/Bb/11/3`: lowest note is C, not Bb
 - `guitar/Bb/aug9/2`: lowest note is Ab, not Bb
 - `guitar/Bb/dim7/2`: lowest note is E, not Bb
 - `guitar/Bb/m6/2`: lowest note is C#, not Bb
@@ -65,7 +56,6 @@ The lowest note of a chord that is not a slash chord is not its root (an inversi
 - `guitar/Bb/madd9/1`: lowest note is C#, not Bb
 - `guitar/Bb/maj7sharp5/2`: lowest note is F#, not Bb
 - `guitar/Bb/mmaj9/4`: lowest note is C, not Bb
-- `guitar/Bb/sus2/3`: lowest note is C, not Bb
 - `guitar/Bb/sus4/2`: lowest note is F, not Bb
 - `guitar/C/7b5/1`: lowest note is E, not C
 - `guitar/C/9/1`: lowest note is E, not C
@@ -81,8 +71,6 @@ The lowest note of a chord that is not a slash chord is not its root (an inversi
 - `guitar/Csharp/m7b5/2`: lowest note is G, not C#
 - `guitar/Csharp/m9/2`: lowest note is Eb, not C#
 - `guitar/Csharp/m9/3`: lowest note is E, not C#
-- `guitar/Csharp/sus2/4`: lowest note is Eb, not C#
-- `guitar/D/11/4`: lowest note is F#, not D
 - `guitar/D/6/4`: lowest note is B, not D
 - `guitar/D/7b5/2`: lowest note is F#, not D
 - `guitar/D/7sharp9/3`: lowest note is F, not D
@@ -99,9 +87,7 @@ The lowest note of a chord that is not a slash chord is not its root (an inversi
 - `guitar/E/m7b5/3`: lowest note is Bb, not E
 - `guitar/E/maj9/2`: lowest note is Ab, not E
 - `guitar/E/mmaj7b5/3`: lowest note is Bb, not E
-- `guitar/E/sus2/1`: lowest note is F#, not E
 - `guitar/E/sus4/4`: lowest note is B, not E
-- `guitar/Eb/11/1`: lowest note is F, not Eb
 - `guitar/Eb/69/2`: lowest note is C, not Eb
 - `guitar/Eb/7b5/2`: lowest note is G, not Eb
 - `guitar/Eb/7sharp9/3`: lowest note is F#, not Eb
@@ -118,9 +104,7 @@ The lowest note of a chord that is not a slash chord is not its root (an inversi
 - `guitar/Eb/major/4`: lowest note is Bb, not Eb
 - `guitar/Eb/minor/2`: lowest note is F#, not Eb
 - `guitar/Eb/mmaj7b5/2`: lowest note is A, not Eb
-- `guitar/Eb/sus2/1`: lowest note is F, not Eb
 - `guitar/Eb/sus4/3`: lowest note is Bb, not Eb
-- `guitar/F/11/2`: lowest note is G, not F
 - `guitar/F/69/3`: lowest note is D, not F
 - `guitar/F/7b5/3`: lowest note is A, not F
 - `guitar/F/7sharp9/4`: lowest note is Ab, not F
@@ -129,9 +113,7 @@ The lowest note of a chord that is not a slash chord is not its root (an inversi
 - `guitar/F/m6/4`: lowest note is C, not F
 - `guitar/F/m69/2`: lowest note is Ab, not F
 - `guitar/F/mmaj7b5/3`: lowest note is B, not F
-- `guitar/F/sus2/2`: lowest note is G, not F
 - `guitar/F/sus4/4`: lowest note is C, not F
-- `guitar/Fsharp/11/2`: lowest note is Ab, not F#
 - `guitar/Fsharp/69/3`: lowest note is Eb, not F#
 - `guitar/Fsharp/7b5/3`: lowest note is E, not F#
 - `guitar/Fsharp/9/4`: lowest note is Ab, not F#
@@ -142,72 +124,7 @@ The lowest note of a chord that is not a slash chord is not its root (an inversi
 - `guitar/Fsharp/maj7sharp5/4`: lowest note is D, not F#
 - `guitar/Fsharp/minor/3`: lowest note is A, not F#
 - `guitar/Fsharp/mmaj7b5/3`: lowest note is C, not F#
-- `guitar/Fsharp/sus2/2`: lowest note is Ab, not F#
 - `guitar/Fsharp/sus4/4`: lowest note is C#, not F#
-- `guitar/G/11/2`: lowest note is A, not G
 - `guitar/G/m69/3`: lowest note is Bb, not G
 - `guitar/G/maj7sharp5/1`: lowest note is Eb, not G
 - `guitar/G/mmaj7b5/3`: lowest note is C#, not G
-- `guitar/G/sus2/2`: lowest note is A, not G
-
-## barres/muted-inside
-
-A string under a barre is muted, so the player has to damp it separately. (warning)
-
-### guitar (55)
-
-- `guitar/A/6/3`: course 3 is muted under the barre at fret 5
-- `guitar/A/_Csharp/4`: course 2 is muted under the barre at fret 9
-- `guitar/A/_Csharp/4`: course 3 is muted under the barre at fret 9
-- `guitar/A/aug/3`: course 2 is muted under the barre at fret 5
-- `guitar/A/mmaj7b5/2`: course 5 is muted under the barre at fret 5
-- `guitar/Ab/_C/4`: course 2 is muted under the barre at fret 8
-- `guitar/Ab/_C/4`: course 3 is muted under the barre at fret 8
-- `guitar/Ab/mmaj7b5/1`: course 5 is muted under the barre at fret 4
-- `guitar/Ab/sus2/2`: course 4 is muted under the barre at fret 4
-- `guitar/B/7b9/3`: course 2 is muted under the barre at fret 7
-- `guitar/B/mmaj7b5/3`: course 5 is muted under the barre at fret 7
-- `guitar/Bb/6/3`: course 3 is muted under the barre at fret 6
-- `guitar/Bb/7b9/3`: course 2 is muted under the barre at fret 6
-- `guitar/Bb/aug9/4`: course 2 is muted under the barre at fret 6
-- `guitar/Bb/m69/2`: course 2 is muted under the barre at fret 6
-- `guitar/Bb/m9/2`: course 3 is muted under the barre at fret 4
-- `guitar/Bb/mmaj7b5/3`: course 5 is muted under the barre at fret 6
-- `guitar/C/6/4`: course 2 is muted under the barre at fret 8
-- `guitar/C/7b9/3`: course 2 is muted under the barre at fret 8
-- `guitar/C/maj9/4`: course 2 is muted under the barre at fret 8
-- `guitar/C/mmaj7b5/3`: course 5 is muted under the barre at fret 8
-- `guitar/Csharp/6/4`: course 2 is muted under the barre at fret 9
-- `guitar/Csharp/_F/2`: course 2 is muted under the barre at fret 1
-- `guitar/Csharp/_F/2`: course 3 is muted under the barre at fret 1
-- `guitar/Csharp/aug/4`: course 2 is muted under the barre at fret 9
-- `guitar/Csharp/mmaj7b5/3`: course 5 is muted under the barre at fret 9
-- `guitar/Csharp/sus2/3`: course 4 is muted under the barre at fret 9
-- `guitar/D/_Fsharp/2`: course 2 is muted under the barre at fret 2
-- `guitar/D/_Fsharp/2`: course 3 is muted under the barre at fret 2
-- `guitar/D/maj7b5/4`: course 5 is muted under the barre at fret 10
-- `guitar/D/maj9/4`: course 2 is muted under the barre at fret 10
-- `guitar/D/mmaj7b5/4`: course 5 is muted under the barre at fret 10
-- `guitar/E/_Ab/2`: course 2 is muted under the barre at fret 4
-- `guitar/E/_Ab/2`: course 3 is muted under the barre at fret 4
-- `guitar/E/sus2/4`: course 4 is muted under the barre at fret 12
-- `guitar/Eb/_G/2`: course 2 is muted under the barre at fret 3
-- `guitar/Eb/_G/2`: course 3 is muted under the barre at fret 3
-- `guitar/Eb/alt/4`: course 3 is muted under the barre at fret 10
-- `guitar/Eb/maj7b5/4`: course 5 is muted under the barre at fret 11
-- `guitar/Eb/maj7sharp5/4`: course 2 is muted under the barre at fret 11
-- `guitar/Eb/mmaj7b5/4`: course 5 is muted under the barre at fret 11
-- `guitar/Eb/sus2/4`: course 4 is muted under the barre at fret 11
-- `guitar/F/6/1`: course 2 is muted under the barre at fret 1
-- `guitar/F/alt/4`: course 3 is muted under the barre at fret 12
-- `guitar/F/sus2/1`: course 4 is muted under the barre at fret 1
-- `guitar/Fsharp/6/2`: course 2 is muted under the barre at fret 2
-- `guitar/Fsharp/_Bb/2`: course 2 is muted under the barre at fret 6
-- `guitar/Fsharp/_Bb/2`: course 3 is muted under the barre at fret 6
-- `guitar/Fsharp/alt/2`: course 5 is muted under the barre at fret 2
-- `guitar/Fsharp/maj9/2`: course 2 is muted under the barre at fret 2
-- `guitar/Fsharp/mmaj7b5/1`: course 5 is muted under the barre at fret 2
-- `guitar/G/13/2`: course 2 is muted under the barre at fret 3
-- `guitar/G/7b9/2`: course 2 is muted under the barre at fret 3
-- `guitar/G/dim/3`: course 4 is muted under the barre at fret 8
-- `guitar/G/mmaj7b5/1`: course 5 is muted under the barre at fret 3

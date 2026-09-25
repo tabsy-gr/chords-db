@@ -16,14 +16,14 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 | added | 25 | 144 | 0 |
 | removed | 13 | 0 | 45 |
 | relabelled | 123 | 84 | 37 |
-| frets | 242 | 0 | 4 |
-| fingers | 257 | 0 | 4 |
-| barres | 177 | 0 | 4 |
-| capo | 33 | 0 | 0 |
+| frets | 262 | 0 | 4 |
+| fingers | 314 | 0 | 4 |
+| barres | 209 | 0 | 4 |
+| capo | 59 | 0 | 0 |
 | rootless | 13 | 0 | 988 |
 | notes | 0 | 528 | 0 |
 | degrees | 0 | 36 | 0 |
-| order | 793 | 0 | 179 |
+| order | 811 | 0 | 179 |
 
 Counts are voicings; one voicing can have several kinds of change.
 
@@ -1773,13 +1773,13 @@ Counts are voicings; one voicing can have several kinds of change.
 
 | Voicing | Change | Before | After |
 | --- | --- | --- | --- |
-| `guitar/A/_Csharp/4` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
-| `guitar/Ab/_C/4` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
-| `guitar/Csharp/_F/2` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
-| `guitar/D/_Fsharp/2` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
-| `guitar/E/_Ab/2` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
-| `guitar/Eb/_G/2` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
-| `guitar/Fsharp/_Bb/2` | fingers | `1 1 1 1 2 1` | `1 0 0 1 2 1` |
+| `guitar/A/_Csharp/4` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
+| `guitar/Ab/_C/4` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
+| `guitar/Csharp/_F/2` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
+| `guitar/D/_Fsharp/2` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
+| `guitar/E/_Ab/2` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
+| `guitar/Eb/_G/2` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
+| `guitar/Fsharp/_Bb/2` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
 
 ### 47. Every string is open or muted, so no fingers; the fingers belonged to a different shape.
 
@@ -1808,7 +1808,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/B/aug7/2` | fingers | `0 0 2 1 1 3` | `0 1 4 1 3 2` |
 | `guitar/B/maj7sharp5/3` | fingers | `2 1 3 0 3 0` | `2 1 3 0 4 0` |
 | `guitar/B/mmaj9/4` | fingers | `0 3 1 4 3 0` | `0 2 1 4 3 0` |
-| `guitar/Bb/6/3` | fingers | `1 3 0 2 4 0` | `1 3 0 2 4 1` |
+| `guitar/Bb/6/3` | barres | `6` | `—` |
+| `guitar/Bb/6/3` | fingers | `1 3 0 2 4 0` | `T 3 0 2 4 1` |
 | `guitar/C/69/1` | fingers | `0 3 1 1 3 4` | `0 2 1 1 3 4` |
 | `guitar/Csharp/maj13/1` | barres | `—` | `1` |
 | `guitar/Csharp/maj13/1` | fingers | `0 4 2 3 0 1` | `0 3 1 2 1 1` |
@@ -1816,16 +1817,16 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Csharp/sus2/2` | fingers | `0 1 0 0 2 3` | `3 1 1 2 4 0` |
 | `guitar/Csharp/sus4/3` | barres | `—` | `6` |
 | `guitar/Csharp/sus4/3` | fingers | `2 3 0 0 1 4` | `3 0 1 1 2 4` |
-| `guitar/D/11/4` | barres | `8` | `7` |
-| `guitar/D/11/4` | fingers | `1 1 1 2 1 1` | `0 4 1 1 2 3` |
+| `guitar/D/11/4` | barres | `8` | `—` |
+| `guitar/D/11/4` | fingers | `1 1 1 2 1 1` | `0 0 0 1 2 3` |
 | `guitar/E/aug/3` | fingers | `4 3 2 1 1 0` | `0 1 4 2 3 0` |
-| `guitar/E/sus2/4` | fingers | `1 3 4 0 1 4` | `1 2 3 0 1 4` |
+| `guitar/E/sus2/4` | barres | `12` | `—` |
+| `guitar/E/sus2/4` | fingers | `1 3 4 0 1 4` | `T 2 3 0 1 4` |
 | `guitar/Eb/9b5/3` | fingers | `1 2 0 3 0 4` | `2 1 3 1 1 4` |
 | `guitar/Eb/mmaj11/2` | fingers | `0 3 1 4 3 1` | `0 2 1 4 3 1` |
 | `guitar/F/9b5/4` | barres | `13` | `—` |
 | `guitar/F/9b5/4` | fingers | `2 1 2 0 0 3` | `2 1 3 0 0 4` |
-| `guitar/G/dim/3` | barres | `—` | `8` |
-| `guitar/G/dim/3` | fingers | `0 1 2 4 3 0` | `0 3 1 0 1 2` |
+| `guitar/G/dim/3` | fingers | `0 1 2 4 3 0` | `0 4 2 0 1 3` |
 | `guitar/G/maj13/1` | barres | `2 3` | `2` |
 | `guitar/G/maj13/1` | fingers | `3 1 1 1 3 1` | `2 1 1 1 3 1` |
 | `ukulele/Ab/maj11/2` | fingers | `2 1 3 4` | `2 4 3 1` |
@@ -3242,7 +3243,7 @@ Counts are voicings; one voicing can have several kinds of change.
 [#10](https://github.com/tabsy-gr/chords-db/issues/10) · upstream [#2](https://github.com/tombatossals/chords-db/issues/2) · reported by [T-vK](https://github.com/T-vK)
 
 <details>
-<summary>972 voicings</summary>
+<summary>990 voicings</summary>
 
 | Voicing | Change | Before | After |
 | --- | --- | --- | --- |
@@ -3303,6 +3304,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/A/major/4` | order | `position 4` | `position 3` |
 | `guitar/A/minor/3` | order | `position 3` | `position 4` |
 | `guitar/A/minor/4` | order | `position 4` | `position 3` |
+| `guitar/A/mmaj7b5/2` | order | `position 2` | `position 3` |
+| `guitar/A/mmaj7b5/3` | order | `position 3` | `position 2` |
 | `guitar/A/sus2/3` | order | `position 3` | `position 4` |
 | `guitar/A/sus2/4` | order | `position 4` | `position 3` |
 | `guitar/A/sus2sus4/2` | order | `position 2` | `position 3` |
@@ -3381,6 +3384,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Ab/maj7sus2/4` | order | `position 4` | `position 3` |
 | `guitar/Ab/major/2` | order | `position 2` | `position 3` |
 | `guitar/Ab/major/3` | order | `position 3` | `position 2` |
+| `guitar/Ab/mmaj7b5/1` | order | `position 1` | `position 2` |
+| `guitar/Ab/mmaj7b5/2` | order | `position 2` | `position 1` |
 | `guitar/Ab/mmaj7b5/3` | order | `position 3` | `position 4` |
 | `guitar/Ab/mmaj7b5/4` | order | `position 4` | `position 3` |
 | `guitar/Ab/sus/2` | order | `position 2` | `position 3` |
@@ -3452,6 +3457,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/B/maj9/4` | order | `position 4` | `position 3` |
 | `guitar/B/major/3` | order | `position 3` | `position 4` |
 | `guitar/B/major/4` | order | `position 4` | `position 3` |
+| `guitar/B/mmaj7b5/3` | order | `position 3` | `position 4` |
+| `guitar/B/mmaj7b5/4` | order | `position 4` | `position 3` |
 | `guitar/B/sus2sus4/2` | order | `position 2` | `position 3` |
 | `guitar/B/sus2sus4/3` | order | `position 3` | `position 2` |
 | `guitar/Bb/_B/2` | order | `position 2` | `position 3` |
@@ -3482,6 +3489,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Bb/add11/2` | order | `position 2` | `position 1` |
 | `guitar/Bb/add11/3` | order | `position 3` | `position 2` |
 | `guitar/Bb/add11/4` | order | `position 4` | `position 3` |
+| `guitar/Bb/aug9/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/aug9/4` | order | `position 4` | `position 3` |
 | `guitar/Bb/dim7/3` | order | `position 3` | `position 4` |
 | `guitar/Bb/dim7/4` | order | `position 4` | `position 3` |
 | `guitar/Bb/m_A/3` | order | `position 3` | `position 4` |
@@ -3509,6 +3518,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Bb/m_G/2` | order | `position 2` | `position 4` |
 | `guitar/Bb/m_G/3` | order | `position 3` | `position 2` |
 | `guitar/Bb/m_G/4` | order | `position 4` | `position 1` |
+| `guitar/Bb/m69/1` | order | `position 1` | `position 2` |
+| `guitar/Bb/m69/2` | order | `position 2` | `position 1` |
 | `guitar/Bb/m7/1` | order | `position 1` | `position 4` |
 | `guitar/Bb/m7/3` | order | `position 3` | `position 1` |
 | `guitar/Bb/m7/4` | order | `position 4` | `position 3` |
@@ -3521,6 +3532,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Bb/major/4` | order | `position 4` | `position 3` |
 | `guitar/Bb/minor/2` | order | `position 2` | `position 3` |
 | `guitar/Bb/minor/3` | order | `position 3` | `position 2` |
+| `guitar/Bb/mmaj7b5/3` | order | `position 3` | `position 4` |
+| `guitar/Bb/mmaj7b5/4` | order | `position 4` | `position 3` |
 | `guitar/Bb/mmaj9/1` | order | `position 1` | `position 2` |
 | `guitar/Bb/mmaj9/2` | order | `position 2` | `position 1` |
 | `guitar/Bb/sus2sus4/2` | order | `position 2` | `position 3` |
@@ -3592,6 +3605,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/C/maj7sus2/1` | order | `position 1` | `position 3` |
 | `guitar/C/maj7sus2/2` | order | `position 2` | `position 1` |
 | `guitar/C/maj7sus2/3` | order | `position 3` | `position 2` |
+| `guitar/C/mmaj7b5/3` | order | `position 3` | `position 4` |
+| `guitar/C/mmaj7b5/4` | order | `position 4` | `position 3` |
 | `guitar/C/mmaj9/1` | order | `position 1` | `position 2` |
 | `guitar/C/mmaj9/2` | order | `position 2` | `position 1` |
 | `guitar/C/sus/1` | order | `position 1` | `position 2` |
@@ -3702,6 +3717,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/D/maj11/3` | order | `position 3` | `position 2` |
 | `guitar/D/maj13/1` | order | `position 1` | `position 2` |
 | `guitar/D/maj13/2` | order | `position 2` | `position 1` |
+| `guitar/D/maj7b5/3` | order | `position 3` | `position 4` |
+| `guitar/D/maj7b5/4` | order | `position 4` | `position 3` |
 | `guitar/D/minor/2` | order | `position 2` | `position 3` |
 | `guitar/D/minor/3` | order | `position 3` | `position 2` |
 | `guitar/D/mmaj7b5/2` | order | `position 2` | `position 3` |
@@ -3966,9 +3983,11 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Fsharp/maj7b5/4` | order | `position 4` | `position 3` |
 | `guitar/Fsharp/maj7sus2/3` | order | `position 3` | `position 4` |
 | `guitar/Fsharp/maj7sus2/4` | order | `position 4` | `position 3` |
-| `guitar/Fsharp/maj9/1` | order | `position 1` | `position 2` |
-| `guitar/Fsharp/maj9/2` | order | `position 2` | `position 3` |
-| `guitar/Fsharp/maj9/3` | order | `position 3` | `position 1` |
+| `guitar/Fsharp/maj9/1` | order | `position 1` | `position 3` |
+| `guitar/Fsharp/maj9/2` | order | `position 2` | `position 1` |
+| `guitar/Fsharp/maj9/3` | order | `position 3` | `position 2` |
+| `guitar/Fsharp/mmaj7b5/1` | order | `position 1` | `position 2` |
+| `guitar/Fsharp/mmaj7b5/2` | order | `position 2` | `position 1` |
 | `guitar/Fsharp/mmaj7b5/3` | order | `position 3` | `position 4` |
 | `guitar/Fsharp/mmaj7b5/4` | order | `position 4` | `position 3` |
 | `guitar/Fsharp/mmaj9/1` | order | `position 1` | `position 2` |
@@ -3994,8 +4013,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/G/_Fsharp/3` | order | `position 3` | `position 2` |
 | `guitar/G/5/2` | order | `position 2` | `position 3` |
 | `guitar/G/5/3` | order | `position 3` | `position 2` |
-| `guitar/G/7b9/1` | order | `position 1` | `position 2` |
-| `guitar/G/7b9/2` | order | `position 2` | `position 1` |
 | `guitar/G/7sharp9/2` | order | `position 2` | `position 3` |
 | `guitar/G/7sharp9/3` | order | `position 3` | `position 2` |
 | `guitar/G/9b5/3` | order | `position 3` | `position 4` |
@@ -4032,6 +4049,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/G/maj9/3` | order | `position 3` | `position 2` |
 | `guitar/G/major/3` | order | `position 3` | `position 3` |
 | `guitar/G/major/4` | order | `position 4` | `position 2` |
+| `guitar/G/mmaj7b5/1` | order | `position 1` | `position 2` |
+| `guitar/G/mmaj7b5/2` | order | `position 2` | `position 1` |
 | `guitar/G/mmaj7b5/3` | order | `position 3` | `position 4` |
 | `guitar/G/mmaj7b5/4` | order | `position 4` | `position 3` |
 | `guitar/G/sus/3` | order | `position 3` | `position 4` |
@@ -4220,3 +4239,180 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele/Gb/sus4/3` | order | `position 3` | `position 2` |
 
 </details>
+
+### 55. Muted the two lowest strings: neither sounded the root and the third string up does, so the chord now has its root in the bass (e.g. A11 777789 -> xx7789).
+
+[#11](https://github.com/tabsy-gr/chords-db/issues/11) · upstream [#17](https://github.com/tombatossals/chords-db/issues/17) · reported by [zero-is-one](https://github.com/zero-is-one)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/11/4` | fingers | `1 1 1 1 2 3` | `0 0 1 1 2 3` |
+| `guitar/A/11/4` | frets | `777789` | `xx7789` |
+| `guitar/A/sus2/3` | fingers | `1 1 1 3 4 1` | `0 0 1 3 4 1` |
+| `guitar/A/sus2/3` | frets | `7779a7` | `xx79a7` |
+| `guitar/A/sus2/3` | order | `position 3` | `position 4` |
+| `guitar/Ab/11/2` | fingers | `1 1 1 1 2 3` | `0 0 1 1 2 3` |
+| `guitar/Ab/11/2` | frets | `666678` | `xx6678` |
+| `guitar/Ab/6/1` | fingers | `0 3 1 1 1 1` | `0 0 0 1 1 1` |
+| `guitar/Ab/6/1` | frets | `x31111` | `xxx111` |
+| `guitar/Ab/sus2/3` | fingers | `1 1 1 3 4 1` | `0 0 1 3 4 1` |
+| `guitar/Ab/sus2/3` | frets | `666896` | `xx6896` |
+| `guitar/B/11/4` | fingers | `1 1 1 1 2 3` | `0 0 1 1 2 3` |
+| `guitar/B/11/4` | frets | `9999ab` | `xx99ab` |
+| `guitar/B/sus2/3` | fingers | `1 1 1 3 4 1` | `0 0 1 3 4 1` |
+| `guitar/B/sus2/3` | frets | `999bc9` | `xx9bc9` |
+| `guitar/Bb/11/3` | fingers | `1 1 1 1 2 3` | `0 0 1 1 2 3` |
+| `guitar/Bb/11/3` | frets | `88889a` | `xx889a` |
+| `guitar/Bb/sus2/3` | fingers | `1 1 1 3 4 1` | `0 0 1 3 4 1` |
+| `guitar/Bb/sus2/3` | frets | `888ab8` | `xx8ab8` |
+| `guitar/Csharp/sus2/4` | fingers | `1 1 1 3 4 1` | `0 0 1 3 4 1` |
+| `guitar/Csharp/sus2/4` | frets | `bbbdeb` | `xxbdeb` |
+| `guitar/D/11/4` | barres | `8` | `—` |
+| `guitar/D/11/4` | capo | `true` | `false` |
+| `guitar/D/11/4` | fingers | `1 1 1 2 1 1` | `0 0 0 1 2 3` |
+| `guitar/D/11/4` | frets | `x97788` | `xxx788` |
+| `guitar/E/sus2/1` | fingers | `1 1 1 3 4 1` | `0 0 1 3 4 1` |
+| `guitar/E/sus2/1` | frets | `222452` | `xx2452` |
+| `guitar/Eb/11/1` | fingers | `1 1 1 1 2 3` | `0 0 1 1 2 3` |
+| `guitar/Eb/11/1` | frets | `111123` | `xx1123` |
+| `guitar/Eb/sus2/1` | fingers | `1 1 1 3 4 1` | `0 0 1 3 4 1` |
+| `guitar/Eb/sus2/1` | frets | `111341` | `xx1341` |
+| `guitar/F/11/2` | fingers | `1 1 1 1 2 3` | `0 0 1 1 2 3` |
+| `guitar/F/11/2` | frets | `333345` | `xx3345` |
+| `guitar/F/sus2/2` | fingers | `1 1 1 3 4 1` | `0 0 1 3 4 1` |
+| `guitar/F/sus2/2` | frets | `333563` | `xx3563` |
+| `guitar/Fsharp/11/2` | fingers | `1 1 1 1 2 3` | `0 0 1 1 2 3` |
+| `guitar/Fsharp/11/2` | frets | `444456` | `xx4456` |
+| `guitar/Fsharp/sus2/2` | fingers | `1 1 1 3 4 1` | `0 0 1 3 4 1` |
+| `guitar/Fsharp/sus2/2` | frets | `444674` | `xx4674` |
+| `guitar/G/11/2` | fingers | `1 1 1 1 2 3` | `0 0 1 1 2 3` |
+| `guitar/G/11/2` | frets | `555567` | `xx5567` |
+| `guitar/G/sus2/2` | fingers | `1 1 1 3 4 1` | `0 0 1 3 4 1` |
+| `guitar/G/sus2/2` | frets | `555785` | `xx5785` |
+
+### 56. The barre crossed a muted string, which it would have sounded. The lowest string, cut off from the rest by the muted strings, is now fretted with the thumb (T), and the barre covers only the strings above the mute, as shapes like D/F# 2xx232 are played.
+
+[#8](https://github.com/tabsy-gr/chords-db/issues/8)
+
+<details>
+<summary>34 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/_Csharp/4` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
+| `guitar/A/6/3` | barres | `5` | `—` |
+| `guitar/A/6/3` | capo | `true` | `false` |
+| `guitar/A/6/3` | fingers | `1 3 0 2 4 1` | `T 3 0 2 4 1` |
+| `guitar/A/aug/3` | barres | `5` | `—` |
+| `guitar/A/aug/3` | capo | `true` | `false` |
+| `guitar/A/aug/3` | fingers | `1 0 4 2 3 1` | `T 0 4 2 3 1` |
+| `guitar/Ab/_C/4` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
+| `guitar/Ab/sus2/2` | barres | `4` | `—` |
+| `guitar/Ab/sus2/2` | capo | `true` | `false` |
+| `guitar/Ab/sus2/2` | fingers | `1 2 3 0 1 4` | `T 2 3 0 1 4` |
+| `guitar/B/7b9/3` | fingers | `1 0 1 2 1 3` | `T 0 1 2 1 3` |
+| `guitar/Bb/6/3` | barres | `6` | `—` |
+| `guitar/Bb/6/3` | capo | `true` | `false` |
+| `guitar/Bb/6/3` | fingers | `1 3 0 2 4 0` | `T 3 0 2 4 1` |
+| `guitar/Bb/7b9/3` | fingers | `1 0 1 2 1 3` | `T 0 1 2 1 3` |
+| `guitar/Bb/aug9/4` | barres | `6` | `—` |
+| `guitar/Bb/aug9/4` | capo | `true` | `false` |
+| `guitar/Bb/aug9/4` | fingers | `1 0 1 2 3 4` | `T 0 1 2 3 4` |
+| `guitar/Bb/m69/2` | barres | `6` | `—` |
+| `guitar/Bb/m69/2` | capo | `true` | `false` |
+| `guitar/Bb/m69/2` | fingers | `1 0 2 1 3 4` | `T 0 2 1 3 4` |
+| `guitar/C/6/4` | barres | `8` | `—` |
+| `guitar/C/6/4` | capo | `true` | `false` |
+| `guitar/C/6/4` | fingers | `1 0 3 2 4 1` | `T 0 3 2 4 1` |
+| `guitar/C/7b9/3` | fingers | `1 0 1 2 1 3` | `T 0 1 2 1 3` |
+| `guitar/C/maj9/4` | barres | `8` | `—` |
+| `guitar/C/maj9/4` | capo | `true` | `false` |
+| `guitar/C/maj9/4` | fingers | `1 0 2 3 1 4` | `T 0 2 3 1 4` |
+| `guitar/Csharp/_F/2` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
+| `guitar/Csharp/6/4` | barres | `9` | `—` |
+| `guitar/Csharp/6/4` | capo | `true` | `false` |
+| `guitar/Csharp/6/4` | fingers | `1 0 3 2 4 1` | `T 0 3 2 4 1` |
+| `guitar/Csharp/aug/4` | barres | `9` | `—` |
+| `guitar/Csharp/aug/4` | capo | `true` | `false` |
+| `guitar/Csharp/aug/4` | fingers | `1 0 4 2 3 1` | `T 0 4 2 3 1` |
+| `guitar/Csharp/sus2/3` | barres | `9` | `—` |
+| `guitar/Csharp/sus2/3` | capo | `true` | `false` |
+| `guitar/Csharp/sus2/3` | fingers | `1 2 3 0 1 4` | `T 2 3 0 1 4` |
+| `guitar/D/_Fsharp/2` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
+| `guitar/D/maj7b5/4` | barres | `10` | `—` |
+| `guitar/D/maj7b5/4` | capo | `true` | `false` |
+| `guitar/D/maj7b5/4` | fingers | `1 2 3 4 0 1` | `T 2 3 4 0 1` |
+| `guitar/D/maj9/4` | barres | `10` | `—` |
+| `guitar/D/maj9/4` | capo | `true` | `false` |
+| `guitar/D/maj9/4` | fingers | `1 0 2 3 1 4` | `T 0 2 3 1 4` |
+| `guitar/E/_Ab/2` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
+| `guitar/E/sus2/4` | barres | `12` | `—` |
+| `guitar/E/sus2/4` | capo | `true` | `false` |
+| `guitar/E/sus2/4` | fingers | `1 3 4 0 1 4` | `T 2 3 0 1 4` |
+| `guitar/Eb/_G/2` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
+| `guitar/Eb/maj7b5/4` | barres | `11 12` | `12` |
+| `guitar/Eb/maj7b5/4` | fingers | `1 2 2 2 0 1` | `T 2 2 2 0 1` |
+| `guitar/Eb/maj7sharp5/4` | barres | `11` | `—` |
+| `guitar/Eb/maj7sharp5/4` | capo | `true` | `false` |
+| `guitar/Eb/maj7sharp5/4` | fingers | `1 0 2 3 4 1` | `T 0 2 3 4 1` |
+| `guitar/Eb/sus2/4` | barres | `11` | `—` |
+| `guitar/Eb/sus2/4` | capo | `true` | `false` |
+| `guitar/Eb/sus2/4` | fingers | `1 2 3 0 1 4` | `T 2 3 0 1 4` |
+| `guitar/F/6/1` | barres | `1` | `—` |
+| `guitar/F/6/1` | capo | `true` | `false` |
+| `guitar/F/6/1` | fingers | `1 0 3 2 4 1` | `T 0 3 2 4 1` |
+| `guitar/F/sus2/1` | barres | `1` | `—` |
+| `guitar/F/sus2/1` | capo | `true` | `false` |
+| `guitar/F/sus2/1` | fingers | `1 2 3 0 1 4` | `T 2 3 0 1 4` |
+| `guitar/Fsharp/_Bb/2` | fingers | `1 1 1 1 2 1` | `T 0 0 1 2 1` |
+| `guitar/Fsharp/6/2` | barres | `2` | `—` |
+| `guitar/Fsharp/6/2` | capo | `true` | `false` |
+| `guitar/Fsharp/6/2` | fingers | `1 0 3 2 4 1` | `T 0 3 2 4 1` |
+| `guitar/Fsharp/alt/2` | barres | `2` | `—` |
+| `guitar/Fsharp/alt/2` | capo | `true` | `false` |
+| `guitar/Fsharp/alt/2` | fingers | `1 2 4 3 0 1` | `T 2 4 3 0 1` |
+| `guitar/Fsharp/maj9/2` | barres | `2` | `—` |
+| `guitar/Fsharp/maj9/2` | capo | `true` | `false` |
+| `guitar/Fsharp/maj9/2` | fingers | `1 0 2 3 1 4` | `T 0 2 3 1 4` |
+| `guitar/G/13/2` | barres | `3` | `—` |
+| `guitar/G/13/2` | capo | `true` | `false` |
+| `guitar/G/13/2` | fingers | `1 0 1 2 3 4` | `T 0 1 2 3 4` |
+| `guitar/G/7b9/2` | fingers | `1 0 1 2 1 3` | `T 0 1 2 1 3` |
+
+</details>
+
+### 57. The barre crossed a muted string, which it would have sounded. Refingered with the playable fingering closest to the original: a second finger or a partial barre takes the note beyond the mute, and the thumb is used on the low E only where no finger is free.
+
+[#8](https://github.com/tabsy-gr/chords-db/issues/8)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/mmaj7b5/2` | barres | `5` | `5 6` |
+| `guitar/A/mmaj7b5/2` | fingers | `1 2 3 1 0 1` | `1 3 3 1 0 2` |
+| `guitar/Ab/mmaj7b5/1` | barres | `4` | `4 5` |
+| `guitar/Ab/mmaj7b5/1` | fingers | `1 2 3 1 0 1` | `1 3 3 1 0 2` |
+| `guitar/B/mmaj7b5/3` | barres | `7` | `7 8` |
+| `guitar/B/mmaj7b5/3` | fingers | `1 2 3 1 0 1` | `1 3 3 1 0 2` |
+| `guitar/Bb/m9/2` | barres | `4` | `—` |
+| `guitar/Bb/m9/2` | capo | `true` | `false` |
+| `guitar/Bb/m9/2` | fingers | `3 1 0 2 4 1` | `T 2 0 3 4 1` |
+| `guitar/Bb/mmaj7b5/3` | barres | `6` | `6 7` |
+| `guitar/Bb/mmaj7b5/3` | fingers | `1 2 3 1 0 1` | `1 3 3 1 0 2` |
+| `guitar/C/mmaj7b5/3` | barres | `8` | `8 9` |
+| `guitar/C/mmaj7b5/3` | fingers | `1 2 3 1 0 1` | `1 3 3 1 0 2` |
+| `guitar/Csharp/mmaj7b5/3` | barres | `9` | `9 10` |
+| `guitar/Csharp/mmaj7b5/3` | fingers | `1 2 2 1 0 1` | `1 3 3 1 0 2` |
+| `guitar/D/mmaj7b5/4` | barres | `10` | `10 11` |
+| `guitar/D/mmaj7b5/4` | fingers | `1 2 2 1 0 1` | `1 3 3 1 0 2` |
+| `guitar/Eb/alt/4` | barres | `10` | `—` |
+| `guitar/Eb/alt/4` | capo | `true` | `false` |
+| `guitar/Eb/alt/4` | fingers | `2 1 0 4 1 3` | `T 2 0 4 1 3` |
+| `guitar/Eb/mmaj7b5/4` | fingers | `1 2 2 1 0 1` | `1 3 3 1 0 2` |
+| `guitar/F/alt/4` | barres | `12` | `—` |
+| `guitar/F/alt/4` | capo | `true` | `false` |
+| `guitar/F/alt/4` | fingers | `2 1 0 4 1 3` | `T 2 0 4 1 3` |
+| `guitar/Fsharp/mmaj7b5/1` | barres | `2` | `2 3` |
+| `guitar/Fsharp/mmaj7b5/1` | fingers | `1 2 3 1 0 1` | `1 3 3 1 0 2` |
+| `guitar/G/dim/3` | fingers | `0 1 2 4 3 0` | `0 4 2 0 1 3` |
+| `guitar/G/mmaj7b5/1` | barres | `3` | `3 4` |
+| `guitar/G/mmaj7b5/1` | fingers | `1 2 3 1 0 1` | `1 3 3 1 0 2` |

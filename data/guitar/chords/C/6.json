@@ -25,9 +25,7 @@
     {
       "id": "guitar/C/6/4",
       "frets": [8, -1, 10, 9, 10, 8],
-      "fingers": [1, 0, 3, 2, 4, 1],
-      "barres": [8],
-      "capo": true,
+      "fingers": ["T", 0, 3, 2, 4, 1],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

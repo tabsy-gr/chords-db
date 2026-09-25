@@ -25,9 +25,7 @@
     {
       "id": "guitar/Eb/maj7sharp5/4",
       "frets": [11, -1, 12, 12, 12, 11],
-      "fingers": [1, 0, 2, 3, 4, 1],
-      "barres": [11],
-      "capo": true,
+      "fingers": ["T", 0, 2, 3, 4, 1],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

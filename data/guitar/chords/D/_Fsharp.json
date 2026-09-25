@@ -12,7 +12,7 @@
     {
       "id": "guitar/D/_Fsharp/2",
       "frets": [2, -1, -1, 2, 3, 2],
-      "fingers": [1, 0, 0, 1, 2, 1],
+      "fingers": ["T", 0, 0, 1, 2, 1],
       "barres": [2],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

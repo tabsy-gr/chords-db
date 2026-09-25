@@ -42,8 +42,9 @@ describe.each(['guitar', 'ukulele'])('%s', (id) => {
     expect(failing(withinSpan)).toEqual([]);
   });
 
-  it('uses fingers 0 to 4', () => {
-    expect(failing((v) => v.fingers.every((f) => typeof f === 'number' && f >= 0 && f <= 4))).toEqual([]);
+  // Upstream allowed fingers 0 to 4; schema v2 adds the thumb ('T').
+  it('uses fingers 0 to 4, or the thumb', () => {
+    expect(failing((v) => v.fingers.every((f) => f === 'T' || (typeof f === 'number' && f >= 0 && f <= 4)))).toEqual([]);
   });
 
   it('puts every barre on a fret used by at least two strings', () => {

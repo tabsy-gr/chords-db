@@ -13,8 +13,8 @@
     },
     {
       "id": "guitar/Ab/11/2",
-      "frets": [6, 6, 6, 6, 7, 8],
-      "fingers": [1, 1, 1, 1, 2, 3],
+      "frets": [-1, -1, 6, 6, 7, 8],
+      "fingers": [0, 0, 1, 1, 2, 3],
       "barres": [6],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

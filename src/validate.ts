@@ -92,6 +92,11 @@ export const RULES: Record<string, { severity: Severity; description: string }> 
     severity: 'error',
     description: 'A higher-numbered finger sits on a lower fret than a lower-numbered one.',
   },
+  'fingers/thumb-placement': {
+    severity: 'error',
+    description:
+      'The thumb frets a string above one that another finger frets; it can only reach over the neck to the lowest strings.',
+  },
   'barres/undeclared': {
     severity: 'error',
     description: 'A finger covers several strings on one fret, but that fret is not in "barres".',
@@ -253,6 +258,15 @@ const checkFingering = (instrument: FrettedInstrument, voicing: FrettedVoicing) 
       out.push(
         issue('barres/undeclared', `finger ${finger} covers ${courses.length} courses at fret ${distinct[0]}`, id)
       );
+    }
+  }
+
+  const thumbCourses = fingers.flatMap((f, c) => (f === 'T' && frets[c] > 0 ? [c] : []));
+  if (thumbCourses.length) {
+    const lowestFingered = frets.findIndex((f, c) => f > 0 && fingers[c] !== 'T' && fingers[c] !== 0);
+    const above = thumbCourses.filter((c) => lowestFingered >= 0 && c > lowestFingered);
+    if (above.length) {
+      out.push(issue('fingers/thumb-placement', `thumb on course ${above.map((c) => c + 1).join(', ')} is above a fretted finger`, id));
     }
   }
 
