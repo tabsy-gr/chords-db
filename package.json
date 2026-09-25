@@ -1,6 +1,6 @@
 {
   "name": "@tabsy-gr/chords-db",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "A validated database of string-instrument and piano chord voicings. Hard fork of tombatossals/chords-db.",
   "license": "MIT",
   "author": "Tabsy",
