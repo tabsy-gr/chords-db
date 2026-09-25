@@ -8,41 +8,49 @@
     "David Rubert <david.rubert@gmail.com> (original author, tombatossals/chords-db)"
   ],
   "engines": {
-    "node": ">=20"
+    "node": ">=20.11"
   },
   "sideEffects": false,
   "files": [
     "dist",
-    "lib"
+    "lib",
+    "schema"
   ],
   "exports": {
     ".": {
       "import": {
-        "types": "./dist/index.d.mts",
-        "default": "./dist/index.mjs"
-      },
-      "require": {
         "types": "./dist/index.d.ts",
         "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
       }
     },
-    "./lib/*.json": "./lib/*.json"
+    "./guitar": "./lib/guitar.json",
+    "./ukulele": "./lib/ukulele.json",
+    "./piano": "./lib/piano.json",
+    "./instruments": "./lib/instruments.json",
+    "./schema/*": "./schema/*"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "npm run build:data && tsup",
-    "build:data": "tsx scripts/generate.ts json",
-    "stdout": "tsx scripts/generate.ts",
+    "build:data": "tsx scripts/build-data.ts",
+    "format:data": "tsx scripts/format-data.ts",
+    "check:format": "tsx scripts/format-data.ts --check",
     "typecheck": "tsc --noEmit",
     "test": "vitest",
     "test:run": "vitest run",
-    "prepublishOnly": "npm run build",
-    "authors": "tsx scripts/generate-authors.ts"
+    "authors": "tsx scripts/generate-authors.ts",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
     "tsup": "^8.5.0",
     "tsx": "^4.20.0",
     "typescript": "^5.9.3",
@@ -67,5 +75,6 @@
     "piano",
     "bouzouki",
     "music"
-  ]
+  ],
+  "type": "module"
 }

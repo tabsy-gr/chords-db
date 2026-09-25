@@ -1,1 +1,1 @@
-{"guitar":{"strings":6,"fretsOnChord":4,"name":"guitar","numberOfChords":3283},"ukulele":{"strings":4,"fretsOnChord":4,"name":"ukulele","numberOfChords":2114},"piano":{"name":"piano","keys":88,"fretsOnChord":null,"numberOfChords":528}}
+{"guitar":{"name":"Guitar","kind":"fretted","chordCount":828,"voicingCount":3283},"piano":{"name":"Piano","kind":"keyboard","chordCount":528,"voicingCount":528},"ukulele":{"name":"Ukulele","kind":"fretted","chordCount":552,"voicingCount":2114}}

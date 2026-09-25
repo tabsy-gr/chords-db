@@ -1,54 +1,101 @@
 /**
- * Types for the source database (src/db) and the generated JSON (lib/).
- *
- * These describe the schema inherited from tombatossals/chords-db. It is
- * replaced by schema v2 in a later phase; see MIGRATING-FROM-CHORDS-DB.md.
+ * Types for the schema v2 data. The JSON Schemas in schema/ are the source of
+ * truth for the files under data/; these types mirror them.
  */
 
-/** A fret/finger sequence: either a hex string ('x32010') or an array of numbers. */
-export type StringSequence = string | number[];
+/** A note name without octave, e.g. 'C', 'F#', 'Bb'. */
+export type NoteName = string;
+/** A note with octave, e.g. 'E2'. */
+export type Pitch = string;
 
-export interface FrettedSourcePosition {
-  /** One entry per string; 'x' / -1 is muted, 0 is open. */
-  frets: StringSequence;
-  fingers?: StringSequence;
-  barres?: number | number[];
-  capo?: boolean;
+/** 1 index … 4 little, 'T' thumb, 0 no finger. */
+export type Finger = 0 | 1 | 2 | 3 | 4 | 'T';
+
+export interface Source {
+  type: 'upstream' | 'pull-request' | 'curated' | 'reference' | 'reference-dataset';
+  ref?: string;
+  id?: string;
 }
 
-export interface PianoSourcePosition {
-  /** Note names, e.g. ['C', 'E', 'G'] or ['C4', 'E4']. */
-  frets: string[];
-  /** One finger per note, as digit strings. */
-  fingers?: string[];
+export interface Verified {
+  by: string;
+  /** YYYY-MM-DD */
+  date: string;
 }
 
-export type SourcePosition = FrettedSourcePosition | PianoSourcePosition;
+export interface FrettedVoicing {
+  /** Permanent: assigned once, never changed. */
+  id: string;
+  /** Absolute fret per course, lowest course first. -1 muted, 0 open. */
+  frets: number[];
+  fingers: Finger[];
+  /** Absolute frets barred by one finger. */
+  barres?: number[];
+  capo?: true;
+  sources: Source[];
+  verified?: Verified;
+}
 
-export interface SourceChord<P extends SourcePosition = SourcePosition> {
-  key: string;
+export interface KeyboardVoicing {
+  /** Permanent: assigned once, never changed. */
+  id: string;
+  /** Note names, lowest first. */
+  notes: string[];
+  /** Chord degree of each note, e.g. '1', 'b3', '#9'. */
+  degrees?: string[];
+  sources: Source[];
+  verified?: Verified;
+}
+
+export type Voicing = FrettedVoicing | KeyboardVoicing;
+
+export interface Chord<V extends Voicing = Voicing> {
+  key: NoteName;
   suffix: string;
-  positions: P[];
+  voicings: V[];
 }
 
-export interface InstrumentMain {
+interface InstrumentBase {
+  id: string;
   name: string;
-  /** Fretted instruments only. */
-  strings?: number;
-  /** Piano only: number of keys. */
-  keys?: number;
-  /** Maximum fret span of a voicing; null for piano. */
-  fretsOnChord: number | null;
-  numberOfChords?: number;
-}
-
-export interface SourceInstrument<P extends SourcePosition = SourcePosition> {
-  main: InstrumentMain;
-  tunings: Record<string, string[]>;
-  keys: string[];
+  /** Chord roots covered, in display order. */
+  keys: NoteName[];
+  /** Chord suffixes covered, in display order. */
   suffixes: string[];
-  chords: Record<string, SourceChord<P>[]>;
 }
 
-export type FrettedInstrument = SourceInstrument<FrettedSourcePosition>;
-export type PianoInstrument = SourceInstrument<PianoSourcePosition>;
+export interface FrettedInstrument extends InstrumentBase {
+  kind: 'fretted';
+  /** Courses from lowest to highest; each lists the pitches of its strings. */
+  tunings: Record<string, Pitch[][]>;
+  maxFretSpan: number;
+}
+
+export interface KeyboardInstrument extends InstrumentBase {
+  kind: 'keyboard';
+  keyCount: number;
+}
+
+export type Instrument = FrettedInstrument | KeyboardInstrument;
+
+/** A voicing as published in lib/: the source voicing plus its MIDI notes. */
+export type Published<V extends Voicing> = V & {
+  /** One MIDI note per sounding string (fretted) or per note (keyboard). */
+  midi: number[];
+};
+
+/** The contents of lib/<instrument>.json. */
+export interface InstrumentData<
+  I extends Instrument = Instrument,
+  V extends Voicing = I extends FrettedInstrument ? FrettedVoicing : KeyboardVoicing,
+> {
+  instrument: I;
+  /** Chords grouped by key, in the instrument's key and suffix order. */
+  chords: Record<NoteName, Chord<Published<V>>[]>;
+}
+
+/** The contents of lib/instruments.json. */
+export type InstrumentIndex = Record<
+  string,
+  { name: string; kind: Instrument['kind']; chordCount: number; voicingCount: number }
+>;

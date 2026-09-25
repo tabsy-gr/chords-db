@@ -1,11 +1,3 @@
-export {
-  strChord2array,
-  processString,
-  unique,
-  numberOfBarres,
-  generate,
-  chord2midi,
-  notes2midi,
-  getNoteFromMidiNumber,
-} from './tools';
+export { noteToMidi, midiToNoteName, frettedMidi, keyboardMidi } from './midi';
+export { toChordDiagram, type ChordDiagram } from './diagram';
 export type * from './types';
