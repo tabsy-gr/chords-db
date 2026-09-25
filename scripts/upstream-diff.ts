@@ -106,8 +106,6 @@ export const computeDiffs = (): Diff[] => {
       }
       if (was.key !== now.key || was.suffix !== now.suffix) {
         add(id, 'relabelled', `${was.key}${was.suffix}`, `${now.key}${now.suffix}`);
-      } else if (was.index !== now.index) {
-        add(id, 'order', `position ${was.index + 1}`, `position ${now.index + 1}`);
       }
 
       if (instrument.kind === 'fretted') {
@@ -135,6 +133,23 @@ export const computeDiffs = (): Diff[] => {
         }
       }
       if (now.voicing.rootless) add(id, 'rootless', 'false', 'true');
+    }
+
+    // Reordering: compare the relative order of the upstream voicings still
+    // in each chord. Voicings moving in or out alone doesn't reorder the rest.
+    for (const { chord } of chords) {
+      const kept = chord.voicings
+        .map((v) => v.id)
+        .filter((id) => {
+          const was = upstream.get(id);
+          return was && was.key === chord.key && was.suffix === chord.suffix;
+        });
+      const expected = [...kept].sort((a, b) => upstream.get(a)!.index - upstream.get(b)!.index);
+      kept.forEach((id, rank) => {
+        if (expected[rank] !== id) {
+          add(id, 'order', `position ${upstream.get(id)!.index + 1}`, `position ${current.get(id)!.index + 1}`);
+        }
+      });
     }
 
     for (const [id, now] of current) {
