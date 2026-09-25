@@ -12,7 +12,7 @@ export type Pitch = string;
 export type Finger = 0 | 1 | 2 | 3 | 4 | 'T';
 
 export interface Source {
-  type: 'upstream' | 'pull-request' | 'curated' | 'reference' | 'reference-dataset';
+  type: 'upstream' | 'pull-request' | 'curated' | 'derived' | 'reference' | 'reference-dataset';
   ref?: string;
   id?: string;
 }

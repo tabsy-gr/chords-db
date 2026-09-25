@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "B",
+  "suffix": "dim",
+  "voicings": [
+    {
+      "id": "ukulele-d/B/dim/1",
+      "frets": [2, 3, 5, 3],
+      "fingers": [1, 2, 4, 3],
+      "sources": [{ "type": "derived", "ref": "ukulele/A/dim/1" }]
+    },
+    {
+      "id": "ukulele-d/B/dim/2",
+      "frets": [5, 3, 5, 3],
+      "fingers": [3, 1, 4, 1],
+      "barres": [3],
+      "capo": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/A/dim/2" }]
+    },
+    {
+      "id": "ukulele-d/B/dim/3",
+      "frets": [8, 9, 8, 6],
+      "fingers": [2, 4, 3, 1],
+      "sources": [{ "type": "derived", "ref": "ukulele/A/dim/3" }]
+    },
+    {
+      "id": "ukulele-d/B/dim/4",
+      "frets": [14, 12, 11, 12],
+      "fingers": [4, 2, 1, 3],
+      "sources": [{ "type": "derived", "ref": "ukulele/A/dim/4" }]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Ab",
+  "suffix": "aug",
+  "voicings": [
+    {
+      "id": "ukulele-d/Ab/aug/1",
+      "frets": [3, 2, 2, 1],
+      "fingers": [3, 2, 2, 1],
+      "barres": [2],
+      "sources": [{ "type": "derived", "ref": "ukulele/Gb/aug/1" }]
+    },
+    {
+      "id": "ukulele-d/Ab/aug/3",
+      "frets": [3, 6, 6, 5],
+      "fingers": [1, 3, 4, 2],
+      "sources": [{ "type": "derived", "ref": "ukulele/Gb/aug/3" }]
+    },
+    {
+      "id": "ukulele-d/Ab/aug/2",
+      "frets": [3, 2, 2, 5],
+      "fingers": [2, 1, 1, 4],
+      "barres": [2],
+      "capo": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/Gb/aug/2" }]
+    },
+    {
+      "id": "ukulele-d/Ab/aug/4",
+      "frets": [7, 6, 6, 9],
+      "fingers": [2, 1, 1, 4],
+      "barres": [6],
+      "capo": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/Gb/aug/4" }]
+    }
+  ]
+}

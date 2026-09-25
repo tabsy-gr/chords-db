@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Ab",
+  "suffix": "69",
+  "voicings": [
+    {
+      "id": "ukulele-d/Ab/69/1",
+      "frets": [3, 3, 4, 4],
+      "fingers": [1, 1, 2, 2],
+      "barres": [3, 4],
+      "capo": true,
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/Gb/69/1" }]
+    },
+    {
+      "id": "ukulele-d/Ab/69/2",
+      "frets": [6, 8, 6, 6],
+      "fingers": [1, 3, 1, 1],
+      "barres": [6],
+      "capo": true,
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/Gb/69/2" }]
+    },
+    {
+      "id": "ukulele-d/Ab/69/3",
+      "frets": [8, 10, 9, 11],
+      "fingers": [1, 3, 2, 4],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/Gb/69/3" }]
+    },
+    {
+      "id": "ukulele-d/Ab/69/4",
+      "frets": [13, 13, 11, 13],
+      "fingers": [2, 3, 1, 4],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/Gb/69/4" }]
+    }
+  ]
+}

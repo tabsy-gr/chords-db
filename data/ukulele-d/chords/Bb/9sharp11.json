@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Bb",
+  "suffix": "9#11",
+  "voicings": [
+    {
+      "id": "ukulele-d/Bb/9sharp11/1",
+      "frets": [3, 2, 2, 3],
+      "fingers": [2, 1, 1, 3],
+      "barres": [2],
+      "capo": true,
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/Ab/9sharp11/1" }]
+    },
+    {
+      "id": "ukulele-d/Bb/9sharp11/3",
+      "frets": [7, 10, 8, 9],
+      "fingers": [1, 4, 2, 3],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/Ab/9sharp11/3" }]
+    },
+    {
+      "id": "ukulele-d/Bb/9sharp11/2",
+      "frets": [5, 6, 6, 5],
+      "fingers": [1, 2, 2, 1],
+      "barres": [5, 6],
+      "capo": true,
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/Ab/9sharp11/2" }]
+    },
+    {
+      "id": "ukulele-d/Bb/9sharp11/4",
+      "frets": [11, 12, 10, 13],
+      "fingers": [2, 3, 1, 4],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/Ab/9sharp11/4" }]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "A",
+  "suffix": "6",
+  "voicings": [
+    {
+      "id": "ukulele-d/A/6/1",
+      "frets": [0, 2, 0, 2],
+      "fingers": [0, 1, 0, 2],
+      "sources": [{ "type": "derived", "ref": "ukulele/G/6/1" }]
+    },
+    {
+      "id": "ukulele-d/A/6/2",
+      "frets": [4, 4, 3, 5],
+      "fingers": [2, 3, 1, 4],
+      "sources": [{ "type": "derived", "ref": "ukulele/G/6/2" }]
+    },
+    {
+      "id": "ukulele-d/A/6/3",
+      "frets": [7, 7, 7, 7],
+      "fingers": [1, 1, 1, 1],
+      "barres": [7],
+      "capo": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/G/6/3" }]
+    },
+    {
+      "id": "ukulele-d/A/6/4",
+      "frets": [9, 11, 10, 10],
+      "fingers": [1, 4, 2, 3],
+      "sources": [{ "type": "derived", "ref": "ukulele/G/6/4" }]
+    }
+  ]
+}

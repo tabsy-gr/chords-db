@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Db",
+  "suffix": "m7b5",
+  "voicings": [
+    {
+      "id": "ukulele-d/Db/m7b5/1",
+      "frets": [2, 2, 1, 2],
+      "fingers": [2, 3, 1, 4],
+      "sources": [{ "type": "derived", "ref": "ukulele/B/m7b5/1" }]
+    },
+    {
+      "id": "ukulele-d/Db/m7b5/2",
+      "frets": [4, 5, 5, 5],
+      "fingers": [1, 2, 3, 4],
+      "sources": [{ "type": "derived", "ref": "ukulele/B/m7b5/2" }]
+    },
+    {
+      "id": "ukulele-d/Db/m7b5/3",
+      "frets": [7, 9, 7, 8],
+      "fingers": [1, 3, 1, 2],
+      "barres": [7],
+      "capo": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/B/m7b5/3" }]
+    },
+    {
+      "id": "ukulele-d/Db/m7b5/4",
+      "frets": [10, 11, 10, 12],
+      "fingers": [1, 2, 1, 3],
+      "barres": [10],
+      "capo": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/B/m7b5/4" }]
+    }
+  ]
+}

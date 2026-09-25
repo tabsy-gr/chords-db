@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Gb",
+  "suffix": "b5",
+  "voicings": [
+    {
+      "id": "ukulele-d/Gb/alt/1",
+      "frets": [9, 8, 6, 7],
+      "fingers": [4, 3, 1, 2],
+      "sources": [{ "type": "derived", "ref": "ukulele/E/alt/1" }]
+    },
+    {
+      "id": "ukulele-d/Gb/alt/2",
+      "frets": [9, 10, 12, 11],
+      "fingers": [1, 2, 4, 3],
+      "sources": [{ "type": "derived", "ref": "ukulele/E/alt/2" }]
+    },
+    {
+      "id": "ukulele-d/Gb/alt/3",
+      "frets": [13, 10, 12, 11],
+      "fingers": [4, 1, 3, 2],
+      "sources": [{ "type": "derived", "ref": "ukulele/E/alt/3" }]
+    }
+  ]
+}
