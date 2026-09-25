@@ -1,3 +1,26 @@
+# Changelog
+
+This fork's changes are listed here. Everything below "Forked" is the history
+of the original [tombatossals/chords-db](https://github.com/tombatossals/chords-db).
+For a full comparison with the original, see
+[MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-DB.md).
+
+## Unreleased
+
+### Changed
+* Forked from tombatossals/chords-db v0.6.0 (`df06fa7`) and renamed to
+  `@tabsy-gr/chords-db`.
+* Replaced Babel and Jest with TypeScript, Vitest, tsx and tsup. The generated
+  `lib/*.json` is byte-for-byte identical to the original build.
+* The helpers are exported from the package root, with TypeScript types.
+
+### Added
+* CI that typechecks, builds, tests, and checks that `lib/` is up to date.
+* `AUTHORS`, generated from git history, crediting every contributor to the
+  original project.
+
+## Forked
+
 ## 0.6.0 (May 20, 2024)
 
 ### Instruments
