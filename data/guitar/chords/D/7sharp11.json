@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "D",
+  "suffix": "7#11",
+  "voicings": [
+    {
+      "id": "guitar/D/9sharp11/1",
+      "frets": [-1, -1, 0, 1, 1, 2],
+      "fingers": [0, 0, 0, 1, 2, 3],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/D/9sharp11/3",
+      "frets": [-1, 9, 0, 7, 9, 8],
+      "fingers": [0, 3, 0, 1, 4, 2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

@@ -14,6 +14,8 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 | Change | guitar | ukulele |
 | --- | ---: | ---: |
 | added | 21 | 0 |
+| removed | 0 | 45 |
+| relabelled | 118 | 37 |
 | fingers | 1 | 0 |
 | barres | 112 | 2 |
 | rootless | 0 | 987 |
@@ -1185,5 +1187,253 @@ Counts are voicings; one voicing can have several kinds of change.
 | `ukulele/Gb/mmaj9/2` | rootless | `false` | `true` |
 | `ukulele/Gb/mmaj9/3` | rootless | `false` | `true` |
 | `ukulele/Gb/mmaj9/4` | rootless | `false` | `true` |
+
+</details>
+
+### 5. Relabelled from alt to b5 (major flat five: 1, 3, ♭5). These voicings have no ♭7, so they are not altered dominants.
+
+[#6](https://github.com/tabsy-gr/chords-db/issues/6)
+
+<details>
+<summary>84 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/alt/1` | relabelled | `Aalt` | `Ab5` |
+| `guitar/A/alt/2` | relabelled | `Aalt` | `Ab5` |
+| `guitar/A/alt/3` | relabelled | `Aalt` | `Ab5` |
+| `guitar/A/alt/4` | relabelled | `Aalt` | `Ab5` |
+| `guitar/Ab/alt/1` | relabelled | `Abalt` | `Abb5` |
+| `guitar/Ab/alt/2` | relabelled | `Abalt` | `Abb5` |
+| `guitar/Ab/alt/3` | relabelled | `Abalt` | `Abb5` |
+| `guitar/Ab/alt/4` | relabelled | `Abalt` | `Abb5` |
+| `guitar/B/alt/1` | relabelled | `Balt` | `Bb5` |
+| `guitar/B/alt/2` | relabelled | `Balt` | `Bb5` |
+| `guitar/B/alt/3` | relabelled | `Balt` | `Bb5` |
+| `guitar/B/alt/4` | relabelled | `Balt` | `Bb5` |
+| `guitar/Bb/alt/1` | relabelled | `Bbalt` | `Bbb5` |
+| `guitar/Bb/alt/2` | relabelled | `Bbalt` | `Bbb5` |
+| `guitar/Bb/alt/3` | relabelled | `Bbalt` | `Bbb5` |
+| `guitar/Bb/alt/4` | relabelled | `Bbalt` | `Bbb5` |
+| `guitar/C/alt/1` | relabelled | `Calt` | `Cb5` |
+| `guitar/C/alt/2` | relabelled | `Calt` | `Cb5` |
+| `guitar/C/alt/3` | relabelled | `Calt` | `Cb5` |
+| `guitar/C/alt/4` | relabelled | `Calt` | `Cb5` |
+| `guitar/Csharp/alt/1` | relabelled | `C#alt` | `C#b5` |
+| `guitar/Csharp/alt/2` | relabelled | `C#alt` | `C#b5` |
+| `guitar/Csharp/alt/3` | relabelled | `C#alt` | `C#b5` |
+| `guitar/Csharp/alt/4` | relabelled | `C#alt` | `C#b5` |
+| `guitar/D/alt/1` | relabelled | `Dalt` | `Db5` |
+| `guitar/D/alt/2` | relabelled | `Dalt` | `Db5` |
+| `guitar/D/alt/3` | relabelled | `Dalt` | `Db5` |
+| `guitar/D/alt/4` | relabelled | `Dalt` | `Db5` |
+| `guitar/E/alt/1` | relabelled | `Ealt` | `Eb5` |
+| `guitar/E/alt/2` | relabelled | `Ealt` | `Eb5` |
+| `guitar/E/alt/3` | relabelled | `Ealt` | `Eb5` |
+| `guitar/E/alt/4` | relabelled | `Ealt` | `Eb5` |
+| `guitar/Eb/alt/1` | relabelled | `Ebalt` | `Ebb5` |
+| `guitar/Eb/alt/2` | relabelled | `Ebalt` | `Ebb5` |
+| `guitar/Eb/alt/3` | relabelled | `Ebalt` | `Ebb5` |
+| `guitar/Eb/alt/4` | relabelled | `Ebalt` | `Ebb5` |
+| `guitar/F/alt/1` | relabelled | `Falt` | `Fb5` |
+| `guitar/F/alt/2` | relabelled | `Falt` | `Fb5` |
+| `guitar/F/alt/3` | relabelled | `Falt` | `Fb5` |
+| `guitar/F/alt/4` | relabelled | `Falt` | `Fb5` |
+| `guitar/Fsharp/alt/1` | relabelled | `F#alt` | `F#b5` |
+| `guitar/Fsharp/alt/2` | relabelled | `F#alt` | `F#b5` |
+| `guitar/Fsharp/alt/3` | relabelled | `F#alt` | `F#b5` |
+| `guitar/G/alt/1` | relabelled | `Galt` | `Gb5` |
+| `guitar/G/alt/2` | relabelled | `Galt` | `Gb5` |
+| `guitar/G/alt/3` | relabelled | `Galt` | `Gb5` |
+| `guitar/G/alt/4` | relabelled | `Galt` | `Gb5` |
+| `ukulele/A/alt/1` | relabelled | `Aalt` | `Ab5` |
+| `ukulele/A/alt/2` | relabelled | `Aalt` | `Ab5` |
+| `ukulele/A/alt/3` | relabelled | `Aalt` | `Ab5` |
+| `ukulele/Ab/alt/1` | relabelled | `Abalt` | `Abb5` |
+| `ukulele/Ab/alt/2` | relabelled | `Abalt` | `Abb5` |
+| `ukulele/B/alt/1` | relabelled | `Balt` | `Bb5` |
+| `ukulele/B/alt/2` | relabelled | `Balt` | `Bb5` |
+| `ukulele/B/alt/3` | relabelled | `Balt` | `Bb5` |
+| `ukulele/Bb/alt/1` | relabelled | `Bbalt` | `Bbb5` |
+| `ukulele/Bb/alt/2` | relabelled | `Bbalt` | `Bbb5` |
+| `ukulele/Bb/alt/3` | relabelled | `Bbalt` | `Bbb5` |
+| `ukulele/Bb/alt/4` | relabelled | `Bbalt` | `Bbb5` |
+| `ukulele/C/alt/1` | relabelled | `Calt` | `Cb5` |
+| `ukulele/C/alt/2` | relabelled | `Calt` | `Cb5` |
+| `ukulele/C/alt/3` | relabelled | `Calt` | `Cb5` |
+| `ukulele/D/alt/1` | relabelled | `Dalt` | `Db5` |
+| `ukulele/D/alt/2` | relabelled | `Dalt` | `Db5` |
+| `ukulele/D/alt/3` | relabelled | `Dalt` | `Db5` |
+| `ukulele/Db/alt/1` | relabelled | `Dbalt` | `Dbb5` |
+| `ukulele/Db/alt/2` | relabelled | `Dbalt` | `Dbb5` |
+| `ukulele/Db/alt/3` | relabelled | `Dbalt` | `Dbb5` |
+| `ukulele/Db/alt/4` | relabelled | `Dbalt` | `Dbb5` |
+| `ukulele/E/alt/1` | relabelled | `Ealt` | `Eb5` |
+| `ukulele/E/alt/2` | relabelled | `Ealt` | `Eb5` |
+| `ukulele/E/alt/3` | relabelled | `Ealt` | `Eb5` |
+| `ukulele/Eb/alt/1` | relabelled | `Ebalt` | `Ebb5` |
+| `ukulele/Eb/alt/2` | relabelled | `Ebalt` | `Ebb5` |
+| `ukulele/Eb/alt/3` | relabelled | `Ebalt` | `Ebb5` |
+| `ukulele/F/alt/1` | relabelled | `Falt` | `Fb5` |
+| `ukulele/F/alt/2` | relabelled | `Falt` | `Fb5` |
+| `ukulele/F/alt/3` | relabelled | `Falt` | `Fb5` |
+| `ukulele/G/alt/1` | relabelled | `Galt` | `Gb5` |
+| `ukulele/G/alt/2` | relabelled | `Galt` | `Gb5` |
+| `ukulele/G/alt/3` | relabelled | `Galt` | `Gb5` |
+| `ukulele/Gb/alt/1` | relabelled | `Gbalt` | `Gbb5` |
+| `ukulele/Gb/alt/2` | relabelled | `Gbalt` | `Gbb5` |
+| `ukulele/Gb/alt/3` | relabelled | `Gbalt` | `Gbb5` |
+
+</details>
+
+### 6. Relabelled from 9#11 to 7#11: these voicings have no 9th.
+
+[#6](https://github.com/tabsy-gr/chords-db/issues/6)
+
+<details>
+<summary>25 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/9sharp11/1` | relabelled | `A9#11` | `A7#11` |
+| `guitar/A/9sharp11/3` | relabelled | `A9#11` | `A7#11` |
+| `guitar/Ab/9sharp11/1` | relabelled | `Ab9#11` | `Ab7#11` |
+| `guitar/Ab/9sharp11/2` | relabelled | `Ab9#11` | `Ab7#11` |
+| `guitar/Ab/9sharp11/4` | relabelled | `Ab9#11` | `Ab7#11` |
+| `guitar/B/9sharp11/2` | relabelled | `B9#11` | `B7#11` |
+| `guitar/B/9sharp11/3` | relabelled | `B9#11` | `B7#11` |
+| `guitar/B/9sharp11/4` | relabelled | `B9#11` | `B7#11` |
+| `guitar/Bb/9sharp11/3` | relabelled | `Bb9#11` | `Bb7#11` |
+| `guitar/C/9sharp11/2` | relabelled | `C9#11` | `C7#11` |
+| `guitar/C/9sharp11/4` | relabelled | `C9#11` | `C7#11` |
+| `guitar/Csharp/9sharp11/2` | relabelled | `C#9#11` | `C#7#11` |
+| `guitar/Csharp/9sharp11/4` | relabelled | `C#9#11` | `C#7#11` |
+| `guitar/D/9sharp11/1` | relabelled | `D9#11` | `D7#11` |
+| `guitar/D/9sharp11/3` | relabelled | `D9#11` | `D7#11` |
+| `guitar/E/9sharp11/1` | relabelled | `E9#11` | `E7#11` |
+| `guitar/E/9sharp11/2` | relabelled | `E9#11` | `E7#11` |
+| `guitar/Eb/9sharp11/1` | relabelled | `Eb9#11` | `Eb7#11` |
+| `guitar/Eb/9sharp11/3` | relabelled | `Eb9#11` | `Eb7#11` |
+| `guitar/F/9sharp11/2` | relabelled | `F9#11` | `F7#11` |
+| `guitar/F/9sharp11/4` | relabelled | `F9#11` | `F7#11` |
+| `guitar/Fsharp/9sharp11/2` | relabelled | `F#9#11` | `F#7#11` |
+| `guitar/Fsharp/9sharp11/4` | relabelled | `F#9#11` | `F#7#11` |
+| `guitar/G/9sharp11/2` | relabelled | `G9#11` | `G7#11` |
+| `guitar/G/9sharp11/4` | relabelled | `G9#11` | `G7#11` |
+
+</details>
+
+### 7. Relabelled from m9 over the ♭7 (e.g. Cm9/B♭) to 7sus2 over the ♭7: these voicings contain 1, 5, ♭7 and 9 but no minor third.
+
+[#6](https://github.com/tabsy-gr/chords-db/issues/6)
+
+<details>
+<summary>46 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/A/m9_G/1` | relabelled | `Am9/G` | `A7sus2/G` |
+| `guitar/A/m9_G/2` | relabelled | `Am9/G` | `A7sus2/G` |
+| `guitar/A/m9_G/3` | relabelled | `Am9/G` | `A7sus2/G` |
+| `guitar/A/m9_G/4` | relabelled | `Am9/G` | `A7sus2/G` |
+| `guitar/Ab/m9_Fsharp/1` | relabelled | `Abm9/F#` | `Ab7sus2/F#` |
+| `guitar/Ab/m9_Fsharp/2` | relabelled | `Abm9/F#` | `Ab7sus2/F#` |
+| `guitar/Ab/m9_Fsharp/3` | relabelled | `Abm9/F#` | `Ab7sus2/F#` |
+| `guitar/Ab/m9_Fsharp/4` | relabelled | `Abm9/F#` | `Ab7sus2/F#` |
+| `guitar/B/m9_A/1` | relabelled | `Bm9/A` | `B7sus2/A` |
+| `guitar/B/m9_A/2` | relabelled | `Bm9/A` | `B7sus2/A` |
+| `guitar/B/m9_A/3` | relabelled | `Bm9/A` | `B7sus2/A` |
+| `guitar/B/m9_A/4` | relabelled | `Bm9/A` | `B7sus2/A` |
+| `guitar/Bb/m9_Ab/1` | relabelled | `Bbm9/Ab` | `Bb7sus2/Ab` |
+| `guitar/Bb/m9_Ab/2` | relabelled | `Bbm9/Ab` | `Bb7sus2/Ab` |
+| `guitar/Bb/m9_Ab/3` | relabelled | `Bbm9/Ab` | `Bb7sus2/Ab` |
+| `guitar/Bb/m9_Ab/4` | relabelled | `Bbm9/Ab` | `Bb7sus2/Ab` |
+| `guitar/C/m9_Bb/1` | relabelled | `Cm9/Bb` | `C7sus2/Bb` |
+| `guitar/C/m9_Bb/2` | relabelled | `Cm9/Bb` | `C7sus2/Bb` |
+| `guitar/C/m9_Bb/3` | relabelled | `Cm9/Bb` | `C7sus2/Bb` |
+| `guitar/C/m9_Bb/4` | relabelled | `Cm9/Bb` | `C7sus2/Bb` |
+| `guitar/Csharp/m9_B/1` | relabelled | `C#m9/B` | `C#7sus2/B` |
+| `guitar/Csharp/m9_B/2` | relabelled | `C#m9/B` | `C#7sus2/B` |
+| `guitar/Csharp/m9_B/3` | relabelled | `C#m9/B` | `C#7sus2/B` |
+| `guitar/Csharp/m9_B/4` | relabelled | `C#m9/B` | `C#7sus2/B` |
+| `guitar/D/m9_C/1` | relabelled | `Dm9/C` | `D7sus2/C` |
+| `guitar/D/m9_C/2` | relabelled | `Dm9/C` | `D7sus2/C` |
+| `guitar/D/m9_C/3` | relabelled | `Dm9/C` | `D7sus2/C` |
+| `guitar/D/m9_C/4` | relabelled | `Dm9/C` | `D7sus2/C` |
+| `guitar/E/m9_D/1` | relabelled | `Em9/D` | `E7sus2/D` |
+| `guitar/E/m9_D/2` | relabelled | `Em9/D` | `E7sus2/D` |
+| `guitar/E/m9_D/3` | relabelled | `Em9/D` | `E7sus2/D` |
+| `guitar/E/m9_D/4` | relabelled | `Em9/D` | `E7sus2/D` |
+| `guitar/Eb/m9_Csharp/1` | relabelled | `Ebm9/C#` | `Eb7sus2/C#` |
+| `guitar/Eb/m9_Csharp/2` | relabelled | `Ebm9/C#` | `Eb7sus2/C#` |
+| `guitar/Eb/m9_Csharp/3` | relabelled | `Ebm9/C#` | `Eb7sus2/C#` |
+| `guitar/Eb/m9_Csharp/4` | relabelled | `Ebm9/C#` | `Eb7sus2/C#` |
+| `guitar/F/m9_Eb/1` | relabelled | `Fm9/Eb` | `F7sus2/Eb` |
+| `guitar/F/m9_Eb/2` | relabelled | `Fm9/Eb` | `F7sus2/Eb` |
+| `guitar/F/m9_Eb/3` | relabelled | `Fm9/Eb` | `F7sus2/Eb` |
+| `guitar/F/m9_Eb/4` | relabelled | `Fm9/Eb` | `F7sus2/Eb` |
+| `guitar/Fsharp/m9_E/3` | relabelled | `F#m9/E` | `F#7sus2/E` |
+| `guitar/Fsharp/m9_E/4` | relabelled | `F#m9/E` | `F#7sus2/E` |
+| `guitar/G/m9_F/1` | relabelled | `Gm9/F` | `G7sus2/F` |
+| `guitar/G/m9_F/2` | relabelled | `Gm9/F` | `G7sus2/F` |
+| `guitar/G/m9_F/3` | relabelled | `Gm9/F` | `G7sus2/F` |
+| `guitar/G/m9_F/4` | relabelled | `Gm9/F` | `G7sus2/F` |
+
+</details>
+
+### 8. Removed the ukulele 13b5b9 voicings: all four shapes in every key sound only ♭9, ♭5, 13 and ♭7, with neither root nor 3rd, which is not a complete 13b5b9 or any other chord in the table.
+
+[#6](https://github.com/tabsy-gr/chords-db/issues/6)
+
+<details>
+<summary>45 voicings</summary>
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `ukulele/A/13b5b9/1` | removed | `A13b5b9 1414` | `—` |
+| `ukulele/A/13b5b9/2` | removed | `A13b5b9 3214` | `—` |
+| `ukulele/A/13b5b9/3` | removed | `A13b5b9 0231` | `—` |
+| `ukulele/A/13b5b9/4` | removed | `A13b5b9 2121` | `—` |
+| `ukulele/Ab/13b5b9/1` | removed | `Ab13b5b9 1414` | `—` |
+| `ukulele/Ab/13b5b9/2` | removed | `Ab13b5b9 3214` | `—` |
+| `ukulele/Ab/13b5b9/3` | removed | `Ab13b5b9 4231` | `—` |
+| `ukulele/Ab/13b5b9/4` | removed | `Ab13b5b9 2121` | `—` |
+| `ukulele/B/13b5b9/1` | removed | `B13b5b9 1010` | `—` |
+| `ukulele/B/13b5b9/2` | removed | `B13b5b9 1432` | `—` |
+| `ukulele/B/13b5b9/3` | removed | `B13b5b9 1414` | `—` |
+| `ukulele/B/13b5b9/4` | removed | `B13b5b9 3214` | `—` |
+| `ukulele/Bb/13b5b9/1` | removed | `Bb13b5b9 1432` | `—` |
+| `ukulele/Bb/13b5b9/2` | removed | `Bb13b5b9 1414` | `—` |
+| `ukulele/Bb/13b5b9/3` | removed | `Bb13b5b9 3214` | `—` |
+| `ukulele/Bb/13b5b9/4` | removed | `Bb13b5b9 4231` | `—` |
+| `ukulele/C/13b5b9/1` | removed | `C13b5b9 2121` | `—` |
+| `ukulele/C/13b5b9/2` | removed | `C13b5b9 3120` | `—` |
+| `ukulele/C/13b5b9/3` | removed | `C13b5b9 1432` | `—` |
+| `ukulele/D/13b5b9/1` | removed | `D13b5b9 4231` | `—` |
+| `ukulele/D/13b5b9/2` | removed | `D13b5b9 4343` | `—` |
+| `ukulele/D/13b5b9/3` | removed | `D13b5b9 1432` | `—` |
+| `ukulele/Db/13b5b9/1` | removed | `Db13b5b9 4231` | `—` |
+| `ukulele/Db/13b5b9/2` | removed | `Db13b5b9 3232` | `—` |
+| `ukulele/Db/13b5b9/3` | removed | `Db13b5b9 1432` | `—` |
+| `ukulele/E/13b5b9/1` | removed | `E13b5b9 3214` | `—` |
+| `ukulele/E/13b5b9/2` | removed | `E13b5b9 4231` | `—` |
+| `ukulele/E/13b5b9/3` | removed | `E13b5b9 2121` | `—` |
+| `ukulele/E/13b5b9/4` | removed | `E13b5b9 1432` | `—` |
+| `ukulele/Eb/13b5b9/1` | removed | `Eb13b5b9 2103` | `—` |
+| `ukulele/Eb/13b5b9/2` | removed | `Eb13b5b9 2121` | `—` |
+| `ukulele/Eb/13b5b9/3` | removed | `Eb13b5b9 4231` | `—` |
+| `ukulele/Eb/13b5b9/4` | removed | `Eb13b5b9 1432` | `—` |
+| `ukulele/F/13b5b9/1` | removed | `F13b5b9 3214` | `—` |
+| `ukulele/F/13b5b9/2` | removed | `F13b5b9 4231` | `—` |
+| `ukulele/F/13b5b9/3` | removed | `F13b5b9 2121` | `—` |
+| `ukulele/F/13b5b9/4` | removed | `F13b5b9 1432` | `—` |
+| `ukulele/G/13b5b9/1` | removed | `G13b5b9 1414` | `—` |
+| `ukulele/G/13b5b9/2` | removed | `G13b5b9 3214` | `—` |
+| `ukulele/G/13b5b9/3` | removed | `G13b5b9 4231` | `—` |
+| `ukulele/G/13b5b9/4` | removed | `G13b5b9 2121` | `—` |
+| `ukulele/Gb/13b5b9/1` | removed | `Gb13b5b9 0303` | `—` |
+| `ukulele/Gb/13b5b9/2` | removed | `Gb13b5b9 3214` | `—` |
+| `ukulele/Gb/13b5b9/3` | removed | `Gb13b5b9 4231` | `—` |
+| `ukulele/Gb/13b5b9/4` | removed | `Gb13b5b9 2121` | `—` |
 
 </details>

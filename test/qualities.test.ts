@@ -15,7 +15,7 @@ const TONAL_SYMBOL: Record<string, string | null> = {
   major: '', minor: 'm', dim: 'dim', aug: 'aug', sus2: 'sus2', sus4: 'sus4', sus2sus4: 'sus24',
   '5': '5', '6': '6', m6: 'm6', '69': '69', m69: 'm69', '7': '7', maj7: 'maj7', m7: 'm7',
   m7b5: 'm7b5', dim7: 'dim7', mmaj7: 'mMaj7', mmaj7b5: null, '7b5': '7b5', '7#5': '7#5',
-  maj7b5: 'M7b5', 'maj7#5': 'maj7#5', '7sus4': '7sus4', maj7sus2: null, '9': '9', maj9: 'maj9',
+  maj7b5: 'M7b5', b5: 'Mb5', '7sus2': null, '7#11': '7#11', 'maj7#5': 'maj7#5', '7sus4': '7sus4', maj7sus2: null, '9': '9', maj9: 'maj9',
   m9: 'm9', mmaj9: 'mMaj9', m9b5: 'm9b5', '9b5': '9b5', '9#5': '9#5', '7b9': '7b9', '7#9': '7#9',
   '7#5b9': '7#5b9', '7b5b9': '7b5b9', '7b5#9': '7b5#9', '7#5#9': '7#5#9', '7alt': '7alt',
   add9: 'add9', madd9: 'madd9', add11: null, '11': '11', maj11: null, m11: 'm11', mmaj11: null,

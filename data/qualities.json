@@ -50,6 +50,18 @@
       }
     },
     {
+      "id": "b5",
+      "name": "major flat five",
+      "intervals": ["1", "3", "b5"],
+      "spellings": ["b5"],
+      "source": {
+        "title": "Diminished triad",
+        "url": "https://en.wikipedia.org/wiki/Diminished_triad",
+        "derivation": "compositional",
+        "explanation": "A major triad with its perfect fifth lowered to a diminished fifth (six semitones above the root, as in the cited diminished triad)."
+      }
+    },
+    {
       "id": "sus2",
       "name": "suspended second",
       "intervals": ["1", "2", "5"],
@@ -257,6 +269,19 @@
         "url": "https://en.wikipedia.org/wiki/Dominant_seventh_chord",
         "derivation": "compositional",
         "explanation": "A dominant seventh chord with its perfect fifth raised to an augmented fifth."
+      }
+    },
+    {
+      "id": "7sus2",
+      "name": "dominant seventh suspended second",
+      "intervals": ["1", "2", "5", "b7"],
+      "omittable": ["5"],
+      "spellings": ["7sus2"],
+      "source": {
+        "title": "Suspended chord",
+        "url": "https://en.wikipedia.org/wiki/Suspended_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant seventh chord with its third replaced by a major second, the cited sus2 substitution."
       }
     },
     {
@@ -587,6 +612,19 @@
         "url": "https://en.wikipedia.org/wiki/Eleventh_chord",
         "derivation": "compositional",
         "explanation": "A dominant ninth chord plus an augmented eleventh."
+      }
+    },
+    {
+      "id": "7#11",
+      "name": "dominant seventh sharp eleven",
+      "intervals": ["1", "3", "5", "b7", "#11"],
+      "omittable": ["5"],
+      "spellings": ["7#11"],
+      "source": {
+        "title": "Eleventh chord",
+        "url": "https://en.wikipedia.org/wiki/Eleventh_chord",
+        "derivation": "compositional",
+        "explanation": "A dominant seventh chord plus an augmented eleventh; the 9#11 chord without its ninth."
       }
     },
     {
