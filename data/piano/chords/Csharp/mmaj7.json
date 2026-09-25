@@ -7,8 +7,7 @@
       "id": "piano/Csharp/mmaj7/1",
       "notes": ["C#4", "E4", "G#4", "B#4"],
       "degrees": ["1", "b3", "5", "7"],
-      "sources": [{ "type": "curated", "ref": "data/qualities.json" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "curated", "ref": "data/qualities.json" }]
     }
   ]
 }

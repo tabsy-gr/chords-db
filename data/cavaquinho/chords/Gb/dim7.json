@@ -9,8 +9,7 @@
       "fingers": [4, 2, 1, 1],
       "barres": [4],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/Gb/dim7/3",
@@ -18,8 +17,7 @@
       "fingers": [1, 2, 1, 4],
       "barres": [4],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/Gb/dim7/6",
@@ -27,8 +25,7 @@
       "fingers": [1, 2, 1, 4],
       "barres": [7],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/Gb/dim7/7",
@@ -36,8 +33,7 @@
       "fingers": [4, 2, 1, 1],
       "barres": [7],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/Gb/dim7/9",
@@ -45,8 +41,7 @@
       "fingers": [1, 2, 1, 4],
       "barres": [10],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/Gb/dim7/10",
@@ -54,8 +49,7 @@
       "fingers": [4, 2, 1, 1],
       "barres": [10],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/Gb/dim7/11",
@@ -64,8 +58,7 @@
       "barres": [13],
       "capo": true,
       "rootless": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/Gb/dim7/12",
@@ -73,8 +66,7 @@
       "fingers": [1, 2, 1, 4],
       "barres": [13],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     }
   ]
 }

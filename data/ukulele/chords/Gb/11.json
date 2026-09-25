@@ -8,16 +8,14 @@
       "frets": [3, 4, 4, 2],
       "fingers": [2, 3, 4, 1],
       "rootless": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
       "id": "ukulele/Gb/11/2",
       "frets": [4, 4, 4, 1],
       "fingers": [2, 3, 4, 1],
       "rootless": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]
 }

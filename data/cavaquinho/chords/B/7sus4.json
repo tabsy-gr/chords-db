@@ -9,22 +9,19 @@
       "fingers": [1, 1, 0, 2],
       "barres": [2],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7sus4/2",
       "frets": [7, 4, 5, 7],
       "fingers": [3, 1, 2, 4],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7sus4/6",
       "frets": [7, 9, 10, 9],
       "fingers": [1, 2, 4, 3],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7sus4/3",
@@ -32,8 +29,7 @@
       "fingers": [1, 1, 2, 1],
       "barres": [9],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     }
   ]
 }

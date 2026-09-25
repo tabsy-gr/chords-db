@@ -1,8 +1,7 @@
 /**
  * Generates the piano voicings from data/qualities.json: one root-position
  * voicing per key and quality, spelled by spellChord(). Existing voicing ids
- * are kept, and so are verified stamps while the notes stay the same; a test
- * checks data/piano matches this output.
+ * are kept; a test checks data/piano matches this output.
  *
  * 7alt is skipped: it has no fixed set of tones (any of b5, #5, b9, #9).
  */
@@ -24,11 +23,11 @@ export interface PianoFile {
 
 export const generatePiano = () => {
   const { instrument, chords } = loadInstruments().find((s) => s.instrument.id === 'piano')!;
-  // Keep every existing voicing (for its id and stamp), keyed by key and quality.
-  const existing = new Map<string, KeyboardVoicing>();
+  // Keep the id of every existing voicing, keyed by key and quality.
+  const existing = new Map<string, string>();
   for (const { chord } of chords) {
     const quality = parseSuffix(chord.suffix)?.quality.id;
-    if (quality) existing.set(`${chord.key} ${quality}`, chord.voicings[0] as KeyboardVoicing);
+    if (quality) existing.set(`${chord.key} ${quality}`, chord.voicings[0].id);
   }
   const covered = qualities.filter((q) => !SKIP.has(q.id));
   const files: PianoFile[] = [];
@@ -36,10 +35,7 @@ export const generatePiano = () => {
     for (const quality of covered) {
       const suffix = quality.spellings[0];
       const spelled = spellChord(key, quality);
-      const previous = existing.get(`${key} ${quality.id}`);
-      const id = previous?.id ?? `piano/${keyDir(key)}/${suffixSlug(suffix)}/1`;
-      const notes = spelled.map((n) => n.note);
-      const verified = previous?.verified && previous.notes.join() === notes.join() ? previous.verified : undefined;
+      const id = existing.get(`${key} ${quality.id}`) ?? `piano/${keyDir(key)}/${suffixSlug(suffix)}/1`;
       files.push({
         file: path.join(DATA_DIR, 'piano', 'chords', keyDir(key), `${suffixSlug(suffix)}.json`),
         json: {
@@ -49,10 +45,9 @@ export const generatePiano = () => {
           voicings: [
             {
               id,
-              notes,
+              notes: spelled.map((n) => n.note),
               degrees: spelled.map((n) => n.interval),
               sources: [PIANO_SOURCE],
-              ...(verified ? { verified } : {}),
             },
           ],
         },

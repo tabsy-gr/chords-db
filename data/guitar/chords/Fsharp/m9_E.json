@@ -8,16 +8,14 @@
       "frets": [0, 0, 4, 2, 2, 4],
       "fingers": [0, 0, 3, 1, 1, 4],
       "barres": [2],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
       "id": "guitar/Fsharp/m9_E/2",
       "frets": [0, 4, 4, 2, 2, 4],
       "fingers": [0, 2, 3, 1, 1, 4],
       "barres": [2],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]
 }

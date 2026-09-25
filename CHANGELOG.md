@@ -8,12 +8,9 @@ For a full comparison with the original, see
 ## Unreleased
 
 ### Changed
-* Every voicing (bouzouki tetrachordo and trichordo, guitar, ukulele,
-  ukulele-d, cavaquinho, piano; 10,946 in all) is signed off as verified by
-  `geoioannid`. Each one passes the validator and a separate check of its
-  notes against the chord formulas. `VERIFIERS.md` now covers all instruments.
-* `generate:ukulele-d` carries over the ukulele's verified stamps, and
-  `generate:piano` keeps a stamp as long as the notes don't change.
+* All bouzouki voicings, tetrachordo (1,367) and trichordo (445), are signed
+  off as verified by `geoioannid`. Each one passes the validator and a
+  separate check of its notes against the chord formulas.
 
 ## 0.9.0
 

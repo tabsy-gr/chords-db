@@ -3,8 +3,7 @@
  * standard tuning (G4 C4 E4 A4): D tuning is every string a whole tone higher,
  * so the same shape plays a chord a whole tone higher. The approach is from
  * tombatossals/chords-db#32 (Henry); applying it to the validated ukulele data
- * keeps both instruments in step, verified stamps included (the same shape a
- * whole tone higher). A test checks data/ukulele-d matches this.
+ * keeps both instruments in step. A test checks data/ukulele-d matches this.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -49,7 +48,7 @@ export const generateUkuleleD = () => {
         suffix: chord.suffix,
         voicings: (chord.voicings as FrettedVoicing[]).map((v) => {
           const [, dir, slug, n] = v.id.split('/');
-          const { id: _, sources: __, ...shape } = v;
+          const { id: _, sources: __, verified: ___, ...shape } = v;
           return {
             id: `ukulele-d/${transposeDir(dir)}/${slug}/${n}`,
             ...shape,

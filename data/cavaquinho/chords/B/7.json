@@ -7,30 +7,26 @@
       "id": "cavaquinho/B/7/6",
       "frets": [1, 2, 0, 1],
       "fingers": [1, 4, 0, 3],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7/7",
       "frets": [1, 2, 0, 4],
       "fingers": [1, 2, 0, 4],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7/8",
       "frets": [4, 2, 0, 1],
       "fingers": [4, 2, 0, 1],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7/9",
       "frets": [4, 2, 4, 4],
       "fingers": [2, 1, 3, 4],
       "rootless": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7/10",
@@ -38,8 +34,7 @@
       "fingers": [1, 1, 1, 4],
       "barres": [4],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7/11",
@@ -47,52 +42,45 @@
       "fingers": [4, 1, 1, 1],
       "barres": [4],
       "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7/12",
       "frets": [7, 8, 7, 9],
       "fingers": [1, 3, 2, 4],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7/2",
       "frets": [9, 8, 10, 9],
       "fingers": [2, 1, 4, 3],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7/1",
       "frets": [9, 8, 7, 7],
       "fingers": [3, 2, 1, 1],
       "barres": [7],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7/3",
       "frets": [9, 11, 10, 13],
       "fingers": [1, 3, 2, 4],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7/4",
       "frets": [13, 11, 10, 9],
       "fingers": [4, 3, 2, 1],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/B/7/5",
       "frets": [13, 11, 10, 13],
       "fingers": [3, 2, 1, 4],
       "rootless": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     }
   ]
 }

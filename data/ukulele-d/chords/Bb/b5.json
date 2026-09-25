@@ -7,7 +7,6 @@
       "id": "ukulele-d/Bb/alt/1",
       "frets": [5, 2, 4, 3],
       "fingers": [4, 1, 3, 2],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/Ab/alt/1" }]
     },
     {
@@ -16,7 +15,6 @@
       "fingers": [1, 3, 4, 1],
       "barres": [5],
       "capo": true,
-      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/Ab/alt/2" }]
     }
   ]

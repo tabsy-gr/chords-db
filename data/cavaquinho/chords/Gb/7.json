@@ -7,15 +7,13 @@
       "id": "cavaquinho/Gb/7/1",
       "frets": [4, 3, 5, 4],
       "fingers": [2, 1, 4, 3],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
       "id": "cavaquinho/Gb/7/2",
       "frets": [8, 9, 7, 8],
       "fingers": [2, 4, 1, 3],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     }
   ]
 }

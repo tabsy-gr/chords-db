@@ -10,7 +10,6 @@
       "barres": [1],
       "capo": true,
       "rootless": true,
-      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/F/m11/1" }]
     },
     {
@@ -19,7 +18,6 @@
       "fingers": [3, 1, 2, 2],
       "barres": [11],
       "rootless": true,
-      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/F/m11/2" }]
     },
     {
@@ -29,7 +27,6 @@
       "barres": [10],
       "capo": true,
       "rootless": true,
-      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/F/m11/3" }]
     }
   ]

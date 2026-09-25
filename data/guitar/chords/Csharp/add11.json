@@ -8,8 +8,7 @@
       "frets": [-1, 4, 3, 1, 2, 2],
       "fingers": [0, 4, 3, 1, 2, 2],
       "barres": [2],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
       "id": "guitar/Csharp/add11/2",
@@ -17,16 +16,14 @@
       "fingers": [4, 3, 1, 1, 2, 0],
       "barres": [6],
       "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
       "id": "guitar/Csharp/add11/3",
       "frets": [9, 8, 11, 11, -1, -1],
       "fingers": [2, 1, 4, 4, 0, 0],
       "barres": [11],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]
 }

@@ -7,8 +7,7 @@
       "id": "piano/Bb/m9b5/1",
       "notes": ["Bb4", "Db5", "Fb5", "Ab5", "C6"],
       "degrees": ["1", "b3", "b5", "b7", "9"],
-      "sources": [{ "type": "curated", "ref": "data/qualities.json" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "curated", "ref": "data/qualities.json" }]
     }
   ]
 }

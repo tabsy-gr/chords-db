@@ -7,7 +7,6 @@
       "id": "ukulele-d/Ab/madd9/1",
       "frets": [1, 1, 2, 0],
       "fingers": [1, 2, 3, 0],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/Gb/madd9/1" }]
     },
     {
@@ -15,14 +14,12 @@
       "frets": [11, 9, 9, 11],
       "fingers": [3, 1, 1, 4],
       "barres": [9],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/Gb/madd9/2" }]
     },
     {
       "id": "ukulele-d/Ab/madd9/3",
       "frets": [14, 13, 14, 11],
       "fingers": [3, 2, 4, 1],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/Gb/madd9/3" }]
     }
   ]

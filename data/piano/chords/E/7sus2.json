@@ -7,8 +7,7 @@
       "id": "piano/E/7sus2/1",
       "notes": ["E4", "F#4", "B4", "D5"],
       "degrees": ["1", "2", "5", "b7"],
-      "sources": [{ "type": "curated", "ref": "data/qualities.json" }],
-      "verified": { "by": "geoioannid", "date": "2026-09-25" }
+      "sources": [{ "type": "curated", "ref": "data/qualities.json" }]
     }
   ]
 }

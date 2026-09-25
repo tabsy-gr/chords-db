@@ -8,7 +8,6 @@
       "frets": [3, 6, 4, 5],
       "fingers": [1, 4, 2, 3],
       "rootless": true,
-      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/E/9b5/2" }]
     },
     {
@@ -18,7 +17,6 @@
       "barres": [1, 2],
       "capo": true,
       "rootless": true,
-      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/E/9b5/1" }]
     },
     {
@@ -26,7 +24,6 @@
       "frets": [7, 8, 6, 9],
       "fingers": [2, 3, 1, 4],
       "rootless": true,
-      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/E/9b5/3" }]
     },
     {
@@ -36,7 +33,6 @@
       "barres": [10],
       "capo": true,
       "rootless": true,
-      "verified": { "by": "geoioannid", "date": "2026-09-25" },
       "sources": [{ "type": "derived", "ref": "ukulele/E/9b5/4" }]
     }
   ]
