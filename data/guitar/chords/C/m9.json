@@ -18,8 +18,8 @@
     },
     {
       "id": "guitar/C/m9/3",
-      "frets": [-1, 6, 8, 7, 8, 8],
-      "fingers": [0, 1, 3, 2, 4, 4],
+      "frets": [8, 6, 8, 7, 8, 8],
+      "fingers": ["T", 1, 3, 2, 4, 4],
       "barres": [8],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

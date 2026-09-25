@@ -95,7 +95,7 @@ export const RULES: Record<string, { severity: Severity; description: string }> 
   'fingers/thumb-placement': {
     severity: 'error',
     description:
-      'The thumb frets a string above one that another finger frets; it can only reach over the neck to the lowest strings.',
+      'The thumb frets a course other than the lowest one; it can only reach over the neck to the lowest string.',
   },
   'barres/undeclared': {
     severity: 'error',
@@ -261,13 +261,10 @@ const checkFingering = (instrument: FrettedInstrument, voicing: FrettedVoicing) 
     }
   }
 
-  const thumbCourses = fingers.flatMap((f, c) => (f === 'T' && frets[c] > 0 ? [c] : []));
-  if (thumbCourses.length) {
-    const lowestFingered = frets.findIndex((f, c) => f > 0 && fingers[c] !== 'T' && fingers[c] !== 0);
-    const above = thumbCourses.filter((c) => lowestFingered >= 0 && c > lowestFingered);
-    if (above.length) {
-      out.push(issue('fingers/thumb-placement', `thumb on course ${above.map((c) => c + 1).join(', ')} is above a fretted finger`, id));
-    }
+  // The thumb reaches over the neck to the lowest course only.
+  const thumbAbove = fingers.flatMap((f, c) => (f === 'T' && frets[c] > 0 && c > 0 ? [c + 1] : []));
+  if (thumbAbove.length) {
+    out.push(issue('fingers/thumb-placement', `thumb on course ${thumbAbove.join(', ')}; it can only fret course 1`, id));
   }
 
   const numbered = [...fretOf].filter(([f]) => f !== 'T') as [number, number][];

@@ -12,15 +12,15 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "guitar/Fsharp/minor/2",
-      "frets": [-1, -1, 4, 6, 7, 5],
-      "fingers": [0, 0, 1, 3, 4, 2],
+      "id": "guitar/Fsharp/minor/3",
+      "frets": [-1, -1, 4, 6, -1, 5],
+      "fingers": [0, 0, 1, 3, 0, 2],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "guitar/Fsharp/minor/3",
-      "frets": [-1, -1, 7, 6, 7, 5],
-      "fingers": [0, 0, 3, 2, 4, 1],
+      "id": "guitar/Fsharp/minor/2",
+      "frets": [-1, -1, 4, 6, 7, 5],
+      "fingers": [0, 0, 1, 3, 4, 2],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

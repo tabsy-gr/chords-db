@@ -26,7 +26,7 @@
     },
     {
       "id": "guitar/E/sus4/4",
-      "frets": [-1, -1, 9, 9, 10, 0],
+      "frets": [0, -1, 9, 9, 10, 0],
       "fingers": [0, 0, 1, 1, 2, 0],
       "barres": [9],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
