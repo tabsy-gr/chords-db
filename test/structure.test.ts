@@ -21,6 +21,12 @@ describe.each(instruments)('$instrument.id', ({ dir, instrument, chords }) => {
     expect(misplaced).toEqual([]);
   });
 
+  it('lists exactly the suffixes its chords use', () => {
+    const used = new Set(chords.map(({ chord }) => chord.suffix));
+    expect(instrument.suffixes.filter((s) => !used.has(s))).toEqual([]);
+    expect([...used].filter((s) => !instrument.suffixes.includes(s))).toEqual([]);
+  });
+
   it('prefixes every voicing id with the instrument id', () => {
     const wrong = chords
       .flatMap(({ chord }) => chord.voicings)
