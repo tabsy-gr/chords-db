@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F#",
+  "suffix": "m9/A",
+  "voicings": [
+    {
+      "id": "guitar/Fsharp/m9_A/1",
+      "frets": [5, 4, 4, 6, 5, 4],
+      "fingers": [2, 1, 1, 4, 3, 1],
+      "barres": [4],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Fsharp/m9_A/2",
+      "frets": [5, -1, 4, 6, 5, 4],
+      "fingers": [2, 0, 1, 4, 3, 1],
+      "barres": [4],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

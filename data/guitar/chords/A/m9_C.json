@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "A",
+  "suffix": "m9/C",
+  "voicings": [
+    {
+      "id": "guitar/A/m9_C/1",
+      "frets": [8, 7, 7, 9, 8, 7],
+      "fingers": [2, 1, 1, 4, 3, 1],
+      "barres": [7],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/A/m9_C/2",
+      "frets": [8, -1, 7, 9, 8, 7],
+      "fingers": [2, 0, 1, 4, 3, 1],
+      "barres": [7],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

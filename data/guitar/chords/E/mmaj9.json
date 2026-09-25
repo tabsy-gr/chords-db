@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "E",
+  "suffix": "mmaj9",
+  "voicings": [
+    {
+      "id": "guitar/E/mmaj9/1",
+      "frets": [0, 2, 1, 0, 0, 2],
+      "fingers": [0, 2, 1, 0, 0, 3],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/E/mmaj9/2",
+      "frets": [0, -1, 4, 4, 4, 3],
+      "fingers": [0, 0, 2, 2, 4, 1],
+      "barres": [4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/E/mmaj9/3",
+      "frets": [0, 10, 9, 8, 7, 0],
+      "fingers": [0, 4, 3, 2, 1, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/E/mmaj9/4",
+      "frets": [12, 14, 13, 12, 12, 14],
+      "fingers": [1, 3, 2, 1, 1, 4],
+      "barres": [12],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

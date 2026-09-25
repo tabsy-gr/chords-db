@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C",
+  "suffix": "m9/Eb",
+  "voicings": [
+    {
+      "id": "guitar/C/m9_Eb/1",
+      "frets": [11, 10, 10, 12, 11, 10],
+      "fingers": [2, 1, 1, 4, 3, 1],
+      "barres": [10],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/C/m9_Eb/2",
+      "frets": [11, -1, 10, 12, 11, 10],
+      "fingers": [2, 0, 1, 4, 3, 1],
+      "barres": [10],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

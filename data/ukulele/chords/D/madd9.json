@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "D",
+  "suffix": "madd9",
+  "voicings": [
+    {
+      "id": "ukulele/D/madd9/1",
+      "frets": [7, 5, 5, 7],
+      "fingers": [3, 1, 1, 4],
+      "barres": [5],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/D/madd9/2",
+      "frets": [10, 9, 10, 7],
+      "fingers": [3, 2, 4, 1],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/D/madd9/3",
+      "frets": [9, 9, 10, 8],
+      "fingers": [2, 2, 3, 1],
+      "barres": [9],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

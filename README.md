@@ -1,7 +1,7 @@
 # chords-db
 
-> **Pre-release.** This fork is under active development. The data format will
-> change (see [Roadmap](#roadmap)) and nothing here is stable yet.
+> **Pre-release.** This fork is under active development and nothing here is
+> stable yet; see the [Roadmap](#roadmap).
 
 A database of chord voicings for string instruments and piano, where every
 voicing is checked for correctness.
@@ -35,70 +35,103 @@ npmjs.com once it is stable.
 
 ## Usage
 
-The generated data lives in `lib/` as one JSON file per instrument:
+Each instrument is published as one JSON file: the instrument, and its chords
+grouped by key.
 
 ```js
-import guitar from '@tabsy-gr/chords-db/lib/guitar.json' with { type: 'json' };
+import guitar from '@tabsy-gr/chords-db/guitar' with { type: 'json' };
+import { toChordDiagram } from '@tabsy-gr/chords-db';
 
 const cMajor = guitar.chords.C.find((chord) => chord.suffix === 'major');
-cMajor.positions[0];
-// { frets: [-1, 3, 2, 0, 1, 0], fingers: [0, 3, 2, 0, 1, 0],
-//   baseFret: 1, barres: [], midi: [48, 52, 55, 60, 64] }
+const voicing = cMajor.voicings[0];
+// { id: 'guitar/C/major/1', frets: [-1, 3, 2, 0, 1, 0],
+//   fingers: [0, 3, 2, 0, 1, 0], sources: [...], midi: [48, 52, 55, 60, 64] }
+
+// Frets relative to a base fret, as chord-diagram renderers expect:
+toChordDiagram(voicing, guitar.instrument.tunings.standard);
+// { frets: [-1, 3, 2, 0, 1, 0], fingers: [...], baseFret: 1, barres: [], midi: [...] }
 ```
 
-In the generated JSON, `-1` is a muted string and `0` an open one, and `frets`
-are relative to `baseFret`.
+Also published: `@tabsy-gr/chords-db/ukulele`, `/piano`, `/instruments` (an
+index with chord and voicing counts), and the JSON Schemas under `/schema/*`.
 
 ## Data format
 
-Chords are defined in `src/db/<instrument>/chords/<key>/<suffix>.js`. For
-example, part of the guitar `Dsus2`:
+The source data lives in `data/`, one directory per instrument:
 
-```js
-export default {
-  key: 'D',
-  suffix: 'sus2',
-  positions: [
-    {
-      frets: 'xx0230',
-      fingers: '000230',
-    },
-    {
-      frets: 'x777aa',
-      fingers: '011144',
-      barres: [7, 10],
-      capo: true,
-    },
-  ],
-};
+```
+data/guitar/
+├── instrument.json            # tunings, keys and suffixes
+└── chords/
+    └── D/
+        └── sus2.json          # every voicing of D sus2
 ```
 
-Each *position* is one voicing of the chord:
+File names spell `#` as `sharp` and `/` as `_` (`chords/Csharp/m_E.json` is
+C#m/E). Every file is checked against the JSON Schemas in `schema/`. For
+example, part of `data/guitar/chords/D/sus2.json`:
 
-- `frets`: one character per string, lowest string first. `x` is muted, `0` is
-  open, and frets above 9 are written in hexadecimal (`a` = 10, `c` = 12).
-- `fingers`: the finger on each string (1 = index … 4 = little), `0` for none.
-- `barres`: the fret, or list of frets, barred by one finger.
-- `capo`: draw the barre as a capo.
+```json
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "D",
+  "suffix": "sus2",
+  "voicings": [
+    {
+      "id": "guitar/D/sus2/1",
+      "frets": [-1, -1, 0, 2, 3, 0],
+      "fingers": [0, 0, 0, 2, 3, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/D/sus2/4",
+      "frets": [-1, 7, 7, 7, 10, 10],
+      "fingers": [0, 1, 1, 1, 4, 4],
+      "barres": [7, 10],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}
+```
 
-This format is being replaced by JSON files with a JSON Schema; see the
-[Roadmap](#roadmap).
+A fretted voicing has:
+
+- `id`: permanent. Assigned once when the voicing is added and never changed,
+  even if the voicing is corrected or moved, so issues and tests can refer to
+  it.
+- `frets`: the absolute fret on each course, lowest first. `-1` is muted and
+  `0` is open.
+- `fingers`: the finger on each course: `1` (index) to `4` (little), `"T"`
+  (thumb), or `0` (none).
+- `barres` (optional): the frets barred by one finger.
+- `capo` (optional): draw the barre as a capo.
+- `sources`: where the voicing comes from.
+- `verified` (optional): who confirmed it, and when.
+
+A keyboard (piano) voicing has `notes` (note names, lowest first) and
+`degrees` (each note's chord degree, e.g. `"b7"`) instead of `frets` and
+`fingers`.
+
+Run `npm run format:data` after editing data files; CI checks the formatting.
 
 ## Development
 
 ```sh
 npm install
-npm run build:data   # regenerate lib/*.json from src/db
+npm run build:data   # regenerate lib/ from data/
+npm run format:data  # format data/ files
 npm run test:run     # run the test suite
 npm run typecheck
-npm run build        # regenerate the data and build the package
+npm run build        # regenerate lib/ and build the package
 npm run authors      # regenerate AUTHORS from git history
 ```
 
 ## Roadmap
 
-1. A new data format: JSON files checked against a JSON Schema, plain number
-   arrays instead of hex strings, and a stable ID and source for every voicing.
+1. ~~A new data format: JSON files checked against a JSON Schema, plain number
+   arrays instead of hex strings, and a stable ID and source for every voicing.~~
+   Done.
 2. A validator that checks every voicing's notes against the chord's intervals
    and that its fingering can actually be played.
 3. Fixes for the incorrect voicings reported against the original database.

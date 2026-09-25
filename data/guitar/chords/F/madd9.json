@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F",
+  "suffix": "madd9",
+  "voicings": [
+    {
+      "id": "guitar/F/madd9/1",
+      "frets": [-1, -1, 3, 1, 1, 3],
+      "fingers": [0, 0, 3, 1, 1, 4],
+      "barres": [1],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/F/madd9/2",
+      "frets": [-1, 8, 6, 5, 8, -1],
+      "fingers": [0, 3, 2, 1, 4, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/F/madd9/3",
+      "frets": [-1, 8, 6, 0, 6, 8],
+      "fingers": [0, 3, 1, 0, 2, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/F/madd9/4",
+      "frets": [-1, 8, 10, 0, 9, 8],
+      "fingers": [0, 1, 4, 0, 3, 2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

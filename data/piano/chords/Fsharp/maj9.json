@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F#",
+  "suffix": "maj9",
+  "voicings": [
+    {
+      "id": "piano/Fsharp/maj9/1",
+      "notes": ["F#", "A#", "C#", "F", "G#"],
+      "degrees": ["1", "3", "5", "7", "9"],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

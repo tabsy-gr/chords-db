@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Ab",
+  "suffix": "alt",
+  "voicings": [
+    {
+      "id": "ukulele/Ab/alt/1",
+      "frets": [5, 2, 4, 3],
+      "fingers": [4, 1, 3, 2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/Ab/alt/2",
+      "frets": [5, 8, 8, 5],
+      "fingers": [1, 3, 4, 1],
+      "barres": [5],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

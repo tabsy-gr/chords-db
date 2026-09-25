@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "D",
+  "suffix": "11",
+  "voicings": [
+    {
+      "id": "ukulele/D/11/1",
+      "frets": [0, 4, 2, 3],
+      "fingers": [0, 3, 1, 2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/D/11/2",
+      "frets": [9, 7, 8, 9],
+      "fingers": [3, 1, 2, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

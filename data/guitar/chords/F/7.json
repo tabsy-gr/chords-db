@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F",
+  "suffix": "7",
+  "voicings": [
+    {
+      "id": "guitar/F/7/1",
+      "frets": [1, 3, 1, 2, 1, 1],
+      "fingers": [1, 3, 1, 2, 1, 1],
+      "barres": [1],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/F/7/2",
+      "frets": [-1, 3, 3, 5, 4, 5],
+      "fingers": [0, 1, 1, 3, 2, 4],
+      "barres": [3],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/F/7/3",
+      "frets": [8, 8, 10, 8, 10, 8],
+      "fingers": [1, 1, 3, 1, 4, 1],
+      "barres": [8],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/F/7/4",
+      "frets": [-1, -1, 10, 10, 10, 11],
+      "fingers": [0, 0, 1, 1, 1, 2],
+      "barres": [10],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

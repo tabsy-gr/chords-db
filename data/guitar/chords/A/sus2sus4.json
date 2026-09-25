@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "A",
+  "suffix": "sus2sus4",
+  "voicings": [
+    {
+      "id": "guitar/A/sus2sus4/1",
+      "frets": [-1, 0, 0, 2, 0, 0],
+      "fingers": [0, 0, 0, 1, 0, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/A/sus2sus4/2",
+      "frets": [5, 5, 7, 7, 5, 7],
+      "fingers": [1, 1, 2, 3, 1, 4],
+      "barres": [5],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/A/sus2sus4/3",
+      "frets": [5, 5, 2, 4, -1, -1],
+      "fingers": [3, 4, 1, 2, 0, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

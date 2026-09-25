@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F",
+  "suffix": "aug7",
+  "voicings": [
+    {
+      "id": "guitar/F/aug7/1",
+      "frets": [1, 0, 1, 2, 2, -1],
+      "fingers": [1, 0, 2, 3, 4, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/F/aug7/2",
+      "frets": [-1, -1, 3, 6, 4, 5],
+      "fingers": [0, 0, 1, 4, 2, 3],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/F/aug7/3",
+      "frets": [-1, 8, 11, 8, 10, 9],
+      "fingers": [0, 1, 4, 1, 3, 2],
+      "barres": [8],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/F/aug7/4",
+      "frets": [13, 12, 13, -1, 14, -1],
+      "fingers": [2, 1, 3, 0, 4, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

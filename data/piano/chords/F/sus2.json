@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F",
+  "suffix": "sus2",
+  "voicings": [
+    {
+      "id": "piano/F/sus2/1",
+      "notes": ["F", "G", "C"],
+      "degrees": ["1", "2", "5"],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "G",
+  "suffix": "maj11",
+  "voicings": [
+    {
+      "id": "ukulele/G/maj11/1",
+      "frets": [2, 0, 2, 2],
+      "fingers": [1, 0, 2, 3],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/G/maj11/2",
+      "frets": [4, 6, 5, 3],
+      "fingers": [2, 4, 3, 1],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

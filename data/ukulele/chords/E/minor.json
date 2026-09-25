@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "E",
+  "suffix": "minor",
+  "voicings": [
+    {
+      "id": "ukulele/E/minor/1",
+      "frets": [0, 4, 3, 2],
+      "fingers": [0, 3, 2, 1],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/E/minor/2",
+      "frets": [4, 4, 3, 2],
+      "fingers": [3, 4, 2, 1],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/E/minor/3",
+      "frets": [4, 7, 7, 7],
+      "fingers": [1, 2, 3, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/E/minor/4",
+      "frets": [9, 7, 7, 7],
+      "fingers": [3, 1, 1, 1],
+      "barres": [7],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C#",
+  "suffix": "m9",
+  "voicings": [
+    {
+      "id": "guitar/Csharp/m9/1",
+      "frets": [-1, 4, 2, 4, 4, 4],
+      "fingers": [0, 2, 1, 3, 4, 4],
+      "barres": [4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/m9/2",
+      "frets": [-1, 6, 6, 6, 5, 7],
+      "fingers": [0, 2, 2, 3, 1, 4],
+      "barres": [6],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/m9/3",
+      "frets": [-1, 7, 9, 8, 9, 9],
+      "fingers": [0, 1, 3, 2, 4, 4],
+      "barres": [9],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/m9/4",
+      "frets": [9, 11, 9, 9, 9, 11],
+      "fingers": [1, 3, 1, 1, 1, 4],
+      "barres": [9],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

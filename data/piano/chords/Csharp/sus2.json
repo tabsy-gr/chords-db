@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C#",
+  "suffix": "sus2",
+  "voicings": [
+    {
+      "id": "piano/Csharp/sus2/1",
+      "notes": ["C#", "D#", "G#"],
+      "degrees": ["1", "2", "5"],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

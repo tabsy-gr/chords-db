@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F#",
+  "suffix": "/A",
+  "voicings": [
+    {
+      "id": "guitar/Fsharp/_A/1",
+      "frets": [-1, 0, 4, 3, 2, 2],
+      "fingers": [0, 0, 3, 2, 1, 1],
+      "barres": [2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Fsharp/_A/2",
+      "frets": [-1, 0, 4, 6, 7, 6],
+      "fingers": [0, 0, 1, 2, 4, 3],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Fsharp/_A/3",
+      "frets": [-1, 0, 8, 6, 7, 6],
+      "fingers": [0, 0, 3, 1, 2, 1],
+      "barres": [6],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Fsharp/_A/4",
+      "frets": [-1, 0, 8, 6, 7, 9],
+      "fingers": [0, 0, 3, 1, 2, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

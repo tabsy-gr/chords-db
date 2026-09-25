@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "G",
+  "suffix": "aug",
+  "voicings": [
+    {
+      "id": "ukulele/G/aug/1",
+      "frets": [0, 3, 3, 2],
+      "fingers": [0, 2, 3, 1],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/G/aug/2",
+      "frets": [4, 3, 3, 2],
+      "fingers": [3, 2, 2, 1],
+      "barres": [3],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/G/aug/3",
+      "frets": [4, 3, 3, 6],
+      "fingers": [2, 1, 1, 4],
+      "barres": [3],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/G/aug/4",
+      "frets": [4, 7, 7, 6],
+      "fingers": [1, 3, 4, 2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "G",
+  "suffix": "m9/Bb",
+  "voicings": [
+    {
+      "id": "guitar/G/m9_Bb/1",
+      "frets": [6, 5, 5, 7, 6, 5],
+      "fingers": [2, 1, 1, 4, 3, 1],
+      "barres": [5],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/G/m9_Bb/2",
+      "frets": [6, -1, 5, 7, 6, 5],
+      "fingers": [2, 0, 1, 4, 3, 1],
+      "barres": [5],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Gb",
+  "suffix": "mmaj11",
+  "voicings": [
+    {
+      "id": "ukulele/Gb/mmaj11/1",
+      "frets": [2, 5, 4, 2],
+      "fingers": [1, 4, 3, 1],
+      "barres": [2],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/Gb/mmaj11/2",
+      "frets": [13, 11, 13, 12],
+      "fingers": [3, 1, 4, 2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/Gb/mmaj11/3",
+      "frets": [14, 11, 13, 11],
+      "fingers": [4, 1, 3, 1],
+      "barres": [11],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C",
+  "suffix": "add9",
+  "voicings": [
+    {
+      "id": "ukulele/C/add9/1",
+      "frets": [0, 2, 0, 3],
+      "fingers": [0, 2, 0, 3],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/C/add9/2",
+      "frets": [5, 4, 3, 5],
+      "fingers": [3, 2, 1, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/C/add9/3",
+      "frets": [7, 7, 8, 7],
+      "fingers": [1, 1, 2, 1],
+      "barres": [7],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/C/add9/4",
+      "frets": [9, 12, 10, 10],
+      "fingers": [1, 4, 2, 2],
+      "barres": [10],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

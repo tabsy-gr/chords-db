@@ -8,13 +8,29 @@ For a full comparison with the original, see
 ## Unreleased
 
 ### Changed
+* **Schema v2.** The data moves from JavaScript modules with hex strings to
+  one JSON file per chord under `data/`, checked by JSON Schemas in `schema/`.
+  Frets and fingers are absolute number arrays and barres are always arrays.
+  The published files move to `@tabsy-gr/chords-db/<instrument>`. See
+  MIGRATING-FROM-CHORDS-DB.md for the field-by-field mapping.
+* Every voicing has a permanent `id` and its provenance in `sources`.
+* Piano `fingers` are renamed `degrees`, which is what they hold.
+* The helpers are renamed (`frettedMidi`, `keyboardMidi`, `midiToNoteName`);
+  the hex-string helpers are removed. `toChordDiagram()` returns upstream's
+  published position shape.
 * Forked from tombatossals/chords-db v0.6.0 (`df06fa7`) and renamed to
   `@tabsy-gr/chords-db`.
-* Replaced Babel and Jest with TypeScript, Vitest, tsx and tsup. The generated
-  `lib/*.json` is byte-for-byte identical to the original build.
+* Replaced Babel and Jest with TypeScript, Vitest, tsx and tsup.
 * The helpers are exported from the package root, with TypeScript types.
 
+### Fixed
+* Piano `midi` left out every flat note, so 84 of 528 voicings (e.g. C13,
+  missing its B♭) were incomplete.
+* Guitar F major position 2 had `x` instead of `0` in its fingers.
+
 ### Added
+* A round-trip test proving every upstream position is preserved, against a
+  pinned copy of upstream's v0.6.0 build.
 * CI that typechecks, builds, tests, and checks that `lib/` is up to date.
 * `AUTHORS`, generated from git history, crediting every contributor to the
   original project.

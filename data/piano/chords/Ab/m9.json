@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Ab",
+  "suffix": "m9",
+  "voicings": [
+    {
+      "id": "piano/Ab/m9/1",
+      "notes": ["G#", "B", "D#", "F#", "A#"],
+      "degrees": ["1", "b3", "5", "b7", "9"],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}
