@@ -4,12 +4,6 @@
   "suffix": "m7b5",
   "voicings": [
     {
-      "id": "cavaquinho/E/m7b5/1",
-      "frets": [14, 12, 11, 12],
-      "fingers": [4, 2, 1, 3],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
-    },
-    {
       "id": "cavaquinho/E/m7b5/2",
       "frets": [2, 3, 3, 5],
       "fingers": [1, 2, 3, 4],
@@ -51,6 +45,12 @@
       "fingers": [4, 2, 1, 1],
       "barres": [8],
       "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/E/m7b5/1",
+      "frets": [14, 12, 11, 12],
+      "fingers": [4, 2, 1, 3],
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {

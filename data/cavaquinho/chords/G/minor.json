@@ -4,9 +4,9 @@
   "suffix": "minor",
   "voicings": [
     {
-      "id": "cavaquinho/G/minor/1",
-      "frets": [0, 0, 3, 0],
-      "fingers": [0, 0, 1, 0],
+      "id": "cavaquinho/G/minor/6",
+      "frets": [0, 3, 3, 5],
+      "fingers": [0, 1, 2, 4],
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
@@ -16,29 +16,9 @@
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
-      "id": "cavaquinho/G/minor/3",
-      "frets": [8, 7, 8, 8],
-      "fingers": [1, 2, 1, 1],
-      "barres": [8],
-      "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
-    },
-    {
-      "id": "cavaquinho/G/minor/4",
-      "frets": [12, 12, 11, 12],
-      "fingers": [2, 3, 1, 4],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
-    },
-    {
       "id": "cavaquinho/G/minor/5",
       "frets": [5, 7, 8, 8],
       "fingers": [1, 2, 3, 4],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
-    },
-    {
-      "id": "cavaquinho/G/minor/6",
-      "frets": [0, 3, 3, 5],
-      "fingers": [0, 1, 2, 4],
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
@@ -48,8 +28,16 @@
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
-      "id": "cavaquinho/G/minor/8",
-      "frets": [5, 7, 3, 8],
+      "id": "cavaquinho/G/minor/3",
+      "frets": [8, 7, 8, 8],
+      "fingers": [4, 2, 3, 3],
+      "barres": [8],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/G/minor/4",
+      "frets": [12, 12, 11, 12],
       "fingers": [2, 3, 1, 4],
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     }

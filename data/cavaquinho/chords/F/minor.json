@@ -10,30 +10,8 @@
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
-      "id": "cavaquinho/F/minor/2",
-      "frets": [6, 5, 6, 6],
-      "fingers": [1, 2, 1, 1],
-      "barres": [6],
-      "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
-    },
-    {
-      "id": "cavaquinho/F/minor/3",
-      "frets": [10, 10, 9, 10],
-      "fingers": [1, 1, 2, 1],
-      "barres": [10],
-      "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
-    },
-    {
       "id": "cavaquinho/F/minor/4",
       "frets": [3, 5, 6, 6],
-      "fingers": [1, 2, 3, 4],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
-    },
-    {
-      "id": "cavaquinho/F/minor/5",
-      "frets": [10, 13, 13, 15],
       "fingers": [1, 2, 3, 4],
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
@@ -44,9 +22,19 @@
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
-      "id": "cavaquinho/F/minor/7",
-      "frets": [3, 5, 1, 6],
-      "fingers": [2, 3, 1, 4],
+      "id": "cavaquinho/F/minor/2",
+      "frets": [6, 5, 6, 6],
+      "fingers": [4, 2, 3, 3],
+      "barres": [6],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/F/minor/3",
+      "frets": [10, 10, 9, 10],
+      "fingers": [4, 4, 2, 3],
+      "barres": [10],
+      "capo": true,
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     }
   ]

@@ -4,7 +4,8 @@
   "name": "Cavaquinho",
   "kind": "fretted",
   "tunings": { "standard": [["D3"], ["G3"], ["B3"], ["D4"]] },
-  "maxFretSpan": 4,
+  "carriesBass": false,
+  "maxFretSpan": 5,
   "keys": ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"],
   "suffixes": [
     "major",
@@ -20,7 +21,6 @@
     "sus2",
     "6",
     "m6",
-    "9",
     "add9"
   ]
 }

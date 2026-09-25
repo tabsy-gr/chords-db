@@ -10,9 +10,9 @@
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
-      "id": "cavaquinho/E/add9/2",
-      "frets": [2, 4, 7, 6],
-      "fingers": [1, 2, 4, 3],
+      "id": "cavaquinho/E/add9/9",
+      "frets": [4, 1, 0, 2],
+      "fingers": [4, 1, 0, 3],
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
@@ -20,34 +20,6 @@
       "frets": [6, 4, 5, 4],
       "fingers": [3, 1, 2, 1],
       "barres": [4],
-      "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
-    },
-    {
-      "id": "cavaquinho/E/add9/4",
-      "frets": [6, 4, 7, 2],
-      "fingers": [3, 2, 4, 1],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
-    },
-    {
-      "id": "cavaquinho/E/add9/5",
-      "frets": [6, 9, 7, 9],
-      "fingers": [1, 3, 2, 4],
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
-    },
-    {
-      "id": "cavaquinho/E/add9/6",
-      "frets": [9, 9, 9, 16],
-      "fingers": [1, 1, 1, 4],
-      "barres": [9],
-      "capo": true,
-      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
-    },
-    {
-      "id": "cavaquinho/E/add9/7",
-      "frets": [16, 9, 9, 9],
-      "fingers": [4, 1, 1, 1],
-      "barres": [9],
       "capo": true,
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
@@ -60,10 +32,19 @@
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
     },
     {
-      "id": "cavaquinho/E/add9/9",
-      "frets": [4, 1, 0, 2],
-      "fingers": [4, 1, 0, 3],
+      "id": "cavaquinho/E/add9/5",
+      "frets": [6, 9, 7, 9],
+      "fingers": [1, 3, 2, 4],
       "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/E/9/6",
+      "frets": [9, 11, 9, 9],
+      "fingers": [1, 3, 1, 1],
+      "barres": [9],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
+      "rootless": true
     }
   ]
 }
