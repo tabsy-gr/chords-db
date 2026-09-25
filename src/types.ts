@@ -12,7 +12,7 @@ export type Pitch = string;
 export type Finger = 0 | 1 | 2 | 3 | 4 | 'T';
 
 export interface Source {
-  type: 'upstream' | 'pull-request' | 'curated' | 'reference' | 'reference-dataset';
+  type: 'upstream' | 'pull-request' | 'curated' | 'derived' | 'reference' | 'reference-dataset';
   ref?: string;
   id?: string;
 }
@@ -72,6 +72,8 @@ export interface FrettedInstrument extends InstrumentBase {
   kind: 'fretted';
   /** Courses from lowest to highest; each lists the pitches of its strings. */
   tunings: Record<string, Pitch[][]>;
+  /** False if the instrument comps above a separate bass line (no root-in-bass rule). */
+  carriesBass?: boolean;
   maxFretSpan: number;
 }
 

@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "A",
+  "suffix": "mmaj9",
+  "voicings": [
+    {
+      "id": "ukulele-d/A/mmaj9/1",
+      "frets": [3, 2, 2, 0],
+      "fingers": [3, 1, 2, 0],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/G/mmaj9/1" }]
+    },
+    {
+      "id": "ukulele-d/A/mmaj9/2",
+      "frets": [2, 2, 2, 1],
+      "fingers": [2, 3, 4, 1],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/G/mmaj9/2" }]
+    },
+    {
+      "id": "ukulele-d/A/mmaj9/3",
+      "frets": [3, 6, 5, 5],
+      "fingers": [1, 4, 2, 3],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/G/mmaj9/3" }]
+    },
+    {
+      "id": "ukulele-d/A/mmaj9/4",
+      "frets": [7, 9, 6, 9],
+      "fingers": [2, 3, 1, 4],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/G/mmaj9/4" }]
+    }
+  ]
+}

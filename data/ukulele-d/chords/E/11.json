@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "E",
+  "suffix": "11",
+  "voicings": [
+    {
+      "id": "ukulele-d/E/11/1",
+      "frets": [0, 4, 2, 3],
+      "fingers": [0, 3, 1, 2],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/D/11/1" }]
+    },
+    {
+      "id": "ukulele-d/E/11/2",
+      "frets": [9, 7, 8, 9],
+      "fingers": [3, 1, 2, 4],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/D/11/2" }]
+    }
+  ]
+}

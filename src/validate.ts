@@ -205,7 +205,13 @@ const checkNotes = (
     if (bassPc !== null && lowest !== bassPc) {
       out.push(issue('notes/wrong-bass', `lowest note is ${pcName(lowest)}, not ${bass}`, id));
     }
-    if (bassPc === null && !voicing.rootless && lowest !== root && sounding.has(root)) {
+    if (
+      bassPc === null &&
+      instrument.carriesBass !== false &&
+      !voicing.rootless &&
+      lowest !== root &&
+      sounding.has(root)
+    ) {
       out.push(issue('notes/inverted-bass', `lowest note is ${pcName(lowest)}, not ${chord.key}`, id));
     }
   }

@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Db",
+  "suffix": "major",
+  "voicings": [
+    {
+      "id": "cavaquinho/Db/major/1",
+      "frets": [3, 1, 2, 3],
+      "fingers": [3, 1, 2, 4],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Db/major/6",
+      "frets": [3, 6, 6, 6],
+      "fingers": [1, 4, 4, 4],
+      "barres": [6],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Db/major/2",
+      "frets": [6, 6, 6, 6],
+      "fingers": [1, 1, 1, 1],
+      "barres": [6],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Db/major/3",
+      "frets": [11, 10, 9, 11],
+      "fingers": [3, 2, 1, 4],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Db/major/4",
+      "frets": [11, 13, 14, 15],
+      "fingers": [1, 2, 3, 4],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    }
+  ]
+}

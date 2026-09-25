@@ -1,0 +1,50 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Ab",
+  "suffix": "add9",
+  "voicings": [
+    {
+      "id": "cavaquinho/Ab/9/6",
+      "frets": [1, 3, 1, 1],
+      "fingers": [1, 3, 1, 1],
+      "barres": [1],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }],
+      "rootless": true
+    },
+    {
+      "id": "cavaquinho/Ab/add9/1",
+      "frets": [6, 5, 4, 8],
+      "fingers": [3, 2, 1, 4],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Ab/add9/9",
+      "frets": [8, 5, 4, 6],
+      "fingers": [4, 2, 1, 3],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Ab/add9/3",
+      "frets": [10, 8, 9, 8],
+      "fingers": [3, 1, 2, 1],
+      "barres": [8],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Ab/add9/8",
+      "frets": [8, 8, 9, 10],
+      "fingers": [1, 1, 2, 3],
+      "barres": [8],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Ab/add9/5",
+      "frets": [10, 13, 11, 13],
+      "fingers": [1, 3, 2, 4],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    }
+  ]
+}

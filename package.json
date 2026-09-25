@@ -29,7 +29,9 @@
     },
     "./guitar": "./lib/guitar.json",
     "./ukulele": "./lib/ukulele.json",
+    "./ukulele-d": "./lib/ukulele-d.json",
     "./piano": "./lib/piano.json",
+    "./cavaquinho": "./lib/cavaquinho.json",
     "./instruments": "./lib/instruments.json",
     "./schema/*": "./schema/*"
   },
@@ -48,7 +50,8 @@
     "prepublishOnly": "npm run build",
     "validate": "tsx scripts/validate-data.ts",
     "upstream-diff": "tsx scripts/upstream-diff.ts",
-    "generate:piano": "tsx scripts/generate-piano.ts"
+    "generate:piano": "tsx scripts/generate-piano.ts",
+    "generate:ukulele-d": "tsx scripts/generate-ukulele-d.ts"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",

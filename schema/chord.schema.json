@@ -33,8 +33,8 @@
         "required": ["type"],
         "additionalProperties": false,
         "properties": {
-          "type": { "enum": ["upstream", "pull-request", "curated", "reference", "reference-dataset"] },
-          "ref": { "description": "A commit, PR or URL, depending on the type.", "type": "string" },
+          "type": { "enum": ["upstream", "pull-request", "curated", "derived", "reference", "reference-dataset"] },
+          "ref": { "description": "A commit, PR or URL, depending on the type; for derived, the id of the voicing it was derived from.", "type": "string" },
           "id": { "description": "reference-dataset only: the dataset id.", "type": "string" }
         }
       }

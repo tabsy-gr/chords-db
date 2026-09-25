@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Bb",
+  "suffix": "m7",
+  "voicings": [
+    {
+      "id": "cavaquinho/Bb/m7/2",
+      "frets": [8, 6, 9, 8],
+      "fingers": [2, 1, 4, 3],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    }
+  ]
+}

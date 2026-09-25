@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Bb",
+  "suffix": "dim7",
+  "voicings": [
+    {
+      "id": "ukulele-d/Bb/dim7/1",
+      "frets": [1, 2, 1, 2],
+      "fingers": [1, 3, 2, 4],
+      "sources": [{ "type": "derived", "ref": "ukulele/Ab/dim7/1" }]
+    },
+    {
+      "id": "ukulele-d/Bb/dim7/2",
+      "frets": [4, 5, 4, 5],
+      "fingers": [1, 3, 2, 4],
+      "sources": [{ "type": "derived", "ref": "ukulele/Ab/dim7/2" }]
+    },
+    {
+      "id": "ukulele-d/Bb/dim7/3",
+      "frets": [7, 8, 7, 8],
+      "fingers": [1, 3, 2, 4],
+      "sources": [{ "type": "derived", "ref": "ukulele/Ab/dim7/3" }]
+    },
+    {
+      "id": "ukulele-d/Bb/dim7/4",
+      "frets": [10, 11, 10, 11],
+      "fingers": [1, 3, 2, 4],
+      "sources": [{ "type": "derived", "ref": "ukulele/Ab/dim7/4" }]
+    }
+  ]
+}

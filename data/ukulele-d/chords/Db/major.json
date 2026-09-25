@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Db",
+  "suffix": "major",
+  "voicings": [
+    {
+      "id": "ukulele-d/Db/major/1",
+      "frets": [4, 3, 2, 2],
+      "fingers": [3, 2, 1, 1],
+      "barres": [2],
+      "capo": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/B/major/1" }]
+    },
+    {
+      "id": "ukulele-d/Db/major/2",
+      "frets": [4, 6, 7, 6],
+      "fingers": [1, 2, 4, 3],
+      "sources": [{ "type": "derived", "ref": "ukulele/B/major/2" }]
+    },
+    {
+      "id": "ukulele-d/Db/major/3",
+      "frets": [8, 6, 7, 6],
+      "fingers": [3, 1, 2, 1],
+      "barres": [6],
+      "capo": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/B/major/3" }]
+    },
+    {
+      "id": "ukulele-d/Db/major/4",
+      "frets": [11, 11, 11, 14],
+      "fingers": [1, 1, 1, 4],
+      "barres": [11],
+      "capo": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/B/major/4" }]
+    }
+  ]
+}

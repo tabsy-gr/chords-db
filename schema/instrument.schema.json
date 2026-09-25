@@ -29,6 +29,10 @@
         }
       }
     },
+    "carriesBass": {
+      "description": "Fretted only. Whether the instrument's lowest note is heard as the bass. False for instruments that comp above a separate bass line (e.g. cavaquinho), where close-position inversions are normal: the validator then doesn't expect the root in the bass. Defaults to true; re-entrant tunings (ukulele) are exempt anyway.",
+      "type": "boolean"
+    },
     "maxFretSpan": {
       "description": "Fretted only. The largest distance allowed between the lowest and highest fretted notes of a voicing.",
       "type": "integer",

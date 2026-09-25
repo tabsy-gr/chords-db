@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C",
+  "suffix": "dim",
+  "voicings": [
+    {
+      "id": "cavaquinho/C/dim/8",
+      "frets": [4, 5, 4, 4],
+      "fingers": [1, 2, 1, 1],
+      "barres": [4],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Gb",
+  "suffix": "mmaj7",
+  "voicings": [
+    {
+      "id": "ukulele-d/Gb/mmaj7/1",
+      "frets": [0, 3, 0, 2],
+      "fingers": [0, 2, 0, 1],
+      "sources": [{ "type": "derived", "ref": "ukulele/E/mmaj7/1" }]
+    },
+    {
+      "id": "ukulele-d/Gb/mmaj7/2",
+      "frets": [4, 4, 3, 6],
+      "fingers": [2, 2, 1, 4],
+      "barres": [4],
+      "sources": [{ "type": "derived", "ref": "ukulele/E/mmaj7/2" }]
+    },
+    {
+      "id": "ukulele-d/Gb/mmaj7/3",
+      "frets": [9, 7, 7, 6],
+      "fingers": [4, 2, 2, 1],
+      "barres": [7],
+      "sources": [{ "type": "derived", "ref": "ukulele/E/mmaj7/3" }]
+    },
+    {
+      "id": "ukulele-d/Gb/mmaj7/4",
+      "frets": [8, 7, 7, 7],
+      "fingers": [2, 1, 1, 1],
+      "barres": [7],
+      "capo": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/E/mmaj7/4" }]
+    }
+  ]
+}

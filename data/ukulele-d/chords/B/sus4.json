@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "B",
+  "suffix": "sus4",
+  "voicings": [
+    {
+      "id": "ukulele-d/B/sus4/1",
+      "frets": [2, 2, 0, 0],
+      "fingers": [2, 3, 0, 0],
+      "sources": [{ "type": "derived", "ref": "ukulele/A/sus4/1" }]
+    },
+    {
+      "id": "ukulele-d/B/sus4/2",
+      "frets": [2, 4, 5, 5],
+      "fingers": [1, 2, 3, 4],
+      "sources": [{ "type": "derived", "ref": "ukulele/A/sus4/2" }]
+    },
+    {
+      "id": "ukulele-d/B/sus4/4",
+      "frets": [7, 4, 5, 7],
+      "fingers": [3, 1, 2, 4],
+      "sources": [{ "type": "derived", "ref": "ukulele/A/sus4/4" }]
+    },
+    {
+      "id": "ukulele-d/B/sus4/3",
+      "frets": [7, 4, 5, 5],
+      "fingers": [4, 1, 2, 2],
+      "barres": [5],
+      "sources": [{ "type": "derived", "ref": "ukulele/A/sus4/3" }]
+    }
+  ]
+}

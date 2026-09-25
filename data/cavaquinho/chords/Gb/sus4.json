@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Gb",
+  "suffix": "sus4",
+  "voicings": [
+    {
+      "id": "cavaquinho/Gb/sus4/1",
+      "frets": [4, 4, 2, 4],
+      "fingers": [2, 3, 1, 4],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Gb/sus4/2",
+      "frets": [9, 6, 7, 9],
+      "fingers": [3, 1, 2, 4],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Gb/sus4/6",
+      "frets": [9, 11, 12, 11],
+      "fingers": [1, 2, 4, 3],
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Gb/sus4/3",
+      "frets": [11, 11, 12, 11],
+      "fingers": [1, 1, 2, 1],
+      "barres": [11],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Bb",
+  "suffix": "sus2",
+  "voicings": [
+    {
+      "id": "cavaquinho/Bb/sus2/1",
+      "frets": [3, 3, 1, 3],
+      "fingers": [4, 4, 2, 3],
+      "barres": [3],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    }
+  ]
+}

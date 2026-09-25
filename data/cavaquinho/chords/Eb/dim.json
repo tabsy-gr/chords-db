@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Eb",
+  "suffix": "dim",
+  "voicings": [
+    {
+      "id": "cavaquinho/Eb/dim/8",
+      "frets": [7, 8, 7, 7],
+      "fingers": [1, 2, 1, 1],
+      "barres": [7],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    }
+  ]
+}

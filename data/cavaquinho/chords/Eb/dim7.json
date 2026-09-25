@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Eb",
+  "suffix": "dim7",
+  "voicings": [
+    {
+      "id": "cavaquinho/Eb/dim7/3",
+      "frets": [1, 2, 1, 4],
+      "fingers": [1, 2, 1, 4],
+      "barres": [1],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Eb/dim7/4",
+      "frets": [4, 2, 1, 1],
+      "fingers": [4, 2, 1, 1],
+      "barres": [1],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Eb/dim7/6",
+      "frets": [4, 5, 4, 7],
+      "fingers": [1, 2, 1, 4],
+      "barres": [4],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Eb/dim7/7",
+      "frets": [7, 5, 4, 4],
+      "fingers": [4, 2, 1, 1],
+      "barres": [4],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Eb/dim7/9",
+      "frets": [7, 8, 7, 10],
+      "fingers": [1, 2, 1, 4],
+      "barres": [7],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Eb/dim7/10",
+      "frets": [10, 8, 7, 7],
+      "fingers": [4, 2, 1, 1],
+      "barres": [7],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Eb/dim7/11",
+      "frets": [10, 11, 10, 10],
+      "fingers": [1, 2, 1, 1],
+      "barres": [10],
+      "capo": true,
+      "rootless": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Eb/dim7/1",
+      "frets": [13, 11, 10, 10],
+      "fingers": [4, 2, 1, 1],
+      "barres": [10],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    },
+    {
+      "id": "cavaquinho/Eb/dim7/12",
+      "frets": [10, 11, 10, 13],
+      "fingers": [1, 2, 1, 4],
+      "barres": [10],
+      "capo": true,
+      "sources": [{ "type": "pull-request", "ref": "tombatossals/chords-db#43" }]
+    }
+  ]
+}

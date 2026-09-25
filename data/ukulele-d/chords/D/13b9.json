@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "D",
+  "suffix": "13b9",
+  "voicings": [
+    {
+      "id": "ukulele-d/D/13b9/2",
+      "frets": [3, 1, 0, 0],
+      "fingers": [3, 1, 0, 0],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/C/13b9/2" }]
+    },
+    {
+      "id": "ukulele-d/D/13b9/1",
+      "frets": [2, 1, 0, 1],
+      "fingers": [3, 1, 0, 2],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/C/13b9/1" }]
+    },
+    {
+      "id": "ukulele-d/D/13b9/3",
+      "frets": [3, 4, 5, 4],
+      "fingers": [1, 2, 4, 3],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/C/13b9/3" }]
+    },
+    {
+      "id": "ukulele-d/D/13b9/4",
+      "frets": [6, 9, 6, 7],
+      "fingers": [1, 4, 1, 2],
+      "barres": [6],
+      "capo": true,
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/C/13b9/4" }]
+    }
+  ]
+}

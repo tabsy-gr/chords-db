@@ -91,6 +91,13 @@ describe('notes', () => {
     expect(rules(ukulele, 'C', 'major', v([0, 0, 0, 3], [0, 0, 0, 3]))).toEqual([]);
   });
 
+  it('skips the root-in-bass warning on an instrument that does not carry the bass', () => {
+    const noBass = { ...guitar, carriesBass: false };
+    const bm = v([2, 2, 4, 4, 3, 2], [1, 1, 3, 4, 2, 1], { barres: [2] });
+    expect(rules(guitar, 'B', 'minor', bm)).toContain('notes/inverted-bass');
+    expect(rules(noBass, 'B', 'minor', bm)).not.toContain('notes/inverted-bass');
+  });
+
   it('flags a silent voicing', () => {
     expect(rules(guitar, 'C', 'major', v([-1, -1, -1, -1, -1, -1], [0, 0, 0, 0, 0, 0]))).toContain('notes/silent');
   });

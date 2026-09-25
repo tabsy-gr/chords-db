@@ -26,6 +26,8 @@ database is documented:
 | Guitar     | Standard (E A D G B E) | tombatossals/chords-db |
 | Ukulele    | Standard (G C E A)     | tombatossals/chords-db |
 | Piano      | n/a                    | Generated from `data/qualities.json` |
+| Ukulele (D tuning) | A D F# B      | Generated from the ukulele ([tombatossals/chords-db#32](https://github.com/tombatossals/chords-db/pull/32)) |
+| Cavaquinho | D G B D                | [tombatossals/chords-db#43](https://github.com/tombatossals/chords-db/pull/43), validated |
 
 ## Install
 
@@ -61,7 +63,8 @@ toChordDiagram(voicing, guitar.instrument.tunings.standard);
 // { frets: [-1, 3, 2, 0, 1, 0], fingers: [...], baseFret: 1, barres: [], midi: [...] }
 ```
 
-Also published: `@tabsy-gr/chords-db/ukulele`, `/piano`, `/instruments` (an
+Also published: `@tabsy-gr/chords-db/ukulele`, `/ukulele-d`, `/cavaquinho`,
+`/piano`, `/instruments` (an
 index with chord and voicing counts), and the JSON Schemas under `/schema/*`.
 
 ## Data format
@@ -194,6 +197,10 @@ npm run authors      # regenerate AUTHORS from git history
 
 - **[David Rubert](https://github.com/tombatossals)** created the original
   chords-db, together with the contributors listed in [AUTHORS](./AUTHORS).
+- The cavaquinho was contributed by Hugo Rezende
+  ([tombatossals/chords-db#43](https://github.com/tombatossals/chords-db/pull/43)), and
+  the ukulele in D tuning follows Henry's approach
+  ([tombatossals/chords-db#32](https://github.com/tombatossals/chords-db/pull/32)).
 - The piano data was contributed upstream by Claudemir Casa
   ([tombatossals/chords-db#34](https://github.com/tombatossals/chords-db/pull/34)),
   who names pianoapi.jsdisco.dev as its source.

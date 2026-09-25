@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "B",
+  "suffix": "m11",
+  "voicings": [
+    {
+      "id": "ukulele-d/B/m11/1",
+      "frets": [4, 2, 3, 3],
+      "fingers": [3, 1, 2, 2],
+      "barres": [3],
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/A/m11/1" }]
+    },
+    {
+      "id": "ukulele-d/B/m11/2",
+      "frets": [5, 2, 3, 2],
+      "fingers": [4, 1, 2, 1],
+      "barres": [2],
+      "capo": true,
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/A/m11/2" }]
+    },
+    {
+      "id": "ukulele-d/B/m11/3",
+      "frets": [5, 7, 7, 5],
+      "fingers": [1, 3, 4, 1],
+      "barres": [5],
+      "capo": true,
+      "rootless": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/A/m11/3" }]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F",
+  "suffix": "minor",
+  "voicings": [
+    {
+      "id": "ukulele-d/F/minor/1",
+      "frets": [3, 3, 2, 1],
+      "fingers": [3, 4, 2, 1],
+      "sources": [{ "type": "derived", "ref": "ukulele/Eb/minor/1" }]
+    },
+    {
+      "id": "ukulele-d/F/minor/2",
+      "frets": [3, 6, 6, 6],
+      "fingers": [1, 3, 3, 3],
+      "barres": [6],
+      "sources": [{ "type": "derived", "ref": "ukulele/Eb/minor/2" }]
+    },
+    {
+      "id": "ukulele-d/F/minor/3",
+      "frets": [8, 6, 6, 6],
+      "fingers": [3, 1, 1, 1],
+      "barres": [6],
+      "capo": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/Eb/minor/3" }]
+    },
+    {
+      "id": "ukulele-d/F/minor/4",
+      "frets": [8, 6, 6, 9],
+      "fingers": [3, 1, 1, 4],
+      "barres": [6],
+      "capo": true,
+      "sources": [{ "type": "derived", "ref": "ukulele/Eb/minor/4" }]
+    }
+  ]
+}
