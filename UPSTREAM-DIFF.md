@@ -13,7 +13,7 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 
 | Change | guitar | ukulele |
 | --- | ---: | ---: |
-| added | 24 | 0 |
+| added | 25 | 0 |
 | removed | 13 | 45 |
 | relabelled | 123 | 37 |
 | frets | 241 | 4 |
@@ -2385,3 +2385,11 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/G/sus4/4` | frets | `aaccda` | `xaccda` |
 
 </details>
+
+### 51. Added D7/F# (200212), as proposed upstream.
+
+[#13](https://github.com/tabsy-gr/chords-db/issues/13) · upstream [#39](https://github.com/tombatossals/chords-db/issues/39) · reported by [andrew-manger](https://github.com/andrew-manger)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/D/7_Fsharp/1` | added | `—` | `D7/F# 200212` |

@@ -1873,6 +1873,14 @@
       "issue": 11,
       "upstream": "tombatossals/chords-db#17",
       "reportedBy": "zero-is-one"
+    },
+    {
+      "ids": ["guitar/D/7_Fsharp/1"],
+      "kinds": ["added"],
+      "change": "Added D7/F# (200212), as proposed upstream.",
+      "issue": 13,
+      "upstream": "tombatossals/chords-db#39",
+      "reportedBy": "andrew-manger"
     }
   ]
 }
