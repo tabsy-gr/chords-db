@@ -43,7 +43,6 @@
         "guitar/Ab/_Fsharp/2",
         "guitar/Ab/_G/2",
         "guitar/Ab/m7/1",
-        "guitar/Ab/m9/3",
         "guitar/Ab/m_B/1",
         "guitar/Ab/m_Bb/1",
         "guitar/Ab/m_E/1",
@@ -2112,6 +2111,24 @@
       "issue": 11,
       "upstream": "tombatossals/chords-db#17",
       "reportedBy": "zero-is-one"
+    },
+    {
+      "ids": ["guitar/Ab/m9/3"],
+      "kinds": ["removed"],
+      "change": "Removed an inversion (its lowest note is not the root) that the database already has: The same inversion (A♭m9 with C♭ in the bass) is already covered by A♭m9/B.",
+      "issue": 11
+    },
+    {
+      "ids": ["guitar/B/m9/4"],
+      "kinds": ["removed"],
+      "change": "Removed an inversion (its lowest note is not the root) that the database already has: The same inversion (Bm9 with D in the bass) is already covered by Bm9/D.",
+      "issue": 11
+    },
+    {
+      "ids": ["guitar/D/m9/1"],
+      "kinds": ["removed"],
+      "change": "Removed an inversion (its lowest note is not the root) that the database already has: Identical to Dm9/F position 1, where this inversion belongs.",
+      "issue": 11
     }
   ]
 }

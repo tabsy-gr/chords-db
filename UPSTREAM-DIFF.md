@@ -14,16 +14,16 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 | Change | guitar | piano | ukulele |
 | --- | ---: | ---: | ---: |
 | added | 25 | 144 | 0 |
-| removed | 13 | 0 | 45 |
+| removed | 16 | 0 | 45 |
 | relabelled | 123 | 84 | 37 |
 | frets | 360 | 0 | 4 |
 | fingers | 406 | 0 | 4 |
-| barres | 228 | 0 | 4 |
+| barres | 227 | 0 | 4 |
 | capo | 63 | 0 | 0 |
 | rootless | 13 | 0 | 988 |
 | notes | 0 | 528 | 0 |
 | degrees | 0 | 36 | 0 |
-| order | 825 | 0 | 179 |
+| order | 823 | 0 | 179 |
 
 Counts are voicings; one voicing can have several kinds of change.
 
@@ -75,7 +75,7 @@ Counts are voicings; one voicing can have several kinds of change.
 [#9](https://github.com/tabsy-gr/chords-db/issues/9)
 
 <details>
-<summary>113 voicings</summary>
+<summary>112 voicings</summary>
 
 | Voicing | Change | Before | After |
 | --- | --- | --- | --- |
@@ -103,7 +103,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Ab/m_F/2` | barres | `1` | `1 4` |
 | `guitar/Ab/m_G/1` | barres | `1` | `1 4` |
 | `guitar/Ab/m7/1` | barres | `—` | `4` |
-| `guitar/Ab/m9/3` | barres | `8` | `7 8` |
 | `guitar/Ab/maj7/2` | barres | `6` | `8` |
 | `guitar/Ab/maj9/3` | barres | `4` | `4 5` |
 | `guitar/B/_Ab/2` | barres | `4` | `4 7` |
@@ -3244,7 +3243,7 @@ Counts are voicings; one voicing can have several kinds of change.
 [#10](https://github.com/tabsy-gr/chords-db/issues/10) · upstream [#2](https://github.com/tombatossals/chords-db/issues/2) · reported by [T-vK](https://github.com/T-vK)
 
 <details>
-<summary>1004 voicings</summary>
+<summary>1002 voicings</summary>
 
 | Voicing | Change | Before | After |
 | --- | --- | --- | --- |
@@ -3377,8 +3376,6 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/Ab/m_G/4` | order | `position 4` | `position 1` |
 | `guitar/Ab/m69/2` | order | `position 2` | `position 3` |
 | `guitar/Ab/m69/3` | order | `position 3` | `position 2` |
-| `guitar/Ab/m9/3` | order | `position 3` | `position 4` |
-| `guitar/Ab/m9/4` | order | `position 4` | `position 3` |
 | `guitar/Ab/maj7b5/1` | order | `position 1` | `position 2` |
 | `guitar/Ab/maj7b5/2` | order | `position 2` | `position 1` |
 | `guitar/Ab/maj7sus2/3` | order | `position 3` | `position 4` |
@@ -3717,8 +3714,8 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/D/m7b5/3` | order | `position 3` | `position 2` |
 | `guitar/D/m9_F/2` | order | `position 2` | `position 3` |
 | `guitar/D/m9_F/3` | order | `position 3` | `position 2` |
-| `guitar/D/m9/2` | order | `position 2` | `position 3` |
-| `guitar/D/m9/3` | order | `position 3` | `position 2` |
+| `guitar/D/m9/2` | order | `position 2` | `position 2` |
+| `guitar/D/m9/3` | order | `position 3` | `position 1` |
 | `guitar/D/maj11/2` | order | `position 2` | `position 3` |
 | `guitar/D/maj11/3` | order | `position 3` | `position 2` |
 | `guitar/D/maj13/1` | order | `position 1` | `position 2` |
@@ -4693,3 +4690,27 @@ Counts are voicings; one voicing can have several kinds of change.
 | `guitar/G/mmaj7b5/3` | fingers | `1 2 3 3 3 0` | `0 2 3 3 3 1` |
 | `guitar/G/mmaj7b5/3` | frets | `9abbbx` | `xabbb9` |
 | `guitar/G/mmaj7b5/3` | order | `position 3` | `position 4` |
+
+### 61. Removed an inversion (its lowest note is not the root) that the database already has: The same inversion (A♭m9 with C♭ in the bass) is already covered by A♭m9/B.
+
+[#11](https://github.com/tabsy-gr/chords-db/issues/11)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Ab/m9/3` | removed | `Abm9 132231` | `—` |
+
+### 62. Removed an inversion (its lowest note is not the root) that the database already has: The same inversion (Bm9 with D in the bass) is already covered by Bm9/D.
+
+[#11](https://github.com/tabsy-gr/chords-db/issues/11)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/B/m9/4` | removed | `Bm9 132231` | `—` |
+
+### 63. Removed an inversion (its lowest note is not the root) that the database already has: Identical to Dm9/F position 1, where this inversion belongs.
+
+[#11](https://github.com/tabsy-gr/chords-db/issues/11)
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/D/m9/1` | removed | `Dm9 100210` | `—` |

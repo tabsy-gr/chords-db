@@ -4,12 +4,6 @@
   "suffix": "m9",
   "voicings": [
     {
-      "id": "guitar/D/m9/1",
-      "frets": [1, 0, 0, 2, 1, 0],
-      "fingers": [1, 0, 0, 3, 2, 0],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
       "id": "guitar/D/m9/3",
       "frets": [-1, 5, 7, 5, 6, 0],
       "fingers": [0, 1, 4, 2, 3, 0],
