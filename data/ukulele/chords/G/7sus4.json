@@ -19,7 +19,7 @@
       "id": "ukulele/G/7sus4/3",
       "frets": [7, 7, 8, 8],
       "fingers": [1, 1, 2, 2],
-      "barres": [7, 7],
+      "barres": [7, 8],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

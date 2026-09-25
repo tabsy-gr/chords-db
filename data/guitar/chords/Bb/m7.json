@@ -4,9 +4,9 @@
   "suffix": "m7",
   "voicings": [
     {
-      "id": "guitar/Bb/m7/1",
-      "frets": [5, -1, 5, 5, 5, -1],
-      "fingers": [2, 0, 3, 3, 3, 0],
+      "id": "guitar/Bb/m7/3",
+      "frets": [-1, -1, -1, 3, 2, 4],
+      "fingers": [0, 0, 0, 3, 1, 4],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
@@ -18,12 +18,6 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "guitar/Bb/m7/3",
-      "frets": [-1, -1, 3, 3, 2, 4],
-      "fingers": [0, 0, 2, 3, 1, 4],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
       "id": "guitar/Bb/m7/4",
       "frets": [6, 8, 6, 6, 6, 6],
       "fingers": [1, 3, 1, 1, 1, 1],
@@ -32,11 +26,16 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
+      "id": "guitar/Bb/m7/1",
+      "frets": [6, -1, 6, 6, 6, -1],
+      "fingers": [2, 0, 3, 3, 3, 0],
+      "barres": [6],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
       "id": "guitar/Bb/m7/5",
-      "frets": [-1, 8, 8, 10, 9, 9],
-      "fingers": [0, 1, 1, 4, 2, 3],
-      "barres": [8],
-      "capo": true,
+      "frets": [-1, -1, 8, 10, 9, 9],
+      "fingers": [0, 0, 1, 4, 2, 3],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

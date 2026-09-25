@@ -6,8 +6,9 @@ at commit `df06fa7` (v0.6.0), byte for byte, taken with
 
 It is the baseline for:
 
-- `test/upstream-roundtrip.test.ts`, which proves every upstream position is
-  preserved in `data/` (or changed only as documented); and
-- the documentation of every difference from upstream.
+- `scripts/upstream-diff.ts` and `test/upstream-diff.test.ts`, which compare
+  every voicing in `data/` with upstream and require each difference to be
+  explained in `data/changes.json`; and
+- the generated `UPSTREAM-DIFF.md`.
 
 Never edit these files.

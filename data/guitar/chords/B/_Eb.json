@@ -21,7 +21,7 @@
       "id": "guitar/B/_Eb/3",
       "frets": [-1, 6, 4, 4, 7, 7],
       "fingers": [0, 3, 1, 1, 4, 4],
-      "barres": [4],
+      "barres": [4, 7],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

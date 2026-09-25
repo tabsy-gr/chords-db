@@ -25,7 +25,7 @@
     },
     {
       "id": "guitar/A/maj7sharp5/4",
-      "frets": [9, 12, 11, 10, 9, 9],
+      "frets": [-1, 12, 11, 10, 9, 9],
       "fingers": [0, 4, 3, 2, 1, 1],
       "barres": [9],
       "capo": true,

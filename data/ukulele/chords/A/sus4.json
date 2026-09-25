@@ -16,16 +16,16 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
+      "id": "ukulele/A/sus4/4",
+      "frets": [7, 4, 5, 7],
+      "fingers": [3, 1, 2, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
       "id": "ukulele/A/sus4/3",
       "frets": [7, 4, 5, 5],
       "fingers": [4, 1, 2, 2],
       "barres": [5],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
-      "id": "ukulele/A/sus4/4",
-      "frets": [7, 4, 5, 7],
-      "fingers": [3, 1, 2, 4],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

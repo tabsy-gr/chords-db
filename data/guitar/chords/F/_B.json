@@ -4,6 +4,12 @@
   "suffix": "/B",
   "voicings": [
     {
+      "id": "guitar/F/_B/3",
+      "frets": [-1, 2, 3, 2, 1, -1],
+      "fingers": [0, 2, 4, 3, 1, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
       "id": "guitar/F/_B/1",
       "frets": [-1, 2, 3, 2, 1, 1],
       "fingers": [0, 2, 4, 3, 1, 1],
@@ -15,12 +21,6 @@
       "id": "guitar/F/_B/2",
       "frets": [-1, -1, 9, 10, 10, 8],
       "fingers": [0, 0, 2, 3, 4, 1],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
-      "id": "guitar/F/_B/3",
-      "frets": [-1, 2, 3, 2, 1, -1],
-      "fingers": [0, 2, 4, 3, 1, 0],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

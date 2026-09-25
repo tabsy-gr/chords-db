@@ -11,15 +11,15 @@
     },
     {
       "id": "guitar/D/mmaj7/2",
-      "frets": [-1, 5, 3, 2, 2, 0],
+      "frets": [-1, 5, 3, 2, 2, -1],
       "fingers": [0, 4, 2, 1, 1, 0],
       "barres": [2],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
       "id": "guitar/D/mmaj7/3",
-      "frets": [5, 5, 7, 6, 6, 5],
-      "fingers": [1, 1, 4, 2, 3, 1],
+      "frets": [-1, 5, 7, 6, 6, 5],
+      "fingers": [0, 1, 4, 2, 3, 1],
       "barres": [5],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

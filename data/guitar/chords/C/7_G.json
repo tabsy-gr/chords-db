@@ -4,15 +4,15 @@
   "suffix": "7/G",
   "voicings": [
     {
-      "id": "guitar/C/7_G/1",
-      "frets": [3, 3, 2, 3, -1, -1],
-      "fingers": [2, 3, 1, 4, 0, 0],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
       "id": "guitar/C/7_G/2",
       "frets": [3, 1, 2, 0, 1, 0],
       "fingers": [4, 2, 3, 0, 1, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/C/7_G/1",
+      "frets": [3, 3, 2, 3, -1, -1],
+      "fingers": [2, 3, 1, 4, 0, 0],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

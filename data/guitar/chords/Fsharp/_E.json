@@ -4,18 +4,18 @@
   "suffix": "/E",
   "voicings": [
     {
-      "id": "guitar/Fsharp/_E/1",
-      "frets": [0, 4, 4, 3, 2, 2],
-      "fingers": [0, 3, 4, 2, 1, 1],
-      "barres": [2],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
       "id": "guitar/Fsharp/_E/2",
       "frets": [-1, -1, 2, 3, 2, 2],
       "fingers": [0, 0, 1, 2, 1, 1],
       "barres": [2],
       "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Fsharp/_E/1",
+      "frets": [0, 4, 4, 3, 2, 2],
+      "fingers": [0, 3, 4, 2, 1, 1],
+      "barres": [2],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

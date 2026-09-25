@@ -20,17 +20,17 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "guitar/Fsharp/_Ab/3",
-      "frets": [-1, 11, 11, 11, 11, 14],
-      "fingers": [0, 1, 1, 1, 1, 4],
+      "id": "guitar/Fsharp/_Ab/4",
+      "frets": [-1, 11, 11, 11, 11, -1],
+      "fingers": [0, 1, 1, 1, 1, 0],
       "barres": [11],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "guitar/Fsharp/_Ab/4",
-      "frets": [-1, 11, 11, 11, 11, -1],
-      "fingers": [0, 1, 1, 1, 1, 0],
+      "id": "guitar/Fsharp/_Ab/3",
+      "frets": [-1, 11, 11, 11, 11, 14],
+      "fingers": [0, 1, 1, 1, 1, 4],
       "barres": [11],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

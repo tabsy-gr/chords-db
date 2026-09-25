@@ -46,7 +46,9 @@
     "test:run": "vitest run",
     "authors": "tsx scripts/generate-authors.ts",
     "prepublishOnly": "npm run build",
-    "validate": "tsx scripts/validate-data.ts"
+    "validate": "tsx scripts/validate-data.ts",
+    "upstream-diff": "tsx scripts/upstream-diff.ts",
+    "generate:piano": "tsx scripts/generate-piano.ts"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",

@@ -24,11 +24,27 @@ For a full comparison with the original, see
 * The helpers are exported from the package root, with TypeScript types.
 
 ### Fixed
+* Every voicing is validated; the inherited data was corrected issue by
+  issue (#4–#13). Every change from upstream, and why, is in
+  UPSTREAM-DIFF.md. In short:
+  * restored 7 guitar chords upstream never built (#4);
+  * corrected or removed voicings with wrong notes, including chord files
+    upstream copied from a neighbouring key (#5), and relabelled
+    mislabelled families: alt → b5, 9#11 → 7#11, m9/♭7 → 7sus2/♭7 (#6);
+  * marked the deliberately rootless ukulele and guitar voicings (#7);
+  * fixed impossible fingerings and declared implied barres (#8, #9);
+  * put the root in the bass where the next string plays it (#11);
+  * regenerated the piano voicings from the formula table (#12);
+  * ordered every chord's voicings easiest first (#10);
+  * added D7/F# (#13).
 * Piano `midi` left out every flat note, so 84 of 528 voicings (e.g. C13,
   missing its B♭) were incomplete.
 * Guitar F major position 2 had `x` instead of `0` in its fingers.
 
 ### Added
+* `UPSTREAM-DIFF.md`: every voicing that differs from the original database,
+  and why, generated from `data/changes.json`. The tests fail on any
+  unexplained difference.
 * A voicing validator (`validateVoicing`, `validateChord`). It checks each
   voicing's notes against the chord's formula, the fingering against
   playability rules, and that voicings are ordered easiest first.
@@ -39,8 +55,6 @@ For a full comparison with the original, see
   source, the tones a voicing may omit, and the suffix spellings each
   instrument uses. Cross-checked against tonal.
 * `reports/validation.md`: every current finding. CI checks it is up to date.
-* A round-trip test proving every upstream position is preserved, against a
-  pinned copy of upstream's v0.6.0 build.
 * CI that typechecks, builds, tests, and checks that `lib/` is up to date.
 * `AUTHORS`, generated from git history, crediting every contributor to the
   original project.

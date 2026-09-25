@@ -11,8 +11,8 @@
     },
     {
       "id": "guitar/Bb/m6/2",
-      "frets": [-1, 4, 5, 3, 6, -1],
-      "fingers": [0, 2, 3, 1, 4, 0],
+      "frets": [6, 4, 5, 3, 6, -1],
+      "fingers": ["T", 2, 3, 1, 4, 0],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

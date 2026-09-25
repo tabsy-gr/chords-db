@@ -11,16 +11,16 @@
     },
     {
       "id": "guitar/Eb/sus4/2",
-      "frets": [6, 6, 8, 8, 9, 6],
-      "fingers": [1, 1, 2, 3, 4, 1],
+      "frets": [-1, 6, 8, 8, 9, 6],
+      "fingers": [0, 1, 2, 3, 4, 1],
       "barres": [6],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
       "id": "guitar/Eb/sus4/3",
-      "frets": [-1, -1, 8, 8, 9, -1],
-      "fingers": [0, 0, 1, 1, 2, 0],
+      "frets": [11, -1, 8, 8, 9, -1],
+      "fingers": [3, 0, 1, 1, 2, 0],
       "barres": [8],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

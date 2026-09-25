@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C#",
+  "suffix": "minor",
+  "voicings": [
+    {
+      "id": "piano/Csharp/m/1",
+      "notes": ["C#4", "E4", "G#4"],
+      "degrees": ["1", "b3", "5"],
+      "sources": [{ "type": "curated", "ref": "data/qualities.json" }]
+    }
+  ]
+}

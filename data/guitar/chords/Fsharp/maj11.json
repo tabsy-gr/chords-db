@@ -27,8 +27,8 @@
     },
     {
       "id": "guitar/Fsharp/maj11/4",
-      "frets": [9, 9, 9, 10, 11, 9],
-      "fingers": [1, 1, 1, 2, 4, 1],
+      "frets": [-1, 9, 9, 10, 11, 9],
+      "fingers": [0, 1, 1, 2, 4, 1],
       "barres": [9],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

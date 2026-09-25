@@ -11,8 +11,8 @@
     },
     {
       "id": "guitar/F/maj7sharp5/2",
-      "frets": [5, 8, 7, 6, 5, 5],
-      "fingers": [1, 4, 3, 2, 1, 1],
+      "frets": [-1, 8, 7, 6, 5, 5],
+      "fingers": [0, 4, 3, 2, 1, 1],
       "barres": [5],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

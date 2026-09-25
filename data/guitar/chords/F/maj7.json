@@ -19,16 +19,16 @@
     },
     {
       "id": "guitar/F/maj7/3",
-      "frets": [-1, 3, 3, 5, 5, 5],
-      "fingers": [0, 1, 1, 3, 3, 3],
-      "barres": [3],
+      "frets": [-1, -1, 3, 5, 5, 5],
+      "fingers": [0, 0, 1, 3, 3, 3],
+      "barres": [5],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
       "id": "guitar/F/maj7/4",
-      "frets": [8, 8, 10, 9, 10, 8],
-      "fingers": [1, 1, 3, 2, 4, 1],
+      "frets": [-1, 8, 10, 9, 10, 8],
+      "fingers": [0, 1, 3, 2, 4, 1],
       "barres": [8],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

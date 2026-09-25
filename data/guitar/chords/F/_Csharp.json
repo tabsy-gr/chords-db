@@ -4,6 +4,12 @@
   "suffix": "/C#",
   "voicings": [
     {
+      "id": "guitar/F/_Csharp/4",
+      "frets": [-1, 4, 3, 2, 1, -1],
+      "fingers": [0, 4, 3, 2, 1, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
       "id": "guitar/F/_Csharp/1",
       "frets": [-1, 4, 3, 2, 1, 1],
       "fingers": [0, 4, 3, 2, 1, 1],
@@ -21,12 +27,6 @@
       "id": "guitar/F/_Csharp/3",
       "frets": [-1, -1, 11, 14, 13, 13],
       "fingers": [0, 0, 1, 4, 2, 3],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
-      "id": "guitar/F/_Csharp/4",
-      "frets": [-1, 4, 3, 2, 1, -1],
-      "fingers": [0, 4, 3, 2, 1, 0],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }
   ]

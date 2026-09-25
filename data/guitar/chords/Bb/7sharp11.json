@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Bb",
+  "suffix": "7#11",
+  "voicings": [
+    {
+      "id": "guitar/Bb/9sharp11/3",
+      "frets": [-1, -1, 8, 9, 9, 10],
+      "fingers": [0, 0, 1, 2, 3, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

@@ -7,7 +7,7 @@
       "id": "ukulele/Eb/7sus4/1",
       "frets": [3, 3, 4, 4],
       "fingers": [1, 1, 2, 2],
-      "barres": [3, 3],
+      "barres": [3, 4],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

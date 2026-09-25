@@ -18,17 +18,17 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "guitar/Csharp/m_G/3",
-      "frets": [-1, 10, 11, 9, 9, 12],
-      "fingers": [0, 2, 3, 1, 1, 4],
+      "id": "guitar/Csharp/m_G/4",
+      "frets": [-1, 10, 11, 9, 9, -1],
+      "fingers": [0, 2, 3, 1, 1, 0],
       "barres": [9],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "guitar/Csharp/m_G/4",
-      "frets": [-1, 10, 11, 9, 9, -1],
-      "fingers": [0, 2, 3, 1, 1, 0],
+      "id": "guitar/Csharp/m_G/3",
+      "frets": [-1, 10, 11, 9, 9, 12],
+      "fingers": [0, 2, 3, 1, 1, 4],
       "barres": [9],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

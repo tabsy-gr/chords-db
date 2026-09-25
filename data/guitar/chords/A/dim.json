@@ -10,12 +10,6 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
-      "id": "guitar/A/dim/2",
-      "frets": [5, 3, -1, 4, 3, -1],
-      "fingers": [3, 1, 0, 4, 2, 0],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
       "id": "guitar/A/dim/3",
       "frets": [-1, -1, 7, 8, -1, 8],
       "fingers": [0, 0, 1, 2, 0, 3],

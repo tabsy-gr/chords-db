@@ -4,18 +4,18 @@
   "suffix": "m/C#",
   "voicings": [
     {
-      "id": "guitar/Bb/m_Csharp/1",
-      "frets": [-1, 4, 3, 3, 6, 6],
-      "fingers": [0, 2, 1, 1, 4, 4],
-      "barres": [3],
-      "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
       "id": "guitar/Bb/m_Csharp/2",
       "frets": [-1, 4, 3, 6, 6, 6],
       "fingers": [0, 2, 1, 4, 4, 4],
       "barres": [6],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Bb/m_Csharp/1",
+      "frets": [-1, 4, 3, 3, 6, 6],
+      "fingers": [0, 2, 1, 1, 4, 4],
+      "barres": [3, 6],
+      "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

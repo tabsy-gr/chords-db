@@ -28,8 +28,8 @@
     },
     {
       "id": "guitar/F/13/4",
-      "frets": [8, 8, 8, 8, 10, 10],
-      "fingers": [1, 1, 1, 1, 3, 4],
+      "frets": [-1, 8, 8, 8, 10, 10],
+      "fingers": [0, 1, 1, 1, 3, 4],
       "barres": [8],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

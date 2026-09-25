@@ -1,6 +1,7 @@
 export { noteToMidi, midiToNoteName, frettedMidi, keyboardMidi } from './midi';
 export { toChordDiagram, type ChordDiagram } from './diagram';
 export { qualities, parseSuffix, intervalPitchClass, notePitchClass, type ParsedSuffix } from './theory';
+export { spellChord, type SpelledNote } from './spelling';
 export { playabilityScore, compareByPlayability } from './playability';
 export {
   validateVoicing,

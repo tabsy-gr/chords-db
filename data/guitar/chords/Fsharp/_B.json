@@ -12,6 +12,14 @@
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
+      "id": "guitar/Fsharp/_B/4",
+      "frets": [-1, 2, 4, 3, 2, -1],
+      "fingers": [0, 1, 3, 2, 1, 0],
+      "barres": [2],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
       "id": "guitar/Fsharp/_B/2",
       "frets": [-1, -1, 9, 6, 7, 6],
       "fingers": [0, 0, 4, 1, 2, 1],
@@ -24,14 +32,6 @@
       "frets": [-1, -1, 9, 11, 11, 9],
       "fingers": [0, 0, 1, 3, 4, 1],
       "barres": [9],
-      "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
-      "id": "guitar/Fsharp/_B/4",
-      "frets": [-1, 2, 4, 3, 2, -1],
-      "fingers": [0, 1, 3, 2, 1, 0],
-      "barres": [2],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     }

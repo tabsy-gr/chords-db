@@ -4,17 +4,17 @@
   "suffix": "maj7b5",
   "voicings": [
     {
+      "id": "ukulele/C/maj7b5/2",
+      "frets": [4, 4, 2, 3],
+      "fingers": [3, 4, 1, 2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
       "id": "ukulele/C/maj7b5/1",
       "frets": [5, 4, 2, 2],
       "fingers": [4, 3, 1, 1],
       "barres": [2],
       "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
-      "id": "ukulele/C/maj7b5/2",
-      "frets": [4, 4, 2, 3],
-      "fingers": [3, 4, 1, 2],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

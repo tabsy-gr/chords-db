@@ -4,12 +4,6 @@
   "suffix": "maj7sus2",
   "voicings": [
     {
-      "id": "guitar/C/maj7sus2/1",
-      "frets": [-1, 3, 0, 4, 1, 3],
-      "fingers": [0, 2, 0, 4, 1, 3],
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
       "id": "guitar/C/maj7sus2/2",
       "frets": [-1, 3, 0, 0, 0, 3],
       "fingers": [0, 1, 0, 0, 0, 2],
@@ -19,6 +13,12 @@
       "id": "guitar/C/maj7sus2/3",
       "frets": [-1, 3, 0, 4, 0, 3],
       "fingers": [0, 1, 0, 3, 0, 2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/C/maj7sus2/1",
+      "frets": [-1, 3, 0, 4, 1, 3],
+      "fingers": [0, 2, 0, 4, 1, 3],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

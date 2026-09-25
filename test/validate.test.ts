@@ -55,11 +55,13 @@ describe('notes', () => {
     ]);
   });
 
-  it('lets add chords omit the 5th, but not 6 chords', () => {
+  it('lets add and 6 chords omit the 5th, but not m6 chords', () => {
     // Cadd9 as x32x3x: C E D, no G.
     expect(rules(guitar, 'C', 'add9', v([-1, 3, 2, -1, 3, -1], [0, 2, 1, 0, 3, 0]))).toEqual([]);
-    // C6 without G (x3221x: C E A C) is missing its 5th.
-    expect(rules(guitar, 'C', '6', v([-1, 3, 2, 2, 1, -1], [0, 4, 2, 3, 1, 0]))).toEqual(['notes/missing-tone']);
+    // C6 as x32210: C E A C E, no G.
+    expect(rules(guitar, 'C', '6', v([-1, 3, 2, 2, 1, 0], [0, 4, 2, 3, 1, 0]))).toEqual([]);
+    // Cm6 without G (x3121x: C Eb A C) reads as A°/C, so the 5th is required.
+    expect(rules(guitar, 'C', 'm6', v([-1, 3, 1, 2, 1, -1], [0, 3, 1, 2, 1, 0], { barres: [1] }))).toEqual(['notes/missing-tone']);
   });
 
   it('flags a missing required tone but not a missing omittable one', () => {
@@ -78,6 +80,15 @@ describe('notes', () => {
     expect(rules(guitar, 'C', '/E', v([0, 3, 2, 0, 1, 0], [0, 3, 2, 0, 1, 0]))).toEqual([]);
     expect(rules(guitar, 'C', '/E', v([-1, 3, 2, 0, 1, 0], [0, 3, 2, 0, 1, 0]))).toContain('notes/wrong-bass');
     expect(rules(ukulele, 'C', '/E', v([0, 0, 0, 3], [0, 0, 0, 3]))).not.toContain('notes/wrong-bass');
+  });
+
+  it('warns when a plain chord has a non-root bass, on guitar only', () => {
+    // Bm as 224432 has F# in the bass; x24432 has B.
+    const bm = (frets: number[]) => validateVoicing(guitar, { key: 'B', suffix: 'minor' }, v(frets, frets.map((f) => (f > 0 ? 1 : 0)) as FrettedVoicing['fingers'])).issues.filter((i) => i.rule.startsWith('notes/'));
+    expect(bm([2, 2, 4, 4, 3, 2]).map((i) => [i.rule, i.severity])).toEqual([['notes/inverted-bass', 'warning']]);
+    expect(bm([-1, 2, 4, 4, 3, 2])).toEqual([]);
+    // Re-entrant ukulele: C major 0003 has G lowest by pitch, no warning.
+    expect(rules(ukulele, 'C', 'major', v([0, 0, 0, 3], [0, 0, 0, 3]))).toEqual([]);
   });
 
   it('flags a silent voicing', () => {
@@ -130,6 +141,12 @@ describe('fingering', () => {
   it('allows the thumb on several strings without a barre', () => {
     // F with the thumb on the low E: 1x3211 style, thumb on course 1.
     expect(check(v([1, -1, 3, 2, 1, 1], ['T', 0, 3, 2, 1, 1], { barres: [1] }))).toEqual([]);
+  });
+
+  it('only lets the thumb fret the lowest string', () => {
+    // Thumb on the A string: impossible, whether or not the low E sounds.
+    expect(rules(guitar, 'F', 'major', v([1, 3, 3, 2, 1, 1], [3, 'T', 4, 2, 1, 1], { barres: [1] }))).toContain('fingers/thumb-placement');
+    expect(rules(guitar, 'C', 'major', v([-1, 3, 2, 0, 1, 0], [0, 'T', 2, 0, 1, 0]))).toContain('fingers/thumb-placement');
   });
 
   it('flags a stretch wider than the instrument allows', () => {

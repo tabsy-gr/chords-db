@@ -70,6 +70,11 @@ export const RULES: Record<string, { severity: Severity; description: string }> 
     severity: 'error',
     description: "A slash chord's lowest note is not its bass note.",
   },
+  'notes/inverted-bass': {
+    severity: 'warning',
+    description:
+      "The lowest note of a chord that is not a slash chord is not its root (an inversion), which a player reading the chord name may not expect.",
+  },
   'degrees/mismatch': {
     severity: 'error',
     description: 'A keyboard voicing labels a note with the wrong chord degree.',
@@ -86,6 +91,11 @@ export const RULES: Record<string, { severity: Severity; description: string }> 
   'fingers/order': {
     severity: 'error',
     description: 'A higher-numbered finger sits on a lower fret than a lower-numbered one.',
+  },
+  'fingers/thumb-placement': {
+    severity: 'error',
+    description:
+      'The thumb frets a course other than the lowest one; it can only reach over the neck to the lowest string.',
   },
   'barres/undeclared': {
     severity: 'error',
@@ -188,13 +198,15 @@ const checkNotes = (
   // Only meaningful when the courses ascend in pitch: on a re-entrant tuning
   // (ukulele G4 C4 E4 A4) the lowest note is an artifact of the tuning.
   if (
-    bassPc !== null &&
     instrument.kind === 'fretted' &&
     isAscending(instrument.tunings.standard.map((c) => frettedMidi([0], [c])[0]))
   ) {
     const lowest = Math.min(...midi) % 12;
-    if (lowest !== bassPc) {
+    if (bassPc !== null && lowest !== bassPc) {
       out.push(issue('notes/wrong-bass', `lowest note is ${pcName(lowest)}, not ${bass}`, id));
+    }
+    if (bassPc === null && !voicing.rootless && lowest !== root && sounding.has(root)) {
+      out.push(issue('notes/inverted-bass', `lowest note is ${pcName(lowest)}, not ${chord.key}`, id));
     }
   }
 
@@ -247,6 +259,12 @@ const checkFingering = (instrument: FrettedInstrument, voicing: FrettedVoicing) 
         issue('barres/undeclared', `finger ${finger} covers ${courses.length} courses at fret ${distinct[0]}`, id)
       );
     }
+  }
+
+  // The thumb reaches over the neck to the lowest course only.
+  const thumbAbove = fingers.flatMap((f, c) => (f === 'T' && frets[c] > 0 && c > 0 ? [c + 1] : []));
+  if (thumbAbove.length) {
+    out.push(issue('fingers/thumb-placement', `thumb on course ${thumbAbove.join(', ')}; it can only fret course 1`, id));
   }
 
   const numbered = [...fretOf].filter(([f]) => f !== 'T') as [number, number][];

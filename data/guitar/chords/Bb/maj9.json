@@ -5,9 +5,8 @@
   "voicings": [
     {
       "id": "guitar/Bb/maj9/1",
-      "frets": [1, 1, 0, 2, 1, -1],
-      "fingers": [1, 1, 0, 3, 2, 0],
-      "barres": [1],
+      "frets": [-1, 1, 0, 2, 1, -1],
+      "fingers": [0, 1, 0, 3, 2, 0],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

@@ -4,17 +4,17 @@
   "suffix": "aug7",
   "voicings": [
     {
+      "id": "ukulele/B/aug7/2",
+      "frets": [4, 7, 5, 6],
+      "fingers": [1, 4, 2, 3],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
       "id": "ukulele/B/aug7/1",
       "frets": [2, 3, 3, 2],
       "fingers": [1, 2, 2, 1],
       "barres": [2, 3],
       "capo": true,
-      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
-    },
-    {
-      "id": "ukulele/B/aug7/2",
-      "frets": [4, 7, 5, 6],
-      "fingers": [1, 4, 2, 3],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {

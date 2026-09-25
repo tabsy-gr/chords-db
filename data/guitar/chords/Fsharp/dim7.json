@@ -27,8 +27,8 @@
     },
     {
       "id": "guitar/Fsharp/dim7/4",
-      "frets": [8, 9, 10, 8, 10, 8],
-      "fingers": [1, 2, 3, 1, 4, 1],
+      "frets": [-1, 9, 10, 8, 10, 8],
+      "fingers": [0, 2, 3, 1, 4, 1],
       "barres": [8],
       "capo": true,
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]

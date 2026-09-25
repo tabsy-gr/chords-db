@@ -18,8 +18,8 @@
     },
     {
       "id": "guitar/Eb/m7b5/3",
-      "frets": [-1, -1, 7, 8, 7, 9],
-      "fingers": [0, 0, 1, 2, 1, 4],
+      "frets": [-1, 6, 7, 8, 7, 9],
+      "fingers": [0, 1, 2, 3, 2, 4],
       "barres": [7],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },

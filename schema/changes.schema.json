@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/tabsy-gr/chords-db/schema/changes.schema.json",
+  "title": "Changes from upstream",
+  "description": "Why each voicing differs from tombatossals/chords-db v0.6.0 (df06fa7). Every difference must be covered by an entry; see UPSTREAM-DIFF.md.",
+  "type": "object",
+  "required": ["changes"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ids", "change"],
+        "additionalProperties": false,
+        "properties": {
+          "ids": {
+            "description": "Voicing ids this entry covers. A trailing * matches every id with that prefix ('piano/*', or '*' for all).",
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "kinds": {
+            "description": "Only cover these kinds of difference. Omit to cover every kind.",
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": ["added", "removed", "relabelled", "frets", "fingers", "barres", "capo", "rootless", "notes", "degrees", "order"]
+            }
+          },
+          "change": { "description": "What changed and why, in one or two sentences.", "type": "string", "minLength": 1 },
+          "issue": { "description": "The issue in this repository.", "type": "integer", "minimum": 1 },
+          "pr": { "description": "The pull request in this repository.", "type": "integer", "minimum": 1 },
+          "upstream": {
+            "description": "Related upstream issue or pull request, e.g. 'tombatossals/chords-db#44'.",
+            "type": "string",
+            "pattern": "^tombatossals/chords-db#[0-9]+$"
+          },
+          "reportedBy": { "description": "GitHub login of whoever reported the problem.", "type": "string" }
+        }
+      }
+    }
+  }
+}

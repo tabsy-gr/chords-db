@@ -19,9 +19,7 @@
     {
       "id": "guitar/A/6/3",
       "frets": [5, 7, -1, 6, 7, 5],
-      "fingers": [1, 3, 0, 2, 4, 1],
-      "barres": [5],
-      "capo": true,
+      "fingers": ["T", 3, 0, 2, 4, 1],
       "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
     },
     {
