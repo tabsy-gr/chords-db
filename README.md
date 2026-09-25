@@ -67,6 +67,41 @@ Also published: `@tabsy-gr/chords-db/ukulele`, `/ukulele-d`, `/cavaquinho`,
 `/piano`, `/instruments` (an
 index with chord and voicing counts), and the JSON Schemas under `/schema/*`.
 
+## Drawing a diagram
+
+The database holds data, not pictures. To draw a chord diagram in React, pair
+it with a renderer such as
+[@techies23/react-chords](https://www.npmjs.com/package/@techies23/react-chords)
+(a maintained fork of tombatossals/react-chords). `toChordDiagram()` returns the
+shape it expects:
+
+```jsx
+import Chord from '@techies23/react-chords';
+import guitar from '@tabsy-gr/chords-db/guitar';
+import { findChord, toChordDiagram } from '@tabsy-gr/chords-db';
+
+const courses = guitar.instrument.tunings.standard;
+const instrument = {
+  strings: courses.length,
+  fretsOnChord: guitar.instrument.maxFretSpan,
+  name: guitar.instrument.name,
+  keys: [],
+  tunings: { standard: courses.map((course) => course[0].replace(/\d+$/, '')) },
+};
+
+export function ChordDiagram({ symbol, position = 0 }) {
+  const chord = findChord(guitar, symbol);
+  if (!chord) return null;
+  const diagram = toChordDiagram(chord.voicings[position], courses);
+  return <Chord chord={diagram} instrument={instrument} />;
+}
+
+// <ChordDiagram symbol="Am7" />, <ChordDiagram symbol="F#ø" position={1} />
+```
+
+Voicings are ordered easiest first, so position 0 is a sensible default. A
+thumb (`"T"` in `fingers`) is drawn as a "T" on its dot.
+
 ## Chord symbols
 
 `parseChordSymbol()` reads a chord symbol the way people write it, and
