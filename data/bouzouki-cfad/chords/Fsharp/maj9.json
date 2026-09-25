@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F#",
+  "suffix": "maj9",
+  "voicings": [
+    {
+      "id": "bouzouki-cfad/Fsharp/maj9/1",
+      "frets": [6, 5, 8, 6],
+      "fingers": [3, 1, 4, 2],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Fsharp/maj9/2",
+      "frets": [8, 0, 9, 8],
+      "fingers": [2, 0, 3, 1],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

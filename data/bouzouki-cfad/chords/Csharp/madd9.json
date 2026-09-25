@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C#",
+  "suffix": "madd9",
+  "voicings": [
+    {
+      "id": "bouzouki-cfad/Csharp/madd9/1",
+      "frets": [3, 3, 4, 2],
+      "fingers": [2, 2, 3, 1],
+      "barres": [3],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/madd9/2",
+      "frets": [13, 11, 11, 13],
+      "fingers": [3, 1, 1, 2],
+      "barres": [11],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/madd9/3",
+      "frets": [16, 15, 16, 13],
+      "fingers": [4, 2, 3, 1],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

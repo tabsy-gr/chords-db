@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "E",
+  "suffix": "7sus4",
+  "voicings": [
+    {
+      "id": "bouzouki-cfad/E/7sus4/1",
+      "frets": [2, 4, 0, 2],
+      "fingers": [2, 3, 0, 1],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/E/7sus4/2",
+      "frets": [4, 4, 0, 0],
+      "fingers": [1, 1, 0, 0],
+      "barres": [4],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/E/7sus4/3",
+      "frets": [4, 4, 2, 0],
+      "fingers": [2, 2, 1, 0],
+      "barres": [4],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/E/7sus4/4",
+      "frets": [2, 4, 2, 2],
+      "fingers": [1, 2, 1, 1],
+      "barres": [2],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/E/7sus4/5",
+      "frets": [4, 6, 0, 0],
+      "fingers": [1, 2, 0, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/E/7sus4/6",
+      "frets": [4, 4, 5, 0],
+      "fingers": [1, 1, 2, 0],
+      "barres": [4],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F#",
+  "suffix": "5",
+  "voicings": [
+    {
+      "id": "bouzouki-dad/Fsharp/5/1",
+      "frets": [4, 4, 4],
+      "fingers": [1, 1, 1],
+      "barres": [4],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/Fsharp/5/2",
+      "frets": [4, 4, -1],
+      "fingers": [1, 1, 0],
+      "barres": [4],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/Fsharp/5/3",
+      "frets": [-1, 9, 11],
+      "fingers": [0, 1, 2],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

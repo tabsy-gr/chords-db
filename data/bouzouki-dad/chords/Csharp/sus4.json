@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C#",
+  "suffix": "sus4",
+  "voicings": [
+    {
+      "id": "bouzouki-dad/Csharp/sus4/1",
+      "frets": [4, 4, 6],
+      "fingers": [1, 1, 2],
+      "barres": [4],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/Csharp/sus4/2",
+      "frets": [6, 4, 4],
+      "fingers": [2, 1, 1],
+      "barres": [4],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

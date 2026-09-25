@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C#",
+  "suffix": "5",
+  "voicings": [
+    {
+      "id": "bouzouki-cfad/Csharp/5/1",
+      "frets": [-1, 8, 11, 11],
+      "fingers": [0, 1, 2, 2],
+      "barres": [11],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/5/2",
+      "frets": [8, 8, 11, 11],
+      "fingers": [1, 1, 2, 2],
+      "barres": [8, 11],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/Csharp/5/3",
+      "frets": [13, 15, 16, -1],
+      "fingers": [1, 2, 3, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C",
+  "suffix": "69",
+  "voicings": [
+    {
+      "id": "bouzouki-cfad/C/69/1",
+      "frets": [4, 4, 3, 0],
+      "fingers": [2, 2, 1, 0],
+      "barres": [4],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/C/69/2",
+      "frets": [2, 4, 3, 2],
+      "fingers": [1, 3, 2, 1],
+      "barres": [2],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/C/69/3",
+      "frets": [0, 9, 7, 7],
+      "fingers": [0, 2, 1, 1],
+      "barres": [7],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/C/69/4",
+      "frets": [9, 7, 7, 0],
+      "fingers": [2, 1, 1, 0],
+      "barres": [7],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/C/69/5",
+      "frets": [9, 9, 7, 10],
+      "fingers": [2, 2, 1, 3],
+      "barres": [9],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/C/69/6",
+      "frets": [0, 11, 0, 0],
+      "fingers": [0, 1, 0, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

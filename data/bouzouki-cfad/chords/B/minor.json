@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "B",
+  "suffix": "minor",
+  "voicings": [
+    {
+      "id": "bouzouki-cfad/B/minor/1",
+      "frets": [-1, 1, 2, 0],
+      "fingers": [0, 1, 2, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/B/minor/2",
+      "frets": [2, 1, 2, 0],
+      "fingers": [3, 1, 2, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/B/minor/3",
+      "frets": [-1, 6, 5, 4],
+      "fingers": [0, 3, 2, 1],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/B/minor/4",
+      "frets": [-1, 6, 9, 0],
+      "fingers": [0, 1, 2, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/B/minor/5",
+      "frets": [6, 6, 5, 4],
+      "fingers": [3, 3, 2, 1],
+      "barres": [6],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-cfad/B/minor/6",
+      "frets": [6, 6, 5, 0],
+      "fingers": [2, 2, 1, 0],
+      "barres": [6],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

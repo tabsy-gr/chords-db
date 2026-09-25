@@ -1,0 +1,33 @@
+{
+  "$schema": "../../schema/instrument.schema.json",
+  "id": "bouzouki-cfad",
+  "name": "Bouzouki (tetrachordo, C F A D)",
+  "kind": "fretted",
+  "tunings": { "standard": [["C3", "C4"], ["F3", "F4"], ["A3", "A3"], ["D4", "D4"]] },
+  "carriesBass": false,
+  "maxFretSpan": 4,
+  "keys": ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+  "suffixes": [
+    "major",
+    "minor",
+    "dim",
+    "aug",
+    "sus2",
+    "sus4",
+    "5",
+    "6",
+    "m6",
+    "69",
+    "7",
+    "maj7",
+    "m7",
+    "m7b5",
+    "dim7",
+    "7sus4",
+    "9",
+    "maj9",
+    "m9",
+    "add9",
+    "madd9"
+  ]
+}

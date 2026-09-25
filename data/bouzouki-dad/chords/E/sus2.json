@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "E",
+  "suffix": "sus2",
+  "voicings": [
+    {
+      "id": "bouzouki-dad/E/sus2/1",
+      "frets": [2, 2, 4],
+      "fingers": [1, 1, 2],
+      "barres": [2],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/E/sus2/2",
+      "frets": [4, 2, 2],
+      "fingers": [2, 1, 1],
+      "barres": [2],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

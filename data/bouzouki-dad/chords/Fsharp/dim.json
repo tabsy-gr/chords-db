@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F#",
+  "suffix": "dim",
+  "voicings": [
+    {
+      "id": "bouzouki-dad/Fsharp/dim/1",
+      "frets": [7, 9, 10],
+      "fingers": [1, 2, 3],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/Fsharp/dim/2",
+      "frets": [10, 9, 7],
+      "fingers": [3, 2, 1],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

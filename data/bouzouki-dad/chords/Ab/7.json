@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Ab",
+  "suffix": "7",
+  "voicings": [
+    {
+      "id": "bouzouki-dad/Ab/7/1",
+      "frets": [16, 15, 18],
+      "fingers": [2, 1, 3],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/Ab/7/2",
+      "frets": [18, 15, 16],
+      "fingers": [3, 1, 2],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

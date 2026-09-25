@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F#",
+  "suffix": "aug",
+  "voicings": [
+    {
+      "id": "bouzouki-dad/Fsharp/aug/1",
+      "frets": [0, 9, 8],
+      "fingers": [0, 2, 1],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/Fsharp/aug/2",
+      "frets": [8, 9, 0],
+      "fingers": [1, 2, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/Fsharp/aug/3",
+      "frets": [0, 13, 16],
+      "fingers": [0, 1, 2],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/Fsharp/aug/4",
+      "frets": [16, 13, 0],
+      "fingers": [2, 1, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}

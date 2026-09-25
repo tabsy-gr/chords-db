@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "D",
+  "suffix": "5",
+  "voicings": [
+    {
+      "id": "bouzouki-dad/D/5/1",
+      "frets": [0, 0, 0],
+      "fingers": [0, 0, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/D/5/2",
+      "frets": [0, 5, 7],
+      "fingers": [0, 1, 2],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/D/5/3",
+      "frets": [7, 5, 0],
+      "fingers": [2, 1, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/D/5/4",
+      "frets": [0, 0, 7],
+      "fingers": [0, 0, 1],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/D/5/5",
+      "frets": [0, 0, 12],
+      "fingers": [0, 0, 1],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    },
+    {
+      "id": "bouzouki-dad/D/5/6",
+      "frets": [0, 12, 0],
+      "fingers": [0, 1, 0],
+      "sources": [{ "type": "reference-dataset", "id": "ref-a" }]
+    }
+  ]
+}
