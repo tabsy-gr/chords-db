@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F",
+  "suffix": "11",
+  "voicings": [
+    {
+      "id": "ukulele/F/11/1",
+      "frets": [1, 2, 2, 0],
+      "fingers": [1, 2, 3, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

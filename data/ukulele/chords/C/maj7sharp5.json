@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C",
+  "suffix": "maj7#5",
+  "voicings": [
+    {
+      "id": "ukulele/C/maj7sharp5/1",
+      "frets": [1, 0, 0, 2],
+      "fingers": [1, 0, 0, 2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/C/maj7sharp5/2",
+      "frets": [5, 4, 4, 2],
+      "fingers": [4, 2, 3, 1],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/C/maj7sharp5/3",
+      "frets": [4, 4, 4, 3],
+      "fingers": [2, 3, 4, 1],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/C/maj7sharp5/4",
+      "frets": [5, 8, 7, 7],
+      "fingers": [1, 4, 2, 3],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "B",
+  "suffix": "add11",
+  "voicings": [
+    {
+      "id": "guitar/B/add11/1",
+      "frets": [-1, 2, 1, 4, 0, 0],
+      "fingers": [0, 2, 1, 4, 0, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/B/add11/2",
+      "frets": [-1, 14, 13, 11, 12, 12],
+      "fingers": [0, 4, 3, 1, 2, 2],
+      "barres": [12],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/B/add11/3",
+      "frets": [7, 6, 4, 4, 5, -1],
+      "fingers": [4, 3, 1, 1, 2, 0],
+      "barres": [4],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/B/add11/4",
+      "frets": [7, 6, 9, 9, -1, -1],
+      "fingers": [2, 1, 4, 4, 0, 0],
+      "barres": [9],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

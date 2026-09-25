@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "E",
+  "suffix": "m9/G",
+  "voicings": [
+    {
+      "id": "guitar/E/m9_G/1",
+      "frets": [3, 2, 2, 4, 3, 2],
+      "fingers": [2, 1, 1, 4, 3, 1],
+      "barres": [2],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/E/m9_G/2",
+      "frets": [3, -1, 2, 0, 3, 2],
+      "fingers": [3, 0, 1, 0, 4, 2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/E/m9_G/3",
+      "frets": [3, -1, 2, 4, 3, 2],
+      "fingers": [2, 0, 1, 4, 3, 1],
+      "barres": [2],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

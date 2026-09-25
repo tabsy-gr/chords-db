@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C",
+  "suffix": "m6",
+  "voicings": [
+    {
+      "id": "guitar/C/m6/1",
+      "frets": [-1, 3, 1, 2, 1, 3],
+      "fingers": [0, 3, 1, 2, 1, 4],
+      "barres": [1],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/C/m6/2",
+      "frets": [-1, 3, 5, -1, 4, 5],
+      "fingers": [0, 1, 3, 0, 2, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/C/m6/3",
+      "frets": [8, -1, 7, 8, 8, 8],
+      "fingers": [2, 0, 1, 3, 3, 4],
+      "barres": [8],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/C/m6/4",
+      "frets": [8, 10, 10, 8, 10, 8],
+      "fingers": [1, 2, 3, 1, 4, 1],
+      "barres": [8],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

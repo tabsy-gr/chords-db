@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "G",
+  "suffix": "m/Bb",
+  "voicings": [
+    {
+      "id": "guitar/G/m_Bb/1",
+      "frets": [-1, 1, 0, 0, 3, -1],
+      "fingers": [0, 1, 0, 0, 3, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/G/m_Bb/2",
+      "frets": [6, 5, 5, 3, 3, 3],
+      "fingers": [4, 2, 3, 1, 1, 1],
+      "barres": [3],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/G/m_Bb/3",
+      "frets": [-1, -1, 8, 7, 8, 6],
+      "fingers": [0, 0, 3, 2, 4, 1],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/G/m_Bb/4",
+      "frets": [6, 5, 5, 3, 3, -1],
+      "fingers": [4, 2, 3, 1, 1, 0],
+      "barres": [3],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

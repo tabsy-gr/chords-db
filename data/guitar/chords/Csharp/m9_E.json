@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C#",
+  "suffix": "m9/E",
+  "voicings": [
+    {
+      "id": "guitar/Csharp/m9_E/1",
+      "frets": [12, 11, 11, 13, 12, 11],
+      "fingers": [2, 1, 1, 4, 3, 1],
+      "barres": [11],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/m9_E/2",
+      "frets": [12, -1, 11, 13, 12, 11],
+      "fingers": [2, 0, 1, 4, 3, 1],
+      "barres": [11],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

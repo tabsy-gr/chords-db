@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "E",
+  "suffix": "13",
+  "voicings": [
+    {
+      "id": "ukulele/E/13/1",
+      "frets": [1, 2, 2, 4],
+      "fingers": [1, 2, 3, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/E/13/2",
+      "frets": [6, 6, 4, 5],
+      "fingers": [3, 4, 1, 2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/E/13/3",
+      "frets": [7, 6, 4, 4],
+      "fingers": [4, 3, 1, 1],
+      "barres": [4],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/E/13/4",
+      "frets": [7, 8, 9, 9],
+      "fingers": [1, 2, 3, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

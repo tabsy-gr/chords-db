@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "D",
+  "suffix": "/C#",
+  "voicings": [
+    {
+      "id": "guitar/D/_Csharp/1",
+      "frets": [-1, 4, 0, 2, 3, 2],
+      "fingers": [0, 3, 0, 1, 2, 1],
+      "barres": [2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/D/_Csharp/2",
+      "frets": [-1, 4, 4, 2, 3, 2],
+      "fingers": [0, 3, 4, 1, 2, 1],
+      "barres": [2],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/D/_Csharp/3",
+      "frets": [9, 9, 7, 7, 7, 10],
+      "fingers": [2, 3, 1, 1, 1, 4],
+      "barres": [7],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/D/_Csharp/4",
+      "frets": [9, 9, 7, 7, 10, 10],
+      "fingers": [2, 3, 1, 1, 4, 4],
+      "barres": [7],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

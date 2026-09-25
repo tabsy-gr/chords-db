@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F",
+  "suffix": "mmaj7",
+  "voicings": [
+    {
+      "id": "guitar/F/mmaj7/1",
+      "frets": [1, 3, 2, 1, 1, 1],
+      "fingers": [1, 3, 2, 1, 1, 1],
+      "barres": [1],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/F/mmaj7/2",
+      "frets": [-1, -1, 3, 5, 5, 4],
+      "fingers": [0, 0, 1, 3, 4, 2],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/F/mmaj7/3",
+      "frets": [8, 8, 10, 9, 9, 8],
+      "fingers": [1, 1, 4, 2, 3, 1],
+      "barres": [8],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/F/mmaj7/4",
+      "frets": [-1, -1, 15, 13, 13, 12],
+      "fingers": [0, 0, 4, 2, 3, 1],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

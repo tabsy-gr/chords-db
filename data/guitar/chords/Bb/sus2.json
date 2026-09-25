@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Bb",
+  "suffix": "sus2",
+  "voicings": [
+    {
+      "id": "guitar/Bb/sus2/1",
+      "frets": [1, 1, 3, 3, 1, 1],
+      "fingers": [1, 1, 3, 4, 1, 1],
+      "barres": [1],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Bb/sus2/2",
+      "frets": [6, 3, 3, 5, 6, -1],
+      "fingers": [3, 1, 1, 2, 4, 0],
+      "barres": [3],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Bb/sus2/3",
+      "frets": [8, 8, 8, 10, 11, 8],
+      "fingers": [1, 1, 1, 3, 4, 1],
+      "barres": [8],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Bb/sus2/4",
+      "frets": [-1, 13, 10, 10, 11, 13],
+      "fingers": [0, 3, 1, 1, 2, 4],
+      "barres": [10],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

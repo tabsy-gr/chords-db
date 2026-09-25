@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "D",
+  "suffix": "sus4",
+  "voicings": [
+    {
+      "id": "ukulele/D/sus4/1",
+      "frets": [0, 2, 3, 0],
+      "fingers": [0, 2, 3, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/D/sus4/2",
+      "frets": [2, 2, 3, 0],
+      "fingers": [1, 2, 3, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/D/sus4/3",
+      "frets": [2, 2, 3, 5],
+      "fingers": [1, 1, 2, 4],
+      "barres": [2],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/D/sus4/4",
+      "frets": [7, 7, 5, 5],
+      "fingers": [3, 4, 1, 1],
+      "barres": [5],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

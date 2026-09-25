@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/tabsy-gr/chords-db/schema/chord.schema.json",
+  "title": "Chord",
+  "description": "One chord (key + suffix) on one instrument, with all of its voicings.",
+  "type": "object",
+  "required": ["key", "suffix", "voicings"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "key": { "type": "string", "pattern": "^[A-G](#|b)?$" },
+    "suffix": { "type": "string", "minLength": 1 },
+    "voicings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "oneOf": [{ "$ref": "#/$defs/frettedVoicing" }, { "$ref": "#/$defs/keyboardVoicing" }]
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "description": "Assigned once when the voicing is added and never changed, even if the voicing is corrected or its chord renamed.",
+      "type": "string",
+      "pattern": "^[a-z0-9-]+/[A-Za-z]+/[A-Za-z0-9_]+/[0-9]+$"
+    },
+    "sources": {
+      "description": "Where the voicing comes from.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "additionalProperties": false,
+        "properties": {
+          "type": { "enum": ["upstream", "pull-request", "curated", "reference", "reference-dataset"] },
+          "ref": { "description": "A commit, PR or URL, depending on the type.", "type": "string" },
+          "id": { "description": "reference-dataset only: the dataset id.", "type": "string" }
+        }
+      }
+    },
+    "verified": {
+      "description": "A named person listed in VERIFIERS.md confirmed this voicing.",
+      "type": "object",
+      "required": ["by", "date"],
+      "additionalProperties": false,
+      "properties": {
+        "by": { "type": "string", "minLength": 1 },
+        "date": { "type": "string", "format": "date" }
+      }
+    },
+    "frettedVoicing": {
+      "type": "object",
+      "required": ["id", "frets", "fingers", "sources"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "frets": {
+          "description": "Absolute fret per course, lowest course first. -1 is muted, 0 is open.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "integer", "minimum": -1, "maximum": 24 }
+        },
+        "fingers": {
+          "description": "Finger per course: 1 index to 4 little, \"T\" thumb, 0 none.",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "oneOf": [{ "type": "integer", "minimum": 0, "maximum": 4 }, { "const": "T" }]
+          }
+        },
+        "barres": {
+          "description": "Absolute frets barred by a single finger.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "integer", "minimum": 1, "maximum": 24 }
+        },
+        "capo": { "description": "Draw the barre as a capo.", "const": true },
+        "sources": { "$ref": "#/$defs/sources" },
+        "verified": { "$ref": "#/$defs/verified" }
+      }
+    },
+    "keyboardVoicing": {
+      "type": "object",
+      "required": ["id", "notes", "sources"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "notes": {
+          "description": "Note names, lowest first.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "pattern": "^[A-G](#|b)?[0-9]?$" }
+        },
+        "degrees": {
+          "description": "The chord degree of each note (\"1\", \"b3\", \"#9\", ...).",
+          "type": "array",
+          "items": { "type": "string", "pattern": "^(b|#)?[0-9]{1,2}$" }
+        },
+        "sources": { "$ref": "#/$defs/sources" },
+        "verified": { "$ref": "#/$defs/verified" }
+      }
+    }
+  }
+}

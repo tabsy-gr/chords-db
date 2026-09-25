@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C#",
+  "suffix": "69",
+  "voicings": [
+    {
+      "id": "guitar/Csharp/69/1",
+      "frets": [-1, 4, 1, 3, 2, 1],
+      "fingers": [0, 4, 1, 3, 2, 1],
+      "barres": [1],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/69/2",
+      "frets": [-1, 4, 3, 3, 4, 4],
+      "fingers": [0, 2, 1, 1, 3, 4],
+      "barres": [3],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/69/3",
+      "frets": [9, 8, 8, 8, 9, 9],
+      "fingers": [2, 1, 1, 1, 3, 4],
+      "barres": [8],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/69/4",
+      "frets": [-1, -1, 11, 10, 11, 11],
+      "fingers": [0, 0, 2, 1, 3, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C#",
+  "suffix": "minor",
+  "voicings": [
+    {
+      "id": "guitar/Csharp/minor/1",
+      "frets": [-1, 4, 2, 1, 2, -1],
+      "fingers": [0, 4, 2, 1, 3, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/minor/2",
+      "frets": [4, 4, 6, 6, 5, 4],
+      "fingers": [1, 1, 3, 4, 2, 1],
+      "barres": [4],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/minor/3",
+      "frets": [9, 7, 6, 6, -1, 9],
+      "fingers": [3, 2, 1, 1, 0, 4],
+      "barres": [6],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/minor/4",
+      "frets": [9, 11, 11, 9, 9, 9],
+      "fingers": [1, 3, 4, 1, 1, 1],
+      "barres": [9],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

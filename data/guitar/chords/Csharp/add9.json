@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "C#",
+  "suffix": "add9",
+  "voicings": [
+    {
+      "id": "guitar/Csharp/add9/1",
+      "frets": [-1, 4, 3, 1, 4, 1],
+      "fingers": [0, 3, 2, 1, 4, 1],
+      "barres": [1],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/add9/2",
+      "frets": [-1, 4, 3, -1, 4, 4],
+      "fingers": [0, 2, 1, 0, 3, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/add9/3",
+      "frets": [9, 8, -1, 8, 9, -1],
+      "fingers": [3, 1, 0, 2, 4, 0],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Csharp/add9/4",
+      "frets": [-1, -1, 11, 10, 9, 11],
+      "fingers": [0, 0, 3, 2, 1, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

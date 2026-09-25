@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "Ab",
+  "suffix": "/Eb",
+  "voicings": [
+    {
+      "id": "guitar/Ab/_Eb/1",
+      "frets": [-1, -1, 1, 1, 1, 4],
+      "fingers": [0, 0, 1, 1, 1, 4],
+      "barres": [1],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Ab/_Eb/2",
+      "frets": [-1, 6, 6, 5, 4, 4],
+      "fingers": [0, 3, 4, 2, 1, 1],
+      "barres": [4],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Ab/_Eb/3",
+      "frets": [-1, 6, 6, 8, 9, 8],
+      "fingers": [0, 1, 1, 2, 4, 3],
+      "barres": [6],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "guitar/Ab/_Eb/4",
+      "frets": [11, 11, 13, 13, 13, 11],
+      "fingers": [1, 1, 2, 3, 4, 1],
+      "barres": [11],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

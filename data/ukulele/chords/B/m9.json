@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "B",
+  "suffix": "m9",
+  "voicings": [
+    {
+      "id": "ukulele/B/m9/1",
+      "frets": [2, 2, 2, 4],
+      "fingers": [1, 1, 1, 3],
+      "barres": [2],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/B/m9/2",
+      "frets": [7, 6, 5, 4],
+      "fingers": [4, 3, 2, 1],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/B/m9/3",
+      "frets": [6, 6, 5, 5],
+      "fingers": [2, 2, 1, 1],
+      "barres": [5, 6],
+      "capo": true,
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    },
+    {
+      "id": "ukulele/B/m9/4",
+      "frets": [7, 9, 9, 9],
+      "fingers": [1, 2, 3, 4],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}

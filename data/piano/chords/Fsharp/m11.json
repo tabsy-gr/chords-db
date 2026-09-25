@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../../schema/chord.schema.json",
+  "key": "F#",
+  "suffix": "m11",
+  "voicings": [
+    {
+      "id": "piano/Fsharp/m11/1",
+      "notes": ["F#", "A", "C#", "E", "G#", "B"],
+      "degrees": ["1", "b3", "5", "b7", "9", "11"],
+      "sources": [{ "type": "upstream", "ref": "tombatossals/chords-db@df06fa7" }]
+    }
+  ]
+}
