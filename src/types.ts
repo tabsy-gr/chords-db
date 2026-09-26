@@ -131,3 +131,47 @@ export interface Quality {
     explanation?: string;
   };
 }
+
+/** A scale degree, as used in data/scales.json. Extends Interval with #2 and b4. */
+export type ScaleInterval =
+  | '1' | 'b2' | '2' | '#2' | 'b3' | '3' | '4' | 'b4' | '#4' | 'b5' | '5' | '#5'
+  | 'b6' | '6' | 'bb7' | 'b7' | '7';
+
+/** A family of scales: dromos is a Greek dromos; mode is a church mode. */
+export type ScaleFamily = 'dromos' | 'major-minor' | 'mode' | 'pentatonic' | 'blues';
+
+/** high: sources agree. low: sources disagree, or the makam has a neutral pitch. */
+export type ScaleConfidence = 'high' | 'medium' | 'low';
+
+export type ScaleCaveat = 'microtonal' | 'naming' | 'contested' | 'non-octave';
+
+/** A scale from data/scales.json. */
+export interface Scale {
+  id: string;
+  /** The scale's name in English, e.g. 'Ousak', 'harmonic minor'. */
+  name: string;
+  family: ScaleFamily;
+  /** Every note of the ascending scale, tonic first. */
+  intervals: ScaleInterval[];
+  /** Notes of the descending form, where it differs from the ascending one. */
+  descending?: ScaleInterval[];
+  /** The names musicians use, per language: el Greek, tr Turkish, en English. */
+  aliases: { el: string[]; tr?: string[]; en?: string[] };
+  /** The root the scale is conventionally taught on ('D' for the dromos). */
+  defaultTonic: string;
+  /** tonal's name for the scale with the same intervals, if there is one. */
+  tonalName?: string;
+  /** How the scale is built: the lower and the upper tetrachord (or pentachord). */
+  tetrachords?: [string, string];
+  confidence: ScaleConfidence;
+  caveats: ScaleCaveat[];
+  /** Ids of scales with exactly the same intervals, in the same order. */
+  sameNotesAs?: string[];
+  sources: {
+    title: string;
+    url: string;
+    derivation: 'cited' | 'compositional';
+    quote?: string;
+    explanation?: string;
+  }[];
+}

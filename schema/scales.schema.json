@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/tabsy-gr/chords-db/schema/scales.schema.json",
+  "title": "Scales",
+  "description": "Every scale the package publishes: its formula, its names, how confident the research is, and the sources that own the claims.",
+  "type": "object",
+  "required": ["scales"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "scales": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/scale" }
+    }
+  },
+  "$defs": {
+    "interval": {
+      "description": "A scale degree above the tonic: 1, b2, 2, #2, b3, 3, 4, b4, #4, b5, 5, #5, b6, 6, bb7, b7, 7.",
+      "enum": ["1", "b2", "2", "#2", "b3", "3", "4", "b4", "#4", "b5", "5", "#5", "b6", "6", "bb7", "b7", "7"]
+    },
+    "scale": {
+      "type": "object",
+      "required": ["id", "name", "family", "intervals", "aliases", "defaultTonic", "confidence", "caveats", "sources"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "name": {
+          "description": "The scale's name in English, e.g. 'Ousak', 'harmonic minor'.",
+          "type": "string",
+          "minLength": 1
+        },
+        "family": {
+          "description": "dromos: a Greek dromos. mode: a church mode. blues: a blues scale (6 notes).",
+          "enum": ["dromos", "major-minor", "mode", "pentatonic", "blues"]
+        },
+        "intervals": {
+          "description": "Every note of the ascending scale, tonic first.",
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 8,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/interval" }
+        },
+        "descending": {
+          "description": "Notes of the descending form, where it differs from the ascending one.",
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 8,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/interval" }
+        },
+        "aliases": {
+          "description": "The names musicians use, per language. el: Greek; tr: Turkish (for the makam the dromos is named after or matches); en: English.",
+          "type": "object",
+          "required": ["el"],
+          "additionalProperties": false,
+          "properties": {
+            "el": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+            "tr": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+            "en": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+          }
+        },
+        "defaultTonic": {
+          "description": "The root the scale is conventionally taught on: D for the dromos (the bouzouki is tuned D-A-D), C for the major family and modes, A for the minor family and blues.",
+          "type": "string",
+          "pattern": "^[A-G](#|b)?$"
+        },
+        "tonalName": {
+          "description": "The tonal library's name for the scale with the same intervals, if there is one.",
+          "type": "string",
+          "minLength": 1
+        },
+        "tetrachords": {
+          "description": "How the scale is built, as two conjunct or disjunct units: the lower tetrachord (or pentachord) and the upper one. The units are named after the dromos or the generic family ('major', 'minor', 'hitzaz', …).",
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "confidence": {
+          "description": "high: the sources agree and the 12-TET form is settled. medium: a rounding or naming convention is involved. low: the sources disagree, or the makam has a neutral pitch 12-TET cannot play.",
+          "enum": ["high", "medium", "low"]
+        },
+        "caveats": {
+          "description": "microtonal: the original makam has intervals 12-TET frets cannot play. naming: the Greek name does not mean what the homonymous Turkish makam means. contested: the sources disagree on the formula. non-octave: the scale's upper octave is not a clean octave.",
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "enum": ["microtonal", "naming", "contested", "non-octave"] }
+        },
+        "sameNotesAs": {
+          "description": "Ids of scales with exactly the same intervals (in the same order); the app links to them instead of duplicating content.",
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "sources": {
+          "description": "Where each claim comes from; at least one per scale.",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["title", "url", "derivation"],
+            "additionalProperties": false,
+            "properties": {
+              "title": { "type": "string" },
+              "url": { "type": "string", "format": "uri" },
+              "derivation": {
+                "description": "cited: the formula or fact is stated by the source (quote required). compositional: it is built from cited facts (explanation required).",
+                "enum": ["cited", "compositional"]
+              },
+              "quote": { "type": "string" },
+              "explanation": { "type": "string" }
+            },
+            "allOf": [
+              {
+                "if": { "properties": { "derivation": { "const": "cited" } } },
+                "then": { "required": ["quote"], "not": { "required": ["explanation"] } }
+              },
+              {
+                "if": { "properties": { "derivation": { "const": "compositional" } } },
+                "then": { "required": ["explanation"], "not": { "required": ["quote"] } }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

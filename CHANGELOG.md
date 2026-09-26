@@ -7,6 +7,16 @@ For a full comparison with the original, see
 
 ## Unreleased
 
+### Added
+* Scale library: `data/scales.json` with 27 scales — the Greek dromoi, the
+  major/minor family, the church modes, the pentatonics and the blues
+  scales — every formula with a cited source. New `scaleById()`,
+  `scalePitchClasses()`, `scales` and `chromaOfIntervals()` exports, and the
+  schema `@tabsy-gr/chords-db/schema/scales.schema.json`. The dromoi are the
+  equal-tempered forms Greek sources teach, with `confidence` and `caveats`
+  fields for the 12-TET and naming caveats. The full research report is in
+  `docs/scales-research.md`.
+
 ### Changed
 * All bouzouki voicings, tetrachordo (1,367) and trichordo (445), are signed
   off as verified by `geoioannid`. Each one passes the validator and a

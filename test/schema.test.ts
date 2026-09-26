@@ -4,9 +4,10 @@ import addFormats from 'ajv-formats';
 import chordSchema from '../schema/chord.schema.json';
 import instrumentSchema from '../schema/instrument.schema.json';
 import qualitiesSchema from '../schema/qualities.schema.json';
+import scalesSchema from '../schema/scales.schema.json';
 import changesSchema from '../schema/changes.schema.json';
 import notationSchema from '../schema/notation.schema.json';
-import { loadChangesFile, loadInstruments, loadNotationFile, loadQualitiesFile } from '../scripts/data-source';
+import { loadChangesFile, loadInstruments, loadNotationFile, loadQualitiesFile, loadScalesFile } from '../scripts/data-source';
 
 const ajv = new Ajv2020({ allErrors: true });
 addFormats(ajv);
@@ -21,6 +22,13 @@ it('qualities.json matches the qualities schema', () => {
   const { file, text } = loadQualitiesFile();
   const ok = validateQualities(JSON.parse(text));
   expect(ok, `${file}: ${describeErrors(validateQualities.errors)}`).toBe(true);
+});
+
+it('scales.json matches the scales schema', () => {
+  const validateScales = ajv.compile(scalesSchema);
+  const { file, text } = loadScalesFile();
+  const ok = validateScales(JSON.parse(text));
+  expect(ok, `${file}: ${describeErrors(validateScales.errors)}`).toBe(true);
 });
 
 it('changes.json matches the changes schema', () => {

@@ -22,6 +22,12 @@ export const loadQualitiesFile = () => ({
   text: fs.readFileSync(QUALITIES_FILE, 'utf8'),
 });
 
+/** data/scales.json, raw, for formatting and schema checks. */
+export const loadScalesFile = () => {
+  const file = path.join(DATA_DIR, 'scales.json');
+  return { file: path.relative(ROOT, file), text: fs.readFileSync(file, 'utf8') };
+};
+
 /** data/notation.json, raw, for formatting and schema checks. */
 export const loadNotationFile = () => {
   const file = path.join(DATA_DIR, 'notation.json');

@@ -1,0 +1,679 @@
+{
+  "$schema": "../schema/scales.schema.json",
+  "scales": [
+    {
+      "id": "ousak",
+      "name": "Ousak",
+      "family": "dromos",
+      "intervals": ["1", "b2", "b3", "4", "5", "b6", "b7"],
+      "aliases": { "el": ["Ουσάκ", "Ουσσάκ"], "tr": ["Uşşâk"] },
+      "defaultTonic": "D",
+      "tonalName": "phrygian",
+      "tetrachords": ["ousak", "minor"],
+      "confidence": "high",
+      "caveats": ["microtonal", "naming"],
+      "sameNotesAs": ["frygios"],
+      "sources": [
+        {
+          "title": "N. Katsikias, «Δρόμοι Μουσικής», Greek school-network teacher page",
+          "url": "http://users.sch.gr/nkatsikias/joomla2015/index.php/mousiki/dromoi-mousikis",
+          "derivation": "cited",
+          "quote": "Ουσάκ: ρε-μιb-φα-σολ-λα-σιb-ντο-ρε"
+        },
+        {
+          "title": "Ordoulidis, N. (2011). «The Greek Popular Modes», British Postgraduate Musicology 11, p. 7",
+          "url": "http://britishpostgraduatemusicology.org/bpm11/ordoulidis_the_greek_popular_modes.pdf",
+          "derivation": "cited",
+          "quote": "the 2nd degree \"sometimes sounds flat and sometimes natural, depending on whether the melody is ascending or descending\""
+        },
+        {
+          "title": "Ordoulidis, N. (2011). «The Greek Popular Modes», British Postgraduate Musicology 11, p. 4",
+          "url": "http://britishpostgraduatemusicology.org/bpm11/ordoulidis_the_greek_popular_modes.pdf",
+          "derivation": "cited",
+          "quote": "Greek musicians call ousák what maqam theory calls kürdî (example: «Το βαπόρι απ' την Περσία»); the Greek Ουσάκ scale is the Turkish Kürdî, not the Turkish Uşşâk."
+        }
+      ]
+    },
+    {
+      "id": "kiourdi",
+      "name": "Kiourdi",
+      "family": "dromos",
+      "intervals": ["1", "2", "b3", "4", "b5", "6", "b7"],
+      "aliases": { "el": ["Κιουρντί", "Γκιουρντί", "Κιουρδί"], "tr": ["Kürdî"] },
+      "defaultTonic": "D",
+      "tetrachords": ["giourdi", "hitzaz"],
+      "confidence": "low",
+      "caveats": ["microtonal", "naming", "contested"],
+      "sameNotesAs": ["karsigar"],
+      "sources": [
+        {
+          "title": "N. Katsikias, «Δρόμοι Μουσικής», Greek school-network teacher page",
+          "url": "http://users.sch.gr/nkatsikias/joomla2015/index.php/mousiki/dromoi-mousikis",
+          "derivation": "cited",
+          "quote": "5) Δρόμος Γκιουρντί ή Καρσιγιάρ ή Καρσιγάρ ή Κατσιγάρ: ρε-μι-φα-σολ-λαb-σι-ντο-ρε (one entry covering both Γκιουρντί and Καρσιγάρ)"
+        },
+        {
+          "title": "Ordoulidis, N. (2011). «The Greek Popular Modes», British Postgraduate Musicology 11, pp. 2, 4",
+          "url": "http://britishpostgraduatemusicology.org/bpm11/ordoulidis_the_greek_popular_modes.pdf",
+          "derivation": "cited",
+          "quote": "Greek dhrómos kiourdí \"is considered to be something completely different\" from maqam kürdî; the two main Greek method books (Paghiátis, Nikolópoulos) give different scales for it."
+        }
+      ]
+    },
+    {
+      "id": "hitzaz",
+      "name": "Hitzaz",
+      "family": "dromos",
+      "intervals": ["1", "b2", "3", "4", "5", "b6", "b7"],
+      "aliases": { "el": ["Χιτζάζ", "Χιτζαζ"], "tr": ["Hicâz"], "en": ["Hijaz"] },
+      "defaultTonic": "D",
+      "tonalName": "phrygian dominant",
+      "tetrachords": ["hitzaz", "ousak"],
+      "confidence": "high",
+      "caveats": ["microtonal"],
+      "sources": [
+        {
+          "title": "N. Katsikias, «Δρόμοι Μουσικής», Greek school-network teacher page",
+          "url": "http://users.sch.gr/nkatsikias/joomla2015/index.php/mousiki/dromoi-mousikis",
+          "derivation": "cited",
+          "quote": "Χιτζάζ: ρε-μιb-φα#-σολ-λα-σιb-ντο-ρε, «Η-ΤΡ-Η-Τ-Η-Τ-Τ», «ο πιο συνηθισμένος δρόμος στο ρεμπέτικο»"
+        },
+        {
+          "title": "Ordoulidis, N. (2011). «The Greek Popular Modes», British Postgraduate Musicology 11, p. 12",
+          "url": "http://britishpostgraduatemusicology.org/bpm11/ordoulidis_the_greek_popular_modes.pdf",
+          "derivation": "cited",
+          "quote": "\"dhrómos hitzáz does correspond to maqam hicâz\""
+        }
+      ]
+    },
+    {
+      "id": "hitzazkiar",
+      "name": "Hitzazkiar",
+      "family": "dromos",
+      "intervals": ["1", "b2", "3", "4", "5", "b6", "7"],
+      "aliases": { "el": ["Χιτζαζκιάρ", "Χιτζασκιάρ"], "tr": ["Hicazkâr"] },
+      "defaultTonic": "D",
+      "tonalName": "double harmonic major",
+      "tetrachords": ["hitzaz", "hitzaz"],
+      "confidence": "high",
+      "caveats": ["microtonal"],
+      "sources": [
+        {
+          "title": "N. Katsikias, «Δρόμοι Μουσικής», Greek school-network teacher page",
+          "url": "http://users.sch.gr/nkatsikias/joomla2015/index.php/mousiki/dromoi-mousikis",
+          "derivation": "cited",
+          "quote": "Χιτζασκιάρ: Ρε-Ρε# Φα# σολ λα λα# ντο# ρε — «σπάνια χρησιμοποιείται μόνος του· συνήθως συνδυάζεται με Χιτζάζ»"
+        }
+      ]
+    },
+    {
+      "id": "rast",
+      "name": "Rast",
+      "family": "dromos",
+      "intervals": ["1", "2", "3", "4", "5", "6", "7"],
+      "descending": ["1", "2", "3", "4", "5", "6", "b7"],
+      "aliases": { "el": ["Ραστ"], "tr": ["Rast"], "en": ["Rast"] },
+      "defaultTonic": "D",
+      "tonalName": "major",
+      "tetrachords": ["rast", "rast"],
+      "confidence": "medium",
+      "caveats": ["microtonal"],
+      "sameNotesAs": ["meizona"],
+      "sources": [
+        {
+          "title": "N. Katsikias, «Δρόμοι Μουσικής», Greek school-network teacher page",
+          "url": "http://users.sch.gr/nkatsikias/joomla2015/index.php/mousiki/dromoi-mousikis",
+          "derivation": "cited",
+          "quote": "Ραστ: Ντο Ρε Μι Φα Σολ Λα Σι Ντο (on C, the white keys)"
+        },
+        {
+          "title": "İ. H. Özkan, «Rast», TDV İslâm Ansiklopedisi",
+          "url": "https://islamansiklopedisi.org.tr/rast",
+          "derivation": "compositional",
+          "explanation": "In descending phrases acem (b7) replaces eviç (7), per the TDV description of the makam's seyir as recorded in the research; the data records b7 in the 'descending' field. The makam's 3rd and 7th are a comma below equal temperament, which 12-TET rounds up."
+        },
+        {
+          "title": "Ordoulidis, N. (2011). «The Greek Popular Modes», British Postgraduate Musicology 11, n. xxxii",
+          "url": "http://britishpostgraduatemusicology.org/bpm11/ordoulidis_the_greek_popular_modes.pdf",
+          "derivation": "cited",
+          "quote": "Greek musicians often use Ραστ as a synonym for Ματζόρε (the major scale)."
+        }
+      ]
+    },
+    {
+      "id": "sabah",
+      "name": "Sabah",
+      "family": "dromos",
+      "intervals": ["1", "2", "b3", "b4", "5", "b6", "b7"],
+      "aliases": { "el": ["Σαμπάχ", "Σαμπά"], "tr": ["Sabâ"] },
+      "defaultTonic": "D",
+      "tetrachords": ["sabah", "ousak"],
+      "confidence": "low",
+      "caveats": ["microtonal", "contested", "non-octave"],
+      "sources": [
+        {
+          "title": "N. Katsikias, «Δρόμοι Μουσικής», Greek school-network teacher page",
+          "url": "http://users.sch.gr/nkatsikias/joomla2015/index.php/mousiki/dromoi-mousikis",
+          "derivation": "cited",
+          "quote": "Σαμπάχ: ρε-μι-φα-σολb-λα-σιb-ντο-ντο# — «ο μόνος δρόμος που ξεκινά από Ρε και τελειώνει σε Ντο#»"
+        },
+        {
+          "title": "İ. H. Özkan, «Sabâ», TDV İslâm Ansiklopedisi",
+          "url": "https://islamansiklopedisi.org.tr/saba",
+          "derivation": "cited",
+          "quote": "The upper şehnaz is explicitly not a perfect octave above the tonic dügâh."
+        }
+      ]
+    },
+    {
+      "id": "niavent",
+      "name": "Niavent",
+      "family": "dromos",
+      "intervals": ["1", "2", "b3", "#4", "5", "b6", "7"],
+      "aliases": { "el": ["Νιαβέντ", "Νιχαβέντ"], "tr": ["Neveser", "Nihavend"] },
+      "defaultTonic": "D",
+      "tonalName": "hungarian minor",
+      "tetrachords": ["niavent", "hitzaz"],
+      "confidence": "high",
+      "caveats": ["microtonal", "naming"],
+      "sources": [
+        {
+          "title": "N. Katsikias, «Δρόμοι Μουσικής», Greek school-network teacher page",
+          "url": "http://users.sch.gr/nkatsikias/joomla2015/index.php/mousiki/dromoi-mousikis",
+          "derivation": "cited",
+          "quote": "Νιαβέντ: Ρε -μι-φα-σολ#-λα -λα# -ντο#- ρε"
+        },
+        {
+          "title": "İ. H. Özkan, «Neveser», TDV İslâm Ansiklopedisi",
+          "url": "https://islamansiklopedisi.org.tr/neveser",
+          "derivation": "cited",
+          "quote": "A Nikriz tetrachord on the tonic plus a Hicaz tetrachord on the 5th: a nihavend with a raised 4th, \"a minor oriental scale\". The Greek shape is Turkish Neveser, not Nihavend."
+        }
+      ]
+    },
+    {
+      "id": "nikriz",
+      "name": "Nikriz",
+      "family": "dromos",
+      "intervals": ["1", "2", "b3", "#4", "5", "6", "b7"],
+      "aliases": { "el": ["Νικρίζ"], "tr": ["Nikrîz"] },
+      "defaultTonic": "D",
+      "tonalName": "dorian #4",
+      "tetrachords": ["nikriz", "minor"],
+      "confidence": "high",
+      "caveats": ["microtonal"],
+      "sources": [
+        {
+          "title": "N. Katsikias, «Δρόμοι Μουσικής», Greek school-network teacher page",
+          "url": "http://users.sch.gr/nkatsikias/joomla2015/index.php/mousiki/dromoi-mousikis",
+          "derivation": "cited",
+          "quote": "Νικρίζ: ντο-ρε-μιb-φα#-σολ-λα-σιb-ντο — «προέρχεται από το Χιτζάζ, παιγμένος από τη 7η βαθμίδα»"
+        }
+      ]
+    },
+    {
+      "id": "houzam",
+      "name": "Houzam",
+      "family": "dromos",
+      "intervals": ["1", "#2", "3", "4", "5", "b6", "7"],
+      "aliases": { "el": ["Χουζάμ", "Χουζάμι"], "tr": ["Hüzzam"] },
+      "defaultTonic": "D",
+      "tetrachords": ["houzam", "hitzaz"],
+      "confidence": "low",
+      "caveats": ["microtonal", "naming", "contested"],
+      "sources": [
+        {
+          "title": "N. Katsikias, «Δρόμοι Μουσικής», Greek school-network teacher page",
+          "url": "http://users.sch.gr/nkatsikias/joomla2015/index.php/mousiki/dromoi-mousikis",
+          "derivation": "cited",
+          "quote": "Χουζάμ: ρε-μι#-φα#-σολ-λα-σιb-ντο#-ρε, «ΤΡ-Η-Η-Τ-Η-ΤΡ-Η»"
+        },
+        {
+          "title": "İ. H. Özkan, «Hüzzam», TDV İslâm Ansiklopedisi",
+          "url": "https://islamansiklopedisi.org.tr/huzzam",
+          "derivation": "cited",
+          "quote": "Hüzzam is built on segâh: its tonic itself is a neutral pitch, a koma-flat B, which 12-TET frets cannot play."
+        },
+        {
+          "title": "Rembetiko forum, «Χουζάμ, Σεγκιάχ ή κάτι άλλο;»",
+          "url": "https://rembetiko.gr/t/%CF%87%CE%BF%CF%85%CE%B6%CE%AC%CE%BC-%CF%83%CE%B5%CE%B3%CE%BA%CE%B9%CE%AC%CF%87-%CE%AE-%CE%BA%CE%AC%CF%84%CE%B9-%CE%AC%CE%BB%CE%BB%CE%BF/13795",
+          "derivation": "cited",
+          "quote": "Four competing step patterns for «Χουζάμ/Σεγκιάχ» are listed; a participant calls the naming \"a broken telephone… reversed names for tempered modes\"."
+        }
+      ]
+    },
+    {
+      "id": "peiraiotikos",
+      "name": "Peiraiotikos",
+      "family": "dromos",
+      "intervals": ["1", "b2", "3", "#4", "5", "b6", "b7"],
+      "aliases": { "el": ["Πειραιώτικος", "Πειραιώτικο"] },
+      "defaultTonic": "D",
+      "confidence": "medium",
+      "caveats": ["microtonal", "contested"],
+      "sources": [
+        {
+          "title": "N. Katsikias, «Δρόμοι Μουσικής», Greek school-network teacher page",
+          "url": "http://users.sch.gr/nkatsikias/joomla2015/index.php/mousiki/dromoi-mousikis",
+          "derivation": "cited",
+          "quote": "Πειραιώτικος: ρε-μιb-φα#-σολ#-λα-σιb-ντο-ρε, «ένα Χιτζάζ με αυξημένη την 4η»"
+        },
+        {
+          "title": "Rembetiko forum, «Πειραιώτικος δρόμος»",
+          "url": "https://rembetiko.gr/t/%CF%80%CE%B5%CE%B9%CF%81%CE%B1%CE%B9%CF%89%CF%84%CE%B9%CE%BA%CE%BF%CF%82-%CE%B4%CF%81%CF%8C%CE%BC%CE%BF%CF%82/14021",
+          "derivation": "cited",
+          "quote": "Search results give both «…Σι♭ Ντο# Ρε» and «…Σι♭ Ντο»: the 7th varies (b7 or 7). The b7 form published here is the most common textual definition."
+        }
+      ]
+    },
+    {
+      "id": "karsigar",
+      "name": "Karsigar",
+      "family": "dromos",
+      "intervals": ["1", "2", "b3", "4", "b5", "6", "b7"],
+      "aliases": { "el": ["Καρσιγάρ", "Καρτσιγάρ"], "tr": ["Karcığar"] },
+      "defaultTonic": "D",
+      "tetrachords": ["giourdi", "hitzaz"],
+      "confidence": "medium",
+      "caveats": ["microtonal"],
+      "sameNotesAs": ["kiourdi"],
+      "sources": [
+        {
+          "title": "N. Katsikias, «Δρόμοι Μουσικής», Greek school-network teacher page",
+          "url": "http://users.sch.gr/nkatsikias/joomla2015/index.php/mousiki/dromoi-mousikis",
+          "derivation": "cited",
+          "quote": "Δρόμος Γκιουρντί ή Καρσιγιάρ ή Καρσιγάρ ή Κατσιγάρ: ρε-μι-φα-σολ-λαb-σι-ντο-ρε"
+        },
+        {
+          "title": "İ. H. Özkan, «Karcığar», TDV İslâm Ansiklopedisi",
+          "url": "https://islamansiklopedisi.org.tr/karcigar",
+          "derivation": "cited",
+          "quote": "Uşşak tetrachord on dügâh plus Hicaz pentachord on nevâ; tonic dügâh. The 2nd is Uşşak's neutral 2nd, which Greek sources round up to E natural."
+        }
+      ]
+    },
+    {
+      "id": "segkiah",
+      "name": "Segkiah",
+      "family": "dromos",
+      "intervals": ["1", "#2", "3", "4", "5", "6", "7"],
+      "descending": ["1", "#2", "3", "4", "5", "6", "b7"],
+      "aliases": { "el": ["Σεγκιάχ", "Σεγκιάχ-Ραστ"], "tr": ["Segâh"], "en": ["Sikah"] },
+      "defaultTonic": "D",
+      "tetrachords": ["houzam", "rast"],
+      "confidence": "low",
+      "caveats": ["microtonal", "naming", "contested"],
+      "sources": [
+        {
+          "title": "N. Katsikias, «Δρόμοι Μουσικής», Greek school-network teacher page",
+          "url": "http://users.sch.gr/nkatsikias/joomla2015/index.php/mousiki/dromoi-mousikis",
+          "derivation": "cited",
+          "quote": "Σεγκιάχ: ρε-μι#-φα#-σολ-λα-σι-ντο#-ρε, «ΤΡ-Η-Η-Τ-Τ-Τ-Η»"
+        },
+        {
+          "title": "İ. H. Özkan, «Segâh», TDV İslâm Ansiklopedisi",
+          "url": "https://islamansiklopedisi.org.tr/segah",
+          "derivation": "cited",
+          "quote": "Segâh is built on the segâh fifth; its tonic is the koma-flat B, a neutral pitch 12-TET cannot play."
+        },
+        {
+          "title": "Rembetiko forum, «Χουζάμ, Σεγκιάχ ή κάτι άλλο;»",
+          "url": "https://rembetiko.gr/t/%CF%87%CE%BF%CF%85%CE%B6%CE%AC%CE%BC-%CF%83%CE%B5%CE%B3%CE%BA%CE%B9%CE%AC%CF%87-%CE%AE-%CE%BA%CE%AC%CF%84%CE%B9-%CE%AC%CE%BB%CE%BB%CE%BF/13795",
+          "derivation": "cited",
+          "quote": "The descending form «3Η-Η-Η-Τ-Τ-Η-Τ» (b7 on the way down) appears in the thread's list of competing patterns."
+        }
+      ]
+    },
+    {
+      "id": "meizona",
+      "name": "major",
+      "family": "major-minor",
+      "intervals": ["1", "2", "3", "4", "5", "6", "7"],
+      "aliases": { "el": ["Μείζονα", "Μείζων", "Ματζόρε"], "en": ["major"] },
+      "defaultTonic": "C",
+      "tonalName": "major",
+      "confidence": "high",
+      "caveats": [],
+      "sameNotesAs": ["rast", "ionikos"],
+      "sources": [
+        {
+          "title": "Wikipedia: Major scale",
+          "url": "https://en.wikipedia.org/wiki/Major_scale",
+          "derivation": "cited",
+          "quote": "Most commonly, the term \"major scale\" refers to the natural major scale (or Ionian mode), which is one of the most commonly used musical scales, especially in Western music. It is one of the diatonic scales."
+        },
+        {
+          "title": "el.wikipedia: Κλίμακα (μουσική)",
+          "url": "https://el.wikipedia.org/wiki/%CE%9A%CE%BB%CE%AF%CE%BC%CE%B1%CE%BA%CE%B1_(%CE%BC%CE%BF%CF%85%CF%83%CE%B9%CE%BA%CE%AE)",
+          "derivation": "cited",
+          "quote": "Αν παίξουμε τη μείζονα κλίμακα του Ντο… αυτό που κάνουμε στην πραγματικότητα είναι να παίζουμε μια σειρά από τόνους και ημιτόνια με μια συγκεκριμένη σειρά."
+        }
+      ]
+    },
+    {
+      "id": "fysiki-elassona",
+      "name": "natural minor",
+      "family": "major-minor",
+      "intervals": ["1", "2", "b3", "4", "5", "b6", "b7"],
+      "aliases": { "el": ["Φυσική ελάσσονα", "Μινόρε"], "en": ["natural minor"] },
+      "defaultTonic": "A",
+      "tonalName": "minor",
+      "confidence": "high",
+      "caveats": [],
+      "sameNotesAs": ["aolikos"],
+      "sources": [
+        {
+          "title": "Wikipedia: Minor scale",
+          "url": "https://en.wikipedia.org/wiki/Minor_scale",
+          "derivation": "cited",
+          "quote": "There are three common types of minor scales: the natural minor scale, the melodic minor scale, and the harmonic minor scale."
+        }
+      ]
+    },
+    {
+      "id": "armoniki-elassona",
+      "name": "harmonic minor",
+      "family": "major-minor",
+      "intervals": ["1", "2", "b3", "4", "5", "b6", "7"],
+      "aliases": { "el": ["Αρμονική ελάσσονα", "Μινόρε αρμονικό"], "en": ["harmonic minor"] },
+      "defaultTonic": "A",
+      "tonalName": "harmonic minor",
+      "confidence": "high",
+      "caveats": [],
+      "sources": [
+        {
+          "title": "Wikipedia: Minor scale",
+          "url": "https://en.wikipedia.org/wiki/Minor_scale",
+          "derivation": "cited",
+          "quote": "This modification became known as the harmonic minor scale. The configuration creates an augmented second between the sixth and seventh scale degrees."
+        }
+      ]
+    },
+    {
+      "id": "melodiki-elassona",
+      "name": "melodic minor",
+      "family": "major-minor",
+      "intervals": ["1", "2", "b3", "4", "5", "6", "7"],
+      "descending": ["1", "2", "b3", "4", "5", "b6", "b7"],
+      "aliases": { "el": ["Μελωδική ελάσσονα"], "en": ["melodic minor"] },
+      "defaultTonic": "A",
+      "tonalName": "melodic minor",
+      "confidence": "high",
+      "caveats": [],
+      "sources": [
+        {
+          "title": "Wikipedia: Minor scale",
+          "url": "https://en.wikipedia.org/wiki/Minor_scale",
+          "derivation": "cited",
+          "quote": "There are three common types of minor scales: the natural minor scale, the melodic minor scale, and the harmonic minor scale."
+        },
+        {
+          "title": "tonal (@tonaljs/scale-type), scale-type data",
+          "url": "https://github.com/tonaljs/tonal/blob/main/packages/scale-type/data.ts",
+          "derivation": "compositional",
+          "explanation": "tonal's 'melodic minor' (1P 2M 3m 4P 5P 6M 7M) is the ascending (jazz) form only. In classical practice the scale reverts to natural minor on the way down; that form is recorded in the 'descending' field."
+        }
+      ]
+    },
+    {
+      "id": "ionikos",
+      "name": "Ionian",
+      "family": "mode",
+      "intervals": ["1", "2", "3", "4", "5", "6", "7"],
+      "aliases": { "el": ["Ιωνικός"], "en": ["ionian"] },
+      "defaultTonic": "C",
+      "tonalName": "ionian",
+      "confidence": "high",
+      "caveats": [],
+      "sameNotesAs": ["meizona"],
+      "sources": [
+        {
+          "title": "Wikipedia: Mode (music)",
+          "url": "https://en.wikipedia.org/wiki/Mode_(music)",
+          "derivation": "cited",
+          "quote": "It is applied to major and minor keys as well as the seven diatonic modes (including the former as Ionian and Aeolian) which are defined by their starting note or tonic."
+        },
+        {
+          "title": "tonal (@tonaljs/scale-type), scale-type data",
+          "url": "https://github.com/tonaljs/tonal/blob/main/packages/scale-type/data.ts",
+          "derivation": "compositional",
+          "explanation": "Each mode's interval content is its rotation of the major scale; cross-checked against tonal's scale-type data in test/scales.test.ts."
+        }
+      ]
+    },
+    {
+      "id": "dorios",
+      "name": "Dorian",
+      "family": "mode",
+      "intervals": ["1", "2", "b3", "4", "5", "6", "b7"],
+      "aliases": { "el": ["Δώριος", "Δωρικός"], "en": ["dorian"] },
+      "defaultTonic": "C",
+      "tonalName": "dorian",
+      "confidence": "high",
+      "caveats": [],
+      "sources": [
+        {
+          "title": "Wikipedia: Mode (music)",
+          "url": "https://en.wikipedia.org/wiki/Mode_(music)",
+          "derivation": "cited",
+          "quote": "It is applied to major and minor keys as well as the seven diatonic modes (including the former as Ionian and Aeolian) which are defined by their starting note or tonic."
+        },
+        {
+          "title": "tonal (@tonaljs/scale-type), scale-type data",
+          "url": "https://github.com/tonaljs/tonal/blob/main/packages/scale-type/data.ts",
+          "derivation": "compositional",
+          "explanation": "Each mode's interval content is its rotation of the major scale; cross-checked against tonal's scale-type data in test/scales.test.ts."
+        }
+      ]
+    },
+    {
+      "id": "frygios",
+      "name": "Phrygian",
+      "family": "mode",
+      "intervals": ["1", "b2", "b3", "4", "5", "b6", "b7"],
+      "aliases": { "el": ["Φρύγιος"], "en": ["phrygian"] },
+      "defaultTonic": "C",
+      "tonalName": "phrygian",
+      "confidence": "high",
+      "caveats": [],
+      "sameNotesAs": ["ousak"],
+      "sources": [
+        {
+          "title": "Wikipedia: Mode (music)",
+          "url": "https://en.wikipedia.org/wiki/Mode_(music)",
+          "derivation": "cited",
+          "quote": "It is applied to major and minor keys as well as the seven diatonic modes (including the former as Ionian and Aeolian) which are defined by their starting note or tonic."
+        },
+        {
+          "title": "tonal (@tonaljs/scale-type), scale-type data",
+          "url": "https://github.com/tonaljs/tonal/blob/main/packages/scale-type/data.ts",
+          "derivation": "compositional",
+          "explanation": "Each mode's interval content is its rotation of the major scale; cross-checked against tonal's scale-type data in test/scales.test.ts."
+        }
+      ]
+    },
+    {
+      "id": "lydios",
+      "name": "Lydian",
+      "family": "mode",
+      "intervals": ["1", "2", "3", "#4", "5", "6", "7"],
+      "aliases": { "el": ["Λύδιος"], "en": ["lydian"] },
+      "defaultTonic": "C",
+      "tonalName": "lydian",
+      "confidence": "high",
+      "caveats": [],
+      "sources": [
+        {
+          "title": "Wikipedia: Mode (music)",
+          "url": "https://en.wikipedia.org/wiki/Mode_(music)",
+          "derivation": "cited",
+          "quote": "It is applied to major and minor keys as well as the seven diatonic modes (including the former as Ionian and Aeolian) which are defined by their starting note or tonic."
+        },
+        {
+          "title": "tonal (@tonaljs/scale-type), scale-type data",
+          "url": "https://github.com/tonaljs/tonal/blob/main/packages/scale-type/data.ts",
+          "derivation": "compositional",
+          "explanation": "Each mode's interval content is its rotation of the major scale; cross-checked against tonal's scale-type data in test/scales.test.ts."
+        }
+      ]
+    },
+    {
+      "id": "mixolydios",
+      "name": "Mixolydian",
+      "family": "mode",
+      "intervals": ["1", "2", "3", "4", "5", "6", "b7"],
+      "aliases": { "el": ["Μιξολύδιος"], "en": ["mixolydian"] },
+      "defaultTonic": "C",
+      "tonalName": "mixolydian",
+      "confidence": "high",
+      "caveats": [],
+      "sources": [
+        {
+          "title": "Wikipedia: Mode (music)",
+          "url": "https://en.wikipedia.org/wiki/Mode_(music)",
+          "derivation": "cited",
+          "quote": "It is applied to major and minor keys as well as the seven diatonic modes (including the former as Ionian and Aeolian) which are defined by their starting note or tonic."
+        },
+        {
+          "title": "tonal (@tonaljs/scale-type), scale-type data",
+          "url": "https://github.com/tonaljs/tonal/blob/main/packages/scale-type/data.ts",
+          "derivation": "compositional",
+          "explanation": "Each mode's interval content is its rotation of the major scale; cross-checked against tonal's scale-type data in test/scales.test.ts."
+        }
+      ]
+    },
+    {
+      "id": "aolikos",
+      "name": "Aeolian",
+      "family": "mode",
+      "intervals": ["1", "2", "b3", "4", "5", "b6", "b7"],
+      "aliases": { "el": ["Αιολικός"], "en": ["aeolian"] },
+      "defaultTonic": "C",
+      "tonalName": "aeolian",
+      "confidence": "high",
+      "caveats": [],
+      "sameNotesAs": ["fysiki-elassona"],
+      "sources": [
+        {
+          "title": "Wikipedia: Mode (music)",
+          "url": "https://en.wikipedia.org/wiki/Mode_(music)",
+          "derivation": "cited",
+          "quote": "It is applied to major and minor keys as well as the seven diatonic modes (including the former as Ionian and Aeolian) which are defined by their starting note or tonic."
+        },
+        {
+          "title": "tonal (@tonaljs/scale-type), scale-type data",
+          "url": "https://github.com/tonaljs/tonal/blob/main/packages/scale-type/data.ts",
+          "derivation": "compositional",
+          "explanation": "Each mode's interval content is its rotation of the major scale; cross-checked against tonal's scale-type data in test/scales.test.ts."
+        }
+      ]
+    },
+    {
+      "id": "lokrios",
+      "name": "Locrian",
+      "family": "mode",
+      "intervals": ["1", "b2", "b3", "4", "b5", "b6", "b7"],
+      "aliases": { "el": ["Λόκριος"], "en": ["locrian"] },
+      "defaultTonic": "C",
+      "tonalName": "locrian",
+      "confidence": "high",
+      "caveats": [],
+      "sources": [
+        {
+          "title": "Wikipedia: Mode (music)",
+          "url": "https://en.wikipedia.org/wiki/Mode_(music)",
+          "derivation": "cited",
+          "quote": "It is applied to major and minor keys as well as the seven diatonic modes (including the former as Ionian and Aeolian) which are defined by their starting note or tonic."
+        },
+        {
+          "title": "tonal (@tonaljs/scale-type), scale-type data",
+          "url": "https://github.com/tonaljs/tonal/blob/main/packages/scale-type/data.ts",
+          "derivation": "compositional",
+          "explanation": "Each mode's interval content is its rotation of the major scale; cross-checked against tonal's scale-type data in test/scales.test.ts."
+        }
+      ]
+    },
+    {
+      "id": "pentatoniki-mizona",
+      "name": "major pentatonic",
+      "family": "pentatonic",
+      "intervals": ["1", "2", "3", "5", "6"],
+      "aliases": { "el": ["Μείζονα πεντατονική"], "en": ["major pentatonic"] },
+      "defaultTonic": "C",
+      "tonalName": "major pentatonic",
+      "confidence": "high",
+      "caveats": [],
+      "sources": [
+        {
+          "title": "Wikipedia: Pentatonic scale",
+          "url": "https://en.wikipedia.org/wiki/Pentatonic_scale",
+          "derivation": "cited",
+          "quote": "The major pentatonic scale may be thought of as a gapped or incomplete major scale, using scale tones 1, 2, 3, 5, and 6 of the major scale."
+        },
+        {
+          "title": "el.wikipedia: Κλίμακα (μουσική)",
+          "url": "https://el.wikipedia.org/wiki/%CE%9A%CE%BB%CE%AF%CE%BC%CE%B1%CE%BA%CE%B1_(%CE%BC%CE%BF%CF%85%CF%83%CE%B9%CE%BA%CE%AE)",
+          "derivation": "cited",
+          "quote": "μια πεντατονική κλίμακα περιέχει πέντε νότες"
+        }
+      ]
+    },
+    {
+      "id": "pentatoniki-elassona",
+      "name": "minor pentatonic",
+      "family": "pentatonic",
+      "intervals": ["1", "b3", "4", "5", "b7"],
+      "aliases": { "el": ["Ελάσσονα πεντατονική"], "en": ["minor pentatonic"] },
+      "defaultTonic": "A",
+      "tonalName": "minor pentatonic",
+      "confidence": "high",
+      "caveats": [],
+      "sources": [
+        {
+          "title": "Wikipedia: Pentatonic scale",
+          "url": "https://en.wikipedia.org/wiki/Pentatonic_scale",
+          "derivation": "cited",
+          "quote": "Although various hemitonic pentatonic scales might be called minor, the term is most commonly applied to the relative minor pentatonic derived from the major pentatonic, using scale tones 1, 3, 4, 5, and 7 of the natural minor scale."
+        }
+      ]
+    },
+    {
+      "id": "blouz",
+      "name": "minor blues",
+      "family": "blues",
+      "intervals": ["1", "b3", "4", "b5", "5", "b7"],
+      "aliases": { "el": ["Μπλουζ", "Κλίμακα μπλουζ"], "en": ["blues", "minor blues"] },
+      "defaultTonic": "A",
+      "tonalName": "minor blues",
+      "confidence": "high",
+      "caveats": [],
+      "sources": [
+        {
+          "title": "Wikipedia: Blues scale",
+          "url": "https://en.wikipedia.org/wiki/Blues_scale",
+          "derivation": "cited",
+          "quote": "The hexatonic, or six-note, blues scale consists of the minor pentatonic scale plus the ♭5th degree of the original heptatonic scale."
+        }
+      ]
+    },
+    {
+      "id": "blouz-mizona",
+      "name": "major blues",
+      "family": "blues",
+      "intervals": ["1", "2", "b3", "3", "5", "6"],
+      "aliases": { "el": ["Μείζονα μπλουζ"], "en": ["major blues"] },
+      "defaultTonic": "C",
+      "tonalName": "major blues",
+      "confidence": "high",
+      "caveats": [],
+      "sources": [
+        {
+          "title": "Wikipedia: Blues scale",
+          "url": "https://en.wikipedia.org/wiki/Blues_scale",
+          "derivation": "cited",
+          "quote": "A blues scale is often formed by the addition of an out-of-key \"blue note\" to an existing scale, notably the flat fifth addition to the minor pentatonic scale or the addition of the minor third to a major pentatonic scale."
+        }
+      ]
+    }
+  ]
+}
