@@ -1,6 +1,6 @@
 # Scale Library Research: Formulas, Dromoi and 12-TET Caveats
 
-*Research for the scale library at `/klimakes/{instrument}/{root}-{scale}`. Checked 2026-09-26 against `tonal` 6.4.2 (`@tonaljs/scale-type` 4.9.1), which is installed in `app/node_modules`.*
+*Research behind the scale library (`data/scales.json`). Checked 2026-09-26 against `tonal` 6.4.2 (`@tonaljs/scale-type` 4.9.1), which is installed in this repository's devDependencies.*
 
 ## Summary
 

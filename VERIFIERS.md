@@ -24,7 +24,7 @@ scale carries a `confidence` rating from the research
 ([docs/scales-research.md](./docs/scales-research.md)): `high` means the
 sources agree and the equal-tempered form is settled, `low` means they
 disagree or the makam has a neutral pitch 12-TET cannot play. If you play a
-scale and its formula on these pages is wrong for real playing, open an issue
+scale and its formula here is wrong for real playing, open an issue
 naming the scale and the correction, ideally with a source; entries,
 especially the low-confidence `kiourdi`, `sabah`, `houzam` and `segkiah`, can
 be corrected with one.

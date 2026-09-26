@@ -8,9 +8,15 @@ voicing is checked for correctness. It also publishes a library of scales
 (the Greek dromoi, the major/minor family, the church modes, pentatonics and
 blues), with a cited source for every formula — see [Scales](#scales).
 
+**This is a general-purpose, open-source library (MIT), intended for anyone:**
+chord finders, diagram renderers, music-education tools, your own project.
+Nothing in the data or the API is tied to any product or website — if you
+find something here that only makes sense for Tabsy's own use, that is a bug:
+please open an issue.
+
 This is a hard fork of [tombatossals/chords-db](https://github.com/tombatossals/chords-db)
 by David Rubert and contributors, which is no longer maintained. It is
-maintained by [Tabsy](https://tabsy.gr), which uses it for its chord diagrams.
+maintained by [Tabsy](https://tabsy.gr) and its contributors.
 
 **Adopting this fork from the original?** Every difference from the original
 database is documented:
