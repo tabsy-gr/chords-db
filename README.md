@@ -4,11 +4,19 @@
 > stable yet; see the [Roadmap](#roadmap).
 
 A database of chord voicings for string instruments and piano, where every
-voicing is checked for correctness.
+voicing is checked for correctness. It also publishes a library of scales
+(the Greek dromoi, the major/minor family, the church modes, pentatonics and
+blues), with a cited source for every formula — see [Scales](#scales).
+
+**This is a general-purpose, open-source library (MIT), intended for anyone:**
+chord finders, diagram renderers, music-education tools, your own project.
+Nothing in the data or the API is tied to any product or website — if you
+find something here that only makes sense for Tabsy's own use, that is a bug:
+please open an issue.
 
 This is a hard fork of [tombatossals/chords-db](https://github.com/tombatossals/chords-db)
 by David Rubert and contributors, which is no longer maintained. It is
-maintained by [Tabsy](https://tabsy.gr), which uses it for its chord diagrams.
+maintained by [Tabsy](https://tabsy.gr) and its contributors.
 
 **Adopting this fork from the original?** Every difference from the original
 database is documented:
@@ -127,6 +135,85 @@ Greek capital Delta (Δ) in lyrics is never taken for a chord.
 `chordSymbolSource()` gives a regular expression for finding chord symbols in
 text. No canonical suffix starts with `b`, because `Cb5` reads as C-flat.
 
+## Scales
+
+The package also publishes `data/scales.json`: the Greek dromoi, the
+major/minor family, the church modes, the pentatonics and the blues scales —
+27 scales, every formula with a cited source. The research behind them, with
+the full source quotes, is in
+[docs/scales-research.md](./docs/scales-research.md).
+
+```js
+import { scales, scaleById, scalePitchClasses } from '@tabsy-gr/chords-db';
+
+scaleById('hitzaz').aliases.el;          // ['Χιτζάζ', 'Χιτζαζ']
+scaleById('hitzaz').tonalName;           // 'phrygian dominant'
+scalePitchClasses('hitzaz');             // [0, 1, 4, 5, 7, 8, 10]
+```
+
+By family:
+
+**Dromoi.** The Greek modes, as played on fretted instruments. They default
+to the tonic D, because the bouzouki is tuned D-A-D.
+
+| id | Greek | Formula | Confidence | tonal name |
+| --- | --- | --- | --- | --- |
+| `ousak` | Ουσάκ | 1 b2 b3 4 5 b6 b7 | high | `phrygian` |
+| `kiourdi` | Κιουρντί | 1 2 b3 4 b5 6 b7 | low | — |
+| `hitzaz` | Χιτζάζ | 1 b2 3 4 5 b6 b7 | high | `phrygian dominant` |
+| `hitzazkiar` | Χιτζαζκιάρ | 1 b2 3 4 5 b6 7 | high | `double harmonic major` |
+| `rast` | Ραστ | 1 2 3 4 5 6 7 (desc. b7) | medium | `major` |
+| `sabah` | Σαμπάχ | 1 2 b3 b4 5 b6 b7 (+ b8 above) | low | — |
+| `niavent` | Νιαβέντ | 1 2 b3 #4 5 b6 7 | high | `hungarian minor` |
+| `nikriz` | Νικρίζ | 1 2 b3 #4 5 6 b7 | high | `dorian #4` |
+| `houzam` | Χουζάμ | 1 #2 3 4 5 b6 7 | low | — |
+| `peiraiotikos` | Πειραιώτικος | 1 b2 3 #4 5 b6 b7 | medium | — |
+| `karsigar` | Καρσιγάρ | 1 2 b3 4 b5 6 b7 | medium | — |
+| `segkiah` | Σεγκιάχ | 1 #2 3 4 5 6 7 (desc. b7) | low | — |
+
+**Major/minor family, modes, pentatonics, blues.** Western scales, all with
+an exact tonal match; they default to C (major family, modes, major
+pentatonic, major blues) or A (minor family, minor pentatonic, minor blues).
+
+| id | Greek | Formula | tonal name |
+| --- | --- | --- | --- |
+| `meizona` | Μείζονα (Ματζόρε) | 1 2 3 4 5 6 7 | `major` |
+| `fysiki-elassona` | Φυσική ελάσσονα | 1 2 b3 4 5 b6 b7 | `minor` |
+| `armoniki-elassona` | Αρμονική ελάσσονα | 1 2 b3 4 5 b6 7 | `harmonic minor` |
+| `melodiki-elassona` | Μελωδική ελάσσονα | 1 2 b3 4 5 6 7 (desc. natural minor) | `melodic minor` |
+| `ionikos` | Ιωνικός | 1 2 3 4 5 6 7 | `ionian` |
+| `dorios` | Δώριος | 1 2 b3 4 5 6 b7 | `dorian` |
+| `frygios` | Φρύγιος | 1 b2 b3 4 5 b6 b7 | `phrygian` |
+| `lydios` | Λύδιος | 1 2 3 #4 5 6 7 | `lydian` |
+| `mixolydios` | Μιξολύδιος | 1 2 3 4 5 6 b7 | `mixolydian` |
+| `aolikos` | Αιολικός | 1 2 b3 4 5 b6 b7 | `aeolian` |
+| `lokrios` | Λόκριος | 1 b2 b3 4 b5 b6 b7 | `locrian` |
+| `pentatoniki-mizona` | Μείζονα πεντατονική | 1 2 3 5 6 | `major pentatonic` |
+| `pentatoniki-elassona` | Ελάσσονα πεντατονική | 1 b3 4 5 b7 | `minor pentatonic` |
+| `blouz` | Μπλουζ | 1 b3 4 b5 5 b7 | `minor blues` |
+| `blouz-mizona` | Μείζονα μπλουζ | 1 2 b3 3 5 6 | `major blues` |
+
+**The 12-TET caveat.** The dromoi come from Turkish makams, which have
+microtones that fretted, equal-tempered instruments cannot play. Rebetiko has
+been played on such instruments since the early 1930s, so each dromos here is
+the equal-tempered form Greek sources teach, not the makam it came from.
+Also:
+
+- Greek dromos names do not always mean what the homonymous Turkish makam
+  means: the Greek Ουσάκ is the Turkish *Kürdî*, and the Greek Νιαβέντ is the
+  Turkish *Neveser*, not *Nihavend*. Each entry's `caveats: ['naming']` flags
+  this.
+- Low-confidence entries (`kiourdi`, `sabah`, `houzam`, `segkiah`) are ones
+  where Greek sources disagree, or where the makam's tonic is a neutral pitch
+  12-TET cannot represent. Σαμπάχ's upper octave is not a clean octave
+  (`caveats: ['non-octave']`), so its intervals include the b8 a semitone
+  below the octave.
+- Scales that share the same ascending intervals with another scale are linked
+  through `sameNotesAs` rather than duplicated: Ουσάκ ↔ Φρύγιος, Κιουρντί ↔
+  Καρσιγάρ, Ραστ ↔ Μείζονα. The comparison covers the ascending `intervals`
+  only: Ραστ and Μείζονα share the same ascending formula even though Ραστ
+  also publishes a descending b7, so their full pitch-class sets differ.
+
 ## Data format
 
 The source data lives in `data/`, one directory per instrument:
@@ -187,6 +274,33 @@ A keyboard (piano) voicing has `notes` (note names, lowest first) and
 `degrees` (each note's chord degree, e.g. `"b7"`) instead of `frets` and
 `fingers`, and can also be `rootless`.
 
+`data/scales.json` holds the scale library (see [Scales](#scales)). Each
+scale has:
+
+- `id`, `name` (English) and `family` (`dromos`, `major-minor`, `mode`,
+  `pentatonic`, `blues`).
+- `intervals`: every note of the ascending scale, tonic first, as degrees
+  (`"1"`, `"b2"`, …). `descending` (optional) lists the descending form where
+  it differs (Ραστ, Σεγκιάχ, μελωδική ελάσσονα).
+- `aliases`: the names musicians use, per language — `el` (Greek, required),
+  `tr` (Turkish), `en` (English).
+- `defaultTonic`: the root the scale is conventionally taught on. `D` for the
+  dromoi (the bouzouki is tuned D-A-D), `C` for the major family, the modes,
+  the major pentatonic and the major blues, `A` for the minor family, the
+  minor pentatonic and the minor blues.
+- `tonalName` (optional): the [tonal](https://github.com/tonaljs/tonal)
+  library's name for the scale with the same intervals.
+- `tetrachords` (optional): how a dromos is built — the lower tetrachord (or
+  pentachord) and the upper one, e.g. `["hitzaz", "ousak"]`.
+- `confidence` (`high`, `medium`, `low`) and `caveats` (`microtonal`,
+  `naming`, `contested`, `non-octave`), which decide the caveat text
+  consumers show.
+- `sameNotesAs` (optional): ids of scales with exactly the same intervals, in
+  the same order.
+- `sources`: where the claims come from; every scale cites at least one
+  source, and a `cited` source carries the quote. The full research report
+  with all quotes is in [docs/scales-research.md](./docs/scales-research.md).
+
 Run `npm run format:data` after editing data files; CI checks the formatting.
 
 When a change makes a voicing differ from the original database, add an entry
@@ -209,6 +323,13 @@ Every voicing is checked against two sets of rules, defined in
   finger is on two frets; fingers don't cross; barres are declared, played by
   one finger, and don't sit over open or lower-fretted strings; and the hand
   stays within the instrument's fret span.
+
+The scale library has its own suite, `test/scales.test.ts`: every scale has
+at least one source; the ones with a `tonalName` match the
+[tonal](https://github.com/tonaljs/tonal) library's chroma exactly; the
+custom scales (no tonal match) match the chromas recorded in the research;
+`sameNotesAs` is symmetric and the intervals are truly equal. The schema in
+`schema/scales.schema.json` is checked in `test/schema.test.ts`.
 
 Voicings should also be ordered easiest first, by a playability score.
 
@@ -265,6 +386,12 @@ repository conventions it checks are in
 5. ~~Greek bouzouki: tetrachordo (C F A D) and trichordo (D A D).~~ Added;
    the voicings are being signed off by the verifiers in
    [VERIFIERS.md](./VERIFIERS.md).
+6. Scale library (`data/scales.json`). Added; see [Scales](#scales). The
+   low-confidence dromoi (`kiourdi`, `sabah`, `houzam`, `segkiah`) are open
+   to correction: the sources disagree, and the books that would settle them
+   (Signell, *Makam: Modal Practice in Turkish Art Music*; Mavroeidis, *Οι
+   μουσικοί τρόποι στην Ανατολική Μεσόγειο*; Voúlgaris & Vandarákis, 2007)
+   are not available online. Corrections welcome with a source.
 
 ## Credits
 

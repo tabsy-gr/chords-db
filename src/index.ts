@@ -1,6 +1,12 @@
 export { noteToMidi, midiToNoteName, frettedMidi, keyboardMidi } from './midi';
 export { toChordDiagram, type ChordDiagram } from './diagram';
 export { qualities, parseSuffix, intervalPitchClass, notePitchClass, type ParsedSuffix } from './theory';
+export {
+  scales,
+  scaleById,
+  scalePitchClasses,
+  chromaOfIntervals,
+} from './scales';
 export { spellChord, type SpelledNote } from './spelling';
 export {
   parseChordSymbol,
