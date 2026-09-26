@@ -14,7 +14,7 @@ import type { ScaleInterval } from '../src/types';
 /** 12-bit chromas (ascending form, C first) recorded for each custom scale in the research. */
 const RESEARCH_CHROMA: Record<string, string> = {
   kiourdi: '101101100110',
-  sabah: '101110011010',
+  sabah: '101110011011',
   houzam: '100111011001',
   peiraiotikos: '110010111010',
   karsigar: '101101100110',
@@ -22,7 +22,7 @@ const RESEARCH_CHROMA: Record<string, string> = {
 };
 
 const DEGREES = new Set<ScaleInterval>([
-  '1', 'b2', '2', '#2', 'b3', '3', '4', 'b4', '#4', 'b5', '5', '#5', 'b6', '6', 'bb7', 'b7', '7',
+  '1', 'b2', '2', '#2', 'b3', '3', '4', 'b4', '#4', 'b5', '5', '#5', 'b6', '6', 'bb7', 'b7', '7', 'b8',
 ]);
 
 const pcs = (list: number[]) => [...new Set(list)].sort((a, b) => a - b).join(',');
@@ -95,6 +95,10 @@ describe('scales', () => {
       expect(scalePitchClasses('rast')).toEqual([0, 2, 4, 5, 7, 9, 10, 11]);
       expect(scalePitchClasses('meizona')).toEqual([0, 2, 4, 5, 7, 9, 11]);
       expect(scalePitchClasses('melodiki-elassona')).toEqual([0, 2, 3, 5, 7, 8, 9, 10, 11]);
+    });
+
+    it('include the non-octave endpoint (sabah tops out on b8)', () => {
+      expect(scalePitchClasses('sabah')).toEqual([0, 2, 3, 4, 7, 8, 10, 11]);
     });
   });
 });

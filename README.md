@@ -163,7 +163,7 @@ to the tonic D, because the bouzouki is tuned D-A-D.
 | `hitzaz` | Χιτζάζ | 1 b2 3 4 5 b6 b7 | high | `phrygian dominant` |
 | `hitzazkiar` | Χιτζαζκιάρ | 1 b2 3 4 5 b6 7 | high | `double harmonic major` |
 | `rast` | Ραστ | 1 2 3 4 5 6 7 (desc. b7) | medium | `major` |
-| `sabah` | Σαμπάχ | 1 2 b3 b4 5 b6 b7 | low | — |
+| `sabah` | Σαμπάχ | 1 2 b3 b4 5 b6 b7 (+ b8 above) | low | — |
 | `niavent` | Νιαβέντ | 1 2 b3 #4 5 b6 7 | high | `hungarian minor` |
 | `nikriz` | Νικρίζ | 1 2 b3 #4 5 6 b7 | high | `dorian #4` |
 | `houzam` | Χουζάμ | 1 #2 3 4 5 b6 7 | low | — |
@@ -172,8 +172,8 @@ to the tonic D, because the bouzouki is tuned D-A-D.
 | `segkiah` | Σεγκιάχ | 1 #2 3 4 5 6 7 (desc. b7) | low | — |
 
 **Major/minor family, modes, pentatonics, blues.** Western scales, all with
-an exact tonal match; they default to C (major family and modes) or A (minor
-family, blues).
+an exact tonal match; they default to C (major family, modes, major
+pentatonic, major blues) or A (minor family, minor pentatonic, minor blues).
 
 | id | Greek | Formula | tonal name |
 | --- | --- | --- | --- |
@@ -206,10 +206,13 @@ Also:
 - Low-confidence entries (`kiourdi`, `sabah`, `houzam`, `segkiah`) are ones
   where Greek sources disagree, or where the makam's tonic is a neutral pitch
   12-TET cannot represent. Σαμπάχ's upper octave is not a clean octave
-  (`caveats: ['non-octave']`), so its pitch classes end on the b7.
-- Scales that share a pitch-class set with another scale are linked through
-  `sameNotesAs` rather than duplicated: Ουσάκ ↔ Φρύγιος, Κιουρντί ↔
-  Καρσιγάρ, Ραστ ↔ Μείζονα.
+  (`caveats: ['non-octave']`), so its intervals include the b8 a semitone
+  below the octave.
+- Scales that share the same ascending intervals with another scale are linked
+  through `sameNotesAs` rather than duplicated: Ουσάκ ↔ Φρύγιος, Κιουρντί ↔
+  Καρσιγάρ, Ραστ ↔ Μείζονα. The comparison covers the ascending `intervals`
+  only: Ραστ and Μείζονα share the same ascending formula even though Ραστ
+  also publishes a descending b7, so their full pitch-class sets differ.
 
 ## Data format
 
@@ -282,8 +285,9 @@ scale has:
 - `aliases`: the names musicians use, per language — `el` (Greek, required),
   `tr` (Turkish), `en` (English).
 - `defaultTonic`: the root the scale is conventionally taught on. `D` for the
-  dromoi (the bouzouki is tuned D-A-D), `C` for the major family and modes,
-  `A` for the minor family and blues.
+  dromoi (the bouzouki is tuned D-A-D), `C` for the major family, the modes,
+  the major pentatonic and the major blues, `A` for the minor family, the
+  minor pentatonic and the minor blues.
 - `tonalName` (optional): the [tonal](https://github.com/tonaljs/tonal)
   library's name for the scale with the same intervals.
 - `tetrachords` (optional): how a dromos is built — the lower tetrachord (or

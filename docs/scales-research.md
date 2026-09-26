@@ -32,7 +32,7 @@ Notation used below: formulas are in scale degrees relative to the tonic. Steps 
 | Hijaz | Χιτζάζ | 1 b2 3 4 5 b6 b7 | H 1½ H W H W W | `phrygian dominant` | High | Publish with caveat |
 | Hijazkar | Χιτζαζκιάρ | 1 b2 3 4 5 b6 7 | H 1½ H W H 1½ H | `double harmonic major` | High | Publish with caveat |
 | Rast | Ραστ | asc 1 2 3 4 5 6 7 / desc b7 | W W H W W W H | `major` (desc = `mixolydian`) | Medium | Publish with caveat (neutral 3rd/7th) |
-| Saba | Σαμπάχ | 1 2 b3 b4 5 b6 b7 (+ b8 above) | W H H 1½ H W W | none (chroma `101110011010`) | Medium-low | Publish with strong caveat |
+| Saba | Σαμπάχ | 1 2 b3 b4 5 b6 b7 (+ b8 above) | W H H 1½ H W W | none (chroma `101110011011`, including the b8) | Medium-low | Publish with strong caveat |
 | Niavent (≈ Neveser) | Νιαβέντ | 1 2 b3 #4 5 b6 7 | W H 1½ H H 1½ H | `hungarian minor` | High | Publish with caveat |
 | Nikriz | Νικρίζ | 1 2 b3 #4 5 6 b7 | W H 1½ H W H W | `dorian #4` | High | Publish with caveat |
 | Houzam (Greek form) | Χουζάμ | 1 #2 3 4 5 b6 7 | 1½ H H W H 1½ H | exact chroma = `augmented heptatonic` (do not use that name) | Low | Strong caveat, or hold back |
@@ -230,7 +230,7 @@ All formulas below were checked against `tonal`'s `ScaleType` data ([tonal `pack
 - Dromoi that share a set with another scale need distinct pages keyed by **dromos and tonic**, not by pitch-class set. Each page should state emphasized notes and cadence notes where the sources give them. So far only Χιτζάζ and Ουσάκ have published dominant notes and cadences (Ordoulidis figs. 9–11).
 - For the sets with no `tonal` match (Κιουρντί/Καρσιγάρ, Σαμπάχ, Χουζάμ, Σεγκιάχ, Πειραιώτικος), you can register custom types with `ScaleType.add(intervals, name)`. This keeps `Scale.get("D sabah")` working.
 - Choose the interval spellings deliberately; these are suggestions:
-  - Σαμπάχ: `1P 2M 3m 4d 5P 6m 7m`
+  - Σαμπάχ: `1P 2M 3m 4d 5P 6m 7m 8d` (the 8d is the non-octave endpoint)
   - Χουζάμ/Σεγκιάχ: `1P 2A 3M 4P 5P ...`, which gives E# in D the way Greek sources spell it
 
   Check that chord detection over these spellings does not produce unreadable symbols.

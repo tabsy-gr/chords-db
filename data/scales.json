@@ -144,7 +144,7 @@
       "id": "sabah",
       "name": "Sabah",
       "family": "dromos",
-      "intervals": ["1", "2", "b3", "b4", "5", "b6", "b7"],
+      "intervals": ["1", "2", "b3", "b4", "5", "b6", "b7", "b8"],
       "aliases": { "el": ["Σαμπάχ", "Σαμπά"], "tr": ["Sabâ"] },
       "defaultTonic": "D",
       "tetrachords": ["sabah", "ousak"],

@@ -16,8 +16,8 @@
   },
   "$defs": {
     "interval": {
-      "description": "A scale degree above the tonic: 1, b2, 2, #2, b3, 3, 4, b4, #4, b5, 5, #5, b6, 6, bb7, b7, 7.",
-      "enum": ["1", "b2", "2", "#2", "b3", "3", "4", "b4", "#4", "b5", "5", "#5", "b6", "6", "bb7", "b7", "7"]
+      "description": "A scale degree above the tonic: 1, b2, 2, #2, b3, 3, 4, b4, #4, b5, 5, #5, b6, 6, bb7, b7, 7, b8. b8 (a semitone below the octave) marks the final note of a non-octave scale like Σαμπάχ.",
+      "enum": ["1", "b2", "2", "#2", "b3", "3", "4", "b4", "#4", "b5", "5", "#5", "b6", "6", "bb7", "b7", "7", "b8"]
     },
     "scale": {
       "type": "object",
@@ -62,7 +62,7 @@
           }
         },
         "defaultTonic": {
-          "description": "The root the scale is conventionally taught on: D for the dromos (the bouzouki is tuned D-A-D), C for the major family and modes, A for the minor family and blues.",
+          "description": "The root the scale is conventionally taught on: D for the dromos (the bouzouki is tuned D-A-D), C for the major family, the modes, the major pentatonic and the major blues, A for the minor family, the minor pentatonic and the minor blues.",
           "type": "string",
           "pattern": "^[A-G](#|b)?$"
         },

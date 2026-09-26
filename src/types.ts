@@ -132,10 +132,10 @@ export interface Quality {
   };
 }
 
-/** A scale degree, as used in data/scales.json. Extends Interval with #2 and b4. */
+/** A scale degree, as used in data/scales.json. Extends Interval with #2, b4 and b8. */
 export type ScaleInterval =
   | '1' | 'b2' | '2' | '#2' | 'b3' | '3' | '4' | 'b4' | '#4' | 'b5' | '5' | '#5'
-  | 'b6' | '6' | 'bb7' | 'b7' | '7';
+  | 'b6' | '6' | 'bb7' | 'b7' | '7' | 'b8';
 
 /** A family of scales: dromos is a Greek dromos; mode is a church mode. */
 export type ScaleFamily = 'dromos' | 'major-minor' | 'mode' | 'pentatonic' | 'blues';
