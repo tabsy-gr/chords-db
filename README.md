@@ -240,6 +240,16 @@ npm run build        # regenerate lib/ and build the package
 npm run authors      # regenerate AUTHORS from git history
 ```
 
+## Contributing
+
+Pull requests are welcome — this is an open-source library intended for
+anyone. Every PR is reviewed by a maintainer, and can additionally get a
+first pass from GitHub Copilot (requested manually from the PR's Reviewers
+menu); the process and the rules the reviewer enforces are in
+[docs/copilot-code-review.md](./docs/copilot-code-review.md), and the
+repository conventions it checks are in
+[.github/copilot-instructions.md](./.github/copilot-instructions.md).
+
 ## Roadmap
 
 1. ~~A new data format: JSON files checked against a JSON Schema, plain number

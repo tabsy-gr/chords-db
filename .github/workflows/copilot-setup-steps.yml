@@ -1,0 +1,30 @@
+name: Copilot Setup Steps
+
+# Prepares the environment GitHub Copilot uses when reviewing pull requests
+# (and when working as a coding agent): Node 24 and a full dependency
+# install, so it can run typecheck, tests and the data checks itself.
+# Only runs when this workflow file changes, or by hand from the Actions tab —
+# never on ordinary pull requests.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/copilot-setup-steps.yml"
+  pull_request:
+    paths:
+      - ".github/workflows/copilot-setup-steps.yml"
+
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
