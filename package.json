@@ -58,12 +58,13 @@
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
+    "@typescript/native": "npm:typescript@^7.0.2",
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
     "tonal": "^6.4.3",
     "tsup": "^8.5.0",
     "tsx": "^4.20.0",
-    "typescript": "^5.9.3",
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
     "vitest": "^4.0.16"
   },
   "publishConfig": {
