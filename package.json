@@ -65,7 +65,7 @@
     "tsup": "^8.5.0",
     "tsx": "^4.20.0",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
-    "vitest": "^4.0.16"
+    "vitest": "^5.0.4"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
