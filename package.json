@@ -57,11 +57,11 @@
     "verify": "tsx scripts/verify.ts"
   },
   "devDependencies": {
-    "@types/node": "^24.10.1",
+    "@types/node": "^24.19.2",
     "@typescript/native": "npm:typescript@^7.0.2",
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
-    "tonal": "^6.4.3",
+    "tonal": "~6.4.3",
     "tsup": "^8.5.0",
     "tsx": "^4.20.0",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
