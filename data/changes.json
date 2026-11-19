@@ -2139,6 +2139,11 @@
       "reportedBy": "jonmach"
     },
     {
+      "ids": ["guitar/Ab/major/5", "guitar/Ab/major/6"],
+      "kinds": ["added"],
+      "change": "Added two Ab major shapes, x-11-10-8-9-x and x-11-13-13-13-x, listed in the Hal Leonard Picture Chord Encyclopedia (p. 117)."
+    },
+    {
       "ids": ["ukulele-d/*"],
       "kinds": ["added"],
       "change": "Added the ukulele in D tuning (A4 D4 F#4 B4), generated from the ukulele in standard tuning: every shape plays the chord a whole tone higher. The approach is from the upstream PR; applying it to the validated ukulele data keeps both instruments correct and in step.",

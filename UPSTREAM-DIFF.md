@@ -14,7 +14,7 @@ layout, field names) see [MIGRATING-FROM-CHORDS-DB.md](./MIGRATING-FROM-CHORDS-D
 
 | Change | bouzouki-cfad | bouzouki-dad | cavaquinho | guitar | piano | ukulele | ukulele-d |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| added | 1367 | 445 | 0 | 26 | 144 | 0 | 2069 |
+| added | 1367 | 445 | 0 | 28 | 144 | 0 | 2069 |
 | removed | 0 | 0 | 446 | 37 | 0 | 45 | 0 |
 | relabelled | 0 | 0 | 12 | 150 | 84 | 133 | 0 |
 | frets | 0 | 0 | 0 | 360 | 0 | 4 | 0 |
@@ -5555,7 +5555,14 @@ Counts are voicings; one voicing can have several kinds of change.
 | --- | --- | --- | --- |
 | `guitar/C/_G/5` | added | `—` | `C/G xxx010` |
 
-### 65. Added the ukulele in D tuning (A4 D4 F#4 B4), generated from the ukulele in standard tuning: every shape plays the chord a whole tone higher. The approach is from the upstream PR; applying it to the validated ukulele data keeps both instruments correct and in step.
+### 65. Added two Ab major shapes, x-11-10-8-9-x and x-11-13-13-13-x, listed in the Hal Leonard Picture Chord Encyclopedia (p. 117).
+
+| Voicing | Change | Before | After |
+| --- | --- | --- | --- |
+| `guitar/Ab/major/5` | added | `—` | `Abmajor xba89x` |
+| `guitar/Ab/major/6` | added | `—` | `Abmajor xbdddx` |
+
+### 66. Added the ukulele in D tuning (A4 D4 F#4 B4), generated from the ukulele in standard tuning: every shape plays the chord a whole tone higher. The approach is from the upstream PR; applying it to the validated ukulele data keeps both instruments correct and in step.
 
 [#15](https://github.com/tabsy-gr/chords-db/issues/15) · upstream [#32](https://github.com/tombatossals/chords-db/issues/32) · reported by [MostFrabjous](https://github.com/MostFrabjous)
 
@@ -7636,7 +7643,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 </details>
 
-### 66. Marked rootless: cavaquinho voicings that leave out the root on purpose, as dense chords on a four-string instrument do (the same convention as the ukulele).
+### 67. Marked rootless: cavaquinho voicings that leave out the root on purpose, as dense chords on a four-string instrument do (the same convention as the ukulele).
 
 [#15](https://github.com/tabsy-gr/chords-db/issues/15) · upstream [#43](https://github.com/tombatossals/chords-db/issues/43) · reported by [rezendehugo](https://github.com/rezendehugo)
 
@@ -7749,7 +7756,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 </details>
 
-### 67. Relabelled from 9 to add9: these cavaquinho voicings have no ♭7 (three of them are rootless, as the cavaquinho comps above the bass).
+### 68. Relabelled from 9 to add9: these cavaquinho voicings have no ♭7 (three of them are rootless, as the cavaquinho comps above the bass).
 
 [#15](https://github.com/tabsy-gr/chords-db/issues/15) · upstream [#43](https://github.com/tombatossals/chords-db/issues/43) · reported by [rezendehugo](https://github.com/rezendehugo)
 
@@ -7780,7 +7787,7 @@ Counts are voicings; one voicing can have several kinds of change.
 | `cavaquinho/Gb/9/6` | relabelled | `Gb9` | `Gbadd9` |
 | `cavaquinho/Gb/9/6` | rootless | `false` | `true` |
 
-### 68. Refingered: the contributed fingering was impossible (crossed fingers, or a barre over a lower note). The frets are unchanged; the fingering is the playable one closest to the original.
+### 69. Refingered: the contributed fingering was impossible (crossed fingers, or a barre over a lower note). The frets are unchanged; the fingering is the playable one closest to the original.
 
 [#15](https://github.com/tabsy-gr/chords-db/issues/15) · upstream [#43](https://github.com/tombatossals/chords-db/issues/43) · reported by [rezendehugo](https://github.com/rezendehugo)
 
@@ -7825,7 +7832,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 </details>
 
-### 69. Removed a duplicate: the same shape is already a voicing of the chord it really is (e.g. 9 shapes without a ♭7 that are already add9 voicings, dim shapes that are already dim7 voicings, m6 shapes whose corrected form is already listed).
+### 70. Removed a duplicate: the same shape is already a voicing of the chord it really is (e.g. 9 shapes without a ♭7 that are already add9 voicings, dim shapes that are already dim7 voicings, m6 shapes whose corrected form is already listed).
 
 [#15](https://github.com/tabsy-gr/chords-db/issues/15) · upstream [#43](https://github.com/tombatossals/chords-db/issues/43) · reported by [rezendehugo](https://github.com/rezendehugo)
 
@@ -8015,7 +8022,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 </details>
 
-### 70. Removed: the voicing's notes don't form its chord (a foreign note or a missing tone) and no correction or relabel fits.
+### 71. Removed: the voicing's notes don't form its chord (a foreign note or a missing tone) and no correction or relabel fits.
 
 [#15](https://github.com/tabsy-gr/chords-db/issues/15) · upstream [#43](https://github.com/tombatossals/chords-db/issues/43) · reported by [rezendehugo](https://github.com/rezendehugo)
 
@@ -8165,7 +8172,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 </details>
 
-### 71. Removed: the fretted notes cover six or more frets, beyond the cavaquinho's five-fret limit.
+### 72. Removed: the fretted notes cover six or more frets, beyond the cavaquinho's five-fret limit.
 
 [#15](https://github.com/tabsy-gr/chords-db/issues/15) · upstream [#43](https://github.com/tombatossals/chords-db/issues/43) · reported by [rezendehugo](https://github.com/rezendehugo)
 
@@ -8307,7 +8314,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 </details>
 
-### 72. Renamed b13b9 and b13#9 to 7b9b13 and 7#9b13. A suffix starting with b cannot follow a root in a chord symbol ("Cb13b9" reads as C-flat), and these are the usual names for these altered dominants. The old names still resolve through parseSuffix().
+### 73. Renamed b13b9 and b13#9 to 7b9b13 and 7#9b13. A suffix starting with b cannot follow a root in a chord symbol ("Cb13b9" reads as C-flat), and these are the usual names for these altered dominants. The old names still resolve through parseSuffix().
 
 [#14](https://github.com/tabsy-gr/chords-db/issues/14)
 
@@ -8415,7 +8422,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 </details>
 
-### 73. Merged guitar sus into sus4: "sus" alone means a suspended fourth, so these are sus4 voicings. "sus" still resolves as a spelling of sus4.
+### 74. Merged guitar sus into sus4: "sus" alone means a suspended fourth, so these are sus4 voicings. "sus" still resolves as a spelling of sus4.
 
 [#14](https://github.com/tabsy-gr/chords-db/issues/14)
 
@@ -8454,7 +8461,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 </details>
 
-### 74. Removed while merging guitar sus into sus4: the same shape was already a sus4 voicing.
+### 75. Removed while merging guitar sus into sus4: the same shape was already a sus4 voicing.
 
 [#14](https://github.com/tabsy-gr/chords-db/issues/14)
 
@@ -8487,7 +8494,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 </details>
 
-### 75. Added the Greek bouzouki, tetrachordo (C F A D): the shapes of reference dataset A (used with permission) that pass the validator, fingered and ordered easiest first, up to six per chord. Unverified until a verifier in VERIFIERS.md signs them off.
+### 76. Added the Greek bouzouki, tetrachordo (C F A D): the shapes of reference dataset A (used with permission) that pass the validator, fingered and ordered easiest first, up to six per chord. Unverified until a verifier in VERIFIERS.md signs them off.
 
 <details>
 <summary>1367 voicings</summary>
@@ -9864,7 +9871,7 @@ Counts are voicings; one voicing can have several kinds of change.
 
 </details>
 
-### 76. Added the Greek bouzouki, trichordo (D A D): the shapes of reference dataset A (used with permission) that pass the validator, fingered and ordered easiest first, up to six per chord. Unverified until a verifier in VERIFIERS.md signs them off.
+### 77. Added the Greek bouzouki, trichordo (D A D): the shapes of reference dataset A (used with permission) that pass the validator, fingered and ordered easiest first, up to six per chord. Unverified until a verifier in VERIFIERS.md signs them off.
 
 <details>
 <summary>445 voicings</summary>
