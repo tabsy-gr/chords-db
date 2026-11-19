@@ -359,7 +359,16 @@ npm run upstream-diff  # regenerate UPSTREAM-DIFF.md from data/changes.json
 npm run typecheck
 npm run build        # regenerate lib/ and build the package
 npm run authors      # regenerate AUTHORS from git history
+npm run find-voicing   # prompts for a chord, frets and fingers
 ```
+
+`find-voicing` checks whether a guitar voicing is already in the database and
+validates it if not. Run with no arguments it prompts for the chord, frets and
+fingers, and offers to add the voicing as a `curated` one. For a one-off check
+pass `--chord "Ab major" --frets 4,3,1,1,1,x --fingers 3,2,1,1,1,0` (and
+`--write` to add it); in PowerShell write the separator as `'--'`, because
+PowerShell swallows a bare `--`. After adding, run `npm run build:data` and
+`npm run validate`.
 
 ## Contributing
 

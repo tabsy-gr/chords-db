@@ -54,7 +54,8 @@
     "upstream-diff": "tsx scripts/upstream-diff.ts",
     "generate:piano": "tsx scripts/generate-piano.ts",
     "generate:ukulele-d": "tsx scripts/generate-ukulele-d.ts",
-    "verify": "tsx scripts/verify.ts"
+    "verify": "tsx scripts/verify.ts",
+    "find-voicing": "tsx scripts/find-voicing.ts"
   },
   "devDependencies": {
     "@types/node": "^24.19.2",
